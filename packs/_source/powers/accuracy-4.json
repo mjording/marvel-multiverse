@@ -1,0 +1,19 @@
+{
+  "_id": "96653116-d283-4bc5-af90-acdcafb91e16",
+  "name": "Accuracy 4",
+  "type": "power",
+  "system": {
+    "description": "The character can out-target almast anyone.",
+    "powerSet": "Basic",
+    "prerequisites": "Accuracy 3. Rank 4",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character adds +4 to their Agility damage multiplier, and they gain a +4 bonus to Agility checks other than attacks."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!96653116-d283-4bc5-af90-acdcafb91e16"
+}

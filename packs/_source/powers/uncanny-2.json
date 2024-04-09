@@ -1,0 +1,19 @@
+{
+  "_id": "6ca1e80c-e48e-4903-8f59-b49990e9ae47",
+  "name": "Uncanny 2",
+  "type": "power",
+  "system": {
+    "description": "The character’s mind isprotected as ifby steel,",
+    "powerSet": "Basic",
+    "prerequisites": "Uncanny 1, Rank 2",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "Any damage multiplier [or attacks against the charocter’s Focus (5reduced by 2."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!6ca1e80c-e48e-4903-8f59-b49990e9ae47"
+}

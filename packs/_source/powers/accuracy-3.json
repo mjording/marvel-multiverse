@@ -1,0 +1,19 @@
+{
+  "_id": "7159fc64-14df-4d07-bd99-c6d70172ef78",
+  "name": "Accuracy 3",
+  "type": "power",
+  "system": {
+    "description": "The character could hit a fly at one hundred paces.",
+    "powerSet": "Basic",
+    "prerequisites": "Accuracy 2, Rank 3",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character adds +3 to their Agility damage multiplier, and they gain a +3 bonus to Agility checks other than attacks."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!7159fc64-14df-4d07-bd99-c6d70172ef78"
+}

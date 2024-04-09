@@ -1,0 +1,19 @@
+{
+  "_id": "bc1514dc-34c2-4f72-b62c-378530dac8bc",
+  "name": "Elemental Richochet",
+  "type": "power",
+  "system": {
+    "description": "The character bounces the burst off one fae and inlo anotler",
+    "powerSet": "Elamental Control",
+    "prerequisites": "Elemental Burst. Rank 3",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "instant",
+    "range": "10 spaces times the character's rank",
+    "cost": "10 Focus",
+    "effect": "The character makes a ranged attack apninsta target in line of sight. If the attack is a success, it inflicts regular damage. On o Fantlastic success, energy also bounces off the first target 10 another in line of sight, and the character can make a new attack against that target, adding the new range to the previous attack’s range. This can bo repeated until an attack is not fantastic."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!bc1514dc-34c2-4f72-b62c-378530dac8bc"
+}

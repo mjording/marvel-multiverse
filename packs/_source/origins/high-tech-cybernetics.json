@@ -1,0 +1,40 @@
+{
+  "_id": "018ec3d1-ecce-7b20-a61a-06491f604812",
+  "name": "High Tech: Cybernetics",
+  "type": "origin",
+  "system": {
+    "description": "The character has high-tech, surgically embedded implants that grant them powers. These cannot be removed without great care ar pain. If the implants are obvious, the character gets the Extreme Appearance tag. Otherwise, the implanis have been hidden inside their body {as with the lncing of Wolverine’s skeleton with adamantium) and might be visible only when in use {like when Wolverine uses his claws), if then.",
+    "examples": "Deathlok (all of them), Snbretooth, Winter Soldier, Wolverine (Logan).",
+    "suggestedOccupation": "Outsider",
+    "tags": [
+      {
+        "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
+        "name": "Extreme Appearance",
+        "type": "tag",
+        "system": {
+          "description": "The character looks very different than the average person As a mutant, the character is automatically a citizen of the (wherever they happen to be) and cannot easily hide their island-nation of Krakoa and can travel to and from there identity, When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme Appearance is common.",
+          "rarity": "common"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1"
+      }
+    ],
+    "traits": [
+      {
+        "_id": "67d72599-e0e3-40f3-aa54-bf98b55780cf",
+        "name": "Tech Reliance",
+        "type": "trait",
+        "system": {
+          "description": "The character relies on technolopy for powers. When they take damape that would render them unconscious they can instead choose to lose all of their technolopy-related powers and remain conscious with 1 polnt of Health remalning. Assuming the character has access to parts and tools. Lost powers can be repaired after a battle"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!67d72599-e0e3-40f3-aa54-bf98b55780cf"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!018ec3d1-ecce-7b20-a61a-06491f604812"
+}

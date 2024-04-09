@@ -1,0 +1,19 @@
+{
+  "_id": "41171f4e-8507-4227-aba4-5106b4fc4e5f",
+  "name": "Sturdy 3",
+  "type": "power",
+  "system": {
+    "description": "The character is protected like a tank.",
+    "powerSet": "Basic",
+    "prerequisites": "Sturdy 2, Rank 4",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character gains Health Damage Reduction 3."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!41171f4e-8507-4227-aba4-5106b4fc4e5f"
+}

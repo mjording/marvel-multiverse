@@ -1,0 +1,13 @@
+{
+  "_id": "b4aaeca2-8c69-41da-b7d8-6fc42d4eb41a",
+  "name": "Heroic",
+  "type": "tag",
+  "system": {
+    "description": "The chnracter acts heroically. They help peaplein need, and they do their best not to kill—even with peaple who might desorve it.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!b4aaeca2-8c69-41da-b7d8-6fc42d4eb41a"
+}

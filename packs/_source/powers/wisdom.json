@@ -1,0 +1,19 @@
+{
+  "_id": "d42d2fe2-52aa-4929-8a46-1b37ed60f569",
+  "name": "Wisdom",
+  "type": "power",
+  "system": {
+    "description": "The character not only has brains but knows when to use thom",
+    "powerSet": "Basic",
+    "prerequisites": "",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanont",
+    "range": "",
+    "cost": "",
+    "effect": "The character can use their Epo delense score against Logic attacks too"
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!d42d2fe2-52aa-4929-8a46-1b37ed60f569"
+}

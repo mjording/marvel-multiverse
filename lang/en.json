@@ -1,0 +1,41 @@
+{
+  "MARVEL_MULTIVERSE": {
+    "Ability": {
+      "Mel": { "long": "Melee", "abbr": "mel" },
+      "Agl": { "long": "Agility", "abbr": "agl" },
+      "Res": { "long": "Resilience", "abbr": "res" },
+      "Vig": { "long": "Vigilance", "abbr": "vig" },
+      "Ego": { "long": "Ego", "abbr": "ego" },
+      "Log": { "long": "Logic", "abbr": "log" }
+    },
+    "SheetLabels": {
+      "Actor": "MarvelMultiverse Actor Sheet",
+      "Item": "MarvelMultiverse Item Sheet"
+    },
+    "Item": {
+      "Power": {
+        "PowerSET": "{set} Powers",
+        "AddPWR": "Power"
+      }
+    },
+    "Effect": {
+      "Source": "Source",
+      "Toggle": "Toggle Effect",
+      "Temporary": "Temporary Effects",
+      "Passive": "Passive Effects",
+      "Inactive": "Inactive Effects"
+    }
+  },
+
+  "TYPES": {
+    "Actor": {
+      "character": "Character",
+      "npc": "NPC"
+    },
+    "Item": {
+      "item": "Item",
+      "trait": "Trait",
+      "power": "Power"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "_id": "027d6904-d575-472d-9a65-a1d398ccc7c3",
+  "name": "Public Identity",
+  "type": "tag",
+  "system": {
+    "description": "The character’s real identity is known to the public. Thiscan make itcasier for them to ask their friends and family—and oven strangers—Ior help. Unfortunately, it also makes it vasler for their enemies to find them and even to threaten those snme friends and family,",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!027d6904-d575-472d-9a65-a1d398ccc7c3"
+}

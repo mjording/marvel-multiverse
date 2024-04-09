@@ -1,0 +1,62 @@
+{
+  "_id": "018ec39e-62bc-7d59-a075-43b9351c7de5",
+  "name": "Alien: Kree",
+  "type": "origin",
+  "system": {
+    "description": "The character is o member of the Kree, a humanoid race from the planet Hala who formed the interstellar Kree Empire ln the region of space known as the Large Magellanic Cloud. They resemble humans but are stronger and tougher. Many of them have blue skin. but a pood number of them have pink skin. The air on Hala has much more nitragen in it, and Kree who are raised in it {or something like it) have a hard time breathing the air on Earth",
+    "examples": "Captain Marvel (Mae-Vell), Hulkling (half Skeall and half Kree), Magnitron (Yon-Rogp), Ronan the Accuser",
+    "suggestedOccupation": "Outsider",
+    "tags": [
+      {
+        "_id": "018ec37f-5d6a-756e-bfc3-efb8b07594f6",
+        "name": "Alien Heritage",
+        "type": "tag",
+        "system": {
+          "description": "The character or at least ane of their ancestors- is not from Earth. Pick an allen race that they belong to, If they were not raised on Earth, they should consider taking the Outsider occupation."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!018ec37f-5d6a-756e-bfc3-efb8b07594f6"
+      },
+      {
+        "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
+        "name": "Extreme Appearance",
+        "type": "tag",
+        "system": {
+          "description": "The character looks very different than the average person As a mutant, the character is automatically a citizen of the (wherever they happen to be) and cannot easily hide their island-nation of Krakoa and can travel to and from there identity, When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme Appearance is common.",
+          "rarity": "if blue-skinned"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1"
+      }
+    ],
+    "traits": [
+      {
+        "_id": "018ec3a6-bbe2-7302-814b-be2430ddfc95",
+        "name": "Breathe Different",
+        "type": "trait",
+        "system": {
+          "description": "The character cannot breathe Earth's air for long, They lose 1 point of Health for every minute they do not have some sort af assistance to allow them to breathe properly"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!018ec3a6-bbe2-7302-814b-be2430ddfc95"
+      },
+      {
+        "_id": "2de68fb5-264d-498e-a94e-aefc619c6e59",
+        "name": "Enhanced Physique",
+        "type": "trait",
+        "system": {
+          "description": "The churacter is stronger than regular humans. Treat them as one size bigger for lifting. carrying. swinging and throwing things. (This does not stack with other factors.)"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!2de68fb5-264d-498e-a94e-aefc619c6e59"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!018ec39e-62bc-7d59-a075-43b9351c7de5"
+}

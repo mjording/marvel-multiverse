@@ -1,0 +1,13 @@
+{
+  "_id": "16b9b183-3707-4eee-b122-eb87611706dc",
+  "name": "Black Market Access",
+  "type": "tag",
+  "system": {
+    "description": "The character knows how and where they can buy and sell hard-to-find and potentially illegal things",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!16b9b183-3707-4eee-b122-eb87611706dc"
+}

@@ -1,0 +1,19 @@
+{
+  "_id": "ca42cdba-7c15-4083-868a-9a78835c188e",
+  "name": "Smash",
+  "type": "power",
+  "system": {
+    "description": "SMASH!",
+    "powerSet": "Super-Strength",
+    "prerequisites": "Clobber, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5or more Focus",
+    "effect": "The character makes a close attack with an edge. For this attack, add +1 to the character's Melee damage bonus for every 2points of Focus they spend. On asuccess. an affected target takes that total damage. On a Fantastic success, an affected target takes double that total damage and is stunned for one round."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!ca42cdba-7c15-4083-868a-9a78835c188e"
+}

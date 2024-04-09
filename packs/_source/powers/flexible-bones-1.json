@@ -1,0 +1,19 @@
+{
+  "_id": "018ec3c3-7940-7d9f-b111-ba59315a2292",
+  "name": "Flexible Bones 1",
+  "type": "power",
+  "system": {
+    "description": "The character's skeleton 15rubbery.",
+    "powerSet": "Plasticity",
+    "prerequisites": "",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character gains Health Damage Reduction 1. They also have an edde on Agility checks for contortion and escape."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!018ec3c3-7940-7d9f-b111-ba59315a2292"
+}

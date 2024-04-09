@@ -1,0 +1,11 @@
+{
+  "_id": "81031107-8fea-4de3-9619-d3b7e30ff865",
+  "name": "Iron Will",
+  "type": "trait",
+  "system": {
+    "description": "Enemies have trouble on Ego attacks to control the character's mind or influence their behavior. Also, the character gains an edge on Ego checks to break free of mind control or other compulsions."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!81031107-8fea-4de3-9619-d3b7e30ff865"
+}

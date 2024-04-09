@@ -1,0 +1,11 @@
+{
+  "_id": "141554d7-5bf2-4e58-bcb4-49316d8e4167",
+  "name": "Public Speaking",
+  "type": "trait",
+  "system": {
+    "description": "The character knows how to get the attention of a crowd, whether that's at a political rally or in front of a jury or a cinsgroom. They have an edge on Ego checks when attempting to persuade groups."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!141554d7-5bf2-4e58-bcb4-49316d8e4167"
+}

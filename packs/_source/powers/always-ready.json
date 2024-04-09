@@ -1,0 +1,19 @@
+{
+  "_id": "81093aa8-9b28-4eed-bdd0-7a5217909a0e",
+  "name": "Always Ready",
+  "type": "power",
+  "system": {
+    "description": "The character is prepared ot fight.",
+    "powerSet": "Martial Arts",
+    "prerequisites": "Do This Al Day, Rank 3",
+    "action": "",
+    "trigger": "",
+    "duration": "",
+    "range": "",
+    "cost": "",
+    "effect": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!81093aa8-9b28-4eed-bdd0-7a5217909a0e"
+}

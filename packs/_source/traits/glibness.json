@@ -1,0 +1,11 @@
+{
+  "_id": "60740986-e113-413a-b02e-3bc505947964",
+  "name": "Glibness",
+  "type": "trait",
+  "system": {
+    "description": "The character can strike up a conversation with anyone at any time and can often convince them to lend a hand. They have an edge on Ego checks to persuade characters they are speaking to for the first time."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!60740986-e113-413a-b02e-3bc505947964"
+}

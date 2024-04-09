@@ -1,0 +1,19 @@
+{
+  "_id": "1bc29e4d-2c5f-40bd-bb9a-fe80dc371028",
+  "name": "Anger",
+  "type": "power",
+  "system": {
+    "description": "You won't like them when they're angry.",
+    "powerSet": "Basic",
+    "prerequisites": "Mighty 3, Rank 4",
+    "action": "Standard or reaction",
+    "trigger": "The character is harmed by an attack.",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "10 or more Focus",
+    "effect": "The character becomes angry and uses that anger to increase their strength. For every 10 points of Focus they spend, they add +15 to their Melee damage bonus and lose -2 from their Logic—and subsequently their Logic defense. While using this power, they cannot use any other powers that require concentration."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!1bc29e4d-2c5f-40bd-bb9a-fe80dc371028"
+}

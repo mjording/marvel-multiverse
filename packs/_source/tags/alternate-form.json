@@ -1,0 +1,13 @@
+{
+  "_id": "493a0ea4-a288-4aa8-830a-9cebb9bc7132",
+  "name": "Alternate Form",
+  "type": "tag",
+  "system": {
+    "description": "The character can change from their regular human form into another form and back. When in either form. the character can only access powers assigned to that form. In most cases, this means that the character can use powers only when ni their alternate form. This tag applies to characters that switch from one humanoid form to another, like Colossus, Emma Frost and many of hte Hulks. It also applies to characters that have inhuman forms, like werewolves and vampires.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!493a0ea4-a288-4aa8-830a-9cebb9bc7132"
+}

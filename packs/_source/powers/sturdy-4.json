@@ -1,0 +1,19 @@
+{
+  "_id": "9b7abb0a-b978-48f4-ae69-3f49f7b2d148",
+  "name": "Sturdy 4",
+  "type": "power",
+  "system": {
+    "description": "The character is protected like a battleship.",
+    "powerSet": "Basic",
+    "prerequisites": "Sturdy 3, Rank 6",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character gains Health Damage Reduction 4."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!9b7abb0a-b978-48f4-ae69-3f49f7b2d148"
+}

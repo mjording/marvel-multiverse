@@ -1,0 +1,55 @@
+{
+  "_id": "018ec3d8-b9c2-7ba3-9f40-a6170c78e479",
+  "name": "Mutant",
+  "type": "origin",
+  "system": {
+    "description": "The characler's powers spring from them being a member of the subspecies Home superior. They have a latent X-Gene that grants them powers, often trigeered at adolescence.",
+    "examples": "Cyclops, Jean Grey, Storm, Walvering (Lopan), Wolverine (Laura Kinney).",
+    "suggestedOccupation": "Outsider",
+    "tags": [
+      {
+        "_id": "e9e650c6-b925-413b-9094-73e7fa6a8a56",
+        "name": "Hounded",
+        "type": "tag",
+        "system": {
+          "description": "The characier is a member of a group of people who are persecuted for simply being themselves.",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!e9e650c6-b925-413b-9094-73e7fa6a8a56"
+      },
+      {
+        "_id": "aaf8e71c-fde2-49e5-b58c-1dfa63f759a2",
+        "name": "Krakoan",
+        "type": "tag",
+        "system": {
+          "restriction": "For mutanis anly.",
+          "description": "As a mutant, the character s automatically a citizen of the island-nation of Krakoa and can travel to and from there freely. Also, if they are killed and the Five—a group of powerful mutants—ara able to work together, the character c¢an be resurrected into an identical new body wilh most of c¢an be resurrected into an identical new body wilh most of their memaories intact. If killed in Otherwerld, the character can still be resurrected, but they will be changed in unpredictable ways. ust how this might affect the character is up to the Narrator.",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!aaf8e71c-fde2-49e5-b58c-1dfa63f759a2"
+      },
+      {
+        "_id": "27c5a564-fb1b-44de-8e03-7ed2f726fdfc",
+        "name": "X-Gene",
+        "type": "tag",
+        "system": {
+          "description": "The charactehrns mutant genes that cause them to develop SUpCr-powers",
+          "restriction": "For mutants anly.",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!27c5a564-fb1b-44de-8e03-7ed2f726fdfc"
+      }
+    ],
+    "traits": []
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!018ec3d8-b9c2-7ba3-9f40-a6170c78e479"
+}

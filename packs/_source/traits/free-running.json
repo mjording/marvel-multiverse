@@ -1,0 +1,11 @@
+{
+  "_id": "bbb0da80-ed57-4cf8-8d20-20a01f4a327c",
+  "name": "Free Running",
+  "type": "trait",
+  "system": {
+    "description": "The character has an edge on Agility checks made to perform acrobatics during a movement action."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!bbb0da80-ed57-4cf8-8d20-20a01f4a327c"
+}

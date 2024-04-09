@@ -1,0 +1,13 @@
+{
+  "_id": "45b607f0-d765-4445-ba92-1c359694d0de",
+  "name": "Linguist",
+  "type": "tag",
+  "system": {
+    "description": "The character is fluent in a langunge other than their native tongue. This tag can be selected multiple times, once for each language.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!45b607f0-d765-4445-ba92-1c359694d0de"
+}

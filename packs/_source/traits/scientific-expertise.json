@@ -1,0 +1,11 @@
+{
+  "_id": "ed8a73fd-6302-4297-a850-7440e623951c",
+  "name": "Scientific Expertise",
+  "type": "trait",
+  "system": {
+    "description": "The character has extensive scientific training. They have an edge on Logic checks made when dealing with scientific research. If they have access to on appropriate Inb at the time, they gain a second edge on such checks."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!ed8a73fd-6302-4297-a850-7440e623951c"
+}

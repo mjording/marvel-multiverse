@@ -1,0 +1,11 @@
+{
+  "_id": "4170639b-eef4-4d1d-8442-f1f7b53852c7",
+  "name": "Combat Expert",
+  "type": "trait",
+  "system": {
+    "description": "The character knows how to handle themselves better than mest. They have an edge on Melee attacks against enemiesofRank 1."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!4170639b-eef4-4d1d-8442-f1f7b53852c7"
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "7e8dfaa6-3e3d-436e-8361-de96c19e1a69",
+  "name": "Surprising Power",
+  "type": "trait",
+  "system": {
+    "description": "This character can choose a power they normally wouldn't be able to use. The character will still need to have any prerequisite powers, but they can ignore ranh and origin requirementsTh.is trail can be selected multiple times,"
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!7e8dfaa6-3e3d-436e-8361-de96c19e1a69"
+}

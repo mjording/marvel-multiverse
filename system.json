@@ -1,0 +1,96 @@
+{
+  "id": "marvel-multiverse",
+  "title": "Marvel Multiverse",
+  "description": "The Marvel Multiverse system for FoundryVTT!",
+  "authors": [
+    {
+      "name": "mjording",
+      "discord": "mjording"
+    }
+  ],
+  "url": "Replace this with a link to your public repository",
+  "license": "LICENSE.txt",
+  "readme": "README.md",
+  "bugs": "Replace this with a link to file issues or tickets",
+  "changelog": "CHANGELOG.md",
+  "media": [
+    {
+      "type": "setup",
+      "url": "systems/marvel-multiverse/assets/anvil-impact.png",
+      "thumbnail": "systems/marvel-multiverse/assets/anvil-impact.png"
+    }
+  ],
+  "version": "2.0.0",
+  "compatibility": {
+    "minimum": 11,
+    "verified": "11.315"
+  },
+  "esmodules": ["marvel-multiverse.mjs"],
+  "styles": ["css/marvel-multiverse.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [ 
+    {
+      "name": "tags",
+      "label": "Tags",
+      "system": "marvel-multiverse",
+      "path": "packs/tags",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "traits",
+      "label": "Traits",
+      "system": "marvel-multiverse",
+      "path": "packs/traits",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "powers",
+      "label": "Powers",
+      "system": "marvel-multiverse",
+      "path": "packs/powers",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "origins",
+      "label": "Origins",
+      "system": "marvel-multiverse",
+      "path": "packs/origins",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "MMRPG Content",
+      "sorting": "m",
+      "color": "#cd2c1e",
+      "packs": [
+        "tags",
+        "traits",
+        "powers",
+        "origins"
+      ]
+    }
+  ],
+  "socket": false,
+  "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
+  "download": "This must link to a .zip file of the current version",
+  "background": "systems/marvel-multiverse/assets/anvil-impact.png",
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "focus"
+}

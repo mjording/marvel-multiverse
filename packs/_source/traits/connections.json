@@ -1,0 +1,11 @@
+{
+  "_id": "cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7",
+  "name": "Connections",
+  "type": "trait",
+  "system": {
+    "description": "hecharacter knows someone with access to and knowledge of a particular field. The connection could be a reporter, a palice officer, a politician, a mobster and soon. By makingan Egocheck, the character can call an their contact wo provide help in the form of glues, informntion ar resources, The Hnrrator determines the TH of the Ego check based on the favor requested This trait can be selected multiple thmes, using many different types, These include Celebrities, Community, Criminal, Espionape, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on,"
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7"
+}

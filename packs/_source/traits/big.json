@@ -1,0 +1,11 @@
+{
+  "_id": "11e691ad-1d15-4d08-980f-2331f62bbff7",
+  "name": "Big",
+  "type": "trait",
+  "system": {
+    "description": "The character's size is big, which applies 1- to their Melee and Agility defenses, adds +1 to their Run Speed, and increases their reach to .2 They still occupy a single space."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!11e691ad-1d15-4d08-980f-2331f62bbff7"
+}

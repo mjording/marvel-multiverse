@@ -1,0 +1,19 @@
+{
+  "_id": "967b9286-fede-49bf-a86e-7554907d266b",
+  "name": "Accuracy 2",
+  "type": "power",
+  "system": {
+    "description": "The character is a sharpshooter.",
+    "powerSet": "Basic",
+    "prerequisites": "Accuracy 1, Rank 2",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character adds +2 to their Agility damage multiplier, and they gain a +2 bonus to Agility checks other than attacks."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!967b9286-fede-49bf-a86e-7554907d266b"
+}

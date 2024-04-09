@@ -1,0 +1,33 @@
+{
+  "name": "marvel-multiverse",
+  "version": "2.0.0",
+  "description": "CSS compiler for the MarvelMultiverse system",
+  "scripts": {
+    "build:css": "sass src/scss/marvel-multiverse.scss css/marvel-multiverse.css --style=expanded --no-source-map",
+    "watch": "sass src/scss/marvel-multiverse.scss css/marvel-multiverse.css --style=expanded --source-map --watch",
+    "build": "npm run build:code && npm run build:css && npm run build:db",
+    "build:clean": "node ./utils/packs.mjs package clean",
+    "build:code": "rollup marvel-multiverse.mjs -f es -o marvel-multiverse-compiled.mjs -p node-resolve -m --sourcemapFile marvel-multiverse.mjs",
+    "build:db": "node ./utils/packs.mjs package pack",
+    "build:json": "node ./utils/packs.mjs package unpack",
+    "lint": "eslint --ext .mjs --ignore-path .gitignore ./",
+    "lint:fix": "eslint --ext .mjs --ignore-path .gitignore ./ --fix",
+    "postinstall": "npm run build:css && npm run build:db"
+  },
+  "browserslist": [
+    "last 3 versions"
+  ],
+  "author": "mjording",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.24.1",
+    "@foundryvtt/foundryvtt-cli": "^1.0.2",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "eslint-plugin-jsdoc": "^48.2.3",
+    "fancy-log": "^2.0.0",
+    "rollup": "^4.14.1",
+    "sass": "^1.53.0",
+    "yargs": "^17.7.2"
+  }
+}

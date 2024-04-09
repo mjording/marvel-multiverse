@@ -1,0 +1,19 @@
+{
+  "_id": "eb514086-b88b-4078-a57f-6431674e0da1",
+  "name": "Dazzle",
+  "type": "power",
+  "system": {
+    "description": "The character blasts a blinding light into the face of their foe.",
+    "powerSet": "Illusion",
+    "prerequisites": "Illumination, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "20 Spaces",
+    "cost": "5 Focus",
+    "effect": "The character makes an Ego check against an enemy in their line of sight and compares that against the target’s Vigilance defense. If the attack is a success, the enemy is blinded for 1 turn. On a Fantastic success, it also inflicts regular damage. Alternatively, the character can blind the victim with darkness, "
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!eb514086-b88b-4078-a57f-6431674e0da1"
+}

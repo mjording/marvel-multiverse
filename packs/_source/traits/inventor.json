@@ -1,0 +1,11 @@
+{
+  "_id": "2b4a4441-4801-4de7-b0e2-c992b60a1ae5",
+  "name": "Inventor",
+  "type": "trait",
+  "system": {
+    "description": "The character is good at coming up with solutions on the fly. They have an edge on Logic checks when creating or repairing things."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!2b4a4441-4801-4de7-b0e2-c992b60a1ae5"
+}

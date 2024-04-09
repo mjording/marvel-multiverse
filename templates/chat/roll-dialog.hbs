@@ -1,0 +1,26 @@
+<form>
+    {{#each formulas}}
+    <div class="form-group">
+        <label>{{ localize "MARVEL_MULTIVERSE.Formula" }} {{#if type}}({{type}}){{/if}}</label>
+        <input type="text" name="formula" value="{{formula}}" disabled>
+    </div>
+    {{/each}}
+    {{#if chooseModifier}}
+    <div class="form-group">
+        <label>{{ localize "MARVEL_MULTIVERSE.AbilityModifier" }}</label>
+        <select name="ability">
+            {{selectOptions abilities selected=defaultAbility labelAttr="label"}}
+        </select>
+    </div>
+    {{/if}}
+    <div class="form-group">
+        <label>{{ localize "MARVEL_MULTIVERSE.RollSituationalBonus" }}</label>
+        <input type="text" name="bonus" value="" placeholder="{{ localize 'MARVEL_MULTIVERSE.RollExample' }}"/>
+    </div>
+    <div class="form-group">
+        <label>{{ localize "MARVEL_MULTIVERSE.RollMode" }}</label>
+        <select name="rollMode">
+            {{selectOptions rollModes selected=defaultRollMode localize=true}}
+        </select>
+    </div>
+</form>

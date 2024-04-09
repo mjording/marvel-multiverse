@@ -1,0 +1,13 @@
+{
+  "_id": "27c5a564-fb1b-44de-8e03-7ed2f726fdfc",
+  "name": "X-Gene",
+  "type": "tag",
+  "system": {
+    "description": "The charactehrns mutant genes that cause them to develop SUpCr-powers",
+    "restriction": "For mutants anly.",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!27c5a564-fb1b-44de-8e03-7ed2f726fdfc"
+}

@@ -1,0 +1,19 @@
+{
+  "_id": "a7f21207-84d7-405e-bfa1-257c59ccd1f3",
+  "name": "Brilllance 1",
+  "type": "power",
+  "system": {
+    "description": "The character puts their brain ot work.",
+    "powerSet": "Basic",
+    "prerequisites": "",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character adds +1 to their Logic damage multiplier, and they gain a +1 bonus to Logic checks other than attacks."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!a7f21207-84d7-405e-bfa1-257c59ccd1f3"
+}

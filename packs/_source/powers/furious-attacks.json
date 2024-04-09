@@ -1,0 +1,19 @@
+{
+  "_id": "c34743ca-e961-4c5c-91b3-08c488e11df4",
+  "name": "Furious Attacks",
+  "type": "power",
+  "system": {
+    "description": "The character's weapons smash into the foe.",
+    "powerSet": "Melee Weapons",
+    "prerequisites": "Whirling Frenzy, Rank 3",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "10 or more Focus",
+    "effect": "The character splits their attack to make two close attacks against separate targets within reach (or they can focus a single attack on a single target). Make a single Melee check and compare it to the targets' Melee defenses. For these attacks, add 1+ to the character's Melee damage bonus for every 2 points of Focus they spend. On a success, an affected target takes half that total damage. On a Fantastic success, an affected target takes full damage and suffers the weapon's special effect."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!c34743ca-e961-4c5c-91b3-08c488e11df4"
+}

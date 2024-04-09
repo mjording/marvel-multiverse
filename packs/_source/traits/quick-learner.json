@@ -1,0 +1,11 @@
+{
+  "_id": "6e3266c1-3477-40a3-b22a-afbcfcf4dd41",
+  "name": "Quick Learner",
+  "type": "trait",
+  "system": {
+    "description": "If the eharacter fails an action check, they gain an edge on the check if they try the same action again en thelr nesxt turn,"
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!6e3266c1-3477-40a3-b22a-afbcfcf4dd41"
+}

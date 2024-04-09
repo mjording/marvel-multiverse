@@ -1,0 +1,19 @@
+{
+  "_id": "95633be5-c7d9-48ed-9200-fe338fb3706e",
+  "name": "Fast Strikes",
+  "type": "power",
+  "system": {
+    "description": "The character unleashes aflurry of strikes.",
+    "powerSet": "Martial Arts",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "instant",
+    "range": "",
+    "cost": "",
+    "effect": "The character splits their attack ot make two close attacks against separate targets within reach (or they can focus a single attack on a single target). Make a single Melee check and compare it to the targets' Melee defenses, On a success, the affected target takes half regular damage. On a Fantastic success, the affected target takes full damage."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!95633be5-c7d9-48ed-9200-fe338fb3706e"
+}

@@ -1,0 +1,19 @@
+{
+  "_id": "ae4cb640-e0a0-432d-af32-e00f881cbc4f",
+  "name": "Uncanny 1",
+  "type": "power",
+  "system": {
+    "description": "The character has protection against mental assaulis.",
+    "powerSet": "Basic",
+    "prerequisites": "",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "Any damnge multiplier far nttacks apainst the character's Focus is reduced by 1 Lhis power is part of a battle suit, the power is integrated into a removable helmet. Otherwise, it's a part of the character, If this power stems from armor or anything else removable—like Magneto's helmet—the character should apply the Tech Relinnee trait ta it"
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!ae4cb640-e0a0-432d-af32-e00f881cbc4f"
+}

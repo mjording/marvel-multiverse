@@ -1,0 +1,13 @@
+{
+  "_id": "cfaebe92-146f-4210-93f2-4b6fb5e7aa40",
+  "name": "Lab Access",
+  "type": "tag",
+  "system": {
+    "description": "The character either owns or has access to a laboratory filled with the technical equipment, supplies and tools they need or their work. This can be anything from a well-stocked high-school classroom to a forensics lab to an industrial site.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!cfaebe92-146f-4210-93f2-4b6fb5e7aa40"
+}

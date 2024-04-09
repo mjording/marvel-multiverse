@@ -1,0 +1,19 @@
+{
+  "_id": "8c522301-2d76-4c48-9abd-4616d1271810",
+  "name": "Elemental Burst",
+  "type": "power",
+  "system": {
+    "description": "The character fires a burst of their element.",
+    "powerSet": "Elemental Control",
+    "prerequisites": "Elemental Burst, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "10 spaces",
+    "cost": "5 or more Focus",
+    "effect": "The character makes a ranged attack with an edge at an enemy in line of sight. For this attack, add +1 to the character's Agility damage bonus for every 2 points of Focus they spend. On a success, an affected target takes that total damage. On a Fantastic success, an affected target takes double that total damage and suffers the elemental type's special effect."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!8c522301-2d76-4c48-9abd-4616d1271810"
+}

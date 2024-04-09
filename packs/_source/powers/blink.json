@@ -1,0 +1,19 @@
+{
+  "_id": "3d5bcf13-d223-4502-8543-10b4b2cb7d34",
+  "name": "Blink",
+  "type": "power",
+  "system": {
+    "description": "The character teleports a short distance away:",
+    "powerSet": "Teleportation",
+    "prerequisites": "",
+    "action": "Standard, movement or reaction",
+    "trigger": "The character is attacked.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "The character teleports into a clear space they can see or have been to, up to their rank in spaces away. If someone was about to attack them and they are now out of reach or line of sight, the attack automatically fails. If they are still within reach or line of sight, the attack has troubl instead."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!3d5bcf13-d223-4502-8543-10b4b2cb7d34"
+}

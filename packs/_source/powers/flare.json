@@ -1,0 +1,19 @@
+{
+  "_id": "8eeca7dc-f62b-46d5-9d97-cc8539db338a",
+  "name": "Flare",
+  "type": "power",
+  "system": {
+    "description": "The character generates a dozzling flare of light,",
+    "powerSet": "Illusion",
+    "prerequisites": "Illumination, Rank 3",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "The character makes an Ego check and compares that against the Vigilance defense of every enciny within 5 spoces. Ench benten enemy is blinded for one turn. On a fantastic success, the flare inflicts regular damage too"
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!8eeca7dc-f62b-46d5-9d97-cc8539db338a"
+}

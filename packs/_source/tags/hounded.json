@@ -1,0 +1,13 @@
+{
+  "_id": "e9e650c6-b925-413b-9094-73e7fa6a8a56",
+  "name": "Hounded",
+  "type": "tag",
+  "system": {
+    "description": "The characier is a member of a group of people who are persecuted for simply being themselves.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!e9e650c6-b925-413b-9094-73e7fa6a8a56"
+}

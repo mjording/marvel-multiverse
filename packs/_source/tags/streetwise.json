@@ -1,0 +1,13 @@
+{
+  "_id": "ed07df73-8b18-4926-a4b2-db7f29154b96",
+  "name": "Streetwise",
+  "type": "tag",
+  "system": {
+    "description": "The character knows how things are handled on the street who's in charpe of various ceiminal enterprises and how ta avoid issues with them",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!ed07df73-8b18-4926-a4b2-db7f29154b96"
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "accf570f-b1fa-47e5-901c-ff7f92a4c8e2",
+  "name": "Fearless",
+  "type": "trait",
+  "system": {
+    "description": "The character is extremely brave. They have an edge on any action checks required to denl with fear."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!accf570f-b1fa-47e5-901c-ff7f92a4c8e2"
+}

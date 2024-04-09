@@ -1,0 +1,19 @@
+{
+  "_id": "f3dbd8d1-6b67-4f00-a8ba-bee2c6372545",
+  "name": "Heightened Senses 1",
+  "type": "power",
+  "system": {
+    "description": "The characler has superior senses.",
+    "powerSet": "Basic",
+    "prerequisites": "",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character can sense things roughly twice as for away as normal, They also have an edge on Vigilance checks to perceive things. and enemies have trouble on checks they make 1o sneak past the character."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!f3dbd8d1-6b67-4f00-a8ba-bee2c6372545"
+}

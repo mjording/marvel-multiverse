@@ -1,0 +1,19 @@
+{
+  "_id": "366f199a-8773-4d6d-b28f-ff8594d2f5e7",
+  "name": "Elemental Barrage",
+  "type": "power",
+  "system": {
+    "description": "",
+    "powerSet": "Elemental Control",
+    "prerequisites": "Elemental Blast, Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "The character designates a space within their line of sight. The attack can affect every enemy within 01 spaces of that. The character makes a single Ego check and compares ti ot each target's Resilience defense. Affected enemies take half regular damage. On a Fantastic success, they take full regular damage and the elemental type's special effect."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!366f199a-8773-4d6d-b28f-ff8594d2f5e7"
+}

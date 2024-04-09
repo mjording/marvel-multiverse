@@ -1,0 +1,19 @@
+{
+  "_id": "a73ffc14-eaac-469d-bc67-4a3bb70289aa",
+  "name": "Mighty 2",
+  "type": "power",
+  "system": {
+    "description": "The character could lift a bus.",
+    "powerSet": "Basic",
+    "prerequisites": "Mighty 1, Rank 2",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "Treat the character as three sizes bigger for lifting, carrying, swinging and throwing things. They also add +2 to their Melee damage multiplier, and they gain a +2 bonus to Melee checks other than attacks."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!a73ffc14-eaac-469d-bc67-4a3bb70289aa"
+}

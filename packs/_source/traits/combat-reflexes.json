@@ -1,0 +1,11 @@
+{
+  "_id": "6dac7626-04ef-4bad-8d83-868d57a5d435",
+  "name": "Combat Reflexes",
+  "type": "trait",
+  "system": {
+    "description": "The charactor can react quickly in combat, This grants them one additional reaction each turn"
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!6dac7626-04ef-4bad-8d83-868d57a5d435"
+}

@@ -1,0 +1,136 @@
+{
+  "_id": "018ec3b7-925e-718e-ac0a-7bd98217b234",
+  "name": "Alien: Skrull",
+  "type": "origin",
+  "system": {
+    "description": "The character is a member of the Skrull, a reptilian nhumanoid race of shape shilters whe formed the interstellar Skeull Empire, In thelr natural form, they have green skin, red or green eyes, pointed ears and furrowed chins. They sprang From the planit Skrullos in the Andromeda Galaxy. The original Skrulls could not shape-shift, but the Celestials experimented on them ta farm Eternal Skrulls and Deviant Skrulls, much like they did with humans on Earth, The Deviant Skrulls became the dominant form af the species, driving the originals to extinetion ",
+    "examples": "Hulkling (half Skrull and half Kree), Lyja, Super-Skrull (Ki'rt)",
+    "suggestedOccupation": "Outsider",
+    "tags": [
+      {
+        "_id": "018ec37f-5d6a-756e-bfc3-efb8b07594f6",
+        "name": "Alien Heritage",
+        "type": "tag",
+        "system": {
+          "description": "The character or at least ane of their ancestors- is not from Earth. Pick an allen race that they belong to, If they were not raised on Earth, they should consider taking the Outsider occupation."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!018ec37f-5d6a-756e-bfc3-efb8b07594f6"
+      },
+      {
+        "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
+        "name": "Extreme Appearance",
+        "type": "tag",
+        "system": {
+          "description": "The character looks very different than the average person As a mutant, the character is automatically a citizen of the (wherever they happen to be) and cannot easily hide their island-nation of Krakoa and can travel to and from there identity, When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme Appearance is common.",
+          "rarity": "In their natural form"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1"
+      }
+    ],
+    "traits": [],
+    "powers": [
+      {
+        "_id": "018ec3bb-90b5-78a8-b9f3-14ddf0804a50",
+        "name": "Disguise",
+        "type": "power",
+        "system": {
+          "description": "The character appears to be someone else,",
+          "powerSet": "Basic",
+          "prerequisites": "",
+          "action": "Standard",
+          "trigger": "",
+          "duration": "Permanent",
+          "range": "",
+          "cost": "",
+          "effect": "The character instantly alters their appearance so that they appear to be someone else. The target number for anyone trying to see through the disguise is the charncter's Ego defense. If the character is impersonating someone known to the other person, Uhal person hias an edge."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!018ec3bb-90b5-78a8-b9f3-14ddf0804a50"
+      },
+      {
+        "_id": "018ec3bf-1d7c-726c-ad05-939de51fc920",
+        "name": "Extended Reach 1",
+        "type": "power",
+        "system": {
+          "description": "The character's reach grows.",
+          "powerSet": "Plasticity",
+          "prerequisites": "",
+          "action": "",
+          "trigger": "",
+          "duration": "Permanent",
+          "range": "",
+          "cost": "",
+          "effect": "The character's reach quadruples"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!018ec3bf-1d7c-726c-ad05-939de51fc920"
+      },
+      {
+        "_id": "018ec3c3-7940-7d9f-b111-ba59315a2292",
+        "name": "Flexible Bones 1",
+        "type": "power",
+        "system": {
+          "description": "The character’s skeleton 15rubbery.",
+          "powerSet": "Plasticity",
+          "prerequisites": "",
+          "action": "",
+          "trigger": "",
+          "duration": "Permanent",
+          "range": "",
+          "cost": "",
+          "effect": "The character gains Health Damage Reduction 1. They also have an edde on Agility checks for contortion and escape."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!018ec3c3-7940-7d9f-b111-ba59315a2292"
+      },
+      {
+        "_id": "018ec3c5-65a0-732e-ae14-57121bf2593f",
+        "name": "Shape-Shift",
+        "type": "power",
+        "system": {
+          "description": "The character can change forms.",
+          "powerSet": "Basic",
+          "prerequisites": "Disguise, Rank 3",
+          "action": "standard or reaction",
+          "trigger": "The character is attacked or otherwise in danger.",
+          "duration": "Permanent",
+          "range": "",
+          "cost": "",
+          "effect": "The character can change into another form no mare than one size bigger or smaller than their regular form. When in any form the character has access to the natural abilities of that form, For instance, if they transformed into a bird, they could fly. When transformed into a fish, they can breathe water."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!018ec3c5-65a0-732e-ae14-57121bf2593f"
+      },
+      {
+        "_id": "018ec3c8-e4ad-782c-b996-6d3b70f915af",
+        "name": "Slip Free",
+        "type": "power",
+        "system": {
+          "description": "The character is impossible to restrain.",
+          "powerSet": "Plasticity",
+          "prerequisites": "",
+          "action": "reaction",
+          "trigger": "The character is grabbed or pinned.",
+          "duration": "Instant",
+          "range": "",
+          "cost": "",
+          "effect": "The character is not grabbed or pinned."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!018ec3c8-e4ad-782c-b996-6d3b70f915af"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!018ec3b7-925e-718e-ac0a-7bd98217b234"
+}

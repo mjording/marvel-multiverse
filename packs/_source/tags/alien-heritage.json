@@ -1,0 +1,13 @@
+{
+  "_id": "018ec37f-5d6a-756e-bfc3-efb8b07594f6",
+  "name": "Alien Heritage",
+  "type": "tag",
+  "system": {
+    "description": "The eharacter—or at least ane of their ancestors—is not from Earth. PMek an allen race that they belong 1o, If they were nol raised on Earth, they should consider taking the Outsider occupation.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!018ec37f-5d6a-756e-bfc3-efb8b07594f6"
+}

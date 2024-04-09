@@ -1,0 +1,13 @@
+{
+  "_id": "2739bcfe-03a8-4a13-9f3b-29f55b30ac66",
+  "name": "Enemy",
+  "type": "tag",
+  "system": {
+    "description": "There's someone out there who has sworn to defeat the character. The enemy is of at least the same rank as the character and is obsessed with bringing them down. This tap can be taken muliiple times, but it shovld be reserved for truly obsessed foes.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!2739bcfe-03a8-4a13-9f3b-29f55b30ac66"
+}

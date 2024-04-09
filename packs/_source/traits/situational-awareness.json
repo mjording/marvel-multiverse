@@ -1,0 +1,11 @@
+{
+  "_id": "808b33ee-3105-49bd-8027-d846fc47f730",
+  "name": "Situational Awareness",
+  "type": "trait",
+  "system": {
+    "description": "The character is trained to always keep an eye out for trouble. They have an edge an initiative checks"
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!808b33ee-3105-49bd-8027-d846fc47f730"
+}

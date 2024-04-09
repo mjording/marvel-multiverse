@@ -1,0 +1,39 @@
+{
+  "_id": "018ec375-0569-79e4-a1fb-b792bb4c6218",
+  "name": "Alien",
+  "type": "origin",
+  "system": {
+    "description": "The character isnot human and probably not [rom Enrth or ol least Earth-616. The Morvel Multiverse features all sorts of different alien rnces. The most common of these —Kree, Skrullsand so on—have their own entries. [f the character doesn't fit one of those, then this origin applies",
+    "examples": "Devil Dinosaur, Gamara, Groot, Rocket Raccoon.",
+    "suggestedOccupation": "Outsider",
+    "tags": [
+      {
+        "_id": "018ec37f-5d6a-756e-bfc3-efb8b07594f6",
+        "name": "Alien Heritage",
+        "type": "tag",
+        "system": {
+          "description": "The character or at least ane of their ancestors- is not from Earth. Pick an allen race that they belong to, If they were not raised on Earth, they should consider taking the Outsider occupation."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!018ec37f-5d6a-756e-bfc3-efb8b07594f6"
+      },
+      {
+        "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
+        "name": "Extreme Appearance",
+        "type": "tag",
+        "system": {
+          "description": "The character looks very different than the average person As a mutant, the character is automatically a citizen of the (wherever they happen to be) and cannot easily hide their island-nation of Krakoa and can travel to and from there identity, When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme Appearance is common.",
+          "rarity": "common"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1"
+      }
+    ],
+    "traits": []
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!018ec375-0569-79e4-a1fb-b792bb4c6218"
+}

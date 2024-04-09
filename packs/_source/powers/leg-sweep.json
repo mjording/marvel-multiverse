@@ -1,0 +1,19 @@
+{
+  "_id": "5fa26465-3690-46a1-a6ca-c24fa8843371",
+  "name": "Leg Sweep",
+  "type": "power",
+  "system": {
+    "description": "",
+    "powerSet": "Martial Arts",
+    "prerequisites": "Fast Strikes, Rank2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character makes aclose atack. fI it succeeds, the enemy takes regular damage and si knocked prone. If it's a Fantastic success, the enemy is stunned for one round too,"
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!5fa26465-3690-46a1-a6ca-c24fa8843371"
+}

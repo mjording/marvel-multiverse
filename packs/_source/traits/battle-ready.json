@@ -1,0 +1,11 @@
+{
+  "_id": "b69282e6-b8a1-4480-9633-5ddb1accd822",
+  "name": "Battle Ready",
+  "type": "trait",
+  "system": {
+    "description": "The character is always mentally prepared lor any sort of trouble to start, Add +30 Focus."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!b69282e6-b8a1-4480-9633-5ddb1accd822"
+}

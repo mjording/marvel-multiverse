@@ -25,7 +25,7 @@ export default class MarvelMultiverseActorBase extends foundry.abstract.TypeData
     schema.gender = new fields.StringField({ required: true, blank: true }); // equivalent to passing ({initial: ""}) for StringFields
     schema.eyes = new fields.StringField({ required: true, blank: true }); // equivalent to passing ({initial: ""}) for StringFields
     schema.hair = new fields.StringField({ required: true, blank: true }); // equivalent to passing ({initial: ""}) for StringFields
-    schema.size = new fields.StringField({ required: true, initial: "Average" }); // equivalent to passing ({initial: ""}) for StringFields
+    schema.size = new fields.StringField({ required: true, initial: "Average" }); 
     schema.distinguishingFeatures = new fields.StringField({ required: true, blank: true }); // equivalent to passing ({initial: ""}) for StringFields
     schema.teams = new fields.StringField({ required: true, blank: true }); // equivalent to passing ({initial: ""}) for StringFields
     schema.history = new fields.StringField({ required: true, blank: true }); // equivalent to passing ({initial: ""}) for StringFields

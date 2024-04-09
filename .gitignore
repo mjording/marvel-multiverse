@@ -1,7 +1,7 @@
 # Build Artifacts
-marvel-multiverse-role-playing-system.css
-marvel-multiverse-role-playing-system-compiled*
-marvel-multiverse-role-playing-system.lock
+marvel-multiverse.css
+marvel-multiverse-compiled*
+marvel-multiverse.lock
 packs/*
 !packs/_source/
 

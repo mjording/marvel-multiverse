@@ -27,7 +27,7 @@ Hooks.once('init', function () {
   // Add custom constants for configuration.
   CONFIG.MARVEL_MULTIVERSE = MARVEL_MULTIVERSE;
 
-  console.log(`Marvel Multiverse RPG 1e | Initializing the Marvel Multiverse Role Playing Game System - Version ${marvelmultiverseroleplayingsystem.version}\n${MARVEL_MULTIVERSE.ASCII}`);
+  console.log(`Marvel Multiverse RPG 1e | Initializing the Marvel Multiverse Role Playing Game System - Version ${game.MarvelMultiverse.version}\n${MARVEL_MULTIVERSE.ASCII}`);
 
   /**
    * Set an initiative formula for the system

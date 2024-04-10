@@ -8,16 +8,21 @@
       "discord": "mjording"
     }
   ],
-  "url": "Replace this with a link to your public repository",
+  "url": "https://github.com/mjording/marvel-multiverse/",
   "license": "LICENSE.txt",
   "readme": "README.md",
   "bugs": "Replace this with a link to file issues or tickets",
   "changelog": "CHANGELOG.md",
   "media": [
     {
+      "type": "cover",
+      "loop": false,
+      "flags": {}
+    },
+    {
       "type": "setup",
-      "url": "systems/marvel-multiverse/assets/anvil-impact.png",
-      "thumbnail": "systems/marvel-multiverse/assets/anvil-impact.png"
+      "url": "systems/marvel-multiverse/ui/official/x-men-97-title.png",
+      "thumbnail": "systems/marvel-multiverse/ui/official/x-men-97-thumbnail.jpg"
     }
   ],
   "version": "2.0.0",
@@ -86,9 +91,9 @@
     }
   ],
   "socket": false,
-  "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
+  "manifest": "https://raw.githubusercontent.com/mjording/marvel-multiverse/master/system.json",
   "download": "This must link to a .zip file of the current version",
-  "background": "systems/marvel-multiverse/assets/anvil-impact.png",
+  "background": "systems/marvel-multiverse/assets/x-men-97-title.png",
   "gridDistance": 5,
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",

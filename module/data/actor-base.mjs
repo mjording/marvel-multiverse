@@ -9,10 +9,13 @@ export default class MarvelMultiverseActorBase extends foundry.abstract.TypeData
       value: new fields.NumberField({ ...requiredInteger, initial: 10, min: 0 }),
       max: new fields.NumberField({ ...requiredInteger, initial: 10 })
     });
+    
+    schema.healthDamageReduction = new fields.NumberField({ ...requiredInteger, initial: 0})
     schema.focus = new fields.SchemaField({
       value: new fields.NumberField({ ...requiredInteger, initial: 5, min: 0 }),
       max: new fields.NumberField({ ...requiredInteger, initial: 5 })
     });
+    schema.focusDamageReduction = new fields.NumberField({ ...requiredInteger, initial: 0})
     schema.karma = new fields.SchemaField({
       value: new fields.NumberField({ ...requiredInteger, initial: 5, min: 0 }),
       max: new fields.NumberField({ ...requiredInteger, initial: 5 })

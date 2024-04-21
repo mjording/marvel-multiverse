@@ -24,7 +24,11 @@
       "Temporary": "Temporary Effects",
       "Passive": "Passive Effects",
       "Inactive": "Inactive Effects"
-    }
+    },
+    "Formula": "Formula",
+    "AbilityModifier": "Ability Modifier",
+    "RollSituationalBonus": "Situational Bonus?",
+    "RollMode": "Roll Mode"
   },
 
   "TYPES": {

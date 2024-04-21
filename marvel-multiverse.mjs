@@ -1,6 +1,7 @@
 // Import document classes.
 import { MarvelMultiverseActor } from './module/documents/actor.mjs';
 import { MarvelMultiverseItem } from './module/documents/item.mjs';
+import { ChatMessageMarvel } from './module/documents/chat-message.mjs';
 // Import sheet classes.
 import { MarvelMultiverseActorSheet } from './module/sheets/actor-sheet.mjs';
 import { MarvelMultiverseItemSheet } from './module/sheets/item-sheet.mjs';
@@ -22,6 +23,12 @@ Hooks.once('init', function () {
     MarvelMultiverseActor,
     MarvelMultiverseItem,
     rollItemMacro,
+    config: MARVEL_MULTIVERSE,
+    dice,
+    models,
+    MarvelMultiverseActorSheet,
+    MarvelMultiverseItemSheet,
+    ChatMessageMarvel
   };
 
   // Add custom constants for configuration.
@@ -34,7 +41,7 @@ Hooks.once('init', function () {
    * @type {String}
    */
   CONFIG.Combat.initiative = {
-    formula: '1d20 + @abilities.vig.mod',
+    formula: '{1d6,1dm,1d6} + @abilities.vig.mod',
     decimals: 2,
   };
 
@@ -48,13 +55,13 @@ Hooks.once('init', function () {
     character: models.MarvelMultiverseCharacter,
     npc: models.MarvelMultiverseNPC
   }
+  CONFIG.ChatMessage.documentClass = ChatMessageMarvel;
   CONFIG.Item.documentClass = MarvelMultiverseItem;
   CONFIG.Item.dataModels = {
     item: models.MarvelMultiverseItem,
     trait: models.MarvelMultiverseTrait,
     origin: models.MarvelMultiverseOrigin,
     occupation: models.MarvelMultiverseOccupation,
-    tag: models.MarvelMultiverseTag,
     tag: models.MarvelMultiverseTag,
     power: models.MarvelMultiversePower
   }
@@ -72,7 +79,7 @@ Hooks.once('init', function () {
   CONFIG.Dice.terms[dice.SixSidedDie.DENOMINATION] = dice.SixSidedDie;
   Roll.TOOLTIP_TEMPLATE = "systems/marvel-multiverse/templates/chat/roll-breakdown.hbs";
   CONFIG.Dice.MarvelMultiverseRoll = dice.MarvelMultiverseRoll;
-
+  CONFIG.Dice.DamageRoll = dice.DamageRoll;
   // Add fonts
   _configureFonts();
 
@@ -150,6 +157,23 @@ Hooks.once('ready', function () {
   // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to
   Hooks.on('hotbarDrop', (bar, data, slot) => createItemMacro(data, slot));
 });
+
+Hooks.on("getChatLogEntryContext", documents.ChatMessageMarvel.addChatMessageContextOptions);
+
+Hooks.on("renderChatLog", (app, html, data) => {
+  documents.MarvelMultiverseItem.chatListeners(html);
+  documents.ChatMessageMarvel.onRenderChatLog(html);
+});
+/* -------------------------------------------- */
+/*  RenderChatMessage Hook                      */
+/* -------------------------------------------- */
+
+Hooks.on('renderChatMessage', (app, html, data) => {
+  setTimeout(() => {
+    $(`li.chat-message[data-message-id="${data.message.id}] div.dice-tooltip`).classList.toggle("noted");
+  }, 100)
+});
+  
 
 /* -------------------------------------------- */
 /*  Hotbar Macros                               */

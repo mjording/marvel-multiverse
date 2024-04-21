@@ -25,6 +25,11 @@ export class MarvelDie extends DiceTerm {
         "dl": Die.prototype.drop
     }
 
+    
+    /* -------------------------------------------- */
+    /** @override */
+
+
     /* -------------------------------------------- */
     /** @override */
     get formula() {
@@ -45,11 +50,15 @@ export class MarvelDie extends DiceTerm {
 
         // Apply modifiers
         this._evaluateModifiers();
-        this.results.forEach((result) => {
-            if(result.result === 1){
-                result.count = 6
+        for (let r of this.results) {
+            let fantastic = DiceTerm.compareResult(r.result, "=", 1);
+            if(fantastic){
+                r.count = r.total = 6;
+                r.keep = true;
+                r.active = r.success = true;
+                r.failure = r.discarded = false;
             }
-        })
+        };
         this._evaluated = true;
         this._isMarvel = true;
         return this;

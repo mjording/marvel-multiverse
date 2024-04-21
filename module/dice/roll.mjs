@@ -1,6 +1,15 @@
 /**
  * Extend the base Roll document by defining a pool for evaluating rolls with the Marvel DiceTerms.
  * @extends {Roll}
+ * A type of Roll specific to a mmrpg check, challenge, or attack roll in the mmrpg system.
+ * @param {string} formula                       The string formula to parse
+ * @param {object} data                          The data object against which to parse attributes within the formula
+ * @param {object} [options={}]                  Extra optional arguments which describe or modify the MarvelMultiverseRoll
+ * @param {number} [options.edgeMode]       What edge modifier to apply to the roll (none, edge,
+ *                                                  trouble)
+ * @param {number} [options.fantastic=1]            The value of dM result which represents a fantastic success
+ * @param {(number)} [options.targetValue]       Assign a target value against which the result of this roll should be
+ * 
  */
 export class MarvelMultiverseRoll extends Roll {
     constructor(formula, data, options) {
@@ -8,11 +17,10 @@ export class MarvelMultiverseRoll extends Roll {
         //additional hook to change options and configuration
         this.MARVEL_MULTIVERSE = { };
         this.terms = this.parseShortHand(this.terms);
+        this.options.fantastic = this.options.fantastic ?? 1;
         if ( !this.options.configured ) this.configureModifiers();
         this.hasMARVEL_MULTIVERSE = false;
     }
-
-
 
     /* -------------------------------------------- */
 
@@ -76,11 +84,11 @@ export class MarvelMultiverseRoll extends Roll {
     /* -------------------------------------------- */
 
     /**
-     * Does this roll start with a d6 or dm?
+     * Does this roll start with a d6 or dM?
      * @type {boolean}
      */
     get validD616Roll() {
-        return (this.terms[0] instanceof Die) && (this.terms[0].faces === 6);
+        return (this.terms[0] instanceof CONFIG.Dice.terms.m) && (this.terms[0].faces === 6);
     }
 
     /* -------------------------------------------- */
@@ -111,8 +119,7 @@ export class MarvelMultiverseRoll extends Roll {
     get isFantastic() {
         if ( !this.validD616Roll || !this._evaluated ) return undefined;
         if ( !Number.isNumeric(this.options.fantastic) ) return false;
-        if ( this.options.fantastic ) MARVEL_MULTIVERSE.options.fantastic = this.options.fantastic;
-        return this.dice[0].total >= this.options.fantastic;
+        return this.dice[0].total === this.options.fantastic;
     }
 
 
@@ -140,8 +147,11 @@ export class MarvelMultiverseRoll extends Roll {
             d616.options.trouble = true;
         }
         else d616.number = 1;
+
+        this.options.fantastic = 1;
+
         // Mark configuration as complete
-          this.options.configured = true;
+        this.options.configured = true;
     }
 
 
@@ -154,61 +164,13 @@ export class MarvelMultiverseRoll extends Roll {
 
         // Add appropriate edge mode message flavor and mmrpg roll flags
         messageData.flavor = messageData.flavor || this.options.flavor;
+        messageData.fantastic = messageData.fantastic || this.options.fantastic;
         if ( this.hasEdge ) messageData.flavor += ` (${game.i18n.localize("MARVEL_MULTIVERSE.edge")})`;
         else if ( this.hasTrouble ) messageData.flavor += ` (${game.i18n.localize("MARVEL_MULTIVERSE.trouble")})`;
-
+6
         // Record the preferred rollMode
         options.rollMode = options.rollMode ?? this.options.rollMode;
         return super.toMessage(messageData, options);
-    }
-
-    
-    /* -------------------------------------------- */
-    /** @override */
-    evaluate({ minimize = false, maximize = false } = {}) {
-        if (this._evaluated) throw new Error("This Roll object has already been rolled.");
-
-        // Step 0 - is this rolling nothing?
-        if(this.terms.length == 0) {
-            this._evaluated = true
-            this._total = 0
-            return this
-        }
-        // Step 1 - evaluate any inner Rolls and recompile the formula
-        let hasInner = false;
-        this.terms = this.terms.map((t) => {
-            if (t instanceof MarvelMultiverseRoll) {
-                hasInner = true;
-                t.evaluate({ minimize, maximize });
-                if(t.result === 1){
-                    t._total = 6
-                }
-                this._dice = this._dice.concat(t.dice);
-                return `${t.total}`;
-            }
-            return t;
-        });
-
-        // Step 2 - if inner rolls occurred, re-compile the formula and re-identify terms
-        if (hasInner) {
-            const formula = this.constructor.cleanFormula(this.terms);
-            this.terms = this._identifyTerms(formula);
-        }
-
-        // Step 3 - evaluate any remaining terms and return any non-MMRPG dice to the total.
-        this.results = this.terms.map((term) => {
-            if (!game.system.diceterms.includes(term.constructor)) {
-                if (term.evaluate) {
-                    if (!(term instanceof OperatorTerm)) this.hasStandard = true;
-                    return term.evaluate({ minimize, maximize }).total;
-                } else return term;
-            } else {
-                if (term.evaluate) term.evaluate({ minimize, maximize });
-                this.hasMARVEL_MULTIVERSE = true;
-                return 0;
-            }
-        });
-        return this;
     }
 
     //If the main parser hands back a StringTerm attempt to turn it into a die.
@@ -333,7 +295,7 @@ export class MarvelMultiverseRoll extends Roll {
         }
 
         // Apply advantage or disadvantage
-        this.options.advantageMode = advantageMode;
+        this.options.edgeMode = edgeMode;
         this.options.rollMode = form.rollMode.value;
         this.configureModifiers();
         return this;

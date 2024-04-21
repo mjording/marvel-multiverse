@@ -7,6 +7,7 @@ export default class MarvelMultiverseTag extends MarvelMultiverseItemBase {
     
         schema.restriction = new fields.StringField({ required: true, blank: true });
         schema.rarity = new fields.StringField({ required: true, blank: true });
+
       
         return schema;
       }

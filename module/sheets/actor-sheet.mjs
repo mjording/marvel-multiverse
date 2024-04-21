@@ -140,8 +140,19 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
        else if (i.type === 'tag') {
         tags.push(i);
       }
-      // Append to tags.
+      // Append to origin tags traits and powers as well as origins.
       else if (i.type === 'origin') {
+        for(let p of i.system.powers){
+          if (p.system.powerSet != undefined) {
+            p[p.system.powerSet].push(p);
+          }
+        }
+        for(let t of i.system.traits){
+          traits.push(t);
+        }
+        for(let tag of i.system.tags){
+          tags.push(tag);
+        }
         origins.push(i);
       }
       // Append to powers.

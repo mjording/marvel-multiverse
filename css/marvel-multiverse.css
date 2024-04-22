@@ -177,6 +177,13 @@
   min-width: fit-content;
 }
 
+.attributes-speed ol {
+  list-style: none;
+}
+.attributes-speed ol li {
+  display: flex;
+}
+
 .grid,
 .grid-2col {
   display: grid;

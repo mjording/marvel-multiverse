@@ -206,3 +206,9 @@
   min-width: fit-content;
 }
 
+.attributes-speed ol {
+  list-style: none;
+  li {
+    display: flex;
+  }
+}

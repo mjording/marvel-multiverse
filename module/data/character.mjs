@@ -23,6 +23,14 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
       return obj;
     }, {}));
 
+    
+    schema.occupations = new fields.ArrayField(new fields.ObjectField());
+    schema.origins = new fields.ArrayField(new fields.ObjectField());
+    schema.tags = new fields.ArrayField(new fields.ObjectField());
+    schema.traits = new fields.ArrayField(new fields.ObjectField());
+    schema.powers = new fields.ArrayField(new fields.ObjectField());
+
+
     return schema;
   }
 

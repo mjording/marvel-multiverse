@@ -75,6 +75,15 @@
       "type": "Item",
       "private": false,
       "flags": {}
+    },
+    {
+      "name": "occupations",
+      "label": "Occupations",
+      "system": "marvel-multiverse",
+      "path": "packs/occupations",
+      "type": "Item",
+      "private": false,
+      "flags": {}
     }
   ],
   "packFolders": [
@@ -86,7 +95,8 @@
         "tags",
         "traits",
         "powers",
-        "origins"
+        "origins",
+        "occupations"
       ]
     }
   ],

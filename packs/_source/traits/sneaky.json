@@ -3,6 +3,7 @@
   "name": "Sneaky",
   "type": "trait",
   "system": {
+    "restriction": "",
     "description": "The character has an edge on Agility checks when snenking around. Enemies have trouble on Vigilance checks to detect the character when the character is invisible or hiding."
   },
   "flags": {},

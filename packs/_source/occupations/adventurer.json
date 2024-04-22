@@ -1,0 +1,53 @@
+{
+  "_id": "c7917324-1bfb-4e29-a708-e64a34637b42",
+  "name": "Adventurer",
+  "type": "occupation",
+  "system": {
+    "description": "The character focuses on having adventures. Perhaps they've independently wealthy and don't need another occupation, or maybe they hire out their services.",
+    "examples": "Iron Fist (Danny Rand), Luke Cage, Hawkeye (Kate Bishop)",
+    "tags": [
+      {
+        "_id": "16b9b183-3707-4eee-b122-eb87611706dc",
+        "name": "Black Market Access",
+        "type": "tag",
+        "system": {
+          "description": "The character knows how and where they can buy and sell hard-to-find and potentially illegal things",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!16b9b183-3707-4eee-b122-eb87611706dc"
+      }
+    ],
+    "traits": [
+      {
+        "_id": "accf570f-b1fa-47e5-901c-ff7f92a4c8e2",
+        "name": "Fearless",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character is extremely brave. They have an edge on any action checks required to denl with fear."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!accf570f-b1fa-47e5-901c-ff7f92a4c8e2"
+      },
+      {
+        "_id": "cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7",
+        "name": "Connections",
+        "type": "trait",
+        "system": {
+          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a palice officer, a politician, a mobster and soon. By makingan Egocheck, the character can call an their contact wo provide help in the form of glues, informntion ar resources, The Hnrrator determines the TH of the Ego check based on the favor requested This trait can be selected multiple thmes, using many different types, These include Celebrities, Community, Criminal, Espionape, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on",
+          "restriction": "Super Heroes/Villans"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!c7917324-1bfb-4e29-a708-e64a34637b42"
+}

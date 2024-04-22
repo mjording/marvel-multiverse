@@ -1,0 +1,12 @@
+{
+  "_id": "2258cbcd-0ef1-4e7c-b8ee-ad65ccc19dc6",
+  "name": "Leverage",
+  "type": "trait",
+  "system": {
+    "restriction": "",
+    "description": "The character is good at figuring out what peopke want and using it against them. They have an edge on Logic checks to investigate people and on Ego checks to pursuade people they've investigated."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!2258cbcd-0ef1-4e7c-b8ee-ad65ccc19dc6"
+}

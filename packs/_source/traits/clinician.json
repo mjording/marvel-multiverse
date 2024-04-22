@@ -3,6 +3,7 @@
   "name": "Clinician",
   "type": "trait",
   "system": {
+    "restriction": "",
     "description": "The character has an edge on Logic checks to determine what is medically wrong with someone they examine."
   },
   "flags": {},

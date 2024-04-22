@@ -14,15 +14,24 @@
   .profile-img {
     flex: 0 0 100px;
     height: 100px;
-    margin-right: 10px;
+    margin-right: 10px
+  }
+  
+  .character-portrait {
+    border: 1px solid #000;
+    border-radius: 5px;
+    height: 17rem;
+    width: 13rem;
+    margin: 0 5px;
   }
 
   .header-fields {
     flex: 1;
   }
-
+  
   h1.charname {
-    height: 50px;
+    width: 14rem;
+    height: 2.5rem;
     padding: 0px;
     margin: 5px 0;
     border-bottom: 0;

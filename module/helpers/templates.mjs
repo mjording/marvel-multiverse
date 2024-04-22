@@ -11,6 +11,7 @@ export const preloadHandlebarsTemplates = async function () {
     'systems/marvel-multiverse/templates/actor/parts/actor-items.hbs',,
     'systems/marvel-multiverse/templates/actor/parts/actor-details.hbs',
     'systems/marvel-multiverse/templates/actor/parts/actor-origins.hbs',
+    'systems/marvel-multiverse/templates/actor/parts/actor-occupations.hbs',
     'systems/marvel-multiverse/templates/actor/parts/actor-powers.hbs',
     'systems/marvel-multiverse/templates/actor/parts/actor-effects.hbs',
     // Item partials

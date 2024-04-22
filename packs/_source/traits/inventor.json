@@ -3,6 +3,7 @@
   "name": "Inventor",
   "type": "trait",
   "system": {
+    "restriction": "",
     "description": "The character is good at coming up with solutions on the fly. They have an edge on Logic checks when creating or repairing things."
   },
   "flags": {},

@@ -12,8 +12,8 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ['marvel-multiverse', 'sheet', 'actor'],
-      width: 600,
-      height: 600,
+      width: 700,
+      height: 800,
       tabs: [
         {
           navSelector: '.sheet-tabs',
@@ -96,6 +96,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
     const gear = [];
     const traits = [];
     const origins = [];
+    const occupations = [];
     const tags = [];
     const powers = {
       "Basic": [],
@@ -128,49 +129,39 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
     // Iterate through items, allocating to containers
     for (let i of context.items) {
       i.img = i.img || Item.DEFAULT_ICON;
-      // Append to gear.
-      if (i.type === 'item') {
-        gear.push(i);
+      
+      // Append to origin tags traits and powers as well as origins.
+      if (i.type === 'origin') {
+        origins.push(i);
+      }
+       // Append to origin tags traits and powers as well as origins.
+       if (i.type === 'occupation') {
+        origins.push(i);
       }
       // Append to traits.
       else if (i.type === 'trait') {
         traits.push(i);
       }
        // Append to tags.
-       else if (i.type === 'tag') {
+      else if (i.type === 'tag') {
         tags.push(i);
       }
-      // Append to origin tags traits and powers as well as origins.
-      else if (i.type === 'origin') {
-        for(let p of i.system.powers){
-          if (p.system.powerSet != undefined) {
-            p[p.system.powerSet].push(p);
-          }
-        }
-        for(let t of i.system.traits){
-          traits.push(t);
-        }
-        for(let tag of i.system.tags){
-          tags.push(tag);
-        }
-        origins.push(i);
-      }
-      // Append to powers.
+      // Append to tags.
       else if (i.type === 'power') {
-        if (i.system.powerSet != undefined) {
-          powers[i.system.powerSet].push(i);
-        }
+        powers[i.system.powerSet].push(i);
       }
+      else if (i.type === 'item') {
+        gear.push(i);
+      }
+      // Assign and return
+      context.gear = gear;
+      context.traits = traits;
+      context.tags = tags;
+      context.powers = powers;
+      context.origins = origins;
+      context.occupations = occupations;
     }
-
-    // Assign and return
-    context.gear = gear;
-    context.traits = traits;
-    context.tags = tags;
-    context.powers = powers;
-    context.origins = origins;
   }
-
   /* -------------------------------------------- */
 
   /** @override */
@@ -250,6 +241,42 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
     return await Item.create(itemData, { parent: this.actor });
   }
 
+
+  
+  /** Fired whenever an embedded document is created.
+   */
+  _onDropItemCreate (itemData) {
+    if ( itemData.type === "origin" || itemData.type === "occupation" ) {
+      itemData.data.tags.forEach(async (tag) => {
+        let newItemData = {
+          name: tag.name,
+          type: "tag",
+          data: tag.system,
+        };
+        await Item.create(newItemData, {parent: this.actor});
+      });
+      itemData.data.traits.forEach(async (trait) => {
+        let newItemData = {
+          name: trait.name,
+          type: "trait",
+          data: trait.system,
+        };
+        await Item.create(newItemData, {parent: this.actor});
+      });
+      itemData.data.powers.forEach(async (power) => {
+        let newItemData = {
+          name: power.name,
+          type: "power",
+          data: power.system,
+        };
+        await Item.create(newItemData, {parent: this.actor});
+      });
+      return super._onDropItemCreate(itemData);
+    }
+
+  }
+
+
   /**
    * Handle clickable rolls.
    * @param {Event} event   The originating click event
@@ -281,4 +308,6 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       return roll;
     }
   }
+
+
 }

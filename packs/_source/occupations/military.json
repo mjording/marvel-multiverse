@@ -1,0 +1,48 @@
+{
+  "_id": "acaee486-4090-4391-9261-7ee44964bd70",
+  "name": "Military",
+  "type": "occupation",
+  "system": {
+    "description": "The character serves (or at least once served) in a military organization  and relies on that training. They can sometimes call on their fellow soldiers for help. They may have worked for a nation or possibly as part of a mercenary outfit. If they are on active duty, their time is often not their own, and they should take the tag Obligation: Duty.",
+    "example": "Captain America (Steve Rogers), Captain Marvel (Carol Danvers), War Machine, Wolverine (Logan)",
+    "traits": [
+      {
+        "_id": "b69282e6-b8a1-4480-9633-5ddb1accd822",
+        "name": "Battle Ready",
+        "type": "trait",
+        "system": {
+          "description": "The character is always mentally prepared lor any sort of trouble to start, Add +30 Focus."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!b69282e6-b8a1-4480-9633-5ddb1accd822"
+      },
+      {
+        "_id": "cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7",
+        "name": "Connections",
+        "type": "trait",
+        "system": {
+          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a palice officer, a politician, a mobster and soon. By makingan Egocheck, the character can call an their contact wo provide help in the form of glues, informntion ar resources, The Hnrrator determines the TH of the Ego check based on the favor requested This trait can be selected multiple thmes, using many different types, These include Celebrities, Community, Criminal, Espionape, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on",
+          "restriction": "Military"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7"
+      },
+      {
+        "_id": "808b33ee-3105-49bd-8027-d846fc47f730",
+        "name": "Situational Awareness",
+        "type": "trait",
+        "system": {
+          "description": "The character is trained to always keep an eye out for trouble. They have an edge an initiative checks"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!808b33ee-3105-49bd-8027-d846fc47f730"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!acaee486-4090-4391-9261-7ee44964bd70"
+}

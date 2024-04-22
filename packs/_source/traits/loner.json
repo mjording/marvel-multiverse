@@ -3,6 +3,7 @@
   "name": "Loner",
   "type": "trait",
   "system": {
+    "restriction": "",
     "description": "The character does not play well with others, They cannot Lbe piven an cdge vin assiaslnnce by someone who is not & teammate "
   },
   "flags": {},

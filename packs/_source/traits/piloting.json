@@ -3,6 +3,7 @@
   "name": "Piloting",
   "type": "trait",
   "system": {
+    "restriction": "",
     "description": "The character knows how to operate vehicles of all kinds. They have an edge on Agility checks triggered when piloting or driving a vehicle during a movement action. This applles to cars, boats, aircraft and so on."
   },
   "flags": {},

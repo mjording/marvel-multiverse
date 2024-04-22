@@ -1,0 +1,52 @@
+{
+  "_id": "397fb142-2a2d-4074-83c4-1a7db71b12a9",
+  "name": "Tycoon",
+  "type": "occupation",
+  "system": {
+    "description": "The character is wildly wealthy and well-known. They want for nothing, and they make a splash wherever they go. They get invited to the best parties and let into all the VIP sections",
+    "examples": "Iron Man (Tony Stark), Iron Monger (Obadiah Stane), Mandarin, Sunspot, Wasp (Janet Van Dyne)",
+    "tags": [
+      {
+        "_id": "cf0de069-0260-45a0-be6d-606b2905a3db",
+        "name": "Rich",
+        "type": "tag",
+        "system": {
+          "description": "The character has access to plenty of money. If they want something normally and legally available to people, they can simply buy it.",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!cf0de069-0260-45a0-be6d-606b2905a3db"
+      }
+    ],
+    "traits": [
+      {
+        "_id": "cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7",
+        "name": "Connections",
+        "type": "trait",
+        "system": {
+          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a palice officer, a politician, a mobster and soon. By makingan Egocheck, the character can call an their contact wo provide help in the form of glues, informntion ar resources, The Hnrrator determines the TH of the Ego check based on the favor requested This trait can be selected multiple thmes, using many different types, These include Celebrities, Community, Criminal, Espionape, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on",
+          "restriction": "Celebrities"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7"
+      },
+      {
+        "_id": "ddd9cf24-d311-4844-a7e8-537d4952798d",
+        "name": "Famous",
+        "type": "trait",
+        "system": {
+          "description": "The character is widely known-at least among a certain group of people or a population. They may be well liked or they may be hated, but either way, they are famous. They have an edge when making an Ego check to persuade someone who thinks favorably of them. They have trouble when making an Ego check to persuade someone who dislikes them. If the character has a secret identity, this trait works for only one of their identities. However, it can be taken multiple times for multiple identities."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!ddd9cf24-d311-4844-a7e8-537d4952798d"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!397fb142-2a2d-4074-83c4-1a7db71b12a9"
+}

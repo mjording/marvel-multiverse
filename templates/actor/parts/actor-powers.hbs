@@ -1,49 +1,51 @@
 <ol class='items-list'>
   {{#each powers as |powers powerSet|}}
-    <li class='item flexrow items-header'>
-      <div class='item-name'>
-        {{localize 'MARVEL_MULTIVERSE.Item.Power.PowerSET' set=powerSet}}
-      </div>
-      <div class='item-controls'>
-        <a
-          class='item-control item-create'
-          title='{{localize "DOCUMENT.Create" type='Power'}}'
-          data-type='power'
-          data-power-set='{{powerSet}}'
-        >
-          <i class='fas fa-plus'></i>
-          {{localize 'MARVEL_MULTIVERSE.Item.Power.AddPWR' set=powerSet}}
-        </a>
-      </div>
-    </li>
-    {{#each powers as |item id|}}
-      <li class='item flexrow' data-item-id='{{item._id}}'>
-        <div class='item-name flexrow'>
-          <div class='item-image'>
-            <a class='rollable' data-roll-type='item'><img
-                src='{{item.img}}'
-                title='{{item.name}}'
-                width='24'
-                height='24'
-              /></a>
-          </div>
-          <h4>{{item.name}}</h4>
+    {{#if powers}}
+      <li class='item flexrow items-header'>
+        <div class='item-name'>
+          {{localize 'MARVEL_MULTIVERSE.Item.Power.PowerSET' set=powerSet}}
         </div>
         <div class='item-controls'>
           <a
-            class='item-control item-edit'
-            title='{{localize "DOCUMENT.Edit" type='power'}}'
+            class='item-control item-create'
+            title='{{localize "DOCUMENT.Create" type='Power'}}'
+            data-type='power'
+            data-power-set='{{powerSet}}'
           >
-            <i class='fas fa-edit'></i>
-          </a>
-          <a
-            class='item-control item-delete'
-            title='{{localize "DOCUMENT.Delete" type='power'}}'
-          >
-            <i class='fas fa-trash'></i>
+            <i class='fas fa-plus'></i>
+            {{localize 'MARVEL_MULTIVERSE.Item.Power.AddPWR' set=powerSet}}
           </a>
         </div>
       </li>
-    {{/each}}
+      {{#each powers as |item id|}}
+        <li class='item flexrow' data-item-id='{{item._id}}'>
+          <div class='item-name flexrow'>
+            <div class='item-image'>
+              <a class='rollable' data-roll-type='item'><img
+                  src='{{item.img}}'
+                  title='{{item.name}}'
+                  width='24'
+                  height='24'
+                /></a>
+            </div>
+            <h4>{{item.name}}</h4>
+          </div>
+          <div class='item-controls'>
+            <a
+              class='item-control item-edit'
+              title='{{localize "DOCUMENT.Edit" type='power'}}'
+            >
+              <i class='fas fa-edit'></i>
+            </a>
+            <a
+              class='item-control item-delete'
+              title='{{localize "DOCUMENT.Delete" type='power'}}'
+            >
+              <i class='fas fa-trash'></i>
+            </a>
+          </div>
+        </li>
+      {{/each}}
+      {{/if}}
   {{/each}}
 </ol>

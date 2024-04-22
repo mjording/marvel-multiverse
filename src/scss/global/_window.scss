@@ -18,13 +18,13 @@
 
 .dice-tooltip .dice-rolls .roll {
   width: 4rem;
+  line-height: inherit;
 }
 
 .dice-tooltip .dice-rolls .roll.d6 {
   background: none;
 }
 
-.dice-tooltip .dice-rolls .roll.failure,
 .dice-tooltip .dice-rolls .roll.min {
   filter: none;
 }
@@ -185,5 +185,24 @@
       }
     }
   }
+}
+
+.attributes {
+  width : 2.5rem;
+  margin: auto;
+  font-size: large; 
+}
+
+.attributes-rank {
+  font-size: xx-large;
+}
+
+.attribute-resources {
+  margin-top: 1rem;
+}
+
+.personalInfo input {
+  width: min-content;
+  min-width: fit-content;
 }
 

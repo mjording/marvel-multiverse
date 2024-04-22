@@ -57,6 +57,10 @@ export class MarvelDie extends DiceTerm {
                 r.keep = true;
                 r.active = r.success = true;
                 r.failure = r.discarded = false;
+                this.results.filter((other) => other !== r).forEach((other) => {
+                    other.discarded = other.failure = true;
+                    other.active = other.success = false
+                });
             }
         };
         this._evaluated = true;

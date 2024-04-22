@@ -1,0 +1,50 @@
+{
+  "_id": "db2b94fc-35df-4512-94a2-9825b4c5774d",
+  "name": "Educator",
+  "type": "occupation",
+  "system": {
+    "description": "The character educates others. They might be a grade school teacher, a college professor or some other kind of instructor. They do their best to bring the knowledge they have to other people.",
+    "examples": "Agatha Harkness, Blue Marvel, Professor X",
+    "traits": [
+      {
+        "_id": "cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7",
+        "name": "Connections",
+        "type": "trait",
+        "system": {
+          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a palice officer, a politician, a mobster and soon. By makingan Egocheck, the character can call an their contact wo provide help in the form of glues, informntion ar resources, The Hnrrator determines the TH of the Ego check based on the favor requested This trait can be selected multiple thmes, using many different types, These include Celebrities, Community, Criminal, Espionape, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on",
+          "restriction": "Community"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7"
+      },
+      {
+        "_id": "82b93a41-9b60-4e3b-9153-221acd46073c",
+        "name": "Font of Information",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character has an edge on Logic checks having to do with knowledge."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!82b93a41-9b60-4e3b-9153-221acd46073c"
+      },
+      {
+        "_id": "99bd01b5-807c-44d1-ba46-364f552da175",
+        "name": "Presence",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character knows how to command attention on demand. They have an edge on Ego checks that involve getting people to pay attention to them or to voluntarily do things for them."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!99bd01b5-807c-44d1-ba46-364f552da175"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!db2b94fc-35df-4512-94a2-9825b4c5774d"
+}

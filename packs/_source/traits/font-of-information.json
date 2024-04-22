@@ -3,6 +3,7 @@
   "name": "Font of Information",
   "type": "trait",
   "system": {
+    "restriction": "",
     "description": "The character has an edge on Logic checks having to do with knowledge."
   },
   "flags": {},

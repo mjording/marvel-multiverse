@@ -3,6 +3,7 @@
   "name": "Breathe Different",
   "type": "trait",
   "system": {
+    "restriction": "",
     "description": "The character cannot breathe Earth's air for long, They lose 1 point of Health for every minute they do not have some sort af assistance to allow them to breathe properly"
   },
   "flags": {},

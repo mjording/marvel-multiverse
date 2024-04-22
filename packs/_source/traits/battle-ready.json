@@ -3,6 +3,7 @@
   "name": "Battle Ready",
   "type": "trait",
   "system": {
+    "restriction": "",
     "description": "The character is always mentally prepared lor any sort of trouble to start, Add +30 Focus."
   },
   "flags": {},

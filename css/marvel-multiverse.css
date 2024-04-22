@@ -16,13 +16,13 @@
 
 .dice-tooltip .dice-rolls .roll {
   width: 4rem;
+  line-height: inherit;
 }
 
 .dice-tooltip .dice-rolls .roll.d6 {
   background: none;
 }
 
-.dice-tooltip .dice-rolls .roll.failure,
 .dice-tooltip .dice-rolls .roll.min {
   filter: none;
 }
@@ -156,6 +156,25 @@
   color: var(--color-text-light-6);
   font-weight: normal;
   margin-right: 2px;
+}
+
+.attributes {
+  width: 2.5rem;
+  margin: auto;
+  font-size: large;
+}
+
+.attributes-rank {
+  font-size: xx-large;
+}
+
+.attribute-resources {
+  margin-top: 1rem;
+}
+
+.personalInfo input {
+  width: min-content;
+  min-width: fit-content;
 }
 
 .grid,
@@ -369,11 +388,19 @@
   height: 100px;
   margin-right: 10px;
 }
+.marvel-multiverse .sheet-header .character-portrait {
+  border: 1px solid #000;
+  border-radius: 5px;
+  height: 17rem;
+  width: 13rem;
+  margin: 0 5px;
+}
 .marvel-multiverse .sheet-header .header-fields {
   flex: 1;
 }
 .marvel-multiverse .sheet-header h1.charname {
-  height: 50px;
+  width: 14rem;
+  height: 2.5rem;
   padding: 0px;
   margin: 5px 0;
   border-bottom: 0;
@@ -443,7 +470,6 @@
 }
 .marvel-multiverse .items-list .item-name h3, .marvel-multiverse .items-list .item-name h4 {
   margin: 0;
-  white-space: nowrap;
   overflow-x: hidden;
 }
 .marvel-multiverse .items-list .item-controls {

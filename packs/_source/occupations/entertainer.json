@@ -1,0 +1,47 @@
+{
+  "_id": "11d8fe22-ce8e-4178-8cb8-d9306b651c93",
+  "name": "Entertainer",
+  "type": "occupation",
+  "system": {
+    "description": "The character entertains others for a living. They could be a singer, a dancer, an actor, a musician, a writer, a filmmaker, a speaker or something similar. They aren't shy -- at least when on the job -- and they work hard to both gain an audience and keep them engaged.",
+    "examples": "Dazzler, Echo, Mysterio, Wonder Man.",
+    "traits": [
+      {
+        "_id": "ddd9cf24-d311-4844-a7e8-537d4952798d",
+        "name": "Famous",
+        "type": "trait",
+        "system": {
+          "description": "The character is widely known-at least among a certain group of people or a population. They may be well liked or they may be hated, but either way, they are famous. They have an edge when making an Ego check to persuade someone who thinks favorably of them. They have trouble when making an Ego check to persuade someone who dislikes them. If the character has a secret identity, this trait works for only one of their identities. However, it can be taken multiple times for multiple identities."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!ddd9cf24-d311-4844-a7e8-537d4952798d"
+      },
+      {
+        "_id": "141554d7-5bf2-4e58-bcb4-49316d8e4167",
+        "name": "Public Speaking",
+        "type": "trait",
+        "system": {
+          "description": "The character knows how to get the attention of a crowd, whether that's at a political rally or in front of a jury or a cinsgroom. They have an edge on Ego checks when attempting to persuade groups."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!141554d7-5bf2-4e58-bcb4-49316d8e4167"
+      },
+      {
+        "_id": "99bd01b5-807c-44d1-ba46-364f552da175",
+        "name": "Presence",
+        "type": "trait",
+        "system": {
+          "description": "The character knows how to command attention on demand. They have an edge on Ego checks that involve getting people to pay attention to them or to voluntarily do things for them."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!99bd01b5-807c-44d1-ba46-364f552da175"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!11d8fe22-ce8e-4178-8cb8-d9306b651c93"
+}

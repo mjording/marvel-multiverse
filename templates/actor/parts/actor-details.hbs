@@ -1,48 +1,52 @@
 <div class="personalInfo flexrow flex-group-center">
-  <label for="system.codename" class="resource-label rollable flexlarge align-left" data-label="CodeName">CodeName</label>
-  <input type="text" name="system.codename" value="{{system.codename}}" data-dtype="String"/>
-</div>
-<div class="personalInfo flexrow flex-group-center">
-  <label for="system.realname" class="resource-label rollable flexlarge align-left" data-label="Real Name">Real Name</label>
+  <label for="system.realname" class="resource-label rollable align-left" data-label="Real Name">Real Name</label>
   <input type="text" name="system.realname" value="{{system.realname}}" data-dtype="String"/>
 </div>
 <div class="personalInfo flexrow flex-group-center">
-  <label for="system.height" class="resource-label rollable flexlarge align-left" data-label="height">Height</label>
+  <label for="system.height" class="resource-label rollable align-left" data-label="height">Height</label>
   <input type="text" name="system.height" value="{{system.height}}" data-dtype="String"/>
 </div>
 <div class="personalInfo flexrow flex-group-center">
-  <label for="system.weight" class="resource-label rollable flexlarge align-left" data-label="weight">Weight</label>
+  <label for="system.weight" class="resource-label rollable align-left" data-label="weight">Weight</label>
   <input type="text" name="system.weight" value="{{system.weight}}" data-dtype="String"/>
 </div>
 <div class="personalInfo flexrow flex-group-center">
-  <label for="system.gender" class="resource-label rollable flexlarge align-left" data-label="gender">Gender</label>
+  <label for="system.gender" class="resource-label rollable align-left" data-label="gender">Gender</label>
   <input type="text" name="system.gender" value="{{system.gender}}" data-dtype="String"/>
 </div>
 <div class="personalInfo flexrow flex-group-center">
-  <label for="system.eyes" class="resource-label rollable flexlarge align-left" data-label="eyes">Eyes</label>
+  <label for="system.eyes" class="resource-label rollable align-left" data-label="eyes">Eyes</label>
   <input type="text" name="system.eyes" value="{{system.eyes}}" data-dtype="String"/>
 </div>
 <div class="personalInfo flexrow flex-group-center">
-  <label for="system.hair" class="resource-label rollable flexlarge align-left" data-label="hair">Hair</label>
+  <label for="system.hair" class="resource-label rollable align-left" data-label="hair">Hair</label>
   <input type="text" name="system.hair" value="{{system.hair}}" data-dtype="String"/>
 </div>
 <div class="personalInfo flexrow flex-group-center">
-  <label for="system.size" class="resource-label rollable flexlarge align-left" data-label="size">Size</label>
+  <label for="system.size" class="resource-label rollable align-left" data-label="size">Size</label>
   <input type="text" name="system.size" value="{{system.size}}" data-dtype="String"/>
 </div>
-<div class="personalInfo flexrow flex-group-center">
-  <label for="system.distinguishingFeatures" class="resource-label rollable flexlarge align-left" data-label="distinguishingFeatures">Distinguishing Features</label>
-  <input type="text" name="system.distinguishingFeatures" value="{{system.distinguishingFeatures}}" data-dtype="String"/>
+<div class="personalInfo flexcol flex-group-center">
+  <label for="system.distinguishingFeatures" class="resource-label rollable align-left" data-label="distinguishingFeatures">Distinguishing Features</label>
+  <textarea name="system.distinguishingFeatures" data-dtype="String">{{system.distinguishingFeatures}}</textarea>
 </div>
+<div class="personalInfo flexcol">
+  <label for="system.occupations" class="resource-label rollable align-left" data-label="occupations">Occupations</label>
+  {{> "systems/marvel-multiverse/templates/actor/parts/actor-occupations.hbs"}}
+</div>
+<div class="personalInfo flexcol">
+  <label for="system.origins" class="resource-label rollable align-left" data-label="origins">Origins</label>
+  {{> "systems/marvel-multiverse/templates/actor/parts/actor-origins.hbs"}}
+</div>  
 <div class="personalInfo flexrow flex-group-center">
-  <label for="system.teams" class="resource-label rollable flexlarge align-left" data-label="teams">Teams</label>
+  <label for="system.teams" class="resource-label rollable align-left" data-label="teams">Teams</label>
   <input type="text" name="system.teams" value="{{system.teams}}" data-dtype="String"/>
 </div>
-<div class="personalInfo flexrow flex-group-center">
-  <label for="system.history" class="resource-label rollable flexlarge align-left" data-label="history">History</label>
-  <input type="text" name="system.history" value="{{system.history}}" data-dtype="String"/>
+<div class="personalInfo flexcol">
+  <label for="system.history" class="resource-label rollable align-left" data-label="history">History</label>
+  <textarea name="system.history" data-dtype="String">{{system.history}}</textarea>
 </div>
-<div class="personalInfo flexrow flex-group-center">
-  <label for="system.personality" class="resource-label rollable flexlarge align-left" data-label="personality">Personality</label>
-  <input type="text" name="system.personality" value="{{system.personality}}" data-dtype="String"/>
+<div class="personalInfo flexcol">
+  <label for="system.personality" class="resource-label rollable align-left" data-label="personality">Personality</label>
+   <textarea name="system.personality" data-dtype="String">{{system.personality}}</textarea>
 </div>

@@ -1,0 +1,13 @@
+{
+  "_id": "cf0de069-0260-45a0-be6d-606b2905a3db",
+  "name": "Rich",
+  "type": "tag",
+  "system": {
+    "description": "The character has access to plenty of money. If they want something normally and legally available to people, they can simply buy it.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!cf0de069-0260-45a0-be6d-606b2905a3db"
+}

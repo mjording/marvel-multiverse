@@ -30,7 +30,7 @@
     "RollSituationalBonus": "Situational Bonus?",
     "RollMode": "Roll Mode"
   },
-
+  "InitiativeRoll": "Initiative Roll",
   "TYPES": {
     "Actor": {
       "character": "Character",

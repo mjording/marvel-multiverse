@@ -98,33 +98,8 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
     const origins = [];
     const occupations = [];
     const tags = [];
-    const powers = {
-      "Basic": [],
-      "Elemental Control": [],
-      "Illusion": [],
-      "Magic (Chaotic)": [],
-      "Magic (Cursed)": [],
-      "Magic (Sorcerous)": [],
-      "Martial Arts": [],
-      "Melee Weapons": [],
-      "Omniversal Travel (Dimensionol)": [],
-      "Omniversal Travel (Mulliversal)": [],
-      "Omniversal Travel (Time)": [],
-      "Phasing": [],
-      "Plasticity": [],
-      "Power Cantrol": [],
-      "Ranged Weapons": [],
-      "Resize": [],
-      "Shield Bearer": [],
-      "Spider-Powers": [],
-      "Super-Speed": [],
-      "Super-Strength": [],
-      "Tactics": [],
-      "Telekinesis": [],
-      "Telepathy": [],
-      "Teleportation": [],
-      "Weather Control": [],
-    };
+    const powersConfig = CONFIG.MARVEL_MULTIVERSE.POWER_SETS;
+    const powers = {};
 
     // Iterate through items, allocating to containers
     for (let i of context.items) {
@@ -136,7 +111,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       }
        // Append to origin tags traits and powers as well as origins.
        if (i.type === 'occupation') {
-        origins.push(i);
+        occupations.push(i);
       }
       // Append to traits.
       else if (i.type === 'trait') {
@@ -146,13 +121,17 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       else if (i.type === 'tag') {
         tags.push(i);
       }
-      // Append to tags.
+      // Append to  power.
       else if (i.type === 'power') {
-        powers[i.system.powerSet].push(i);
+        let powerSets = i.system.powerSet.split(',').map(item => item.trim());
+        powerSets.forEach((powerSet) => {
+          powersConfig[powerSet].add(i);
+        });
       }
       else if (i.type === 'item') {
         gear.push(i);
       }
+      
       // Assign and return
       context.gear = gear;
       context.traits = traits;
@@ -246,7 +225,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
   /** Fired whenever an embedded document is created.
    */
   _onDropItemCreate (itemData) {
-    if ( itemData.type === "origin" || itemData.type === "occupation" ) {
+    if ( itemData.type === "occupation" ) {
       itemData.data.tags.forEach(async (tag) => {
         let newItemData = {
           name: tag.name,
@@ -263,7 +242,25 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
         };
         await Item.create(newItemData, {parent: this.actor});
       });
-      itemData.data.powers.forEach(async (power) => {
+      return super._onDropItemCreate(itemData);
+    } else if ( itemData.type === "origin" ) {
+      itemData.data.tags.forEach(async (tag) => {
+        let newItemData = {
+          name: tag.name,
+          type: "tag",
+          data: tag.system,
+        };
+        await Item.create(newItemData, {parent: this.actor});
+      });
+      itemData.system.traits.forEach(async (trait) => {
+        let newItemData = {
+          name: trait.name,
+          type: "trait",
+          data: trait.system,
+        };
+        await Item.create(newItemData, {parent: this.actor});
+      });
+      itemData.system.powers.forEach(async (power) => {
         let newItemData = {
           name: power.name,
           type: "power",
@@ -272,6 +269,8 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
         await Item.create(newItemData, {parent: this.actor});
       });
       return super._onDropItemCreate(itemData);
+    } else {
+      return super._onDropItemCreate(itemData); 
     }
 
   }

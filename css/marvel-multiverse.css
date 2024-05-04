@@ -15,7 +15,7 @@
 }
 
 .dice-tooltip .dice-rolls .roll {
-  width: 4rem;
+  width: 3rem;
   line-height: inherit;
 }
 
@@ -182,6 +182,13 @@
 }
 .attributes-speed ol li {
   display: flex;
+}
+.attributes-speed ol li input {
+  margin: 0 4px;
+}
+
+.sheet header.sheet-header img {
+  height: fit-content;
 }
 
 .grid,

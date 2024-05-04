@@ -17,7 +17,7 @@
 }
 
 .dice-tooltip .dice-rolls .roll {
-  width: 4rem;
+  width: 3rem;
   line-height: inherit;
 }
 
@@ -210,5 +210,12 @@
   list-style: none;
   li {
     display: flex;
+    input {
+      margin: 0 4px;
+    }
   }
+}
+
+.sheet header.sheet-header img {
+  height: fit-content;
 }

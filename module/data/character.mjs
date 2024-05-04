@@ -18,6 +18,7 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
       obj[ability] = new fields.SchemaField({
         value: new fields.NumberField({ ...requiredInteger, initial: 10, min: 0 }),
         mod: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+        defense: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
         label: new fields.StringField({ required: true, blank: true })
       });
       return obj;
@@ -39,6 +40,8 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
     for (const key in this.abilities) {
       // Calculate the modifier using mmrpg rules.
       this.abilities[key].mod = this.abilities[key].value;
+      // Caclulate teh defense score using mmrpg rules.
+      this.abilities[key].defense = this.abilities[key].value + 10;
       // Handle ability label localization.
       this.abilities[key].label = game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.abilities[key]) ?? key;
     }

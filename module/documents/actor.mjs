@@ -41,4 +41,58 @@ export class MarvelMultiverseActor extends Actor {
   getRollData() {
     return { ...super.getRollData(), ...this.system.getRollData?.() ?? null };
   }
+
+
+  /**
+   * Roll initiative for this Actor with a dialog that provides an opportunity to elect advantage or other bonuses.
+   * @param {object} [rollOptions]      Options forwarded to the Actor#getInitiativeRoll method
+   * @returns {Promise<void>}           A promise which resolves once initiative has been rolled for the Actor
+   */
+  async rollInitiativeDialog(rollOptions={}) {
+    // Create and configure the Initiative roll
+    const roll = this.getInitiativeRoll(rollOptions);
+    const choice = await roll.configureDialog({
+      defaultRollMode: game.settings.get("core", "rollMode"),
+      title: `${game.i18n.localize("MARVEL_MULTIVERSE.InitiativeRoll")}: ${this.name}`,
+      chooseModifier: false,
+      defaultAction: rollOptions.edgeMode ?? game.dice.MarvelMultiverseRoll.EDGE_MODE.NORMAL
+    });
+    if ( choice === null ) return; // Closed dialog
+
+    // Temporarily cache the configured roll and use it to roll initiative for the Actor
+    this._cachedInitiativeRoll = roll;
+    await this.rollInitiative({createCombatants: true});
+  }
+
+
+  /* -------------------------------------------- */
+
+  /** @inheritdoc */
+  async rollInitiative(options={}, rollOptions={}) {
+    const combat = await super.rollInitiative(options);
+    return combat;
+  }
+
+
+  /* -------------------------------------------- */
+
+  /**
+   * Get an un-evaluated D20Roll instance used to roll initiative for this Actor.
+   * @param {object} [options]                        Options which modify the roll
+   * @param {D20Roll.ADV_MODE} [options.edgeMode]    A specific edge mode to apply
+   * @param {string} [options.flavor]                     Special flavor text to apply
+   * @returns {MarvelMultiverseRoll}                               The constructed but unevaluated MarvelMultiverseRoll
+   */
+  getInitiativeRoll(options={}) {
+    // Use a temporarily cached initiative roll
+    if ( this._cachedInitiativeRoll ) return this._cachedInitiativeRoll.clone();
+
+    const abilityId = 'vig';
+    const data = this.getRollData();
+    // Create the initatvive roll
+    const formula = parts.join(" + ");
+   
+    return new CONFIG.Dice.MarvelMultiverseRoll(formula, data, options);
+  }
+    
 }

@@ -98,9 +98,33 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
     const origins = [];
     const occupations = [];
     const tags = [];
-    const powersConfig = CONFIG.MARVEL_MULTIVERSE.POWER_SETS;
-    const powers = {};
-
+    const powers = {
+      "Basic": [],
+      "Elemental Control": [],
+      "Illusion": [],
+      "Magic (Chaotic)": [],
+      "Magic (Cursed)": [],
+      "Magic (Sorcerous)": [],
+      "Martial Arts": [],
+      "Melee Weapons": [],
+      "Omniversal Travel (Dimensionol)": [],
+      "Omniversal Travel (Mulliversal)": [],
+      "Omniversal Travel (Time)": [],
+      "Phasing": [],
+      "Plasticity": [],
+      "Power Cantrol": [],
+      "Ranged Weapons": [],
+      "Resize": [],
+      "Shield Bearer": [],
+      "Spider-Powers": [],
+      "Super-Speed": [],
+      "Super-Strength": [],
+      "Tactics": [],
+      "Telekinesis": [],
+      "Telepathy": [],
+      "Teleportation": [],
+      "Weather Control": [],
+    };
     // Iterate through items, allocating to containers
     for (let i of context.items) {
       i.img = i.img || Item.DEFAULT_ICON;
@@ -123,10 +147,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       }
       // Append to  power.
       else if (i.type === 'power') {
-        let powerSets = i.system.powerSet.split(',').map(item => item.trim());
-        powerSets.forEach((powerSet) => {
-          powersConfig[powerSet].add(i);
-        });
+         powers[i.system.powerSet].push(i);
       }
       else if (i.type === 'item') {
         gear.push(i);
@@ -225,54 +246,55 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
   /** Fired whenever an embedded document is created.
    */
   _onDropItemCreate (itemData) {
-    if ( itemData.type === "occupation" ) {
-      itemData.data.tags.forEach(async (tag) => {
-        let newItemData = {
-          name: tag.name,
-          type: "tag",
-          data: tag.system,
-        };
-        await Item.create(newItemData, {parent: this.actor});
-      });
-      itemData.data.traits.forEach(async (trait) => {
-        let newItemData = {
-          name: trait.name,
-          type: "trait",
-          data: trait.system,
-        };
-        await Item.create(newItemData, {parent: this.actor});
-      });
-      return super._onDropItemCreate(itemData);
-    } else if ( itemData.type === "origin" ) {
-      itemData.data.tags.forEach(async (tag) => {
-        let newItemData = {
-          name: tag.name,
-          type: "tag",
-          data: tag.system,
-        };
-        await Item.create(newItemData, {parent: this.actor});
-      });
-      itemData.system.traits.forEach(async (trait) => {
-        let newItemData = {
-          name: trait.name,
-          type: "trait",
-          data: trait.system,
-        };
-        await Item.create(newItemData, {parent: this.actor});
-      });
-      itemData.system.powers.forEach(async (power) => {
-        let newItemData = {
-          name: power.name,
-          type: "power",
-          data: power.system,
-        };
-        await Item.create(newItemData, {parent: this.actor});
-      });
-      return super._onDropItemCreate(itemData);
-    } else {
-      return super._onDropItemCreate(itemData); 
+    if (!this.actor.items.map((item) => item.name).includes(itemData.name)) {
+      if ( itemData.type === "occupation" ) {
+        itemData.data.tags.forEach(async (tag) => {
+          let newItemData = {
+            name: tag.name,
+            type: "tag",
+            data: tag.system,
+          };
+          await Item.create(newItemData, {parent: this.actor});
+        });
+        itemData.data.traits.forEach(async (trait) => {
+          let newItemData = {
+            name: trait.name,
+            type: "trait",
+            data: trait.system,
+          };
+          await Item.create(newItemData, {parent: this.actor});
+        });
+        return super._onDropItemCreate(itemData);
+      } else if ( itemData.type === "origin" ) {
+        itemData.data.tags.forEach(async (tag) => {
+          let newItemData = {
+            name: tag.name,
+            type: "tag",
+            data: tag.system,
+          };
+          await Item.create(newItemData, {parent: this.actor});
+        });
+        itemData.system.traits.forEach(async (trait) => {
+          let newItemData = {
+            name: trait.name,
+            type: "trait",
+            data: trait.system,
+          };
+          await Item.create(newItemData, {parent: this.actor});
+        });
+        itemData.system.powers.forEach(async (power) => {
+          let newItemData = {
+            name: power.name,
+            type: "power",
+            data: power.system,
+          };
+          await Item.create(newItemData, {parent: this.actor});
+        });
+        return super._onDropItemCreate(itemData);
+      } else {
+        return super._onDropItemCreate(itemData); 
+      }
     }
-
   }
 
 

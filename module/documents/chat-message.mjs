@@ -125,19 +125,19 @@ export class ChatMessageMarvel extends ChatMessage {
     const { scene: sceneId, token: tokenId, actor: actorId } = this.speaker;
     const actor = game.scenes.get(sceneId)?.tokens.get(tokenId)?.actor ?? game.actors.get(actorId);
 
-    let img;
+    // let img;
     let nameText;
     if ( this.isContentVisible ) {
-      img = actor?.img ?? this.user.avatar;
+      // img = actor?.img ?? this.user.avatar;
       nameText = this.alias;
     } else {
-      img = this.user.avatar;
+      // img = this.user.avatar;
       nameText = this.user.name;
     }
 
     const avatar = document.createElement("div");
-    avatar.classList.add("avatar");
-    avatar.innerHTML = `<img src="${img}" alt="${nameText}">`;
+    // avatar.classList.add("avatar");
+    // avatar.innerHTML = `<img src="${img}" alt="${nameText}">`;
 
     const name = document.createElement("span");
     name.classList.add("name-stacked");

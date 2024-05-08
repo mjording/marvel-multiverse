@@ -467,6 +467,9 @@
   height: 3em;
   text-align: center;
 }
+.marvel-multiverse aside.damages {
+  margin-right: 1em;
+}
 .marvel-multiverse .items-header {
   height: 28px;
   margin: 2px 0;

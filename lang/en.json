@@ -1,5 +1,17 @@
 {
   "MARVEL_MULTIVERSE": {
+    "Size": {
+      "Microscopic": "Microscopic",
+      "Miniature": "Minature",
+      "Tiny": "Tiny",
+      "Little": "Little",
+      "Small": "Small",
+      "Average": "Average",
+      "Big": "Big",
+      "Huge": "Huge",
+      "Gargantuan": "Gargantuan",
+      "Varies": "Varies"
+    },
     "Ability": {
       "Mel": { "long": "Melee", "abbr": "mel" },
       "Agl": { "long": "Agility", "abbr": "agl" },

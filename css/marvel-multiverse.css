@@ -158,39 +158,6 @@
   margin-right: 2px;
 }
 
-.attributes {
-  width: 2.5rem;
-  margin: auto;
-  font-size: large;
-}
-
-.attributes-rank {
-  font-size: xx-large;
-}
-
-.attribute-resources {
-  margin-top: 1rem;
-}
-
-.personalInfo input {
-  width: min-content;
-  min-width: fit-content;
-}
-
-.attributes-speed ol {
-  list-style: none;
-}
-.attributes-speed ol li {
-  display: flex;
-}
-.attributes-speed ol li input {
-  margin: 0 4px;
-}
-
-.sheet header.sheet-header img {
-  height: fit-content;
-}
-
 .grid,
 .grid-2col {
   display: grid;
@@ -440,6 +407,65 @@
 }
 .marvel-multiverse .resource-label {
   font-weight: bold;
+}
+.marvel-multiverse .actorPowers {
+  flex-grow: 2;
+}
+.marvel-multiverse .ability input {
+  max-width: 3em;
+}
+.marvel-multiverse .bio-sm input {
+  max-width: 3em;
+}
+.marvel-multiverse .bio-sm select {
+  max-width: 6em;
+}
+.marvel-multiverse section.marge {
+  margin-bottom: 1em;
+}
+.marvel-multiverse section.marge div {
+  margin-right: 5px;
+}
+.marvel-multiverse .attributes {
+  width: 2.5rem;
+  margin: auto;
+  font-size: large;
+}
+.marvel-multiverse .attributes-health {
+  font-size: x-large;
+}
+.marvel-multiverse .attributes-focus {
+  font-size: x-large;
+}
+.marvel-multiverse .attribute-resources {
+  margin-top: 1rem;
+  margin-right: 2em;
+}
+.marvel-multiverse .personalInfo input {
+  width: min-content;
+  min-width: fit-content;
+}
+.marvel-multiverse .attributes-speed ol {
+  list-style: none;
+}
+.marvel-multiverse .attributes-speed ol li {
+  display: flex;
+}
+.marvel-multiverse .attributes-speed ol li input {
+  margin: 0 4px;
+}
+.marvel-multiverse .sheet header.sheet-header img {
+  height: fit-content;
+}
+.marvel-multiverse .damages img {
+  max-width: 3em;
+}
+.marvel-multiverse .vert-text {
+  float: left;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  height: 3em;
+  text-align: center;
 }
 .marvel-multiverse .items-header {
   height: 28px;

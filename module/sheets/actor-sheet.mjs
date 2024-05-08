@@ -59,6 +59,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
 
     // Add roll data for TinyMCE editors.
     context.rollData = context.actor.getRollData();
+    context.sizes = CONFIG.MARVEL_MULTIVERSE.sizes;
 
     // Prepare active effects
     context.effects = prepareActiveEffectCategories(
@@ -66,6 +67,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       // as well as any items
       this.actor.allApplicableEffects()
     );
+
 
     return context;
   }
@@ -79,9 +81,9 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
    */
   _prepareCharacterData(context) {
     // Handle ability scores.
-    // for (let [k, v] of Object.entries(context.system.abilities)) {
-    //   v.label = game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.abilities[k]) ?? k;
-    // }
+    for (let [k, v] of Object.entries(context.system.abilities)) {
+      v.label = game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.abilities[k]) ?? k;
+    }
   }
 
   /**

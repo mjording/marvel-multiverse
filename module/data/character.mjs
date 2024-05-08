@@ -24,6 +24,13 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
       return obj;
     }, {}));
 
+    schema.actorSizes = new fields.SchemaField(Object.keys(CONFIG.MARVEL_MULTIVERSE.sizes).reduce((obj, size) => {
+      obj[size] = new fields.SchemaField({
+        label: new fields.StringField({ required: true, initial: CONFIG.MARVEL_MULTIVERSE.sizes[size].label})
+      });
+      return obj;
+    }, {}));
+
     
     schema.occupations = new fields.ArrayField(new fields.ObjectField());
     schema.origins = new fields.ArrayField(new fields.ObjectField());
@@ -45,6 +52,7 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
       // Handle ability label localization.
       this.abilities[key].label = game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.abilities[key]) ?? key;
     }
+
   }
 
   getRollData() {
@@ -59,6 +67,8 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
     }
 
     data.rank = this.attributes.rank.value;
+
+   
 
     return data
   }

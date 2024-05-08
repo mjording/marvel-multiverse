@@ -186,36 +186,3 @@
     }
   }
 }
-
-.attributes {
-  width : 2.5rem;
-  margin: auto;
-  font-size: large; 
-}
-
-.attributes-rank {
-  font-size: xx-large;
-}
-
-.attribute-resources {
-  margin-top: 1rem;
-}
-
-.personalInfo input {
-  width: min-content;
-  min-width: fit-content;
-}
-
-.attributes-speed ol {
-  list-style: none;
-  li {
-    display: flex;
-    input {
-      margin: 0 4px;
-    }
-  }
-}
-
-.sheet header.sheet-header img {
-  height: fit-content;
-}

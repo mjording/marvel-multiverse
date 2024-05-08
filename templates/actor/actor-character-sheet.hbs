@@ -6,31 +6,24 @@
       <div class="resources flexrow">
         <div class="resource flex-group-center">
           <aside class="sidebar">
-            <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
-            <img class="character-portrait" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
-            <div class="abilities flexcol">
-              <h2>Abilities</h2>
-              {{#each system.abilities as |ability key|}}
-                <div class="ability flexrow flex-group-center">
-                  <input type="text" name="system.abilities.{{key}}.value" value="{{ability.value}}" data-dtype="Number"/>
-                  <label for="system.abilities.{{key}}.value" class="resource-label rollable flexlarge align-left" data-roll="{1d6,1dm,1d6}+@abilities.{{key}}.mod" data-label="{{ability.label}}">{{ability.label}}</label>
-                  
-                  <span class="ability-mod rollable" data-roll="{1d6,1dm,1d6}+@abilities.{{key}}.mod" data-label="{{ability.label}}">{{numberFormat ability.mod decimals=0 sign=true}}</span>
-                </div>
-              {{/each}}
+            <h2 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h2>
+            <img class="character-portrait" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>              
+            <div class="personalInfo flexcol flex-group-center">
+              <label for="system.distinguishingFeatures" class="resource-reduced-label rollable align-left" data-label="distinguishingFeatures">Distinguishing Features</label>
+              <textarea name="system.distinguishingFeatures" data-dtype="String">{{system.distinguishingFeatures}}</textarea>
             </div>
           </aside>
         </div>
         <div class="flexrcol">
           <div class="attribute-resources flexrow">
             <div class="resource flex-group-center">
-              <label for="system.attributes.rank.value" class="resource-reduced-label">Rank</label>
+              <label for="system.attributes.rank.value" class="resource-label">Rank</label>
               <div class="resource-content flexcol attributes attributes-rank">
                 <input type="text" name="system.attributes.rank.value" value="{{system.attributes.rank.value}}" data-dtype="Number"/>
               </div>
             </div>
             <div class="resource flex-group-center">
-              <label for="system.karma.value" class="resource-reduced-label">Karma</label>
+              <label for="system.karma.value" class="resource-label">Karma</label>
               <div class="resource-content flexcol attributes attributes-karma">
                 <input type="text" name="system.karma.value" value="{{system.karma.value}}" data-dtype="Number"/>
               </div>
@@ -39,7 +32,7 @@
          
           <div class="attribute-resources flexrow">
             <div class="resource flex-group-center">
-              <label for="system.health.value" class="resource-reduced-label">Health</label>
+              <label for="system.health.value" class="resource-label">Health</label>
               <div class="resource-content flexcol attributes attributes-health">
                 <input type="text" name="system.health.value" value="{{system.health.value}}" data-dtype="Number"/>
               </div>
@@ -47,14 +40,14 @@
             <div class="resource flex-group-center">
               <label for="system.health.damage-reduction" class="resource-reduced-label">Damage Reduction</label>
               <div class="resource-content flexcol damage-reduction">
-                <h1>{{system.health.value}}</h1>
+                <h2>{{system.health.value}}</h2>
               </div>
             </div>
           </div>
 
           <div class="attribute-resources flexrow">
             <div class="resource flex-group-center">
-              <label for="system.focus.value" class="resource-reduced-label">Focus</label>
+              <label for="system.focus.value" class="resource-label">Focus</label>
               <div class="resource-content flexcol attributes attributes-focus">
                 <input type="text" name="system.focus.value" value="{{system.focus.value}}" data-dtype="Number"/>
               </div>
@@ -62,41 +55,34 @@
             <div class="resource flex-group-center">
               <label for="system.health.damage-reduction" class="resource-reduced-label">Damage Reduction</label>
               <div class="resource-content flexcol damage-reduction">
-                <h1>{{system.focus.value}}</h1>
+                <h2>{{system.focus.value}}</h2>
               </div>
             </div>
           </div>
                     
           <div class="attribute-resources flexrow">
             <div class="resource flex-group-center">
-              <label for="system.focus.value" class="resource-reduced-label">Speed</label>
+              <label for="system.speed" class="resource-label">Speed</label>
               <div class="resource-content flexcol attributes-speed">
                 <ol>
                   <li>Run </li>
                   <li>Climb</li>
                   <li>Swim</li>
-                  <li>Swim</li>
+                  <li>Jump</li>
                 </ol>
               </div>
             </div>
-            <div class="resource flex-group-center">
+            <div class="resource rollable flex-group-center" data-roll="{1d6,1dm,1d6}+@abilities.vig.mod">
               <label class="resource-reduced-label">Initative</label>
               <div class="resource-content flexcol attributes-init">
-                <h2>{{system.focus.value}}</h2>
+                <h2>{{system.abilities.vig.mod}}</h2>
               </div>
             </div>
           </div>
-          <div class="attribute-resources">
-            <label class="resource-reduced-label">Traits</label>
-            {{> "systems/marvel-multiverse/templates/actor/parts/actor-traits.hbs"}}
-          </div>
-          <div class="attribute-resources">
-            <label class="resource-reduced-label">Tags</label>
-            {{> "systems/marvel-multiverse/templates/actor/parts/actor-tags.hbs"}}
-          </div>
+         
         </div> 
         <div class="resource flex-group-center">
-           Biography
+           <h3>Biography</h3>
            {{> "systems/marvel-multiverse/templates/actor/parts/actor-details.hbs"}}
         </div>
       </div>
@@ -116,10 +102,91 @@
 
     {{!-- Owned Traits Tab --}}
     <div class="tab traits" data-group="primary" data-tab="traits">
+      <section class="flexrow marge">
+        <div class="abilities flexcol">
+          <h2>Abilities</h2>
+          {{#each system.abilities as |ability key|}}
+            <div class="ability flexrow flex-group-center">
+              <input type="text" name="system.abilities.{{key}}.value" value="{{ability.value}}" data-dtype="Number"/>
+              <label for="system.abilities.{{key}}.value" class="resource-reduced-label rollable flexlarge align-left" data-roll="{1d6,1dm,1d6}+@abilities.{{key}}.mod" data-label="{{ability.label}}">{{ability.label}}</label>
+              <span class="ability-mod rollable" data-roll="{1d6,1dm,1d6}+@abilities.{{key}}.mod" data-label="{{ability.label}}">{{numberFormat ability.mod decimals=0 sign=true}}</span>
+            </div>
+          {{/each}}
+        </div>
+        <div class="resources flexcol">
+          <div class="resources">
+            {{> "systems/marvel-multiverse/templates/actor/parts/actor-traits.hbs"}}
+          </div>
+          <div class="resources">
+            {{> "systems/marvel-multiverse/templates/actor/parts/actor-tags.hbs"}}
+          </div>
+        </div>
+        <div class="resources flexcol">
+          <div class="personalInfo flexcol">
+            {{> "systems/marvel-multiverse/templates/actor/parts/actor-occupations.hbs"}}
+          </div>
+          <div class="personalInfo flexcol">
+            {{> "systems/marvel-multiverse/templates/actor/parts/actor-origins.hbs"}}
+          </div> 
+        </div>
+      </section>
       <section class="flexrow">
-      
+        <div class="resource">
+          <aside class="sidebar damages flexcol">
+            <h2>Damages</h2>
+            <div class="resource meleeDamages flexrow">
+              <div class="resource">
+                <div class="resource-reduced-label vert-text">Melee</div>
+                <img src="systems/marvel-multiverse/icons/marvel-1.svg" title="MARVEL_MULTIVERSE.MarvelResult.M" alt="">
+              </div>
+              <div class="resource">
+                <h2>x {{system.attributes.rank.value}}</h2>
+              </div>
+              <div class="resource">
+                <h2>{{system.abilities.mel.value}}</h2>
+              </div>
+            </div>
+            <div class="resource agilityDamages flexrow">
+              <div class="resource">
+                <div class="resource-reduced-label vert-text">Agility</div>
+                <img src="systems/marvel-multiverse/icons/marvel-1.svg" title="MARVEL_MULTIVERSE.MarvelResult.M" alt="">
+              </div>
+              <div class="resource">
+                <h2>x {{system.attributes.rank.value}}</h2>
+              </div>
+              <div class="resource">
+                <h2>{{system.abilities.agl.value}}</h2>
+              </div>
+            </div>
+            <div class="resource egoDamages flexrow">
+              <div class="resource">
+                <div class="resource-reduced-label vert-text">Ego</div>
+                <img src="systems/marvel-multiverse/icons/marvel-1.svg" title="MARVEL_MULTIVERSE.MarvelResult.M" alt="">
+              </div>
+              <div class="resource">
+                <h2>x {{system.attributes.rank.value}}</h2>
+              </div>
+              <div class="resource">
+                <h2>{{system.abilities.ego.value}}</h2>
+              </div>
+            </div>
+            <div class="resource logicDamages flexrow">
+              <div class="resource">
+                <div class="resource-reduced-label vert-text">Logic</div> 
+                <img src="systems/marvel-multiverse/icons/marvel-1.svg" title="MARVEL_MULTIVERSE.MarvelResult.M" alt="">
+              </div>
+              <div class="resource">
+                <h2>x {{system.attributes.rank.value}}</h2>
+              </div>
+              <div class="resource">
+                <h2>{{system.abilities.log.value}}</h2>
+              </div>            
+            </div>
+          </aside>
+        </div>
         {{!-- For the main traits list, span the right two columns --}}
-        <section class="powers">
+        <section class="resource actorPowers">
+          <h2>Powers</h2>
           {{> "systems/marvel-multiverse/templates/actor/parts/actor-powers.hbs"}}
         </section>
 

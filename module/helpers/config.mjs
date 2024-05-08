@@ -1,5 +1,4 @@
 export const MARVEL_MULTIVERSE = {};
-
 /**
  * The set of Ability Scores used within the system.
  * @type {Object}
@@ -41,6 +40,19 @@ MARVEL_MULTIVERSE.DICE_RESULTS = {
   6: { label: "MARVEL_MULTIVERSE.DiceResult.6", image: `systems/marvel-multiverse/icons/6.svg`},
 }
 
+
+MARVEL_MULTIVERSE.sizes = {
+  microscopic: { label: "MARVEL_MULTIVERSE.Size.Microscopic"},
+  miniature: { label: "MARVEL_MULTIVERSE.Size.Miniature"},
+  tiny: { label: "MARVEL_MULTIVERSE.Size.Tiny"},
+  little: { label: "MARVEL_MULTIVERSE.Size.Little"},
+  small: { label: "MARVEL_MULTIVERSE.Size.Small"},
+  average: { label: "MARVEL_MULTIVERSE.Size.Average"},
+  big: { label: "MARVEL_MULTIVERSE.Size.Big"},
+  huge: { label: "MARVEL_MULTIVERSE.Size.Huge"},
+  gargantuan: { label: "MARVEL_MULTIVERSE.Size.Gargantuan"},
+  varies: { label: "MARVEL_MULTIVERSE.Size.Varies"}
+};
 
 // ASCII Artwork
 MARVEL_MULTIVERSE.ASCII = `

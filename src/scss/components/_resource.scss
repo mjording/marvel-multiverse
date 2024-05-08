@@ -1,3 +1,76 @@
 .resource-label {
   font-weight: bold;
 }
+
+.actorPowers {
+  flex-grow: 2;
+}
+
+.ability input {
+  max-width: 3em;
+}
+
+.bio-sm input {
+  max-width: 3em;
+}
+
+.bio-sm select {
+  max-width: 6em;
+}
+
+section.marge {
+  margin-bottom: 1em;
+  div {
+    margin-right: 5px;
+  }
+}
+
+
+.attributes {
+  width : 2.5rem;
+  margin: auto;
+  font-size: large; 
+}
+
+.attributes-health {
+  font-size: x-large;
+}
+.attributes-focus {
+  font-size: x-large;
+}
+
+.attribute-resources {
+  margin-top: 1rem;
+  margin-right: 2em;
+}
+
+.personalInfo input {
+  width: min-content;
+  min-width: fit-content;
+}
+
+.attributes-speed ol {
+  list-style: none;
+  li {
+    display: flex;
+    input {
+      margin: 0 4px;
+    }
+  }
+}
+
+.sheet header.sheet-header img {
+  height: fit-content;
+}
+
+.damages img {
+  max-width: 3em;
+}
+
+.vert-text {
+  float: left;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  height: 3em;
+  text-align: center;
+}

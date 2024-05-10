@@ -4,7 +4,7 @@
   "type": "power",
   "system": {
     "description": "The character bounces the burst off one fae and inlo anotler",
-    "powerSet": "Elamental Control",
+    "powerSet": "Elemental Control",
     "prerequisites": "Elemental Burst. Rank 3",
     "action": "Standard",
     "trigger": "",

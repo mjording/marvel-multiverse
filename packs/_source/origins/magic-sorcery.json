@@ -1,0 +1,42 @@
+{
+  "_id": "1e6e963c-798b-4682-95f0-6021302cb860",
+  "name": "Magic: Sorcery",
+  "type": "origin",
+  "system": {
+    "description": "The character's powers arise from the study and practice of sorcery.",
+    "examples": "Agatha Harkness, Ancient One (Yao), Doctor Strange, Magik, Wong.",
+    "suggestedOccupation": "",
+    "tags": [
+      {
+        "_id": "6b0aa7d0-5cff-4f83-bc5b-78d308dd782f",
+        "name": "Sorcerous",
+        "type": "tag",
+        "system": {
+          "description": "The character has dedicated themself to the study of traditional magic, also known as sorcery",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!6b0aa7d0-5cff-4f83-bc5b-78d308dd782f"
+      },
+      {
+        "_id": "e5396fe1-8f4b-41b7-8886-be6c645f7e26",
+        "name": "Supernatural",
+        "type": "tag",
+        "system": {
+          "description": "The character has powers that are magical or based on something magical",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!e5396fe1-8f4b-41b7-8886-be6c645f7e26"
+      }
+    ],
+    "traits": []
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!1e6e963c-798b-4682-95f0-6021302cb860"
+}

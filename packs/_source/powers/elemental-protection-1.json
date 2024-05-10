@@ -1,0 +1,19 @@
+{
+  "_id": "67e5146f-8ba2-469c-9458-9fa5f01a1aaa",
+  "name": "Elemental Protection 1",
+  "type": "power",
+  "system": {
+    "description": "The character protects themselves with their element.",
+    "powerSet": "Elemental Control",
+    "prerequisites": "Elemental Barrier, Rank 2",
+    "action": "Standard or reaction",
+    "trigger": "The character is attacked or otherwise in danger.",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character protects themselves with their element. Any attacks against them that do 10 points of damage or less are instantly absorbed, and the protection continues. If an attack does more than 10 points of damage, it destroys the protection. Either way, the character remains unharmed."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!67e5146f-8ba2-469c-9458-9fa5f01a1aaa"
+}

@@ -4,7 +4,7 @@
   "type": "power",
   "system": {
     "description": "The charactecran move a targel with thetr efement.",
-    "powerSet": "Elamental Control",
+    "powerSet": "Elemental Control",
     "prerequisites": "Elemental Burst. Rank 1",
     "action": "Standard",
     "trigger": "",

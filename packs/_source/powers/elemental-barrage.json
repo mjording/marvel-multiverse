@@ -3,7 +3,7 @@
   "name": "Elemental Barrage",
   "type": "power",
   "system": {
-    "description": "",
+    "description": "The character hurls a barrage of their element at their foes.",
     "powerSet": "Elemental Control",
     "prerequisites": "Elemental Blast, Rank 4",
     "action": "Standard",

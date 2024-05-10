@@ -1,0 +1,13 @@
+{
+  "_id": "e5396fe1-8f4b-41b7-8886-be6c645f7e26",
+  "name": "Supernatural",
+  "type": "tag",
+  "system": {
+    "description": "The character has powers that are magical or based on something magical",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!e5396fe1-8f4b-41b7-8886-be6c645f7e26"
+}

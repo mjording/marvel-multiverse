@@ -4,7 +4,7 @@
   "type": "power",
   "system": {
     "description": "The character assalts a foe with a tornado of whirling attacks",
-    "powerSet": "Melee Wenpons",
+    "powerSet": "Melee Weapons",
     "prerequisites": "Fast Attacks, Rank 2",
     "action": "Standard",
     "trigger": "",

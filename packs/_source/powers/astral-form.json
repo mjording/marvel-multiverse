@@ -1,0 +1,19 @@
+{
+  "_id": "14e9d68c-672c-42ad-a60e-40ed0a741025",
+  "name": "Astral Form",
+  "type": "power",
+  "system": {
+    "description": "The character can enter the Astral Plane",
+    "powerSet": "Magic, Telepathy",
+    "prerequisites": "Sorcerous, Rank2",
+    "action": "Standard",
+    "trigger": "The character is harmed by an attack.",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character can project an avatar into the Astral Plane, leering their physical body in a deep trance in the teal world, where it is vulnerable to attack. While in the Astral Plane, they can interact with other characters in The Astral Plane, but they are intangible, invisible and generally undetectable in the real world. However, they can sense things in the real world. If the character is Rank 4 or higher, they can also take on a transparent form that can be seen in the real world. While in the Astral Plane, the character can fly, and in combat, their Flight Speed is equal to their rank times their Fun Speed. Outside of combat, they can move 10 times as fast."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!14e9d68c-672c-42ad-a60e-40ed0a741025"
+}

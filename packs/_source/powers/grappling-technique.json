@@ -4,7 +4,7 @@
   "type": "power",
   "system": {
     "description": "The character snags an enemy.",
-    "powerSet": "Maortial Arts",
+    "powerSet": "Martial Arts",
     "prerequisites": "Rank 2",
     "action": "Standard",
     "trigger": "",

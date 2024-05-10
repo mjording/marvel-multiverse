@@ -1,0 +1,13 @@
+{
+  "_id": "6b0aa7d0-5cff-4f83-bc5b-78d308dd782f",
+  "name": "Sorcerous",
+  "type": "tag",
+  "system": {
+    "description": "The character has dedicated themself to the study of traditional magic, also known as sorcery",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!6b0aa7d0-5cff-4f83-bc5b-78d308dd782f"
+}

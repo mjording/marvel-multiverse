@@ -377,9 +377,8 @@
 .marvel-multiverse .sheet-header .character-portrait {
   border: 1px solid #000;
   border-radius: 5px;
-  height: 17rem;
-  width: 13rem;
-  margin: 0 5px;
+  height: 21em;
+  width: 16em;
 }
 .marvel-multiverse .sheet-header .header-fields {
   flex: 1;

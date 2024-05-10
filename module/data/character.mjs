@@ -31,7 +31,7 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
       return obj;
     }, {}));
 
-    
+    schema.base = new fields.StringField({ required: true, blank: true });
     schema.occupations = new fields.ArrayField(new fields.ObjectField());
     schema.origins = new fields.ArrayField(new fields.ObjectField());
     schema.tags = new fields.ArrayField(new fields.ObjectField());

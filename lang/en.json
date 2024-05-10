@@ -1,5 +1,10 @@
 {
   "MARVEL_MULTIVERSE": {
+    "edgeMode": {
+      "trouble": "Trouble",
+      "edge": "Edge",
+      "normal": "Normal"
+    },
     "Size": {
       "Microscopic": "Microscopic",
       "Miniature": "Minature",
@@ -26,7 +31,7 @@
     },
     "Item": {
       "Power": {
-        "PowerSET": "{set} Powers",
+        "PowerSET": "{set}",
         "AddPWR": "Power"
       }
     },

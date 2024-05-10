@@ -2,7 +2,7 @@
   font-weight: bold;
 }
 
-.actorPowers {
+.traits-tags-powers {
   flex-grow: 2;
 }
 
@@ -22,9 +22,24 @@ section.marge {
   margin-bottom: 1em;
   div {
     margin-right: 5px;
+    h2 {
+      margin-bottom: 0;
+    }
   }
 }
 
+.melee-damages div {
+  margin: 0;
+}
+
+.power-item {
+  flex-grow: 3;
+}
+
+.resource-powerset {
+  width: 50%; 
+  float: left;
+}
 
 .attributes {
   width : 2.5rem;
@@ -77,4 +92,8 @@ section.marge {
 
 aside.damages {
   margin-right: 1em;
+}
+
+.resources h2 {
+  margin-bottom: 0;
 }

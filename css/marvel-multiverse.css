@@ -336,6 +336,11 @@
   flex: 2;
 }
 
+.flexwrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 .align-left {
   justify-content: flex-start;
   text-align: left;
@@ -408,7 +413,7 @@
 .marvel-multiverse .resource-label {
   font-weight: bold;
 }
-.marvel-multiverse .actorPowers {
+.marvel-multiverse .traits-tags-powers {
   flex-grow: 2;
 }
 .marvel-multiverse .ability input {
@@ -425,6 +430,19 @@
 }
 .marvel-multiverse section.marge div {
   margin-right: 5px;
+}
+.marvel-multiverse section.marge div h2 {
+  margin-bottom: 0;
+}
+.marvel-multiverse .melee-damages div {
+  margin: 0;
+}
+.marvel-multiverse .power-item {
+  flex-grow: 3;
+}
+.marvel-multiverse .resource-powerset {
+  width: 50%;
+  float: left;
 }
 .marvel-multiverse .attributes {
   width: 2.5rem;
@@ -469,6 +487,9 @@
 }
 .marvel-multiverse aside.damages {
   margin-right: 1em;
+}
+.marvel-multiverse .resources h2 {
+  margin-bottom: 0;
 }
 .marvel-multiverse .items-header {
   height: 28px;

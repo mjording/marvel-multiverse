@@ -4,7 +4,7 @@
   "type": "power",
   "system": {
     "description": "The character always has a plan.",
-    "powerSet": "Basic",
+    "powerSet": "Tactics",
     "prerequisites": "Inspiration, Rank 2",
     "action": "Standard",
     "trigger": "",

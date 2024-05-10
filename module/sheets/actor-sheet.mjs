@@ -12,8 +12,8 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ['marvel-multiverse', 'sheet', 'actor'],
-      width: 700,
-      height: 800,
+      width: 690,
+      height: 980,
       tabs: [
         {
           navSelector: '.sheet-tabs',
@@ -149,7 +149,11 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       }
       // Append to  power.
       else if (i.type === 'power') {
-         powers[i.system.powerSet].push(i);
+        let powersets = i.system.powerSet.split(',');
+        powers[powersets[0].trim()].push(i);
+        // powersets.forEach((powerSet) => {
+        //   powers[powerSet.trim()].push(i);
+        // });
       }
       else if (i.type === 'item') {
         gear.push(i);

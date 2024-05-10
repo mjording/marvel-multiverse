@@ -361,5 +361,19 @@ export class ChatMessageMarvel extends ChatMessage {
     target.classList.toggle("expanded");
   }
 
+  /* -------------------------------------------- */
 
+  /**
+   * Wait to apply appropriate element heights until after the chat log has completed its initial batch render.
+   * @param {jQuery} html  The chat log HTML.
+   */
+  static onRenderChatLog([html]) {
+    if ( !game.settings.get("marvel-multiverse", "autoCollapseItemCards") ) {
+      requestAnimationFrame(() => {
+        // FIXME: Allow time for transitions to complete. Adding a transitionend listener does not appear to work, so
+        // the transition time is hard-coded for now.
+        setTimeout(() => ui.chat.scrollBottom(), 250);
+      });
+    }
+  }
 }

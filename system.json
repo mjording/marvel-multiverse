@@ -21,8 +21,8 @@
     },
     {
       "type": "setup",
-      "url": "systems/marvel-multiverse/ui/official/x-men-97-title.png",
-      "thumbnail": "systems/marvel-multiverse/ui/official/x-men-97-thumbnail.jpg"
+      "url": "systems/marvel-multiverse/ui/official/mmrpg-setup.png",
+      "thumbnail": "systems/marvel-multiverse/ui/official/mmrpg-setup-thumbnail.png"
     }
   ],
   "version": "1.3.0",
@@ -103,7 +103,7 @@
   "socket": false,
   "manifest": "https://raw.githubusercontent.com/mjording/marvel-multiverse/master/system.json",
   "download": "This must link to a .zip file of the current version",
-  "background": "systems/marvel-multiverse/assets/x-men-97-title.png",
+  "background": "systems/marvel-multiverse/ui/official/mmrpg-background.webp",
   "gridDistance": 5,
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",

@@ -29,6 +29,11 @@
   flex: 2;
 }
 
+.flexwrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 // Alignment styles.
 .align-left {
   justify-content: flex-start;

@@ -2,10 +2,6 @@
   <label for="system.realname" class="resource-reduced-label rollable align-left" data-label="Real Name">real name</label>
   <input type="text" name="system.realname" value="{{system.realname}}" data-dtype="String"/>
 </div>
-<div class="personalInfo flexrow flex-group-center">
-  <label for="system.teams" class="resource-reduced-label rollable align-left" data-label="teams">teams</label>
-  <input type="text" name="system.teams" value="{{system.teams}}" data-dtype="String"/>
-</div>
 <div class="bio-sm grid grid-3col">
   <div>
     <label for="system.height" class="resource-reduced-label align-left" data-label="system.height">height</label>
@@ -44,11 +40,20 @@
     <input type="text" name="system.hair" value="{{system.hair}}" data-dtype="String"/>
   </div>
 </div>
-<div class="personalInfo flexcol">
-  <label for="system.history" class="resource-reduced-label rollable align-left" data-label="history">History</label>
-  <textarea name="system.history" data-dtype="String">{{system.history}}</textarea>
+<div class="personalInfo flexrow flex-group-center">
+  <label for="system.teams" class="resource-reduced-label rollable align-left" data-label="teams">teams</label>
+  <input type="text" name="system.teams" value="{{system.teams}}" data-dtype="String"/>
 </div>
-<div class="personalInfo flexcol">
-  <label for="system.personality" class="resource-reduced-label rollable align-left" data-label="personality">Personality</label>
-   <textarea name="system.personality" data-dtype="String">{{system.personality}}</textarea>
+<div class="personalInfo flexrow flex-group-center">
+  <label class="resource-reduced-label rollable align-left">occupation</label>
+  {{> "systems/marvel-multiverse/templates/actor/parts/actor-occupation.hbs"}}
 </div>
+<div class="personalInfo flexrow flex-group-center">
+  <label class="resource-reduced-label rollable align-left">origin</label>
+  {{> "systems/marvel-multiverse/templates/actor/parts/actor-origin.hbs"}}
+</div>
+<div class="personalInfo flexrow flex-group-center">
+  <label class="resource-reduced-label rollable align-left">Base</label>
+  <input type="text" name="system.base" value="{{system.base}}" data-dtype="String"/>
+</div>
+

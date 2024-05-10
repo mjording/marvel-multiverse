@@ -1,20 +1,27 @@
 <form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    {{!-- Default tab is specified in actor-sheet.mjs --}}
+    <a class="item active" data-tab="abilities">Abilities</a>
+    <a class="item" data-tab="biography">Biography</a>
+    <a class="item" data-tab="items">Items</a>
+    <a class="item" data-tab="effects">Effects</a>
+  </nav>
 
   {{!-- Sheet Header --}}
   <header class="sheet-header">
     <div class="header-fields">
       <div class="resources flexrow">
+         {{!-- Name & Portrait --}}
         <div class="resource flex-group-center">
           <aside class="sidebar">
             <h2 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h2>
             <img class="character-portrait" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>              
-            <div class="personalInfo flexcol flex-group-center">
-              <label for="system.distinguishingFeatures" class="resource-reduced-label rollable align-left" data-label="distinguishingFeatures">Distinguishing Features</label>
-              <textarea name="system.distinguishingFeatures" data-dtype="String">{{system.distinguishingFeatures}}</textarea>
-            </div>
           </aside>
         </div>
+
         <div class="flexrcol">
+          {{!-- Rank & Karma --}}
           <div class="attribute-resources flexrow">
             <div class="resource flex-group-center">
               <label for="system.attributes.rank.value" class="resource-label">Rank</label>
@@ -29,7 +36,7 @@
               </div>
             </div>
           </div>
-         
+          {{!-- Health & Health DR --}}
           <div class="attribute-resources flexrow">
             <div class="resource flex-group-center">
               <label for="system.health.value" class="resource-label">Health</label>
@@ -40,11 +47,11 @@
             <div class="resource flex-group-center">
               <label for="system.health.damage-reduction" class="resource-reduced-label">Damage Reduction</label>
               <div class="resource-content flexcol damage-reduction">
-                <h2>{{system.health.value}}</h2>
+                <h2>{{system.healthDamageReduction}}</h2>
               </div>
             </div>
           </div>
-
+          {{!-- Focus & Focus DR --}}
           <div class="attribute-resources flexrow">
             <div class="resource flex-group-center">
               <label for="system.focus.value" class="resource-label">Focus</label>
@@ -55,11 +62,11 @@
             <div class="resource flex-group-center">
               <label for="system.health.damage-reduction" class="resource-reduced-label">Damage Reduction</label>
               <div class="resource-content flexcol damage-reduction">
-                <h2>{{system.focus.value}}</h2>
+                <h2>{{system.focusDamageReduction}}</h2>
               </div>
             </div>
           </div>
-                    
+          {{!-- Speed & Initative --}}
           <div class="attribute-resources flexrow">
             <div class="resource flex-group-center">
               <label for="system.speed" class="resource-label">Speed</label>
@@ -75,65 +82,54 @@
             <div class="resource rollable flex-group-center" data-roll="{1d6,1dm,1d6}+@abilities.vig.mod">
               <label class="resource-reduced-label">Initative</label>
               <div class="resource-content flexcol attributes-init">
-                <h2>{{system.abilities.vig.mod}}</h2>
+                <h2>{{system.abilities.vig.value}}</h2>
               </div>
             </div>
           </div>
          
         </div> 
-        <div class="resource flex-group-center">
-           <h3>Biography</h3>
+
+        {{!-- Character Details --}}
+        <div class="resource flex-group-center actor-details">
+           <h3>BIOGRAPHY</h3>
            {{> "systems/marvel-multiverse/templates/actor/parts/actor-details.hbs"}}
         </div>
       </div>
     </div>  
   </header>
 
-  {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
-    {{!-- Default tab is specified in actor-sheet.mjs --}}
-    <a class="item" data-tab="traits">Stats</a>
-    <a class="item" data-tab="items">Items</a>
-    <a class="item" data-tab="effects">Effects</a>
-  </nav>
 
   {{!-- Sheet Body --}}
   <section class="sheet-body">
-
-    {{!-- Owned Traits Tab --}}
-    <div class="tab traits" data-group="primary" data-tab="traits">
-      <section class="flexrow marge">
+    {{!-- Abilities, Damages, & powers Tab --}}
+    <div class="tab abilities flexrow" data-group="primary" data-tab="abilities">
+       {{!-- Abilities and damages --}}
+      <section class="flexcol marge">
         <div class="abilities flexcol">
           <h2>Abilities</h2>
+          <div class="items-header">
+            <div class="ability flexrow">
+              <div class="ability-score">Ability Score</div>
+              <div class="ability-defense">Defense Score</div>
+              <div class="ability-noncom">Non-Combat</div>
+            </div>  
+          </div>
           {{#each system.abilities as |ability key|}}
             <div class="ability flexrow flex-group-center">
-              <input type="text" name="system.abilities.{{key}}.value" value="{{ability.value}}" data-dtype="Number"/>
-              <label for="system.abilities.{{key}}.value" class="resource-reduced-label rollable flexlarge align-left" data-roll="{1d6,1dm,1d6}+@abilities.{{key}}.mod" data-label="{{ability.label}}">{{ability.label}}</label>
+              <div class="resource flexcol">
+                <label for="system.abilities.{{key}}.value" class="resource-reduced-label rollable flexlarge align-left" data-roll="{1d6,1dm,1d6}+@abilities.{{key}}.mod" data-label="{{ability.label}}">{{ability.label}}</label>
+                <input type="text" name="system.abilities.{{key}}.value" value="{{ability.value}}" data-dtype="Number"/>
+              </div>
+              <div class="resource">
+                <div>{{ ability.defense }}</div>
+              </div>
               <span class="ability-mod rollable" data-roll="{1d6,1dm,1d6}+@abilities.{{key}}.mod" data-label="{{ability.label}}">{{numberFormat ability.mod decimals=0 sign=true}}</span>
             </div>
           {{/each}}
         </div>
-        <div class="resources flexcol">
-          <div class="resources">
-            {{> "systems/marvel-multiverse/templates/actor/parts/actor-traits.hbs"}}
-          </div>
-          <div class="resources">
-            {{> "systems/marvel-multiverse/templates/actor/parts/actor-tags.hbs"}}
-          </div>
-        </div>
-        <div class="resources flexcol">
-          <div class="personalInfo flexcol">
-            {{> "systems/marvel-multiverse/templates/actor/parts/actor-occupations.hbs"}}
-          </div>
-          <div class="personalInfo flexcol">
-            {{> "systems/marvel-multiverse/templates/actor/parts/actor-origins.hbs"}}
-          </div> 
-        </div>
-      </section>
-      <section class="flexrow">
-        <div class="resource">
-          <aside class="sidebar damages flexcol">
-            <h2>Damages</h2>
+        <div class="damages">
+          <h2>Damages</h2>
+          <div class="flexcol">
             <div class="resource meleeDamages flexrow">
               <div class="resource">
                 <div class="resource-reduced-label vert-text">Melee</div>
@@ -143,7 +139,7 @@
                 <h2>x {{system.attributes.rank.value}}</h2>
               </div>
               <div class="resource">
-                <h2>{{system.abilities.mel.value}}</h2>
+                <h2>+ {{system.abilities.mel.value}}</h2>
               </div>
             </div>
             <div class="resource agilityDamages flexrow">
@@ -155,7 +151,7 @@
                 <h2>x {{system.attributes.rank.value}}</h2>
               </div>
               <div class="resource">
-                <h2>{{system.abilities.agl.value}}</h2>
+                <h2>+ {{system.abilities.agl.value}}</h2>
               </div>
             </div>
             <div class="resource egoDamages flexrow">
@@ -167,7 +163,7 @@
                 <h2>x {{system.attributes.rank.value}}</h2>
               </div>
               <div class="resource">
-                <h2>{{system.abilities.ego.value}}</h2>
+                <h2>+ {{system.abilities.ego.value}}</h2>
               </div>
             </div>
             <div class="resource logicDamages flexrow">
@@ -179,23 +175,40 @@
                 <h2>x {{system.attributes.rank.value}}</h2>
               </div>
               <div class="resource">
-                <h2>{{system.abilities.log.value}}</h2>
+                <h2>+ {{system.abilities.log.value}}</h2>
               </div>            
             </div>
-          </aside>
+          </div>
         </div>
-        {{!-- For the main traits list, span the right two columns --}}
-        <section class="resource actorPowers">
-          <h2>Powers</h2>
-          {{> "systems/marvel-multiverse/templates/actor/parts/actor-powers.hbs"}}
-        </section>
-
       </section>
+      {{!-- Traits, Tags & Powers --}}
+      <section class="traits-tags-powers">
+        <div class="resources flexcol">
+          <h2>Traits & Tags</h2>
+          <div class="resources flexrow">
+            <div class="actor-traits resource flexcol">
+              {{> "systems/marvel-multiverse/templates/actor/parts/actor-traits.hbs"}}
+            </div>
+            <div class="actor-tags resource flexcol">
+              {{> "systems/marvel-multiverse/templates/actor/parts/actor-tags.hbs"}}
+            </div>
+          </div>
+          <section class="resources actor-powers">
+            <h2>Powers</h2>
+            {{> "systems/marvel-multiverse/templates/actor/parts/actor-powers.hbs"}}
+          </section>
+        </div>
+      </section>
+    </div>
+
+    {{!-- Biography Tab --}}
+    <div class="tab biography" data-group="primary" data-tab="biography">
+        {{> "systems/marvel-multiverse/templates/actor/parts/actor-biography.hbs"}}
     </div>
 
     {{!-- Owned Items Tab --}}
     <div class="tab items" data-group="primary" data-tab="items">
-       {{> "systems/marvel-multiverse/templates/actor/parts/actor-items.hbs"}}
+        {{> "systems/marvel-multiverse/templates/actor/parts/actor-items.hbs"}}
     </div>
 
     {{!-- Active Effects Tab --}}

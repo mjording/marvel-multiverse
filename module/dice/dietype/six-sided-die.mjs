@@ -29,7 +29,7 @@ export class SixSidedDie extends DiceTerm {
     /* -------------------------------------------- */
     /** @override */
     get formula() {
-        return `${this.number}${this.constructor.DENOMINATION}${this.modifiers.join("")}`;
+        return `${this.number}d${this.constructor.DENOMINATION}${this.modifiers.join("")}`;
     }
 
 

@@ -1,0 +1,19 @@
+{
+  "_id": "81d1937b-24df-4a17-9766-f332a2af0aaa",
+  "name": "Focus Fire",
+  "type": "power",
+  "system": {
+    "description": "The character calls out a target.",
+    "powerSet": "Tactics",
+    "prerequisites": "Battle Plan, Rank 3",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "The character calls out an enemy in line of sight and inspires one or more allies of their choice in earshot, up to the character's Vigilance. They gain an edge on all action checks against that enemy."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!81d1937b-24df-4a17-9766-f332a2af0aaa"
+}

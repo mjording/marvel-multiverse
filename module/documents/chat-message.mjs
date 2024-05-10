@@ -143,12 +143,12 @@ export class ChatMessageMarvel extends ChatMessage {
     name.classList.add("name-stacked");
     name.innerHTML = `<span class="title">${nameText}</span>`;
 
-    const subtitle = document.createElement("span");
-    subtitle.classList.add("subtitle");
-    if ( this.whisper.length ) subtitle.innerText = html.querySelector(".whisper-to")?.innerText ?? "";
-    if ( (nameText !== this.user?.name) && !subtitle.innerText.length ) subtitle.innerText = this.user?.name ?? "";
+    // const subtitle = document.createElement("div");
+    // subtitle.classList.add("subtitle");
+    // if ( this.whisper.length ) subtitle.innerText = html.querySelector(".whisper-to")?.innerText ?? "";
+    // if ( (nameText !== this.user?.name) && !subtitle.innerText.length ) subtitle.innerText = this.user?.name ?? "";
 
-    name.appendChild(subtitle);
+    // name.appendChild(subtitle);
 
     const sender = html.querySelector(".message-sender");
     sender?.replaceChildren(avatar, name);

@@ -104,6 +104,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       "Basic": [],
       "Elemental Control": [],
       "Illusion": [],
+      "Magic": [],
       "Magic (Chaotic)": [],
       "Magic (Cursed)": [],
       "Magic (Sorcerous)": [],

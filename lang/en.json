@@ -42,6 +42,15 @@
       "Passive": "Passive Effects",
       "Inactive": "Inactive Effects"
     },
+    "Movement": {
+      "Run": "Run",
+      "Jump": "Jump",
+      "Climb": "Climb",
+      "Swim": "Swim",
+      "Fly": "Fly",
+      "Glide": "Glide",
+      "Swingline": "Swingline"
+    },
     "Formula": "Formula",
     "AbilityModifier": "Ability Modifier",
     "RollSituationalBonus": "Situational Bonus?",

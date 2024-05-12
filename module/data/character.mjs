@@ -10,7 +10,7 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
     schema.attributes = new fields.SchemaField({
       rank: new fields.SchemaField({
         value: new fields.NumberField({ ...requiredInteger, initial: 1 })
-      }),
+      })
     });
 
     // Iterate over ability names and create a new SchemaField for each.
@@ -27,6 +27,14 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
     schema.actorSizes = new fields.SchemaField(Object.keys(CONFIG.MARVEL_MULTIVERSE.sizes).reduce((obj, size) => {
       obj[size] = new fields.SchemaField({
         label: new fields.StringField({ required: true, initial: CONFIG.MARVEL_MULTIVERSE.sizes[size].label})
+      });
+      return obj;
+    }, {}));
+
+    schema.speed = new fields.SchemaField(Object.keys(CONFIG.MARVEL_MULTIVERSE.movementTypes).reduce((obj,mvmt) => {
+      obj[mvmt] = new fields.SchemaField({
+        label: new foundry.data.fields.StringField({ required: true, initial: CONFIG.MARVEL_MULTIVERSE.movementTypes.run.label }),
+        value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 })
       });
       return obj;
     }, {}));
@@ -53,6 +61,18 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
       this.abilities[key].label = game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.abilities[key]) ?? key;
     }
 
+    const baseSpeed = 4 + Math.ceil(this.abilities.agl.value / 5);
+    const halfSpeed = Math.ceil(baseSpeed * 0.5);
+    const speedBaseVals = { run: baseSpeed, fly: 0, glide: 0, swingline: 0, climb: halfSpeed, swim: halfSpeed, jump: halfSpeed}
+    
+
+    for (let [k, v] of Object.entries(CONFIG.MARVEL_MULTIVERSE.movementTypes)) {
+      this.speed[k].label = game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.abilities[k]) ?? k;
+      this.speed[k].value = speedBaseVals[k];
+    }
+
+    const filteredSpeed = Object.entries(this.speed).filter(([kee, spd]) => spd.value > 0)
+    this.speed = Object.fromEntries(filteredSpeed);
   }
 
   getRollData() {

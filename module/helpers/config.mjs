@@ -54,6 +54,16 @@ MARVEL_MULTIVERSE.sizes = {
   varies: { label: "MARVEL_MULTIVERSE.Size.Varies"}
 };
 
+MARVEL_MULTIVERSE.movementTypes = {
+  run: { label: "MARVEL_MULTIVERSE.Movement.Run" },
+  jump: { label: "MARVEL_MULTIVERSE.Movement.Jump" },
+  climb: { label: "MARVEL_MULTIVERSE.Movement.Climb" },
+  swim: { label: "MARVEL_MULTIVERSE.Movement.Swim" },
+  fly: { label: "MARVEL_MULTIVERSE.Movement.Fly" },
+  glide: { label: "MARVEL_MULTIVERSE.Movement.Glide" },
+  swingline: { label: "MARVEL_MULTIVERSE.Movement.Swingline" }
+}
+
 // ASCII Artwork
 MARVEL_MULTIVERSE.ASCII = `
 =ccccc,      ,cccc       ccccc      ,cccc,  ?$$$$$$$,  ,ccc,   -ccc

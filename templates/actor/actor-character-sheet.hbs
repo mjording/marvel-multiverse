@@ -71,12 +71,13 @@
             <div class="resource flex-group-center">
               <label for="system.speed" class="resource-label">Speed</label>
               <div class="resource-content flexcol attributes-speed">
-                <ol>
-                  <li>Run </li>
-                  <li>Climb</li>
-                  <li>Swim</li>
-                  <li>Jump</li>
-                </ol>
+                <div class="flexcol">
+                  {{#each system.speed as |speed|}}
+                    <div class="flexrow">
+                      <div class="resource">{{speed.label}}</div> <div class="resource">{{speed.value}}</div>
+                    </div>
+                  {{/each}}
+                </div>
               </div>
             </div>
             <div class="resource rollable flex-group-center" data-roll="{1d6,1dm,1d6}+@abilities.vig.mod">

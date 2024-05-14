@@ -50,6 +50,7 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
     return schema;
   }
 
+
   prepareDerivedData() {
     // Loop through ability scores, and add their modifiers to our sheet output.
     for (const key in this.abilities) {
@@ -61,7 +62,7 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
       this.abilities[key].label = game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.abilities[key]) ?? key;
     }
 
-    const baseSpeed = 4 + Math.ceil(this.abilities.agl.value / 5);
+    const baseSpeed = 4 + CONFIG.MARVEL_MULTIVERSE.sizes[this.size].speedMod + Math.ceil((this.abilities.agl.value) / 5);
     const halfSpeed = Math.ceil(baseSpeed * 0.5);
     const speedBaseVals = { run: baseSpeed, fly: 0, glide: 0, swingline: 0, climb: halfSpeed, swim: halfSpeed, jump: halfSpeed}
     

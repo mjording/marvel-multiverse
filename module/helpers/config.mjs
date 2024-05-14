@@ -42,16 +42,16 @@ MARVEL_MULTIVERSE.DICE_RESULTS = {
 
 
 MARVEL_MULTIVERSE.sizes = {
-  microscopic: { label: "MARVEL_MULTIVERSE.Size.Microscopic"},
-  miniature: { label: "MARVEL_MULTIVERSE.Size.Miniature"},
-  tiny: { label: "MARVEL_MULTIVERSE.Size.Tiny"},
-  little: { label: "MARVEL_MULTIVERSE.Size.Little"},
-  small: { label: "MARVEL_MULTIVERSE.Size.Small"},
-  average: { label: "MARVEL_MULTIVERSE.Size.Average"},
-  big: { label: "MARVEL_MULTIVERSE.Size.Big"},
-  huge: { label: "MARVEL_MULTIVERSE.Size.Huge"},
-  gargantuan: { label: "MARVEL_MULTIVERSE.Size.Gargantuan"},
-  varies: { label: "MARVEL_MULTIVERSE.Size.Varies"}
+  microscopic: { label: "MARVEL_MULTIVERSE.Size.Microscopic", speedMod: -5},
+  miniature: { label: "MARVEL_MULTIVERSE.Size.Miniature", speedMod: -4},
+  tiny: { label: "MARVEL_MULTIVERSE.Size.Tiny", speedMod: -3},
+  little: { label: "MARVEL_MULTIVERSE.Size.Little", speedMod: -2},
+  small: { label: "MARVEL_MULTIVERSE.Size.Small", speedMod: -1},
+  average: { label: "MARVEL_MULTIVERSE.Size.Average", speedMod: 0},
+  big: { label: "MARVEL_MULTIVERSE.Size.Big", speedMod: 1},
+  huge: { label: "MARVEL_MULTIVERSE.Size.Huge", speedMod: 2},
+  gargantuan: { label: "MARVEL_MULTIVERSE.Size.Gargantuan", speedMod: 3},
+  varies: { label: "MARVEL_MULTIVERSE.Size.Varies", speedMod: 4}
 };
 
 MARVEL_MULTIVERSE.movementTypes = {

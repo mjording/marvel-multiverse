@@ -1,0 +1,13 @@
+{
+  "_id": "2923685c-d460-4d8f-a9d5-21a570f7702f",
+  "name": "Backup",
+  "type": "tag",
+  "system": {
+    "description": "The character is part of an organization-like a police force-that they can call for immediate backup at any time.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!2923685c-d460-4d8f-a9d5-21a570f7702f"
+}

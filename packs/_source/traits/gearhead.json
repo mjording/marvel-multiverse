@@ -1,0 +1,12 @@
+{
+  "_id": "171b2116-92ca-4944-89dd-3d51b8c879f4",
+  "name": "Gearhead",
+  "type": "trait",
+  "system": {
+    "restriction": "",
+    "description": "The character knows their way around machines. They have an edge on Logic checka to figure out how any machine works."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!171b2116-92ca-4944-89dd-3d51b8c879f4"
+}

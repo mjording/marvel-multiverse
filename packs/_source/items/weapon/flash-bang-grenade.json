@@ -1,0 +1,14 @@
+{
+  "_id": "d8af598e-32fc-40dc-b73c-f85638fefcce",
+  "name": "Flash Bang Grenade",
+  "type": "weapon",
+  "system": {
+    "description": "A grenade that emits a blinding flash of light and a loud bang.",
+    "range": "10",
+    "damageMultiplierBonus": "-"
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8b60348af8f8d703",
+  "_key": "!items!d8af598e-32fc-40dc-b73c-f85638fefcce"
+}

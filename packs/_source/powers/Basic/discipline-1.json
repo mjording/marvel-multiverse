@@ -1,0 +1,19 @@
+{
+  "_id": "37b22e37-7b1a-4de8-9f59-b778de798fbf",
+  "name": "Discipline 1",
+  "type": "power",
+  "system": {
+    "description": "The character worlks to hone their power.",
+    "powerSet": "Basic",
+    "prerequisites": "",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character adds +1 to their Ego damage multiplier, and they gain a +1 bonus to Ego checks other than attacks."
+  },
+  "folder": "bbe663a787c7ec04",
+  "_key": "!items!37b22e37-7b1a-4de8-9f59-b778de798fbf",
+  "flags": {}
+}

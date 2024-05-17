@@ -1,0 +1,12 @@
+{
+  "_id": "41faf003-0cc5-4eac-91b7-b4a725e50940",
+  "name": "Connections Criminal",
+  "type": "trait",
+  "system": {
+    "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and so on. By making an Ego check, the character can call on their contact to provide help in the form of clues, information or resources. The Narrator determines the TN of the Ego check based on the favor requested.",
+    "restriction": "Criminal"
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!41faf003-0cc5-4eac-91b7-b4a725e50940"
+}

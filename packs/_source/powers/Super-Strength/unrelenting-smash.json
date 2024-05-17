@@ -1,0 +1,20 @@
+{
+  "_id": "f535a929-3cf8-487b-8b3d-36f0502a68d1",
+  "name": "Unrelenting Smash",
+  "type": "power",
+  "system": {
+    "description": "The character smashes everything in reach.",
+    "powerSet": "Super-Strength",
+    "prerequisites": "Ground-Shaking Stomp, Mighty 2, Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "The character makes a Melee check and compares it against the Melee defense of every enemy within their reach. Any enemy the attack succeeds against takes half regulur damage. On a Fantastic success, those enemies take full regular damage and are knocked prone instead. The character may then pay 15 more Focus to do the same thing again-before which they can move up to half their speed with anything left from their normal movement action. They can keep doing this until they run out of speed or Focus. Each target can be affected by this attack by this character only once per round."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "88848a43d8a58388",
+  "_key": "!items!f535a929-3cf8-487b-8b3d-36f0502a68d1"
+}

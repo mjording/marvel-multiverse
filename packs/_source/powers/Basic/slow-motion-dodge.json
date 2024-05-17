@@ -1,0 +1,20 @@
+{
+  "_id": "6eb741a6-532c-4e76-beee-62db81466c3a",
+  "name": "Slow-Motion Dodge",
+  "type": "power",
+  "system": {
+    "description": "Time seems to slow down for the character, making it easy to dodge enemy attacks.",
+    "powerSet": "Basic",
+    "prerequisites": "",
+    "action": "Reaction",
+    "trigger": "An enemy makes an attack against the character's Agility defense.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "The enemy has trouble on the attack."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bbe663a787c7ec04",
+  "_key": "!items!6eb741a6-532c-4e76-beee-62db81466c3a"
+}

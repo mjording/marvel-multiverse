@@ -1,0 +1,20 @@
+{
+  "_id": "99779c1d-5d00-4036-beff-cee8d74cc609",
+  "name": "Banging Heads",
+  "type": "power",
+  "system": {
+    "description": "The character takes two nearby enemies and stams their heads intoeach other",
+    "powerSet": "Martial Arts",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "The character makes one Melee check against the Melee defense scores of two enemies within reach. If the attack fails against either foe, it fails entirely. FI the attack is a success against both foes, each enemy takes full damage. On a Fantastic success, each enemy is also knocked prone."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9a200a2684a8be54",
+  "_key": "!items!99779c1d-5d00-4036-beff-cee8d74cc609"
+}

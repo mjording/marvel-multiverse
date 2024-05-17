@@ -1,0 +1,13 @@
+{
+  "_id": "5857841d-893e-44c8-87db-552130519583",
+  "name": "Deceased",
+  "type": "tag",
+  "system": {
+    "description": "The character is technically dead-although presumably still able to interact with the rest of the world in some way. They might be a vampire, a ghost, a zombie or even a brain floating in a jar.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!5857841d-893e-44c8-87db-552130519583"
+}

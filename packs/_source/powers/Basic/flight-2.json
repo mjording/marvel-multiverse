@@ -1,0 +1,20 @@
+{
+  "_id": "e3eeb686-747a-4d26-bb4d-ea16f7f7bdcc",
+  "name": "Flight 2",
+  "type": "power",
+  "system": {
+    "description": "The character can zoom across the sky.",
+    "powerSet": "Basic",
+    "prerequisites": "Flight 1, Rank 3",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "Outside of combat, the character can fly up to 50 times their Flight Speed."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bbe663a787c7ec04",
+  "_key": "!items!e3eeb686-747a-4d26-bb4d-ea16f7f7bdcc"
+}

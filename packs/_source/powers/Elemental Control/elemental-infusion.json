@@ -1,0 +1,20 @@
+{
+  "_id": "f2435ca7-fb74-4d67-8c48-9d0361b60188",
+  "name": "Elemental Infusion",
+  "type": "power",
+  "system": {
+    "description": "The character infuses a weapon with their element.",
+    "powerSet": "Elemental Control",
+    "prerequisites": "Elemental Burst, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character infuses their energy into a handheld weapon in their grasp. When the character gets a Fantastic success attacking with the weapon, add the energy's special effect."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a9ecc3931cffa8a5",
+  "_key": "!items!f2435ca7-fb74-4d67-8c48-9d0361b60188"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "c8e71d73-a163-4e34-a176-62517e587f79",
+  "name": "Combat Trickery",
+  "type": "power",
+  "system": {
+    "description": "The character s a tricky one!",
+    "powerSet": "Basic",
+    "prerequisites": "Rank 2",
+    "action": "Reaction",
+    "trigger": "The charncter males an attachk.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5 focus",
+    "effect": "Once per battle, when the charactor is attacking tarpots of equal or ipher rank, the character automntlenlly rolls a 1an their Marvel dic. and that die cannet be affected by trouble. IF the charcter is atacking multiple targets, all the targets must be of equal or higher rank."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bbe663a787c7ec04",
+  "_key": "!items!c8e71d73-a163-4e34-a176-62517e587f79"
+}

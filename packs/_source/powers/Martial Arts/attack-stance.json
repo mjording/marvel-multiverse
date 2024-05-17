@@ -1,0 +1,20 @@
+{
+  "_id": "5884f106-801d-482a-9134-37d66ccad299",
+  "name": "Attack Stance",
+  "type": "power",
+  "system": {
+    "description": "The characterenters an aggressive atlack stance, ready to strike in any dirgctian,",
+    "powerSet": "Martial Arts",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "",
+    "effect": "The character doubles their Melee ability banus to damage."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9a200a2684a8be54",
+  "_key": "!items!5884f106-801d-482a-9134-37d66ccad299"
+}

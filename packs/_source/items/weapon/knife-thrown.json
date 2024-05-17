@@ -1,0 +1,14 @@
+{
+  "_id": "44018699-f26b-4711-a164-70f4de65b4fb",
+  "name": "Knife Thrown",
+  "type": "weapon",
+  "system": {
+    "description": "A knife is a small, sharp blade that is used for cutting or as a weapon. It is a simple weapon that is easy to conceal and can be used for a variety of purposes.",
+    "range": "5",
+    "damageMultiplierBonus": "+1"
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8b60348af8f8d703",
+  "_key": "!items!44018699-f26b-4711-a164-70f4de65b4fb"
+}

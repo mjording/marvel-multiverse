@@ -1,0 +1,20 @@
+{
+  "_id": "36bef5eb-b1b7-41df-ad5a-16f14393c244",
+  "name": "Energy Absorption",
+  "type": "power",
+  "system": {
+    "description": "The character turns damage into power.",
+    "powerSet": "Basic",
+    "prerequisites": "",
+    "action": "Reaction",
+    "trigger": "The character takes Health damage.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "The character can take any Health damage done to them (after applying any damage reduction), ignore it and add that number to their Focus instead. In this way, they can increase their Focus up to double their regular maximum Focus. Once the combat is over, any extra Focus over the character's regular maximum Focus score fades away."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bbe663a787c7ec04",
+  "_key": "!items!36bef5eb-b1b7-41df-ad5a-16f14393c244"
+}

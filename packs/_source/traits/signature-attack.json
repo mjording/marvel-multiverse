@@ -1,0 +1,12 @@
+{
+  "_id": "221e47d6-3167-4056-b6e5-798f3cee6b0d",
+  "name": "Signature Attack",
+  "type": "trait",
+  "system": {
+    "restriction": "",
+    "description": "The character is known for favoring a particular kind of weapon or attack pewer. They have an edge when making attacks that way. This trait can be taken more than once, but each time must be with a different kind of weapon or attack power"
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!221e47d6-3167-4056-b6e5-798f3cee6b0d"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "c07c0329-0adf-4e96-a125-8b77c62be13b",
+  "name": "Brillance 3",
+  "type": "power",
+  "system": {
+    "description": "Little can stop the character's mind.",
+    "powerSet": "Basic",
+    "prerequisites": "Brilliance 2, Rank 3",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character adds +3 to their Logic damage multiplier, and they gain a +3 bonus to Logic checks other than attacks."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bbe663a787c7ec04",
+  "_key": "!items!c07c0329-0adf-4e96-a125-8b77c62be13b"
+}

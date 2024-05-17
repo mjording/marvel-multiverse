@@ -1,0 +1,13 @@
+{
+  "_id": "a4ce46a8-9b96-4c44-93e9-16e8fc6e51ca",
+  "name": "Auditory Issues",
+  "type": "tag",
+  "system": {
+    "description": "The character has trouble hearing that can range from partial to full deafness.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!a4ce46a8-9b96-4c44-93e9-16e8fc6e51ca"
+}

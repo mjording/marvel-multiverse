@@ -1,0 +1,20 @@
+{
+  "_id": "8ca96fd6-9647-4b73-b101-91acd3a0a32c",
+  "name": "Immovable",
+  "type": "power",
+  "system": {
+    "description": "Nobody pushes the character around.",
+    "powerSet": "Super-Strength",
+    "prerequisites": "",
+    "action": "Reaction",
+    "trigger": "The character is knocked back or knocked prone.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "For every point of Melee defense the character has, they con reduce knockback by 1 space."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "88848a43d8a58388",
+  "_key": "!items!8ca96fd6-9647-4b73-b101-91acd3a0a32c"
+}

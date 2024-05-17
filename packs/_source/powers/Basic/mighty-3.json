@@ -1,0 +1,20 @@
+{
+  "_id": "4fa673f7-96a2-4c11-bdab-5d8c7f620f1b",
+  "name": "Mighty 3",
+  "type": "power",
+  "system": {
+    "description": "The character could lift a house.",
+    "powerSet": "Basic",
+    "prerequisites": "Mighty 2, Rank 3",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "Treat the character as three sizes bigger for lifting, carrying, swinging and throwing things. They also add +3 to their Melee damage multiplier, and they gain a +3 bonus to Melee checks other than attacks."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bbe663a787c7ec04",
+  "_key": "!items!4fa673f7-96a2-4c11-bdab-5d8c7f620f1b"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "f7b0568d-f1c5-4e91-a2ad-a97d2c316ba2",
+  "name": "Jump 1",
+  "type": "power",
+  "system": {
+    "description": "The character can leap about like a frog.",
+    "powerSet": "Super-Strength",
+    "prerequisites": "Rank 2",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character gains the Jump movement mode with a Jump Speed equal to their Run Speed. They can jump this distance in any direction, vertically as wel as horizontally."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "88848a43d8a58388",
+  "_key": "!items!f7b0568d-f1c5-4e91-a2ad-a97d2c316ba2"
+}

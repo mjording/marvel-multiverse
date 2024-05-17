@@ -1,0 +1,14 @@
+{
+  "_id": "a1e3d82b-b3b3-4ae4-af13-61c00b239da5",
+  "name": "Sniper Rifle",
+  "type": "weapon",
+  "system": {
+    "description": "A high-powered rifle that can hit targets from a long distance.",
+    "range": "40",
+    "damageMultiplierBonus": "+1"
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8b60348af8f8d703",
+  "_key": "!items!a1e3d82b-b3b3-4ae4-af13-61c00b239da5"
+}

@@ -84,6 +84,15 @@
       "type": "Item",
       "private": false,
       "flags": {}
+    },
+    {
+      "name": "items",
+      "label": "Items",
+      "system": "marvel-multiverse",
+      "path": "packs/items",
+      "type": "Item",
+      "private": false,
+      "flags": {}
     }
   ],
   "packFolders": [
@@ -93,14 +102,31 @@
       "color": "#cd2c1e",
       "packs": [
         "tags",
-        "traits",
-        "powers",
-        "origins",
-        "occupations"
+        "traits"
+      ],
+      "folders": [
+        {
+          "name": "Character Features",
+          "sorting": "m",
+          "color": "#cd2c1e",
+          "packs": [
+            "origins",
+            "occupations"
+          ]
+        },
+        {
+          "name": "Items & Powers",
+          "sorting": "m",
+          "color": "#941919 ",
+          "packs": [
+            "items",
+            "powers"
+          ]
+        }
       ]
     }
   ],
-  "socket": false,
+  "socket": true,
   "manifest": "https://raw.githubusercontent.com/mjording/marvel-multiverse/master/system.json",
   "download": "This must link to a .zip file of the current version",
   "background": "systems/marvel-multiverse/ui/official/mmrpg-background.webp",

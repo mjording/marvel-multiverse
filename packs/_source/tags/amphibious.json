@@ -1,0 +1,13 @@
+{
+  "_id": "e3390c92-5cbc-401f-85dc-f125d8c564b4",
+  "name": "Amphibious",
+  "type": "tag",
+  "system": {
+    "description": "The character can breathe just fine underwater and can see and hear well in it too.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!e3390c92-5cbc-401f-85dc-f125d8c564b4"
+}

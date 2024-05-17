@@ -1,0 +1,20 @@
+{
+  "_id": "dd32d6b3-ceec-402f-ae46-81bbe64c1af7",
+  "name": "Focused Fury",
+  "type": "power",
+  "system": {
+    "description": "The character channels their rage into a devastating blow.",
+    "powerSet": "Melee Weapons",
+    "prerequisites": "Exploit, Rank 3",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5 or more Focus",
+    "effect": "The character makes a close attack with an edge. For this attack, add +1 to the character's Melee damage bonus for every 2 points of Focus they spend. On a success, an affected target takes that total damage. On a Fantastic success, an affected target takes double that total damage and suffers the weapon's special effect."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e7ef5735852365a",
+  "_key": "!items!dd32d6b3-ceec-402f-ae46-81bbe64c1af7"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "6b40255f-2257-4081-9c4a-250076dbb8dd",
+  "name": "Supernova",
+  "type": "power",
+  "system": {
+    "description": "The character blasts out a massive burst of their element.",
+    "powerSet": "Elemental Control",
+    "prerequisites": "Elemental Blast, Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "15 or more Focus",
+    "effect": " The character makes an Ego check and compares that against the Resilience defense of every enemy within 10 spaces. For these attacks, add +1 to the character's Melee damage bonus for every 2 points of Focus they spend. On a success, an affected target takes half that total damage. On a Fantastic success, an affected target takes full damage and suffers the elemental type's special effect."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a9ecc3931cffa8a5",
+  "_key": "!items!6b40255f-2257-4081-9c4a-250076dbb8dd"
+}

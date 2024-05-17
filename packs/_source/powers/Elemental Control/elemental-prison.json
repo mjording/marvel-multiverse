@@ -1,0 +1,20 @@
+{
+  "_id": "a0daf4d2-6334-4d44-8878-ca0276d1864f",
+  "name": "Elemental Prison",
+  "type": "power",
+  "system": {
+    "description": "The character can create a cage of their element.",
+    "powerSet": "Elemental Control",
+    "prerequisites": "Elemental Protection 1",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "Same as the character's Elemental Protection power",
+    "effect": "The character picks a point within their line of sight and traps any chosen targets within up to 5 spaces times their rank—in a prison comprised of their element. When the Elemental Prison is formed, the character makes an Ego check and compares the results against the Agility defense of targets inside the enclosed spaces. On each success, the character traps the target within the prison's perimeter. On a Fantastic success, such imprisoned people suffer full damage and the element's special effect too. Attacks against the prison are against the character's Ego defense. Any attacks against the prison are absorbed as if made against the character's Elemental Protection power, and the prison continues. If an attack does more damage than the character's Elemental Protection power can sustain, it destroys the prison, but no one inside is harmed. "
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a9ecc3931cffa8a5",
+  "_key": "!items!a0daf4d2-6334-4d44-8878-ca0276d1864f"
+}

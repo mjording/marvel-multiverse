@@ -1,0 +1,19 @@
+{
+  "_id": "589362f3-a5bb-4d09-95fa-a7caea0ba03c",
+  "name": "Do This All Day",
+  "type": "power",
+  "system": {
+    "description": "The character draws on their inner strength to heal themselves.",
+    "powerSet": "Shield Bearer",
+    "prerequisites": "",
+    "action": "",
+    "trigger": "",
+    "duration": "",
+    "range": "",
+    "cost": "",
+    "effect": ""
+  },
+  "folder": "926e8d815f4d3fd7",
+  "_key": "!items!589362f3-a5bb-4d09-95fa-a7caea0ba03c",
+  "flags": {}
+}

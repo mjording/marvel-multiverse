@@ -1,0 +1,67 @@
+{
+  "_id": "c13c1958-90d5-4222-b865-58f05a15dc1a",
+  "name": "Atlantean",
+  "type": "origin",
+  "system": {
+    "description": "The character is a member Homo mermanus, a variant race of humanity. Atlanteans breathe water through gills on both sides of their neck, and they cannot breathe air for longer than ten minutes. If they live in the Atlantic Ocean, they likely have blue skin and hail from Atlantis. If they come from the Pacific Ocean, they likely have green skin and live in Lemuria.",
+    "examples": "Attuma, Sub-Mariner (Namor), Namora, Warlord Krang.",
+    "suggestedOccupation": "Outsider",
+    "tags": [
+      {
+        "_id": "e3390c92-5cbc-401f-85dc-f125d8c564b4",
+        "name": "Amphibious",
+        "type": "tag",
+        "system": {
+          "description": "The character can breathe just fine underwater and can see and hear well in it too.",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!e3390c92-5cbc-401f-85dc-f125d8c564b4"
+      },
+      {
+        "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
+        "name": "Extreme Appearance",
+        "type": "tag",
+        "system": {
+          "description": "The character looks very different than the average person As a mutant, the character s automatically a citizen of the (wherever they happen to be) and cannot easily hide their island-nation of Krakoa and can travel to and from there identity, When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme Appearance is common.",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1"
+      }
+    ],
+    "traits": [
+      {
+        "_id": "2de68fb5-264d-498e-a94e-aefc619c6e59",
+        "name": "Enhanced Physique",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The churacter is stronger than regular humans. Treat them as one size bigger for lifting. carrying. swinging and throwing things. (This does not stack with other factors.)"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!2de68fb5-264d-498e-a94e-aefc619c6e59"
+      },
+      {
+        "_id": "018ec3a6-bbe2-7302-814b-be2430ddfc95",
+        "name": "Breathe Different",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character cannot breathe Earth's air for long, They lose 1 point of Health for every minute they do not have some sort af assistance to allow them to breathe properly"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!018ec3a6-bbe2-7302-814b-be2430ddfc95"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!c13c1958-90d5-4222-b865-58f05a15dc1a"
+}

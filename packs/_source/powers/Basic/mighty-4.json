@@ -1,0 +1,20 @@
+{
+  "_id": "a0837191-e96a-4033-b803-8997d5e641ba",
+  "name": "Mighty 4",
+  "type": "power",
+  "system": {
+    "description": "The character is among the strongest there are.",
+    "powerSet": "Basic",
+    "prerequisites": "Mighty 3, Rank 4",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "Treat the character as four sizes bigger lifting, carrying, swinging and throwing things. They also add +4 to their Melee damage multiplier, and they gain a +4 bonus to Melee checks other than attacks."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bbe663a787c7ec04",
+  "_key": "!items!a0837191-e96a-4033-b803-8997d5e641ba"
+}

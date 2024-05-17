@@ -1,0 +1,20 @@
+{
+  "_id": "e4e3df31-c9ab-4414-b778-ed10a8b303e1",
+  "name": "Brillance 2",
+  "type": "power",
+  "system": {
+    "description": "Everything makes more sense to the character.",
+    "powerSet": "Basic",
+    "prerequisites": "Brilliance 1, Rank 2",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character adds +2 to their Logic damage multiplier, and they gain a +2 bonus to Logic checks other than attacks."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bbe663a787c7ec04",
+  "_key": "!items!e4e3df31-c9ab-4414-b778-ed10a8b303e1"
+}

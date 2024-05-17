@@ -1,0 +1,20 @@
+{
+  "_id": "915f0f5c-ce1e-4939-8261-bed58f0d9d7a",
+  "name": "Immovable",
+  "type": "power",
+  "system": {
+    "description": "Nobody pushes the character around.",
+    "powerSet": "Shield Bearer",
+    "prerequisites": "",
+    "action": "Reaction",
+    "trigger": "The character is knocked back or knocked prone.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "For every point of Melee defense the character has, they con reduce knockback by 1 space."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "926e8d815f4d3fd7",
+  "_key": "!items!915f0f5c-ce1e-4939-8261-bed58f0d9d7a"
+}

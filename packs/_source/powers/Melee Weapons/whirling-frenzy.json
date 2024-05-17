@@ -1,0 +1,20 @@
+{
+  "_id": "9b756cbd-e7cf-48e1-bb13-8052beafed3d",
+  "name": "Whirling Frenzy",
+  "type": "power",
+  "system": {
+    "description": "The character assalts a foe with a tornado of whirling attacks",
+    "powerSet": "Melee Weapons",
+    "prerequisites": "Fast Attacks, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character makes an Agility check and compares it against the Agility defense of every enemy within their reach. If an atack si asuccess, the enemy takes half regular damage. On a Fantastic success, the enemy takes full damage and suffers the weapon's special effect."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e7ef5735852365a",
+  "_key": "!items!9b756cbd-e7cf-48e1-bb13-8052beafed3d"
+}

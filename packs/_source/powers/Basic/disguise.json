@@ -1,0 +1,20 @@
+{
+  "_id": "018ec3bb-90b5-78a8-b9f3-14ddf0804a50",
+  "name": "Disguise",
+  "type": "power",
+  "system": {
+    "description": "The character appears to be someone else,",
+    "powerSet": "Basic",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character instantly alters their appearance so that they appear to be someone else. The target number for anyone trying to see through the disguise is the charncter's Ego defense. If the character is impersonating someone known to the other person, Uhal person hias an edge."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bbe663a787c7ec04",
+  "_key": "!items!018ec3bb-90b5-78a8-b9f3-14ddf0804a50"
+}

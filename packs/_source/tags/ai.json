@@ -1,0 +1,13 @@
+{
+  "_id": "95b12d2a-935b-40d6-a9a8-3e8031a46229",
+  "name": "A.I.",
+  "type": "tag",
+  "system": {
+    "description": "The character possesses an artificial intelligence in a computerized mind. Their digital nature means that copies or backups can be made of their mind and can even be transferred into other compatible forms.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!95b12d2a-935b-40d6-a9a8-3e8031a46229"
+}

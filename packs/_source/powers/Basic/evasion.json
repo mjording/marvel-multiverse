@@ -1,0 +1,20 @@
+{
+  "_id": "60333607-8cb3-4cf1-9ea1-d48f96e073ab",
+  "name": "Evasion",
+  "type": "power",
+  "system": {
+    "description": "The character can dodpe fists quickly,",
+    "powerSet": "Basic",
+    "prerequisites": "",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character can use their Agility defense score apainst Melee attacks too."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bbe663a787c7ec04",
+  "_key": "!items!60333607-8cb3-4cf1-9ea1-d48f96e073ab"
+}

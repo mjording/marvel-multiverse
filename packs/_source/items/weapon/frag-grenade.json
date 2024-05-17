@@ -1,0 +1,14 @@
+{
+  "_id": "0ca4aec7-947f-447d-be73-a941856409a7",
+  "name": "Frag Grenade",
+  "type": "weapon",
+  "system": {
+    "description": "A grenade that explodes on impact, dealing damage to all enemies in a 10ft radius.",
+    "range": "10",
+    "damageMultiplierBonus": "x2"
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8b60348af8f8d703",
+  "_key": "!items!0ca4aec7-947f-447d-be73-a941856409a7"
+}

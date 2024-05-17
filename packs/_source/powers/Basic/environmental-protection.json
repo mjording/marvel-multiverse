@@ -1,0 +1,20 @@
+{
+  "_id": "f40a973e-9efc-4283-9131-0bd5458d88ad",
+  "name": "Environmental Protection",
+  "type": "power",
+  "system": {
+    "description": "Environmental effects don't bother the character.",
+    "powerSet": "Basic",
+    "prerequisites": "",
+    "action": "Permanent",
+    "trigger": "The character takes Health damage.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "The character is not harmed by intense cold or heat, the pressure of the deep seas or the intense radiation and vacuum of space. The player can choose any or all of these protections, as best fits with the character concept."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bbe663a787c7ec04",
+  "_key": "!items!f40a973e-9efc-4283-9131-0bd5458d88ad"
+}

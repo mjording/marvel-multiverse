@@ -1,0 +1,13 @@
+{
+  "_id": "0b4b0d6d-4813-4942-9773-780f77e3b366",
+  "name": "Cursed",
+  "type": "tag",
+  "system": {
+    "description": "Willingly or not, the character is affiliated with Hell. This can open them up to all sorts of nefarious plots and plans.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!0b4b0d6d-4813-4942-9773-780f77e3b366"
+}

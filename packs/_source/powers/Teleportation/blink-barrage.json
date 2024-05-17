@@ -1,0 +1,20 @@
+{
+  "_id": "03470375-1622-4598-a2a7-80f46931c5a2",
+  "name": "Blink Barrage",
+  "type": "power",
+  "system": {
+    "description": "The character teleports rapidly around an opponent.",
+    "powerSet": "Teleportation",
+    "prerequisites": "Blink, Rank 2",
+    "action": "Standard, movement or reaction",
+    "trigger": "The character is attacked.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character teleports several times in quick succession and winds up in a clear space they can see or have been to, up to their rank in spaces away. Any attacks have trouble against them for one round."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a7603bf9acca778a",
+  "_key": "!items!03470375-1622-4598-a2a7-80f46931c5a2"
+}

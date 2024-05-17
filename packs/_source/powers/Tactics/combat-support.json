@@ -1,0 +1,20 @@
+{
+  "_id": "b3ee5274-ff07-4db1-a16a-a6eb315a268f",
+  "name": "Combat Support",
+  "type": "power",
+  "system": {
+    "description": "The character gives a friend a hand.",
+    "powerSet": "Tactics",
+    "prerequisites": "Change of Plans. Rank 3",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "1 round",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "Once per battle, the character chooses an ally in earshot. If the ally makes an action check before the start of the character's next turn, the ally automatically rolls a l on their Marvel die, and that die cannot be affected by trouble."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b21090c059bb04d0",
+  "_key": "!items!b3ee5274-ff07-4db1-a16a-a6eb315a268f"
+}

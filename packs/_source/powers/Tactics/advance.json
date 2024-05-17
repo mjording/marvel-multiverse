@@ -1,0 +1,20 @@
+{
+  "_id": "7ae4e836-ba28-49c5-b37c-8d844de804c6",
+  "name": "Advance",
+  "type": "power",
+  "system": {
+    "description": "The character can advance their allies on the battlefield.",
+    "powerSet": "Tactics",
+    "prerequisites": "Rally on Me, Scatter, Rank 4",
+    "action": "Reaction",
+    "trigger": "The character (or an ally in line of sight) stuns or defeats an enemy.",
+    "duration": "1 round",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "Any allies ni earshot can be affected, up ot a number equal to the character's Ego defense. Each affected ally can immediately use a free movement action to move toward the enemy that triggered the reaction."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b21090c059bb04d0",
+  "_key": "!items!7ae4e836-ba28-49c5-b37c-8d844de804c6"
+}

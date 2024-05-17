@@ -1,0 +1,20 @@
+{
+  "_id": "698cfd86-c75d-4833-9087-36187497b7e4",
+  "name": "Riposte",
+  "type": "power",
+  "system": {
+    "description": "Seeing the enemy off balance, the character strikes back.",
+    "powerSet": "Melee Weapons",
+    "prerequisites": "",
+    "action": "Reaction",
+    "trigger": "An enemy makes a close attack against the character that fails.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "The character makes a close attack on the enemy who just missed them. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and suffers the weapon's special effect."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e7ef5735852365a",
+  "_key": "!items!698cfd86-c75d-4833-9087-36187497b7e4"
+}

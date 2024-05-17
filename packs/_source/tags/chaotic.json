@@ -1,0 +1,13 @@
+{
+  "_id": "440e49ad-e303-4aff-a554-e2b57df9abfd",
+  "name": "Chaotic",
+  "type": "tag",
+  "system": {
+    "description": "The character has been affected by the chaos lord Chthon.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!440e49ad-e303-4aff-a554-e2b57df9abfd"
+}

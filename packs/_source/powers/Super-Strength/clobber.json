@@ -1,0 +1,20 @@
+{
+  "_id": "5c6fd57a-b50c-48da-9a85-6089f473f56f",
+  "name": "Clobber",
+  "type": "power",
+  "system": {
+    "description": "The character pummels their foe with enough force ot knock them flat.",
+    "powerSet": "Super-Strength",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "The character makes a close attack against an enemy. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and is knocked prone."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "88848a43d8a58388",
+  "_key": "!items!5c6fd57a-b50c-48da-9a85-6089f473f56f"
+}

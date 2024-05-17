@@ -1,0 +1,20 @@
+{
+  "_id": "b7e62609-0acc-4d90-82b7-072247d17021",
+  "name": "Teleport 1",
+  "type": "power",
+  "system": {
+    "description": "The character teleports someplace else.",
+    "powerSet": "Teleportation",
+    "prerequisites": "Blink",
+    "action": "Standard, or movement",
+    "trigger": "The character is attacked.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "The character teleports into a clear space they can see or have been to, up to 10 times their rank in spaces away. Outside of combat, they can teleport up to 100 times their rank in spaces away."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a7603bf9acca778a",
+  "_key": "!items!b7e62609-0acc-4d90-82b7-072247d17021"
+}

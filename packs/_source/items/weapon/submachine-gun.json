@@ -1,0 +1,14 @@
+{
+  "_id": "b9595ee2-eac9-4c36-b4d1-27acd64d54f6",
+  "name": "Submachine Gun",
+  "type": "weapon",
+  "system": {
+    "description": "A submachine gun is a magazine-fed, automatic carbine designed to fire pistol cartridges. The term \"submachine gun\" was coined by John T. Thompson, the inventor of the Thompson submachine gun.",
+    "range": "10",
+    "damageMultiplierBonus": "+1"
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8b60348af8f8d703",
+  "_key": "!items!b9595ee2-eac9-4c36-b4d1-27acd64d54f6"
+}

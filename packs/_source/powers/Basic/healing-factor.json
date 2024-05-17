@@ -1,0 +1,20 @@
+{
+  "_id": "ccce5902-4be6-4b95-9851-216c6471e72f",
+  "name": "Healing Factor",
+  "type": "power",
+  "system": {
+    "description": "The character heals amazingly fast.",
+    "powerSet": "Basic",
+    "prerequisites": "",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "At the ond of the character’s turn, they regain Health equal to their Resilience, (This works outside of combat too, quickly bringing them back 1o full Health)"
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bbe663a787c7ec04",
+  "_key": "!items!ccce5902-4be6-4b95-9851-216c6471e72f"
+}

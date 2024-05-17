@@ -1,0 +1,14 @@
+{
+  "_id": "f051c779-18b5-4bc2-80b8-ef2d1bdf5bd6",
+  "name": "Bow",
+  "type": "weapon",
+  "system": {
+    "description": "A bow is a ranged weapon that projects arrows powered by the elasticity of the bow. It is a simple weapon that can be used by anyone.",
+    "range": "15",
+    "damageMultiplierBonus": "+1"
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8b60348af8f8d703",
+  "_key": "!items!f051c779-18b5-4bc2-80b8-ef2d1bdf5bd6"
+}

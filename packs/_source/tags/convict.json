@@ -1,0 +1,13 @@
+{
+  "_id": "9ccfdc25-e206-42e1-ab9f-af80252349fc",
+  "name": "Convict",
+  "type": "tag",
+  "system": {
+    "description": "The character has been convicted of a crime, which is reflected on their record.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!9ccfdc25-e206-42e1-ab9f-af80252349fc"
+}

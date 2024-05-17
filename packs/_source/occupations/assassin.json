@@ -1,0 +1,66 @@
+{
+  "_id": "d76ee960-214e-465c-ab23-47953c969690",
+  "name": "Assassin",
+  "type": "occupation",
+  "system": {
+    "description": "The character is a hired killer. They might tell themselves that this is for the greater good. They might be picky about who they take on as clients or targets, but the core of their occupation is ending lives.",
+    "examples": "Arcade, Bullseye, Elektra, the Punisher.",
+    "tags": [
+      {
+        "_id": "ed07df73-8b18-4926-a4b2-db7f29154b96",
+        "name": "Streetwise",
+        "type": "tag",
+        "system": {
+          "description": "The character knows how things are handled on the street who's in charpe of various ceiminal enterprises and how ta avoid issues with them",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!ed07df73-8b18-4926-a4b2-db7f29154b96"
+      },
+      {
+        "_id": "6937209b-663e-47ff-b64a-5b7e82d61f70",
+        "name": "Villianous",
+        "type": "tag",
+        "system": {
+          "description": "The character is a villain, someone who cares little for the rights of others, up to and including their right to live",
+          "restriction": "The character cannot also be Heroic",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!6937209b-663e-47ff-b64a-5b7e82d61f70"
+      }
+    ],
+    "traits": [
+      {
+        "_id": "41faf003-0cc5-4eac-91b7-b4a725e50940",
+        "name": "Connections Criminal",
+        "type": "trait",
+        "system": {
+          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and so on. By making an Ego check, the character can call on their contact to provide help in the form of clues, information or resources. The Narrator determines the TN of the Ego check based on the favor requested.",
+          "restriction": "Criminal"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!41faf003-0cc5-4eac-91b7-b4a725e50940"
+      },
+      {
+        "_id": "221e47d6-3167-4056-b6e5-798f3cee6b0d",
+        "name": "Signature Attack",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character is known for favoring a particular kind of weapon or attack pewer. They have an edge when making attacks that way. This trait can be taken more than once, but each time must be with a different kind of weapon or attack power"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!221e47d6-3167-4056-b6e5-798f3cee6b0d"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!d76ee960-214e-465c-ab23-47953c969690"
+}

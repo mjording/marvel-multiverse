@@ -1,0 +1,14 @@
+{
+  "_id": "6c7d9026-b566-4da8-9fa7-f3713580bfd7",
+  "name": "Pistol",
+  "type": "weapon",
+  "system": {
+    "description": "A small, easily concealable firearm.",
+    "range": "10",
+    "damageMultiplierBonus": "+1"
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8b60348af8f8d703",
+  "_key": "!items!6c7d9026-b566-4da8-9fa7-f3713580bfd7"
+}

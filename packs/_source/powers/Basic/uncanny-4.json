@@ -1,0 +1,20 @@
+{
+  "_id": "49943c16-0e63-4e2d-8cfc-c22954e45770",
+  "name": "Uncanny 4",
+  "type": "power",
+  "system": {
+    "description": "The character's mind is protected like a battleship.",
+    "powerSet": "Basic",
+    "prerequisites": "Uncanny 3, Rank 6",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "Any damage multiplier for attacks against the character's Focus is reduced by 4."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bbe663a787c7ec04",
+  "_key": "!items!49943c16-0e63-4e2d-8cfc-c22954e45770"
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "e7d90127-8dd9-42af-a58e-94b34cf1bd27",
+  "name": "Shotgun",
+  "type": "weapon",
+  "system": {
+    "description": "A shotgun is a firearm that is usually designed to be fired from the shoulder, which uses the energy of a fixed shell to fire a number of small spherical pellets called shot, or a solid projectile called a slug. Shotguns come in a wide variety of sizes, ranging from 5.5 mm (.22 inch) bore up to 5 cm (2.0 in) bore, and in a range of firearm operating mechanisms, including breech loading, single-barreled, double or combination gun, pump-action, bolt-, and lever-action, semi-automatic, and even fully automatic variants.",
+    "range": "6",
+    "damageMultiplierBonus": "+1"
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8b60348af8f8d703",
+  "_key": "!items!e7d90127-8dd9-42af-a58e-94b34cf1bd27"
+}

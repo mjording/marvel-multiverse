@@ -1,0 +1,20 @@
+{
+  "_id": "fe881741-ef78-414f-a605-08542a3606fe",
+  "name": "Crushing Grip",
+  "type": "power",
+  "system": {
+    "description": "The character seizes an enemy and squeezes hard.",
+    "powerSet": "Martial Arts",
+    "prerequisites": "Rank 2",
+    "action": "Reaction",
+    "trigger": "The target is grabbed.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character makes a Melee attack against the grabbed target's Resilience defense. FI it's a success, the target takes regular damage. On a Fantastic success, the target takes double damage instead and is pinned."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9a200a2684a8be54",
+  "_key": "!items!fe881741-ef78-414f-a605-08542a3606fe"
+}

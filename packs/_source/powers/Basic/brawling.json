@@ -1,0 +1,20 @@
+{
+  "_id": "b4d89100-f355-46c0-8562-b3133bc20933",
+  "name": "Brawling",
+  "type": "power",
+  "system": {
+    "description": "The characier has the moves and |5 hard 1o hit,",
+    "powerSet": "Basic",
+    "prerequisites": "",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The characier can use their Melee defense score against Apility attacks too."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bbe663a787c7ec04",
+  "_key": "!items!b4d89100-f355-46c0-8562-b3133bc20933"
+}

@@ -1,0 +1,49 @@
+{
+  "_id": "c97b74ac-bf50-4689-ba9c-0ef1510f4a12",
+  "name": "Reinforced Skeleton",
+  "type": "power",
+  "system": {
+    "description": "The character’s bones have been reinforeed or replaced with @ super-strong alloy or metal.",
+    "powerSet": "Basic",
+    "prerequisites": "",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character gains Health Damage Reduction 1"
+  },
+  "flags": {},
+  "effects": [
+    {
+      "name": "Reinforced Skeleton",
+      "icon": "icons/svg/aura.svg",
+      "duration": {
+        "rounds": 0,
+        "startTime": 0,
+        "seconds": null,
+        "combat": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "_id": "ae24bac5a7950110",
+      "changes": [
+        {
+          "key": "system.healthDamageReduction",
+          "mode": 2,
+          "value": "+1"
+        }
+      ],
+      "description": "",
+      "transfer": false,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!c97b74ac-bf50-4689-ba9c-0ef1510f4a12.ae24bac5a7950110"
+    }
+  ],
+  "folder": "bbe663a787c7ec04",
+  "_key": "!items!c97b74ac-bf50-4689-ba9c-0ef1510f4a12"
+}

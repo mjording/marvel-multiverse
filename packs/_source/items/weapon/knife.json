@@ -1,0 +1,14 @@
+{
+  "_id": "9d69811d-ab48-4d16-b05a-cf89d406b8d3",
+  "name": "Knife",
+  "type": "weapon",
+  "system": {
+    "description": "A knife is a small, sharp blade that is used for cutting or as a weapon. It is a simple weapon that is easy to conceal and can be used for a variety of purposes.",
+    "range": "Reach",
+    "damageMultiplierBonus": "+1"
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8b60348af8f8d703",
+  "_key": "!items!9d69811d-ab48-4d16-b05a-cf89d406b8d3"
+}

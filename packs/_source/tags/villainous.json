@@ -1,0 +1,13 @@
+{
+  "_id": "6937209b-663e-47ff-b64a-5b7e82d61f70",
+  "name": "Villianous",
+  "type": "tag",
+  "system": {
+    "description": "The character is a villain, someone who cares little for the rights of others, up to and including their right to live",
+    "restriction": "The character cannot also be Heroic",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!6937209b-663e-47ff-b64a-5b7e82d61f70"
+}

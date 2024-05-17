@@ -1,0 +1,20 @@
+{
+  "_id": "7795bf5c-bc96-4a62-a5ae-a191bc1a0833",
+  "name": "Defense Stance",
+  "type": "power",
+  "system": {
+    "description": "The character enters a fluid defensive stance, hands poised to parry and counterattack.",
+    "powerSet": "Martial Arts",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "",
+    "effect": "Any close attacks made against the character have trouble until they are successfully attacked in this combat."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9a200a2684a8be54",
+  "_key": "!items!7795bf5c-bc96-4a62-a5ae-a191bc1a0833"
+}

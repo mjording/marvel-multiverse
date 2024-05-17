@@ -1,0 +1,20 @@
+{
+  "_id": "12f7a41d-86c2-4c9f-8fff-be558d392b1b",
+  "name": "Elemental Reinforcement",
+  "type": "power",
+  "system": {
+    "description": "the character reinforces their powers with their element.",
+    "powerSet": "Elemental Control",
+    "prerequisites": "Elemental Protection 1",
+    "action": "Reaction",
+    "trigger": "Damage gets through an elemental power",
+    "duration": "Instant",
+    "range": "",
+    "cost": "Varies",
+    "effect": "The character can transfer any Health damage that gets through an elemental power that grants damage protection to their focus instead, leaving the protection intact."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a9ecc3931cffa8a5",
+  "_key": "!items!12f7a41d-86c2-4c9f-8fff-be558d392b1b"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "9d5f5fa6-879b-4016-a079-fafd4931c40d",
+  "name": "Rally on Me",
+  "type": "power",
+  "system": {
+    "description": "The character rallies their friends around them.",
+    "powerSet": "Tactics",
+    "prerequisites": "On Your Feet, Rank 3",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "10 focus",
+    "effect": "Any allies in earshot can be affected, up to a number equal to the character's Vigilance. Each affected ally can move toward the character at half speed. If they are within the character's reach at the end of this move, they recover lost Focus equal to 5 times the character's rank. The character can use this power once per battle."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b21090c059bb04d0",
+  "_key": "!items!9d5f5fa6-879b-4016-a079-fafd4931c40d"
+}

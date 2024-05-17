@@ -1,0 +1,20 @@
+{
+  "_id": "018ec3c8-e4ad-782c-b996-6d3b70f915af",
+  "name": "Slip Free",
+  "type": "power",
+  "system": {
+    "description": "The character is impossible to restrain.",
+    "powerSet": "Plasticity",
+    "prerequisites": "",
+    "action": "reaction",
+    "trigger": "The character is grabbed or pinned.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "The character is not grabbed or pinned."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b660cb39178688a5",
+  "_key": "!items!018ec3c8-e4ad-782c-b996-6d3b70f915af"
+}

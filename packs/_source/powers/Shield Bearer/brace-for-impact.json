@@ -1,0 +1,19 @@
+{
+  "_id": "6d48f2bd-8c1e-4e08-af09-79bae30009c5",
+  "name": "Brace for Impact",
+  "type": "power",
+  "system": {
+    "description": "The character mentally toughens themselves for a fight.",
+    "powerSet": "Shield Bearer",
+    "prerequisites": "Do This All Day, Rank 2",
+    "action": "Reaction",
+    "trigger": "An enemy deals physical damage to the character.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5 or more Focus",
+    "effect": "For every point of Focus spent, the character can ignore 1 point of Health damage dealt by the attack."
+  },
+  "folder": "926e8d815f4d3fd7",
+  "_key": "!items!6d48f2bd-8c1e-4e08-af09-79bae30009c5",
+  "flags": {}
+}

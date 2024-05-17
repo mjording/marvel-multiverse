@@ -1,0 +1,20 @@
+{
+  "_id": "7b696926-91c3-4b59-833c-93043441c5a5",
+  "name": "Discipline 3",
+  "type": "power",
+  "system": {
+    "description": "Few can top the character's grasp on their power.",
+    "powerSet": "Basic",
+    "prerequisites": "Discipline 2, Rank 3",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character adds +3 to their Ego damage multiplier, and they gain a +3 bonus to Ego checks other than attacks."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bbe663a787c7ec04",
+  "_key": "!items!7b696926-91c3-4b59-833c-93043441c5a5"
+}

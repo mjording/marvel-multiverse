@@ -25,11 +25,6 @@ export class MarvelDie extends DiceTerm {
         "dl": Die.prototype.drop
     }
 
-    
-    /* -------------------------------------------- */
-    /** @override */
-
-
     /* -------------------------------------------- */
     /** @override */
     get formula() {
@@ -50,21 +45,37 @@ export class MarvelDie extends DiceTerm {
 
         // Apply modifiers
         this._evaluateModifiers();
-        for (let r of this.results) {
-            let fantastic = DiceTerm.compareResult(r.result, "=", 1);
-            if(fantastic){
-                r.count = r.total = 6;
-                r.keep = true;
-                r.active = r.success = true;
-                r.failure = r.discarded = false;
-                this.results.filter((other) => other !== r).forEach((other) => {
-                    other.discarded = other.failure = true;
-                    other.active = other.success = false
-                });
+       
+        let [dieResult,otherResult] = this.results;
+        
+        let thisFantastic = DiceTerm.compareResult(dieResult.result, "=", 1);
+        
+        if(otherResult){
+            let otherFantastic = DiceTerm.compareResult(otherResult.result, "=", 1);
+            let largest = dieResult.result >= otherResult.result;
+            console.log(`MarvelDie.evaluate with otherResult: otherFantastic? ${otherFantastic}  thisFantastic? ${thisFantastic} largest? ${largest}`);
+            if(thisFantastic){     
+                dieResult.count = dieResult.total = 6;          
+                dieResult.keep = dieResult.active = dieResult.success = otherResult.failure = otherResult.discarded = true;
+                dieResult.failure = dieResult.discarded = otherResult.keep = otherResult.active = otherResult.success = false;
+            } else if(otherFantastic){
+                otherResult.count = otherResult.total = 6;
+                dieResult.keep = dieResult.active = dieResult.success = otherResult.failure = otherResult.discarded = false;
+                dieResult.failure = dieResult.discarded = otherResult.keep = otherResult.active = otherResult.success = true;
+            } else {
+                dieResult.keep = dieResult.active = dieResult.success = otherResult.failure = otherResult.discarded = largest;
+                dieResult.failure = dieResult.discarded = otherResult.keep = otherResult.active = otherResult.success = !largest;
             }
-        };
+            console.log(`MarvelDie.evaluate with otherResult: ${otherFantastic}  thisFantastic? ${thisFantastic} largest? ${largest} dieResult.result: ${dieResult.result} keep: ${dieResult.keep} discarded: ${dieResult.discarded} other result ${otherResult.result}  keep: ${otherResult.keep} discarded: ${otherResult.discarded}`);
+        } else {
+            if(thisFantastic){
+                dieResult.count = dieResult.total = 6;
+                dieResult.active = dieResult.success = true;
+                dieResult.failure = false;
+            }
+        }
+       
         this._evaluated = true;
-        this._isMarvel = true;
         return this;
     }
 
@@ -72,6 +83,7 @@ export class MarvelDie extends DiceTerm {
     /** @override */
     roll(options) {
         const roll = super.roll(options);
+        console.log(`MarvelDie.roll: ${roll.result}`);
         roll.MARVEL_MULTIVERSE = CONFIG.MARVEL_MULTIVERSE.MARVEL_RESULTS[roll.result];
         return roll;
     }

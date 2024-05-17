@@ -100,19 +100,19 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
     const origins = [];
     const occupations = [];
     const tags = [];
+    const weapons = [];
     const powers = {
       "Basic": [],
       "Elemental Control": [],
+      "Dimensional Travel": [],
       "Illusion": [],
       "Magic": [],
-      "Magic (Chaotic)": [],
-      "Magic (Cursed)": [],
-      "Magic (Sorcerous)": [],
+      "Magic-Chaos": [],
+      "Magic-Demonic": [],
+      "Magic-Sorcery": [],
       "Martial Arts": [],
       "Melee Weapons": [],
-      "Omniversal Travel (Dimensionol)": [],
-      "Omniversal Travel (Mulliversal)": [],
-      "Omniversal Travel (Time)": [],
+      "Multiversal Travel": [],
       "Phasing": [],
       "Plasticity": [],
       "Power Cantrol": [],
@@ -126,6 +126,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       "Telekinesis": [],
       "Telepathy": [],
       "Teleportation": [],
+      "Time Travel": [],
       "Weather Control": [],
     };
     // Iterate through items, allocating to containers
@@ -155,9 +156,13 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
         // powersets.forEach((powerSet) => {
         //   powers[powerSet.trim()].push(i);
         // });
+        // powers[i.powerSet].push(i);
       }
       else if (i.type === 'item') {
         gear.push(i);
+      }
+      else if (i.type === 'weapon') {
+        weapons.push(i);
       }
       
       // Assign and return
@@ -167,6 +172,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       context.powers = powers;
       context.origins = origins;
       context.occupations = occupations;
+      context.weapons = weapons;
     }
   }
   /* -------------------------------------------- */

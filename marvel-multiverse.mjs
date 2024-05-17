@@ -74,12 +74,19 @@ Hooks.once('init', function () {
 
   CONFIG.Dice.types.push(dice.MarvelDie);
   CONFIG.Dice.terms[dice.MarvelDie.DENOMINATION] = dice.MarvelDie;
+  
+  CONFIG.Dice.types.push(dice.SixOneSixDie);
 
   CONFIG.Dice.types.push(dice.SixSidedDie);
   CONFIG.Dice.terms[dice.SixSidedDie.DENOMINATION] = dice.SixSidedDie;
+  
   Roll.TOOLTIP_TEMPLATE = "systems/marvel-multiverse/templates/chat/roll-breakdown.hbs";
   CONFIG.Dice.MarvelMultiverseRoll = dice.MarvelMultiverseRoll;
   CONFIG.Dice.DamageRoll = dice.DamageRoll;
+
+  // Register Roll Extensions
+  CONFIG.Dice.rolls.push(dice.MarvelMultiverseRoll);
+  CONFIG.Dice.rolls.push(dice.DamageRoll);
   // Add fonts
   _configureFonts();
 
@@ -405,7 +412,7 @@ Hooks.on("renderChatLog", (app, html, data) => {
  */
 async function createItemMacro(data, slot) {
   // First, determine if this is a valid owned item.
-  if (data.type !== 'Item') return;
+  if (data.type !== 'Item' || data.type !== 'Weapon') return;
   if (!data.uuid.includes('Actor.') && !data.uuid.includes('Token.')) {
     return ui.notifications.warn(
       'You can only create macro buttons for owned Items'

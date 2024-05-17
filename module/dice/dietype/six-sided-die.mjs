@@ -39,22 +39,23 @@ export class SixSidedDie extends DiceTerm {
         if (this._evaluated) {
             throw new Error(`This ${this.constructor.name} has already been evaluated and is immutable`);
         }
-
+        
         // Roll the initial number of dice
         for (let n = 1; n <= this.number; n++) {
             this.roll({ minimize, maximize });
         }
-
+        
         // Apply modifiers
         this._evaluateModifiers();
-
         this._evaluated = true;
-        this._isMarvel = true;
         return this;
-    }
+    };
+
+
     roll(options) {
         const roll = super.roll(options);
         roll.MARVEL_MULTIVERSE = CONFIG.MARVEL_MULTIVERSE.DICE_RESULTS[roll.result];
+        
         return roll;
     }
 

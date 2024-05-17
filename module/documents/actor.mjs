@@ -1,3 +1,5 @@
+import { MarvelMultiverseRoll } from "../dice/roll.mjs";
+
 /**
  * Extend the base Actor document by defining a custom roll data structure which is ideal for the Simple system.
  * @extends {Actor}
@@ -79,7 +81,7 @@ export class MarvelMultiverseActor extends Actor {
   /**
    * Get an un-evaluated D20Roll instance used to roll initiative for this Actor.
    * @param {object} [options]                        Options which modify the roll
-   * @param {D20Roll.ADV_MODE} [options.edgeMode]    A specific edge mode to apply
+   * @param {MarvelMultiverseRoll.edgeMode} [options.edgeMode]    A specific edge mode to apply
    * @param {string} [options.flavor]                     Special flavor text to apply
    * @returns {MarvelMultiverseRoll}                               The constructed but unevaluated MarvelMultiverseRoll
    */

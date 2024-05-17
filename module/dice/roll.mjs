@@ -5,9 +5,9 @@
  * @param {string} formula                       The string formula to parse
  * @param {object} data                          The data object against which to parse attributes within the formula
  * @param {object} [options={}]                  Extra optional arguments which describe or modify the MarvelMultiverseRoll
- * @param {number} [options.edgeMode]       What edge modifier to apply to the roll (none, edge,
- *                                                  trouble)
- * @param {number} [options.fantastic=1]            The value of dM result which represents a fantastic success
+ * @param {number} [options.edgeMode]            What edge modifier to apply to the roll (none, edge,
+ *                                               trouble)
+ * @param {number} [options.fantastic=1]         The value of dM result which represents a fantastic success
  * @param {(number)} [options.targetValue]       Assign a target value against which the result of this roll should be
  * 
  */
@@ -34,6 +34,19 @@ export class MarvelMultiverseRoll extends Roll {
         Object.assign(newRoll, roll);
         return newRoll;
     }
+
+    /**
+     * Create a MarvelMultiverseRoll from a standard Roll Terms.
+     * @param {RollTerm[]} terms
+     * @returns {MarvelMultiverseRoll}
+     */
+    static fromTerms(terms) {
+        const newRoll = new this(roll.formula, roll.data, roll.options);
+        Object.assign(newRoll, roll);
+        return newRoll;
+    }
+
+
 
     /* -------------------------------------------- */
 

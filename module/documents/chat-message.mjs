@@ -1,3 +1,4 @@
+import { MarvelMultiverseRoll } from "../dice/roll.mjs";
 import simplifyRollFormula from "../dice/simplify-roll-formula.mjs";
 import { MARVEL_MULTIVERSE } from "../helpers/config.mjs";
 import { MarvelMultiverseActor } from "./actor.mjs";
@@ -20,10 +21,10 @@ export class ChatMessageMarvel extends ChatMessage {
 
         this._displayChatActionButtons(html);
         this._highlightFantasticSuccess(html);
-        html.find(".description.collapsible").each((i, el) => el.classList.add("collapsed"));
+        // html.find(".description.collapsible").each((i, el) => el.classList.add("collapsed"));
 
         this._enrichChatCard(html[0]);
-        requestAnimationFrame(() => html.find(".card-tray, .effects-tray").each((i, el) => el.classList.add("collapsed")));
+        // requestAnimationFrame(() => html.find(".card-tray, .effects-tray").each((i, el) => el.classList.add("collapsed")));
 
         /**
          * A hook event that fires after marvel-multiverse-specific chat message modifications have completed.
@@ -172,45 +173,59 @@ export class ChatMessageMarvel extends ChatMessage {
     });
 
     // Enriched roll flavor
-    const roll = this.getFlag("marvel-multiverse", "roll");
-    const item = fromUuidSync(roll?.itemUuid);
-    if ( this.isContentVisible && item ) {
-      const isFantastic = (roll.type === "damage") && this.rolls[0]?.options?.fantastic;
-      const subtitle = roll.type === "damage"
-        ? isFantastic ? game.i18n.localize("MARVEL_MULTIVERSE.FantasticHit") : game.i18n.localize("MARVEL_MULTIVERSE.DamageRoll")
-        : roll.type === "attack"
-          ? game.i18n.localize(`MARVEL_MULTIVERSE.Action${item.system.actionType.toUpperCase()}`)
-          : item.system.type?.label ?? game.i18n.localize(CONFIG.Item.typeLabels[item.type]);
+    
+    const roll = this.rolls[0];
+    if ( this.isContentVisible && roll?.formula?.includes("dm,") ) {
+
       const flavor = document.createElement("div");
-      flavor.classList.add("marvel-multivese", "chat-card");
+      flavor.classList.add("marvel-multiverse", "chat-card");
       flavor.innerHTML = `
-        <section class="card-header description ${isFantastic ? "fantastic" : ""}">
+        <section class="card-header description">
           <header class="summary">
-            <img class="gold-icon" src="${item.img}" alt="${item.name}">
             <div class="name-stacked">
-              <span class="title">${item.name}</span>
-              <span class="subtitle">${subtitle}</span>
+              <span class="title">test</span>
+              <span class="subtitle">subtest</span>
             </div>
           </header>
         </section>
       `;
-      html.querySelector(".message-header .flavor-text").remove();
       html.querySelector(".message-content").insertAdjacentElement("afterbegin", flavor);
-    }
+      
+      html.querySelectorAll(".tooltip-part").forEach((el, i) => {
+        const die = roll.dice[i];
+        const buttonList = document.createElement("div");
+        buttonList.classList.add("marvel-multiverse", "dice-edge-buttons", `${die.formula}-${i}`);
+        buttonList.innerHTML = `
+          <div class="edge-buttons">
+            <div class='overlay'></div>
+            <button class="retroEdgeMode roll-edge" data-retro-action="edge" data-index="${i}" title="${game.i18n.localize("MARVEL_MULTIVERSE.edgeMode.edge")}">
+              <i class="fas fa-arrow-up"></i>
+            </button>
+            <button class="retroEdgeMode roll-trouble" data-retro-action="trouble" data-index="${i}" title="${game.i18n.localize("MARVEL_MULTIVERSE.edgeMode.trouble")}">
+              <i class="fas fa-arrow-down"></i>
+            </button>
+          </div>
+        `;
+        el.insertAdjacentElement("afterbegin", buttonList);
 
-    // Attack targets
-    this._enrichAttackTargets(html);
+      });
 
-    // Dice rolls
-    if ( this.isContentVisible ) {
+
       html.querySelectorAll(".dice-tooltip").forEach((el, i) => {
-        if ( !(roll instanceof game.MarvelMultiverse.dice.DamageRoll) ) this._enrichRollTooltip(this.rolls[i], el);
+        if ( !(roll instanceof game.MarvelMultiverse.dice.DamageRoll) ) this._enrichRollTooltip(roll, el);
       });
       this._enrichDamageTooltip(this.rolls.filter(r => r instanceof game.MarvelMultiverse.dice.DamageRoll), html);
-      html.querySelectorAll(".dice-roll").forEach(el => el.addEventListener("click", this._onClickDiceRoll.bind(this)));
+
+      
+      html.querySelectorAll("button.retroEdgeMode").forEach(el => el.addEventListener("click", this._onClickRetroButton.bind(this)));
+      
     } else {
       html.querySelectorAll(".dice-roll").forEach(el => el.classList.add("secret-roll"));
     }
+    
+    // Attack targets
+    this._enrichAttackTargets(html);
+
   }
 
   /* -------------------------------------------- */
@@ -221,13 +236,13 @@ export class ChatMessageMarvel extends ChatMessage {
    * @param {HTMLDivElement} html  The roll tooltip markup.
    */
   _enrichRollTooltip(roll, html) {
-    const constant = Number(simplifyRollFormula(roll._formula, { deterministic: true }));
+    const constant = Number(simplifyRollFormula(roll.formula, { deterministic: true }));
     if ( !constant ) return;
     const sign = constant < 0 ? "-" : "+";
     const part = document.createElement("section");
     part.classList.add("tooltip-part", "constant");
     part.innerHTML = `
-      <div class="dice">
+      <div class="dice mice">
         <ol class="dice-rolls"></ol>
         <div class="total">
           <span class="value"><span class="sign">${sign}</span>${Math.abs(constant)}</span>
@@ -326,8 +341,8 @@ export class ChatMessageMarvel extends ChatMessage {
     roll.innerHTML = `
       <div class="dice-result">
         <div class="dice-formula">${formula}</div>
-        <div class="dice-tooltip-collapser">
-          <div class="dice-tooltip">
+        <div class="dice-tooltip-sturdy">
+          <div class="dice-tooltip flexrow">
             ${tooltipContents}
           </div>
         </div>
@@ -358,8 +373,171 @@ export class ChatMessageMarvel extends ChatMessage {
   _onClickDiceRoll(event) {
     event.stopPropagation();
     const target = event.currentTarget;
-    target.classList.toggle("expanded");
+    // target.classList.toggle("expanded");
   }
+
+  /**
+   * Handle clicking a retro button.
+   * @param {PointerEvent} event      The initiating click event.
+   */
+  _onClickRetroButton(event) {
+    event.stopPropagation();
+    const target = event.currentTarget;
+    console.log(`retro button clicked: ${target.dataset.index}`)
+    const action = target.dataset.retroAction;
+    const dieIndex = Math.round(target.dataset.index);
+    const messageId = target.closest('[data-message-id]').dataset.messageId;
+    this._handleChatButton(action, messageId, dieIndex);
+  }
+
+ /**
+   * Handles our button clicks from the chat log
+   * @param {string} action
+   * @param {string} messageId
+   * @param {number} dieIndex
+   */
+  async _handleChatButton(action, messageId, dieIndex){
+    console.log(`_handleChatButton: action: ${action} message id : ${messageId} dieIndex: ${dieIndex}`);
+    const TROUBLE = CONFIG.Dice.MarvelMultiverseRoll.EDGE_MODE.TROUBLE;
+    const EDGE = CONFIG.Dice.MarvelMultiverseRoll.EDGE_MODE.EDGE;
+    const chatMessage = game.messages.get(messageId);
+    if (!action || !chatMessage) throw new Error('Missing Information');
+   
+
+    const [roll] = chatMessage.rolls;
+    if (!(roll.formula.includes("dm,"))) return;
+    // if (!(roll instanceof PoolTerm)) return;
+    
+    const [rollTerm] = roll.terms;
+    console.log(`_handleChatButton this is a pool term ${dieIndex}`);  
+    if (!(rollTerm instanceof PoolTerm)) return;
+    let targetRoll = rollTerm.rolls[dieIndex];
+    const messageOptions = {
+      userId: chatMessage.user,
+      whisper: chatMessage.whisper,
+      blind: chatMessage.blind,
+      speaker: chatMessage.speaker
+    };
+
+    try {
+      let newRoll;
+
+      switch (action) {
+        case 'trouble': {
+          newRoll = this._makeNewRoll(targetRoll, TROUBLE, messageOptions);
+          break;
+        }
+        case 'edge': {
+          newRoll = this._makeNewRoll(targetRoll, EDGE, messageOptions);
+          break;
+        }
+      }
+
+      rollTerm.rolls[dieIndex] = newRoll;
+
+      let update = await roll.toMessage({}, {create: false});
+      console.log(`_handleChatButton update ${update}`);  
+      [
+        "blind", "timestamp", "user", "whisper", "speaker",
+        "emote", "flags", "sound", "type", "_id"
+      ].forEach(k => delete update[k]);
+
+      update = foundry.utils.mergeObject(chatMessage.toJSON(), update);
+      console.log(`_handleChatButton update ${Object.keys(update)}`);  
+      return chatMessage.update(update);
+
+    } catch (err) {
+      console.error('A problem occurred with Retroactive Edge:', err);
+    }
+ }
+
+
+  _makeNewRoll(legacyRoll, newEdgeMode, messageOptions){
+    if(newEdgeMode === undefined){
+      throw new Error('you must provide what the New Edge mode is')
+    }
+    
+    if (legacyRoll.options.edgeMode === newEdgeMode){
+      throw new Error('provided roll is already that kind of roll');
+    }
+
+    console.log(`_makeNewRoll: ${legacyRoll} formula ${legacyRoll.formula} newEdgeMode: ${newEdgeMode} options ${legacyRoll.options} messageOption ${Object.keys(messageOptions)} constructor ${legacyRoll.constructor.name} ${newEdgeMode}`)
+    const TROUBLE = CONFIG.Dice.MarvelMultiverseRoll.EDGE_MODE.TROUBLE;
+    const EDGE = CONFIG.Dice.MarvelMultiverseRoll.EDGE_MODE.EDGE;
+
+    console.log(`TROUBLE: ${TROUBLE} EDGE: ${EDGE}`);
+    let newRoll = new MarvelMultiverseRoll(legacyRoll._formula, {...legacyRoll.data}, {...messageOptions});
+    console.log(`newRoll: ${newRoll.formula}`);
+    newRoll.terms = [...legacyRoll.terms];
+
+    let [newTerm] = newRoll.terms;
+    // original roll mods without the kh or kl modifiers
+    const filteredModifiers = newTerm.modifiers.filter((modifier) => !['kh', 'kl'].includes(modifier));
+    const originalResultsLength = newTerm.results.length;
+    // reset roll to not have the kh or kl modifiers
+    newTerm.modifiers = [...filteredModifiers];
+
+    // do stuff to the terms and modifiers
+    switch (newEdgeMode) {
+      case (EDGE): {
+        newTerm?.modifiers?.push('kh');
+        // if this newTerm doesn't already have more than 1 rolled value, add a new one
+        if (newTerm.number === 1) {
+          newTerm.number = 2;
+          newTerm.roll();
+        }
+        break;
+      }
+      case (TROUBLE): {
+        newTerm?.modifiers?.push('kl');
+        // if this newTerm doesn't already have more than 1 rolled value, add a new one
+        if (newTerm.number === 1) {
+          newTerm.number = 2;
+          newTerm.roll();
+        }
+        break;
+      }
+    }
+    // clear out term flavor to prevent "Reliable Talent" loop
+    newTerm.options.flavor = undefined;
+
+    newTerm.results.forEach((term) => {
+      term.active = true;
+      delete term.discarded;
+      delete term.indexThrow;
+    })
+
+    newTerm._evaluateModifiers();
+
+    newRoll._formula = newRoll.constructor.getFormula(newRoll.terms); 
+
+    // re-evaluate total after adjusting the terms
+    newRoll._total = newRoll._evaluateTotal();
+
+    // After evaluating modifiers again, Create a Fake Roll result and roll for dice so nice to roll the new dice.
+    // We have to do this after modifiers because some features might spawn more dice.
+
+    if (game.modules.get('dice-so-nice')?.active && newTerm.results.length > originalResultsLength) {
+      const fakedMarvelRoll = Roll.fromTerms([new Die({...newTerm})]);
+
+      // we are being extra and only rolling the new dice
+      fakedMarvelRoll.terms[0].results = fakedMarvelRoll.terms[0].results.filter((foo, index) => index > 0);
+      fakedMarvelRoll.terms[0].number = fakedMarvelRoll.terms[0].results.length;
+
+      game.dice3d.showForRoll(
+        fakedMarvelRoll,
+        game.users.get(messageOptions?.userId),
+        true,
+        messageOptions?.whisper?.length ? messageOptions.whisper : null,
+        messageOptions?.blind,
+        null,
+        messageOptions?.speaker
+      );
+    }
+    return newRoll;
+  }
+
+
 
   /* -------------------------------------------- */
 

@@ -10,52 +10,21 @@
   cursor: pointer;
 }
 
-.dice-roll .dice-tooltip {
-  display: inline-flex;
-}
-
-.dice-tooltip .dice-rolls .roll {
-  width: 3rem;
-  line-height: inherit;
-}
-
-.dice-tooltip .dice-rolls .roll.d6 {
-  background: none;
-}
-
-.dice-tooltip .dice-rolls .roll.min {
-  filter: none;
-}
-
-.dice-tooltip .dice-rolls .roll.success,
-.dice-tooltip .dice-rolls .roll.max {
-  filter: none;
-}
-
-.dice-roll {
-  cursor: pointer;
-}
-.dice-roll.expanded .dice-total::after {
-  transform: rotate(-90deg);
-}
-.dice-roll.expanded .dice-tooltip-collapser {
-  grid-template-rows: 1fr;
-}
-.dice-roll.secret-roll {
-  cursor: initial;
-}
-
-.dice-roll.secret-roll .dice-total::before,
-.dice-roll.secret-roll .dice-total::after {
-  content: none;
-}
-
 .dice-tooltip-collapser {
   display: grid;
   grid-template-rows: 0fr;
   transition: grid-template-rows 250ms ease;
 }
 
+.dice-roll {
+  cursor: pointer;
+}
+.dice-roll.secret-roll {
+  cursor: initial;
+}
+.dice-roll.secret-roll .dice-total::before, .dice-roll.secret-roll .dice-total::after {
+  content: "none";
+}
 .dice-roll .fantastic {
   border-width: 3px;
   border-style: double;
@@ -63,6 +32,149 @@
 .dice-roll .fantastic .summary .subtitle {
   color: var(--marvel-mulativerse-color-success);
   text-transform: uppercase;
+}
+.dice-roll .dice-tooltip {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.dice-roll .dice-tooltip.expanded {
+  display: flex;
+}
+.dice-roll .dice-tooltip .tooltip-part {
+  border-bottom: 1px solid var(--color-border-light-1);
+  flex-wrap: wrap;
+}
+.dice-roll .dice-tooltip .tooltip-part:last-child {
+  border: none;
+  padding-bottom: 0;
+}
+.dice-roll .dice-tooltip .tooltip-part.constant {
+  min-height: 40px;
+  display: grid;
+}
+.dice-roll .dice-tooltip .tooltip-part .dice-edge-buttons {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 6000;
+  display: block;
+}
+.dice-roll .dice-tooltip .tooltip-part .dice-edge-buttons .edge-buttons {
+  height: 3rem;
+  width: 3rem;
+  display: unset;
+  text-align: center;
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  left: 0em;
+  right: 3rem;
+  bottom: -3rem;
+}
+.dice-roll .dice-tooltip .tooltip-part .dice-edge-buttons .edge-buttons button {
+  font-weight: normal;
+  /* width: 3em; */
+  margin: 0;
+  display: block;
+  left: 0;
+  height: 1.8em;
+}
+.dice-roll .dice-tooltip .tooltip-part .dice-edge-buttons .edge-buttons button i {
+  font-size: 1em;
+}
+.dice-roll .dice-tooltip .tooltip-part .dice-edge-buttons .edge-buttons button.roll-edge {
+  background-color: chartreuse;
+  opacity: 0;
+}
+.dice-roll .dice-tooltip .tooltip-part .dice-edge-buttons .edge-buttons button.roll-edge:hover {
+  opacity: 0.8;
+}
+.dice-roll .dice-tooltip .tooltip-part .dice-edge-buttons .edge-buttons button.roll-trouble {
+  background-color: darkred;
+  opacity: 0;
+}
+.dice-roll .dice-tooltip .tooltip-part .dice-edge-buttons .edge-buttons button.roll-trouble:hover {
+  opacity: 0.8;
+}
+.dice-roll .dice-tooltip .tooltip-part .dice-edge-buttons .edge-buttons .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 3rem;
+  position: absolute;
+  opacity: 0;
+}
+.dice-roll .dice-tooltip .tooltip-part .dice-edge-buttons .edge-buttons:hover .overlay {
+  opacity: 0.8;
+}
+.dice-roll .dice-tooltip .dice {
+  display: flex;
+  align-items: center;
+  min-width: 4rem;
+  flex-direction: row;
+  height: 4em;
+  max-width: 6.5em;
+}
+.dice-roll .dice-tooltip .dice .dice-rolls {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.dice-roll .dice-tooltip .dice .dice-rolls .constant {
+  font-family: var(--font-primary);
+  font-weight: bold;
+  font-size: var(--font-size-18);
+  margin-left: 0.25rem;
+}
+.dice-roll .dice-tooltip .dice .dice-rolls .constant .sign {
+  font-weight: normal;
+  color: var(--color-text-light-6);
+  margin-right: 2px;
+}
+.dice-roll .dice-tooltip .dice .dice-rolls .roll {
+  width: 3rem;
+  line-height: inherit;
+  background-image: none;
+}
+.dice-roll .dice-tooltip .dice .dice-rolls .roll .min, .dice-roll .dice-tooltip .dice .dice-rolls .roll .max, .dice-roll .dice-tooltip .dice .dice-rolls .roll .success {
+  filter: none;
+}
+.dice-roll .dice-tooltip .dice .dice-rolls .roll .d6 {
+  background-image: none;
+  background: none;
+}
+.dice-roll .dice-tooltip .dice .dice-rolls .roll.max {
+  filter: none;
+}
+.dice-roll .dice-tooltip .dice .total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.dice-roll .dice-tooltip .dice .total > img {
+  top: 6px;
+  position: absolute;
+  width: 32px;
+  border: none;
+  opacity: 0.1;
+}
+.dice-roll .dice-tooltip .dice .total .label {
+  font-family: var(--marvel-multiverse-font-roboto-condensed);
+  font-size: var(--font-size-10);
+  color: var(--color-text-dark-5);
+  text-transform: uppercase;
+  text-align: center;
+}
+.dice-roll .dice-tooltip .dice .total .value {
+  font-family: var(--font-primary);
+  font-weight: bold;
+  font-size: var(--font-size-20);
+}
+.dice-roll .dice-tooltip .dice .total .sign {
+  color: var(--color-text-light-6);
+  font-weight: normal;
+  margin-right: 2px;
 }
 
 .collapsible .summary {
@@ -75,87 +187,6 @@
 .collapsed .details {
   grid-template-rows: 0fr;
   opacity: 0;
-}
-
-.dice-tooltip .dice-rolls .roll.d20 {
-  height: 4rem;
-  font-size: var(--font-size-48);
-  font-weight: normal;
-  background-size: contain;
-}
-
-.dice-tooltip {
-  flex: auto;
-  order: unset;
-  display: block;
-}
-.dice-tooltip .tooltip-part {
-  border-bottom: 1px solid var(--color-border-light-1);
-  padding: 0.125rem 0;
-}
-.dice-tooltip .tooltip-part:last-child {
-  border: none;
-  padding-bottom: 0;
-}
-.dice-tooltip .tooltip-part.constant {
-  padding-right: 6px;
-  min-height: 40px;
-  display: grid;
-}
-.dice-tooltip .dice {
-  display: flex;
-  align-items: center;
-}
-.dice-tooltip .dice .dice-rolls {
-  flex: 1;
-  margin: 5px 0 5px 10px;
-  display: flex;
-  gap: 1px;
-}
-.dice-tooltip .dice .dice-rolls .roll {
-  float: left;
-  margin: 0;
-}
-.dice-tooltip .dice .dice-rolls .constant {
-  font-family: var(--font-primary);
-  font-weight: bold;
-  font-size: var(--font-size-18);
-  margin-left: 0.25rem;
-}
-.dice-tooltip .dice .dice-rolls .constant .sign {
-  font-weight: normal;
-  color: var(--color-text-light-6);
-  margin-right: 2px;
-}
-.dice-tooltip .dice .total {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-.dice-tooltip .dice .total > img {
-  top: 6px;
-  position: absolute;
-  width: 32px;
-  border: none;
-  opacity: 0.1;
-}
-.dice-tooltip .dice .total .label {
-  font-family: var(--marvel-multiverse-font-roboto-condensed);
-  font-size: var(--font-size-10);
-  color: var(--color-text-dark-5);
-  text-transform: uppercase;
-  text-align: center;
-}
-.dice-tooltip .dice .total .value {
-  font-family: var(--font-primary);
-  font-weight: bold;
-  font-size: var(--font-size-20);
-}
-.dice-tooltip .dice .total .sign {
-  color: var(--color-text-light-6);
-  font-weight: normal;
-  margin-right: 2px;
 }
 
 .grid,

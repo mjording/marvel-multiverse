@@ -11,51 +11,6 @@
   }
 }
 
-
-.dice-roll .dice-tooltip {
-  display: inline-flex;
-}
-
-.dice-tooltip .dice-rolls .roll {
-  width: 3rem;
-  line-height: inherit;
-}
-
-.dice-tooltip .dice-rolls .roll.d6 {
-  background: none;
-}
-
-.dice-tooltip .dice-rolls .roll.min {
-  filter: none;
-}
-
-.dice-tooltip .dice-rolls .roll.success,
-.dice-tooltip .dice-rolls .roll.max {
-  filter: none;
-}
-
-
-.dice-roll {
-	cursor: pointer;
-	&.expanded {
-		.dice-total {
-			&::after {
-				transform: rotate(-90deg);
-			}
-		}
-		.dice-tooltip-collapser {
-			grid-template-rows: 1fr;
-		}
-	}
-	&.secret-roll {
-		cursor: initial;
-	}
-}
-.dice-roll.secret-roll .dice-total::before,
-.dice-roll.secret-roll .dice-total::after {
-	content: none;
-}
-
 .dice-tooltip-collapser {
   display: grid;
   grid-template-rows: 0fr;
@@ -63,6 +18,16 @@
 }
 
 .dice-roll {
+  cursor: pointer;
+  
+	&.secret-roll {
+		cursor: initial;
+    .dice-total {
+      &::before, &::after {
+        content: 'none';
+      }
+    }
+	}
 	.fantastic {
 		border-width: 3px;
 		border-style: double;
@@ -73,6 +38,170 @@
 			}
 		}
 	}
+  
+  .dice-tooltip {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    &.expanded {
+      display: flex
+    }
+
+    .tooltip-part {
+      border-bottom: 1px solid var(--color-border-light-1);
+      flex-wrap: wrap;
+
+      &:last-child {
+        border: none;
+        padding-bottom: 0;
+      }
+
+      &.constant {
+        min-height: 40px;
+        display: grid;
+      }
+
+      .dice-edge-buttons {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 6000;
+        display: block;
+
+        .edge-buttons {
+          height: 3rem;
+          width: 3rem;
+          display: unset;
+          text-align: center;
+          background: transparent;
+          cursor: pointer;
+          position: absolute;
+          left: 0em;
+          right: 3rem;
+          bottom: -3rem;
+
+          button {
+            font-weight: normal;
+            /* width: 3em; */
+            margin: 0;
+            display: block;
+            left: 0;
+            height: 1.8em;
+            i {
+              font-size: 1em;
+            }
+            &.roll-edge {
+              background-color: chartreuse;
+              opacity: 0;
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+            &.roll-trouble {
+              background-color: darkred;
+              opacity: 0;
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+          }
+
+          .overlay{
+            background: rgba(0, 0, 0, 0.5);
+            width: 3rem;
+            position: absolute;
+            opacity: 0;
+          }
+
+          &:hover {
+            .overlay{
+              opacity: 0.8;
+            }
+          }
+        }
+        
+      }
+    }
+
+    .dice {
+      display: flex;
+      align-items: center;
+      min-width: 4rem;
+      flex-direction: row;
+      height: 4em;
+      max-width: 6.5em;
+
+      .dice-rolls {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+        .constant {
+          font-family: var(--font-primary);
+          font-weight: bold;
+          font-size: var(--font-size-18);
+          margin-left: .25rem;
+
+          .sign {
+            font-weight: normal;
+            color: var(--color-text-light-6);
+            margin-right: 2px;
+          }
+        }
+        .roll {
+          width: 3rem;
+          line-height: inherit;
+          background-image: none;
+          .min, .max, .success {
+            filter: none;
+          }
+          .d6 {
+            background-image: none;
+            background: none;
+          }
+          &.max {
+            filter: none;
+          }
+        }
+      }
+
+      .total {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        > img {
+          top: 6px;
+          position: absolute;
+          width: 32px;
+          border: none;
+          opacity: .1;
+        }
+
+        .label {
+          font-family: var(--marvel-multiverse-font-roboto-condensed);
+          font-size: var(--font-size-10);
+          color: var(--color-text-dark-5);
+          text-transform: uppercase;
+          text-align: center;
+        }
+
+        .value {
+          font-family: var(--font-primary);
+          font-weight: bold;
+          font-size: var(--font-size-20);
+        }
+
+        .sign {
+          color: var(--color-text-light-6);
+          font-weight: normal;
+          margin-right: 2px;
+        }
+      }
+    }
+  }
 }
 
 .collapsible {
@@ -91,98 +220,4 @@
 		grid-template-rows: 0fr;
 		opacity: 0;
 	}
-}
-
-.dice-tooltip .dice-rolls .roll.d20 {
-  height: 4rem;
-  font-size: var(--font-size-48);
-  font-weight: normal;
-  background-size: contain;
-}
-
-.dice-tooltip {
-  flex: auto;
-  order: unset;
-  display: block;
-
-  .tooltip-part {
-    border-bottom: 1px solid var(--color-border-light-1);
-    padding: .125rem 0;
-
-    &:last-child {
-      border: none;
-      padding-bottom: 0;
-    }
-
-    &.constant {
-      padding-right: 6px;
-      min-height: 40px;
-      display: grid;
-    }
-  }
-
-  .dice {
-    display: flex;
-    align-items: center;
-
-    .dice-rolls {
-      flex: 1;
-      margin: 5px 0 5px 10px;
-      display: flex;
-      gap: 1px;
-
-      .roll {
-        float: left;
-        margin: 0;
-      }
-
-      .constant {
-        font-family: var(--font-primary);
-        font-weight: bold;
-        font-size: var(--font-size-18);
-        margin-left: .25rem;
-
-        .sign {
-          font-weight: normal;
-          color: var(--color-text-light-6);
-          margin-right: 2px;
-        }
-      }
-    }
-
-    .total {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-
-      > img {
-        top: 6px;
-        position: absolute;
-        width: 32px;
-        border: none;
-        opacity: .1;
-      }
-
-      .label {
-        font-family: var(--marvel-multiverse-font-roboto-condensed);
-        font-size: var(--font-size-10);
-        color: var(--color-text-dark-5);
-        text-transform: uppercase;
-        text-align: center;
-      }
-
-      .value {
-        font-family: var(--font-primary);
-        font-weight: bold;
-        font-size: var(--font-size-20);
-      }
-
-      .sign {
-        color: var(--color-text-light-6);
-        font-weight: normal;
-        margin-right: 2px;
-      }
-    }
-  }
 }

@@ -1,0 +1,20 @@
+{
+  "_id": "389971c1-dd9e-4716-a58b-53fdcf6ffe2d",
+  "name": "Control Weather 3",
+  "type": "power",
+  "system": {
+    "description": "The character creates a thunderstorm.",
+    "powerSet": "Weather Control",
+    "prerequisites": "Control Weather 2, Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "It starts to storm in an area up to 5 miles across times the character's rank, centered on the character. All ranges and all speeds are cut in half. If the character also has the Elemental Blast (Electricity) power, they can use it as a reaction when attacked while this power is active,"
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "ad2abe37b615e936",
+  "_key": "!items!389971c1-dd9e-4716-a58b-53fdcf6ffe2d"
+}

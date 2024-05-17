@@ -1,0 +1,20 @@
+{
+  "_id": "efdd370d-cf15-4343-83e1-28db43fa370f",
+  "name": "Weather Chill",
+  "type": "power",
+  "system": {
+    "description": "The character cools things down.",
+    "powerSet": "Weather Control",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "",
+    "effect": "The temperature in an area roughly a mile across falls as low as 0°F"
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "ad2abe37b615e936",
+  "_key": "!items!efdd370d-cf15-4343-83e1-28db43fa370f"
+}

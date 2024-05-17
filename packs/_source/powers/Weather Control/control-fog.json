@@ -1,0 +1,20 @@
+{
+  "_id": "91f3250f-0d14-4d7b-a8f3-f28034891259",
+  "name": "Control Fog",
+  "type": "power",
+  "system": {
+    "description": "The character can create or dispel a thick fog.",
+    "powerSet": "Weather Control",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "",
+    "effect": "The character creates a thick fog for up to 50 spaces per rank around them that blocks all line of sight beyond 10 spaces. They can also dispel any fog in a similar area."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "ad2abe37b615e936",
+  "_key": "!items!91f3250f-0d14-4d7b-a8f3-f28034891259"
+}

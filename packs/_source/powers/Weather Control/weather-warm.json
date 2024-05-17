@@ -1,0 +1,20 @@
+{
+  "_id": "435330d3-e13b-4188-a1e5-8b0c4997e6a6",
+  "name": "Weather Warm",
+  "type": "power",
+  "system": {
+    "description": "The character heats things up.",
+    "powerSet": "Weather Control",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "",
+    "effect": "The temperature in an area roughly a mile across climbs as high as 100°F."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "ad2abe37b615e936",
+  "_key": "!items!435330d3-e13b-4188-a1e5-8b0c4997e6a6"
+}

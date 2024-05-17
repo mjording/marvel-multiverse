@@ -21,8 +21,7 @@
   cursor: pointer;
   
 	&.secret-roll {
-		cursor: initial;
-    .dice-total {
+  		cursor: initial;
       &::before, &::after {
         content: 'none';
       }

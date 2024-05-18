@@ -19,17 +19,7 @@
 <div class="bio-sm grid grid-3col">
   <div>
     <label for="system.size" class="resource-reduced-label align-left" data-label="size">size</label>
-    <select name="system.size" data-type="String">
-      {{#select system.size}}
-        {{#each system.actorSizes as |size key|}}
-          {{#if (eq key system.size)}}
-            <option value="{{key}}" selected>{{localize size.label}}</option>
-          {{else}}
-            <option value="{{key}}">{{localize size.label}}</option>
-          {{/if}}
-        {{/each}}
-      {{/select}}
-    </select>
+    <div class="actor-size">{{system.size}}</div>
   </div>
   <div>
     <label for="system.eyes" class="resource-reduced-label align-left" data-label="system.eyes">eyes</label>

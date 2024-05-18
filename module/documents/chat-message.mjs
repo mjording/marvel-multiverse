@@ -214,17 +214,15 @@ export class ChatMessageMarvel extends ChatMessage {
       html.querySelectorAll(".dice-tooltip").forEach((el, i) => {
         if ( !(roll instanceof game.MarvelMultiverse.dice.DamageRoll) ) this._enrichRollTooltip(roll, el);
       });
-      this._enrichDamageTooltip(this.rolls.filter(r => r instanceof game.MarvelMultiverse.dice.DamageRoll), html);
+      // this._enrichDamageTooltip(this.rolls.filter(r => r instanceof game.MarvelMultiverse.dice.DamageRoll), html);
 
       
       html.querySelectorAll("button.retroEdgeMode").forEach(el => el.addEventListener("click", this._onClickRetroButton.bind(this)));
       
-    } else {
-      html.querySelectorAll(".dice-roll").forEach(el => el.classList.add("secret-roll"));
     }
     
     // Attack targets
-    this._enrichAttackTargets(html);
+    // this._enrichAttackTargets(html);
 
   }
 
@@ -237,6 +235,7 @@ export class ChatMessageMarvel extends ChatMessage {
    */
   _enrichRollTooltip(roll, html) {
     const constant = Number(simplifyRollFormula(roll.formula, { deterministic: true }));
+    console.log(`_enrichRollTooltip:  similified Roll Formula from: ${roll.formula} constant: ${constant}`);
     if ( !constant ) return;
     const sign = constant < 0 ? "-" : "+";
     const part = document.createElement("section");

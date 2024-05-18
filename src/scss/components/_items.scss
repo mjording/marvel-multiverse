@@ -1,14 +1,13 @@
 // Section Header
 .items-header {
-  height: 28px;
   margin: 2px 0;
   padding: 0;
   align-items: center;
   background: rgba(0, 0, 0, 0.05);
   border: $border-groove;
-  font-weight: bold;
+  // font-weight: bold;
   > * {
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
   }
   .item-name {
@@ -20,6 +19,12 @@
   }
 }
 
+
+.abilities {
+  ol.items-list {
+    padding: 0;
+  }
+}
 // -----------------------------------------
 // Items Lists
 // -----------------------------------------
@@ -94,7 +99,7 @@
 
   // Section Header
   .items-header {
-    height: 28px;
+    // height: 28px;
     margin: 2px 0;
     padding: 0;
     align-items: center;

@@ -115,7 +115,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       "Multiversal Travel": [],
       "Phasing": [],
       "Plasticity": [],
-      "Power Cantrol": [],
+      "Power Control": [],
       "Ranged Weapons": [],
       "Resize": [],
       "Shield Bearer": [],

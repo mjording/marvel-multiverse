@@ -8,6 +8,7 @@
 
 .ability input {
   max-width: 3em;
+  max-height: 1.3em;
 }
 
 .bio-sm input {
@@ -21,7 +22,7 @@
 section.marge {
   margin-bottom: 1em;
   div {
-    margin-right: 5px;
+    margin-right: 1px;
     h2 {
       margin-bottom: 0;
     }
@@ -96,4 +97,10 @@ aside.damages {
 
 .resources h2 {
   margin-bottom: 0;
+}
+
+.tab {
+  section {
+    margin-right: 5px;
+  }
 }

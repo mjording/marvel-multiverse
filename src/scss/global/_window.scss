@@ -17,33 +17,30 @@
   transition: grid-template-rows 250ms ease;
 }
 
+.fantastic {
+  border-width: 3px;
+  border-style: double;
+  .summary {
+    .subtitle {
+      color: var(--marvel-mulativerse-color-success);
+      text-transform: uppercase;
+    }
+  }
+}
+
 .dice-roll {
   cursor: pointer;
   
 	&.secret-roll {
-  		cursor: initial;
-      &::before, &::after {
-        content: 'none';
-      }
-    }
-	}
-	.fantastic {
-		border-width: 3px;
-		border-style: double;
-		.summary {
-			.subtitle {
-				color: var(--marvel-mulativerse-color-success);
-				text-transform: uppercase;
-			}
-		}
-	}
-  
+    cursor: initial;
+  }
+
   .dice-tooltip {
     display: flex;
     flex-direction: row;
     justify-content: center;
     &.expanded {
-      display: flex
+      display: flex;
     }
 
     .tooltip-part {
@@ -201,22 +198,5 @@
       }
     }
   }
-}
 
-.collapsible {
-	.summary {
-		cursor: pointer;
-	}
-}
-
-.collapsed {
-	.summary {
-		& > i {
-			transform: rotate(-90deg);
-		}
-	}
-	.details {
-		grid-template-rows: 0fr;
-		opacity: 0;
-	}
 }

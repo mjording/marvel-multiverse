@@ -1,0 +1,20 @@
+{
+  "_id": "bda97cf2-90bc-4c95-b4e7-3f2ec389f4f3",
+  "name": "Telekinetic Manipulation",
+  "type": "power",
+  "system": {
+    "description": "The character can handle physical things with their mind.",
+    "powerSet": "Telekinesis",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "",
+    "effect": "The character can manipulate objects in their line of sight with their mind. The maximum range for this is 5 spaces times the character's rank. If someone tries to prevent the character from taking control of an object, the character makes a Logic check against the opponent's Agility defense."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bac06ccb5a9f2d39",
+  "_key": "!items!bda97cf2-90bc-4c95-b4e7-3f2ec389f4f3"
+}

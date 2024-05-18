@@ -1,0 +1,20 @@
+{
+  "_id": "52356461-35d4-46b2-bbd5-b6b5be604594",
+  "name": "Telekinetic Sphere",
+  "type": "power",
+  "system": {
+    "description": "The character can create a protective sphere with their mind.",
+    "powerSet": "Telekinesis",
+    "prerequisites": "Telekinetic Protection 1",
+    "action": "Standard or reaction",
+    "trigger": "The character is attacked or otherwise in danger.",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "Same as the character's Telekinetic Protection power",
+    "effect": "The character envelops themselves —and any chosen people within up to 5 spaces times their rank—in a protective telekinetic sphere. When the sphere is formed, the character makes a Logic check and compares the results against the Agility defense of unwanted characters in the enclosed spaces. On a success, the character can move any unwanted people within the sphere's perimeter to spaces outside of the sphere. On a Fantastic success, such moved people suffer full damage. Attacks on the sphere are against the character's Logic defense. Any attacks on the sphere are absorbed as if made against the character's Telekinetic Protection power, and the sphere continues. If an attack does more damage than the character's Telekinetic Protection power can sustain, it destroys the sphere, but no one inside is harmed."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bac06ccb5a9f2d39",
+  "_key": "!items!52356461-35d4-46b2-bbd5-b6b5be604594"
+}

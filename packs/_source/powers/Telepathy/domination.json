@@ -1,0 +1,20 @@
+{
+  "_id": "bee684a5-3203-4a85-990a-76405b6235e2",
+  "name": "Domination",
+  "type": "power",
+  "system": {
+    "description": "The character forces someone to follow their orders-permanently.",
+    "powerSet": "Telepathy",
+    "prerequisites": "Orders, Rank 5",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "20 Focus",
+    "effect": "The character dominates a target with whom they've established a Telepathic Link and who has no Focus left. The character makes a Logic check with trouble against the target's Logic defense. On a success, the target is completely dominated and will follow the character's orders. On a Fantastic success, the character gains an edge the next time they use this power against this same target, The result of the character's check is the target number for any attempts by the target to end the domination. If any order involves harming someone, the target gets to make a Logic check to end the domination. If the target has the Heroic tag, they get an edge on the check. If the order would cause the target to harm themselves, the target gets an edge on the check. If they have the Heroic tag, they get a double edge."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e745fc9dcc37bb2",
+  "_key": "!items!bee684a5-3203-4a85-990a-76405b6235e2"
+}

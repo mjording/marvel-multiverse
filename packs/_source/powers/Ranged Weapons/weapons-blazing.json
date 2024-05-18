@@ -1,0 +1,20 @@
+{
+  "_id": "b07565dd-f612-4831-8a1e-ea7edfabc02e",
+  "name": "Weapons Blazing",
+  "type": "power",
+  "system": {
+    "description": "The character blazes away at two foes at once.",
+    "powerSet": "Ranged Weapons",
+    "prerequisites": "Snap Shooting",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "The character splits their attack to make two ranged attacks against separate targets (or they can focus a single attack on a single target). Make a single Agility check and compare it to the targets' Agility defenses. On a success, the affected target takes half regular damage. On a Fantastic success, the affected target takes full damage, and the character can make a bonus attack with this power against any available target, with the same effect."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "82ef84dfce4c7abf",
+  "_key": "!items!b07565dd-f612-4831-8a1e-ea7edfabc02e"
+}

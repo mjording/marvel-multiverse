@@ -1,0 +1,20 @@
+{
+  "_id": "fd64b20d-001e-4162-bfa8-40fc338e77fb",
+  "name": "Machine Telepathy",
+  "type": "power",
+  "system": {
+    "description": "The character can communicate with machines with their mind.",
+    "powerSet": "Telepathy",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "",
+    "effect": "The character can communicate telepathically with one machine at a time, and they must have met or seen the machine before. The communication can be verbal, visual or even more complex, such as imparting location information. There is no limit to the distance of the communication, as long as the character and the machine are in the same dimension. Simple machines do not have much to offer in the way of conversation, but they are also generally compliant with requests. Complex machines-like computers, smartphones and other electronics-are also often compliant, but if they are secured in any way, they usually refuse to communicate with strangers. A Logic check can get the character past such security, and the Narrator should set the target number according to the strength of the security."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e745fc9dcc37bb2",
+  "_key": "!items!fd64b20d-001e-4162-bfa8-40fc338e77fb"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "c5c4f4a6-4017-472a-82e2-e0ffcfd9095a",
+  "name": "Mind Interrogation",
+  "type": "power",
+  "system": {
+    "description": "The character can root through a target's mind.",
+    "powerSet": "Telepathy",
+    "prerequisites": "Mind Reading, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "1 round",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character can delve into the mind of a single person with whom they have established a telepathic link. This requires a Logic check against the target's Logic defense. On a success, the character can ask a single simple question and get the answer from the target's mind. On a Fantastic success, the character can get more complex information."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e745fc9dcc37bb2",
+  "_key": "!items!c5c4f4a6-4017-472a-82e2-e0ffcfd9095a"
+}

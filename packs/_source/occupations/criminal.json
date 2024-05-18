@@ -1,0 +1,54 @@
+{
+  "_id": "3f5c7d63-f25c-4042-bd1a-c8b9cbc2beee",
+  "name": "Criminal",
+  "type": "occupation",
+  "system": {
+    "description": "The character did something that put them on the wrong side of the law. They might have spent time in jail for their crimes, or they might have gotten away with them scot-free. The fact that they break the law doesn't necessarily make them a bad person, but law enforcers usually don't care about such distinctions. If they are currently wanted by the law for their crimes, they should also take the Hunted tag. If they have served time, they should take the Convict tag too.",
+    "examples": "Ant-Man (Scott Lang), Black Cat, Gambit.",
+    "tags": [
+      {
+        "_id": "ed07df73-8b18-4926-a4b2-db7f29154b96",
+        "name": "Streetwise",
+        "type": "tag",
+        "system": {
+          "description": "The character knows how things are handled on the street who's in charpe of various ceiminal enterprises and how ta avoid issues with them",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!ed07df73-8b18-4926-a4b2-db7f29154b96"
+      },
+      {
+        "_id": "16b9b183-3707-4eee-b122-eb87611706dc",
+        "name": "Black Market Access",
+        "type": "tag",
+        "system": {
+          "description": "The character knows how and where they can buy and sell hard-to-find and potentially illegal things",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!16b9b183-3707-4eee-b122-eb87611706dc"
+      }
+    ],
+    "traits": [
+      {
+        "_id": "41faf003-0cc5-4eac-91b7-b4a725e50940",
+        "name": "Connections Criminal",
+        "type": "trait",
+        "system": {
+          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and so on. By making an Ego check, the character can call on their contact to provide help in the form of clues, information or resources. The Narrator determines the TN of the Ego check based on the favor requested.",
+          "restriction": "Criminal"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!41faf003-0cc5-4eac-91b7-b4a725e50940"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!3f5c7d63-f25c-4042-bd1a-c8b9cbc2beee"
+}

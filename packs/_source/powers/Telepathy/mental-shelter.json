@@ -1,0 +1,20 @@
+{
+  "_id": "35b4f5bb-7416-414e-8098-893b7e0bbe85",
+  "name": "Mental Shelter",
+  "type": "power",
+  "system": {
+    "description": "The character can create a shelter for their mind.",
+    "powerSet": "Telepathy",
+    "prerequisites": "Uncanny 1, Rank 3",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "The character extends their mental defenses to protect any chosen people within up to 5 spaces times their rank. The protected targets are granted Focus Damage Reduction equal to the character's Uncanny power."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e745fc9dcc37bb2",
+  "_key": "!items!35b4f5bb-7416-414e-8098-893b7e0bbe85"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "d6fbf54f-35cc-4271-a44f-3c115f9366fe",
+  "name": "Telepathic Network",
+  "type": "power",
+  "system": {
+    "description": "The character can speak telepathically with a group of people.",
+    "powerSet": "Telepathy",
+    "prerequisites": "Telepathic Link, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character can communicate telepathically with a group of willing, linked people, each of whom they have met or seen before. The communication can be verbal, visual or even more complex, such as imparting location information. The group can number up to five people per rank. There is no limit to the distance of the communication, as long as everyone involved is in the same dimension."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e745fc9dcc37bb2",
+  "_key": "!items!d6fbf54f-35cc-4271-a44f-3c115f9366fe"
+}

@@ -1,0 +1,12 @@
+{
+  "_id": "7c124b29-734d-4493-b9cf-07b5c044fdf7",
+  "name": "Connections Espionage",
+  "type": "trait",
+  "system": {
+    "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and so on. By making an Ego check, the character can call on their contact to provide help in the form of clues, information or resources. The Narrator determines the TN of the Ego check based on the favor requested.",
+    "restriction": "Espionage"
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!7c124b29-734d-4493-b9cf-07b5c044fdf7"
+}

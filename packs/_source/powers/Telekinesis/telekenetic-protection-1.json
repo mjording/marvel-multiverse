@@ -1,0 +1,20 @@
+{
+  "_id": "8a622f5d-8993-4cf5-8430-c37922f0c178",
+  "name": "Telekinetic Protection 1",
+  "type": "power",
+  "system": {
+    "description": "The character uses their mind to physically protect themselves.",
+    "powerSet": "Telekinesis",
+    "prerequisites": "Telekinetic Barrier, Rank 2",
+    "action": "Standard or Reaction",
+    "trigger": "The character is attacked or otherwise in danger.",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character's personal telekinetic field protects them. Any attacks against them that do 10 points of damage or less are instantly absorbed, and the protection continues. If an attack does more than 10 points of damage, it destroys the protection. Either way, the character remains unharmed."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bac06ccb5a9f2d39",
+  "_key": "!items!8a622f5d-8993-4cf5-8430-c37922f0c178"
+}

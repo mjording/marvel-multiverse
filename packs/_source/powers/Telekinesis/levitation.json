@@ -1,0 +1,20 @@
+{
+  "_id": "88e754e8-838c-4d9c-8417-fe9a1b6d686e",
+  "name": "Levitation",
+  "type": "power",
+  "system": {
+    "description": "The character can hover and move.",
+    "powerSet": "Telekinesis",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character can move through the air in any direction at their Run Speed."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bac06ccb5a9f2d39",
+  "_key": "!items!88e754e8-838c-4d9c-8417-fe9a1b6d686e"
+}

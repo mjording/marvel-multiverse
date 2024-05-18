@@ -1,0 +1,20 @@
+{
+  "_id": "acd2fe13-b3ec-4690-a30e-2465dae6d208",
+  "name": "Command",
+  "type": "power",
+  "system": {
+    "description": "The character forces someone to follow an order.",
+    "powerSet": "Telepathy",
+    "prerequisites": "Telepathic Link, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "1 round",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character gives an order to a target with whom they've established a Telepathic Link. The character makes a Logic check against the target's Logic defense. On a success, the target complies with the order. On a Fantastic success, the character gains an edge the next time they use this power against this same target. The command must be something that can be completed in a single action. If it involves harming someone, the character has trouble on the check. Ifit would cause the target to harm themselves, the character has double trouble on the check."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e745fc9dcc37bb2",
+  "_key": "!items!acd2fe13-b3ec-4690-a30e-2465dae6d208"
+}

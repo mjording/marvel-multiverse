@@ -1,0 +1,20 @@
+{
+  "_id": "d97affd4-da79-4757-a14d-2f8e481b9405",
+  "name": "Double Tap",
+  "type": "power",
+  "system": {
+    "description": "Double Tap To be twice as sure",
+    "powerSet": "Ranged Weapons",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "The character makes a ranged attack against an enemy within 2 spaces. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and is bleeding."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "82ef84dfce4c7abf",
+  "_key": "!items!d97affd4-da79-4757-a14d-2f8e481b9405"
+}

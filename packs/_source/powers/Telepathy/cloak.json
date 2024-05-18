@@ -1,0 +1,20 @@
+{
+  "_id": "f76a1b95-cf45-4300-9eb5-23ee45acd8c6",
+  "name": "Cloak",
+  "type": "power",
+  "system": {
+    "description": "The character makes people believe theyre not there.",
+    "powerSet": "Telepathy",
+    "prerequisites": "Telepathic Link, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character uses a mirage to block their presence from the minds of people within 20 spaces per rank. Cameras (for instance) can still record them, but when people look in the character's direction, they see nothing there, The target number for anyone trying to detect the character is the character's Logic defense."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e745fc9dcc37bb2",
+  "_key": "!items!f76a1b95-cf45-4300-9eb5-23ee45acd8c6"
+}

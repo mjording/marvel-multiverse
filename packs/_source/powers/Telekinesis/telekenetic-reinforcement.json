@@ -1,0 +1,20 @@
+{
+  "_id": "36cd2125-c105-4903-b252-7fafed8aec9a",
+  "name": "Telekinetic Reinforcement",
+  "type": "power",
+  "system": {
+    "description": "The character reinforces their defenses with their mind.",
+    "powerSet": "Telekinesis",
+    "prerequisites": "Telekinetic Protection 1",
+    "action": "Reaction",
+    "trigger": "A character using a telekinetic power that grants damage protection is attacked.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "Varies",
+    "effect": "The character can transfer any Health damage that gets through a telekinetic power that grants damage protection to their Focus instead, leaving the protection intact."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bac06ccb5a9f2d39",
+  "_key": "!items!36cd2125-c105-4903-b252-7fafed8aec9a"
+}

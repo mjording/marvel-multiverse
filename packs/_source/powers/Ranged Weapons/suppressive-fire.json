@@ -1,0 +1,20 @@
+{
+  "_id": "73fab6b2-25e3-47b0-baf2-97056845ddaf",
+  "name": "Suppressive Fire",
+  "type": "power",
+  "system": {
+    "description": "The character forces their foes to keep their heads down.",
+    "powerSet": "Ranged Weapons",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "The character makes an Agility attack against a target's Vigilance defense. If the attack is a success, apply Health Damage Reduction normally. Any damage taken is then applied to the target's Focus instead. If it's a Fantastic success, the damage is doubled, and if the target takes any Focus damage, they are stunned for one round."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "82ef84dfce4c7abf",
+  "_key": "!items!73fab6b2-25e3-47b0-baf2-97056845ddaf"
+}

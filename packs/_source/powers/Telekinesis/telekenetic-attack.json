@@ -1,0 +1,20 @@
+{
+  "_id": "438b9e8f-9757-4a4c-9ab5-f3a95a30aa00",
+  "name": "Telekinetic Attack",
+  "type": "power",
+  "system": {
+    "description": "The character can punch or choke an enemy with their mind.",
+    "powerSet": "Telekinesis",
+    "prerequisites": "Telekinetic Manipulation, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "Varies",
+    "cost": "5 Focus",
+    "effect": "The character makes a Logic attack against the Melee defense of a target within 5 spaces times the character's rank. If the attack is a success, it inflicts regular damage. On a Fantastic success, the damage is doubled instead, and the target is stunned for one round."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bac06ccb5a9f2d39",
+  "_key": "!items!438b9e8f-9757-4a4c-9ab5-f3a95a30aa00"
+}

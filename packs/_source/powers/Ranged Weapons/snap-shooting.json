@@ -1,0 +1,20 @@
+{
+  "_id": "85a5ea2f-8586-4125-b4ed-03c2efbc8bf2",
+  "name": "Snap Shooting",
+  "type": "power",
+  "system": {
+    "description": "The character shoots from the hip with deadly speed.",
+    "powerSet": "Ranged Weapons",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "The character splits their attack to make two ranged attacks against separate targets (or they can focus a single attack on a single target). Make a single Agility check and compare it to the targets' Agility defenses. On a success, an affected target takes half regular damage. On a Fantastic success, an affected target takes full damage and is bleeding."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "82ef84dfce4c7abf",
+  "_key": "!items!85a5ea2f-8586-4125-b4ed-03c2efbc8bf2"
+}

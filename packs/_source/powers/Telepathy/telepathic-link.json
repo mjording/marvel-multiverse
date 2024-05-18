@@ -1,0 +1,20 @@
+{
+  "_id": "c9665c3e-5a01-436b-bad1-bbdf76f08a40",
+  "name": "Telepathic Link",
+  "type": "power",
+  "system": {
+    "description": "The character can speak with another telepathically.",
+    "powerSet": "Telepathy",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "",
+    "effect": "The character can communicate telepathically with one person at a time, and they must have met or seen the other person before. The communication can be verbal, visual or even more complex, such as imparting location information. There is no limit to the distance of the communication, as long as the character and the target are in the same dimension. If the other person does not wish to speak with the character, the target can automatically tune them out. To force a telepathic link, the character can make a Logic check against the target's Vigilance defense. On a failure, the character cannot attempt to communicate with the target in this way for the rest of the day. On a success, the character can communicate with the target for one round. On a Fantastic success, the target cannot shut the character out for the rest of the day."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e745fc9dcc37bb2",
+  "_key": "!items!c9665c3e-5a01-436b-bad1-bbdf76f08a40"
+}

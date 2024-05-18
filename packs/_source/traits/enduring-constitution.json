@@ -1,0 +1,12 @@
+{
+  "_id": "51cf3fa0-43b1-4d8f-a4e9-f8ecdb634020",
+  "name": "Enduring Constitution",
+  "type": "trait",
+  "system": {
+    "restriction": "",
+    "description": "The character can function for up to 48 hours without sleep and has an edge on Resilience checks to overcome fatigue or weariness."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!51cf3fa0-43b1-4d8f-a4e9-f8ecdb634020"
+}

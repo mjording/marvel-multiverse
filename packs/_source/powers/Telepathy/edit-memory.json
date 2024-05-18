@@ -1,0 +1,20 @@
+{
+  "_id": "9c21a531-f343-4ff5-93a6-c121084c74d2",
+  "name": "Edit Memory",
+  "type": "power",
+  "system": {
+    "description": "The character alters someone's memory..",
+    "powerSet": "Telepathy",
+    "prerequisites": "Memory Blip, Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "The character alters the memory of a target with whom they've established a Telepathic Link. This can be as simple as erasing a chunk of the target's memory or as complicated as implanting entirely new memories. The Narrator sets the target number based on how complex the new memory is and how hard it would be to integrate such memories into the character's other memories. The character makes a Logic check against the target's Logic defense. On a success, the memories are altered. On a Fantastic success, the target has trouble on checks to refute such memories in the future. Any time the target is given good reason to doubt the edited memory, they can make a Logic check to refute the new version of their memories and recover their original memories. If they succeed, they remember both the original memory and the edited one. On a Fantastic success, they know for sure who did this to them."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e745fc9dcc37bb2",
+  "_key": "!items!9c21a531-f343-4ff5-93a6-c121084c74d2"
+}

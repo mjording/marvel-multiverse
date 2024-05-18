@@ -1,0 +1,20 @@
+{
+  "_id": "ccb86953-2a13-4c2e-bfc1-4505d6bdd05d",
+  "name": "Telekinetic Grab",
+  "type": "power",
+  "system": {
+    "description": "The character can grab a foe with their mind.",
+    "powerSet": "Telekinesis",
+    "prerequisites": "Telekinetic Manipulation, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "Varies",
+    "cost": "5 Focus",
+    "effect": "The character makes a Logic attack against the Melee defense of a target within 5 spaces times the character's rank. If the attack is a success, the character grabs the target with their mind. On a Fantastic success, the target can also be pinned. Breaking free requires a successful Melee check against target number 20."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bac06ccb5a9f2d39",
+  "_key": "!items!ccb86953-2a13-4c2e-bfc1-4505d6bdd05d"
+}

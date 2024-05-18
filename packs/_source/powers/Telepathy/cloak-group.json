@@ -1,0 +1,20 @@
+{
+  "_id": "4f1034d6-ce04-4220-b6ad-dd92f65872d5",
+  "name": "Cloak Group",
+  "type": "power",
+  "system": {
+    "description": "The character mentally hides themseives and their friends.",
+    "powerSet": "Telepathy",
+    "prerequisites": "Cloak, Rank 3",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "Using a mirage, the character blocks their presence-and the presence of up to one other person per rank, within 10 spaces-from the minds of people within 20 spaces per rank. Cameras (for instance) can still record them, but when people look in the characters' direction, they see nothing there. The target number for anyone trying to detect the character or the others protected is the character's Logic defense."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e745fc9dcc37bb2",
+  "_key": "!items!4f1034d6-ce04-4220-b6ad-dd92f65872d5"
+}

@@ -81,6 +81,7 @@ Hooks.once('init', function () {
   CONFIG.Dice.terms[dice.SixSidedDie.DENOMINATION] = dice.SixSidedDie;
   
   Roll.TOOLTIP_TEMPLATE = "systems/marvel-multiverse/templates/chat/roll-breakdown.hbs";
+  Roll.CHAT_TEMPLATE = "systems/marvel-multiverse/templates/dice/roll.hbs"
   CONFIG.Dice.MarvelMultiverseRoll = dice.MarvelMultiverseRoll;
   CONFIG.Dice.DamageRoll = dice.DamageRoll;
 

@@ -1,0 +1,20 @@
+{
+  "_id": "7cd0fa9d-87cb-4ff2-b355-0965ca970821",
+  "name": "Information Upload",
+  "type": "power",
+  "system": {
+    "description": "The character can transmit loads of information straight into another's mind.",
+    "powerSet": "Telepathy",
+    "prerequisites": "Telepathic Link, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character transmits a knowledge-based label (a trait or tag) of their own to a target with whom they have established a telepathic link-willing or not. The label lasts until the target sleeps. The character can also impart any other kind of knowledge they have to a target this way. The process is almost instantaneous."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e745fc9dcc37bb2",
+  "_key": "!items!7cd0fa9d-87cb-4ff2-b355-0965ca970821"
+}

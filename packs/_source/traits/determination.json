@@ -1,0 +1,12 @@
+{
+  "_id": "2c1dfa5f-a742-4545-a0c9-6225400e6d65",
+  "name": "Determination",
+  "type": "trait",
+  "system": {
+    "description": "The character never gives up, even when they feel like they're at their worst. While demoralized, they do not gain trouble on all actions, though they still cannot maintain concentration or spend further Focus.",
+    "restriction": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!2c1dfa5f-a742-4545-a0c9-6225400e6d65"
+}

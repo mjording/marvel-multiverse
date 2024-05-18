@@ -1,0 +1,20 @@
+{
+  "_id": "5de6e1da-feac-4813-aac2-ba872ac27f2b",
+  "name": "Mirage",
+  "type": "power",
+  "system": {
+    "description": "The character can make mirages appear in a target's mind.",
+    "powerSet": "Telepathy",
+    "prerequisites": "Telepathic Link, Rank 3",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "The character creates a full-sensory mirage that affects any target with whom they have established a link. The mirage can be of anything the character desires, and it can move freely,"
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e745fc9dcc37bb2",
+  "_key": "!items!5de6e1da-feac-4813-aac2-ba872ac27f2b"
+}

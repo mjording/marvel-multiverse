@@ -1,0 +1,20 @@
+{
+  "_id": "e4dad335-e4d4-44f4-900d-cb25b3537721",
+  "name": "Memory Blip",
+  "type": "power",
+  "system": {
+    "description": "The character erases a bit of someone's memory.",
+    "powerSet": "Telepathy",
+    "prerequisites": "Telepathic Link, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character causes a target with whom they've established a Telepathic Link to forget something that's happened in the past hour. This gap can be up to an hour in length. The character makes a Logic check against the target's Logic defense. On a success, the memories are forgotten. On a Fantastic success, the target has trouble on checks to recover such memories in the future. Any time the target is given good reason to question the blank in their memory, they can make a Logic check to recover their memory, If they succeed, the original memory floods back. On a Fantastic success, they know for sure who did this to them."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e745fc9dcc37bb2",
+  "_key": "!items!e4dad335-e4d4-44f4-900d-cb25b3537721"
+}

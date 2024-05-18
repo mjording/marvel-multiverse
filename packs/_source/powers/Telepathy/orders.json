@@ -1,0 +1,20 @@
+{
+  "_id": "2ff6e733-64a5-4ebe-b6d8-2c63774334c9",
+  "name": "Orders",
+  "type": "power",
+  "system": {
+    "description": "The character forces someone to follow a complex set of orders.",
+    "powerSet": "Telepathy",
+    "prerequisites": "Command, Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "The character gives an order to a target with whom they've established a Telepathic Link and who has no Focus left. The character makes a Logic check against the target's Logic defense. On a success, the target complies with the orders. On a Fantastic success, the character gains an edge the next time they use this power against this same target. The command must be to do something that can be completed in an hour or less. If it involves harming someone, the character has trouble on the check. If it would cause the target to harm themselves, the character has double trouble on the check."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e745fc9dcc37bb2",
+  "_key": "!items!2ff6e733-64a5-4ebe-b6d8-2c63774334c9"
+}

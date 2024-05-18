@@ -1,0 +1,20 @@
+{
+  "_id": "1cb498a9-c95d-4237-926b-e4d6cd06fb88",
+  "name": "Dampen Power",
+  "type": "power",
+  "system": {
+    "description": "The character tamps down another character's power.",
+    "powerSet": "Power Control",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "The target is grabbed",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "Varies",
+    "effect": "The character picks one power from another character within 20 spaces and makes an Ego attack against them. On a success, they tamp the power down. If the power has ranges or effective areas or durations, these are halved. If the power affects a damage multiplier, subtract 1 from the effect. The power can no longer enjoy Fantastic successes. If the power has a Focus cost, the character must also pay that cost to dampen it."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9d538083463adac7",
+  "_key": "!items!1cb498a9-c95d-4237-926b-e4d6cd06fb88"
+}

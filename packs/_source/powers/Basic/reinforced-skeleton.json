@@ -3,7 +3,7 @@
   "name": "Reinforced Skeleton",
   "type": "power",
   "system": {
-    "description": "The character’s bones have been reinforeed or replaced with @ super-strong alloy or metal.",
+    "description": "The characters bones have been reinforeed or replaced with @ super-strong alloy or metal.",
     "powerSet": "Basic",
     "prerequisites": "",
     "action": "",
@@ -33,7 +33,7 @@
         {
           "key": "system.healthDamageReduction",
           "mode": 2,
-          "value": "+1"
+          "value": 1
         }
       ],
       "description": "",

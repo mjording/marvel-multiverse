@@ -153,10 +153,18 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       else if (i.type === 'power') {
         let powersets = i.system.powerSet.split(',');
         powers[powersets[0].trim()].push(i);
-        // powersets.forEach((powerSet) => {
-        //   powers[powerSet.trim()].push(i);
-        // });
-        // powers[i.powerSet].push(i);
+
+        i.effects?.forEach((effect) => {
+          effect.changes?.forEach((change) => {
+            let value = Math.ceil(change.value);
+            let namespaces = change.key.split('.');
+             
+            if(namespaces.length === 2 && namespaces[0] === 'system') {
+              let oldVal = context[namespaces[0]][namespaces[1]];
+              context[namespaces[0]][namespaces[1]] = oldVal + value;
+            }
+          })
+        });
       }
       else if (i.type === 'item') {
         gear.push(i);
@@ -175,6 +183,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       context.weapons = weapons;
     }
   }
+
   /* -------------------------------------------- */
 
   /** @override */

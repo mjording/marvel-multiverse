@@ -20,8 +20,11 @@
   .character-portrait {
     border: 1px solid #000;
     border-radius: 5px;
-    height: 21em;
-    width: 16em;
+    height: 24rem;
+    position: absolute;
+    top: 100px;
+    left: 1px;
+    z-index: 3;
   }
 
   .header-fields {

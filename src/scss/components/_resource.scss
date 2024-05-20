@@ -12,21 +12,13 @@
 }
 
 .bio-sm input {
-  max-width: 3em;
+  max-width: 4em;
+  min-width: 3em;
+  max-height: 1.5em;
 }
 
 .bio-sm select {
   max-width: 6em;
-}
-
-section.marge {
-  margin-bottom: 1em;
-  div {
-    margin-right: 1px;
-    h2 {
-      margin-bottom: 0;
-    }
-  }
 }
 
 .melee-damages div {
@@ -55,15 +47,27 @@ section.marge {
   font-size: x-large;
 }
 
-.attribute-resources {
-  margin-top: 1rem;
-  margin-right: 2em;
+.resource-block, .personalInfo {
+  margin-top: 1em;
+  margin-right: 1em;
+  background-color: beige;
+  opacity: 0.9;
+  z-index: 100;
+  position: relative;
+  border: 1px solid beige;
+  border-radius: 10px;
+  padding: 0 4px;
 }
 
-.personalInfo input {
+.ability input, .personalInfo input, .personalInfo .item {
   width: min-content;
-  min-width: fit-content;
+  min-width: auto;
+  max-height: 1.3em;
+  flex-grow: 2;
+  border: 0;
 }
+
+
 
 .attributes-speed ol {
   list-style: none;
@@ -79,8 +83,8 @@ section.marge {
   height: fit-content;
 }
 
-.damages img {
-  max-width: 3em;
+.damages-resources img {
+  max-width: 2rem;
 }
 
 .vert-text {
@@ -89,6 +93,7 @@ section.marge {
   transform: rotate(180deg);
   height: 3em;
   text-align: center;
+  font-size: 0.8em;
 }
 
 aside.damages {
@@ -97,10 +102,4 @@ aside.damages {
 
 .resources h2 {
   margin-bottom: 0;
-}
-
-.tab {
-  section {
-    margin-right: 5px;
-  }
 }

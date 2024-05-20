@@ -15,14 +15,14 @@
          {{!-- Name & Portrait --}}
         <div class="resource flex-group-center">
           <aside class="sidebar">
-            <h2 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h2>
+            <h2 class="charname personalInfo"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h2>
             <img class="character-portrait" src="{{actor.img}}" data-edit="img" title="{{actor.name}}"/>              
           </aside>
         </div>
 
         <div class="flexrcol">
           {{!-- Rank & Karma --}}
-          <div class="attribute-resources flexrow">
+          <div class="attribute-resources resource-block flexrow">
             <div class="resource flex-group-center">
               <label for="system.attributes.rank.value" class="resource-label">Rank</label>
               <div class="resource-content flexcol attributes attributes-rank">
@@ -37,7 +37,7 @@
             </div>
           </div>
           {{!-- Health & Health DR --}}
-          <div class="attribute-resources flexrow">
+          <div class="attribute-resources resource-block flexrow">
             <div class="resource flex-group-center">
               <label for="system.health.value" class="resource-label">Health</label>
               <div class="resource-content flexcol attributes attributes-health">
@@ -52,7 +52,7 @@
             </div>
           </div>
           {{!-- Focus & Focus DR --}}
-          <div class="attribute-resources flexrow">
+          <div class="attribute-resources resource-block flexrow">
             <div class="resource flex-group-center">
               <label for="system.focus.value" class="resource-label">Focus</label>
               <div class="resource-content flexcol attributes attributes-focus">
@@ -67,7 +67,7 @@
             </div>
           </div>
           {{!-- Speed & Initative --}}
-          <div class="attribute-resources flexrow">
+          <div class="attribute-resources resource-block flexrow">
             <div class="resource flex-group-center">
               <label for="system.speed" class="resource-label">Speed</label>
               <div class="resource-content flexcol attributes-speed">
@@ -105,9 +105,9 @@
     <div class="tab abilities flexrow" data-group="primary" data-tab="abilities">
        {{!-- Abilities and damages --}}
       <section class="resources">
-        <div class="abilities resource flexcol">
+        <div class="ability-resources resources resource-block flexcol">
           <h3>Abilities</h3>
-          <ol class="items-list resources">
+          <ol class="items-list">
             <li class="item resource flexrow items-header">
               <div>Ability</div>
               <div class="ability-score">Score</div>
@@ -132,11 +132,11 @@
             {{/each}}
           </ol>
         </div>
-        <div class="damages">
+        <div class="damages-resources resource-block resources flexcol">
           <h3>Damages</h3>
-          <div class="flexcol">
-            <div class="resource meleeDamages flexrow">
-              <div class="resource">
+          <ol class="items-list">
+            <li class='item resource meleeDamages flexrow' data-item-id='{{item._id}}'>
+              <div class="melee-damage resource">
                 <div class="resource-reduced-label vert-text">Melee</div>
                 <img src="systems/marvel-multiverse/icons/marvel-1.svg" title="MARVEL_MULTIVERSE.MarvelResult.M" alt="">
               </div>
@@ -146,8 +146,8 @@
               <div class="resource">
                 <h3>+ {{system.abilities.mel.value}}</h3>
               </div>
-            </div>
-            <div class="resource agilityDamages flexrow">
+            </li>
+            <li class='item resource agilityDamages flexrow' data-item-id='{{item._id}}'>
               <div class="resource">
                 <div class="resource-reduced-label vert-text">Agility</div>
                 <img src="systems/marvel-multiverse/icons/marvel-1.svg" title="MARVEL_MULTIVERSE.MarvelResult.M" alt="">
@@ -158,8 +158,8 @@
               <div class="resource">
                 <h3>+ {{system.abilities.agl.value}}</h3>
               </div>
-            </div>
-            <div class="resource egoDamages flexrow">
+            </li>
+            <li class="item resource egoDamages flexrow">
               <div class="resource">
                 <div class="resource-reduced-label vert-text">Ego</div>
                 <img src="systems/marvel-multiverse/icons/marvel-1.svg" title="MARVEL_MULTIVERSE.MarvelResult.M" alt="">
@@ -170,8 +170,8 @@
               <div class="resource">
                 <h3>+ {{system.abilities.ego.value}}</h3>
               </div>
-            </div>
-            <div class="resource logicDamages flexrow">
+            </li>
+            <li class="item resource logicDamages flexrow">
               <div class="resource">
                 <div class="resource-reduced-label vert-text">Logic</div> 
                 <img src="systems/marvel-multiverse/icons/marvel-1.svg" title="MARVEL_MULTIVERSE.MarvelResult.M" alt="">
@@ -182,13 +182,13 @@
               <div class="resource">
                 <h3>+ {{system.abilities.log.value}}</h3>
               </div>            
-            </div>
-          </div>
+            </li>
+          </ol> 
         </div>
       </section>
       {{!-- Traits, Tags & Powers --}}
       <section class="traits-tags-powers">
-        <div class="resources flexcol">
+        <div class="trait-tag-power-resources resource-block flexcol">
           <h3>Traits & Tags</h3>
           <div class="resources flexrow">
             <div class="actor-traits resource flexcol">

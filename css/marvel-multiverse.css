@@ -175,13 +175,18 @@
   margin-right: 2px;
 }
 
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
 .grid,
 .grid-2col {
   display: grid;
   grid-column: span 2/span 2;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
-  margin: 10px 0;
+  margin: 5px 0;
   padding: 0;
 }
 
@@ -394,8 +399,11 @@
 .marvel-multiverse .sheet-header .character-portrait {
   border: 1px solid #000;
   border-radius: 5px;
-  height: 21em;
-  width: 16em;
+  height: 24rem;
+  position: absolute;
+  top: 100px;
+  left: 1px;
+  z-index: 3;
 }
 .marvel-multiverse .sheet-header .header-fields {
   flex: 1;
@@ -437,19 +445,12 @@
   max-height: 1.3em;
 }
 .marvel-multiverse .bio-sm input {
-  max-width: 3em;
+  max-width: 4em;
+  min-width: 3em;
+  max-height: 1.5em;
 }
 .marvel-multiverse .bio-sm select {
   max-width: 6em;
-}
-.marvel-multiverse section.marge {
-  margin-bottom: 1em;
-}
-.marvel-multiverse section.marge div {
-  margin-right: 1px;
-}
-.marvel-multiverse section.marge div h2 {
-  margin-bottom: 0;
 }
 .marvel-multiverse .melee-damages div {
   margin: 0;
@@ -472,13 +473,23 @@
 .marvel-multiverse .attributes-focus {
   font-size: x-large;
 }
-.marvel-multiverse .attribute-resources {
-  margin-top: 1rem;
-  margin-right: 2em;
+.marvel-multiverse .resource-block, .marvel-multiverse .personalInfo {
+  margin-top: 1em;
+  margin-right: 1em;
+  background-color: beige;
+  opacity: 0.9;
+  z-index: 100;
+  position: relative;
+  border: 1px solid beige;
+  border-radius: 10px;
+  padding: 0 4px;
 }
-.marvel-multiverse .personalInfo input {
+.marvel-multiverse .ability input, .marvel-multiverse .personalInfo input, .marvel-multiverse .personalInfo .item {
   width: min-content;
-  min-width: fit-content;
+  min-width: auto;
+  max-height: 1.3em;
+  flex-grow: 2;
+  border: 0;
 }
 .marvel-multiverse .attributes-speed ol {
   list-style: none;
@@ -492,8 +503,8 @@
 .marvel-multiverse .sheet header.sheet-header img {
   height: fit-content;
 }
-.marvel-multiverse .damages img {
-  max-width: 3em;
+.marvel-multiverse .damages-resources img {
+  max-width: 2rem;
 }
 .marvel-multiverse .vert-text {
   float: left;
@@ -501,15 +512,13 @@
   transform: rotate(180deg);
   height: 3em;
   text-align: center;
+  font-size: 0.8em;
 }
 .marvel-multiverse aside.damages {
   margin-right: 1em;
 }
 .marvel-multiverse .resources h2 {
   margin-bottom: 0;
-}
-.marvel-multiverse .tab section {
-  margin-right: 5px;
 }
 .marvel-multiverse .items-header {
   margin: 2px 0;

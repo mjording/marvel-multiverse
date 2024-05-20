@@ -1,0 +1,20 @@
+{
+  "_id": "7f381e19-996a-4d24-b694-2c1cd8277c40",
+  "name": "Clone Powers",
+  "type": "power",
+  "system": {
+    "description": "The character duplicates all of another character's powers.",
+    "powerSet": "Power Control",
+    "prerequisites": "Copy Powers, Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "15 or more Focus",
+    "effect": "The character picks another character within 10 spaces and duplicates all of their powers. They can now use those powers as if they were always theirs. If the target's powers have costs, the character must pay the highest of them, or a minimum of 15 Focus. When the character uses a copied power, they must pay any cost normally as well."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9d538083463adac7",
+  "_key": "!items!7f381e19-996a-4d24-b694-2c1cd8277c40"
+}

@@ -79,7 +79,7 @@ export class MarvelMultiverseActor extends Actor {
   /* -------------------------------------------- */
 
   /**
-   * Get an un-evaluated D20Roll instance used to roll initiative for this Actor.
+   * Get an un-evaluated MarvelMultiverseRoll instance used to roll initiative for this Actor.
    * @param {object} [options]                        Options which modify the roll
    * @param {MarvelMultiverseRoll.edgeMode} [options.edgeMode]    A specific edge mode to apply
    * @param {string} [options.flavor]                     Special flavor text to apply

@@ -129,6 +129,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       "Time Travel": [],
       "Weather Control": [],
     };
+
     // Iterate through items, allocating to containers
     for (let i of context.items) {
       i.img = i.img || Item.DEFAULT_ICON;
@@ -144,27 +145,13 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       // Append to traits.
       else if (i.type === 'trait') {
         traits.push(i);
-      }
-       // Append to tags.
-      else if (i.type === 'tag') {
+      } else if (i.type === 'tag') {
         tags.push(i);
       }
       // Append to  power.
       else if (i.type === 'power') {
         let powersets = i.system.powerSet.split(',');
         powers[powersets[0].trim()].push(i);
-
-        i.effects?.forEach((effect) => {
-          effect.changes?.forEach((change) => {
-            let value = Math.ceil(change.value);
-            let namespaces = change.key.split('.');
-             
-            if(namespaces.length === 2 && namespaces[0] === 'system') {
-              let oldVal = context[namespaces[0]][namespaces[1]];
-              context[namespaces[0]][namespaces[1]] = oldVal + value;
-            }
-          })
-        });
       }
       else if (i.type === 'item') {
         gear.push(i);

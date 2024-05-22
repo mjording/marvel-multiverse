@@ -47,9 +47,10 @@
       "Jump": "Jump",
       "Climb": "Climb",
       "Swim": "Swim",
-      "Fly": "Fly",
+      "Flight": "Flight",
       "Glide": "Glide",
-      "Swingline": "Swingline"
+      "Swingline": "Swingline", 
+      "Levitation": "Levitation"
     },
     "Formula": "Formula",
     "AbilityModifier": "Ability Modifier",

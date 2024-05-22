@@ -1,22 +1,22 @@
 {
-  "_id": "ff4dd501-3f2c-4561-9d46-a93aa20baf47",
-  "name": "Sturdy 2",
+  "_id": "baca268f-47bd-4e6f-8182-6251ae1b2cee",
+  "name": "Flexible Bones 2",
   "type": "power",
   "system": {
-    "description": "The character si protected as if by steel.",
-    "powerSet": "Basic",
-    "prerequisites": "Sturdy 1, Rank 2",
+    "description": "The character's skeleton is flexible and pliable.",
+    "powerSet": "Plasticity",
+    "prerequisites": "Flexible Bones 1, Rank 2",
     "action": "",
     "trigger": "",
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "The character gains Health Damage Reduction 2."
+    "effect": "The character gains Health Damage Reduction 2. They also have a double edge on Agility checks for contortion and escape."
   },
   "flags": {},
   "effects": [
     {
-      "name": "Health Damage Reduction 2",
+      "name": "Health Damage Reduction 1",
       "icon": "icons/svg/aura.svg",
       "duration": {
         "startTime": null,
@@ -28,8 +28,8 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.ff4dd501-3f2c-4561-9d46-a93aa20baf47",
-      "_id": "9cfacc0270f59b4b",
+      "origin": "Item.018ec3c3-7940-7d9f-b111-ba59315a2292",
+      "_id": "94f510e48af31bfc ",
       "changes": [
         {
           "key": "system.healthDamageReduction",
@@ -42,9 +42,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!ff4dd501-3f2c-4561-9d46-a93aa20baf47.9cfacc0270f59b4b"
+      "_key": "!items.effects!baca268f-47bd-4e6f-8182-6251ae1b2cee.94f510e48af31bfc"
     }
   ],
-  "folder": "bbe663a787c7ec04",
-  "_key": "!items!ff4dd501-3f2c-4561-9d46-a93aa20baf47"
+  "folder": "b660cb39178688a5",
+  "_key": "!items!baca268f-47bd-4e6f-8182-6251ae1b2cee"
 }

@@ -14,7 +14,42 @@
     "effect": "The character adds +4 to their Ego damage multiplier, and they gain a +4 bonus to Ego checks other than attacks."
   },
   "flags": {},
-  "effects": [],
+  "effects": [
+    {
+      "name": "Ego Ability Modifiers +4",
+      "icon": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.a9bd5838-a8fa-4b41-930d-cf471242d7a3",
+      "_id": "857033105dfa1946",
+      "changes": [
+        {
+          "key": "system.abilities.ego.damageMultiplier",
+          "mode": 2,
+          "value": 4
+        },
+        {
+          "key": "system.abilities.ego.noncom",
+          "mode": 2,
+          "value": 4
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!a9bd5838-a8fa-4b41-930d-cf471242d7a3.857033105dfa1946"
+    }
+  ],
   "folder": "bbe663a787c7ec04",
   "_key": "!items!a9bd5838-a8fa-4b41-930d-cf471242d7a3"
 }

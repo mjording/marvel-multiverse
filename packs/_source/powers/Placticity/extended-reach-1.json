@@ -14,7 +14,37 @@
     "effect": "The character's reach quadruples"
   },
   "flags": {},
-  "effects": [],
+  "effects": [
+    {
+      "name": "Reach x4",
+      "icon": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.018ec3bf-1d7c-726c-ad05-939de51fc920",
+      "_id": "bea1573f91f7ac3a",
+      "changes": [
+        {
+          "key": "system.reach",
+          "mode": 1,
+          "value": 4
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!018ec3bf-1d7c-726c-ad05-939de51fc920.bea1573f91f7ac3a"
+    }
+  ],
   "folder": "b660cb39178688a5",
   "_key": "!items!018ec3bf-1d7c-726c-ad05-939de51fc920"
 }

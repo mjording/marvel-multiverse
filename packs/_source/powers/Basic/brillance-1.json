@@ -14,7 +14,42 @@
     "effect": "The character adds +1 to their Logic damage multiplier, and they gain a +1 bonus to Logic checks other than attacks."
   },
   "flags": {},
-  "effects": [],
+  "effects": [
+    {
+      "name": "Logic Ability Modifiers +1",
+      "icon": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.a7f21207-84d7-405e-bfa1-257c59ccd1f3",
+      "_id": "9a49ba6b895adf17",
+      "changes": [
+        {
+          "key": "system.abilities.log.damageMultiplier",
+          "mode": 2,
+          "value": 1
+        },
+        {
+          "key": "system.abilities.log.noncom",
+          "mode": 2,
+          "value": 1
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!a7f21207-84d7-405e-bfa1-257c59ccd1f3.9a49ba6b895adf17"
+    }
+  ],
   "folder": "bbe663a787c7ec04",
   "_key": "!items!a7f21207-84d7-405e-bfa1-257c59ccd1f3"
 }

@@ -1,22 +1,22 @@
 {
-  "_id": "ff4dd501-3f2c-4561-9d46-a93aa20baf47",
-  "name": "Sturdy 2",
+  "_id": "1e62afa4-fdd7-46dd-95b2-11207d969f30",
+  "name": "Shield 2",
   "type": "power",
   "system": {
-    "description": "The character si protected as if by steel.",
-    "powerSet": "Basic",
-    "prerequisites": "Sturdy 1, Rank 2",
-    "action": "",
-    "trigger": "",
-    "duration": "Permanent",
+    "description": "The character's shield protects them like a wall.",
+    "powerSet": "Shield Bearer",
+    "prerequisites": "Shield 1, Rank 2",
+    "action": "Standard or Reaction",
+    "trigger": "The character is attacked.",
+    "duration": "Concentration",
     "range": "",
-    "cost": "",
+    "cost": "5 Focus",
     "effect": "The character gains Health Damage Reduction 2."
   },
   "flags": {},
   "effects": [
     {
-      "name": "Health Damage Reduction 2",
+      "name": "Health Damage Reduction 1",
       "icon": "icons/svg/aura.svg",
       "duration": {
         "startTime": null,
@@ -28,8 +28,8 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.ff4dd501-3f2c-4561-9d46-a93aa20baf47",
-      "_id": "9cfacc0270f59b4b",
+      "origin": "Item.1e62afa4-fdd7-46dd-95b2-11207d969f30",
+      "_id": "a0299651f0c224d1",
       "changes": [
         {
           "key": "system.healthDamageReduction",
@@ -42,9 +42,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!ff4dd501-3f2c-4561-9d46-a93aa20baf47.9cfacc0270f59b4b"
+      "_key": "!items.effects!1e62afa4-fdd7-46dd-95b2-11207d969f30.a0299651f0c224d1"
     }
   ],
-  "folder": "bbe663a787c7ec04",
-  "_key": "!items!ff4dd501-3f2c-4561-9d46-a93aa20baf47"
+  "folder": "926e8d815f4d3fd7",
+  "_key": "!items!1e62afa4-fdd7-46dd-95b2-11207d969f30"
 }

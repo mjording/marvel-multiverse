@@ -14,7 +14,37 @@
     "effect": "The character gains Health Damage Reduction 4."
   },
   "flags": {},
-  "effects": [],
+  "effects": [
+    {
+      "name": "Health Damage Reduction 3",
+      "icon": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.9b7abb0a-b978-48f4-ae69-3f49f7b2d148",
+      "_id": "9a49ba6b895adf17",
+      "changes": [
+        {
+          "key": "system.healthDamageReduction",
+          "mode": 2,
+          "value": 3
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!9b7abb0a-b978-48f4-ae69-3f49f7b2d148.9a49ba6b895adf17"
+    }
+  ],
   "folder": "bbe663a787c7ec04",
   "_key": "!items!9b7abb0a-b978-48f4-ae69-3f49f7b2d148"
 }

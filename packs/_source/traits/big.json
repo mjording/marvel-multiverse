@@ -9,43 +9,44 @@
   "flags": {},
   "effects": [
     {
-      "name": "Big",
+      "_id": "9f6539800d0c702a",
+      "name": "Big Effects",
       "icon": "icons/svg/aura.svg",
       "duration": {
-        "rounds": 0,
-        "startTime": 0,
+        "startTime": null,
         "seconds": null,
         "combat": null,
+        "rounds": null,
         "turns": null,
         "startRound": null,
         "startTurn": null
       },
       "disabled": false,
-      "_id": "9f6539800d0c702a",
+      "origin": "Item.11e691ad-1d15-4d08-980f-2331f62bbff7",
       "changes": [
         {
           "key": "system.size",
-          "mode": 2,
+          "mode": 5,
           "value": "big"
         },
         {
-          "key": "system.abilities.melee.defense",
-          "mode": 1,
+          "key": "system.abilities.mel.defense",
+          "mode": 2,
           "value": -1
         },
         {
-          "key": "system.abilities.agility.defense",
-          "mode": 1,
+          "key": "system.abilities.agl.defense",
+          "mode": 2,
           "value": -1
         },
         {
           "key": "system.reach",
-          "mode": 0,
+          "mode": 5,
           "value": 2
         }
       ],
       "description": "",
-      "transfer": false,
+      "transfer": true,
       "statuses": [],
       "flags": {},
       "tint": null,

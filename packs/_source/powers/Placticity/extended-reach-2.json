@@ -1,22 +1,22 @@
 {
-  "_id": "018ec3c3-7940-7d9f-b111-ba59315a2292",
-  "name": "Flexible Bones 1",
+  "_id": "478d8f3f-f914-43c2-86ec-60ec1e44d186",
+  "name": "Extended Reach 2",
   "type": "power",
   "system": {
-    "description": "The character's skeleton is rubbery.",
+    "description": "The character can reach a looong way.",
     "powerSet": "Plasticity",
-    "prerequisites": "",
+    "prerequisites": "Extended Reach 1, Rank 2",
     "action": "",
     "trigger": "",
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "The character gains Health Damage Reduction 1. They also have an edde on Agility checks for contortion and escape."
+    "effect": "The character's reach is 10 times normal."
   },
   "flags": {},
   "effects": [
     {
-      "name": "Health Damage Reduction 1",
+      "name": "Reach x10",
       "icon": "icons/svg/aura.svg",
       "duration": {
         "startTime": null,
@@ -28,13 +28,13 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.018ec3c3-7940-7d9f-b111-ba59315a2292",
-      "_id": "96ae1d4e6e1faf99",
+      "origin": "Item.478d8f3f-f914-43c2-86ec-60ec1e44d186",
+      "_id": "8e970b1af8c05839",
       "changes": [
         {
-          "key": "system.healthDamageReduction",
-          "mode": 2,
-          "value": 1
+          "key": "system.reach",
+          "mode": 1,
+          "value": 10
         }
       ],
       "description": "",
@@ -42,9 +42,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!018ec3c3-7940-7d9f-b111-ba59315a2292.96ae1d4e6e1faf99"
+      "_key": "!items.effects!478d8f3f-f914-43c2-86ec-60ec1e44d186.8e970b1af8c05839"
     }
   ],
   "folder": "b660cb39178688a5",
-  "_key": "!items!018ec3c3-7940-7d9f-b111-ba59315a2292"
+  "_key": "!items!478d8f3f-f914-43c2-86ec-60ec1e44d186"
 }

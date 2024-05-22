@@ -1,22 +1,22 @@
 {
-  "_id": "c97b74ac-bf50-4689-ba9c-0ef1510f4a12",
-  "name": "Reinforced Skeleton",
+  "_id": "1e34aa97-ce7f-4099-8a92-1a0c1060f6cc",
+  "name": "Shield 1",
   "type": "power",
   "system": {
-    "description": "The characters bones have been reinforeed or replaced with @ super-strong alloy or metal.",
-    "powerSet": "Basic",
+    "description": "The character wields a personal shield.",
+    "powerSet": "Shield Bearer",
     "prerequisites": "",
-    "action": "",
-    "trigger": "",
-    "duration": "Permanent",
+    "action": "Standard or Reaction",
+    "trigger": "The character is attacked.",
+    "duration": "Concentration",
     "range": "",
     "cost": "",
-    "effect": "The character gains Health Damage Reduction 1"
+    "effect": "The character gains Health Damage Reduction 1."
   },
   "flags": {},
   "effects": [
     {
-      "name": "Health Damage Reduction",
+      "name": "Health Damage Reduction 1",
       "icon": "icons/svg/aura.svg",
       "duration": {
         "startTime": null,
@@ -28,8 +28,8 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.c97b74ac-bf50-4689-ba9c-0ef1510f4a12",
-      "_id": "ae24bac5a7950110",
+      "origin": "Item.1e34aa97-ce7f-4099-8a92-1a0c1060f6cc",
+      "_id": "920d1982af6b5044",
       "changes": [
         {
           "key": "system.healthDamageReduction",
@@ -42,9 +42,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!c97b74ac-bf50-4689-ba9c-0ef1510f4a12.ae24bac5a7950110"
+      "_key": "!items.effects!1e34aa97-ce7f-4099-8a92-1a0c1060f6cc.920d1982af6b5044"
     }
   ],
-  "folder": "bbe663a787c7ec04",
-  "_key": "!items!c97b74ac-bf50-4689-ba9c-0ef1510f4a12"
+  "folder": "926e8d815f4d3fd7",
+  "_key": "!items!1e34aa97-ce7f-4099-8a92-1a0c1060f6cc"
 }

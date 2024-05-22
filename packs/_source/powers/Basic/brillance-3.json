@@ -14,7 +14,42 @@
     "effect": "The character adds +3 to their Logic damage multiplier, and they gain a +3 bonus to Logic checks other than attacks."
   },
   "flags": {},
-  "effects": [],
+  "effects": [
+    {
+      "name": "Logic Damage Multiplier +3",
+      "icon": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.c07c0329-0adf-4e96-a125-8b77c62be13b",
+      "_id": "a7984afdfb7a3dfb",
+      "changes": [
+        {
+          "key": "system.abilities.log.damageMultiplier",
+          "mode": 2,
+          "value": 3
+        },
+        {
+          "key": "system.abilities.log.noncom",
+          "mode": 2,
+          "value": 3
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!c07c0329-0adf-4e96-a125-8b77c62be13b.a7984afdfb7a3dfb"
+    }
+  ],
   "folder": "bbe663a787c7ec04",
   "_key": "!items!c07c0329-0adf-4e96-a125-8b77c62be13b"
 }

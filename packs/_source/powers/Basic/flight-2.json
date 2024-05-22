@@ -14,7 +14,47 @@
     "effect": "Outside of combat, the character can fly up to 50 times their Flight Speed."
   },
   "flags": {},
-  "effects": [],
+  "effects": [
+    {
+      "name": "Flight speed 2",
+      "icon": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.e3eeb686-747a-4d26-bb4d-ea16f7f7bdcc",
+      "_id": "91c6c00c1d209c8a",
+      "changes": [
+        {
+          "key": "system.movement.flight.active",
+          "mode": 5,
+          "value": true
+        },
+        {
+          "key": "system.movement.flight.noncom",
+          "mode": 1,
+          "value": 50
+        },
+        {
+          "key": "system.movement.flight.active",
+          "mode": 5,
+          "value": false
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!e3eeb686-747a-4d26-bb4d-ea16f7f7bdcc.91c6c00c1d209c8a"
+    }
+  ],
   "folder": "bbe663a787c7ec04",
   "_key": "!items!e3eeb686-747a-4d26-bb4d-ea16f7f7bdcc"
 }

@@ -112,8 +112,8 @@ Hooks.once('init', function () {
 /* -------------------------------------------- */
 
 // If you need to add Handlebars helpers, here is a useful example:
-Handlebars.registerHelper('toLowerCase', function (mel) {
-  return mel.toLowerCase();
+Handlebars.registerHelper('toLowerCase', function (mle) {
+  return mle.toLowerCase();
 });
 
 

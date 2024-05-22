@@ -4,7 +4,7 @@ export const MARVEL_MULTIVERSE = {};
  * @type {Object}
  */
 MARVEL_MULTIVERSE.abilities = {
-  mel: 'MARVEL_MULTIVERSE.Ability.Mel.long',
+  mle: 'MARVEL_MULTIVERSE.Ability.Mel.long',
   agl: 'MARVEL_MULTIVERSE.Ability.Agl.long',
   res: 'MARVEL_MULTIVERSE.Ability.Res.long',
   vig: 'MARVEL_MULTIVERSE.Ability.Vig.long',
@@ -13,7 +13,7 @@ MARVEL_MULTIVERSE.abilities = {
 };
 
 MARVEL_MULTIVERSE.abilityAbbreviations = {
-  mel: 'MARVEL_MULTIVERSE.Ability.Mel.abbr',
+  mle: 'MARVEL_MULTIVERSE.Ability.Mel.abbr',
   agl: 'MARVEL_MULTIVERSE.Ability.Agl.abbr',
   res: 'MARVEL_MULTIVERSE.Ability.Res.abbr',
   vig: 'MARVEL_MULTIVERSE.Ability.Vig.abbr',

@@ -44,7 +44,6 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
       return obj;
     }, {}));
 
-
     schema.base = new fields.StringField({ required: true, blank: true });
     schema.occupations = new fields.ArrayField(new fields.ObjectField());
     schema.origins = new fields.ArrayField(new fields.ObjectField());
@@ -53,8 +52,6 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
     schema.powers = new fields.ArrayField(new fields.ObjectField());
     schema.reach = new fields.NumberField({ ...requiredInteger, initial: 1, min: 0 });
     
-
-
     return schema;
   }
 
@@ -67,7 +64,7 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
       // Caclulate the defense score using mmrpg rules.
       this.abilities[key].defense += this.abilities[key].value + 10;
       // Damage Multiplier rank to apply effect changes.
-      this.abilities[key].damageMultiplier += this.rank;
+      this.abilities[key].damageMultiplier += this.attributes.rank.value;
       // Non-combat checks base to apply effect changes.
       this.abilities[key].noncom += this.abilities[key].value;
       // Handle ability label localization.
@@ -85,25 +82,6 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
       this.movement[key].value += speedBaseVals[key]? speedBaseVals[key] : 0;
       this.movement[key].noncom += this.movement[key].value;
     }
-
-   
-    // const poweredMovement = Object.entries(this.movement).filter(([kee, move]) => { 
-    //   ['flight','glide','swingline','levitation'].includes(kee) && move.active > true;
-    // });
-    
-
-    
-    
-    
-    // const poweredMovementObj = Object.fromEntries(poweredMovement);
-    // if( poweredMovementObj.length > 0) {
-    //   this.movement.jump.active = false;
-    //   poweredMovementObj.forEach(([kee, move]) => {
-    //     this.movement[kee].label = game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.movementTypes[kee].label) ?? kee;
-    //     this.movement[kee].value = poweredMovementBaseVals[kee];
-    //   });
-    // };
-    
   }
 
   getRollData() {

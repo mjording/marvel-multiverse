@@ -55,13 +55,14 @@ MARVEL_MULTIVERSE.sizes = {
 };
 
 MARVEL_MULTIVERSE.movementTypes = {
-  run: { label: "MARVEL_MULTIVERSE.Movement.Run" },
-  jump: { label: "MARVEL_MULTIVERSE.Movement.Jump" },
-  climb: { label: "MARVEL_MULTIVERSE.Movement.Climb" },
-  swim: { label: "MARVEL_MULTIVERSE.Movement.Swim" },
-  fly: { label: "MARVEL_MULTIVERSE.Movement.Fly" },
-  glide: { label: "MARVEL_MULTIVERSE.Movement.Glide" },
-  swingline: { label: "MARVEL_MULTIVERSE.Movement.Swingline" }
+  run: { label: "MARVEL_MULTIVERSE.Movement.Run", active: true },
+  climb: { label: "MARVEL_MULTIVERSE.Movement.Climb", active: true },
+  swim: { label: "MARVEL_MULTIVERSE.Movement.Swim", active: true },
+  jump: { label: "MARVEL_MULTIVERSE.Movement.Jump", active: true },
+  flight: { label: "MARVEL_MULTIVERSE.Movement.Flight", active: false },
+  glide: { label: "MARVEL_MULTIVERSE.Movement.Glide", active: false },
+  swingline: { label: "MARVEL_MULTIVERSE.Movement.Swingline", active: false },
+  levitation: { label: "MARVEL_MULTIVERSE.Movement.Levitation", active: false },
 }
 
 // ASCII Artwork

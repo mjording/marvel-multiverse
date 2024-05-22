@@ -37,9 +37,14 @@
           "value": true
         },
         {
-          "key": "system.movement.flight.active",
+          "key": "system.movement.jump.active",
           "mode": 5,
           "value": false
+        },
+        {
+          "key": "system.movement.flight.noncom",
+          "mode": 1,
+          "value": 3
         }
       ],
       "description": "",

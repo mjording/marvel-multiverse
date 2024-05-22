@@ -14,7 +14,42 @@
     "effect": "The character adds +4 to their Agility damage multiplier, and they gain a +4 bonus to Agility checks other than attacks."
   },
   "flags": {},
-  "effects": [],
+  "effects": [
+    {
+      "name": "Sharpshooter 4",
+      "icon": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.96653116-d283-4bc5-af90-acdcafb91e16",
+      "_id": "970b4ccba31eb80c",
+      "changes": [
+        {
+          "key": "system.abilities.agl.damageMultiplier",
+          "mode": 2,
+          "value": 4
+        },
+        {
+          "key": "system.abilities.agl.noncom",
+          "mode": 2,
+          "value": 4
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!96653116-d283-4bc5-af90-acdcafb91e16.970b4ccba31eb80c"
+    }
+  ],
   "folder": "bbe663a787c7ec04",
   "_key": "!items!96653116-d283-4bc5-af90-acdcafb91e16"
 }

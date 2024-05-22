@@ -14,7 +14,42 @@
     "effect": "Treat the character as one size bigger for lifting, carrying, swinging and throwing things. They also add 1+ to their Melee damage multiplier, and they gain a 1+ bonus to Melee checks other than attacks."
   },
   "flags": {},
-  "effects": [],
+  "effects": [
+    {
+      "name": "sizeUp",
+      "icon": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.d82f8686-795a-43bb-b1b8-e5e0cd2ef72f",
+      "_id": "86a0562a3464b7c1",
+      "changes": [
+        {
+          "key": "system.abilities.mle.damageMultiplier",
+          "mode": 2,
+          "value": 1
+        },
+        {
+          "key": "system.abilities.mle.noncom",
+          "mode": 2,
+          "value": 1
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!d82f8686-795a-43bb-b1b8-e5e0cd2ef72f.86a0562a3464b7c1"
+    }
+  ],
   "folder": "bbe663a787c7ec04",
   "_key": "!items!d82f8686-795a-43bb-b1b8-e5e0cd2ef72f"
 }

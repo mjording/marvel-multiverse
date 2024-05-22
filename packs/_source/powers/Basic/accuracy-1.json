@@ -11,10 +11,45 @@
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "The character adds +1 to their Agility damage multiplier, and they gain a 1+ bonus ot Agility checks other than attacks."
+    "effect": "The character adds +1 to their Agility damage multiplier, and they gain a 1+ bonus on Agility checks other than attacks."
   },
   "flags": {},
-  "effects": [],
+  "effects": [
+    {
+      "name": "Ace Shot",
+      "icon": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.86c084f3-201d-4b2f-9512-939c0df457cb",
+      "_id": "af0e66ce9d016c9c",
+      "changes": [
+        {
+          "key": "system.abilities.agl.damageMultiplier",
+          "mode": 2,
+          "value": 1
+        },
+        {
+          "key": "system.abilities.agl.noncom",
+          "mode": 2,
+          "value": 1
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!86c084f3-201d-4b2f-9512-939c0df457cb.af0e66ce9d016c9c"
+    }
+  ],
   "folder": "bbe663a787c7ec04",
   "_key": "!items!86c084f3-201d-4b2f-9512-939c0df457cb"
 }

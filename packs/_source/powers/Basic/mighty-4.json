@@ -14,7 +14,42 @@
     "effect": "Treat the character as four sizes bigger lifting, carrying, swinging and throwing things. They also add +4 to their Melee damage multiplier, and they gain a +4 bonus to Melee checks other than attacks."
   },
   "flags": {},
-  "effects": [],
+  "effects": [
+    {
+      "name": "sizeUp 4",
+      "icon": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.a0837191-e96a-4033-b803-8997d5e641ba",
+      "_id": "a9ec50b1aa55b246",
+      "changes": [
+        {
+          "key": "system.abilities.mle.damageMultiplier",
+          "mode": 2,
+          "value": 4
+        },
+        {
+          "key": "system.abilities.mle.noncom",
+          "mode": 2,
+          "value": 4
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!a0837191-e96a-4033-b803-8997d5e641ba.a9ec50b1aa55b246"
+    }
+  ],
   "folder": "bbe663a787c7ec04",
   "_key": "!items!a0837191-e96a-4033-b803-8997d5e641ba"
 }

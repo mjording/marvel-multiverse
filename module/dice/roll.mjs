@@ -255,15 +255,15 @@ export class MarvelMultiverseRoll extends Roll {
             content,
             buttons: {
             edge: {
-                label: game.i18n.localize("MARVEL_MULTIVERSE.edge"),
+                label: "edge",
                 callback: html => resolve(this._onDialogSubmit(html, MarvelMultiverseRoll.EDGE_MODE.EDGE))
             },
             normal: {
-                label: game.i18n.localize("MARVEL_MULTIVERSE.Normal"),
+                label: "normal",
                 callback: html => resolve(this._onDialogSubmit(html, MarvelMultiverseRoll.EDGE_MODE.NORMAL))
             },
             trouble: {
-                label: game.i18n.localize("MARVEL_MULTIVERSE.trouble"),
+                label: "trouble",
                 callback: html => resolve(this._onDialogSubmit(html, MarvelMultiverseRoll.EDGE_MODE.TROUBLE))
             }
             },

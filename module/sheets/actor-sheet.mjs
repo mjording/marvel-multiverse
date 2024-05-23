@@ -211,6 +211,10 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
 
     // Rollable abilities.
     html.on('click', '.rollable', this._onRoll.bind(this));
+    
+    html.on('click', '.roll-initiative', (ev) => {
+      this.actor.rollInitiativeDialog({event: ev});
+    });
 
     // Drag events for macros.
     if (this.actor.isOwner) {
@@ -305,7 +309,6 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       }
     }
   }
-
 
   /**
    * Handle clickable rolls.

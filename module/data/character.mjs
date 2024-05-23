@@ -8,9 +8,13 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
     const schema = super.defineSchema();
 
     schema.attributes = new fields.SchemaField({
+      init: new fields.SchemaField({
+        value: new fields.NumberField({ ...requiredInteger, initial: 1, min: 0 }),
+        bonus: new fields.NumberField({ ...requiredInteger, initial: 1, min: 0 })
+      }),
       rank: new fields.SchemaField({
         value: new fields.NumberField({ ...requiredInteger, initial: 1 })
-      })
+      }),
     });
 
     // Iterate over ability names and create a new SchemaField for each.
@@ -51,7 +55,7 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
     schema.traits = new fields.ArrayField(new fields.ObjectField());
     schema.powers = new fields.ArrayField(new fields.ObjectField());
     schema.reach = new fields.NumberField({ ...requiredInteger, initial: 1, min: 0 });
-    
+
     return schema;
   }
 

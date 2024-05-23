@@ -55,9 +55,9 @@ export class MarvelMultiverseActor extends Actor {
     const roll = this.getInitiativeRoll(rollOptions);
     const choice = await roll.configureDialog({
       defaultRollMode: game.settings.get("core", "rollMode"),
-      title: `${game.i18n.localize("MARVEL_MULTIVERSE.InitiativeRoll")}: ${this.name}`,
+      title: this.name,
       chooseModifier: false,
-      defaultAction: rollOptions.edgeMode ?? game.dice.MarvelMultiverseRoll.EDGE_MODE.NORMAL
+      defaultAction: rollOptions.edgeMode ?? game.MarvelMultiverse.dice.MarvelMultiverseRoll.EDGE_MODE.NORMAL
     });
     if ( choice === null ) return; // Closed dialog
 
@@ -89,9 +89,12 @@ export class MarvelMultiverseActor extends Actor {
     // Use a temporarily cached initiative roll
     if ( this._cachedInitiativeRoll ) return this._cachedInitiativeRoll.clone();
 
+    const init = this.system.attributes?.init;
     const abilityId = 'vig';
     const data = this.getRollData();
-    // Create the initatvive roll
+    // Create the initiative roll
+    
+    const parts = ["{1d6,1dm,1d6}"];
     const formula = parts.join(" + ");
    
     return new CONFIG.Dice.MarvelMultiverseRoll(formula, data, options);

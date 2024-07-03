@@ -25,6 +25,23 @@
   text-transform: uppercase;
 }
 
+.dice-tooltip .dice-rolls:nth-child(2).roll.d6 {
+  background-image: url(systems/marvel-multiverse/icons/d6-red.svg);
+}
+.dice-tooltip .dice-rolls:nth-child(2).roll.d6 .fantastic :after {
+  content: "m";
+}
+
+.dice-tooltip .dice-rolls .roll.discarded ~ .roll, .roll ~ .roll.discarded {
+  bottom: 15px;
+}
+
+.reroll-buttons {
+  max-width: 5em;
+  display: flex;
+  flex-direction: column;
+}
+
 .dice-roll {
   cursor: pointer;
 }
@@ -104,18 +121,26 @@
 .dice-roll .dice-tooltip .tooltip-part .dice-edge-buttons .edge-buttons:hover .overlay {
   opacity: 0.8;
 }
+.dice-roll .dice-tooltip button.retroEdgeMode {
+  width: 100%;
+  margin: 0px;
+  background: rgba(255, 255, 240, 0.8);
+  border: 1px solid var(--color-border-light-primary);
+  border-radius: 3px;
+  font-size: var(--font-size-14);
+  line-height: normal;
+  font-family: var(--font-primary);
+  cursor: pointer;
+}
 .dice-roll .dice-tooltip .dice {
   display: flex;
   align-items: center;
-  min-width: 4rem;
-  flex-direction: row;
-  height: 4em;
-  max-width: 6.5em;
+  flex-direction: column;
 }
 .dice-roll .dice-tooltip .dice .dice-rolls {
   margin: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   position: relative;
 }
 .dice-roll .dice-tooltip .dice .dice-rolls .constant {
@@ -130,19 +155,7 @@
   margin-right: 2px;
 }
 .dice-roll .dice-tooltip .dice .dice-rolls .roll {
-  width: 3rem;
   line-height: inherit;
-  background-image: none;
-}
-.dice-roll .dice-tooltip .dice .dice-rolls .roll .min, .dice-roll .dice-tooltip .dice .dice-rolls .roll .max, .dice-roll .dice-tooltip .dice .dice-rolls .roll .success {
-  filter: none;
-}
-.dice-roll .dice-tooltip .dice .dice-rolls .roll .d6 {
-  background-image: none;
-  background: none;
-}
-.dice-roll .dice-tooltip .dice .dice-rolls .roll.max {
-  filter: none;
 }
 .dice-roll .dice-tooltip .dice .total {
   display: flex;
@@ -173,6 +186,25 @@
   color: var(--color-text-light-6);
   font-weight: normal;
   margin-right: 2px;
+}
+
+.dice-tooltip .dice-rolls {
+  list-style: none;
+  margin: 5px 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.dice-tooltip .dice-rolls .roll {
+  min-width: 40px;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  font-size: var(--font-size-20);
+  color: #000;
+  font-weight: normal;
+  text-align: center;
+  min-height: 40px;
+  padding-top: 6px;
 }
 
 h1, h2, h3, h4 {
@@ -399,10 +431,10 @@ h1, h2, h3, h4 {
 .marvel-multiverse .sheet-header .character-portrait {
   border: 1px solid #000;
   border-radius: 5px;
-  height: 24rem;
+  height: 21rem;
   position: absolute;
-  top: 120px;
-  left: 1px;
+  top: 110px;
+  left: 8px;
   z-index: 3;
 }
 .marvel-multiverse .sheet-header .header-fields {
@@ -427,6 +459,10 @@ h1, h2, h3, h4 {
 .marvel-multiverse .sheet-body .tab,
 .marvel-multiverse .sheet-body .tab .editor {
   height: 100%;
+}
+.marvel-multiverse .sheet-body .tab .active {
+  z-index: 100;
+  position: relative;
 }
 .marvel-multiverse .tox .tox-editor-container {
   background: #fff;
@@ -490,6 +526,9 @@ h1, h2, h3, h4 {
   max-height: 1.3em;
   flex-grow: 2;
   border: 0;
+}
+.marvel-multiverse .charname {
+  margin-top: 5px;
 }
 .marvel-multiverse .attributes-speed ol {
   list-style: none;

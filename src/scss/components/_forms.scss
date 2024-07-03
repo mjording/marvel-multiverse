@@ -20,10 +20,10 @@
   .character-portrait {
     border: 1px solid #000;
     border-radius: 5px;
-    height: 24rem;
+    height: 21rem;
     position: absolute;
-    top: 120px;
-    left: 1px;
+    top: 110px;
+    left: 8px;
     z-index: 3;
   }
 
@@ -53,6 +53,10 @@
 .sheet-body .tab,
 .sheet-body .tab .editor {
   height: 100%;
+}
+.sheet-body .tab .active {
+  z-index: 100;
+  position: relative;
 }
 
 .tox {

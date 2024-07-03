@@ -1,0 +1,55 @@
+{
+  "_id": "14b92bb9-a376-4816-81ae-b460fb047df1",
+  "name": "Spider Sense",
+  "type": "power",
+  "system": {
+    "description": "The character has a sense of danger that tingles when threats are near.",
+    "powerSet": "Spider-Powers",
+    "prerequisites": "",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character has an edge on initiative checks and on Vigilance checks to perceive danger. Enemies have trouble on Agility checks against the character's Vigilance defense. The character also gains a permanent +2 bonus to their Agility defense."
+  },
+  "flags": {},
+  "effects": [
+    {
+      "name": "physical edge",
+      "img": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.14b92bb9-a376-4816-81ae-b460fb047df1",
+      "_id": "8a6fd587a0e59998",
+      "changes": [
+        {
+          "key": "system.attributes.init.edge",
+          "mode": 2,
+          "value": 1
+        },
+        {
+          "key": "system.abilities.agl.defense",
+          "mode": 2,
+          "value": 2
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!14b92bb9-a376-4816-81ae-b460fb047df1.8a6fd587a0e59998"
+    }
+  ],
+  "folder": "a8b9ae895259d5bf",
+  "_key": "!items!14b92bb9-a376-4816-81ae-b460fb047df1"
+}

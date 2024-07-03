@@ -11,6 +11,7 @@ import { MARVEL_MULTIVERSE } from './module/helpers/config.mjs';
 // Import DataModel classes
 import * as models from './module/data/_module.mjs';
 import * as dice from "./module/dice/_module.mjs";
+//import { registerChatLog } from './module/chat/MarvelChatLog.mjs';
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
@@ -31,7 +32,9 @@ Hooks.once('init', function () {
     ChatMessageMarvel
   };
 
-  // Add custom constants for configuration.
+
+
+  // Record Configuration Values
   CONFIG.MARVEL_MULTIVERSE = MARVEL_MULTIVERSE;
 
   console.log(`Marvel Multiverse RPG 1e | Initializing the Marvel Multiverse Role Playing Game System - Version ${game.system.version}\n${MARVEL_MULTIVERSE.ASCII}`);
@@ -41,7 +44,7 @@ Hooks.once('init', function () {
    * @type {String}
    */
   CONFIG.Combat.initiative = {
-    formula: '{1d6,1dm,1d6} + @abilities.vig.mod',
+    formula: '{1d6,1dm,1d6} + @attributes.init.value',
     decimals: 2,
   };
 
@@ -72,22 +75,19 @@ Hooks.once('init', function () {
   CONFIG.ActiveEffect.legacyTransferral = false;
 
 
-  CONFIG.Dice.types.push(dice.MarvelDie);
-  CONFIG.Dice.terms[dice.MarvelDie.DENOMINATION] = dice.MarvelDie;
-  
-  CONFIG.Dice.types.push(dice.SixOneSixDie);
-
-  CONFIG.Dice.types.push(dice.SixSidedDie);
-  CONFIG.Dice.terms[dice.SixSidedDie.DENOMINATION] = dice.SixSidedDie;
+  CONFIG.Dice.MarvelDie = dice.MarvelDie;
+  CONFIG.Dice.types.push(dice.MarvelDie)
   
   Roll.TOOLTIP_TEMPLATE = "systems/marvel-multiverse/templates/chat/roll-breakdown.hbs";
   Roll.CHAT_TEMPLATE = "systems/marvel-multiverse/templates/dice/roll.hbs"
   CONFIG.Dice.MarvelMultiverseRoll = dice.MarvelMultiverseRoll;
-  CONFIG.Dice.DamageRoll = dice.DamageRoll;
+  // CONFIG.Dice.DamageRoll = dice.DamageRoll;
 
   // Register Roll Extensions
   CONFIG.Dice.rolls.push(dice.MarvelMultiverseRoll);
-  CONFIG.Dice.rolls.push(dice.DamageRoll);
+  CONFIG.Dice.terms.m = dice.MarvelDie;
+  //registerChatLog();
+  // CONFIG.Dice.rolls.push(dice.DamageRoll);
   // Add fonts
   _configureFonts();
 
@@ -206,11 +206,11 @@ Hooks.on("renderSettings", (app, [html]) => {
 });
 
 
-Hooks.on("getChatLogEntryContext", documents.ChatMessageMarvel.addChatMessageContextOptions);
+//Hooks.on("getChatLogEntryContext", ChatMessageMarvel._getChatLogEntryContext());
 
 Hooks.on("renderChatLog", (app, html, data) => {
-  documents.MarvelMultiverseItem.chatListeners(html);
-  documents.ChatMessageMarvel.onRenderChatLog(html);
+  MarvelMultiverseItem.chatListeners(html);
+  ChatMessageMarvel.onRenderChatLog(html);
 });
 
 

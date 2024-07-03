@@ -41,7 +41,21 @@ export class MarvelMultiverseActor extends Actor {
    * but have slightly different data preparation needs.
    */
   getRollData() {
-    return { ...super.getRollData(), ...this.system.getRollData?.() ?? null };
+    const data = {};
+
+    // Copy the ability scores to the top rank, so that rolls can use
+    // formulas like `@mle.value + 4`.
+    if (this.system.abilities) {
+      for (let [k,v] of Object.entries(this.system.abilities)) {
+        data[k] = foundry.utils.deepClone(v);
+      }
+    }
+
+    data.rank = this.system.attributes.rank.value;
+
+   
+
+    return { ...super.getRollData(), ...data };
   }
 
 
@@ -55,7 +69,7 @@ export class MarvelMultiverseActor extends Actor {
     const roll = this.getInitiativeRoll(rollOptions);
     const choice = await roll.configureDialog({
       defaultRollMode: game.settings.get("core", "rollMode"),
-      title: this.name,
+      title: "Initiative Roll",
       chooseModifier: false,
       defaultAction: rollOptions.edgeMode ?? game.MarvelMultiverse.dice.MarvelMultiverseRoll.EDGE_MODE.NORMAL
     });

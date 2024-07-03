@@ -1,21 +1,29 @@
 {{#if parts.length}}
-<div class="dice-tooltip-sturdy">
     <div class="dice-tooltip">
         {{#each parts}}
             <section class="tooltip-part">
                 <div class="dice">
                     <ol class="dice-rolls">
                         {{#each rolls}}
-                            <li class="roll {{ classes }}">{{{ result }}}</li>
+                            <li class="roll {{ classes }}">
+                                <span data-action="chat-select-die" data-die-index="{{ @index }}" class="roll {{ classes }}">
+                                    {{#if @root.isPrivate}}?{{else}}
+                                        {{ result }}
+                                    {{/if}}
+                                </span>
+                            </li>
                         {{/each}}
                     </ol>
-                    <div class="total">
-                        <span class="label">{{ flavor }}</span>
-                        <span class="value">{{ total }}</span>
+                    <div class="reroll-buttons">
+                        <button class="retroEdgeMode roll-edge" data-retro-action="edge" data-index="{{@index}}" title="EDGE">
+                            edge
+                        </button>
+                        <button class="retroEdgeMode roll-trouble" data-retro-action="trouble" data-index="{{@index}}" title="TROUBLE">
+                            trouble
+                        </button>
                     </div>
                 </div>
             </section>
         {{/each}}
     </div>
-</div>
 {{/if}}

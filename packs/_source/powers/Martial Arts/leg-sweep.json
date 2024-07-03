@@ -3,7 +3,7 @@
   "name": "Leg Sweep",
   "type": "power",
   "system": {
-    "description": "",
+    "description": "The character knocks the enemy's legs from under them.",
     "powerSet": "Martial Arts",
     "prerequisites": "Fast Strikes, Rank2",
     "action": "Standard",

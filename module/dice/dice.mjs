@@ -7,15 +7,15 @@
  *
  * @typedef {object} DmarvelRollConfiguration
  *
- * @property {string[]} [parts=[]]  The dice roll component parts, excluding the initial dMarvelS.
+ * @property {string[]} [parts=[]]  The dice roll component parts.
  * @property {object} [data={}]     Data that will be used when parsing this roll.
  * @property {Event} [event]        The triggering event for this roll.
  *
  * ## DMarvel Properties
  * @property {boolean} [edge]     Apply edge to this roll (unless overridden by modifier keys or dialog)?
  * @property {boolean} [trouble]  Apply trouble to this roll (unless overridden by modifier keys or dialog)?
- * @property {number|null} [fantastic=1]  The value of the dmarvel result which represents a fantastic success,
- *                                     `null` will prevent fantastic successes.
+ * @property {number|null} [fantastic=1]  The value of the dmarvel result which represents a fantastic roll,
+ *                                     `null` will prevent fantastic roll.
  * @property {number} [targetValue]    The value of the d616 result which should represent a successful roll.
  *
  * ## Roll Configuration Dialog
@@ -39,7 +39,7 @@
  * Holding SHIFT, ALT, or CTRL when the attack is rolled will "fast-forward".
  * This chooses the default options of a normal attack with no bonus, edge or trouble respectively.
  * @param {DmarvelRollConfiguration} configuration  Configuration data for the Dmarvel roll.
- * @returns {Promise<MarvelMultiverseRoll|null>}             The evaluated Dmarvel, or null if the workflow was cancelled.
+ * @returns {Promise<MarvelMultiverseRoll|null>}             The evaluated Marvel Roll, or null if the workflow was cancelled.
  */
 export async function dMarvelRoll({
     parts=[], data={}, event,
@@ -49,13 +49,13 @@ export async function dMarvelRoll({
   }={}) {
 
   // Handle input arguments
-  const formula = ["1dm"].concat(parts).join(" + ");
+  const formula = ["{1d6,1dm,1d6}"].concat(parts).join(" + ");
   const {edgeMode, isFF} = CONFIG.Dice.MarvelMultiverseRoll.determineEdgeMode({
     edge, trouble, fastForward, event
   });
   const defaultRollMode = rollMode || game.settings.get("core", "rollMode");
   if ( chooseModifier && !isFF ){
-    data.mod = "@mod";
+    data.value = "@val";
     if ( "abilityCheckBonus" in data ) data.abilityCheckBonus = "@abilityCheckBonus";
   }
     
@@ -82,6 +82,25 @@ export async function dMarvelRoll({
     if ( configured === null ) return null;
   } else roll.options.rollMode ??= defaultRollMode;
 
+  const fantastical = roll.isFantastic;
+
+  const {isFantastic, isFastForward} = _determineFantasticMode({fantastical, fastForward, event});
+
+  if (fantastical) { 
+    roll.dice[1].results.map(r => {
+        if(r.result === 1){
+            r.discarded = false;
+            r.active = true;
+        } else {
+            r.discarded = true;
+            r.active = false;
+        }
+    });
+
+    roll.dice[1].total = 6;
+  }
+
+
   // Attach original message ID to the message
   messageData = foundry.utils.expandObject(messageData);
   const messageId = event?.target.closest("[data-message-id]")?.dataset.messageId;
@@ -104,7 +123,7 @@ export async function dMarvelRoll({
  */
 function _determineFantasticMode({event, fantastic=false, fastForward}={}) {
     const isFF = fastForward ?? (event && (event.shiftKey || event.altKey || event.ctrlKey || event.metaKey));
-    if ( event?.altKey ) fantastic = true;
+    if ( event?.altKey )  fantastic = true;
     return {isFF: !!isFF, isFantastic: fantastic};
 }
   

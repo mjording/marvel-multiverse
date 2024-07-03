@@ -1,22 +1,22 @@
 {
-  "_id": "018ec3c3-7940-7d9f-b111-ba59315a2292",
-  "name": "Flexible Bones 1",
+  "_id": "d758679b-cd1c-4c8a-a2e3-2643faff7c2d",
+  "name": "Blazing Fast Fists",
   "type": "power",
   "system": {
-    "description": "The character's skeleton is rubbery.",
-    "powerSet": "Plasticity",
+    "description": "The character can attack superfast.",
+    "powerSet": "Super-Speed",
     "prerequisites": "",
     "action": "",
     "trigger": "",
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "The character gains Health Damage Reduction 1. They also have an edde on Agility checks for contortion and escape."
+    "effect": "The character has an edge on all Melee attacks."
   },
   "flags": {},
   "effects": [
     {
-      "name": "Health Damage Reduction 1",
+      "name": "melee edge",
       "img": "icons/svg/aura.svg",
       "duration": {
         "startTime": null,
@@ -28,11 +28,11 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.018ec3c3-7940-7d9f-b111-ba59315a2292",
-      "_id": "96ae1d4e6e1faf99",
+      "origin": "Item.d758679b-cd1c-4c8a-a2e3-2643faff7c2d",
+      "_id": "a6c22c4d01b95c70",
       "changes": [
         {
-          "key": "system.healthDamageReduction",
+          "key": "system.abilities.mle.edge",
           "mode": 2,
           "value": 1
         }
@@ -42,9 +42,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!018ec3c3-7940-7d9f-b111-ba59315a2292.96ae1d4e6e1faf99"
+      "_key": "!items.effects!d758679b-cd1c-4c8a-a2e3-2643faff7c2d.a6c22c4d01b95c70"
     }
   ],
-  "folder": "b660cb39178688a5",
-  "_key": "!items!018ec3c3-7940-7d9f-b111-ba59315a2292"
+  "folder": "b670a4a72be89d71",
+  "_key": "!items!d758679b-cd1c-4c8a-a2e3-2643faff7c2d"
 }

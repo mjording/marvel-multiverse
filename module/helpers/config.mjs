@@ -12,14 +12,6 @@ MARVEL_MULTIVERSE.abilities = {
   log: 'MARVEL_MULTIVERSE.Ability.Log.long',
 };
 
-MARVEL_MULTIVERSE.abilityAbbreviations = {
-  mle: 'MARVEL_MULTIVERSE.Ability.Mel.abbr',
-  agl: 'MARVEL_MULTIVERSE.Ability.Agl.abbr',
-  res: 'MARVEL_MULTIVERSE.Ability.Res.abbr',
-  vig: 'MARVEL_MULTIVERSE.Ability.Vig.abbr',
-  ego: 'MARVEL_MULTIVERSE.Ability.Ego.abbr',
-  log: 'MARVEL_MULTIVERSE.Ability.Log.abbr',
-};
 
 MARVEL_MULTIVERSE.MARVEL_RESULTS = {
   1: { label: "MARVEL_MULTIVERSE.MarvelResult.M", image: `systems/marvel-multiverse/icons/marvel-1.svg`},

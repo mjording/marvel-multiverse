@@ -11,13 +11,13 @@
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "The character adds +4 to their Logic damage multiplier, and they gain a -4 bonus to Logic checks other than attacks."
+    "effect": "The character adds +4 to their Logic damage multiplier, and they gain a +4 bonus to Logic checks other than attacks."
   },
   "flags": {},
   "effects": [
     {
       "name": "Logic Damage Multiplier +4",
-      "icon": "icons/svg/aura.svg",
+      "img": "icons/svg/aura.svg",
       "duration": {
         "startTime": null,
         "seconds": null,

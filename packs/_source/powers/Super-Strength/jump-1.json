@@ -14,7 +14,42 @@
     "effect": "The character gains the Jump movement mode with a Jump Speed equal to their Run Speed. They can jump this distance in any direction, vertically as wel as horizontally."
   },
   "flags": {},
-  "effects": [],
+  "effects": [
+    {
+      "name": "physical edge",
+      "img": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.f7b0568d-f1c5-4e91-a2ad-a97d2c316ba2",
+      "_id": "855c7c8892023ff4",
+      "changes": [
+        {
+          "key": "system.movement.jump.active",
+          "mode": 5,
+          "value": true
+        },
+        {
+          "key": "system.movement.jump.calc",
+          "mode": 5,
+          "value": "runspeed"
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!f7b0568d-f1c5-4e91-a2ad-a97d2c316ba2.855c7c8892023ff4"
+    }
+  ],
   "folder": "88848a43d8a58388",
   "_key": "!items!f7b0568d-f1c5-4e91-a2ad-a97d2c316ba2"
 }

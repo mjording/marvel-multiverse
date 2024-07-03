@@ -14,12 +14,7 @@
 export class MarvelMultiverseRoll extends Roll {
     constructor(formula, data, options) {
         super(formula, data, options);
-        //additional hook to change options and configuration
-        this.MARVEL_MULTIVERSE = { };
-        this.terms = this.parseShortHand(this.terms);
-        this.options.fantastic = this.options.fantastic ?? 1;
         if ( !this.options.configured ) this.configureModifiers();
-        this.hasMARVEL_MULTIVERSE = false;
     }
 
     /* -------------------------------------------- */
@@ -41,7 +36,7 @@ export class MarvelMultiverseRoll extends Roll {
      * @returns {MarvelMultiverseRoll}
      */
     static fromTerms(terms) {
-        const newRoll = new this(roll.formula, roll.data, roll.options);
+        const newRoll = super.fromTerms(terms)
         Object.assign(newRoll, roll);
         return newRoll;
     }
@@ -51,13 +46,13 @@ export class MarvelMultiverseRoll extends Roll {
     /* -------------------------------------------- */
 
     /**
-     * Determine whether a d616 roll should be fast-forwarded, and whether advantage or disadvantage should be applied.
+     * Determine whether a d616 roll should be fast-forwarded, and whether edge or trouble should be applied.
      * @param {object} [options]
      * @param {Event} [options.event]                               The Event that triggered the roll.
-     * @param {boolean} [options.edge]                         Is something granting this roll advantage?
-     * @param {boolean} [options.trouble]                      Is something granting this roll disadvantage?
+     * @param {boolean} [options.edge]                         Is something granting this roll edge?
+     * @param {boolean} [options.trouble]                      Is something granting this roll trouble?
      * @param {boolean} [options.fastForward]                       Should the roll dialog be skipped?
-     * @returns {{edgeMode: MarvelMultiverseRoll.EDGE_MODE, isFF: boolean}}  Whether the roll is fast-forwarded, and its advantage
+     * @returns {{edgeMode: MarvelMultiverseRoll.EDGE_MODE, isFF: boolean}}  Whether the roll is fast-forwarded, and its edge
      *                                                              mode.
      */
     static determineEdgeMode({event, edge=false, trouble=false, fastForward}={}) {
@@ -101,7 +96,8 @@ export class MarvelMultiverseRoll extends Roll {
      * @type {boolean}
      */
     get validD616Roll() {
-        return (this.terms[0] instanceof CONFIG.Dice.terms.m) && (this.terms[0].faces === 6);
+        // return this.dice.length === 3 && this.dice[0].faces === 6 && this.dice[1] instanceof game.MarvelMultiverse.dice.MarvelDie && this.dice[2].faces === 6
+        return this.dice.length === 3 && this.terms[0] instanceof foundry.dice.terms.PoolTerm
     }
 
     /* -------------------------------------------- */
@@ -130,9 +126,8 @@ export class MarvelMultiverseRoll extends Roll {
      * @type {boolean|void}
      */
     get isFantastic() {
-        if ( !this.validD616Roll || !this._evaluated ) return undefined;
-        if ( !Number.isNumeric(this.options.fantastic) ) return false;
-        return this.dice[0].total === this.options.fantastic;
+        if ( !this._evaluated ) return undefined;
+        return this.dice[1].result === 1;
     }
 
 
@@ -145,23 +140,40 @@ export class MarvelMultiverseRoll extends Roll {
      * @private
      */
     configureModifiers() {
-        const d616 = this.terms[0];
-        d616.modifiers = [];
+        const valid616 = this.validD616Roll;
+        if ( !valid616 ) return;
+        // const [lSix, dMarvel, rSix] = this.terms;
+        // const d616 = this.terms[0];
+        // d616.modifiers = [];
 
-         // Handle Advantage or Disadvantage
-        if ( this.hasEdge ) {
-            d616.number = 2;
-            d616.modifiers.push("kh");
-            d616.options.edge = true;
-        }
-        else if ( this.hasTrouble ) {
-            d616.number = 2;
-            d616.modifiers.push("kl");
-            d616.options.trouble = true;
-        }
-        else d616.number = 1;
+        //  // Handle Advantage or Disadvantage
+        // if ( this.hasEdge ) {
+        //     d616.number = 2;
+        //     d616.modifiers.push("kh");
+        //     d616.options.edge = true;
+        // }
+        // else if ( this.hasTrouble ) {
+        //     d616.number = 2;
+        //     d616.modifiers.push("kl");
+        //     d616.options.trouble = true;
+        // }
+        // else d616.number = 1;
 
         this.options.fantastic = 1;
+         
+        if (this.isFantastic){  
+
+            this.dice[1].results.map(r => {
+                if(r.result === 1){
+                    r.discarded = false;
+                    r.active = true;
+                } else {
+                    r.discarded = true;
+                    r.active = false;
+                }
+            });
+            this.dice[1].total = 6;   
+        }
 
         // Mark configuration as complete
         this.options.configured = true;
@@ -172,42 +184,21 @@ export class MarvelMultiverseRoll extends Roll {
     /** @inheritdoc */
     async toMessage(messageData={}, options={}) {
 
-        // Evaluate the roll now so we have the results available to determine whether reliable talent came into play
-        if ( !this._evaluated ) await this.evaluate({async: true});
+        // Evaluate the roll now so we have the results available to determine edge mode
+        if ( !this._evaluated ) await this.evaluateSync({minimize: boolean,
+            maximize: boolean,
+            strict: boolean,
+            allowStrings: boolean});
 
         // Add appropriate edge mode message flavor and mmrpg roll flags
         messageData.flavor = messageData.flavor || this.options.flavor;
-        messageData.fantastic = messageData.fantastic || this.options.fantastic;
+        messageData.fantastic = this.isFantastic;
+
         if ( this.hasEdge ) messageData.flavor += ` (${game.i18n.localize("MARVEL_MULTIVERSE.edge")})`;
         else if ( this.hasTrouble ) messageData.flavor += ` (${game.i18n.localize("MARVEL_MULTIVERSE.trouble")})`;
-6
         // Record the preferred rollMode
         options.rollMode = options.rollMode ?? this.options.rollMode;
         return super.toMessage(messageData, options);
-    }
-
-    //If the main parser hands back a StringTerm attempt to turn it into a die.
-    parseShortHand(terms) {
-        return terms
-        .flatMap(t => {
-            if(!(t instanceof StringTerm) || /\d/.test(t.term))
-            return t;
-
-            return t.term.replaceAll('d', 'i').split('').reduce((acc, next) => {
-            if(next in CONFIG.Dice.terms)
-            {
-                let cls = CONFIG.Dice.terms[next];
-                acc.push(new cls(1));
-            }
-            else throw new Error(`Unknown die type '${next}'`)
-
-            return acc;
-            }, [])
-        })
-        .flatMap((value, index, array) => //Put addition operators between each die.
-            array.length - 1 !== index
-            ? [value, new OperatorTerm({operator: '+'})]
-            : value)
     }
 
 
@@ -288,7 +279,7 @@ export class MarvelMultiverseRoll extends Roll {
         // Append a situational bonus term
         if ( form.bonus.value ) {
             const bonus = new Roll(form.bonus.value, this.data);
-            if ( !(bonus.terms[0] instanceof OperatorTerm) ) this.terms.push(new OperatorTerm({operator: "+"}));
+            if ( !(bonus.terms[0] instanceof foundry.dice.terms.OperatorTerm) ) this.terms.push(new foundry.dice.terms.OperatorTerm({operator: "+"}));
             this.terms = this.terms.concat(bonus.terms);
         }
 
@@ -296,11 +287,11 @@ export class MarvelMultiverseRoll extends Roll {
         if ( form.ability?.value ) {
             const abl = this.data.abilities[form.ability.value];
             this.terms = this.terms.flatMap(t => {
-                if ( t.term === "@mod" ) return new NumericTerm({number: abl.value});
+                if ( t.term === "@mod" ) return new foundry.dice.terms.NumericTerm({number: abl.value});
                 if ( t.term === "@abilityCheckBonus" ) {
                     const bonus = abl.bonuses?.check;
                     if ( bonus ) return new Roll(bonus, this.data).terms;
-                    return new NumericTerm({number: 0});
+                    return new foundry.dice.terms.NumericTerm({number: 0});
                 }
                 return t;
             });
@@ -313,4 +304,73 @@ export class MarvelMultiverseRoll extends Roll {
         this.configureModifiers();
         return this;
     }
+
+    /**
+	 * Override the default Roll rendering behavior to account for a difference between d616 rolls and other rolls.
+	 *
+	 * @param {string} flavor Optional flavor text for the roll.
+	 * @param {string} template Chat template path.
+	 * @param {boolean} isPrivate Whether the roll is private.
+	 */
+	async render({ flavor, template = this.constructor.CHAT_TEMPLATE, isPrivate = false } = {}) {
+		if (!this._evaluated) {
+			await this.evaluate({ async: true });
+		}
+
+		
+		if (!this.validD616Roll) {
+			const useTemplate = template === this.constructor.CHAT_TEMPLATE ? Roll.CHAT_TEMPLATE : template;
+			return super.render({ flavor, template: useTemplate, isPrivate });
+		}
+
+		const isFantastic = this.dice[1].getResultLabel(this.dice[1].results[0]) === 'm';
+
+		const modifierTerms = [...this.terms];
+		modifierTerms.splice(0, 5);
+
+		const modifiers = modifierTerms.reduce(
+			/**
+			 * @typedef {object} ResolvedModifier
+			 * @property {string} operator Term symbol
+			 * @property {number} value The actual term
+			 * @property {string} flavor Flavor text
+			 */
+			/**
+			 * @param {ResolvedModifier[]} mods
+			 * @param term
+			 */
+			(mods, term) => {
+				if (term.operator) {
+					return [
+						...mods,
+						{
+							operator: term.operator,
+							number: 0,
+							flavor: undefined,
+						},
+					];
+				} else {
+					mods[mods.length - 1].number = term.number;
+					mods[mods.length - 1].flavor = term.options?.flavor;
+
+					return mods;
+				}
+			},
+			[],
+		);
+
+		const chatData = {
+			dice: this.dice.map((d) => d.getTooltipData()),
+			flavor: isPrivate ? null : flavor,
+			isFantastic,
+			isPrivate,
+			isReRoll: this.options.isReRoll,
+			modifiers,
+			total: isPrivate ? '?' : Math.round(this.total * 100) / 100,
+			user: game.user.id,
+			withTrouble: this.options.withTrouble,
+		};
+
+		return renderTemplate(template, chatData);
+	}
 }

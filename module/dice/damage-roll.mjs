@@ -63,34 +63,34 @@ export class DamageRoll extends Roll {
             const prevTerm = this.terms[i - 1];
 
             // Convert shorthand dX terms to 1dX preemptively to allow them to be appropriately doubled for fantastic hits
-            if ( (term instanceof StringTerm) && /^d\d+/.test(term.term) && !(prevTerm instanceof ParentheticalTerm) ) {
-            const formula = `1${term.term}`;
-            const newTerm = new Roll(formula).terms[0];
-            this.terms.splice(i, 1, newTerm);
-            term = newTerm;
+            if ( (term instanceof foundry.dice.terms.StringTerm) && /^d\d+/.test(term.term) && !(prevTerm instanceof foundry.dice.terms.ParentheticalTerm) ) {
+              const formula = `1${term.term}`;
+              const newTerm = new Roll(formula).terms[0];
+              this.terms.splice(i, 1, newTerm);
+              term = newTerm;
             }
             
             // Merge parenthetical terms that follow string terms to build a dice term (to allow fantastics)
-            else if ( (term instanceof ParentheticalTerm) && (prevTerm instanceof StringTerm)
+            else if ( (term instanceof foundry.dice.terms.ParentheticalTerm) && (prevTerm instanceof foundry.dice.terms.StringTerm)
             && prevTerm.term.match(/^[0-9]*d$/)) {
-            if ( term.isDeterministic ) {
-                let newFormula = `${prevTerm.term}${term.evaluate().total}`;
-                let deleteCount = 2;
+              if ( term.isDeterministic ) {
+                  let newFormula = `${prevTerm.term}${term.evaluate().total}`;
+                  let deleteCount = 2;
 
-                // Merge in any roll modifiers
-                if ( nextTerm instanceof StringTerm ) {
-                newFormula += nextTerm.term;
-                deleteCount += 1;
-                }
+                  // Merge in any roll modifiers
+                  if ( nextTerm instanceof foundry.dice.terms.StringTerm ) {
+                  newFormula += nextTerm.term;
+                  deleteCount += 1;
+                  }
 
-                const newTerm = (new Roll(newFormula)).terms[0];
-                this.terms.splice(i - 1, deleteCount, newTerm);
-                term = newTerm;
-            }
+                  const newTerm = (new Roll(newFormula)).terms[0];
+                  this.terms.splice(i - 1, deleteCount, newTerm);
+                  term = newTerm;
+              }
             }
 
             // Merge any parenthetical terms followed by string terms
-            else if ( (term instanceof ParentheticalTerm || term instanceof MathTerm) && (nextTerm instanceof StringTerm)
+            else if ( (term instanceof foundry.dice.terms.ParentheticalTerm || term instanceof foundry.dice.terms.FunctionTerm) && (nextTerm instanceof foundry.dice.terms.StringTerm)
             && nextTerm.term.match(/^d[0-9]*$/)) {
                 if ( term.isDeterministic ) {
                     const newFormula = `${term.evaluate().total}${nextTerm.term}`;
@@ -118,7 +118,7 @@ export class DamageRoll extends Roll {
     let flatBonus = 0;
     for ( let [i, term] of this.terms.entries() ) {
       // Multiply dice terms
-      if ( term instanceof DiceTerm ) {
+      if ( term instanceof foundry.dice.terms.DiceTerm ) {
         term.options.baseNumber = term.options.baseNumber ?? term.number; // Reset back
         term.number = term.options.baseNumber;
         if ( this.isFantastic ) {
@@ -138,7 +138,7 @@ export class DamageRoll extends Roll {
       }
 
       // Multiply numeric terms
-      else if ( this.options.multiplyNumeric && (term instanceof NumericTerm) ) {
+      else if ( this.options.multiplyNumeric && (term instanceof foundry.dice.terms.NumericTerm) ) {
         term.options.baseNumber = term.options.baseNumber ?? term.number; // Reset back
         term.number = term.options.baseNumber;
         if ( this.isFantastic ) {
@@ -150,14 +150,14 @@ export class DamageRoll extends Roll {
 
     // Add powerful fantastic bonus
     if ( this.options.powerfulfantastic && (flatBonus > 0) ) {
-      this.terms.push(new OperatorTerm({operator: "+"}));
-      this.terms.push(new NumericTerm({number: flatBonus}, {flavor: game.i18n.localize("MARVEL_MULTIVERSE.Powerfulfantastic")}));
+      this.terms.push(new foundry.dice.terms.OperatorTerm({operator: "+"}));
+      this.terms.push(new foundry.dice.terms.NumericTerm({number: flatBonus}, {flavor: game.i18n.localize("MARVEL_MULTIVERSE.Powerfulfantastic")}));
     }
 
     // Add extra fantastic damage term
     if ( this.isFantastic && this.options.fantasticBonusDamage ) {
       const extra = new Roll(this.options.fantasticBonusDamage, this.data);
-      if ( !(extra.terms[0] instanceof OperatorTerm) ) this.terms.push(new OperatorTerm({operator: "+"}));
+      if ( !(extra.terms[0] instanceof foundry.dice.terms.OperatorTerm) ) this.terms.push(new foundry.dice.terms.OperatorTerm({operator: "+"}));
       this.terms.push(...extra.terms);
     }
 
@@ -201,7 +201,7 @@ export class DamageRoll extends Roll {
       isFantastic ||= roll.isFantastic;
     }
     if ( isFantastic ) {
-      const label = game.i18n.localize("MARVEL_MULTIVERSE.fantasticHit");
+      const label = game.i18n.localize("MARVEL_MULTIVERSE.fantasticRoll");
       messageData.flavor = messageData.flavor ? `${messageData.flavor} (${label})` : label;
     }
     rollMode ??= messageData.rollMode;
@@ -283,15 +283,15 @@ export class DamageRoll extends Roll {
             title,
             content,
             buttons: {
-            fantastic: {
-                condition: allowfantastic,
-                label: game.i18n.localize("MARVEL_MULTIVERSE.fantasticHit"),
-                callback: html => resolve(rolls.map((r, i) => r._onDialogSubmit(html, true, i === 0)))
-            },
-            normal: {
-                label: game.i18n.localize(allowfantastic ? "MARVEL_MULTIVERSE.Normal" : "MARVEL_MULTIVERSE.Roll"),
-                callback: html => resolve(rolls.map((r, i) => r._onDialogSubmit(html, false, i === 0)))
-            }
+              fantastic: {
+                  condition: allowfantastic,
+                  label: game.i18n.localize("MARVEL_MULTIVERSE.fantasticRoll"),
+                  callback: html => resolve(rolls.map((r, i) => r._onDialogSubmit(html, true, i === 0)))
+              },
+              normal: {
+                  label: game.i18n.localize(allowfantastic ? "MARVEL_MULTIVERSE.Normal" : "MARVEL_MULTIVERSE.Roll"),
+                  callback: html => resolve(rolls.map((r, i) => r._onDialogSubmit(html, false, i === 0)))
+              }
             },
             default: defaultfantastic ? "fantastic" : "normal",
             close: () => resolve(null)
@@ -315,7 +315,7 @@ export class DamageRoll extends Roll {
         // Append a situational bonus term
         if ( form.bonus.value && isFirst ) {
         const bonus = new DamageRoll(form.bonus.value, this.data);
-        if ( !(bonus.terms[0] instanceof OperatorTerm) ) this.terms.push(new OperatorTerm({operator: "+"}));
+        if ( !(bonus.terms[0] instanceof foundry.dice.terms.OperatorTerm) ) this.terms.push(new foundry.dice.terms.OperatorTerm({operator: "+"}));
         this.terms = this.terms.concat(bonus.terms);
         }
 

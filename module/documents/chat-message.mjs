@@ -3,6 +3,9 @@ import simplifyRollFormula from "../dice/simplify-roll-formula.mjs";
 import { MARVEL_MULTIVERSE } from "../helpers/config.mjs";
 import { MarvelMultiverseActor } from "./actor.mjs";
 
+
+
+
 export class ChatMessageMarvel extends ChatMessage {
     /** @inheritDoc */
     _initialize(options = {}) {
@@ -87,28 +90,40 @@ export class ChatMessageMarvel extends ChatMessage {
   _highlightFantasticSuccess(html) {
     if ( !this.isContentVisible || !this.rolls.length ) return;
     const originatingMessage = game.messages.get(this.getFlag("marvel-multiverse", "originatingMessage")) ?? this;
-    const displayChallenge = originatingMessage?.shouldDisplayChallenge;
 
-    // Highlight rolls where the first part is a dMarvel roll
+    // const displayChallenge = originatingMessage?.shouldDisplayChallenge;
+
+    // Highlight rolls where the second part is a marvel die roll
     for ( let [index, dMarvelRoll] of this.rolls.entries() ) {
 
-      const d0 = dMarvelRoll.dice[0];
-      if ( (d0?.faces !== 6) || (d0?.values.length !== 1) ) continue;
+      const [leftD6, marvelDie, rightD6] = dMarvelRoll.dice;
 
-      dMarvelRoll = game.MarvelMultiverse.dice.MarvelMultiverseRoll.fromRoll(dMarvelRoll);
-      const d = dMarvelRoll.dice[0];
+      if ( (marvelDie?.faces !== 6) || (marvelDie?.values.length !== 1) ) continue;
 
-      const isModifiedRoll = ("success" in d.results[0]) || d.options.marginSuccess || d.options.marginFailure;
-      if ( isModifiedRoll ) continue;
+      const marvelRoll = game.MarvelMultiverse.dice.MarvelMultiverseRoll.fromRoll(dMarvelRoll);
+      // const d = dMarvelRoll.dice[0];
+
+      // const isModifiedRoll = ("success" in d.results[0]) || d.options.marginSuccess || d.options.marginFailure;
+      // if ( isModifiedRoll ) continue;
 
       // Highlight successes and failures
       const total = html.find(".dice-total")[index];
       if ( !total ) continue;
-      if ( dMarvelRoll.isFantastic ) total.classList.add("fantastic");
-      else if ( d.options.target && displayChallenge ) {
-        if ( dMarvelRoll.total >= d.options.target ) total.classList.add("success");
-        else total.classList.add("failure");
-      }
+      
+      if ( marvelRoll.isFantastic ) {
+        
+        const marvelDieItem = html.find(".tooltip-part:nth-child(2)");
+        marvelDieItem.find('li.d6').each((i, el) => { 
+          
+          el.classList.add("fantastic");
+        });
+        
+        total.classList.add("fantastic");
+      } 
+      // else if ( d.options.target && displayChallenge ) {
+      //   if ( dMarvelRoll.total >= d.options.target ) total.classList.add("success");
+      //   else total.classList.add("failure");
+      // }
     }
   }
 
@@ -173,43 +188,27 @@ export class ChatMessageMarvel extends ChatMessage {
     });
 
     // Enriched roll flavor
-    
-    const roll = this.rolls[0];
-    if ( this.isContentVisible && roll?.formula?.includes("dm,") ) {
+    const [roll] = this.rolls;
 
+    const [rollTerm] = roll?.terms;
+
+    
+    
+    if ( this.isContentVisible ) {
+      
       const flavor = document.createElement("div");
       flavor.classList.add("marvel-multiverse", "chat-card");
       flavor.innerHTML = `
         <section class="card-header description">
           <header class="summary">
             <div class="name-stacked">
-              <span class="title">test</span>
+              <span class="title">${roll?.formula}</span>
               <span class="subtitle">subtest</span>
             </div>
           </header>
         </section>
       `;
       html.querySelector(".message-content").insertAdjacentElement("afterbegin", flavor);
-      
-      html.querySelectorAll(".tooltip-part").forEach((el, i) => {
-        const die = roll.dice[i];
-        const buttonList = document.createElement("div");
-        buttonList.classList.add("marvel-multiverse", "dice-edge-buttons", `${die.formula}-${i}`);
-        buttonList.innerHTML = `
-          <div class="edge-buttons">
-            <div class='overlay'></div>
-            <button class="retroEdgeMode roll-edge" data-retro-action="edge" data-index="${i}" title="${game.i18n.localize("MARVEL_MULTIVERSE.edgeMode.edge")}">
-              <i class="fas fa-arrow-up"></i>
-            </button>
-            <button class="retroEdgeMode roll-trouble" data-retro-action="trouble" data-index="${i}" title="${game.i18n.localize("MARVEL_MULTIVERSE.edgeMode.trouble")}">
-              <i class="fas fa-arrow-down"></i>
-            </button>
-          </div>
-        `;
-        el.insertAdjacentElement("afterbegin", buttonList);
-
-      });
-
 
       html.querySelectorAll(".dice-tooltip").forEach((el, i) => {
         if ( !(roll instanceof game.MarvelMultiverse.dice.DamageRoll) ) this._enrichRollTooltip(roll, el);
@@ -218,7 +217,6 @@ export class ChatMessageMarvel extends ChatMessage {
 
       
       html.querySelectorAll("button.retroEdgeMode").forEach(el => el.addEventListener("click", this._onClickRetroButton.bind(this)));
-      
     }
     
     // Attack targets
@@ -235,7 +233,7 @@ export class ChatMessageMarvel extends ChatMessage {
    */
   _enrichRollTooltip(roll, html) {
     const constant = Number(simplifyRollFormula(roll.formula, { deterministic: true }));
-    console.log(`_enrichRollTooltip:  similified Roll Formula from: ${roll.formula} constant: ${constant}`);
+    
     if ( !constant ) return;
     const sign = constant < 0 ? "-" : "+";
     const part = document.createElement("section");
@@ -248,6 +246,7 @@ export class ChatMessageMarvel extends ChatMessage {
         </div>
       </div>
     `;
+    
     html.appendChild(part);
   }
 
@@ -263,7 +262,7 @@ export class ChatMessageMarvel extends ChatMessage {
   _enrichAttackTargets(html) {
     const attackRoll = this.rolls[0];
     const targets = this.getFlag("marvel-multiverse", "targets");
-    if ( !game.user.isGM || !(attackRoll instanceof game.MarvelMultiverse.dice.MarvelMultiverseRoll) || !targets?.length ) return;
+    if ( !game.user.isGM || !(attackRoll instanceof CONFIG.Dice.MarvelMultiverseRoll) || !targets?.length ) return;
     const evaluation = document.createElement("ul");
     evaluation.classList.add("marvel-multiverse", "evaluation");
     evaluation.innerHTML = targets.map(({ name, img, ac, uuid }) => {
@@ -340,10 +339,8 @@ export class ChatMessageMarvel extends ChatMessage {
     roll.innerHTML = `
       <div class="dice-result">
         <div class="dice-formula">${formula}</div>
-        <div class="dice-tooltip-sturdy">
-          <div class="dice-tooltip flexrow">
-            ${tooltipContents}
-          </div>
+        <div class="dice-tooltip flexrow">
+          ${tooltipContents}
         </div>
         <h4 class="dice-total">${total}</h4>
       </div>
@@ -382,7 +379,7 @@ export class ChatMessageMarvel extends ChatMessage {
   _onClickRetroButton(event) {
     event.stopPropagation();
     const target = event.currentTarget;
-    console.log(`retro button clicked: ${target.dataset.index}`)
+    
     const action = target.dataset.retroAction;
     const dieIndex = Math.round(target.dataset.index);
     const messageId = target.closest('[data-message-id]').dataset.messageId;
@@ -396,20 +393,25 @@ export class ChatMessageMarvel extends ChatMessage {
    * @param {number} dieIndex
    */
   async _handleChatButton(action, messageId, dieIndex){
-    console.log(`_handleChatButton: action: ${action} message id : ${messageId} dieIndex: ${dieIndex}`);
+    
     const TROUBLE = CONFIG.Dice.MarvelMultiverseRoll.EDGE_MODE.TROUBLE;
     const EDGE = CONFIG.Dice.MarvelMultiverseRoll.EDGE_MODE.EDGE;
-    const chatMessage = game.messages.get(messageId);
+    const chatMessage = game.messages.get(messageId).clone();
     if (!action || !chatMessage) throw new Error('Missing Information');
    
-
+    
     const [roll] = chatMessage.rolls;
-    if (!(roll.formula.includes("dm,"))) return;
-    // if (!(roll instanceof PoolTerm)) return;
+    
+    
+    // Clone the roll & preserve its existing terms.
+	  const reRoll = roll.clone();
+    reRoll.options.isReRoll = true;
+    reRoll.dice = [...chatMessage.rolls[0].dice];
+    if (!(reRoll.dice.length === 3 && (reRoll.dice[1] instanceof game.MarvelMultiverse.dice.MarvelDie))) return;
     
     const [rollTerm] = roll.terms;
-    console.log(`_handleChatButton this is a pool term ${dieIndex}`);  
-    if (!(rollTerm instanceof PoolTerm)) return;
+    
+    if (!(rollTerm instanceof foundry.dice.terms.PoolTerm)) return;
     let targetRoll = rollTerm.rolls[dieIndex];
     const messageOptions = {
       userId: chatMessage.user,
@@ -433,16 +435,16 @@ export class ChatMessageMarvel extends ChatMessage {
       }
 
       rollTerm.rolls[dieIndex] = newRoll;
-
+      roll.terms.fill(rollTerm);
       let update = await roll.toMessage({}, {create: false});
-      console.log(`_handleChatButton update ${update}`);  
+      
       [
         "blind", "timestamp", "user", "whisper", "speaker",
         "emote", "flags", "sound", "type", "_id"
       ].forEach(k => delete update[k]);
 
       update = foundry.utils.mergeObject(chatMessage.toJSON(), update);
-      console.log(`_handleChatButton update ${Object.keys(update)}`);  
+      
       return chatMessage.update(update);
 
     } catch (err) {
@@ -460,13 +462,13 @@ export class ChatMessageMarvel extends ChatMessage {
       throw new Error('provided roll is already that kind of roll');
     }
 
-    console.log(`_makeNewRoll: ${legacyRoll} formula ${legacyRoll.formula} newEdgeMode: ${newEdgeMode} options ${legacyRoll.options} messageOption ${Object.keys(messageOptions)} constructor ${legacyRoll.constructor.name} ${newEdgeMode}`)
+    
     const TROUBLE = CONFIG.Dice.MarvelMultiverseRoll.EDGE_MODE.TROUBLE;
     const EDGE = CONFIG.Dice.MarvelMultiverseRoll.EDGE_MODE.EDGE;
 
-    console.log(`TROUBLE: ${TROUBLE} EDGE: ${EDGE}`);
+    
     let newRoll = new MarvelMultiverseRoll(legacyRoll._formula, {...legacyRoll.data}, {...messageOptions});
-    console.log(`newRoll: ${newRoll.formula}`);
+    
     newRoll.terms = [...legacyRoll.terms];
 
     let [newTerm] = newRoll.terms;
@@ -479,12 +481,14 @@ export class ChatMessageMarvel extends ChatMessage {
     // do stuff to the terms and modifiers
     switch (newEdgeMode) {
       case (EDGE): {
+        
         newTerm?.modifiers?.push('kh');
         // if this newTerm doesn't already have more than 1 rolled value, add a new one
         if (newTerm.number === 1) {
           newTerm.number = 2;
           newTerm.roll();
         }
+        
         break;
       }
       case (TROUBLE): {
@@ -494,6 +498,7 @@ export class ChatMessageMarvel extends ChatMessage {
           newTerm.number = 2;
           newTerm.roll();
         }
+        
         break;
       }
     }
@@ -545,6 +550,7 @@ export class ChatMessageMarvel extends ChatMessage {
    * @param {jQuery} html  The chat log HTML.
    */
   static onRenderChatLog([html]) {
+    
     if ( !game.settings.get("marvel-multiverse", "autoCollapseItemCards") ) {
       requestAnimationFrame(() => {
         // FIXME: Allow time for transitions to complete. Adding a transitionend listener does not appear to work, so

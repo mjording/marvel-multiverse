@@ -17,7 +17,7 @@
   "effects": [
     {
       "name": "Flight speed 2",
-      "icon": "icons/svg/aura.svg",
+      "img": "icons/svg/aura.svg",
       "duration": {
         "startTime": null,
         "seconds": null,

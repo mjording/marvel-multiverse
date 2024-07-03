@@ -17,7 +17,7 @@
   "effects": [
     {
       "name": "Ego Ability Modifiers +2",
-      "icon": "icons/svg/aura.svg",
+      "img": "icons/svg/aura.svg",
       "duration": {
         "startTime": null,
         "seconds": null,

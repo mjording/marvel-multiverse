@@ -1,8 +1,8 @@
 /**
  * Establish each MMRPG dice type here as extensions of DiceTerm.
- * @extends {DiceTerm}
+ * @extends {foundry.dice.terms.Die}
  */
-export class SixSidedDie extends DiceTerm {
+export class SixSidedDie extends foundry.dice.terms.Die {
       
     constructor(termData) {
         super(termData);
@@ -16,20 +16,20 @@ export class SixSidedDie extends DiceTerm {
 
     /** @inheritdoc */
     static MODIFIERS = {
-        "r": Die.prototype.reroll,
-        "rr": Die.prototype.rerollRecursive,
-        "k": Die.prototype.keep,
-        "kh": Die.prototype.keep,
-        "kl": Die.prototype.keep,
-        "d": Die.prototype.drop,
-        "dh": Die.prototype.drop,
-        "dl": Die.prototype.drop
+        "r": foundry.dice.terms.Die.prototype.reroll,
+        "rr": foundry.dice.terms.Die.prototype.rerollRecursive,
+        "k": foundry.dice.terms.Die.prototype.keep,
+        "kh": foundry.dice.terms.Die.prototype.keep,
+        "kl": foundry.dice.terms.Die.prototype.keep,
+        "d": foundry.dice.terms.Die.prototype.drop,
+        "dh": foundry.dice.terms.Die.prototype.drop,
+        "dl": foundry.dice.terms.Die.prototype.drop
     }
 
     /* -------------------------------------------- */
     /** @override */
     get formula() {
-        return `${this.number}d${this.constructor.DENOMINATION}${this.modifiers.join("")}`;
+        return `${this.number}${this.constructor.DENOMINATION}${this.modifiers.join("")}`;
     }
 
 

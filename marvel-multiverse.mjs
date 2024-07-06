@@ -209,7 +209,6 @@ Hooks.on("renderSettings", (app, [html]) => {
 //Hooks.on("getChatLogEntryContext", ChatMessageMarvel._getChatLogEntryContext());
 
 Hooks.on("renderChatLog", (app, html, data) => {
-  MarvelMultiverseItem.chatListeners(html);
   ChatMessageMarvel.onRenderChatLog(html);
 });
 

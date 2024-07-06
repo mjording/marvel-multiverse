@@ -29,30 +29,6 @@ export class MarvelMultiverseItem extends Item {
     return rollData;
   }
 
-  
-  /* -------------------------------------------- */
-  /*  Chat Message Helpers                        */
-  /* -------------------------------------------- */
-
-  /**
-   * Apply listeners to chat messages.
-   * @param {HTML} html  Rendered chat message.
-   */
-  static chatListeners(html) {
-    html.on("click", ".chat-card button[data-action]", this._onChatCardAction.bind(this));
-    // html.on("click", ".item-name, .collapsible", this._onChatCardToggleContent.bind(this));
-    html[0].addEventListener("click", event => {
-      if ( event.target.closest("[data-context-menu]") ) {
-        event.preventDefault();
-        event.stopPropagation();
-        event.target.closest("[data-message-id]").dispatchEvent(new PointerEvent("contextmenu", {
-          view: window, bubbles: true, cancelable: true
-        }));
-      }
-    });
-  }
-
-
   /**
    * Handle clickable rolls.
    * @param {Event} event   The originating click event

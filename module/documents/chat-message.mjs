@@ -94,6 +94,7 @@ export class ChatMessageMarvel extends ChatMessage {
     // const displayChallenge = originatingMessage?.shouldDisplayChallenge;
 
     // Highlight rolls where the second part is a marvel die roll
+
     for ( let [index, dMarvelRoll] of this.rolls.entries() ) {
 
       const [leftD6, marvelDie, rightD6] = dMarvelRoll.dice;
@@ -107,17 +108,14 @@ export class ChatMessageMarvel extends ChatMessage {
       // if ( isModifiedRoll ) continue;
 
       // Highlight successes and failures
-      const total = html.find(".dice-total")[index];
-      if ( !total ) continue;
+      // const total = html.find(".dice-total")[index];
+      // if ( !total ) continue;
       
       if ( marvelRoll.isFantastic ) {
-        
         const marvelDieItem = html.find(".tooltip-part:nth-child(2)");
         marvelDieItem.find('li.d6').each((i, el) => { 
-          
           el.classList.add("fantastic");
         });
-        
         total.classList.add("fantastic");
       } 
       // else if ( d.options.target && displayChallenge ) {
@@ -369,7 +367,7 @@ export class ChatMessageMarvel extends ChatMessage {
   _onClickDiceRoll(event) {
     event.stopPropagation();
     const target = event.currentTarget;
-    // target.classList.toggle("expanded");
+    target.classList.toggle("expanded");
   }
 
   /**
@@ -406,11 +404,11 @@ export class ChatMessageMarvel extends ChatMessage {
     // Clone the roll & preserve its existing terms.
 	  const reRoll = roll.clone();
     reRoll.options.isReRoll = true;
-    reRoll.dice = [...chatMessage.rolls[0].dice];
+    // reRoll.dice = [...reRoll.dice];
     if (!(reRoll.dice.length === 3 && (reRoll.dice[1] instanceof game.MarvelMultiverse.dice.MarvelDie))) return;
     
-    const [rollTerm] = roll.terms;
-    
+    const [rollTerm] = reRoll.terms;
+    console.log(`determine foul ${!(rollTerm instanceof foundry.dice.terms.PoolTerm)}`)
     if (!(rollTerm instanceof foundry.dice.terms.PoolTerm)) return;
     let targetRoll = rollTerm.rolls[dieIndex];
     const messageOptions = {
@@ -541,18 +539,16 @@ export class ChatMessageMarvel extends ChatMessage {
     return newRoll;
   }
 
-
-
-  /* -------------------------------------------- */
+    /* -------------------------------------------- */
 
   /**
    * Wait to apply appropriate element heights until after the chat log has completed its initial batch render.
    * @param {jQuery} html  The chat log HTML.
    */
   static onRenderChatLog([html]) {
-    
-    if ( !game.settings.get("marvel-multiverse", "autoCollapseItemCards") ) {
-      requestAnimationFrame(() => {
+    // if ( !game.settings.get("marvel", "autoCollapseItemCards") ) {
+      if ( false ) {
+        requestAnimationFrame(() => {
         // FIXME: Allow time for transitions to complete. Adding a transitionend listener does not appear to work, so
         // the transition time is hard-coded for now.
         setTimeout(() => ui.chat.scrollBottom(), 250);

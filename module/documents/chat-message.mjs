@@ -1,7 +1,6 @@
 import { MarvelMultiverseRoll } from "../dice/roll.mjs";
 import simplifyRollFormula from "../dice/simplify-roll-formula.mjs";
 import { MARVEL_MULTIVERSE } from "../helpers/config.mjs";
-import { MarvelMultiverseActor } from "./actor.mjs";
 
 
 
@@ -394,7 +393,7 @@ export class ChatMessageMarvel extends ChatMessage {
     
     const TROUBLE = CONFIG.Dice.MarvelMultiverseRoll.EDGE_MODE.TROUBLE;
     const EDGE = CONFIG.Dice.MarvelMultiverseRoll.EDGE_MODE.EDGE;
-    const chatMessage = game.messages.get(messageId).clone();
+    const chatMessage = game.messages.get(messageId)
     if (!action || !chatMessage) throw new Error('Missing Information');
    
     
@@ -408,7 +407,6 @@ export class ChatMessageMarvel extends ChatMessage {
     if (!(reRoll.dice.length === 3 && (reRoll.dice[1] instanceof game.MarvelMultiverse.dice.MarvelDie))) return;
     
     const [rollTerm] = reRoll.terms;
-    console.log(`determine foul ${!(rollTerm instanceof foundry.dice.terms.PoolTerm)}`)
     if (!(rollTerm instanceof foundry.dice.terms.PoolTerm)) return;
     let targetRoll = rollTerm.rolls[dieIndex];
     const messageOptions = {
@@ -423,26 +421,26 @@ export class ChatMessageMarvel extends ChatMessage {
 
       switch (action) {
         case 'trouble': {
-          newRoll = this._makeNewRoll(targetRoll, TROUBLE, messageOptions);
+          newRoll = this._makeNewRoll(reRoll, dieIndex, TROUBLE, messageOptions);
           break;
         }
         case 'edge': {
-          newRoll = this._makeNewRoll(targetRoll, EDGE, messageOptions);
+          newRoll = this._makeNewRoll(reRoll, dieIndex, EDGE, messageOptions);
           break;
         }
       }
 
       rollTerm.rolls[dieIndex] = newRoll;
-      roll.terms.fill(rollTerm);
-      let update = await roll.toMessage({}, {create: false});
-      
+      reRoll.terms[0] = rollTerm;
+
+      let update = await reRoll.toMessage({}, {create: false});
+
       [
         "blind", "timestamp", "user", "whisper", "speaker",
         "emote", "flags", "sound", "type", "_id"
       ].forEach(k => delete update[k]);
 
       update = foundry.utils.mergeObject(chatMessage.toJSON(), update);
-      
       return chatMessage.update(update);
 
     } catch (err) {
@@ -451,7 +449,7 @@ export class ChatMessageMarvel extends ChatMessage {
  }
 
 
-  _makeNewRoll(legacyRoll, newEdgeMode, messageOptions){
+  _makeNewRoll(legacyRoll, dieIndex, newEdgeMode, messageOptions){
     if(newEdgeMode === undefined){
       throw new Error('you must provide what the New Edge mode is')
     }
@@ -464,22 +462,22 @@ export class ChatMessageMarvel extends ChatMessage {
     const TROUBLE = CONFIG.Dice.MarvelMultiverseRoll.EDGE_MODE.TROUBLE;
     const EDGE = CONFIG.Dice.MarvelMultiverseRoll.EDGE_MODE.EDGE;
 
+    let legacyRolls = legacyRoll.terms[0].rolls
+    let newRoll = new MarvelMultiverseRoll(legacyRolls[dieIndex]._formula, {...legacyRolls[dieIndex].data}, {...messageOptions});
+    legacyRoll.terms[0].rolls[dieIndex] = newRoll;
     
-    let newRoll = new MarvelMultiverseRoll(legacyRoll._formula, {...legacyRoll.data}, {...messageOptions});
-    
-    newRoll.terms = [...legacyRoll.terms];
+    let newPool = foundry.dice.terms.PoolTerm.fromRolls(legacyRolls);
 
-    let [newTerm] = newRoll.terms;
+    let [newTerm] = newPool.rolls[0].terms;
+
     // original roll mods without the kh or kl modifiers
-    const filteredModifiers = newTerm.modifiers.filter((modifier) => !['kh', 'kl'].includes(modifier));
-    const originalResultsLength = newTerm.results.length;
+    // const filteredModifiers = newTerm.modifiers.filter((modifier) => !['kh', 'kl'].includes(modifier));
+    const originalResultsLength = legacyRoll.terms[0].results.length;
     // reset roll to not have the kh or kl modifiers
-    newTerm.modifiers = [...filteredModifiers];
 
     // do stuff to the terms and modifiers
     switch (newEdgeMode) {
       case (EDGE): {
-        
         newTerm?.modifiers?.push('kh');
         // if this newTerm doesn't already have more than 1 rolled value, add a new one
         if (newTerm.number === 1) {
@@ -512,14 +510,12 @@ export class ChatMessageMarvel extends ChatMessage {
     newTerm._evaluateModifiers();
 
     newRoll._formula = newRoll.constructor.getFormula(newRoll.terms); 
-
-    // re-evaluate total after adjusting the terms
-    newRoll._total = newRoll._evaluateTotal();
+    // newRoll._total = newRoll._evaluateTotal();
 
     // After evaluating modifiers again, Create a Fake Roll result and roll for dice so nice to roll the new dice.
     // We have to do this after modifiers because some features might spawn more dice.
 
-    if (game.modules.get('dice-so-nice')?.active && newTerm.results.length > originalResultsLength) {
+    if (game.modules.get('dice-so-nice')?.active) {
       const fakedMarvelRoll = Roll.fromTerms([new Die({...newTerm})]);
 
       // we are being extra and only rolling the new dice

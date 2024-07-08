@@ -25,13 +25,17 @@
       "thumbnail": "systems/marvel-multiverse/ui/official/mmrpg-setup-thumbnail.png"
     }
   ],
-  "version": "1.4",
+  "version": "1.4.5",
   "compatibility": {
     "minimum": 12,
-    "verified": "12.324"
+    "verified": "12.328"
   },
-  "esmodules": ["marvel-multiverse.mjs"],
-  "styles": ["css/marvel-multiverse.css"],
+  "esmodules": [
+    "marvel-multiverse.mjs"
+  ],
+  "styles": [
+    "css/marvel-multiverse.css"
+  ],
   "languages": [
     {
       "lang": "en",
@@ -39,7 +43,7 @@
       "path": "lang/en.json"
     }
   ],
-  "packs": [ 
+  "packs": [
     {
       "name": "tags",
       "label": "Tags",

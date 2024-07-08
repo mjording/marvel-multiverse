@@ -1,0 +1,119 @@
+name: Release Creation
+
+on:
+  push:
+    tags:
+      - "release-*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # Load the system.json manifest into memory
+      - name: Load system manifest
+        id: manifest
+        uses: zoexx/github-action-json-file-properties@release
+        with:
+          file_path: "./system.json"
+
+      # Set up our some variables for future use
+      # Adapted from https://github.community/t/how-to-get-just-the-tag-name/16241/7
+      # Tag name: ${{ env.TAG_NAME }}
+      # Zip name: ${{ env.ZIP_NAME }}
+      # Expected Release Download URL: ${{ env.RELEASE_DOWNLOAD_URL }}
+      # Expected Release system.json URL: ${{ env.RELEASE_INSTALL_URL }}
+      - name: Set up variables
+        id: get_vars
+        run: |
+          TAG=${GITHUB_REF/refs\/tags\//}
+          echo "TAG_NAME=$TAG" >> $GITHUB_ENV
+          echo "ZIP_NAME=dnd5e-$TAG.zip" >> $GITHUB_ENV
+          echo "RELEASE_DOWNLOAD_URL=https://github.com/${{github.repository}}/releases/download/$TAG/marvel-multiverse-$TAG.zip" >> $GITHUB_ENV
+          echo "RELEASE_INSTALL_URL=https://github.com/${{github.repository}}/releases/download/$TAG/system.json" >> $GITHUB_ENV
+
+      # Run some tests to make sure our `system.json` is correct
+      # Exit before setting up node if not
+      - name: Verify correct naming
+        env:
+          TAG_NAME: ${{ env.TAG_NAME }}
+          RELEASE_DOWNLOAD: ${{ env.RELEASE_DOWNLOAD_URL }}
+          PACKAGE_VERSION: ${{ steps.manifest.outputs.version }}
+          PACKAGE_DOWNLOAD: ${{ steps.manifest.outputs.download }}
+        run: |
+          # Validate that the tag being released matches the package version.
+          if [[ ! $TAG_NAME == release-$PACKAGE_VERSION ]]; then
+            echo "The system.json version does not match tag name."
+            echo "system.json: $PACKAGE_VERSION"
+            echo "tag name: $TAG_NAME"
+            echo "Please fix this and push the tag again."
+            exit 1
+          fi
+
+          # Validate that the package download url matches the release asset that will be created.
+          if [[ ! $RELEASE_DOWNLOAD == $PACKAGE_DOWNLOAD ]]; then
+            echo "The system.json download url does not match the created release asset url."
+            echo "system.json: $PACKAGE_DOWNLOAD"
+            echo "release asset url: $RELEASE_DOWNLOAD"
+            echo "Please fix this and push the tag again."
+            exit 1
+          fi
+
+      - name: Adjust manifest
+        uses: TomaszKandula/variable-substitution@v1.0.2
+        with:
+          files: "system.json"
+        env:
+          flags.hotReload: false
+
+      # Set up Node
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.x"
+          cache: "npm"
+
+      # `npm ci` is recommended:
+      # https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+      - name: Install Dependencies
+        run: npm ci
+
+      # Run our `build` script
+      - name: Build All
+        run: |
+          npm run build:code --if-present
+          mv --force marvel-multiverse-compiled.mjs marvel-multiverse.mjs
+
+      # Create a zip file with all files required by the module to add to the release
+      - run: zip ${{ env.ZIP_NAME }} -r css fonts icons lang lib packs templates ui marvel-multiverse.mjs marvel-multiverse-compiled.mjs.map LICENSE.txt README.md system.json template.json --exclude "packs/_source/*"
+
+      # Fetch the body from the release
+      - name: Fetch Release Body
+        id: release
+        uses: cardinalby/git-get-release-action@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          tag: ${{ env.TAG_NAME }}
+          doNotFailIfNotFound: true
+
+      # Create a release for this specific version
+      - name: Update Release with Files
+        id: create_version_release
+        uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true # Set this to false if you want to prevent updating existing releases
+          name: ${{ env.TAG_NAME }}
+          draft: false
+          prerelease: true
+          omitDraftDuringUpdate: true
+          omitPrereleaseDuringUpdate: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          artifacts: "./system.json, ./${{ env.ZIP_NAME }}"
+          tag: ${{ env.TAG_NAME }}
+          body: |
+            ${{ steps.release.outputs.body }}
+
+            **Installation:** To manually install this release, please use the following manifest URL: ${{ env.RELEASE_INSTALL_URL }}

@@ -1,7 +1,10 @@
 # MarvelMultiverse System
 ![](https://github.com/mjording/marvel-multiverse/blob/master/ui/official/mmrpg-repo.jpg?raw=true)
 
-# Foundry Virtual Tabletop - Unofficial Marvel Multiverse Role Playing Game System
+## Foundry Virtual Tabletop - Unofficial Marvel Multiverse Role Playing Game System
+
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/mjording)
 
 This game system for [Foundry Virtual Tabletop](http://foundryvtt.com) provides character sheet, dice and game system 
 support for the Marvel Multiverse Role Playing Game
@@ -26,4 +29,5 @@ may do this by cloning the repository or downloading a zip archive from the
 
 See the [CONTRIBUTING](/CONTRIBUTING.md) file for information about how you can help this project.
 
-![Foundry v11](https://img.shields.io/badge/foundry-v11-green)
+![Foundry v12](https://img.shields.io/badge/foundry-v12-green)
+

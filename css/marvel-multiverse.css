@@ -441,7 +441,7 @@ h1, h2, h3, h4 {
   flex: 1;
 }
 .marvel-multiverse .sheet-header h1.charname {
-  width: 14rem;
+  width: 28rem;
   height: 2.5rem;
   padding: 0px;
   margin: 5px 0;
@@ -527,6 +527,12 @@ h1, h2, h3, h4 {
   flex-grow: 2;
   border: 0;
 }
+.marvel-multiverse .history textarea {
+  min-height: 10em;
+}
+.marvel-multiverse .personality textarea {
+  min-height: 6em;
+}
 .marvel-multiverse .charname {
   margin-top: 5px;
 }
@@ -586,6 +592,10 @@ h1, h2, h3, h4 {
   overflow-y: auto;
   scrollbar-width: thin;
   color: #444;
+  z-index: 100;
+  position: relative;
+  opacity: 0.9;
+  background-color: beige;
 }
 .marvel-multiverse .items-list .item-list {
   list-style: none;

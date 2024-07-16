@@ -100,6 +100,14 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
           break;
         case "runspeed":
           this.movement[key].value = this.movement.run.value;
+        case "rank":
+          if (this.movement[key].mode === foundry.CONST.ACTIVE_EFFECT_MODES.MULTIPLY){
+            this.movement[key].value *= this.attributes.rank.value;
+          }else if(this.movement[key].mode === foundry.CONST.ACTIVE_EFFECT_MODES.ADD){
+            this.movement[key].value += this.attributes.rank.value;
+          }else if(this.movement[key].mode === foundry.CONST.ACTIVE_EFFECT_MODES.OVERRIDE){
+            this.movement[key].value = this.attributes.rank.value;
+          }
         default:
           this.movement[key].value += speedBaseVals[key]? speedBaseVals[key] : 0;
           this.movement[key].noncom += this.movement[key].value;

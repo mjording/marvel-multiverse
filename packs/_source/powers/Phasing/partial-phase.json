@@ -1,0 +1,20 @@
+{
+  "_id": "28265d10-0d66-4b39-83af-359627680eca",
+  "name": "Partial Phase",
+  "type": "power",
+  "system": {
+    "description": "The character can make a portion of themselves tangible or intangible.",
+    "powerSet": "Phasing",
+    "prerequisites": "Phase Self, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character has greater control over their phasing ability. They can make any portion of their body and clothing tangible or intangible, as they like."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a47971e64f3d687d",
+  "_key": "!items!28265d10-0d66-4b39-83af-359627680eca"
+}

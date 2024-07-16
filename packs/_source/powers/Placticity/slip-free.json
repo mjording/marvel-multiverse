@@ -6,7 +6,7 @@
     "description": "The character is impossible to restrain.",
     "powerSet": "Plasticity",
     "prerequisites": "",
-    "action": "reaction",
+    "action": "Reaction",
     "trigger": "The character is grabbed or pinned.",
     "duration": "Instant",
     "range": "",

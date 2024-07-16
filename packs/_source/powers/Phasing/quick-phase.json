@@ -1,0 +1,20 @@
+{
+  "_id": "961dc3c6-8b59-4221-8cc5-3e2e4d6bbe0d",
+  "name": "Quick Phase",
+  "type": "power",
+  "system": {
+    "description": "The character can become as intangible as a ghost.",
+    "powerSet": "Phasing",
+    "prerequisites": "Phase Self, Rank 2",
+    "action": "Reaction",
+    "trigger": "The character is attacked.",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character and their clothing can instantly become intangible."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a47971e64f3d687d",
+  "_key": "!items!961dc3c6-8b59-4221-8cc5-3e2e4d6bbe0d"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "0ddad535-c904-4b95-9ef3-8cb96f84dcae",
+  "name": "Phase Self",
+  "type": "power",
+  "system": {
+    "description": "The character can become as intangible as a ghost.",
+    "powerSet": "Phasing",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "",
+    "effect": "The character (and their clothing) becomes intangible and can move through anything as if it wasn't there. Nothing can physically affect them, nor can they affect anything else that is not phasing along with them."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a47971e64f3d687d",
+  "_key": "!items!0ddad535-c904-4b95-9ef3-8cb96f84dcae"
+}

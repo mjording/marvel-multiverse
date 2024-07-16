@@ -1,0 +1,20 @@
+{
+  "_id": "12fe8d14-e149-4855-ae03-f6869a566883",
+  "name": "Phase Walk",
+  "type": "power",
+  "system": {
+    "description": "The character can become as intangible as a ghost.",
+    "powerSet": "Phasing",
+    "prerequisites": "Phase Self, Rank 2",
+    "action": "",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "When phasing, the character can move freely in any direction through anything-not just air, but also water, buildings and so on—at their Run Speed. The character can take anything or anyone they are phasing along with them."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a47971e64f3d687d",
+  "_key": "!items!12fe8d14-e149-4855-ae03-f6869a566883"
+}

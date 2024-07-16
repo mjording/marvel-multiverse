@@ -1,0 +1,20 @@
+{
+  "_id": "ddd31544-90ce-47c4-bc42-3a282ce228f0",
+  "name": "Phase Object",
+  "type": "power",
+  "system": {
+    "description": "The character can make something they're touching intangible.",
+    "powerSet": "Phasing",
+    "prerequisites": "Phase Self, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character can make any object they are touching intangible. The object (and things attached to or inside of it) can be up to their rank in sizes bigger than them. For example, if they are Rank 5, the object can be 5 sizes bigger than them. For an average person, this would be Gargantuan."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a47971e64f3d687d",
+  "_key": "!items!ddd31544-90ce-47c4-bc42-3a282ce228f0"
+}

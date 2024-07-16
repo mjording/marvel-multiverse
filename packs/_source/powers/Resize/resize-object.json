@@ -1,0 +1,20 @@
+{
+  "_id": "b7631919-e73e-4586-a716-6d1a04ee5146",
+  "name": "Resize Object",
+  "type": "power",
+  "system": {
+    "description": "The character can change the size of an object within reach.",
+    "powerSet": "Resize",
+    "prerequisites": "Grow & or Shrink, Rank 3",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "The character can make an object within reach grow or shrink. The character can resize the object as much as their own Grow or Shrink power would allow them to."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b74def8c3ea77646",
+  "_key": "!items!b7631919-e73e-4586-a716-6d1a04ee5146"
+}

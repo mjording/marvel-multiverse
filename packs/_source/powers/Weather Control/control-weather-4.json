@@ -1,0 +1,20 @@
+{
+  "_id": "36379776-e462-417f-958f-79e2b1a34063",
+  "name": "Control Weather 4",
+  "type": "power",
+  "system": {
+    "description": "The character generates a hurricane.",
+    "powerSet": "Weather Control",
+    "prerequisites": "Control Weather 3, Rank 5",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "20 Focus",
+    "effect": "It starts to storm in an area up to 5 miles across times the character's rank, centered on the character. All ranges and all speeds are cut to one quarter normal, and flying is impossible."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "ad2abe37b615e936",
+  "_key": "!items!36379776-e462-417f-958f-79e2b1a34063"
+}

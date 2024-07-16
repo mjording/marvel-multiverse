@@ -1,0 +1,20 @@
+{
+  "_id": "da2e03e6-ce09-4015-8ff2-72da16828da7",
+  "name": "Grow 4",
+  "type": "power",
+  "system": {
+    "description": "The character can tackle kaiju!",
+    "powerSet": "Resize",
+    "prerequisites": "Grow 3",
+    "action": "Standard or reaction",
+    "trigger": "The character is attacked.",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character can grow up to gargantuan size. They can return to their normal size at will."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b74def8c3ea77646",
+  "_key": "!items!da2e03e6-ce09-4015-8ff2-72da16828da7"
+}

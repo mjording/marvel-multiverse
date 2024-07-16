@@ -1,0 +1,20 @@
+{
+  "_id": "be24d9f8-cb15-4b29-8be9-89a46e49c6c8",
+  "name": "Coiling Crush",
+  "type": "power",
+  "system": {
+    "description": "The character wraps around a target and crushes it.",
+    "powerSet": "Plasticity",
+    "prerequisites": "Extended Reach 1, Reverse Punch, Rank 3",
+    "action": "Reaction",
+    "trigger": "The character grabs an enemy.",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "The character makes a Melee attack. On a success, the enemy is paralyzed. On a Fantastic success, the enemy also takes regular damage. During the character's subsequent turns, they can spend their movement action to make a Melee check against the enemy's Resilience. If this succeeds, they inflict regular Health damage. On a Fantastic success, they do double damage instead. During the paralyzed enemy's turn, they can make a Melee check against the character's Melee defense to break free."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b660cb39178688a5",
+  "_key": "!items!be24d9f8-cb15-4b29-8be9-89a46e49c6c8"
+}

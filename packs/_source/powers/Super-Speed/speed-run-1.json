@@ -1,0 +1,55 @@
+{
+  "_id": "ab16ec66-b1d5-41ae-a9ae-42c11fc2fe8e",
+  "name": "Speed Run 1",
+  "type": "power",
+  "system": {
+    "description": "The character runs as fast as a car!",
+    "powerSet": "Super-Speed",
+    "prerequisites": "Rank 2",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "Multiply the character's regular Run Speed by their rank to get their new Run Speed. Outside of combat, they can move three times as fast."
+  },
+  "flags": {},
+  "effects": [
+    {
+      "name": "Run speed times rank",
+      "img": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.ab16ec66-b1d5-41ae-a9ae-42c11fc2fe8e",
+      "_id": "b9fecdc926e94f67",
+      "changes": [
+        {
+          "key": "system.movement.run.calc",
+          "mode": 1,
+          "value": "rank"
+        },
+        {
+          "key": "system.movement.swim.noncom",
+          "mode": 1,
+          "value": 3
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!ab16ec66-b1d5-41ae-a9ae-42c11fc2fe8e.b9fecdc926e94f67"
+    }
+  ],
+  "folder": "b670a4a72be89d71",
+  "_key": "!items!ab16ec66-b1d5-41ae-a9ae-42c11fc2fe8e"
+}

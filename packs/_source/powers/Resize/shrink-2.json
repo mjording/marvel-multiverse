@@ -1,0 +1,20 @@
+{
+  "_id": "af5e1817-98b9-46f9-9f5e-70dac2407699",
+  "name": "Shrink 2",
+  "type": "power",
+  "system": {
+    "description": "The character becomes even smaller!",
+    "powerSet": "Resize",
+    "prerequisites": "Shrink 1",
+    "action": "Standard or reaction",
+    "trigger": "The character is attacked.",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character can shrink down to tiny size. They can return to their normal size at will."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b74def8c3ea77646",
+  "_key": "!items!af5e1817-98b9-46f9-9f5e-70dac2407699"
+}

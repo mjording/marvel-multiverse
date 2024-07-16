@@ -1,0 +1,20 @@
+{
+  "_id": "9038760b-5b83-437c-b4cf-1392e5bb0c9c",
+  "name": "Rubberneck",
+  "type": "power",
+  "system": {
+    "description": "The character can reach past an enemy and punch them from behind.",
+    "powerSet": "Plasticity",
+    "prerequisites": "Flexible Bones 1, Extended Reach 1",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character can move their head away from their body, up to their reach, to establish a line of sight to a target."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b660cb39178688a5",
+  "_key": "!items!9038760b-5b83-437c-b4cf-1392e5bb0c9c"
+}

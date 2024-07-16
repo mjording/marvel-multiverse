@@ -1,0 +1,20 @@
+{
+  "_id": "add76620-f1dc-4e86-b576-3ecd435df862",
+  "name": "Shrinking Dodge",
+  "type": "power",
+  "system": {
+    "description": "The character shrinks to avoid an attack.",
+    "powerSet": "Resize",
+    "prerequisites": "Shrink 1, Rank 2",
+    "action": "Reaction",
+    "trigger": "The character is attacked.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The attacker has trouble on the attack."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b74def8c3ea77646",
+  "_key": "!items!add76620-f1dc-4e86-b576-3ecd435df862"
+}

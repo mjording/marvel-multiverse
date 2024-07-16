@@ -1,0 +1,20 @@
+{
+  "_id": "ab709e8f-8941-4791-9b28-8d722d436899",
+  "name": "Speed Blast",
+  "type": "power",
+  "system": {
+    "description": "The character fans their arms fast enough to blast a targes a a gust of air!",
+    "powerSet": "Super-Speed",
+    "prerequisites": "Speed Run 2, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "10",
+    "cost": "5 Focus",
+    "effect": "The character makes a ranged attack. If it succeeds, the target is stunned for one round. On a Fantastic success, the character is knocked prone too."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b670a4a72be89d71",
+  "_key": "!items!ab709e8f-8941-4791-9b28-8d722d436899"
+}

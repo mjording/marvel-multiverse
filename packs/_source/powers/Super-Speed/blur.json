@@ -1,0 +1,20 @@
+{
+  "_id": "094de686-6305-4ac4-bb21-8160673fb286",
+  "name": "Blur",
+  "type": "power",
+  "system": {
+    "description": "The character moves like a blur!",
+    "powerSet": "Super-Speed",
+    "prerequisites": "Speed Run 2, Rank 2",
+    "action": "Standard or reaction",
+    "trigger": "The character is attacked.",
+    "duration": "1 round",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "Any attacks against the character have trouble."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b670a4a72be89d71",
+  "_key": "!items!094de686-6305-4ac4-bb21-8160673fb286"
+}

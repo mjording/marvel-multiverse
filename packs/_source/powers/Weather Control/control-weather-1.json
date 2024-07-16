@@ -1,0 +1,20 @@
+{
+  "_id": "796a7e90-c063-44e0-992d-bc2d0e0fc795",
+  "name": "Control Weather 1",
+  "type": "power",
+  "system": {
+    "description": "The character can make it rain.",
+    "powerSet": "Weather Control",
+    "prerequisites": "Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "",
+    "effect": "It starts to rain in an area up to 5 miles across times the character's rank, centered on the character. All ranges are cut in half. Movement is not affected."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "ad2abe37b615e936",
+  "_key": "!items!796a7e90-c063-44e0-992d-bc2d0e0fc795"
+}

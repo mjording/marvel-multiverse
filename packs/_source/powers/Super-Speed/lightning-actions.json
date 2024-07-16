@@ -1,0 +1,20 @@
+{
+  "_id": "70004522-f92c-4d5b-8dca-36a3eb0f4b00",
+  "name": "Lightning Actions",
+  "type": "power",
+  "system": {
+    "description": "The character has lightning-fast moves.",
+    "powerSet": "Super-Speed",
+    "prerequisites": "Rank 4",
+    "action": "Reaction",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character has one extra standard action and one extra reaction each turn. Additionally, they can turn their Marvel die to a Fantastic success when making an initiative check."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b670a4a72be89d71",
+  "_key": "!items!70004522-f92c-4d5b-8dca-36a3eb0f4b00"
+}

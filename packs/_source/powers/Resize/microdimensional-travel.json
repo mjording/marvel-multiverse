@@ -1,0 +1,20 @@
+{
+  "_id": "bc4d37b4-0b97-49a3-99f0-315ccd8bebcc",
+  "name": "Microdimensional Travel",
+  "type": "power",
+  "system": {
+    "description": "The character shrinks out of the universal",
+    "powerSet": "Resize",
+    "prerequisites": "Shrink 4, Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "The character can shrink enough to travel into subatomic realms. They can return to their normal size at will. Note that this is something that most characters would rarely want to do, as it removes them entirely from their regular universe and places them in a dimension in which the rules of time and space work differently, The Underspace, for example, might make a fine place to hide, but there's little else of interest there."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b74def8c3ea77646",
+  "_key": "!items!bc4d37b4-0b97-49a3-99f0-315ccd8bebcc"
+}

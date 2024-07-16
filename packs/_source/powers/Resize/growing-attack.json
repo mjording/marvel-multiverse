@@ -1,0 +1,20 @@
+{
+  "_id": "26ccf43c-90aa-4cf6-affa-8e3124232bc1",
+  "name": "Growing Attack",
+  "type": "power",
+  "system": {
+    "description": "The character attacks as they grow.",
+    "powerSet": "Resize",
+    "prerequisites": "Grow 1, Rank 2",
+    "action": "Reaction",
+    "trigger": "The character grows.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character makes a close attack with an edge. If the attack succeeds they do regular damage for the size they are growing to. On a Fantastic success, they do double damage and stun the target."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b74def8c3ea77646",
+  "_key": "!items!26ccf43c-90aa-4cf6-affa-8e3124232bc1"
+}

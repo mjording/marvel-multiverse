@@ -1,0 +1,20 @@
+{
+  "_id": "38d92bfa-7596-4864-9f8c-82d6666ef901",
+  "name": "Disrupt Person",
+  "type": "power",
+  "system": {
+    "description": "The character can hurt someone with their phasing powers.",
+    "powerSet": "Phasing",
+    "prerequisites": "Phase Self, Rank 3",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "The character becomes the slightest bit solid while phasing themselves or a phased weapon through someone. They make a close attack. On a success, the attack does normal damage, ignoring any Health Damage Reduction. On a Fantastic success, the attack does double damage instead, ignoring any Health Damage Reduction, and the target is stunned for one round."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a47971e64f3d687d",
+  "_key": "!items!38d92bfa-7596-4864-9f8c-82d6666ef901"
+}

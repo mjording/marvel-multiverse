@@ -37,9 +37,14 @@
           "value": true
         },
         {
-          "key": "system.movement.jump.active",
+          "key": "system.movement.flight.calc",
           "mode": 5,
-          "value": false
+          "value": "runspeed"
+        },
+        {
+          "key": "system.movement.flight.calc",
+          "mode": 1,
+          "value": "rank"
         },
         {
           "key": "system.movement.flight.noncom",

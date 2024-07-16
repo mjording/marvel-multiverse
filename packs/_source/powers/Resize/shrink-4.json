@@ -1,0 +1,20 @@
+{
+  "_id": "18cef105-465e-44eb-8fd3-3e9401fa042a",
+  "name": "Shrink 4",
+  "type": "power",
+  "system": {
+    "description": "The character is so small that they're hard to see.",
+    "powerSet": "Resize",
+    "prerequisites": "Shrink 3",
+    "action": "Standard or reaction",
+    "trigger": "The character is attacked.",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character can shrink down to microscopic size. They can return to their normal size at will."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b74def8c3ea77646",
+  "_key": "!items!18cef105-465e-44eb-8fd3-3e9401fa042a"
+}

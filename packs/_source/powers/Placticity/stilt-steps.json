@@ -1,0 +1,79 @@
+{
+  "_id": "c77caa2d-f9d7-4d58-81c6-befcf7d9e400",
+  "name": "Stilt Steps",
+  "type": "power",
+  "system": {
+    "description": "The character can stretch their legs like extendable stilts.",
+    "powerSet": "Plasticity",
+    "prerequisites": "Extended Reach 1, Rank 2",
+    "action": "Movement",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "The character's Run Speed doubles, as does their Climb Speed."
+  },
+  "flags": {},
+  "effects": [
+    {
+      "name": "Double Run Speed",
+      "img": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.a89ad743-4aee-47e4-9673-90c879b66506",
+      "_id": "2de0ec2e33f44ed7",
+      "changes": [
+        {
+          "key": "system.movement.run.calc",
+          "mode": 1,
+          "value": 2
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!a89ad743-4aee-47e4-9673-90c879b66506.2de0ec2e33f44ed7"
+    },
+    {
+      "name": "Double Climb Speed",
+      "img": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.a89ad743-4aee-47e4-9673-90c879b66506",
+      "_id": "a63fb94513a84abc",
+      "changes": [
+        {
+          "key": "system.movement.climb.calc",
+          "mode": 1,
+          "value": 2
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!a89ad743-4aee-47e4-9673-90c879b66506.a63fb94513a84abc"
+    }
+  ],
+  "folder": "b660cb39178688a5",
+  "_key": "!items!c77caa2d-f9d7-4d58-81c6-befcf7d9e400"
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "1ce263ba-2e37-4942-a771-a3b42e4f4e91",
+  "name": "Speed Swim",
+  "type": "power",
+  "system": {
+    "description": "The character can swim faster than a dolphin!",
+    "powerSet": "Super-Speed",
+    "prerequisites": "Rank 2",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "Multiply the characters regular Swim Speed by their rank to get their new Swim Speed. Outside of combat, they can move three times as fast."
+  },
+  "flags": {},
+  "effects": [
+    {
+      "name": "Swim speed times rank",
+      "img": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.1ce263ba-2e37-4942-a771-a3b42e4f4e91",
+      "_id": "5804dbf481164dcc",
+      "changes": [
+        {
+          "key": "system.movement.swim.calc",
+          "mode": 1,
+          "value": "rank"
+        },
+        {
+          "key": "system.movement.swim.noncom",
+          "mode": 1,
+          "value": 3
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!1ce263ba-2e37-4942-a771-a3b42e4f4e91.5804dbf481164dcc"
+    }
+  ],
+  "folder": "b670a4a72be89d71",
+  "_key": "!items!1ce263ba-2e37-4942-a771-a3b42e4f4e91"
+}

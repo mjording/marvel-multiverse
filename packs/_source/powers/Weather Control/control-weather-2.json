@@ -1,0 +1,20 @@
+{
+  "_id": "9c817d47-3352-4b24-8907-24b64c115098",
+  "name": "Control Weather 2",
+  "type": "power",
+  "system": {
+    "description": "The character can make it storm.",
+    "powerSet": "Weather Control",
+    "prerequisites": "Control Weather 1, Rank 3",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "It starts to storm in an area up to 5 miles across times the character's rank, centered on the character, All ranges and all speeds are cut in half."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "ad2abe37b615e936",
+  "_key": "!items!9c817d47-3352-4b24-8907-24b64c115098"
+}

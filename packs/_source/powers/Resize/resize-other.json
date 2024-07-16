@@ -1,0 +1,20 @@
+{
+  "_id": "cf6a8c1a-3992-4b40-a56a-964ec714d677",
+  "name": "Resize Other",
+  "type": "power",
+  "system": {
+    "description": "The character can resize someone they are touching.",
+    "powerSet": "Resize",
+    "prerequisites": "Grow & or Shrink, Rank 3",
+    "action": "Standard or reaction",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "The character can resize any person (and their clothing) they are touching. The character can resize the object as much as their own Grow or Shrink power would allow them to, If the target does not wish to be resized, the character must grab them first."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b74def8c3ea77646",
+  "_key": "!items!cf6a8c1a-3992-4b40-a56a-964ec714d677"
+}

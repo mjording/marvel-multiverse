@@ -1,0 +1,20 @@
+{
+  "_id": "eb130b4e-4a37-47c3-bdfb-0b0f2c02afbd",
+  "name": "Run on Water",
+  "type": "power",
+  "system": {
+    "description": "The character has lightning-fast moves.",
+    "powerSet": "Super-Speed",
+    "prerequisites": "Speed Run 2, Rank 3",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character can run so that their feet skip across the surface of water. As long as they keep running (even in place), they do not sink."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b670a4a72be89d71",
+  "_key": "!items!eb130b4e-4a37-47c3-bdfb-0b0f2c02afbd"
+}

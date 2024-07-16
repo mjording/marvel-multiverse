@@ -1,0 +1,20 @@
+{
+  "_id": "ec44d909-01ad-4b69-8d44-c962f52abfa4",
+  "name": "Disrupt Nerves",
+  "type": "power",
+  "system": {
+    "description": "The character can scramble someone's nervous system.",
+    "powerSet": "Phasing",
+    "prerequisites": "Phase Self, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "When phasing through a person, the character can attempt to scramble their nervous system. The character makes an Ego check against the target's Resilience defense. On a success, the target is stunned for one round. On a Fantastic success, the target also falls prone."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a47971e64f3d687d",
+  "_key": "!items!ec44d909-01ad-4b69-8d44-c962f52abfa4"
+}

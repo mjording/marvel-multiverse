@@ -1,0 +1,20 @@
+{
+  "_id": "f77c27d1-219c-4616-9eb5-83393f7e99cf",
+  "name": "Catch Bullets",
+  "type": "power",
+  "system": {
+    "description": "The character moves like a blur!",
+    "powerSet": "Super-Speed",
+    "prerequisites": "Speed Run 2, Rank 3",
+    "action": "Reaction",
+    "trigger": "A ranged attack using physical projectiles (arrows, bullets and so on) is made against the character-or a character within their character's reach,",
+    "duration": "Instant",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "The character makes an Agility check, using the attacker's attack result as the target number. If the character's check succeeds, the attack is nullified. On a Fantastic success, the character gets their reaction back."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b670a4a72be89d71",
+  "_key": "!items!f77c27d1-219c-4616-9eb5-83393f7e99cf"
+}

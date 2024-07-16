@@ -1,0 +1,20 @@
+{
+  "_id": "bae45ac9-3df7-449d-a3a3-4e7b4a4cd6c0",
+  "name": "Hex Bolt",
+  "type": "power",
+  "system": {
+    "description": "The character shoots out chains covered in hellfire.",
+    "powerSet": "Magic",
+    "prerequisites": "Chaotic, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character fires a hex bolt at a foe. Make an Ego check against the target's Agility defense. On a success, the attack does regular damage. On a Fantastic success, it does double damage and causes the target trouble for one round."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8c23e6cd16b9bb49",
+  "_key": "!items!bae45ac9-3df7-449d-a3a3-4e7b4a4cd6c0"
+}

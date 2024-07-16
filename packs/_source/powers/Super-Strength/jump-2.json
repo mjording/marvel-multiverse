@@ -1,0 +1,60 @@
+{
+  "_id": "ba496709-a6b2-4295-9317-ed837a9532a9",
+  "name": "Jump 2",
+  "type": "power",
+  "system": {
+    "description": "The character can leap around with dazzling speed.",
+    "powerSet": "Spider-Powers",
+    "prerequisites": "Jump 1, Rank 3",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character's Jump Speed is equal to their rank times their Run Speed. Outside of combat, they can move three times as fast."
+  },
+  "flags": {},
+  "effects": [
+    {
+      "name": "physical edge",
+      "img": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.ba496709-a6b2-4295-9317-ed837a9532a9 ",
+      "_id": "ad19c5484f6a42df",
+      "changes": [
+        {
+          "key": "system.movement.jump.active",
+          "mode": 5,
+          "value": true
+        },
+        {
+          "key": "system.movement.jump.calc",
+          "mode": 5,
+          "value": "runspeed"
+        },
+        {
+          "key": "system.movement.jump.noncom",
+          "mode": 1,
+          "value": 3
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!ba496709-a6b2-4295-9317-ed837a9532a9.ad19c5484f6a42df"
+    }
+  ],
+  "folder": "88848a43d8a58388",
+  "_key": "!items!ba496709-a6b2-4295-9317-ed837a9532a9 "
+}

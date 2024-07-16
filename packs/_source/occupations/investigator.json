@@ -1,0 +1,50 @@
+{
+  "_id": "98d6f6b8-3134-4f9c-abac-483c45c7d48e",
+  "name": "Investigator",
+  "type": "occupation",
+  "system": {
+    "description": "The character is trained to solve mysteries. This can be as a private detective or as part of an official law enforcement organization, ranging from the New York Police Department to the Federal Bureau of Investigation, S.H.I.E.L.D. or even the Nova Corps.",
+    "examples": "Jessica Jones, Misty Knight.",
+    "traits": [
+      {
+        "_id": "cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7",
+        "name": "Connections",
+        "type": "trait",
+        "system": {
+          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a palice officer, a politician, a mobster and soon. By makingan Egocheck, the character can call an their contact wo provide help in the form of glues, informntion ar resources, The Hnrrator determines the TH of the Ego check based on the favor requested This trait can be selected multiple thmes, using many different types, These include Celebrities, Community, Criminal, Espionape, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on",
+          "restriction": "Police"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7"
+      },
+      {
+        "_id": "1e9ef04f-7007-41f5-b7f8-3486a1f86e84",
+        "name": "Interrogation",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character knows how to ask the right questions in the Haht way They have an edge on ago or Logic checks made when asking questions."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!1e9ef04f-7007-41f5-b7f8-3486a1f86e84"
+      },
+      {
+        "_id": "8118ada3-5aa4-43aa-9cdd-1ba3f8ce1008",
+        "name": "Investigation",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character la an expert investigator They have an edge on Vigilance checks to spot clues and on Logic checks related to interpreting clues If they have access to a forensies lab at the time, they gain a second edge on such checks."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!8118ada3-5aa4-43aa-9cdd-1ba3f8ce1008"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!98d6f6b8-3134-4f9c-abac-483c45c7d48e"
+}

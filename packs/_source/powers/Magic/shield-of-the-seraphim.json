@@ -1,0 +1,20 @@
+{
+  "_id": "ca4beb4de4a9-f68b-4c2e-b04d-05bccecc4503",
+  "name": "Shield of the Seraphim",
+  "type": "power",
+  "system": {
+    "description": "The character produces a magical shield.",
+    "powerSet": "Magic",
+    "prerequisites": "Sorcerous, Rank 3",
+    "action": "Standard or reaction",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "10 focus",
+    "effect": "The character produces a magical shield that protects them from physical damage. Any attacks against them that do 20 points of damage or less are instantly absorbed, and the protection continues. If an attack does more than 20 points of damage, it destroys the protection. Either way, the character remains unharmed."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8c23e6cd16b9bb49",
+  "_key": "!items!ca4beb4de4a9-f68b-4c2e-b04d-05bccecc4503"
+}

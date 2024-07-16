@@ -1,0 +1,20 @@
+{
+  "_id": "d136d30d-694d-46b7-adb3-71163d09d3e7",
+  "name": "Shield Deflection",
+  "type": "power",
+  "system": {
+    "description": "The character uses their shield to deflect attacks.",
+    "powerSet": "Shield Bearer",
+    "prerequisites": "",
+    "action": "Reaction",
+    "trigger": "The character is the target of an attack against their Agility defense.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "The attack has trouble."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "926e8d815f4d3fd7",
+  "_key": "!items!d136d30d-694d-46b7-adb3-71163d09d3e7"
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "59d05786-1dbd-49ad-ad34-89133e8c09ad",
+  "name": "High Tech: Android",
+  "type": "origin",
+  "system": {
+    "description": "The character is an artificial person. Their body (when they have one) is made of plastic, metal and circuitry rather than flesh and blood. Their powers come from technology embedded in their artificial body.",
+    "examples": "Human Torch (Jim Hammond), Jocasta, Machine Man, Vision.",
+    "suggestedOccupation": "",
+    "tags": [
+      {
+        "_id": "95b12d2a-935b-40d6-a9a8-3e8031a46229",
+        "name": "A.I.",
+        "type": "tag",
+        "system": {
+          "description": "The character possesses an artificial intelligence in a computerized mind. Their digital nature means that copies or backups can be made of their mind and can even be transferred into other compatible forms.",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!95b12d2a-935b-40d6-a9a8-3e8031a46229"
+      },
+      {
+        "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
+        "name": "Extreme Appearance",
+        "type": "tag",
+        "system": {
+          "description": "The character looks very different than the average person (wherever they happen to be) and cannot easily hide their identity. When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme appearance is common.",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1"
+      }
+    ],
+    "traits": [
+      {
+        "_id": "67d72599-e0e3-40f3-aa54-bf98b55780cf",
+        "name": "Tech Reliance",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character relies on technolopy for powers. When they take damape that would render them unconscious they can instead choose to lose all of their technology-related powers and remain conscious with 1 polnt of Health remaining. Assuming the character has access to parts and tools. Lost powers can be repaired after a battle"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!67d72599-e0e3-40f3-aa54-bf98b55780cf"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!59d05786-1dbd-49ad-ad34-89133e8c09ad"
+}

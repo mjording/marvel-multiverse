@@ -16,7 +16,7 @@
   "flags": {},
   "effects": [
     {
-      "name": "physical edge",
+      "name": "jump at run speed",
       "img": "icons/svg/aura.svg",
       "duration": {
         "startTime": null,

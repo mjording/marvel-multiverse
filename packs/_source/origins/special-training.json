@@ -1,0 +1,29 @@
+{
+  "_id": "e3beb996-a9ef-417e-97ad-7f31ef7864ee",
+  "name": "Special Training",
+  "type": "origin",
+  "system": {
+    "description": "The character's powers come from long hours of practice. Their intense focus grants them abilities that would astonish most people.",
+    "examples": "Hawkeye (Clint Barton), Hawkeye (Kate Bishop), Nick Fury Jr., Shang-Chi.",
+    "suggestedOccupation": "",
+    "tags": [],
+    "traits": [
+      {
+        "_id": "2c1dfa5f-a742-4545-a0c9-6225400e6d65",
+        "name": "Determination",
+        "type": "trait",
+        "system": {
+          "description": "The character never gives up, even when they feel like they're at their worst. While demoralized, they do not gain trouble on all actions, though they still cannot maintain concentration or spend further Focus.",
+          "restriction": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!2c1dfa5f-a742-4545-a0c9-6225400e6d65"
+      }
+    ],
+    "limitation": "Unless the character has another origin, they cannot choose powers that grant them superhuman abilities. Allowed power sets include Martial Arts, Melee Weapons, Ranged Weapons, Shield Bearer and Tactics.They can also choose basic powers a regular human could reasonably have. See the Basic powers list on page 80."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!e3beb996-a9ef-417e-97ad-7f31ef7864ee"
+}

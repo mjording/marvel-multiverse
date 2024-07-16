@@ -1,0 +1,20 @@
+{
+  "_id": "5d53d67b-bfa7-4762-bf62-f9ad2a69d20e",
+  "name": "Exorcism",
+  "type": "power",
+  "system": {
+    "description": "The character removes an intruder from someone's body.",
+    "powerSet": "Magic",
+    "prerequisites": "Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "The character attempts to remove the possessor from a possessed target. The character makes an Ego check against the possessor's Ego defense. On a success, the possessor's concentration is broken, ending the possession. On a Fantastic success, all of the possessor's concentrations are broken, and the possessor is stunned for one round too."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8c23e6cd16b9bb49",
+  "_key": "!items!5d53d67b-bfa7-4762-bf62-f9ad2a69d20e"
+}

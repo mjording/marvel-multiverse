@@ -1,0 +1,126 @@
+{
+  "_id": "7c4c10da-ae73-42b3-b040-9313d5e358bc",
+  "name": "Symbiote",
+  "type": "origin",
+  "system": {
+    "description": "The character has bonded with one of the Klyntar, a race of alien symbiotes created by the alien god Knull. Most of these creatures on Earth display spiderlike powers. When a character bonds with a symbiote, they go up one rank and gain the listed tags, traits and powers, Any remaining powers they select are often from the Spider-Powers set but do not have to be. Many symbiotes have the Disguise power. If the symbiote is Venom or one of its progeny, Spider-Man (Peter Parker) cannot gain any benefits from his Spider-Sense power against the bonded character.",
+    "examples": "Carnage, Venom (Eddie Brock), Shriek.",
+    "suggestedOccupation": "",
+    "tags": [],
+    "traits": [
+      {
+        "_id": "47f9ba30-cb32-497c-8364-f1db64cd93a5",
+        "name": "Anathema",
+        "type": "trait",
+        "system": {
+          "restriction": "Extreme Heat/Extreme Sonics.",
+          "description": "The character suffers direct harm when exposed to a particular substance. They cannot voluntarily enter the same space with it. If they are touched by it, they instantly sufter the damage of a Rank 3 attack roll that automatically succeeds. This continues each turn until they are separated from the substance or are killed or destroyed. Damage caused by Anathema ignores all damage reduction the character has and cannot be healed by their Healing Factor."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!47f9ba30-cb32-497c-8364-f1db64cd93a5"
+      }
+    ],
+    "powers": [
+      {
+        "_id": "31563611-7627-477b-9d2f-24008680f6ce",
+        "name": "Elemental Protection 2",
+        "type": "power",
+        "system": {
+          "description": "The character's elemental protection is like armor.",
+          "powerSet": "Elemental Control",
+          "prerequisites": "Elemental Barrier, Rank 3",
+          "action": "Standard or Reaction",
+          "trigger": "The character is attacked or otherwise in danger.",
+          "duration": "Concentration",
+          "range": "",
+          "cost": "10 Focus",
+          "effect": "The character protects themselves with their element. Any attacks against them that do 10 points of damage or less are instantly absorbed, and the protection continues. If an attack does more than 10 points of damage, it destroys the protection. Either way, the character remains unharmed."
+        },
+        "flags": {},
+        "effects": [],
+        "folder": "a9ecc3931cffa8a5",
+        "_key": "!items!31563611-7627-477b-9d2f-24008680f6ce"
+      },
+      {
+        "_id": "f40a973e-9efc-4283-9131-0bd5458d88ad",
+        "name": "Environmental Protection",
+        "type": "power",
+        "system": {
+          "description": "Environmental effects don't bother the character.",
+          "powerSet": "Basic",
+          "prerequisites": "",
+          "action": "Permanent",
+          "trigger": "The character takes Health damage.",
+          "duration": "Instant",
+          "range": "",
+          "cost": "15 Focus",
+          "effect": "The character is not harmed by intense cold or heat, the pressure of the deep seas or the intense radiation and vacuum of space. The player can choose any or all of these protections, as best fits with the character concept."
+        },
+        "flags": {},
+        "effects": [],
+        "folder": "bbe663a787c7ec04",
+        "_key": "!items!f40a973e-9efc-4283-9131-0bd5458d88ad"
+      },
+      {
+        "_id": "d82f8686-795a-43bb-b1b8-e5e0cd2ef72f",
+        "name": "Mighty 1",
+        "type": "power",
+        "system": {
+          "description": "The character is superhumanly strong.",
+          "powerSet": "Basic",
+          "prerequisites": "Mighty 1, Rank 2",
+          "action": "",
+          "trigger": "",
+          "duration": "Permanent",
+          "range": "",
+          "cost": "",
+          "effect": "Treat the character as one size bigger for lifting, carrying, swinging and throwing things. They also add +1 to their Melee damage multiplier, and they gain a +1 bonus to Melee checks other than attacks."
+        },
+        "flags": {},
+        "effects": [
+          {
+            "name": "sizeUp",
+            "img": "icons/svg/aura.svg",
+            "duration": {
+              "startTime": null,
+              "seconds": null,
+              "combat": null,
+              "rounds": null,
+              "turns": null,
+              "startRound": null,
+              "startTurn": null
+            },
+            "disabled": false,
+            "origin": "Item.d82f8686-795a-43bb-b1b8-e5e0cd2ef72f",
+            "_id": "86a0562a3464b7c1",
+            "changes": [
+              {
+                "key": "system.abilities.mle.damageMultiplier",
+                "mode": 2,
+                "value": 1
+              },
+              {
+                "key": "system.abilities.mle.noncom",
+                "mode": 2,
+                "value": 1
+              }
+            ],
+            "description": "",
+            "transfer": true,
+            "statuses": [],
+            "flags": {},
+            "tint": null,
+            "_key": "!items.effects!d82f8686-795a-43bb-b1b8-e5e0cd2ef72f.86a0562a3464b7c1"
+          }
+        ],
+        "folder": "bbe663a787c7ec04",
+        "_key": "!items!d82f8686-795a-43bb-b1b8-e5e0cd2ef72f"
+      }
+    ],
+    "limitation": "They should select most of the rest of their powers from the Magic: Demonic and Elemental Control: Hellfire sets. The character should be at least Rank 4. Unless the character has another origin, they cannot choose other powers."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!7c4c10da-ae73-42b3-b040-9313d5e358bc"
+}

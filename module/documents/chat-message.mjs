@@ -23,10 +23,8 @@ export class ChatMessageMarvel extends ChatMessage {
 
         this._displayChatActionButtons(html);
         this._highlightFantasticSuccess(html);
-        // html.find(".description.collapsible").each((i, el) => el.classList.add("collapsed"));
 
         this._enrichChatCard(html[0]);
-        // requestAnimationFrame(() => html.find(".card-tray, .effects-tray").each((i, el) => el.classList.add("collapsed")));
 
         /**
          * A hook event that fires after marvel-multiverse-specific chat message modifications have completed.
@@ -90,10 +88,7 @@ export class ChatMessageMarvel extends ChatMessage {
     if ( !this.isContentVisible || !this.rolls.length ) return;
     const originatingMessage = game.messages.get(this.getFlag("marvel-multiverse", "originatingMessage")) ?? this;
 
-    // const displayChallenge = originatingMessage?.shouldDisplayChallenge;
-
     // Highlight rolls where the second part is a marvel die roll
-
     for ( let [index, dMarvelRoll] of this.rolls.entries() ) {
 
       const [leftD6, marvelDie, rightD6] = dMarvelRoll.dice;
@@ -101,15 +96,7 @@ export class ChatMessageMarvel extends ChatMessage {
       if ( (marvelDie?.faces !== 6) || (marvelDie?.values.length !== 1) ) continue;
 
       const marvelRoll = game.MarvelMultiverse.dice.MarvelMultiverseRoll.fromRoll(dMarvelRoll);
-      // const d = dMarvelRoll.dice[0];
 
-      // const isModifiedRoll = ("success" in d.results[0]) || d.options.marginSuccess || d.options.marginFailure;
-      // if ( isModifiedRoll ) continue;
-
-      // Highlight successes and failures
-      // const total = html.find(".dice-total")[index];
-      // if ( !total ) continue;
-      
       if ( marvelRoll.isFantastic ) {
         const marvelDieItem = html.find(".tooltip-part:nth-child(2)");
         marvelDieItem.find('li.d6').each((i, el) => { 
@@ -117,10 +104,6 @@ export class ChatMessageMarvel extends ChatMessage {
         });
         total.classList.add("fantastic");
       } 
-      // else if ( d.options.target && displayChallenge ) {
-      //   if ( dMarvelRoll.total >= d.options.target ) total.classList.add("success");
-      //   else total.classList.add("failure");
-      // }
     }
   }
 
@@ -155,13 +138,6 @@ export class ChatMessageMarvel extends ChatMessage {
     const name = document.createElement("span");
     name.classList.add("name-stacked");
     name.innerHTML = `<span class="title">${nameText}</span>`;
-
-    // const subtitle = document.createElement("div");
-    // subtitle.classList.add("subtitle");
-    // if ( this.whisper.length ) subtitle.innerText = html.querySelector(".whisper-to")?.innerText ?? "";
-    // if ( (nameText !== this.user?.name) && !subtitle.innerText.length ) subtitle.innerText = this.user?.name ?? "";
-
-    // name.appendChild(subtitle);
 
     const sender = html.querySelector(".message-sender");
     sender?.replaceChildren(avatar, name);
@@ -395,148 +371,79 @@ export class ChatMessageMarvel extends ChatMessage {
     const EDGE = CONFIG.Dice.MarvelMultiverseRoll.EDGE_MODE.EDGE;
     const chatMessage = game.messages.get(messageId)
     if (!action || !chatMessage) throw new Error('Missing Information');
-   
-    
     const [roll] = chatMessage.rolls;
     
-    
-    // Clone the roll & preserve its existing terms.
-	  const reRoll = roll.clone();
-    reRoll.options.isReRoll = true;
+    //roll.options.isReRoll = true;
     // reRoll.dice = [...reRoll.dice];
-    if (!(reRoll.dice.length === 3 && (reRoll.dice[1] instanceof game.MarvelMultiverse.dice.MarvelDie))) return;
+    if (!(roll.dice.length === 3 && (roll.dice[1] instanceof game.MarvelMultiverse.dice.MarvelDie))) return;
     
-    const [rollTerm] = reRoll.terms;
-    if (!(rollTerm instanceof foundry.dice.terms.PoolTerm)) return;
-    let targetRoll = rollTerm.rolls[dieIndex];
-    const messageOptions = {
-      userId: chatMessage.user,
-      whisper: chatMessage.whisper,
-      blind: chatMessage.blind,
-      speaker: chatMessage.speaker
-    };
+    const [poolTerm] = roll.terms;
+    if (!(poolTerm instanceof foundry.dice.terms.PoolTerm)) return;
+    const targetRoll = poolTerm.rolls[dieIndex];
 
-    try {
-      let newRoll;
+    const newRoll = new MarvelMultiverseRoll(targetRoll._formula, {...targetRoll.data});
+    await newRoll.roll();
 
-      switch (action) {
-        case 'trouble': {
-          newRoll = this._makeNewRoll(reRoll, dieIndex, TROUBLE, messageOptions);
-          break;
-        }
-        case 'edge': {
-          newRoll = this._makeNewRoll(reRoll, dieIndex, EDGE, messageOptions);
-          break;
-        }
+
+    targetRoll._formula = '2d6kh'
+    targetRoll.number = 2
+
+
+    const targetDie = targetRoll.terms[0];
+
+    const oldDieResult = targetDie.total;
+
+    const modifier = action === 'edge' ? 'kh' : 'kl'
+    targetDie.modifiers?.push(modifier);
+
+    
+    const resultResults = targetDie.results.map((result) => result.result);
+
+
+    const discardResult = targetDie.results[resultResults.indexOf(Math.min.apply(Math, resultResults))];
+    discardResult.active = false;
+    discardResult.discarded = true
+
+    
+    const re = /{(.*),(.*),(.*)}(.*)/;
+
+    let replacedFormula;
+    switch (dieIndex) {
+      case 0: {
+        replacedFormula = roll.formula.replace(re, "{2" + modifier + ",$2,$3}$4");
       }
-
-      rollTerm.rolls[dieIndex] = newRoll;
-      reRoll.terms[0] = rollTerm;
-
-      let update = await reRoll.toMessage({}, {create: false});
-
-      [
-        "blind", "timestamp", "user", "whisper", "speaker",
-        "emote", "flags", "sound", "type", "_id"
-      ].forEach(k => delete update[k]);
-
-      update = foundry.utils.mergeObject(chatMessage.toJSON(), update);
-      return chatMessage.update(update);
-
-    } catch (err) {
-      console.error('A problem occurred with Retroactive Edge:', err);
+      case 1: {
+        replacedFormula = roll.formula.replace(re, "{$1,2"+ modifier +",$3}$4");
+      }
+      case 2: {
+        replacedFormula = roll.formula.replace(re, "{$1,$2,2"+ modifier +"}$4");
+      }
     }
+
+    targetDie.results.push(newRoll.terms[0].results[0]);
+
+    roll._formula = replacedFormula;
+    const rollResults = roll.result.split(" ");
+
+    const newRollResultBase = roll.result.split(" ")[0] - oldDieResult + targetDie.total;
+    rollResults[0] = newRollResultBase.toString();
+
+    //roll.result = rollResults.join(" ");
+
+    roll._total = roll.total - oldDieResult + targetDie.total;
+    
+    let update = await roll.toMessage({}, {create: false});
+
+    // [
+    //   "blind", "timestamp", "user", "whisper", "speaker",
+    //   "emote", "flags", "sound", "type", "_id"
+    // ].forEach(k => delete update[k]);
+
+    update = foundry.utils.mergeObject(chatMessage.toJSON(), update);
+    return chatMessage.update(update);
  }
 
-
-  _makeNewRoll(legacyRoll, dieIndex, newEdgeMode, messageOptions){
-    if(newEdgeMode === undefined){
-      throw new Error('you must provide what the New Edge mode is')
-    }
-    
-    if (legacyRoll.options.edgeMode === newEdgeMode){
-      throw new Error('provided roll is already that kind of roll');
-    }
-
-    
-    const TROUBLE = CONFIG.Dice.MarvelMultiverseRoll.EDGE_MODE.TROUBLE;
-    const EDGE = CONFIG.Dice.MarvelMultiverseRoll.EDGE_MODE.EDGE;
-
-    let legacyRolls = legacyRoll.terms[0].rolls
-    let newRoll = new MarvelMultiverseRoll(legacyRolls[dieIndex]._formula, {...legacyRolls[dieIndex].data}, {...messageOptions});
-    legacyRoll.terms[0].rolls[dieIndex] = newRoll;
-    
-    let newPool = foundry.dice.terms.PoolTerm.fromRolls(legacyRolls);
-
-    let [newTerm] = newPool.rolls[0].terms;
-
-    // original roll mods without the kh or kl modifiers
-    // const filteredModifiers = newTerm.modifiers.filter((modifier) => !['kh', 'kl'].includes(modifier));
-    const originalResultsLength = legacyRoll.terms[0].results.length;
-    // reset roll to not have the kh or kl modifiers
-
-    // do stuff to the terms and modifiers
-    switch (newEdgeMode) {
-      case (EDGE): {
-        newTerm?.modifiers?.push('kh');
-        // if this newTerm doesn't already have more than 1 rolled value, add a new one
-        if (newTerm.number === 1) {
-          newTerm.number = 2;
-          newTerm.roll();
-        }
-        
-        break;
-      }
-      case (TROUBLE): {
-        newTerm?.modifiers?.push('kl');
-        // if this newTerm doesn't already have more than 1 rolled value, add a new one
-        if (newTerm.number === 1) {
-          newTerm.number = 2;
-          newTerm.roll();
-        }
-        
-        break;
-      }
-    }
-    // clear out term flavor to prevent "Reliable Talent" loop
-    newTerm.options.flavor = undefined;
-
-    newTerm.results.forEach((term) => {
-      term.active = true;
-      delete term.discarded;
-      delete term.indexThrow;
-    })
-
-    newTerm._evaluateModifiers();
-
-    newRoll._formula = newRoll.constructor.getFormula(newRoll.terms); 
-    // newRoll._total = newRoll._evaluateTotal();
-
-    // After evaluating modifiers again, Create a Fake Roll result and roll for dice so nice to roll the new dice.
-    // We have to do this after modifiers because some features might spawn more dice.
-
-    if (game.modules.get('dice-so-nice')?.active) {
-      const fakedMarvelRoll = Roll.fromTerms([new Die({...newTerm})]);
-
-      // we are being extra and only rolling the new dice
-      fakedMarvelRoll.terms[0].results = fakedMarvelRoll.terms[0].results.filter((foo, index) => index > 0);
-      fakedMarvelRoll.terms[0].number = fakedMarvelRoll.terms[0].results.length;
-
-      game.dice3d.showForRoll(
-        fakedMarvelRoll,
-        game.users.get(messageOptions?.userId),
-        true,
-        messageOptions?.whisper?.length ? messageOptions.whisper : null,
-        messageOptions?.blind,
-        null,
-        messageOptions?.speaker
-      );
-    }
-    return newRoll;
-  }
-
-    /* -------------------------------------------- */
-
+  /* -------------------------------------------- */
   /**
    * Wait to apply appropriate element heights until after the chat log has completed its initial batch render.
    * @param {jQuery} html  The chat log HTML.

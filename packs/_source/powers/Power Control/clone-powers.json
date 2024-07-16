@@ -5,7 +5,7 @@
   "system": {
     "description": "The character duplicates all of another character's powers.",
     "powerSet": "Power Control",
-    "prerequisites": "Copy Powers, Rank 4",
+    "prerequisites": "Copy Power, Rank 4",
     "action": "Standard",
     "trigger": "",
     "duration": "Concentration",

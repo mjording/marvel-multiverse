@@ -1,0 +1,20 @@
+{
+  "_id": "adb2feef-a32c-4290-85b1-1fa8821aa2df",
+  "name": "Copy Trait",
+  "type": "power",
+  "system": {
+    "description": "The character duplicates another characters trait.",
+    "powerSet": "Power Control",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "",
+    "effect": "The character picks one trait another character within 10 spaces has and duplicates it. They can now use it as if it was always theirs."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9d538083463adac7",
+  "_key": "!items!adb2feef-a32c-4290-85b1-1fa8821aa2df"
+}

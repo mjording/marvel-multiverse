@@ -1,0 +1,20 @@
+{
+  "_id": "979024d9-9b21-4214-8ff5-705abd4ea943",
+  "name": "Flare",
+  "type": "power",
+  "system": {
+    "description": "The character generates a dazzling fare of light.",
+    "powerSet": "Magic",
+    "prerequisites": "Illumination, Rank 3",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "The character bakes an Ego check and compares that against the Vigilance defense of every enemy within 5 spaces. Each beaten epesy is blinded for one turn. On a Fantastic success, the flare inflicts regular damage too."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8c23e6cd16b9bb49",
+  "_key": "!items!979024d9-9b21-4214-8ff5-705abd4ea943"
+}

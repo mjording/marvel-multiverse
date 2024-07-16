@@ -1,0 +1,54 @@
+{
+  "_id": "8d16cdd3-4be3-4888-bc58-d2f1ce14d53e",
+  "name": "Student",
+  "type": "occupation",
+  "system": {
+    "description": "The character attends school or college on a full-time basis. What they study or fecus on is up to them and their school. Most people start out with this occupation, but once they graduate, they move on to something new. If that happens with your character, you can then select a new occupation to replace this one.",
+    "examples": "Moon Girl, Ms. Marvel (Kamala Khan), Spider-Man (Miles Morales)",
+    "tags": [
+      {
+        "_id": "c85988d7-df69-4274-870e-4f77da435d8f",
+        "name": "Mentor",
+        "type": "tag",
+        "system": {
+          "description": "The character knows an older person they can ask for advice, even when it comes to having super-powers. This tag can be selected multiple times.",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!c85988d7-df69-4274-870e-4f77da435d8f"
+      },
+      {
+        "_id": "a5292f14-01c1-43a9-9d2a-aa9b344200e3",
+        "name": "Obligation",
+        "type": "tag",
+        "system": {
+          "description": "The character is responsible to certain people, places or organizations who rely on them. This tag can be selected multiple times, using many different categories. These include family, school, society, sports, work and so on.",
+          "restriction": "School",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!a5292f14-01c1-43a9-9d2a-aa9b344200e3"
+      }
+    ],
+    "traits": [
+      {
+        "_id": "6e3266c1-3477-40a3-b22a-afbcfcf4dd41",
+        "name": "Quick Learner",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "If the eharacter fails an action check, they gain an edge on the check if they try the same action again en thelr nesxt turn,"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!6e3266c1-3477-40a3-b22a-afbcfcf4dd41"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!8d16cdd3-4be3-4888-bc58-d2f1ce14d53e"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "057aaffddb-8625-45fc-8c51-2d2e8eaeb790",
+  "name": "Spider-Pheromones",
+  "type": "power",
+  "system": {
+    "description": "The character exudes pheromones that affect those nearby.",
+    "powerSet": "Spider-Powers",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "5 spaces",
+    "cost": "",
+    "effect": "The character has an edge on Ego (intimidation) checks against people who are not attracted to their gender. They also have an edge on Ego (persuasion) checks against people who are attracted to their gender."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a8b9ae895259d5bf",
+  "_key": "!items!057aaffddb-8625-45fc-8c51-2d2e8eaeb790 "
+}

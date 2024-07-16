@@ -1,0 +1,20 @@
+{
+  "_id": "0fb7d8cd-abaa-45e8-b74c-5b17c723d49c",
+  "name": "Hurled Shield Deflection",
+  "type": "power",
+  "system": {
+    "description": "TThe character hurls their mighty shield to save an ally from an attack.",
+    "powerSet": "Shield Bearer",
+    "prerequisites": "Shield Deflection, Rank 2",
+    "action": "Reaction",
+    "trigger": "An enemy makes an attack against an ally's Agility.",
+    "duration": "Instant",
+    "range": "5 spaces times the character's rank",
+    "cost": "5 Focus",
+    "effect": "The enemy has trouble on the attack. The shield then bounces back to the character."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "926e8d815f4d3fd7",
+  "_key": "!items!0fb7d8cd-abaa-45e8-b74c-5b17c723d49c"
+}

@@ -1,0 +1,13 @@
+{
+  "_id": "fb9bbcfe-e336-473e-8020-f68688d13a2b",
+  "name": "Poor",
+  "type": "tag",
+  "system": {
+    "description": "The character has little access to money and struggles to make ends meet. This can cause them all sorts of problems.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!fb9bbcfe-e336-473e-8020-f68688d13a2b"
+}

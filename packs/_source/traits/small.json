@@ -1,0 +1,12 @@
+{
+  "_id": "09e5cb96-8d1f-47e7-9b7a-0f016ee122f0",
+  "name": "Small",
+  "type": "trait",
+  "system": {
+    "restriction": "",
+    "description": "The character's size is small, which adds +1 to their Melee and Agility defenses and takes -1 from their Run Speed."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!09e5cb96-8d1f-47e7-9b7a-0f016ee122f0"
+}

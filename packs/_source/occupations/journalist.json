@@ -1,0 +1,50 @@
+{
+  "_id": "ace9b5e7-1783-4398-91ff-48f7e8db2f2d",
+  "name": "Journalist",
+  "type": "occupation",
+  "system": {
+    "description": "The character works as a reporter or editor for a news organization. This can range anywhere from the Daily Bugle to TNM (Threats and Menaces). It can also include any sort of reporting, whether TV, radio, newspaper or online.",
+    "examples": " Silk, Spider-Man (Peter Parker), Venom (Eddie Brock).",
+    "traits": [
+      {
+        "_id": "48d39dde-f603-4f55-8a0d-6530efd5a37f",
+        "name": "Audience",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "Many people follow the character's work and treat them with the respect they deserve. By making an Ego check, the character can persuade their audience to provide help in the form of information or resources. The Narrator determines the TN of the Ego check based on the favor requested."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!48d39dde-f603-4f55-8a0d-6530efd5a37f"
+      },
+      {
+        "_id": "cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7",
+        "name": "Connections",
+        "type": "trait",
+        "system": {
+          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a palice officer, a politician, a mobster and soon. By makingan Egocheck, the character can call an their contact wo provide help in the form of glues, informntion ar resources, The Hnrrator determines the TH of the Ego check based on the favor requested This trait can be selected multiple thmes, using many different types, These include Celebrities, Community, Criminal, Espionape, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on",
+          "restriction": "sources"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7"
+      },
+      {
+        "_id": "5cec94e6-d898-49de-865e-0e6e2af5d5ca",
+        "name": "Pundit",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character knowe how to break news items and pur crem Inte context te craft a story around them. They have an edge on Ego or Logic rolls made when giving their opinion via media."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!5cec94e6-d898-49de-865e-0e6e2af5d5ca"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!ace9b5e7-1783-4398-91ff-48f7e8db2f2d"
+}

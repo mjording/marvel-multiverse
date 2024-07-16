@@ -1,0 +1,20 @@
+{
+  "_id": "db9ee275-12ea-4192-a711-ee8e18b23197",
+  "name": "Multiversal Travel Other",
+  "type": "power",
+  "system": {
+    "description": "The character moves from one universe to another.",
+    "powerSet": "Omniversal Travel",
+    "prerequisites": "Multiversal Travel, Rank 4",
+    "action": "Standard, movement, or reaction",
+    "trigger": "The target is grabbed.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "The character makes an Ego check against the Vigilance of a target they have grabbed. If the check is successful, the character can send the target to another universe. The target can be sent to any location in that universe that the character has been to before. Otherwise, the target arrives at the closest available corresponding space in the other universe."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "882fb16dc4a7430e",
+  "_key": "!items!db9ee275-12ea-4192-a711-ee8e18b23197"
+}

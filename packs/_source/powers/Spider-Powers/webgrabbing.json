@@ -1,0 +1,20 @@
+{
+  "_id": "f3b296a4-66df-4ce9-87b2-303d85331eb4",
+  "name": "Webgrabbing",
+  "type": "power",
+  "system": {
+    "description": "The character exudes pheromones that affect those nearby.",
+    "powerSet": "Spider-Powers",
+    "prerequisites": "Webcasting, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "10 spaces",
+    "cost": "5 Focus",
+    "effect": "The character makes a ranged attack on an enemy. If the attack is a success, the character grabs the target with a web. On a Fantastic success, the target can also be pinned. Breaking free from webbing requires a Melee check (target number 20)."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a8b9ae895259d5bf",
+  "_key": "!items!f3b296a4-66df-4ce9-87b2-303d85331eb4 "
+}

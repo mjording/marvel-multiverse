@@ -1,0 +1,260 @@
+{
+  "_id": "c649e354-2465-40e2-9a3d-207bf0d4fd4e",
+  "name": "Monstrous: Werewolf",
+  "type": "origin",
+  "system": {
+    "description": "The character is afflicted with lycanthropy, a magical disease that causes them to take on the shape of a werewolf during the three nights of the full moon. They can transmit this magical disease to victims of their choosing who survive their attacks When a character becomes a werewolf, they gain the Lunar Transformation and Alternate Form tags. When the character takes on their werewolf form, they go up one rank and gain the rest of the listed tags, traits and powers. They do not gain any additional powers or traits from this bump in rank, but they do gain 5 ability points and add +1 to their damage multiplier. If they have the Heroic tag, they also add 1 to their Karma. When they return to human form, they lose the benefits of their werewolf form. The character can switch forms voluntarily at any point-except during the three nights that the moon is at its fullest. On those nights, while the moon is above the horizon, the character must transform into a werewolf and is ruled by their animal nature. They cannot help but hunt and attack any people or creatures they come across, no matter if they are friend or foe.",
+    "examples": "Werewolf by Night (Jack Russell), Werewolf by Night (Jake Gomez).",
+    "suggestedOccupation": "",
+    "tags": [
+      {
+        "_id": "493a0ea4-a288-4aa8-830a-9cebb9bc7132",
+        "name": "Alternate Form",
+        "type": "tag",
+        "system": {
+          "description": "The character can change from their regular human form into another form and back. When in either form, the character can only access powers assigned to that form. In most cases, this means that the character can use powers only when in their alternate form. This tag applies to characters that switch from one humanoid form to another, like Colossus, Emma Frost and many of the Hulks. It also applies to characters that have inhuman forms, like werewolves and vampires.",
+          "restriction": "Werewolf/Wolf",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!493a0ea4-a288-4aa8-830a-9cebb9bc7132"
+      },
+      {
+        "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
+        "name": "Extreme Appearance",
+        "type": "tag",
+        "system": {
+          "description": "The character looks very different than the average person (wherever they happen to be) and cannot easily hide their identity. When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme appearance is common.",
+          "restriction": "in werewolf form",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1"
+      },
+      {
+        "_id": "36f6eb15-6377-46e9-b0e1-e57fbce3b21e",
+        "name": "Lunar Transformation",
+        "type": "tag",
+        "system": {
+          "description": "On the three nights that the moon is at its fullest and while the moon is above the horizon, the character must transform into a werewolf and is ruled by their animal nature. They cannot help but hunt and attack any people or creatures they come across, no matter if they are friend or foe.",
+          "restriction": "For Werewolves only",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!36f6eb15-6377-46e9-b0e1-e57fbce3b21e"
+      }
+    ],
+    "traits": [
+      {
+        "_id": "6b94013d-93e7-4752-ac32-ff8af5b5f205",
+        "name": "Monster",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character is some kind of monster, often of a type spoken of in legend. They have an edge whenever they attempt to intimidate someone."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!6b94013d-93e7-4752-ac32-ff8af5b5f205"
+      },
+      {
+        "_id": "12341f76-5473-42f1-862b-93dab48322ac",
+        "name": "Berserker",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character often loses control of their temper. Any time they take physical damape, they must make an Ego check with n TH equal to the amount of damage done. 1f they fail, they go berserk and must charge at full speed inte combat with the enemy who hurt them. Being berserk gives the character an edge on all close attncks ond adds +2 to their Melee, Resilience and Ego defenses. However, it takes -2 from their Agllity defense, and they cannot use ranged weapons.If the character defeats the enemy who hurt them, they must then charge to attack the next clesest foe, Attheend of the character's turn, they lose S Focus. When their Focus is reduced to the point that the character could not voluntarily spend any maore Focus—or il there are no enemies in sipht—the berserk state automatically ends."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!12341f76-5473-42f1-862b-93dab48322ac"
+      },
+      {
+        "_id": "c11bc885-0552-496c-996e-4c8a33740e6c",
+        "name": "Weakness",
+        "type": "trait",
+        "system": {
+          "restriction": "Silver",
+          "description": "The character suffers an unusual amount of harm from certain substances. Any attack made with that substance ignores all inherent damage reduction the character has and cannot be healed by their Healing Factor."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!c11bc885-0552-496c-996e-4c8a33740e6c"
+      }
+    ],
+    "Limitation": "Unless the character has another origin, they cannot choose other powers.",
+    "powers": [
+      {
+        "_id": "60333607-8cb3-4cf1-9ea1-d48f96e073ab",
+        "name": "Evasion",
+        "type": "power",
+        "system": {
+          "description": "The character can dodpe fists quickly,",
+          "powerSet": "Basic",
+          "prerequisites": "",
+          "action": "",
+          "trigger": "",
+          "duration": "Permanent",
+          "range": "",
+          "cost": "",
+          "effect": "The character can use their Agility defense score apainst Melee attacks too."
+        },
+        "flags": {},
+        "effects": [],
+        "folder": "bbe663a787c7ec04",
+        "_key": "!items!60333607-8cb3-4cf1-9ea1-d48f96e073ab"
+      },
+      {
+        "_id": "ccce5902-4be6-4b95-9851-216c6471e72f",
+        "name": "Healing Factor",
+        "type": "power",
+        "system": {
+          "description": "The character heals amazingly fast.",
+          "powerSet": "Basic",
+          "prerequisites": "",
+          "action": "",
+          "trigger": "",
+          "duration": "Permanent",
+          "range": "",
+          "cost": "",
+          "effect": "At the ond of the character’s turn, they regain Health equal to their Resilience, (This works outside of combat too, quickly bringing them back 1o full Health)"
+        },
+        "flags": {},
+        "effects": [],
+        "folder": "bbe663a787c7ec04",
+        "_key": "!items!ccce5902-4be6-4b95-9851-216c6471e72f"
+      },
+      {
+        "_id": "d82f8686-795a-43bb-b1b8-e5e0cd2ef72f",
+        "name": "Mighty 1",
+        "type": "power",
+        "system": {
+          "description": "The character is superhumanly strong.",
+          "powerSet": "Basic",
+          "prerequisites": "Mighty 1, Rank 2",
+          "action": "",
+          "trigger": "",
+          "duration": "Permanent",
+          "range": "",
+          "cost": "",
+          "effect": "Treat the character as one size bigger for lifting, carrying, swinging and throwing things. They also add +1 to their Melee damage multiplier, and they gain a +1 bonus to Melee checks other than attacks."
+        },
+        "flags": {},
+        "effects": [
+          {
+            "name": "sizeUp",
+            "img": "icons/svg/aura.svg",
+            "duration": {
+              "startTime": null,
+              "seconds": null,
+              "combat": null,
+              "rounds": null,
+              "turns": null,
+              "startRound": null,
+              "startTurn": null
+            },
+            "disabled": false,
+            "origin": "Item.d82f8686-795a-43bb-b1b8-e5e0cd2ef72f",
+            "_id": "86a0562a3464b7c1",
+            "changes": [
+              {
+                "key": "system.abilities.mle.damageMultiplier",
+                "mode": 2,
+                "value": 1
+              },
+              {
+                "key": "system.abilities.mle.noncom",
+                "mode": 2,
+                "value": 1
+              }
+            ],
+            "description": "",
+            "transfer": true,
+            "statuses": [],
+            "flags": {},
+            "tint": null,
+            "_key": "!items.effects!d82f8686-795a-43bb-b1b8-e5e0cd2ef72f.86a0562a3464b7c1"
+          }
+        ],
+        "folder": "bbe663a787c7ec04",
+        "_key": "!items!d82f8686-795a-43bb-b1b8-e5e0cd2ef72f"
+      },
+      {
+        "_id": "ff4dd501-3f2c-4561-9d46-a93aa20baf47",
+        "name": "Sturdy 2",
+        "type": "power",
+        "system": {
+          "description": "The character si protected as if by steel.",
+          "powerSet": "Basic",
+          "prerequisites": "Sturdy 1, Rank 2",
+          "action": "",
+          "trigger": "",
+          "duration": "Permanent",
+          "range": "",
+          "cost": "",
+          "effect": "The character gains Health Damage Reduction 2."
+        },
+        "flags": {},
+        "effects": [
+          {
+            "name": "Health Damage Reduction 2",
+            "img": "icons/svg/aura.svg",
+            "duration": {
+              "startTime": null,
+              "seconds": null,
+              "combat": null,
+              "rounds": null,
+              "turns": null,
+              "startRound": null,
+              "startTurn": null
+            },
+            "disabled": false,
+            "origin": "Item.ff4dd501-3f2c-4561-9d46-a93aa20baf47",
+            "_id": "9cfacc0270f59b4b",
+            "changes": [
+              {
+                "key": "system.healthDamageReduction",
+                "mode": 2,
+                "value": 2
+              }
+            ],
+            "description": "",
+            "transfer": true,
+            "statuses": [],
+            "flags": {},
+            "tint": null,
+            "_key": "!items.effects!ff4dd501-3f2c-4561-9d46-a93aa20baf47.9cfacc0270f59b4b"
+          }
+        ],
+        "folder": "bbe663a787c7ec04",
+        "_key": "!items!ff4dd501-3f2c-4561-9d46-a93aa20baf47"
+      },
+      {
+        "_id": "f3dbd8d1-6b67-4f00-a8ba-bee2c6372545",
+        "name": "Heightened Senses 1",
+        "type": "power",
+        "system": {
+          "description": "The character has superior senses.",
+          "powerSet": "Basic",
+          "prerequisites": "",
+          "action": "",
+          "trigger": "",
+          "duration": "Permanent",
+          "range": "",
+          "cost": "",
+          "effect": "The character can sense things roughly twice as for away as normal, They also have an edge on Vigilance checks to perceive things. and enemies have trouble on checks they make 1o sneak past the character."
+        },
+        "flags": {},
+        "effects": [],
+        "folder": "bbe663a787c7ec04",
+        "_key": "!items!f3dbd8d1-6b67-4f00-a8ba-bee2c6372545"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!c649e354-2465-40e2-9a3d-207bf0d4fd4e"
+}

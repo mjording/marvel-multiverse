@@ -1,0 +1,50 @@
+{
+  "_id": "549cc118-c245-47ae-b94d-ee1389bb8cd8",
+  "name": "Outsider",
+  "type": "occupation",
+  "system": {
+    "description": "The character comes from another planet, dimension or time and is not familiar with how things work on this Barth. They may have had another occupation back where they came mrom, but it's not generally applicable here.",
+    "example": "Groot, Rocket Raccoon, Thor (Odinsen)",
+    "traits": [
+      {
+        "_id": "cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7",
+        "name": "Connections",
+        "type": "trait",
+        "system": {
+          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a palice officer, a politician, a mobster and soon. By makingan Egocheck, the character can call an their contact wo provide help in the form of glues, informntion ar resources, The Hnrrator determines the TH of the Ego check based on the favor requested This trait can be selected multiple thmes, using many different types, These include Celebrities, Community, Criminal, Espionape, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on",
+          "restriction": "Outsiders"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7"
+      },
+      {
+        "_id": "8dbad125-860a-43c4-95b9-53154ba7806a",
+        "name": "Fresh Eyes",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character has their own way of doing things. This often makes them seem strange to those around them, but it means they can bring new perspectives to existing issues. They have an edge on Logic checks when faced with something for the first time."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!8dbad125-860a-43c4-95b9-53154ba7806a"
+      },
+      {
+        "_id": "3877ade3-18de-432b-bb8a-24349cefb96b",
+        "name": "Stranger",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character doesn't understand local customs They have trouble on checks made when trying to decipher such things er when trying to pass themselves off as a local."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!3877ade3-18de-432b-bb8a-24349cefb96b"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!549cc118-c245-47ae-b94d-ee1389bb8cd8"
+}

@@ -1,0 +1,13 @@
+{
+  "_id": "9305ad23-a128-4cd4-bf2c-fefd6b86475a",
+  "name": "Immunity",
+  "type": "tag",
+  "system": {
+    "description": "The character is immune to the usual effects of something. This can be selected multiple times.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!9305ad23-a128-4cd4-bf2c-fefd6b86475a"
+}

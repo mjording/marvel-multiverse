@@ -1,0 +1,20 @@
+{
+  "_id": "f3b67ac7-4b6a-496a-8ed5-0b827edf01b9",
+  "name": "Silence Self",
+  "type": "power",
+  "system": {
+    "description": "Silence falls on the character.",
+    "powerSet": "Illusion",
+    "prerequisites": "Illumination, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character makes no noise at all-unless they wish to. They have an edge on Agility checks to sneak past people, and enemies have trouble on Vigilance checks to perceive them."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "ba98409134c2014d",
+  "_key": "!items!f3b67ac7-4b6a-496a-8ed5-0b827edf01b9"
+}

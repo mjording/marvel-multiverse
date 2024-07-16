@@ -1,0 +1,20 @@
+{
+  "_id": "9c1b6e71-f0ec-44d7-a4b7-1aab5f3ed7c7",
+  "name": "Animal Communication",
+  "type": "power",
+  "system": {
+    "description": "The character can enter the Astral Plane",
+    "powerSet": "Telepathy",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "The character is harmed by an attack.",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "",
+    "effect": "The character can communicate telepathically with one taxonomic order of animals, such as birds, mammals, fish, amphibians and so on. They can call out to them as a group up to 500 spaces per rank away, and they can communicate specifically with ones they have met or at least seen. They cannot switch to another taxonomic order, but they can select this power multiple times if desired. The communication with the animals can be verbal. visual or even more complex, such as imparting location information. There is no limit to the distance of the communication, as long as the character and the animals are in the same dimension. Friendly animals often do whatever the character asks, as long as it doesn't put them in danger— and they may be willing to risk even that for one they consider a friend. Hostile animals simply ignore all such requests— which make them a poor choice for communication."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e745fc9dcc37bb2",
+  "_key": "!items!9c1b6e71-f0ec-44d7-a4b7-1aab5f3ed7c7"
+}

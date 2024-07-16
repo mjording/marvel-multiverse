@@ -1,0 +1,20 @@
+{
+  "_id": "f0fd9b09-c048-42aa-abc7-26573967af26",
+  "name": "Reverse-Momentum Throw",
+  "type": "power",
+  "system": {
+    "description": "The character uses the momentum of their attacker to hurl them to the ground.",
+    "powerSet": "Martial Arts",
+    "prerequisites": "Defense Stance, Rank 2",
+    "action": "Reaction",
+    "trigger": "While Defense Stance is active, a close attack against the character misses.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The attacker is knocked prone and takes half the damage their attack would have inflicted if it had succeeded."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9a200a2684a8be54",
+  "_key": "!items!f0fd9b09-c048-42aa-abc7-26573967af26"
+}

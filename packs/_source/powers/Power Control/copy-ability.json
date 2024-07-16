@@ -1,0 +1,20 @@
+{
+  "_id": "90e0d65f-225b-4ba7-bc9f-6601b12ba292",
+  "name": "Copy Ability",
+  "type": "power",
+  "system": {
+    "description": "The character duplicates another character's ability.",
+    "powerSet": "Power Control",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "",
+    "effect": "The character picks one ability score of another character within 10 spaces and duplicates it. They now use that ability score in place of their own."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9d538083463adac7",
+  "_key": "!items!90e0d65f-225b-4ba7-bc9f-6601b12ba292"
+}

@@ -1,0 +1,12 @@
+{
+  "_id": "f5cab7c0-06de-4b0f-ba23-96621697a3f8",
+  "name": "Blood Thirsty",
+  "type": "trait",
+  "system": {
+    "restriction": "",
+    "description": "The character likes hurting people-even killing them. After they knock someone unconscious, they must make a Challenging Ego check to keep from continuing to attack them until they're dead. A character with this trait cannot take the Heroic tag."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!f5cab7c0-06de-4b0f-ba23-96621697a3f8"
+}

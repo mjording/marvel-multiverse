@@ -1,0 +1,20 @@
+{
+  "_id": "2fa3eed6-a4bd-4925-8875-e95f620629c4",
+  "name": "Orchestra of Overkill",
+  "type": "power",
+  "system": {
+    "description": "The character conducts a symphony of shooting.",
+    "powerSet": "Ranged Weapons",
+    "prerequisites": "Dance of Death, Fast Hands, Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "The character makes an Agility check and compares that against the Agility defense of every enemy within 10 spaces and in their line of sight. Each success does half regular damage. On a Fantastic success, each enemy takes full damage instead and is bleeding."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "82ef84dfce4c7abf",
+  "_key": "!items!2fa3eed6-a4bd-4925-8875-e95f620629c4"
+}

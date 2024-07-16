@@ -1,0 +1,20 @@
+{
+  "_id": "ed4e23f2-a323-4999-b9fe-3a724b58afd4",
+  "name": "Grow 1",
+  "type": "power",
+  "system": {
+    "description": "The character sizes up!",
+    "powerSet": "Resize",
+    "prerequisites": "",
+    "action": "Standard or reaction",
+    "trigger": "The character is attacked.",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character can grow up to huge size. They can return to their normal size at will."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b74def8c3ea77646",
+  "_key": "!items!ed4e23f2-a323-4999-b9fe-3a724b58afd4"
+}

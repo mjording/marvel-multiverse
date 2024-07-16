@@ -1,0 +1,12 @@
+{
+  "_id": "1e9ef04f-7007-41f5-b7f8-3486a1f86e84",
+  "name": "Interrogation",
+  "type": "trait",
+  "system": {
+    "restriction": "",
+    "description": "The character knows how to ask the right questions in the Haht way They have an edge on ago or Logic checks made when asking questions."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!1e9ef04f-7007-41f5-b7f8-3486a1f86e84"
+}

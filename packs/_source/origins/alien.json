@@ -3,7 +3,7 @@
   "name": "Alien",
   "type": "origin",
   "system": {
-    "description": "The character isnot human and probably not [rom Enrth or ol least Earth-616. The Morvel Multiverse features all sorts of different alien rnces. The most common of these —Kree, Skrullsand so on—have their own entries. [f the character doesn't fit one of those, then this origin applies",
+    "description": "The character is not human and probably not from Earth or at least Earth-616. The Marvel Multiverse features all sorts of different alien races. The most common of these-Kree, Skrulls and so on—have their own entries. If the character doesn't fit one of those, then this origin applies.",
     "examples": "Devil Dinosaur, Gamara, Groot, Rocket Raccoon.",
     "suggestedOccupation": "Outsider",
     "tags": [
@@ -12,7 +12,9 @@
         "name": "Alien Heritage",
         "type": "tag",
         "system": {
-          "description": "The character or at least ane of their ancestors- is not from Earth. Pick an allen race that they belong to, If they were not raised on Earth, they should consider taking the Outsider occupation."
+          "description": "The character or at least one of their ancestors is not from Earth. Pick an alien race that they belong to. If they were not raised on Earth, they should consider taking the Outsider occupation.",
+          "restriction": "",
+          "rarity": ""
         },
         "flags": {},
         "effects": [],
@@ -23,8 +25,9 @@
         "name": "Extreme Appearance",
         "type": "tag",
         "system": {
-          "description": "The character looks very different than the average person As a mutant, the character is automatically a citizen of the (wherever they happen to be) and cannot easily hide their island-nation of Krakoa and can travel to and from there identity, When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme Appearance is common.",
-          "rarity": "common"
+          "description": "The character looks very different than the average person (wherever they happen to be) and cannot easily hide their identity. When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme appearance is common.",
+          "restriction": "",
+          "rarity": ""
         },
         "flags": {},
         "effects": [],

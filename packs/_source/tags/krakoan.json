@@ -3,8 +3,8 @@
   "name": "Krakoan",
   "type": "tag",
   "system": {
-    "restriction": "For mutanis anly.",
-    "description": "As a mutant, the character s automatically a citizen of the island-nation of Krakoa and can travel to and from there freely. Also, if they are killed and the Five—a group of powerful mutants—ara able to work together, the character c¢an be resurrected into an identical new body wilh most of c¢an be resurrected into an identical new body wilh most of their memaories intact. If killed in Otherwerld, the character can still be resurrected, but they will be changed in unpredictable ways. ust how this might affect the character is up to the Narrator.",
+    "description": "As a mutant, the character is automatically a citizen of the island-nation of Krakoa and can travel to and from there freely. Also, if they are killed and the Five—a group of powerful mutants-are able to work together, the character can be resurrected into an identical new body with most of their memories intact. If killed in Otherworld, the character can still be resurrected, but they will be changed in unpredictable ways. Just how this might affect the character is up to the Narrator.",
+    "restriction": "For mutants only.",
     "rarity": ""
   },
   "flags": {},

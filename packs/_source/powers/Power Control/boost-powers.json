@@ -1,0 +1,20 @@
+{
+  "_id": "5b05f381-9476-40f7-95fb-2d0f135d5b0f",
+  "name": "Boost Powers",
+  "type": "power",
+  "system": {
+    "description": "The character turbocharges all of another character's powers!",
+    "powerSet": "Power Control",
+    "prerequisites": "Bump Powers Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "15 or more Focus",
+    "effect": "The character picks one character within 5 spaces and boosts all of their powers. If the powers have ranges or effective areas or durations, these are doubled. If the powers affect a damage multiplier, add 1 to the effects. Any effects that normally happen with a Fantastic successes automatically happen on any success, not just a Fantastic one.If the target's powers have costs, the character must pay the highest of them or a minimum of 15 Focus."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9d538083463adac7",
+  "_key": "!items!5b05f381-9476-40f7-95fb-2d0f135d5b0f"
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "f32a21e4-2299-4787-b468-db7fe216d08a",
+  "name": "High Tech",
+  "type": "origin",
+  "system": {
+    "description": "The character's powers arise from high-tech devices that are well beyond the limits of modern-day engineering. This can come in many forms.",
+    "examples": "Doctor Octopus (Otto Octavius), Gauntlet (Joseph Green), Mysterio (Quentin Beck), the Trapster.",
+    "suggestedOccupation": "",
+    "tags": [],
+    "traits": [
+      {
+        "_id": "67d72599-e0e3-40f3-aa54-bf98b55780cf",
+        "name": "Tech Reliance",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character relies on technolopy for powers. When they take damape that would render them unconscious they can instead choose to lose all of their technology-related powers and remain conscious with 1 polnt of Health remaining. Assuming the character has access to parts and tools. Lost powers can be repaired after a battle"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!67d72599-e0e3-40f3-aa54-bf98b55780cf"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!f32a21e4-2299-4787-b468-db7fe216d08a"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "286cd9e9-b6fa-4134-996e-f39d0d5d0ef2",
+  "name": "Teleport 2",
+  "type": "power",
+  "system": {
+    "description": "The character teleports great distances.",
+    "powerSet": "Teleportation",
+    "prerequisites": "Teleport 1",
+    "action": "Standard, or movement",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "Outside of combat, the character can teleport up to 1,000 times their rank in spaces away."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a7603bf9acca778a",
+  "_key": "!items!286cd9e9-b6fa-4134-996e-f39d0d5d0ef2"
+}

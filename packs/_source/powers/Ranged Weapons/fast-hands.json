@@ -1,0 +1,20 @@
+{
+  "_id": "192d5938-4ef6-4c73-a68f-4a5a7819f73a",
+  "name": "Fast Hands",
+  "type": "power",
+  "system": {
+    "description": "The character can shoot faster than the eye can blink.",
+    "powerSet": "Ranged Weapons",
+    "prerequisites": "Point-Blank Parry, Rank 3",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character gains one additional reaction per round. This reaction can be used only to trigger a Ranged Weapons power."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "82ef84dfce4c7abf",
+  "_key": "!items!192d5938-4ef6-4c73-a68f-4a5a7819f73a"
+}

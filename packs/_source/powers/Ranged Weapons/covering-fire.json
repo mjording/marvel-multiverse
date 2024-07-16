@@ -1,0 +1,20 @@
+{
+  "_id": "c3774d97-b4d7-43d4-8ccb-312e986c53a7",
+  "name": "Covering Fire",
+  "type": "power",
+  "system": {
+    "description": "The character covers an ally's attack.",
+    "powerSet": "Ranged Weapons",
+    "prerequisites": "Return Fire, Rank 3",
+    "action": "Reaction",
+    "trigger": "An ally within the character's line of sight begins its turn.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "The character makes an Agility attack against a target's Vigilance defense. If the attack is a success, apply Health Damage Reduction normally. The target takes any damage to their Focus. If it's a Fantastic success, the damage is doubled, and if the target takes any Focus damage, they are stunned for one round."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "82ef84dfce4c7abf",
+  "_key": "!items!c3774d97-b4d7-43d4-8ccb-312e986c53a7"
+}

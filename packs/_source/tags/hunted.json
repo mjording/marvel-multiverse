@@ -1,0 +1,13 @@
+{
+  "_id": "9b4e854e-d228-4200-939c-a82c5970d5db",
+  "name": "Hunted",
+  "type": "tag",
+  "system": {
+    "description": "The character is hunted by the law for crimes they have supposedly (or actually) committed. If captured by the police, they may be arrested, tried for their crimes and potentially sent to jail.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!9b4e854e-d228-4200-939c-a82c5970d5db"
+}

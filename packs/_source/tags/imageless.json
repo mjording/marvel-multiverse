@@ -1,0 +1,13 @@
+{
+  "_id": "4f29efec-5032-4f8c-a419-d6eca3b257ff",
+  "name": "Imageless",
+  "type": "tag",
+  "system": {
+    "description": "The character casts no reflection, and their image cannot be captured by cameras.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!4f29efec-5032-4f8c-a419-d6eca3b257ff"
+}

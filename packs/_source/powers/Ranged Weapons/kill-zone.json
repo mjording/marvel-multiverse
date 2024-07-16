@@ -1,0 +1,20 @@
+{
+  "_id": "ad4097bf-c17e-4114-9bc0-567559200a1a",
+  "name": "Kill Zone",
+  "type": "power",
+  "system": {
+    "description": "The character shoots at every target that moves through their kill zone.",
+    "powerSet": "Ranged Weapons",
+    "prerequisites": "Covering Fire, Headshot, Rank 4",
+    "action": "Reaction",
+    "trigger": "An enemy in the character's line of sight starts to move.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "The character makes a ranged attack on the enemy. If the attack is a success, the enemy takes normal damage. On a Fantastic success, the enemy takes double damage. Either way, the character regains their reaction. Each target can be affected by this attack by this character only once per round."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "82ef84dfce4c7abf",
+  "_key": "!items!ad4097bf-c17e-4114-9bc0-567559200a1a"
+}

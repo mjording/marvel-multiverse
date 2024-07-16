@@ -1,0 +1,20 @@
+{
+  "_id": "7aca5e1f-b3b8-4998-8437-136bf240b26a",
+  "name": "Brain Drain",
+  "type": "power",
+  "system": {
+    "description": "The character fires enchanted bots of electricity from their fingers.",
+    "powerSet": "Magic",
+    "prerequisites": "Rank 2",
+    "action": "Reaction",
+    "trigger": "The target is grabbed.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character makes an Ego attack against the target's Vigilance. If it succeeds, the target takes regular Focus damage, and the character heals half that much Focus for themselves. On a Fantastic success, the character heals their full Focus damage instead."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8c23e6cd16b9bb49",
+  "_key": "!items!7aca5e1f-b3b8-4998-8437-136bf240b26a"
+}

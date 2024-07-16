@@ -1,0 +1,20 @@
+{
+  "_id": "bb83e78a-ff23-4e97-9ff7-32ed8cebc48d",
+  "name": "Time-Out Tag",
+  "type": "power",
+  "system": {
+    "description": "The character freezes a person or thing in time.",
+    "powerSet": "Omniversal Travel",
+    "prerequisites": "Time-Out, Rank 4",
+    "action": "Standard or reaction",
+    "trigger": "The character or an ally is attacked.",
+    "duration": "1 round per rank.",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "The character freezes time for one person or thing within their reach. Everything and everyone else can act normally. If the target does not wish to be frozen, the character must grab them first."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "882fb16dc4a7430e",
+  "_key": "!items!bb83e78a-ff23-4e97-9ff7-32ed8cebc48d"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "88b644e3-7695-4064-ac90-445d4c00cd7f",
+  "name": "Unflappable Poise",
+  "type": "power",
+  "system": {
+    "description": "The character can dodge most close attacks.",
+    "powerSet": "Martial Arts",
+    "prerequisites": "Defense Stance, Rank 3",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "Any close attacks against the character have trouble. While they use Defense Stance, such attacks have double trouble."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9a200a2684a8be54",
+  "_key": "!items!88b644e3-7695-4064-ac90-445d4c00cd7f"
+}

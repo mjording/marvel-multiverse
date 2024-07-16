@@ -1,0 +1,20 @@
+{
+  "_id": "805bab68-08e9-45ff-b6be-46c3db5fab5d",
+  "name": "Teleport Object",
+  "type": "power",
+  "system": {
+    "description": "The character can teleport something else with them.",
+    "powerSet": "Teleportation",
+    "prerequisites": "Teleport 1, Rank 3",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "The character can teleport along with them an object within reach as far away as their Teleport power normally allows them. The object (and things attached to or inside of it) can be up to their rank in sizes bigger than them. For example, if they are Rank 4, the object can be up to four sizes bigger than them."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a7603bf9acca778a",
+  "_key": "!items!805bab68-08e9-45ff-b6be-46c3db5fab5d"
+}

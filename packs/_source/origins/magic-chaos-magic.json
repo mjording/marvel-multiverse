@@ -1,0 +1,42 @@
+{
+  "_id": "357c1080-5436-432b-893d-f15736f4cb39",
+  "name": "Magic: Chaos Magic",
+  "type": "origin",
+  "system": {
+    "description": "The character is able to use chaos magic, which allows them to bend reality to their will. It stems from the ancient god Chthon.",
+    "examples": "Morgan Le Fay, Scarlet Witch, Wiccan.",
+    "suggestedOccupation": "",
+    "tags": [
+      {
+        "_id": "e5396fe1-8f4b-41b7-8886-be6c645f7e26",
+        "name": "Supernatural",
+        "type": "tag",
+        "system": {
+          "description": "The character has powers that are magical or based on something magical",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!e5396fe1-8f4b-41b7-8886-be6c645f7e26"
+      },
+      {
+        "_id": "440e49ad-e303-4aff-a554-e2b57df9abfd",
+        "name": "Chaotic",
+        "type": "tag",
+        "system": {
+          "description": "The character has been affected by the chaos lord Chthon.",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!440e49ad-e303-4aff-a554-e2b57df9abfd"
+      }
+    ],
+    "traits": []
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!357c1080-5436-432b-893d-f15736f4cb39"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "d4bd15a5-553f-4d1a-b1cb-6c79046d24fb",
+  "name": "Untouchable Position",
+  "type": "power",
+  "system": {
+    "description": "The character's enemies struggle to gang up on them.",
+    "powerSet": "Martial Arts",
+    "prerequisites": "Counterstrike Technique, Rank 3",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "If the character is attacked, all other close attacks against them have trouble until the start of their next turn."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9a200a2684a8be54",
+  "_key": "!items!d4bd15a5-553f-4d1a-b1cb-6c79046d24fb"
+}

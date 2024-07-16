@@ -1,0 +1,60 @@
+{
+  "_id": "7281c595-4df1-4a0c-b7ec-34192d9d1ead",
+  "name": "Webgliding",
+  "type": "power",
+  "system": {
+    "description": "The character can glide through the air on their webbing.",
+    "powerSet": "Spider-Powers",
+    "prerequisites": "Webcasting, Rank 2",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character gains the Glide movement mode, with a speed equal to double their Run Speed."
+  },
+  "flags": {},
+  "effects": [
+    {
+      "name": "glide at run speed",
+      "img": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.7281c595-4df1-4a0c-b7ec-34192d9d1ead",
+      "_id": "2d3e40eec3034f1e",
+      "changes": [
+        {
+          "key": "system.movement.glide.active",
+          "mode": 5,
+          "value": true
+        },
+        {
+          "key": "system.movement.glide.calc",
+          "mode": 5,
+          "value": "runspeed"
+        },
+        {
+          "key": "system.movement.glide.calc",
+          "mode": 1,
+          "value": 2
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!7281c595-4df1-4a0c-b7ec-34192d9d1ead.2d3e40eec3034f1e"
+    }
+  ],
+  "folder": "a8b9ae895259d5bf",
+  "_key": "!items!7281c595-4df1-4a0c-b7ec-34192d9d1ead "
+}

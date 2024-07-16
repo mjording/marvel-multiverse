@@ -1,0 +1,12 @@
+{
+  "_id": "6b94013d-93e7-4752-ac32-ff8af5b5f205",
+  "name": "Monster",
+  "type": "trait",
+  "system": {
+    "restriction": "",
+    "description": "The character is some kind of monster, often of a type spoken of in legend. They have an edge whenever they attempt to intimidate someone."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!6b94013d-93e7-4752-ac32-ff8af5b5f205"
+}

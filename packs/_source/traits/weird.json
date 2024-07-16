@@ -1,0 +1,12 @@
+{
+  "_id": "fa236e49-36dc-45b6-8c2e-e42a512ab454",
+  "name": "Weird",
+  "type": "trait",
+  "system": {
+    "restriction": "",
+    "description": "The character has something weird (or even wonderful) about them. This causes people to have strong reactions to them, both good and bad. They have an edge on all Ego checks to persuade people inclined to like them and trouble on all Ego checks against people inclined to dislike them."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!fa236e49-36dc-45b6-8c2e-e42a512ab454"
+}

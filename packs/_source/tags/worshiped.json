@@ -1,0 +1,13 @@
+{
+  "_id": "1ade8e12-db6f-429a-9c2f-bee4ca08c390",
+  "name": "Worshiped",
+  "type": "tag",
+  "system": {
+    "description": "The character is worshipped by others as a god",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!1ade8e12-db6f-429a-9c2f-bee4ca08c390"
+}

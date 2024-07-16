@@ -1,0 +1,51 @@
+{
+  "_id": "e7d71954-4ca3-4a2b-840d-cc47b0f33e8f",
+  "name": "Lawyer",
+  "type": "occupation",
+  "system": {
+    "description": "The character has a law degree and knows how to use it. They might work for a gigantic and powerful law firm, or they might have set up their own practice.",
+    "examples": "Daredevil (Matt Murdock), Foggy Nelson, She-Hulk.",
+    "tags": [],
+    "traits": [
+      {
+        "_id": "392c6060-d9e5-4cbf-bae9-ef4fba5d9d80",
+        "name": "Dealmaker",
+        "type": "trait",
+        "system": {
+          "description": "The character is skilled at the art of negotiation. They have an edge on action checks that have to do with making deals.",
+          "restriction": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!392c6060-d9e5-4cbf-bae9-ef4fba5d9d80"
+      },
+      {
+        "_id": "0f6e398f-e802-49e5-8459-624e42339b3e",
+        "name": "Legal Eagle",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character knows the laws of their homeland and can help others navigate them. They have an edge on Logic checks when dealing with legalities."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!0f6e398f-e802-49e5-8459-624e42339b3e"
+      },
+      {
+        "_id": "141554d7-5bf2-4e58-bcb4-49316d8e4167",
+        "name": "Public Speaking",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character knows how to get the attention of a crowd, whether that's at a political rally or in front of a jury or a cinsgroom. They have an edge on Ego checks when attempting to persuade groups."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!141554d7-5bf2-4e58-bcb4-49316d8e4167"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!e7d71954-4ca3-4a2b-840d-cc47b0f33e8f"
+}

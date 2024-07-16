@@ -3,9 +3,9 @@
   "name": "High Tech: Cybernetics",
   "type": "origin",
   "system": {
-    "description": "The character has high-tech, surgically embedded implants that grant them powers. These cannot be removed without great care ar pain. If the implants are obvious, the character gets the Extreme Appearance tag. Otherwise, the implanis have been hidden inside their body {as with the lncing of Wolverine’s skeleton with adamantium) and might be visible only when in use {like when Wolverine uses his claws), if then.",
+    "description": "The character has high-tech, surgically embedded implants that grant them powers. These cannot be removed without great care or pain. If the implants are obvious, the character gets the Extreme Appearance tag. Otherwise, the implants have been hidden inside their body (as with the lacing of Wolverine's skeleton with adamantium) and might be visible only when in use (like when Wolverine uses his claws), if then.",
     "examples": "Deathlok (all of them), Snbretooth, Winter Soldier, Wolverine (Logan).",
-    "suggestedOccupation": "Outsider",
+    "suggestedOccupation": "",
     "tags": [
       {
         "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
@@ -26,7 +26,8 @@
         "name": "Tech Reliance",
         "type": "trait",
         "system": {
-          "description": "The character relies on technolopy for powers. When they take damape that would render them unconscious they can instead choose to lose all of their technolopy-related powers and remain conscious with 1 polnt of Health remalning. Assuming the character has access to parts and tools. Lost powers can be repaired after a battle"
+          "restriction": "",
+          "description": "The character relies on technolopy for powers. When they take damape that would render them unconscious they can instead choose to lose all of their technology-related powers and remain conscious with 1 polnt of Health remaining. Assuming the character has access to parts and tools. Lost powers can be repaired after a battle"
         },
         "flags": {},
         "effects": [],

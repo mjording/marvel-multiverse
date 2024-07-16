@@ -1,0 +1,12 @@
+{
+  "_id": "408b9cc7-dd14-4c0a-a0b3-dc70e184a431",
+  "name": "Honest",
+  "type": "trait",
+  "system": {
+    "restriction": "",
+    "description": "The character is a terrible liar. They have trouble any time they make an Ego check that involves telling a lie. However, they have an edge on any friendly Ego (persuasion) checks in which they're truthful."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!408b9cc7-dd14-4c0a-a0b3-dc70e184a431"
+}

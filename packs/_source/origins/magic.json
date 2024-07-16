@@ -1,0 +1,29 @@
+{
+  "_id": "311869e3-ff11-4a49-9685-3f619772466b",
+  "name": "Magic",
+  "type": "origin",
+  "system": {
+    "description": "The character's powers arise from supernatural means. There are many different traditions within magic, each with their own teachings.",
+    "examples": "Clea, Doctor Voodoo (Jericho Drumm, Enchantress.",
+    "suggestedOccupation": "",
+    "tags": [
+      {
+        "_id": "e5396fe1-8f4b-41b7-8886-be6c645f7e26",
+        "name": "Supernatural",
+        "type": "tag",
+        "system": {
+          "description": "The character has powers that are magical or based on something magical",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!e5396fe1-8f4b-41b7-8886-be6c645f7e26"
+      }
+    ],
+    "traits": []
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!311869e3-ff11-4a49-9685-3f619772466b"
+}

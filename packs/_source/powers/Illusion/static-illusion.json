@@ -1,0 +1,20 @@
+{
+  "_id": "0052fdeb-248e-42aa-96d2-cc9674e9b6b7",
+  "name": "Static Illusion",
+  "type": "power",
+  "system": {
+    "description": "By manipulating visual light, the character creates a realistic hologram.",
+    "powerSet": "Illusion",
+    "prerequisites": "Illumination",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character creates a visual-only illusion anywhere in line of sight, within 50 spaces. The illusion can be of anything up to three sizes larger than the character, but it mu spbe static. The character breaks concentration if they move beyond 50 spaces from the illusion or lose line of sight of it."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "ba98409134c2014d",
+  "_key": "!items!0052fdeb-248e-42aa-96d2-cc9674e9b6b7"
+}

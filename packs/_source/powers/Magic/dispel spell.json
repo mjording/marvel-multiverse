@@ -1,0 +1,20 @@
+{
+  "_id": "b4ba6a61-4601-4202-be97-23408dedef18",
+  "name": "Dispel Spell",
+  "type": "power",
+  "system": {
+    "description": "The character puts an end to a foe's magic.",
+    "powerSet": "Magic",
+    "prerequisites": "Sorcerous, Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "The charscter makes an Eas check appinst the Eno defense of a target using a magic power that requires concentration. On a success, the target's concentration 9n that power is broken, On a Fantastic success, the target's concentration is broken entirely."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8c23e6cd16b9bb49",
+  "_key": "!items!b4ba6a61-4601-4202-be97-23408dedef18"
+}

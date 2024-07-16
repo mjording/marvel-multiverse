@@ -1,0 +1,55 @@
+{
+  "_id": "86707ef8-abb3-4580-9a95-67c7c9f2c3c1",
+  "name": "Weird Science: Gamma Mutate",
+  "type": "origin",
+  "system": {
+    "description": "The character has a genetic mutation that gave them powers once they were exposed to enough gamma radiation. transforming them physically. This often gives them a monstrous appearance and changes their coloration drastically, usually to green, although some become red or even blue. They can often transform back into their original form as well.",
+    "examples": "Doc Samson, Harpy (Betty Banner), Hulk (Bruce Banner), Red Hulk (Thaddeus 'Thunderbolt' Ross)",
+    "suggestedOccupation": "",
+    "tags": [
+      {
+        "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
+        "name": "Extreme Appearance",
+        "type": "tag",
+        "system": {
+          "description": "The character looks very different than the average person (wherever they happen to be) and cannot easily hide their identity. When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme appearance is common.",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1"
+      },
+      {
+        "_id": "7956b6ab-c0a4-4b5a-846a-b89d801aa6e7",
+        "name": "Green Door",
+        "type": "tag",
+        "system": {
+          "description": "After being killed, the character can come back to life by passing through the Green Door, a portal that connects a part of the afterlife to Earth. This makes them effectively immortal.",
+          "restriction": "For gamma mutates only.",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!7956b6ab-c0a4-4b5a-846a-b89d801aa6e7"
+      }
+    ],
+    "traits": [
+      {
+        "_id": "fa236e49-36dc-45b6-8c2e-e42a512ab454",
+        "name": "Weird",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character has something weird (or even wonderful) about them. This causes people to have strong reactions to them, both good and bad. They have an edge on all Ego checks to persuade people inclined to like them and trouble on all Ego checks against people inclined to dislike them."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!fa236e49-36dc-45b6-8c2e-e42a512ab454"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!86707ef8-abb3-4580-9a95-67c7c9f2c3c1f"
+}

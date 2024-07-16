@@ -1,0 +1,38 @@
+{
+  "_id": "5f7d7778-0e1d-4ade-9e63-2efc333960d2",
+  "name": "Health Care Worker",
+  "type": "occupation",
+  "system": {
+    "description": "The character is a doctor, nurse, therapist or other person dedicated to helping heal others. They likely have access to an office where they practice their craft.",
+    "examples": "Doc Samson, Doctor Strange, the Night Nurse (Linda Carter), Thor (Jane Foster).",
+    "traits": [
+      {
+        "_id": "4d6b10f0-3a22-4fe5-8bef-b0ebc85a27bb",
+        "name": "Clinician",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character has an edge on Logic checks to determine what is medically wrong with someone they examine."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!4d6b10f0-3a22-4fe5-8bef-b0ebc85a27bb"
+      },
+      {
+        "_id": "af56c716-28fe-49e5-b417-6f9987b814ab",
+        "name": "First Aid",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character knows how to administer first aid. They have an edge on Logic checks to stop bleeding."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!af56c716-28fe-49e5-b417-6f9987b814ab"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!5f7d7778-0e1d-4ade-9e63-2efc333960d2"
+}

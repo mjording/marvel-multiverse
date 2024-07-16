@@ -162,7 +162,6 @@ export class MarvelMultiverseRoll extends Roll {
         this.options.fantastic = 1;
          
         if (this.isFantastic){  
-
             this.dice[1].results.map(r => {
                 if(r.result === 1){
                     r.discarded = false;
@@ -185,7 +184,8 @@ export class MarvelMultiverseRoll extends Roll {
     async toMessage(messageData={}, options={}) {
 
         // Evaluate the roll now so we have the results available to determine edge mode
-        if ( !this._evaluated ) await this.evaluateSync({minimize: boolean,
+        if ( !this._evaluated ) await this.evaluateSync({
+            minimize: boolean,
             maximize: boolean,
             strict: boolean,
             allowStrings: boolean});

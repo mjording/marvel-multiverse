@@ -1,0 +1,12 @@
+{
+  "_id": "8dbad125-860a-43c4-95b9-53154ba7806a",
+  "name": "Fresh Eyes",
+  "type": "trait",
+  "system": {
+    "restriction": "",
+    "description": "The character has their own way of doing things. This often makes them seem strange to those around them, but it means they can bring new perspectives to existing issues. They have an edge on Logic checks when faced with something for the first time."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!8dbad125-860a-43c4-95b9-53154ba7806a"
+}

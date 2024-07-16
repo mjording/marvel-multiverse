@@ -3,7 +3,7 @@
   "name": "Alien: Skrull",
   "type": "origin",
   "system": {
-    "description": "The character is a member of the Skrull, a reptilian nhumanoid race of shape shilters whe formed the interstellar Skeull Empire, In thelr natural form, they have green skin, red or green eyes, pointed ears and furrowed chins. They sprang From the planit Skrullos in the Andromeda Galaxy. The original Skrulls could not shape-shift, but the Celestials experimented on them ta farm Eternal Skrulls and Deviant Skrulls, much like they did with humans on Earth, The Deviant Skrulls became the dominant form af the species, driving the originals to extinetion ",
+    "description": "The character is a member of the Skrull, a reptilian humanoid race of shape-shifters who formed the interstellar Skrull Empire. In their natural form, they have green skin, red or green eyes, pointed ears and furrowed chins. They sprang from the planet Skrullos in the Andromeda Galaxy. The original Skulls could not shape-shift, but the Celestials experimented on them to form Eternal Skrulls and Deviant Skrulls, much like they did with humans on Earth. The Deviant Skulls became the dominant form of the species, driving the originals to extinction.",
     "examples": "Hulkling (half Skrull and half Kree), Lyja, Super-Skrull (Ki'rt)",
     "suggestedOccupation": "Outsider",
     "tags": [
@@ -46,10 +46,11 @@
           "duration": "Permanent",
           "range": "",
           "cost": "",
-          "effect": "The character instantly alters their appearance so that they appear to be someone else. The target number for anyone trying to see through the disguise is the charncter's Ego defense. If the character is impersonating someone known to the other person, Uhal person hias an edge."
+          "effect": "The character instantly alters their appearance so that they appear to be someone else. The target number for anyone trying to see through the disguise is the character's Ego defense. If the character is impersonating someone known to the other person, that person has an edge."
         },
         "flags": {},
         "effects": [],
+        "folder": "bbe663a787c7ec04",
         "_key": "!items!018ec3bb-90b5-78a8-b9f3-14ddf0804a50"
       },
       {
@@ -68,7 +69,38 @@
           "effect": "The character's reach quadruples"
         },
         "flags": {},
-        "effects": [],
+        "effects": [
+          {
+            "name": "Reach x4",
+            "img": "icons/svg/aura.svg",
+            "duration": {
+              "startTime": null,
+              "seconds": null,
+              "combat": null,
+              "rounds": null,
+              "turns": null,
+              "startRound": null,
+              "startTurn": null
+            },
+            "disabled": false,
+            "origin": "Item.018ec3bf-1d7c-726c-ad05-939de51fc920",
+            "_id": "bea1573f91f7ac3a",
+            "changes": [
+              {
+                "key": "system.reach",
+                "mode": 1,
+                "value": 4
+              }
+            ],
+            "description": "",
+            "transfer": true,
+            "statuses": [],
+            "flags": {},
+            "tint": null,
+            "_key": "!items.effects!018ec3bf-1d7c-726c-ad05-939de51fc920.bea1573f91f7ac3a"
+          }
+        ],
+        "folder": "b660cb39178688a5",
         "_key": "!items!018ec3bf-1d7c-726c-ad05-939de51fc920"
       },
       {
@@ -76,7 +108,7 @@
         "name": "Flexible Bones 1",
         "type": "power",
         "system": {
-          "description": "The character’s skeleton 15rubbery.",
+          "description": "The character's skeleton is rubbery.",
           "powerSet": "Plasticity",
           "prerequisites": "",
           "action": "",
@@ -84,10 +116,41 @@
           "duration": "Permanent",
           "range": "",
           "cost": "",
-          "effect": "The character gains Health Damage Reduction 1. They also have an edge on Agility checks for contortion and escape."
+          "effect": "The character gains Health Damage Reduction 1. They also have an edde on Agility checks for contortion and escape."
         },
         "flags": {},
-        "effects": [],
+        "effects": [
+          {
+            "name": "Health Damage Reduction 1",
+            "img": "icons/svg/aura.svg",
+            "duration": {
+              "startTime": null,
+              "seconds": null,
+              "combat": null,
+              "rounds": null,
+              "turns": null,
+              "startRound": null,
+              "startTurn": null
+            },
+            "disabled": false,
+            "origin": "Item.018ec3c3-7940-7d9f-b111-ba59315a2292",
+            "_id": "96ae1d4e6e1faf99",
+            "changes": [
+              {
+                "key": "system.healthDamageReduction",
+                "mode": 2,
+                "value": 1
+              }
+            ],
+            "description": "",
+            "transfer": true,
+            "statuses": [],
+            "flags": {},
+            "tint": null,
+            "_key": "!items.effects!018ec3c3-7940-7d9f-b111-ba59315a2292.96ae1d4e6e1faf99"
+          }
+        ],
+        "folder": "b660cb39178688a5",
         "_key": "!items!018ec3c3-7940-7d9f-b111-ba59315a2292"
       },
       {
@@ -107,6 +170,7 @@
         },
         "flags": {},
         "effects": [],
+        "folder": "bbe663a787c7ec04",
         "_key": "!items!018ec3c5-65a0-732e-ae14-57121bf2593f"
       },
       {
@@ -126,6 +190,7 @@
         },
         "flags": {},
         "effects": [],
+        "folder": "b660cb39178688a5",
         "_key": "!items!018ec3c8-e4ad-782c-b996-6d3b70f915af"
       }
     ]

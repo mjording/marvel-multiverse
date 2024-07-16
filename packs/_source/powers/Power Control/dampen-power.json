@@ -7,7 +7,7 @@
     "powerSet": "Power Control",
     "prerequisites": "",
     "action": "Standard",
-    "trigger": "The target is grabbed",
+    "trigger": "",
     "duration": "Concentration",
     "range": "",
     "cost": "Varies",

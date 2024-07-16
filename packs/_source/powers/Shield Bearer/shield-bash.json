@@ -1,0 +1,20 @@
+{
+  "_id": "fd972e54-1fd8-413c-b92d-062f54490884",
+  "name": "Shield Bash",
+  "type": "power",
+  "system": {
+    "description": "The character bashes a foe with their shield.",
+    "powerSet": "Shield Bearer",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "The character makes a close attack on an enemy within their reach. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and is knocked prone."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "926e8d815f4d3fd7",
+  "_key": "!items!fd972e54-1fd8-413c-b92d-062f54490884"
+}

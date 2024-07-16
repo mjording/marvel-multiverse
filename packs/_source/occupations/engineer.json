@@ -1,0 +1,53 @@
+{
+  "_id": "0f28824f-7043-4b29-be1c-76a608d68057",
+  "name": "Engineer",
+  "type": "occupation",
+  "system": {
+    "description": "The character designs and builds things to solve problems. They sometimes invent brand-new things, but mostly they take scientific research and apply it to real-world problems",
+    "examples": "Ghost Rider (Robbie Reyes), Iron Man (Tony Stark), Whiplash.",
+    "traits": [
+      {
+        "_id": "171b2116-92ca-4944-89dd-3d51b8c879f4",
+        "name": "Gearhead",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character knows their way around machines. They have an edge on Logic checks to figure out how any machine works."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!171b2116-92ca-4944-89dd-3d51b8c879f4"
+      },
+      {
+        "_id": "2b4a4441-4801-4de7-b0e2-c992b60a1ae5",
+        "name": "Inventor",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character is good at coming up with solutions on the fly. They have an edge on Logic checks when creating or repairing things."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!2b4a4441-4801-4de7-b0e2-c992b60a1ae5"
+      }
+    ],
+    "tags": [
+      {
+        "_id": "cfaebe92-146f-4210-93f2-4b6fb5e7aa40",
+        "name": "Lab Access",
+        "type": "tag",
+        "system": {
+          "description": "The character either owns or has access to a laboratory filled with the technical equipment, supplies and tools they need for their work. This can be anything from a well-stocked high-school classroom to a forensics lab to an industrial site.",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!cfaebe92-146f-4210-93f2-4b6fb5e7aa40"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!0f28824f-7043-4b29-be1c-76a608d68057"
+}

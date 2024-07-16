@@ -3,7 +3,7 @@
   "name": "Authority",
   "type": "tag",
   "system": {
-    "description": "The character has a legal authority of some kind. They might be a commissioned officer, privateer, bounty hunter, doctor, firearms dealer, lawyer, pharmacist, police officer, private investigator, mayor, governor, and so on. This tag can be selected multiple times if appropriate.",
+    "description": "The character has a legal authority of some kind. They might be a commissioned officer, privateer, bounty hunter, doctor, firearms dealer, lawyer, pharmacist, police officer, private investigator, mayor, governor and so on. This tag can be selected multiple times if appropriate.",
     "restriction": "",
     "rarity": ""
   },

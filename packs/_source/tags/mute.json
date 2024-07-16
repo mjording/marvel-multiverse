@@ -1,0 +1,13 @@
+{
+  "_id": "eb2d0183-8779-42be-bfc5-b16c3cb863f9",
+  "name": "Mute",
+  "type": "tag",
+  "system": {
+    "description": "The character cannot speak. Unless otherwise specified, they can use other means to communicate.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!eb2d0183-8779-42be-bfc5-b16c3cb863f9"
+}

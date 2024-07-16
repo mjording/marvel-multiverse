@@ -1,0 +1,13 @@
+{
+  "_id": "7956b6ab-c0a4-4b5a-846a-b89d801aa6e7",
+  "name": "Green Door",
+  "type": "tag",
+  "system": {
+    "description": "After being killed, the character can come back to life by passing through the Green Door, a portal that connects a part of the afterlife to Earth. This makes them effectively immortal.",
+    "restriction": "For gamma mutates only.",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!7956b6ab-c0a4-4b5a-846a-b89d801aa6e7"
+}

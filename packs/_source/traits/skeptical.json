@@ -1,0 +1,12 @@
+{
+  "_id": "fc8b949c-8c22-436c-b203-8d7020ee9ca8",
+  "name": "Skeptical",
+  "type": "trait",
+  "system": {
+    "restriction": "",
+    "description": "The character is hard to fool. People lying to them have trouble on their Ege checks to persuade the character of something."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!fc8b949c-8c22-436c-b203-8d7020ee9ca8"
+}

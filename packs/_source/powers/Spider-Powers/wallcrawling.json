@@ -1,0 +1,50 @@
+{
+  "_id": "85dd0470-438d-4851-8044-a93db49f2fcc",
+  "name": "Wallcrawling",
+  "type": "power",
+  "system": {
+    "description": "The character exudes pheromones that affect those nearby.",
+    "powerSet": "Spider-Powers",
+    "prerequisites": "",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character can climb at a speed equal to their regular speed. Under normal conditions, they never lose their grip, no matter the angle of the surface."
+  },
+  "flags": {},
+  "effects": [
+    {
+      "name": "climb at run speed",
+      "img": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.85dd0470-438d-4851-8044-a93db49f2fcc",
+      "_id": "7020b501aa8a4625",
+      "changes": [
+        {
+          "key": "system.movement.climb.calc",
+          "mode": 5,
+          "value": "runspeed"
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!85dd0470-438d-4851-8044-a93db49f2fcc.7020b501aa8a4625"
+    }
+  ],
+  "folder": "a8b9ae895259d5bf",
+  "_key": "!items!85dd0470-438d-4851-8044-a93db49f2fcc "
+}

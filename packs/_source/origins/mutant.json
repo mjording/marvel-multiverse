@@ -3,7 +3,7 @@
   "name": "Mutant",
   "type": "origin",
   "system": {
-    "description": "The characler's powers spring from them being a member of the subspecies Home superior. They have a latent X-Gene that grants them powers, often trigeered at adolescence.",
+    "description": "The character's powers spring from them being a member of the subspecies Homo superior. They have a latent X-Gene that grants them powers, often triggered at adolescence.",
     "examples": "Cyclops, Jean Grey, Storm, Walvering (Lopan), Wolverine (Laura Kinney).",
     "suggestedOccupation": "Outsider",
     "tags": [
@@ -25,8 +25,8 @@
         "name": "Krakoan",
         "type": "tag",
         "system": {
-          "restriction": "For mutanis anly.",
-          "description": "As a mutant, the character s automatically a citizen of the island-nation of Krakoa and can travel to and from there freely. Also, if they are killed and the Five—a group of powerful mutants—ara able to work together, the character c¢an be resurrected into an identical new body wilh most of c¢an be resurrected into an identical new body wilh most of their memaories intact. If killed in Otherwerld, the character can still be resurrected, but they will be changed in unpredictable ways. ust how this might affect the character is up to the Narrator.",
+          "description": "As a mutant, the character is automatically a citizen of the island-nation of Krakoa and can travel to and from there freely. Also, if they are killed and the Five—a group of powerful mutants-are able to work together, the character can be resurrected into an identical new body with most of their memories intact. If killed in Otherworld, the character can still be resurrected, but they will be changed in unpredictable ways. Just how this might affect the character is up to the Narrator.",
+          "restriction": "For mutants only.",
           "rarity": ""
         },
         "flags": {},
@@ -38,8 +38,8 @@
         "name": "X-Gene",
         "type": "tag",
         "system": {
-          "description": "The charactehrns mutant genes that cause them to develop SUpCr-powers",
-          "restriction": "For mutants anly.",
+          "description": "The character has mutant genes that cause them to develop super-powers",
+          "restriction": "For mutants only.",
           "rarity": ""
         },
         "flags": {},

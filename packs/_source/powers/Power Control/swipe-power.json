@@ -1,0 +1,20 @@
+{
+  "_id": "46e4b501-a1c8-4483-9ed6-86de2fdaea3d",
+  "name": "Steal Powers",
+  "type": "power",
+  "system": {
+    "description": "The character removes a target's power and takes it for their own!",
+    "powerSet": "Power Control",
+    "prerequisites": "Copy Powers, Dampen Power, Rank 3",
+    "action": "Standard or reaction",
+    "trigger": "The target is grabbed",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "10 or more Focus",
+    "effect": "The character makes an Ego attack against the grabbed target. On a success, they remove one of the target's powers and take it for their own. They can now use that power as if it was always theirs. If the power has a cost, the character must pay it or a minimum of 10 Focus. When the character uses the power, they must pay any cost normally as well."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9d538083463adac7",
+  "_key": "!items!46e4b501-a1c8-4483-9ed6-86de2fdaea3d"
+}

@@ -1,0 +1,12 @@
+{
+  "_id": "3877ade3-18de-432b-bb8a-24349cefb96b",
+  "name": "Stranger",
+  "type": "trait",
+  "system": {
+    "restriction": "",
+    "description": "The character doesn't understand local customs They have trouble on checks made when trying to decipher such things er when trying to pass themselves off as a local."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!3877ade3-18de-432b-bb8a-24349cefb96b"
+}

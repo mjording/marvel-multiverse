@@ -1,0 +1,60 @@
+{
+  "_id": "ab0972e2-d657-4a0f-9cb9-531566bb0395163d09d3e7",
+  "name": "Jump 3",
+  "type": "power",
+  "system": {
+    "description": "The character can leap into the sky with a single bound.",
+    "powerSet": "Spider-Powers",
+    "prerequisites": "Jump 2, Rank 4",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "Outside of combat, the character can jump up to 50 times their Jump Speed."
+  },
+  "flags": {},
+  "effects": [
+    {
+      "name": "physical edge",
+      "img": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.ab0972e2-d657-4a0f-9cb9-531566bb0395163d09d3e7 ",
+      "_id": "4539fe67046045e1",
+      "changes": [
+        {
+          "key": "system.movement.jump.active",
+          "mode": 5,
+          "value": true
+        },
+        {
+          "key": "system.movement.jump.calc",
+          "mode": 5,
+          "value": "runspeed"
+        },
+        {
+          "key": "system.movement.jump.noncom",
+          "mode": 1,
+          "value": 50
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!ab0972e2-d657-4a0f-9cb9-531566bb0395163d09d3e7.4539fe67046045e1"
+    }
+  ],
+  "folder": "88848a43d8a58388",
+  "_key": "!items!ab0972e2-d657-4a0f-9cb9-531566bb0395163d09d3e7 "
+}

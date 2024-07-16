@@ -1,0 +1,13 @@
+{
+  "_id": "dce2f4ef-c5b0-4a61-828b-1953191867ac",
+  "name": "Radioactive",
+  "type": "tag",
+  "system": {
+    "description": "The character constantly emits low levels of some sort of radiation. This can be picked up by a Geiger counter.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!dce2f4ef-c5b0-4a61-828b-1953191867ac"
+}

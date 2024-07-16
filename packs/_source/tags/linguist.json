@@ -3,7 +3,7 @@
   "name": "Linguist",
   "type": "tag",
   "system": {
-    "description": "The character is fluent in a langunge other than their native tongue. This tag can be selected multiple times, once for each language.",
+    "description": "The character is fluent in a language other than their native tongue. This tag can be selected multiple times, once for each language.",
     "restriction": "",
     "rarity": ""
   },

@@ -1,0 +1,20 @@
+{
+  "_id": "7749c977-d061-4b33-9310-b9f4e8a11f26",
+  "name": "Webtrapping",
+  "type": "power",
+  "system": {
+    "description": "The character exudes pheromones that affect those nearby.",
+    "powerSet": "Spider-Powers",
+    "prerequisites": "Webgrabbing, Rank 3",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "The character's rank times 15 minutes",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "The character fills up to 5 spaces with sticky webs, and the affected spaces are considered difficult terrain.Any creature that starts its turn in or moves into an affected space must make an Agility check (target number 20) or be paralyzed by the webbing. Breaking free from webbing requires a Melee check (target number 20)."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a8b9ae895259d5bf",
+  "_key": "!items!7749c977-d061-4b33-9310-b9f4e8a11f26 "
+}

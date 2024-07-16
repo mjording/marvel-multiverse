@@ -1,6 +1,5 @@
 <form class="{{cssClass}}" autocomplete="off">
   <header class="sheet-header">
-    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
     <div class="header-fields">
       <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
     </div>
@@ -8,21 +7,23 @@
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="description">Description</a>
     <a class="item" data-tab="attributes">Attributes</a>
   </nav>
 
   {{!-- Sheet Body --}}
   <section class="sheet-body">
 
-    {{!-- Description Tab --}}
-    <div class="tab" data-group="primary" data-tab="description">
-      {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
-    </div>
-
     {{!-- Attributes Tab --}}
     <div class="tab power-attributes" data-group="primary" data-tab="attributes">
       {{!-- As you add new fields, add them in here! --}}
+      <div class="resource">
+        <label for="system.description" class="resource-reduced-label rollable align-left" data-label="description">Description</label>
+        <textarea name="system.description" data-dtype="String">{{system.description}}</textarea>
+      </div>
+      <div class="resource">
+        <label for="system.effect" class="resource-reduced-label rollable align-left" data-label="effect">Effect</label>
+        <textarea name="system.effect" data-dtype="String">{{system.effect}}</textarea>
+      </div>
       <div class="resource">
         <label class="resource-label">Power Set</label>
         <input type="text" name="system.powerSet" value="{{system.powerSet}}" data-dtype="String"/>
@@ -51,10 +52,7 @@
         <label class="resource-label">cost</label>
         <input type="text" name="system.cost" value="{{system.cost}}" data-dtype="String"/>
       </div>
-      <div class="resource">
-        <label class="resource-label">effect</label>
-        <input type="text" name="system.effect" value="{{system.effect}}" data-dtype="String"/>
-      </div>
+      
     </div>
   </section>
 </form>

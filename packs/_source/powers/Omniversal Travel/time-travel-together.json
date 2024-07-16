@@ -1,0 +1,20 @@
+{
+  "_id": "d7014836-6bd4-4326-95cd-0731c0dcf9d5",
+  "name": "Time Travel Together",
+  "type": "power",
+  "system": {
+    "description": "The character brings someone with them to another time",
+    "powerSet": "Omniversal Travel",
+    "prerequisites": "Time Travel, Rank 3",
+    "action": "Standard, movement or reaction",
+    "trigger": "The target is grabbe.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "The character moves to a different time, taking any person they are touching with them. If the target does not wish to come along, the character must grab them first. When they move to the other time, they can arrive in any place they've been to before. Otherwise, they arrive at the closest available corresponding space in the other time."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "882fb16dc4a7430e",
+  "_key": "!items!bd7014836-6bd4-4326-95cd-0731c0dcf9d5"
+}

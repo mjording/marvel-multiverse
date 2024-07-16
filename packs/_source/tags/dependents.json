@@ -1,0 +1,13 @@
+{
+  "_id": "d0b7c3ed-8f85-4114-a998-0f3917b5db42",
+  "name": "Dependents",
+  "type": "tag",
+  "system": {
+    "description": "The character has young children, elderly relatives or others who rely on them. They can't just abandon these people and must check on them and help care for them on a regular basis.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!d0b7c3ed-8f85-4114-a998-0f3917b5db42"
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "cef91242-52c8-4056-a3df-61fef891e03f",
+  "name": "Webslinging",
+  "type": "power",
+  "system": {
+    "description": "The character can swing through the city on their webs.",
+    "powerSet": "Spider-Powers",
+    "prerequisites": "Webcasting, Rank 2",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character gains the swingline movement mode, with a Speed equal to triple their Run Speed. The reach of their swingline is equal to their Swingline Speed."
+  },
+  "flags": {},
+  "effects": [
+    {
+      "name": "glide at run speed",
+      "img": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.cef91242-52c8-4056-a3df-61fef891e03f",
+      "_id": "95f7d7e39e4c4b16",
+      "changes": [
+        {
+          "key": "system.movement.swingline.active",
+          "mode": 5,
+          "value": true
+        },
+        {
+          "key": "system.movement.swingline.calc",
+          "mode": 5,
+          "value": "runspeed"
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!cef91242-52c8-4056-a3df-61fef891e03f.95f7d7e39e4c4b16"
+    }
+  ],
+  "folder": "a8b9ae895259d5bf",
+  "_key": "!items!cef91242-52c8-4056-a3df-61fef891e03f "
+}

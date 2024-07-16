@@ -1,0 +1,20 @@
+{
+  "_id": "dda9522f-4744-4bbc-815d-71409d8319cf",
+  "name": "Clone Moves",
+  "type": "power",
+  "system": {
+    "description": "The character duplicates another character's combat moves.",
+    "powerSet": "Power Control",
+    "prerequisites": "Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 or more Focus",
+    "effect": "The character picks another character within 10 spaces and in their line of sight and duplicates all their powers that could be selected with the Special Training origin. They can now use those powers as if they were always theirs. If the copied powers have costs, the character must pay the highest of them, or a minimum of 5 Focus. When the character uses a copied power, they must pay any cost normally as well."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9d538083463adac7",
+  "_key": "!items!dda9522f-4744-4bbc-815d-71409d8319cf"
+}

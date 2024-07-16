@@ -1,0 +1,13 @@
+{
+  "_id": "c5eed6c9-973b-44f4-804a-b04590f15173",
+  "name": "Young",
+  "type": "tag",
+  "system": {
+    "description": "The character is a minor, under 18 years old. If possible, they must report in to their parents or guardians on a regular basis.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!c5eed6c9-973b-44f4-804a-b04590f15173"
+}

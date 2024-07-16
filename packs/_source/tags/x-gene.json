@@ -3,8 +3,8 @@
   "name": "X-Gene",
   "type": "tag",
   "system": {
-    "description": "The charactehrns mutant genes that cause them to develop SUpCr-powers",
-    "restriction": "For mutants anly.",
+    "description": "The character has mutant genes that cause them to develop super-powers",
+    "restriction": "For mutants only.",
     "rarity": ""
   },
   "flags": {},

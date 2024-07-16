@@ -1,0 +1,20 @@
+{
+  "_id": "77e2b1a2-e7a6-4246-9dc6-0cea890ef2e8",
+  "name": "Point-Blank Parry",
+  "type": "power",
+  "system": {
+    "description": "When the enemy steps in, the character lets loose.",
+    "powerSet": "Ranged Weapons",
+    "prerequisites": "Rank 2",
+    "action": "Reaction",
+    "trigger": "An enemy within 2 spaces misses an attack against the character.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character makes a ranged attack against the enemy who missed them. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and is bleeding."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "82ef84dfce4c7abf",
+  "_key": "!items!77e2b1a2-e7a6-4246-9dc6-0cea890ef2e8"
+}

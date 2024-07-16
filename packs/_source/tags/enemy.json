@@ -3,7 +3,7 @@
   "name": "Enemy",
   "type": "tag",
   "system": {
-    "description": "There's someone out there who has sworn to defeat the character. The enemy is of at least the same rank as the character and is obsessed with bringing them down. This tap can be taken muliiple times, but it shovld be reserved for truly obsessed foes.",
+    "description": "There's someone out there who has sworn to defeat the character. The enemy is of at least the same rank as the character and is obsessed with bringing them down. This tag can be taken multiple times, but it should be reserved for truly obsessed foes.",
     "restriction": "",
     "rarity": ""
   },

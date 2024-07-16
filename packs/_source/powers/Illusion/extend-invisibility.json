@@ -1,0 +1,20 @@
+{
+  "_id": "6996bbd1-c70d-4457-9654-4c6c3ad0d948",
+  "name": "Extend Invisiblity",
+  "type": "power",
+  "system": {
+    "description": "The character blasts a blinding light into the face of their foe.",
+    "powerSet": "Illusion",
+    "prerequisites": "Invisibility",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "10 Spaces",
+    "cost": "10 Focus",
+    "effect": "The character makes something—a single person or object-within reach invisible. This can be one size bigger than them for every rank they have."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "ba98409134c2014d",
+  "_key": "!items!6996bbd1-c70d-4457-9654-4c6c3ad0d948"
+}

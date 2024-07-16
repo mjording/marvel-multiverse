@@ -1,0 +1,20 @@
+{
+  "_id": "05535e76-755c-45f7-a767-b462ffab912e",
+  "name": "Spider-Dodge",
+  "type": "power",
+  "system": {
+    "description": "The character can leap into the sky with a single bound.",
+    "powerSet": "Spider-Powers",
+    "prerequisites": "",
+    "action": "Reaction",
+    "trigger": "Someone makes an Agility attack against the character.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "The attacker has trouble on the attack. If the attack misses, the character can leap in any direction at their Jump Speed."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a8b9ae895259d5bf",
+  "_key": "!items!05535e76-755c-45f7-a767-b462ffab912e "
+}

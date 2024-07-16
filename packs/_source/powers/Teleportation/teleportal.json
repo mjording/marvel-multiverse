@@ -1,0 +1,20 @@
+{
+  "_id": "8317239c-c6c1-4d74-8997-e59233e3a180",
+  "name": "Teleportal",
+  "type": "power",
+  "system": {
+    "description": "The character opens a portal to another place.",
+    "powerSet": "Teleportation",
+    "prerequisites": "Teleport 1, Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "The character opens a glowing portal in a space next to them that teleports anything that enters it between that space and its destination, which forms a matched glowing portal in the other place. The other end of the portal must be in a clear space the character can see or has been to, up to 10 times their rank in spaces away. Outside of combat, they can teleport up to 1,000 times their rank in spaces away. Anything can move through the portal in either direction until it is closed, which the character can do at will."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a7603bf9acca778a",
+  "_key": "!items!8317239c-c6c1-4d74-8997-e59233e3a180"
+}

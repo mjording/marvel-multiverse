@@ -7,7 +7,7 @@
     "powerSet": "Teleportation",
     "prerequisites": "Blink",
     "action": "Standard, or movement",
-    "trigger": "The character is attacked.",
+    "trigger": "",
     "duration": "Instant",
     "range": "",
     "cost": "",

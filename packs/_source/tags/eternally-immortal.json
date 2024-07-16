@@ -1,0 +1,13 @@
+{
+  "_id": "96427e46-6723-4866-83fe-5ce699fee54c",
+  "name": "Eternally Immortal",
+  "type": "tag",
+  "system": {
+    "description": "The character does not age and could theoretically live forever. If the character is killed, they can be brought back to life in the Activation Chamber found in the Exclusion, an Eternal base located beneath the South Pole. To make this happen, the Activation Chamber sacrifices the life of a random human anywhere on Earth.",
+    "restriction": "For Eternals only",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!96427e46-6723-4866-83fe-5ce699fee54c"
+}

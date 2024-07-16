@@ -1,0 +1,13 @@
+{
+  "_id": "29d6851e-34b0-4eef-9475-3d09d214e243",
+  "name": "Inhuman Genes",
+  "type": "tag",
+  "system": {
+    "description": "The character has latent Inhuman genes that cause them to develop super-powers when exposed to the Terrigen Mist.",
+    "restriction": "For Inhumans only.",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!29d6851e-34b0-4eef-9475-3d09d214e243"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "92ed7a97-89f8-4e8e-a950-44832d37fc13",
+  "name": "Invisibility",
+  "type": "power",
+  "system": {
+    "description": "The character turns as transparent as glass.",
+    "powerSet": "Illusion",
+    "prerequisites": "Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character becomes invisible. They have an edge on Agility checks to sneak past people, and enemies have trouble on Vigilance checks to perceive them. It's even harder to spot things that are invisible but aren't moving. Characters must be actively trying to do so to be able to make a Vigilance check."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "ba98409134c2014d",
+  "_key": "!items!92ed7a97-89f8-4e8e-a950-44832d37fc13"
+}

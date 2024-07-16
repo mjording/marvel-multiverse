@@ -1,0 +1,20 @@
+{
+  "_id": "aad97df2-50e7-48ec-a8e3-da9b3c25e048",
+  "name": "Bump Power",
+  "type": "power",
+  "system": {
+    "description": "The character bumps up another character's power.",
+    "powerSet": "Power Control",
+    "prerequisites": "Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 or more Focus",
+    "effect": " The character picks one power from another character within 5 spaces and boosts it. If the power has ranges or effective areas or durations, these are doubled. If the power affects a damage multiplier, add 1 to the effect. Any effects that normally happen with a Fantastic success automatically happen on any success not just a Fantastic one. If the power has a cost, the character muss pay it as well, with a minimum of 5 Focus."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9d538083463adac7",
+  "_key": "!items!aad97df2-50e7-48ec-a8e3-da9b3c25e048"
+}

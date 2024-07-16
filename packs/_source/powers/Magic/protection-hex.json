@@ -1,0 +1,20 @@
+{
+  "_id": "b7cd51f990-8b87-478c-91e0-288340f11f67",
+  "name": "Protection Hex",
+  "type": "power",
+  "system": {
+    "description": "The character casts a hex to protect themselves.",
+    "powerSet": "Magic",
+    "prerequisites": "Chaotic, Rank 3",
+    "action": "Standard or reaction",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "10 focus",
+    "effect": "The character produces a hex to help protect themselves. Make an Ego check. The result is now the character's defense against any attack. If the result isn't as high as the character would like, they can end the hex and try again later. On a Fantastic success, the hex also grants Health Damage Reduction 1 for its duration."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8c23e6cd16b9bb49",
+  "_key": "!items!b7cd51f990-8b87-478c-91e0-288340f11f67"
+}

@@ -36,6 +36,11 @@
   overflow-y: auto;
   scrollbar-width: thin;
   color: $c-tan;
+  z-index: 100;
+  position: relative;
+  opacity: 0.9;
+  background-color: beige;
+
 
   // Child lists
   .item-list {
@@ -55,7 +60,6 @@
     display: flex;
     h3, h4 {
       margin: 0;
-      // white-space: nowrap;
       overflow-x: hidden;
     }
   }
@@ -99,7 +103,6 @@
 
   // Section Header
   .items-header {
-    // height: 28px;
     margin: 2px 0;
     padding: 0;
     align-items: center;
@@ -113,7 +116,6 @@
     .item-name {
       padding-left: 5px;
       text-align: left;
-      // font-size: 16px;
     }
   }
 }

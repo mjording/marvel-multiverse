@@ -1,0 +1,20 @@
+{
+  "_id": "47530a27-e9b9-47be-810c-4ffae8ba4850",
+  "name": "Silence Area",
+  "type": "power",
+  "system": {
+    "description": "An unnatural silence falls over the area.",
+    "powerSet": "Illusion",
+    "prerequisites": "Illumination, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "An area up to 5 spaces wide per the character's rank-centered on anything the character wishes, within 50 spaces—is filled with silence. Those inside the area cannot hear anything, and no one outside of it can hear any noises made inside it. The character must remain within 50 spaces of the area to avoid breaking concentration."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "ba98409134c2014d",
+  "_key": "!items!47530a27-e9b9-47be-810c-4ffae8ba4850"
+}

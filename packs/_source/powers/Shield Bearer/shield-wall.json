@@ -1,0 +1,20 @@
+{
+  "_id": "91e6f045-a4c7-4b0a-b685-42dd2c231f19",
+  "name": "Shield Wall",
+  "type": "power",
+  "system": {
+    "description": "The character stands like an impenetrable wall.",
+    "powerSet": "Shield Bearer",
+    "prerequisites": "Brace for Impact, Rank 3",
+    "action": "Movement",
+    "trigger": "The character is the target of an attack against their Agility defense.",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "",
+    "effect": "Attacks against the character have trouble. The character breaks concentration on this power if they use a movement action."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "926e8d815f4d3fd7",
+  "_key": "!items!91e6f045-a4c7-4b0a-b685-42dd2c231f19"
+}

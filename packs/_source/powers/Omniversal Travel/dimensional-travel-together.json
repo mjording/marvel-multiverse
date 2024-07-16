@@ -1,0 +1,20 @@
+{
+  "_id": "30c0c890-49b3-4250-a753-e7ab8d9e6502",
+  "name": "Dimensional Travel Together",
+  "type": "power",
+  "system": {
+    "description": "The character sends someone to another dimension.",
+    "powerSet": "Omniversal Travel",
+    "prerequisites": "Dimensional Travel, Rank 3",
+    "action": "Standard, movement or reaction",
+    "trigger": "The target is grabbed",
+    "duration": "Instant",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "The character moves to a different dimension, taking any person they are touching with them. If the target does not wish to come along, the character must grab them first. When they move to the other dimension, they can arrive In any place they've been to before. Otherwise, they arrive at the most common entrance to that dimension."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "882fb16dc4a7430e",
+  "_key": "!items!30c0c890-49b3-4250-a753-e7ab8d9e6502"
+}

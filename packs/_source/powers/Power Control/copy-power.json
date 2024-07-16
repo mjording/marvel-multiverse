@@ -1,0 +1,20 @@
+{
+  "_id": "b0d32dcc-7321-4042-b67b-2140b5e550d4",
+  "name": "Copy Power",
+  "type": "power",
+  "system": {
+    "description": "The character duplicates another character's power.",
+    "powerSet": "Power Control",
+    "prerequisites": "Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character picks one power a target within 10 spaces has and duplicates it. They can now use it as if it was always theirs. When the character uses such a power, they must pay any cost normally as well."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9d538083463adac7",
+  "_key": "!items!b0d32dcc-7321-4042-b67b-2140b5e550d4"
+}

@@ -1,0 +1,50 @@
+{
+  "_id": "1ae0cdd1-b8bd-4f0a-a6a1-80b2e5a83bdb",
+  "name": "Shield 4",
+  "type": "power",
+  "system": {
+    "description": "The character's shield protects like a concrete barrier.",
+    "powerSet": "Shield Bearer",
+    "prerequisites": "Shield 3, Rank 6",
+    "action": "Standard or Reaction",
+    "trigger": "The character is attacked.",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "25 Focus",
+    "effect": "The character gains Health Damage Reduction 4."
+  },
+  "flags": {},
+  "effects": [
+    {
+      "name": "Health Damage Reduction 1",
+      "img": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.1ae0cdd1-b8bd-4f0a-a6a1-80b2e5a83bdb",
+      "_id": "4d30dd52335b4e0a",
+      "changes": [
+        {
+          "key": "system.healthDamageReduction",
+          "mode": 2,
+          "value": 4
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!1ae0cdd1-b8bd-4f0a-a6a1-80b2e5a83bdb.4d30dd52335b4e0a"
+    }
+  ],
+  "folder": "926e8d815f4d3fd7",
+  "_key": "!items!1ae0cdd1-b8bd-4f0a-a6a1-80b2e5a83bdb"
+}

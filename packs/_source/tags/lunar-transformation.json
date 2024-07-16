@@ -1,0 +1,13 @@
+{
+  "_id": "36f6eb15-6377-46e9-b0e1-e57fbce3b21e",
+  "name": "Lunar Transformation",
+  "type": "tag",
+  "system": {
+    "description": "On the three nights that the moon is at its fullest and while the moon is above the horizon, the character must transform into a werewolf and is ruled by their animal nature. They cannot help but hunt and attack any people or creatures they come across, no matter if they are friend or foe.",
+    "restriction": "For Werewolves only",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!36f6eb15-6377-46e9-b0e1-e57fbce3b21e"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "84f0cae3-6f4b-454c-b353-5c1e3fa7bcfd",
+  "name": "Return Fire",
+  "type": "power",
+  "system": {
+    "description": "The character responds to an assoult with a hail of shots.",
+    "powerSet": "Ranged Weapons",
+    "prerequisites": "Suppressive Fire, Rank 8",
+    "action": "Reaction",
+    "trigger": "An enemy declares an attack against the character.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character makes an Agility aftack against a target's Vigilance defense, If the attack is a success, apply Health Damage Reduction normally. Any damage taken is then applied to the target's Focus instead, It it's a Fantastie success, the damage is doubled and, if the target takes any focus damage, they are stunned for 1 round."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "82ef84dfce4c7abf",
+  "_key": "!items!84f0cae3-6f4b-454c-b353-5c1e3fa7bcfd"
+}

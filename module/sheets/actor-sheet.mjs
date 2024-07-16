@@ -104,15 +104,11 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
     const powers = {
       "Basic": [],
       "Elemental Control": [],
-      "Dimensional Travel": [],
       "Illusion": [],
       "Magic": [],
-      "Magic-Chaos": [],
-      "Magic-Demonic": [],
-      "Magic-Sorcery": [],
       "Martial Arts": [],
       "Melee Weapons": [],
-      "Multiversal Travel": [],
+      "Omniversal Travel": [],
       "Phasing": [],
       "Plasticity": [],
       "Power Control": [],
@@ -126,7 +122,6 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       "Telekinesis": [],
       "Telepathy": [],
       "Teleportation": [],
-      "Time Travel": [],
       "Weather Control": [],
     };
 
@@ -213,7 +208,8 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
     html.on('click', '.rollable', this._onRoll.bind(this));
     
     html.on('click', '.roll-initiative', (ev) => {
-      this.actor.rollInitiativeDialog({event: ev});
+      this.actor.rollInitiative({createCombatants: true});
+      //this.actor.rollInitiativeDialog({event: ev});
     });
 
     // Drag events for macros.
@@ -261,7 +257,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
   _onDropItemCreate (itemData) {
     if (!this.actor.items.map((item) => item.name).includes(itemData.name)) {
       if ( itemData.type === "occupation" ) {
-        itemData.data.tags.forEach(async (tag) => {
+        itemData.system.tags.forEach(async (tag) => {
           let newItemData = {
             name: tag.name,
             type: "tag",
@@ -269,7 +265,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
           };
           await Item.create(newItemData, {parent: this.actor});
         });
-        itemData.data.traits.forEach(async (trait) => {
+        itemData.system.traits.forEach(async (trait) => {
           let newItemData = {
             name: trait.name,
             type: "trait",
@@ -279,7 +275,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
         });
         return super._onDropItemCreate(itemData);
       } else if ( itemData.type === "origin" ) {
-        itemData.data.tags.forEach(async (tag) => {
+        itemData.system.tags.forEach(async (tag) => {
           let newItemData = {
             name: tag.name,
             type: "tag",

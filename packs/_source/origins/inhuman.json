@@ -1,0 +1,29 @@
+{
+  "_id": "6987d8a4-385e-45fe-8f61-f8aab1c32a50",
+  "name": "Inhuman",
+  "type": "origin",
+  "system": {
+    "description": "The character is a member of Homo sapiens inhumanus, a variant race of humanity genetically engineered by the Kree. For millennia, they lived isolated from the world, but they emerged in recent years, led by Black Bolt. All Inhumans carry a latent gene that can be activated by the Terrigen Mist. The explosion of a Terrigen Bomb spread the mist across the entire planet, revealing that many humans (including Kamala Khan) had Inhuman genetics. Black Bolt was later forced to destroy the Inhumans, leaving few outside of the royal family alive. The character is one of those rare Inhumans who survived.",
+    "examples": "Black Bolt, Crystal, Karnak, Lockjaw, Medusa, Ms. Marvel (Kamala Khan).",
+    "suggestedOccupation": "",
+    "tags": [
+      {
+        "_id": "29d6851e-34b0-4eef-9475-3d09d214e243",
+        "name": "Inhuman Genes",
+        "type": "tag",
+        "system": {
+          "description": "The character has latent Inhuman genes that cause them to develop super-powers when exposed to the Terrigen Mist.",
+          "restriction": "For Inhumans only.",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!29d6851e-34b0-4eef-9475-3d09d214e243"
+      }
+    ],
+    "traits": []
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!6987d8a4-385e-45fe-8f61-f8aab1c32a50"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "78d4e612-5632-4b55-a47c-98a730287164",
+  "name": "Flames of the Faltine",
+  "type": "power",
+  "system": {
+    "description": "The character shoots jets of enchanted fire from their hands.",
+    "powerSet": "Magic",
+    "prerequisites": "Sorcerous, Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character makes an Ego check against the Agility defense of a target in their lime of sight. If the attack is a success, it inflicts regular damage. On a Fantastic success, the target takes double damage and then suffers 5 points of damage at the end of every round until someone uses an action to put out the flames."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8c23e6cd16b9bb49",
+  "_key": "!items!78d4e612-5632-4b55-a47c-98a730287164"
+}

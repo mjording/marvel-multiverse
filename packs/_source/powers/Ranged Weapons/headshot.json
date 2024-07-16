@@ -1,0 +1,20 @@
+{
+  "_id": "b8931e96-80ec-48f1-a19b-ee02f7a64211",
+  "name": "Headshot",
+  "type": "power",
+  "system": {
+    "description": "Ouch!",
+    "powerSet": "Ranged Weapons",
+    "prerequisites": "Stopping Power, Rank 3",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "The character makes a ranged attack with trouble on an enemy within the weapon's range. If the attack is a success, the enemy takes double normal damage. On a Fantastic success, the enemy takes triple damage. Either way, if the enemy suffers any actual damage, they are also stunned for one round."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "82ef84dfce4c7abf",
+  "_key": "!items!b8931e96-80ec-48f1-a19b-ee02f7a64211"
+}

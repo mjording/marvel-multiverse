@@ -1,0 +1,20 @@
+{
+  "_id": "326adaa3-5c60-456f-8fdf-ae9648fe7f8d",
+  "name": "Time Travel",
+  "type": "power",
+  "system": {
+    "description": "The character moves from one time to another.",
+    "powerSet": "Omniversal Travel",
+    "prerequisites": "Rank 3",
+    "action": "Reaction",
+    "trigger": "The character fails a check.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "The character instantly moves from their current time to another time-for instance, from the present to when they move to the other time, they can arrive in any place they've been to before. Otherwise, they arrive at the closest available corresponding space in the other time."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "882fb16dc4a7430e",
+  "_key": "!items!326adaa3-5c60-456f-8fdf-ae9648fe7f8d"
+}

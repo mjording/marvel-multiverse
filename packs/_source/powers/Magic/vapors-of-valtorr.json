@@ -1,0 +1,20 @@
+{
+  "_id": "ea0296f3-e8b7-40bc-877a-c4c23e5d32e4",
+  "name": "Vapors of Valtorr",
+  "type": "power",
+  "system": {
+    "description": "The character weaves an inky mist that can attack those inside it.",
+    "powerSet": "Magic",
+    "prerequisites": "Sorcerous, Rank 3",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "The character creates an inky mist for up to 25 spaces per rank around them that blocks all line of sight beyond 5 spaces. On later turns, the character can have the mist attacks one target at a time, Make an Egp check against the target's Vigilance defense. On a sucsess, the attack does regular damage. On a Fantastic success, it does double damage and blinds the target for one turn."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8c23e6cd16b9bb49",
+  "_key": "!items!ea0296f3-e8b7-40bc-877a-c4c23e5d32e4"
+}

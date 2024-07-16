@@ -26,8 +26,8 @@
       "changes": [
         {
           "key": "system.attributes.init.edge",
-          "mode": 2,
-          "value": 1
+          "mode": 5,
+          "value": true
         }
       ],
       "description": "",

@@ -1,0 +1,20 @@
+{
+  "_id": "253d3c3d-4f3d-403e-abd2-438d18aa25ea",
+  "name": "Possession",
+  "type": "power",
+  "system": {
+    "description": "The character takes over someone else's body.",
+    "powerSet": "Magic",
+    "prerequisites": "Cursed, Rank 5",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "20 focus",
+    "effect": "The character makes an Ego check with trouble against the Ego defense of a character who has no Focus left. On a success, the character takes over the target's body completely. The character's Ego defense is the target number for any checks to end the possession. If the character attempts to harm someone with the possessed body, the target gets to make an Ego check to end the possession. If the target has the Heroic tag, they get an edge on the check. If the character attempts to harm the possessed body, the target gets an edge on the check. If they have the Heroic tag, they get a double edge."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8c23e6cd16b9bb49",
+  "_key": "!items!253d3c3d-4f3d-403e-abd2-438d18aa25ea"
+}

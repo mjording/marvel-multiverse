@@ -3,8 +3,8 @@
   "name": "Alien: Kree",
   "type": "origin",
   "system": {
-    "description": "The character is o member of the Kree, a humanoid race from the planet Hala who formed the interstellar Kree Empire ln the region of space known as the Large Magellanic Cloud. They resemble humans but are stronger and tougher. Many of them have blue skin. but a pood number of them have pink skin. The air on Hala has much more nitragen in it, and Kree who are raised in it {or something like it) have a hard time breathing the air on Earth",
-    "examples": "Captain Marvel (Mae-Vell), Hulkling (half Skeall and half Kree), Magnitron (Yon-Rogp), Ronan the Accuser",
+    "description": "The character is a member of the Kree, a humanoid race from the planet Hala who formed the interstellar Kree Empire in the region of space known as the Large Magellanic Cloud. They resemble humans but are stronger and tougher. Many of them have blue skin, but a good number of them have pink skin. The air on Hala has much more nitrogen in it, and Kree who are raised in it (or something like it) have a hard time breathing the air on Earth.",
+    "examples": "Captain Marvel (Mae-Vell), Hulkling (half Skrull and half Kree), Magnitron (Yon-Rogp), Ronan the Accuser",
     "suggestedOccupation": "Outsider",
     "tags": [
       {
@@ -12,7 +12,9 @@
         "name": "Alien Heritage",
         "type": "tag",
         "system": {
-          "description": "The character or at least ane of their ancestors- is not from Earth. Pick an allen race that they belong to, If they were not raised on Earth, they should consider taking the Outsider occupation."
+          "description": "The character or at least one of their ancestors is not from Earth. Pick an alien race that they belong to. If they were not raised on Earth, they should consider taking the Outsider occupation.",
+          "restriction": "",
+          "rarity": ""
         },
         "flags": {},
         "effects": [],
@@ -23,8 +25,9 @@
         "name": "Extreme Appearance",
         "type": "tag",
         "system": {
-          "description": "The character looks very different than the average person As a mutant, the character is automatically a citizen of the (wherever they happen to be) and cannot easily hide their island-nation of Krakoa and can travel to and from there identity, When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme Appearance is common.",
-          "rarity": "if blue-skinned"
+          "description": "The character looks very different than the average person (wherever they happen to be) and cannot easily hide their identity. When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme appearance is common.",
+          "restriction": "",
+          "rarity": ""
         },
         "flags": {},
         "effects": [],
@@ -37,6 +40,7 @@
         "name": "Breathe Different",
         "type": "trait",
         "system": {
+          "restriction": "",
           "description": "The character cannot breathe Earth's air for long, They lose 1 point of Health for every minute they do not have some sort af assistance to allow them to breathe properly"
         },
         "flags": {},
@@ -48,6 +52,7 @@
         "name": "Enhanced Physique",
         "type": "trait",
         "system": {
+          "restriction": "",
           "description": "The churacter is stronger than regular humans. Treat them as one size bigger for lifting. carrying. swinging and throwing things. (This does not stack with other factors.)"
         },
         "flags": {},

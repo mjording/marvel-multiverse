@@ -1,0 +1,20 @@
+{
+  "_id": "aa019797-4163-44cb-9f9c-84798698b204",
+  "name": "Spin & Throw",
+  "type": "power",
+  "system": {
+    "description": "The character throws a grabbed foe to the ground.",
+    "powerSet": "Martial Arts",
+    "prerequisites": "Grappling Technique, Rank 2",
+    "action": "Reaction",
+    "trigger": "An enemy the character can pick up is grabbed.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character makes a Melee attack against the grabbed foe. If the attack is a success, the enemy takes regular damage and is knocked prone. On a Fantastic success, the enemy takes double damage and is knocked prone, pinned and stunned for one round. Either way, the character can move the enemy to any open space within reach."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9a200a2684a8be54",
+  "_key": "!items!aa019797-4163-44cb-9f9c-84798698b204"
+}

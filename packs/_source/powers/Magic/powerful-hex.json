@@ -1,0 +1,20 @@
+{
+  "_id": "7592bf20-ddc5-4b89-9c7c-7d961b69cc6d",
+  "name": "Powerful Hex",
+  "type": "power",
+  "system": {
+    "description": "The character simulates another power with their magic.",
+    "powerSet": "Magic",
+    "prerequisites": "Chaotic, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Varies",
+    "range": "",
+    "cost": "5 or more focus",
+    "effect": "The character casts a hex that allows them to use any other power that they have the rank to use, even if they would not normally meet the power's other prerequisites. They must pay whatever the regular Focus cost is for that power, plus 5 Focus. If the duration of the used power is permanent, it is concentration for the character instead. If the power is a numbered permanent power (like Mighty 3), the Focus cost is 5 times that number instead. (Mighty 3 would cost 15 Focus.)"
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8c23e6cd16b9bb49",
+  "_key": "!items!7592bf20-ddc5-4b89-9c7c-7d961b69cc6d"
+}

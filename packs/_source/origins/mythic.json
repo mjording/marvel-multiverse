@@ -1,0 +1,29 @@
+{
+  "_id": "5efe81c6-1f93-4fd3-8c8c-1d5335e7e618",
+  "name": "Mythic",
+  "type": "origin",
+  "system": {
+    "description": "The character is a creature or person of myth and legend. While they may appear human, they are something else.",
+    "examples": "Angela (Aldrif Odinsdottir), Fairies, Malekith.",
+    "suggestedOccupation": "Outsider",
+    "tags": [
+      {
+        "_id": "e5396fe1-8f4b-41b7-8886-be6c645f7e26",
+        "name": "Supernatural",
+        "type": "tag",
+        "system": {
+          "description": "The character has powers that are magical or based on something magical",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!e5396fe1-8f4b-41b7-8886-be6c645f7e26"
+      }
+    ],
+    "traits": []
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!5efe81c6-1f93-4fd3-8c8c-1d5335e7e618"
+}

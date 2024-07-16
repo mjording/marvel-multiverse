@@ -1,0 +1,20 @@
+{
+  "_id": "aaddbcae-a29e-4069-8d49-0b2c2dfbb1c0",
+  "name": "Sense Sins",
+  "type": "power",
+  "system": {
+    "description": "The character can look into a person's soul.",
+    "powerSet": "Magic",
+    "prerequisites": "Cursed",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "The character looks into a target's eyes and makes an Ego check against the target's Ego defense. On a success, the character can sense what sorts of horrible things the target has done. On a Fantastic success, they can sense what sorts of horrible things the target intends to do in the immediate future."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8c23e6cd16b9bb49",
+  "_key": "!items!aaddbcae-a29e-4069-8d49-0b2c2dfbb1c0"
+}

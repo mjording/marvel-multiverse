@@ -1,0 +1,20 @@
+{
+  "_id": "d248cfcc-ee47-4db4-94e9-204201203bbd",
+  "name": "Shrink 1",
+  "type": "power",
+  "system": {
+    "description": "The character thinks small.",
+    "powerSet": "Resize",
+    "prerequisites": "",
+    "action": "Standard or reaction",
+    "trigger": "The character is attacked.",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character can shrink down to little size. They can return to their normal size at will."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b74def8c3ea77646",
+  "_key": "!items!d248cfcc-ee47-4db4-94e9-204201203bbd"
+}

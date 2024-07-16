@@ -10,8 +10,8 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
     schema.attributes = new fields.SchemaField({
       init: new fields.SchemaField({
         value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
-        edge: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
-        trouble: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 })
+        edge: new fields.BooleanField({ required: true, initial: false }),
+        trouble: new fields.BooleanField({ required: true, initial: false  })
       }),
       rank: new fields.SchemaField({
         value: new fields.NumberField({ ...requiredInteger, initial: 1 })
@@ -75,7 +75,7 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
       this.abilities[key].label = game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.abilities[key]) ?? key;
     }
 
-    this.attributes.init.value += this.attributes.rank.value + this.abilities.agl.value;
+    this.attributes.init.value += this.abilities.vig.value;
     
     const baseSpeed = (4 + CONFIG.MARVEL_MULTIVERSE.sizes[this.size].speedMod + Math.ceil((this.abilities.agl.value) / 5))
     const halfSpeed = Math.ceil(baseSpeed * 0.5);

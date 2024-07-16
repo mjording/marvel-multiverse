@@ -1,0 +1,20 @@
+{
+  "_id": "574d5c00-7770-4bd1-8965-73a894162b60",
+  "name": "Dance of Death",
+  "type": "power",
+  "system": {
+    "description": "The character spins about, shooting at every enemy around them.",
+    "powerSet": "Ranged Weapons",
+    "prerequisites": "Slow-Motion",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "The character makes an Agility check and compares that against the Agility defense of every enemy within 10 spaces and in their line of sight. Each success does half the regular damage. On a Fantastic success, each enemy takes full damage instead and is bleeding."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "82ef84dfce4c7abf",
+  "_key": "!items!574d5c00-7770-4bd1-8965-73a894162b60"
+}

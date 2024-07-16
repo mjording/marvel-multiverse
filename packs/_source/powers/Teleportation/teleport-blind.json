@@ -1,0 +1,20 @@
+{
+  "_id": "9998356a-a877-42d5-a1e8-b07fcf79a61f",
+  "name": "Teleport Blind",
+  "type": "power",
+  "system": {
+    "description": "The character teleports someplace new to them.",
+    "powerSet": "Teleportation",
+    "prerequisites": "Teleport 1, Rank 3",
+    "action": "Standard, or movement",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "The character teleports to someplace they've never been and never seen, up to 10 times their rank in spaces away. Outside of combat, they can teleport up to 100 times their rank in spaces away. If the character teleports into something solid, they are automatically pushed out of it but take damage from the disruption equal to a standard action check. The damage multiplier is 1 for every space they must move to reach a clear area. If this kills them, their body is trapped inside the material they teleported into."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a7603bf9acca778a",
+  "_key": "!items!9998356a-a877-42d5-a1e8-b07fcf79a61f"
+}

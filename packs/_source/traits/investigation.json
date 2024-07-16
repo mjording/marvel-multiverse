@@ -1,0 +1,12 @@
+{
+  "_id": "8118ada3-5aa4-43aa-9cdd-1ba3f8ce1008",
+  "name": "Investigation",
+  "type": "trait",
+  "system": {
+    "restriction": "",
+    "description": "The character la an expert investigator They have an edge on Vigilance checks to spot clues and on Logic checks related to interpreting clues If they have access to a forensies lab at the time, they gain a second edge on such checks."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!8118ada3-5aa4-43aa-9cdd-1ba3f8ce1008"
+}

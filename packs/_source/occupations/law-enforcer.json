@@ -1,0 +1,66 @@
+{
+  "_id": "21a2b886-3fe0-4ff9-a9ac-a085a2b23a16",
+  "name": "Law Enforcer",
+  "type": "occupation",
+  "system": {
+    "description": "The character works as a law enforcement officer. They could be anything from a town cop to an agent of S.H.I.E.L.D. They have a great deal of authority inside their jurisdiction and often command respect outside of it as well.",
+    "examples": "Nick Fury Jr., Human Torch (Jim Hammond), Maria Hill, Photon (Monica Rambeau).",
+    "tags": [
+      {
+        "_id": "b049f27e-5dcc-4edc-bad8-b9cdf8278979",
+        "name": "Authority",
+        "type": "tag",
+        "system": {
+          "description": "The character has a legal authority of some kind. They might be a commissioned officer, privateer, bounty hunter, doctor, firearms dealer, lawyer, pharmacist, police officer, private investigator, mayor, governor and so on. This tag can be selected multiple times if appropriate.",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!b049f27e-5dcc-4edc-bad8-b9cdf8278979"
+      },
+      {
+        "_id": "2923685c-d460-4d8f-a9d5-21a570f7702f",
+        "name": "Backup",
+        "type": "tag",
+        "system": {
+          "description": "The character is part of an organization-like a police force-that they can call for immediate backup at any time.",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!2923685c-d460-4d8f-a9d5-21a570f7702f"
+      }
+    ],
+    "traits": [
+      {
+        "_id": "1e9ef04f-7007-41f5-b7f8-3486a1f86e84",
+        "name": "Interrogation",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character knows how to ask the right questions in the Haht way They have an edge on ago or Logic checks made when asking questions."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!1e9ef04f-7007-41f5-b7f8-3486a1f86e84"
+      },
+      {
+        "_id": "8118ada3-5aa4-43aa-9cdd-1ba3f8ce1008",
+        "name": "Investigation",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character la an expert investigator They have an edge on Vigilance checks to spot clues and on Logic checks related to interpreting clues If they have access to a forensies lab at the time, they gain a second edge on such checks."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!8118ada3-5aa4-43aa-9cdd-1ba3f8ce1008"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!21a2b886-3fe0-4ff9-a9ac-a085a2b23a16"
+}

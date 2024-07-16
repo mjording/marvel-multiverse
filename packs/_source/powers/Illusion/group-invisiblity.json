@@ -1,0 +1,20 @@
+{
+  "_id": "421aba5d-fac5-4958-827b-47acda8487c9",
+  "name": "Group Invisibility",
+  "type": "power",
+  "system": {
+    "description": "The character can make something else invisible.",
+    "powerSet": "Illusion",
+    "prerequisites": "Extend Invisibility, Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "For every point of Ego defense the character has they can make one person or thing invisible, including themselves. Each of these can be one size bigger than them for every rank they have."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "ba98409134c2014d",
+  "_key": "!items!421aba5d-fac5-4958-827b-47acda8487c9"
+}

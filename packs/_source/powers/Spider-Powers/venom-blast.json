@@ -1,0 +1,20 @@
+{
+  "_id": "ddd9dfdc-343d-42d9-8e84-5fdebcaeb472",
+  "name": "Venom Blast",
+  "type": "power",
+  "system": {
+    "description": "The character exudes pheromones that affect those nearby.",
+    "powerSet": "Spider-Powers",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "5 spaces",
+    "cost": "",
+    "effect": "The character makes a ranged attack. If the attack is a success, it does regulas damage. On a Fantastic success, the attack does double damage, and if the target suffers any actual damage, they are also stunned for one round."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a8b9ae895259d5bf",
+  "_key": "!items!ddd9dfdc-343d-42d9-8e84-5fdebcaeb472 "
+}

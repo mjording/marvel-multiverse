@@ -14,7 +14,37 @@
     "effect": "Any damage multiplier for attacks against the character's Focus is reduced by 4."
   },
   "flags": {},
-  "effects": [],
+  "effects": [
+    {
+      "name": "Focus Damage Reduction 4",
+      "img": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.49943c16-0e63-4e2d-8cfc-c22954e45770",
+      "_id": "c0ec1a1711494d35",
+      "changes": [
+        {
+          "key": "system.focusDamageReduction",
+          "mode": 2,
+          "value": 4
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!49943c16-0e63-4e2d-8cfc-c22954e45770.c0ec1a1711494d35"
+    }
+  ],
   "folder": "bbe663a787c7ec04",
   "_key": "!items!49943c16-0e63-4e2d-8cfc-c22954e45770"
 }

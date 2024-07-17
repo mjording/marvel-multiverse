@@ -11,10 +11,40 @@
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "Any damnge multiplier far nttacks apainst the character's Focus is reduced by 1 Lhis power is part of a battle suit, the power is integrated into a removable helmet. Otherwise, it's a part of the character, If this power stems from armor or anything else removable—like Magneto's helmet—the character should apply the Tech Relinnee trait ta it"
+    "effect": "Any damage multiplier for attacks against the character's Focus is reduced by 1. If this power is part of a battle suit, the power is integrated into a removable helmet. Otherwise, it's a part of the character. If this power stems from armor or anything else removable-like Magneto's helmet the character should apply the Tech Reliance trait to it."
   },
   "flags": {},
-  "effects": [],
+  "effects": [
+    {
+      "name": "Focus Damage Reduction 1",
+      "img": "icons/svg/aura.svg",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "origin": "Item.ae4cb640-e0a0-432d-af32-e00f881cbc4f",
+      "_id": "3e7d7941450141ac",
+      "changes": [
+        {
+          "key": "system.focusDamageReduction",
+          "mode": 2,
+          "value": 1
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "flags": {},
+      "tint": null,
+      "_key": "!items.effects!ae4cb640-e0a0-432d-af32-e00f881cbc4f.3e7d7941450141ac"
+    }
+  ],
   "folder": "bbe663a787c7ec04",
   "_key": "!items!ae4cb640-e0a0-432d-af32-e00f881cbc4f"
 }

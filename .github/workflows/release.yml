@@ -30,7 +30,7 @@ jobs:
         run: |
           TAG=${GITHUB_REF/refs\/tags\//}
           echo "TAG_NAME=$TAG" >> $GITHUB_ENV
-          echo "ZIP_NAME=mmrpg-$TAG.zip" >> $GITHUB_ENV
+          echo "ZIP_NAME=marvel-multiverse-$TAG.zip" >> $GITHUB_ENV
           echo "RELEASE_DOWNLOAD_URL=https://github.com/${{github.repository}}/releases/download/$TAG/marvel-multiverse-$TAG.zip" >> $GITHUB_ENV
           echo "RELEASE_INSTALL_URL=https://github.com/${{github.repository}}/releases/download/$TAG/system.json" >> $GITHUB_ENV
 

@@ -1,6 +1,6 @@
 {
   "name": "marvel-multiverse",
-  "version": "1.4.9",
+  "version": "1.4.6",
   "description": "CSS compiler for the MarvelMultiverse system",
   "scripts": {
     "build:css": "sass src/scss/marvel-multiverse.scss css/marvel-multiverse.css --style=expanded --no-source-map",
@@ -15,7 +15,8 @@
     "postinstall": "npm run build:css && npm run build:db"
   },
   "browserslist": [
-    "last 3 versions"
+    "defaults and fully supports es6-module",
+    "maintained node versions"
   ],
   "author": "mjording",
   "license": "MIT",

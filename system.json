@@ -25,7 +25,7 @@
       "thumbnail": "systems/marvel-multiverse/ui/official/mmrpg-setup-thumbnail.png"
     }
   ],
-  "version": "1.4.9",
+  "version": "1.4.6",
   "compatibility": {
     "minimum": 12,
     "verified": "12.328"
@@ -132,7 +132,7 @@
   ],
   "socket": true,
   "manifest": "https://raw.githubusercontent.com/mjording/marvel-multiverse/main/system.json",
-  "download": "https://github.com/mjording/marvel-multiverse/releases/download/release-1.4.9/marvel-multiverse-release-1.4.9.zip",
+  "download": "https://github.com/mjording/marvel-multiverse/releases/download/release-1.4.6/marvel-multiverse-release-1.4.6.zip",
   "background": "systems/marvel-multiverse/ui/official/mmrpg-background.webp",
   "gridDistance": 5,
   "gridUnits": "ft",

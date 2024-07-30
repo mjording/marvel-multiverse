@@ -131,8 +131,8 @@
     }
   ],
   "socket": true,
-  "manifest": "https://raw.githubusercontent.com/mjording/marvel-multiverse/master/system.json",
-  "download": "This must link to a .zip file of the current version",
+  "manifest": "https://raw.githubusercontent.com/mjording/marvel-multiverse/main/system.json",
+  "download": "https://github.com/mjording/marvel-multiverse/releases/download/release-1.4.5/marvel-multiverse-release-1.4.5",
   "background": "systems/marvel-multiverse/ui/official/mmrpg-background.webp",
   "gridDistance": 5,
   "gridUnits": "ft",

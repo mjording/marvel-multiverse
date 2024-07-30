@@ -3,7 +3,7 @@
   "name": "Attack Stance",
   "type": "power",
   "system": {
-    "description": "The characterenters an aggressive atlack stance, ready to strike in any dirgctian,",
+    "description": "The character enters an aggressive attack stance, ready to strike in any direction.",
     "powerSet": "Martial Arts",
     "prerequisites": "",
     "action": "Standard",

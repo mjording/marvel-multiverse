@@ -11,7 +11,7 @@
     "duration": "Instant",
     "range": "",
     "cost": "5 Focus",
-    "effect": "The character makes aclose atack. fI it succeeds, the enemy takes regular damage and si knocked prone. If it's a Fantastic success, the enemy is stunned for one round too."
+    "effect": "The character makes a close atack. if it succeeds, the enemy takes regular damage and is knocked prone. If it's a Fantastic success, the enemy is stunned for one round too."
   },
   "flags": {},
   "effects": [],

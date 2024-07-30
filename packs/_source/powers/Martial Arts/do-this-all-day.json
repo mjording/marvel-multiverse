@@ -6,12 +6,12 @@
     "description": "The character draws on their inner strength to heal themselves.",
     "powerSet": "Martial Arts",
     "prerequisites": "",
-    "action": "",
+    "action": "Standard",
     "trigger": "",
-    "duration": "",
+    "duration": "Instant",
     "range": "",
-    "cost": "",
-    "effect": ""
+    "cost": "5 or more Focus",
+    "effect": "The character heals 2 points of Health for every point of Focus they spend."
   },
   "folder": "9a200a2684a8be54",
   "_key": "!items!c25a2830-719b-4857-a7a9-dbfc4448a838",

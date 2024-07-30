@@ -3,7 +3,7 @@
   "name": "Always Ready",
   "type": "power",
   "system": {
-    "description": "The character is prepared ot fight.",
+    "description": "The character is prepared to fight.",
     "powerSet": "Martial Arts",
     "prerequisites": "Do This Al Day, Rank 3",
     "action": "",

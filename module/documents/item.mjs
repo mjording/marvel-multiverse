@@ -48,7 +48,7 @@ export class MarvelMultiverseItem extends Item {
         speaker: speaker,
         rollMode: rollMode,
         flavor: label,
-        content: item.system.description ?? '',
+        content: `${item.system.description} ${item.system.effect}`,
       });
     }
     // Otherwise, create a roll and send a chat message from it.

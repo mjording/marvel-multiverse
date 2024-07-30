@@ -175,8 +175,7 @@ export class ChatMessageMarvel extends ChatMessage {
         <section class="card-header description">
           <header class="summary">
             <div class="name-stacked">
-              <span class="title">${roll?.formula}</span>
-              <span class="subtitle">subtest</span>
+              <span class="title">${roll?.formula ?? ''}</span>
             </div>
           </header>
         </section>

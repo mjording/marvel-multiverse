@@ -11,7 +11,9 @@
     "duration": "Instant",
     "range": "",
     "cost": "5 Focus",
-    "effect": "The character makes a Melee attack against the grabbed foe. If the attack is a success, the enemy takes regular damage and is knocked prone. On a Fantastic success, the enemy takes double damage and is knocked prone, pinned and stunned for one round. Either way, the character can move the enemy to any open space within reach."
+    "effect": "The character makes a Melee attack against the grabbed foe. If the attack is a success, the enemy takes regular damage and is knocked prone. On a Fantastic success, the enemy takes double damage and is knocked prone, pinned and stunned for one round. Either way, the character can move the enemy to any open space within reach.",
+    "attackAbility": "mle",
+    "attackTarget": "mle"
   },
   "flags": {},
   "effects": [],

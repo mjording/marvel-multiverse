@@ -11,7 +11,9 @@
     "duration": "Concentration",
     "range": "",
     "cost": "10 or more Focus",
-    "effect": "The character makes an Ego attack against the grabbed target. On a success, they remove one of the target's powers and take it for their own. They can now use that power as if it was always theirs. If the power has a cost, the character must pay it or a minimum of 10 Focus. When the character uses the power, they must pay any cost normally as well."
+    "effect": "The character makes an Ego attack against the grabbed target. On a success, they remove one of the target's powers and take it for their own. They can now use that power as if it was always theirs. If the power has a cost, the character must pay it or a minimum of 10 Focus. When the character uses the power, they must pay any cost normally as well.",
+    "attackAbility": "ego",
+    "attackTarget": "ego"
   },
   "flags": {},
   "effects": [],

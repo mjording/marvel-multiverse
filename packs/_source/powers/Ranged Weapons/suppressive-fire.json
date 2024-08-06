@@ -11,7 +11,9 @@
     "duration": "Instant",
     "range": "",
     "cost": "",
-    "effect": "The character makes an Agility attack against a target's Vigilance defense. If the attack is a success, apply Health Damage Reduction normally. Any damage taken is then applied to the target's Focus instead. If it's a Fantastic success, the damage is doubled, and if the target takes any Focus damage, they are stunned for one round."
+    "effect": "The character makes an Agility attack against a target's Vigilance defense. If the attack is a success, apply Health Damage Reduction normally. Any damage taken is then applied to the target's Focus instead. If it's a Fantastic success, the damage is doubled, and if the target takes any Focus damage, they are stunned for one round.",
+    "attackAbility": "agl",
+    "attackTarget": "vig"
   },
   "flags": {},
   "effects": [],

@@ -5,6 +5,7 @@ export default class MarvelMultiversePower extends MarvelMultiverseItemBase {
   static defineSchema() {
     const fields = foundry.data.fields;
     const schema = super.defineSchema();
+    const requiredInteger = { required: true, nullable: false, integer: true };
 
     schema.powerSet = new fields.StringField({ required: true, initial: "Basic" });
     schema.prerequisites = new fields.StringField({ blank: true });
@@ -15,6 +16,11 @@ export default class MarvelMultiversePower extends MarvelMultiverseItemBase {
     schema.cost = new fields.StringField({ blank: true });
     schema.effect = new fields.StringField({ blank: true });
     schema.modifiers = new fields.ArrayField(new fields.ObjectField());
+    schema.attackAbility = new fields.StringField({blank: true});
+    schema.attackTarget = new fields.StringField({blank: true});
+    schema.attackKind = new fields.StringField({blank: true});
+    schema.attackRange = new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 });
+    schema.attackEdgeMode = new fields.StringField({ blank: true });
     
     return schema;
   }

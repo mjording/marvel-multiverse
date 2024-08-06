@@ -11,7 +11,9 @@
     "duration": "Instant",
     "range": "",
     "cost": "10 Focus",
-    "effect": "The character bakes an Ego check and compares that against the Vigilance defense of every enemy within 5 spaces. Each beaten epesy is blinded for one turn. On a Fantastic success, the flare inflicts regular damage too."
+    "effect": "The character bakes an Ego check and compares that against the Vigilance defense of every enemy within 5 spaces. Each beaten epesy is blinded for one turn. On a Fantastic success, the flare inflicts regular damage too.",
+    "attackAbility": "ego",
+    "attackTarget": "vig"
   },
   "flags": {},
   "effects": [],

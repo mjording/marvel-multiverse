@@ -63,7 +63,7 @@ export class MarvelMultiverseItem extends Item {
       roll.toMessage({
         speaker: speaker,
         rollMode: rollMode,
-        flavor: label,
+        flavor: label
       });
       return roll;
     }

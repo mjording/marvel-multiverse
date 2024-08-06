@@ -11,7 +11,9 @@
     "duration": "Instant",
     "range": "10 spaces",
     "cost": "5 Focus",
-    "effect": "The character makes an Ego check against the Agility defense of a target in their line of sight. If the attack is a success, it inflicts regular damage. On a Fantastic success, the enemy takes double that total damage and is paralyzed by the ice."
+    "effect": "The character makes an Ego check against the Agility defense of a target in their line of sight. If the attack is a success, it inflicts regular damage. On a Fantastic success, the enemy takes double that total damage and is paralyzed by the ice.",
+    "attackAbility": "ego",
+    "attackTarget": "agl"
   },
   "flags": {},
   "effects": [],

@@ -11,7 +11,9 @@
     "duration": "Instant",
     "range": "",
     "cost": "",
-    "effect": "The character makes an Ego check and compares that against the Resilience defense of every character within 10 spaces. Any character the attack succeeds against is deafened. On a Fantastic success, the character is also stunned for one round."
+    "effect": "The character makes an Ego check and compares that against the Resilience defense of every character within 10 spaces. Any character the attack succeeds against is deafened. On a Fantastic success, the character is also stunned for one round.",
+    "attackAbility": "ego",
+    "attackTarget": "res"
   },
   "flags": {},
   "effects": [],

@@ -11,7 +11,9 @@
     "duration": "Concentration",
     "range": "",
     "cost": "10 Focus",
-    "effect": "The character makes an Ego check against the target's Vigilance defense, On a success, the target is stunned and remains that way while the character concentrates. On a Fantastic success, the target falls asleep instead."
+    "effect": "The character makes an Ego check against the target's Vigilance defense, On a success, the target is stunned and remains that way while the character concentrates. On a Fantastic success, the target falls asleep instead.",
+    "attackAbility": "ego",
+    "attackTarget": "vig"
   },
   "flags": {},
   "effects": [],

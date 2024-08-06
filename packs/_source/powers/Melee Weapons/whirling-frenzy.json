@@ -11,7 +11,9 @@
     "duration": "Instant",
     "range": "",
     "cost": "5 Focus",
-    "effect": "The character makes an Agility check and compares it against the Agility defense of every enemy within their reach. If an atack si asuccess, the enemy takes half regular damage. On a Fantastic success, the enemy takes full damage and suffers the weapon's special effect."
+    "effect": "The character makes an Agility check and compares it against the Agility defense of every enemy within their reach. If an atack si asuccess, the enemy takes half regular damage. On a Fantastic success, the enemy takes full damage and suffers the weapon's special effect.",
+    "attackAbility": "agl",
+    "attackTarget": "agl"
   },
   "flags": {},
   "effects": [],

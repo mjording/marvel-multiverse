@@ -11,7 +11,9 @@
     "duration": "Concentration",
     "range": "",
     "cost": "5 Focus",
-    "effect": "The character makes an Ego check against the target's Ego defense. If it succeeds, the target has trouble on all actions. On a Fantastic success, the target loses their next standard action."
+    "effect": "The character makes an Ego check against the target's Ego defense. If it succeeds, the target has trouble on all actions. On a Fantastic success, the target loses their next standard action.",
+    "attackAbility": "ego",
+    "attackTarget": "ego"
   },
   "flags": {},
   "effects": [],

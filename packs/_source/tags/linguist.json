@@ -5,7 +5,8 @@
   "system": {
     "description": "The character is fluent in a language other than their native tongue. This tag can be selected multiple times, once for each language.",
     "restriction": "",
-    "rarity": ""
+    "rarity": "",
+    "multiple": true
   },
   "flags": {},
   "effects": [],

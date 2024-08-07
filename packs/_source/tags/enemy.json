@@ -5,7 +5,8 @@
   "system": {
     "description": "There's someone out there who has sworn to defeat the character. The enemy is of at least the same rank as the character and is obsessed with bringing them down. This tag can be taken multiple times, but it should be reserved for truly obsessed foes.",
     "restriction": "",
-    "rarity": ""
+    "rarity": "",
+    "multiple": true
   },
   "flags": {},
   "effects": [],

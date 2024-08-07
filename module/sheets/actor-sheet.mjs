@@ -251,6 +251,28 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
   }
 
 
+
+  async _createTrait (traitData) {
+    if (!this.actor.items.map((item) => item.name).includes(traitData.name) && !traitData.multiple){
+      let newItemData = {
+        name: trait.name,
+        type: "trait",
+        data: trait.system,
+      };
+      await Item.create(newItemData, {parent: this.actor});
+    }
+  }
+
+  async _createTag (tagData) {
+    if (!this.actor.items.map((item) => item.name).includes(tag.name) && !tag.multiple){
+      let newItemData = {
+        name: tag.name,
+        type: "tag",
+        data: tag.system,
+      };
+      await Item.create(newItemData, {parent: this.actor});
+    }
+  }
   
   /** Fired whenever an embedded document is created.
    */
@@ -258,38 +280,18 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
     if (!this.actor.items.map((item) => item.name).includes(itemData.name)) {
       if ( itemData.type === "occupation" ) {
         itemData.system.tags.forEach(async (tag) => {
-          let newItemData = {
-            name: tag.name,
-            type: "tag",
-            data: tag.system,
-          };
-          await Item.create(newItemData, {parent: this.actor});
+          _createTag(tag);
         });
         itemData.system.traits.forEach(async (trait) => {
-          let newItemData = {
-            name: trait.name,
-            type: "trait",
-            data: trait.system,
-          };
-          await Item.create(newItemData, {parent: this.actor});
+          _createTrait(trait);
         });
         return super._onDropItemCreate(itemData);
       } else if ( itemData.type === "origin" ) {
         itemData.system.tags.forEach(async (tag) => {
-          let newItemData = {
-            name: tag.name,
-            type: "tag",
-            data: tag.system,
-          };
-          await Item.create(newItemData, {parent: this.actor});
+          _createTag(tag);
         });
         itemData.system.traits.forEach(async (trait) => {
-          let newItemData = {
-            name: trait.name,
-            type: "trait",
-            data: trait.system,
-          };
-          await Item.create(newItemData, {parent: this.actor});
+          _createTrait(trait);
         });
         itemData.system.powers.forEach(async (power) => {
           let newItemData = {

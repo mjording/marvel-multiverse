@@ -5,7 +5,8 @@
   "system": {
     "description": "The character is responsible to certain people, places or organizations who rely on them. This tag can be selected multiple times, using many different categories. These include family, school, society, sports, work and so on.",
     "restriction": "",
-    "rarity": ""
+    "rarity": "",
+    "multiple": true
   },
   "flags": {},
   "effects": [],

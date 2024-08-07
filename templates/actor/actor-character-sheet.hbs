@@ -128,7 +128,7 @@
                   <div>{{ ability.defense }}</div>
                 </div>
                 <div class="resource">
-                    <span class="ability-mod rollable" data-roll="{1d6,1dm,1d6}+@abilities.{{key}}.value" data-label="{{ability.label}}">{{numberFormat ability.value decimals=0 sign=true}}</span>
+                    <span class="ability-mod rollable" data-roll="{1d6,1dm,1d6}+@abilities.{{key}}.noncom" data-label="{{ability.label}}">{{numberFormat ability.noncom decimals=0 sign=true}}</span>
                 </div>
               </li>
             {{/each}}

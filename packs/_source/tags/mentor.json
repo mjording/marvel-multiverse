@@ -5,7 +5,8 @@
   "system": {
     "description": "The character knows an older person they can ask for advice, even when it comes to having super-powers. This tag can be selected multiple times.",
     "restriction": "",
-    "rarity": ""
+    "rarity": "",
+    "multiple": true
   },
   "flags": {},
   "effects": [],

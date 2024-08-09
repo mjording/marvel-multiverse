@@ -115,6 +115,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       "Ranged Weapons": [],
       "Resize": [],
       "Shield Bearer": [],
+      "Sixth Sense": [],
       "Spider-Powers": [],
       "Super-Speed": [],
       "Super-Strength": [],
@@ -255,20 +256,20 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
   async _createTrait (traitData) {
     if (!this.actor.items.map((item) => item.name).includes(traitData.name) && !traitData.multiple){
       let newItemData = {
-        name: trait.name,
+        name: traitData.name,
         type: "trait",
-        data: trait.system,
+        data: traitData.system,
       };
       await Item.create(newItemData, {parent: this.actor});
     }
   }
 
   async _createTag (tagData) {
-    if (!this.actor.items.map((item) => item.name).includes(tag.name) && !tag.multiple){
+    if (!this.actor.items.map((item) => item.name).includes(tagData.name) && !tagData.multiple){
       let newItemData = {
-        name: tag.name,
+        name: tagData.name,
         type: "tag",
-        data: tag.system,
+        data: tagData.system,
       };
       await Item.create(newItemData, {parent: this.actor});
     }
@@ -280,18 +281,18 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
     if (!this.actor.items.map((item) => item.name).includes(itemData.name)) {
       if ( itemData.type === "occupation" ) {
         itemData.system.tags.forEach(async (tag) => {
-          _createTag(tag);
+          this._createTag(tag);
         });
         itemData.system.traits.forEach(async (trait) => {
-          _createTrait(trait);
+          this._createTrait(trait);
         });
         return super._onDropItemCreate(itemData);
       } else if ( itemData.type === "origin" ) {
         itemData.system.tags.forEach(async (tag) => {
-          _createTag(tag);
+          this._createTag(tag);
         });
         itemData.system.traits.forEach(async (trait) => {
-          _createTrait(trait);
+          this._createTrait(trait);
         });
         itemData.system.powers.forEach(async (power) => {
           let newItemData = {

@@ -1,0 +1,20 @@
+{
+  "_id": "21f87153-a600-4d8e-90db-38873e3fadfe",
+  "name": "Detect Supers",
+  "type": "power",
+  "system": {
+    "description": "The character can sense super-powered people.",
+    "powerSet": "Sixth Sense",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "",
+    "effect": "The character can sense anyone within a certain distance of them who has super-powers. This reveals a count of the number of people who have powers and their rough distance and direction from the character. It doesn't supply any other information, like name, appearance. the type of powers and so on."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "34a53ed3fba44fe3",
+  "_key": "!items!21f87153-a600-4d8e-90db-38873e3fadfe"
+}

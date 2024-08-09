@@ -21,19 +21,6 @@
         "_key": "!items!e9e650c6-b925-413b-9094-73e7fa6a8a56"
       },
       {
-        "_id": "aaf8e71c-fde2-49e5-b58c-1dfa63f759a2",
-        "name": "Krakoan",
-        "type": "tag",
-        "system": {
-          "description": "As a mutant, the character is automatically a citizen of the island-nation of Krakoa and can travel to and from there freely. Also, if they are killed and the Five—a group of powerful mutants-are able to work together, the character can be resurrected into an identical new body with most of their memories intact. If killed in Otherworld, the character can still be resurrected, but they will be changed in unpredictable ways. Just how this might affect the character is up to the Narrator.",
-          "restriction": "For mutants only.",
-          "rarity": ""
-        },
-        "flags": {},
-        "effects": [],
-        "_key": "!items!aaf8e71c-fde2-49e5-b58c-1dfa63f759a2"
-      },
-      {
         "_id": "27c5a564-fb1b-44de-8e03-7ed2f726fdfc",
         "name": "X-Gene",
         "type": "tag",

@@ -21,6 +21,8 @@ export default class MarvelMultiversePower extends MarvelMultiverseItemBase {
     schema.attackKind = new fields.StringField({blank: true});
     schema.attackRange = new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 });
     schema.attackEdgeMode = new fields.StringField({ blank: true });
+    schema.isElemental = new fields.BooleanField({ required: true, initial: false }),
+    schema.element = new fields.StringField({  blank: true });
     
     return schema;
   }

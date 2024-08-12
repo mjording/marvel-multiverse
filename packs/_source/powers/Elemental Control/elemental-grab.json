@@ -13,7 +13,8 @@
     "cost": "5 Focus",
     "effect": "The character makes an Ego attack against a target's Melee defense within 5 spaces times the character's rank. If the attack is a success, the character grabs the target with their element. On a Fantastic success, the target can also be pinned and suffers the element's special effect. Breaking free requires a successful Melee check against target number 20.",
     "attackAbility": "ego",
-    "attackTarget": "mle"
+    "attackTarget": "mle",
+    "isElemental": true
   },
   "flags": {},
   "effects": [],

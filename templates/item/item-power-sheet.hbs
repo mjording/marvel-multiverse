@@ -16,6 +16,13 @@
     {{!-- Attributes Tab --}}
     <div class="tab power-attributes" data-group="primary" data-tab="attributes">
       {{!-- As you add new fields, add them in here! --}}
+      {{#if system.isElemental }}
+        <div class="resource">
+          <select name="system.element">
+                      {{selectOptions elements selected=system.element labelAttr="label" blank=""}}
+          </select>
+        </div>
+      {{/if}}
       <div class="resource">
         <label for="system.description" class="resource-reduced-label rollable align-left" data-label="description">Description</label>
         <textarea name="system.description" data-dtype="String">{{system.description}}</textarea>

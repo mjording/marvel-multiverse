@@ -52,9 +52,14 @@ export class MarvelMultiverseItemSheet extends ItemSheet {
     context.system = itemData.system;
     context.flags = itemData.flags;
 
+   
     // Prepare active effects for easier access
     context.effects = prepareActiveEffectCategories(this.item.effects);
 
+    // Prepare character data and items.
+    if (itemData.type == 'power') {
+      context.elements = CONFIG.MARVEL_MULTIVERSE.elements
+    }
     return context;
   }
 

@@ -11,7 +11,8 @@
     "duration": "Concentration",
     "range": "",
     "cost": "5 Focus",
-    "effect": "The character infuses their energy into a handheld weapon in their grasp. When the character gets a Fantastic success attacking with the weapon, add the energy's special effect."
+    "effect": "The character infuses their energy into a handheld weapon in their grasp. When the character gets a Fantastic success attacking with the weapon, add the energy's special effect.",
+    "isElemental": true
   },
   "flags": {},
   "effects": [],

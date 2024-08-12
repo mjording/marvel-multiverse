@@ -3,11 +3,11 @@
   "name": "Animal Communication",
   "type": "power",
   "system": {
-    "description": "The character can enter the Astral Plane",
+    "description": "The character can communicate with a type of animal.",
     "powerSet": "Telepathy",
     "prerequisites": "",
     "action": "Standard",
-    "trigger": "The character is harmed by an attack.",
+    "trigger": "",
     "duration": "Concentration",
     "range": "",
     "cost": "",

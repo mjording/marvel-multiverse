@@ -19,12 +19,30 @@
       "Varies": "Varies"
     },
     "Ability": {
-      "Mel": { "long": "Melee", "abbr": "mel" },
-      "Agl": { "long": "Agility", "abbr": "agl" },
-      "Res": { "long": "Resilience", "abbr": "res" },
-      "Vig": { "long": "Vigilance", "abbr": "vig" },
-      "Ego": { "long": "Ego", "abbr": "ego" },
-      "Log": { "long": "Logic", "abbr": "log" }
+      "Mel": {
+        "long": "Melee",
+        "abbr": "mel"
+      },
+      "Agl": {
+        "long": "Agility",
+        "abbr": "agl"
+      },
+      "Res": {
+        "long": "Resilience",
+        "abbr": "res"
+      },
+      "Vig": {
+        "long": "Vigilance",
+        "abbr": "vig"
+      },
+      "Ego": {
+        "long": "Ego",
+        "abbr": "ego"
+      },
+      "Log": {
+        "long": "Logic",
+        "abbr": "log"
+      }
     },
     "SheetLabels": {
       "Actor": "MarvelMultiverse Actor Sheet",
@@ -50,8 +68,23 @@
       "Swim": "Swim",
       "Flight": "Flight",
       "Glide": "Glide",
-      "Swingline": "Swingline", 
+      "Swingline": "Swingline",
       "Levitation": "Levitation"
+    },
+    "Element": {
+      "Air": "Air",
+      "Earth": "Earth",
+      "Electricity": "Electricity",
+      "Energy": "Energy",
+      "Fire": "Fire",
+      "Force": "Force",
+      "Hellfire": "Hellfire",
+      "Ice": "Ice",
+      "Iron": "Iron",
+      "Sound": "Sound",
+      "Water": "Water",
+      "Chemical": "Chemical",
+      "Toxin": "Toxin"
     },
     "Formula": "Formula",
     "AbilityModifier": "Ability Modifier",

@@ -57,6 +57,22 @@ MARVEL_MULTIVERSE.movementTypes = {
   levitation: { label: "MARVEL_MULTIVERSE.Movement.Levitation", active: false },
 }
 
+MARVEL_MULTIVERSE.elements = {
+  air: { label: "Air"},
+  earth: { label: "Earth"},
+  electricity: { label: "Electricity"},
+  energy: { label: "Energy"},
+  fire: { label: "Fire"},
+  force: { label: "Force"},
+  hellfire: { label: "Hellfire"},
+  ice: { label: "Ice"},
+  iron: { label: "Iron"},
+  sound: { label: "Sound"},
+  water: { label: "Water"},
+  toxin: { label: "Toxin"},
+  chemical: { label: "Chemical"},
+}
+
 // ASCII Artwork
 MARVEL_MULTIVERSE.ASCII = `
 =ccccc,      ,cccc       ccccc      ,cccc,  ?$$$$$$$,  ,ccc,   -ccc

@@ -11,7 +11,8 @@
     "duration": "Instant",
     "range": "",
     "cost": "Varies",
-    "effect": "The character can transfer any Health damage that gets through an elemental power that grants damage protection to their focus instead, leaving the protection intact."
+    "effect": "The character can transfer any Health damage that gets through an elemental power that grants damage protection to their focus instead, leaving the protection intact.",
+    "isElemental": true
   },
   "flags": {},
   "effects": [],

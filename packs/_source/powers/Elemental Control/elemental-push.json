@@ -13,7 +13,8 @@
     "cost": "10 Focus",
     "effect": "The character makes an Ego atlack apainst the tarpet's Agility defense. Ifthe attack succeeds. the character can move the target in any direction. up to space times the character’s rank. On a Faniastic success, the tarpet also takes regular damage, is knocked prone and suffers the clement’s special effect.",
     "attackAbility": "ego",
-    "attackTarget": "agl"
+    "attackTarget": "agl",
+    "isElemental": true
   },
   "flags": {},
   "effects": [],

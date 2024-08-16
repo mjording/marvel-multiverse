@@ -11,7 +11,9 @@
     "duration": "Instant",
     "range": "",
     "cost": "",
-    "effect": "The character makes a close attack against an enemy. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and is knocked prone."
+    "effect": "The character makes a close attack against an enemy. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and is knocked prone.",
+    "attackAbility": "mle",
+    "attackTarget": "mle"
   },
   "flags": {},
   "effects": [],

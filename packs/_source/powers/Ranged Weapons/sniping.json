@@ -11,7 +11,9 @@
     "duration": "Instant",
     "range": "",
     "cost": "5 Focus",
-    "effect": "The character makes a ranged attack against an enemy at least 20 spaces away. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes triple damage instead."
+    "effect": "The character makes a ranged attack against an enemy at least 20 spaces away. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes triple damage instead.",
+    "attackAbility": "agl",
+    "attackTarget": "agl"
   },
   "flags": {},
   "effects": [],

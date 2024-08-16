@@ -11,7 +11,9 @@
     "duration": "Instant",
     "range": "10 spaces times the character's rank",
     "cost": "10 Focus",
-    "effect": "The character makes a ranged attack on a target. If the attack is a success, the target takes regular damage. On a Fantastic success, the target is also knocked prone, and the character can make an extra attack on another target, adding the extra range between the two targets to the new attack roll. This can be repeated until an attack is not a Fantastic success. When the attacks are over, the shield then bounces back to the character."
+    "effect": "The character makes a ranged attack on a target. If the attack is a success, the target takes regular damage. On a Fantastic success, the target is also knocked prone, and the character can make an extra attack on another target, adding the extra range between the two targets to the new attack roll. This can be repeated until an attack is not a Fantastic success. When the attacks are over, the shield then bounces back to the character.",
+    "attackAbility": "agl",
+    "attackTarget": "agl"
   },
   "flags": {},
   "effects": [],

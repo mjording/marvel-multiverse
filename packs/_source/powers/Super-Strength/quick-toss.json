@@ -11,7 +11,9 @@
     "duration": "Instant",
     "range": "",
     "cost": "10 Focus",
-    "effect": "The character throws the grabbed person at another target. The range is determined by the level of the character's Mighty power and the grabbed person's size. The character makes a ranged attack against the target. Afailure inflicts regular damage on the thrown person, who falls prone within 1space of the target. fI the attack is a success, the target takes regular damage too. On a Fantastic success, the target is knocked prone as well."
+    "effect": "The character throws the grabbed person at another target. The range is determined by the level of the character's Mighty power and the grabbed person's size. The character makes a ranged attack against the target. A failure inflicts regular damage on the thrown person, who falls prone within 1space of the target. fI the attack is a success, the target takes regular damage too. On a Fantastic success, the target is knocked prone as well.",
+    "attackAbility": "agl",
+    "attackTarget": "agl"
   },
   "flags": {},
   "effects": [],

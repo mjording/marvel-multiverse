@@ -1,0 +1,13 @@
+{
+  "_id": "71e3632e-df5e-45bb-9fd1-8a55c7431c73",
+  "name": "Mutant Associate",
+  "type": "tag",
+  "system": {
+    "description": "Much of the public believes-or has believed-the chararter to be a mutant. While this isn't technically true the character is lumped in with other mutants in moat people's minds.",
+    "restriction": "For non mutents or those with the Mutant Artifical origin.",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!71e3632e-df5e-45bb-9fd1-8a55c7431c73"
+}

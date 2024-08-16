@@ -12,7 +12,10 @@
     "range": "10 spaces",
     "cost": "5 or more Focus",
     "effect": "The character makes a ranged attack with an edge at an enemy in line of sight. For this attack, add +1 to the character's Agility damage bonus for every 2 points of Focus they spend. On a success, an affected target takes that total damage. On a Fantastic success, an affected target takes double that total damage and suffers the elemental type's special effect.",
-    "isElemental": true
+    "isElemental": true,
+    "attackAbility": "agl",
+    "attackTarget": "agl",
+    "attackEdgeMode": "edge"
   },
   "flags": {},
   "effects": [],

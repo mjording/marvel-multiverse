@@ -1,0 +1,42 @@
+{
+  "_id": "19517446-4d7c-4aa4-bb24-a03e5c9344c3",
+  "name": "Mutant: Artificial",
+  "type": "origin",
+  "system": {
+    "description": "The charaeter's powers spring from DNA manipulation-or a natural, inherent condition-that makes them appear to be a true mutant. They believe themselves to be a mutant, or they did for years. However, they were not born with an X Gene.",
+    "examples": "Deadpool, Mister Sinister, Quicksilver, Scarlet Witch",
+    "suggestedOccupation": "Outsider",
+    "tags": [
+      {
+        "_id": "e9e650c6-b925-413b-9094-73e7fa6a8a56",
+        "name": "Hounded",
+        "type": "tag",
+        "system": {
+          "description": "The characier is a member of a group of people who are persecuted for simply being themselves.",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!e9e650c6-b925-413b-9094-73e7fa6a8a56"
+      },
+      {
+        "_id": "71e3632e-df5e-45bb-9fd1-8a55c7431c73",
+        "name": "Mutant Associate",
+        "type": "tag",
+        "system": {
+          "description": "Much of the public believes-or has believed-the chararter to be a mutant. While this isn't technically true the character is lumped in with other mutants in moat people's minds.",
+          "restriction": "For non mutents or those with the Mutant Artifical origin.",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!71e3632e-df5e-45bb-9fd1-8a55c7431c73"
+      }
+    ],
+    "traits": []
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!19517446-4d7c-4aa4-bb24-a03e5c9344c3"
+}

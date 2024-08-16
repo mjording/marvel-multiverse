@@ -11,7 +11,9 @@
     "duration": "Instant",
     "range": "",
     "cost": "10 Focus",
-    "effect": "The character makes a close attack against two enemies within reach. If an attack is a success, the enemy takes regular damage. If an attack is a Fantastic success, the enemy takes double damage and is knocked prone."
+    "effect": "The character makes a close attack against two enemies within reach. If an attack is a success, the enemy takes regular damage. If an attack is a Fantastic success, the enemy takes double damage and is knocked prone.",
+    "attackAbility": "mle",
+    "attackTarget": "mle"
   },
   "flags": {},
   "effects": [],

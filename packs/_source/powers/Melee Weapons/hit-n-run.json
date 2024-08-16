@@ -11,7 +11,10 @@
     "duration": "Instant",
     "range": "",
     "cost": "",
-    "effect": "The character makes a close attack with an edge on an enemy. If the attack is a success, the enemy takes regular damage, and the character can make an additional movement up to half their Run Speed for free. On a Fantastic success, the enemy takes double damage and suffers the weapon's special effect."
+    "effect": "The character makes a close attack with an edge on an enemy. If the attack is a success, the enemy takes regular damage, and the character can make an additional movement up to half their Run Speed for free. On a Fantastic success, the enemy takes double damage and suffers the weapon's special effect.",
+    "attackAbility": "mle",
+    "attackTarget": "mle",
+    "attackEdgeMode": "edge"
   },
   "flags": {},
   "effects": [],

@@ -11,7 +11,9 @@
     "duration": "Instant",
     "range": "10 spaces",
     "cost": "",
-    "effect": "The character makes a ranged attack on an enemy. If the attack is a success, the web paralyzes the enemy. On a Fantastic success, the enemy is also pinned. Breaking free from webbing requires a Melee check (target number 20)."
+    "effect": "The character makes a ranged attack on an enemy. If the attack is a success, the web paralyzes the enemy. On a Fantastic success, the enemy is also pinned. Breaking free from webbing requires a Melee check (target number 20).",
+    "attackAbility": "agl",
+    "attackTarget": "agl"
   },
   "flags": {},
   "effects": [],

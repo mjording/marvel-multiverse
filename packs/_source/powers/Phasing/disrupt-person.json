@@ -11,7 +11,9 @@
     "duration": "Instant",
     "range": "",
     "cost": "10 Focus",
-    "effect": "The character becomes the slightest bit solid while phasing themselves or a phased weapon through someone. They make a close attack. On a success, the attack does normal damage, ignoring any Health Damage Reduction. On a Fantastic success, the attack does double damage instead, ignoring any Health Damage Reduction, and the target is stunned for one round."
+    "effect": "The character becomes the slightest bit solid while phasing themselves or a phased weapon through someone. They make a close attack. On a success, the attack does normal damage, ignoring any Health Damage Reduction. On a Fantastic success, the attack does double damage instead, ignoring any Health Damage Reduction, and the target is stunned for one round.",
+    "attackAbility": "mle",
+    "attackTarget": "mle"
   },
   "flags": {},
   "effects": [],

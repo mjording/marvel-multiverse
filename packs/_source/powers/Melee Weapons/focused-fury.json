@@ -11,7 +11,10 @@
     "duration": "Instant",
     "range": "",
     "cost": "5 or more Focus",
-    "effect": "The character makes a close attack with an edge. For this attack, add +1 to the character's Melee damage bonus for every 2 points of Focus they spend. On a success, an affected target takes that total damage. On a Fantastic success, an affected target takes double that total damage and suffers the weapon's special effect."
+    "effect": "The character makes a close attack with an edge. For this attack, add +1 to the character's Melee damage bonus for every 2 points of Focus they spend. On a success, an affected target takes that total damage. On a Fantastic success, an affected target takes double that total damage and suffers the weapon's special effect.",
+    "attackAbility": "mle",
+    "attackTarget": "mle",
+    "attackEdgeMode": "edge"
   },
   "flags": {},
   "effects": [],

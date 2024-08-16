@@ -11,7 +11,9 @@
     "duration": "Instant",
     "range": "10 spaces",
     "cost": "5 Focus",
-    "effect": "The character makes a ranged attack on an enemy. If the attack is a success, the character grabs the target with a web. On a Fantastic success, the target can also be pinned. Breaking free from webbing requires a Melee check (target number 20)."
+    "effect": "The character makes a ranged attack on an enemy. If the attack is a success, the character grabs the target with a web. On a Fantastic success, the target can also be pinned. Breaking free from webbing requires a Melee check (target number 20).",
+    "attackAbility": "agl",
+    "attackTarget": "agl"
   },
   "flags": {},
   "effects": [],

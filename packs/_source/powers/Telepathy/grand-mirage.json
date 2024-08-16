@@ -1,0 +1,20 @@
+{
+  "_id": "e87acfc5-4885-4f49-96d2-ce2848ac3d80",
+  "name": "Grand Mirage",
+  "type": "power",
+  "system": {
+    "description": "The character can make a mirage appear in à group's mind.",
+    "powerSet": "Telepathy",
+    "prerequisites": "Mirage, Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "The character creates a full-sensory mirage that affects everyone in a Telepathic Network they set up who is also in the same locale. The mirage can be of anything the character desires, and it can move freely."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e745fc9dcc37bb2",
+  "_key": "!items!e87acfc5-4885-4f49-96d2-ce2848ac3d80"
+}

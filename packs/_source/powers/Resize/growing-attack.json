@@ -11,7 +11,10 @@
     "duration": "Instant",
     "range": "",
     "cost": "5 Focus",
-    "effect": "The character makes a close attack with an edge. If the attack succeeds they do regular damage for the size they are growing to. On a Fantastic success, they do double damage and stun the target."
+    "effect": "The character makes a close attack with an edge. If the attack succeeds they do regular damage for the size they are growing to. On a Fantastic success, they do double damage and stun the target.",
+    "attackAbility": "mle",
+    "attackTarget": "mle",
+    "attackEdgeMode": "edge"
   },
   "flags": {},
   "effects": [],

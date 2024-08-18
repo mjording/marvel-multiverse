@@ -62,6 +62,7 @@ Hooks.once('init', function () {
   CONFIG.Item.documentClass = MarvelMultiverseItem;
   CONFIG.Item.dataModels = {
     item: models.MarvelMultiverseItem,
+    weapon: models.MarvelMultiverseWeapon,
     trait: models.MarvelMultiverseTrait,
     origin: models.MarvelMultiverseOrigin,
     occupation: models.MarvelMultiverseOccupation,

@@ -1,0 +1,40 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </div>
+  </header>
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="attributes">Attributes</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+    
+    {{!-- Attributes Tab --}}
+    <div class="tab tag-attributes" data-group="primary" data-tab="attributes">
+      {{!-- As you add new fields, add them in here! --}}
+      <div class="resource">
+        <label for="system.description" class="resource-reduced-label rollable align-left" data-label="description">Description</label>
+        <textarea name="system.description" data-dtype="String">{{system.description}}</textarea>
+      </div>
+      <div class="resource">
+        <label class="resource-label">equipped</label>
+        <input type="checkbox" id="equipped" name="system.equipped"  {{ checked system.equipped }}>
+      </div>
+      <div class="resource">
+        <label class="resource-label">Roll Formula:</label>
+        <span>{{system.formula}}</span>
+        <input type="text" name="system.formula" value="{{system.formula}}" data-dtype="String" />
+      </div>
+       <div class="resource">
+        <label class="resource-label">Damage Multiplier Bonus</label>
+        <input type="text" name="system.damageMultiplierBonus" value="{{system.damageMultiplierBonus}}" data-dtype="String"/>
+      </div>
+    </div>
+  </section>
+
+</form>
+{{log system}}

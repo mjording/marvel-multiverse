@@ -234,8 +234,10 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
     const header = event.currentTarget;
     // Get the type of item to create.
     const type = header.dataset.type;
+    console.log(header.dataset.type);
     // Grab any data associated with this control.
-    const data = duplicate(header.dataset);
+    console.log(Object.keys(header.dataset));
+    const data = foundry.utils.duplicate(header.dataset);
     // Initialize a default name.
     const name = `New ${type.capitalize()}`;
     // Prepare the item object.

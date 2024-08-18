@@ -6,18 +6,12 @@ export default class MarvelMultiverseWeapon extends MarvelMultiverseItemBase {
         const requiredInteger = { required: true, nullable: false, integer: true };
         const schema = super.defineSchema();
     
+        schema.melee = new fields.BooleanField({ required: true, initial: true });
         schema.range = new fields.StringField({ blank: true });
         schema.damageMultiplierBonus = new fields.StringField({ blank: true });
         schema.rule = new fields.StringField({ blank: true });
 
-        // Break down roll formula into three independent fields
-        schema.roll = new fields.SchemaField({
-            diceNum: new fields.NumberField({ ...requiredInteger, initial: 1, min: 1 }),
-            diceSize: new fields.StringField({ initial: "{1d6,1dm,1d6}" }),
-            diceBonus: new fields.StringField({ initial: "+@mle.value+ceil(@rank / 2)" })
-        })
-    
-        schema.formula = new fields.StringField({ blank: true });
+        schema.equipped = new fields.BooleanField({ required: true, initial: false });
         
         return schema;
     }

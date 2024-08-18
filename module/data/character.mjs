@@ -52,6 +52,7 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
 
     schema.base = new fields.StringField({ required: true, blank: true });
     schema.occupations = new fields.ArrayField(new fields.ObjectField());
+    schema.weapons = new fields.ArrayField(new fields.ObjectField());
     schema.origins = new fields.ArrayField(new fields.ObjectField());
     schema.tags = new fields.ArrayField(new fields.ObjectField());
     schema.traits = new fields.ArrayField(new fields.ObjectField());

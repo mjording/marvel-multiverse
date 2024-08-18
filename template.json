@@ -1,10 +1,14 @@
 {
   "Actor": {
-    "types": ["character", "npc"]
+    "types": [
+      "character",
+      "npc"
+    ]
   },
   "Item": {
     "types": [
       "item",
+      "weapon",
       "trait",
       "tag",
       "origin",

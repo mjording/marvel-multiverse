@@ -34,6 +34,7 @@
         {
           "key": "system.movement.run.calc",
           "mode": 1,
+          "rankMode": 1,
           "value": "rank"
         },
         {

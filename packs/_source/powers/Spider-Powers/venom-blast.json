@@ -3,7 +3,7 @@
   "name": "Venom Blast",
   "type": "power",
   "system": {
-    "description": "The character exudes pheromones that affect those nearby.",
+    "description": "The character unleashes a bioelectric shock",
     "powerSet": "Spider-Powers",
     "prerequisites": "",
     "action": "Standard",

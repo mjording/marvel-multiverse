@@ -45,6 +45,7 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
         value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
         noncom: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
         active: new fields.BooleanField({ required: true, initial: CONFIG.MARVEL_MULTIVERSE.movementTypes[movement].active }),
+        rankMode: new fields.StringField({ required: true, blank: true }),
         calc: new fields.StringField({initial: "default"})
       });
       return obj;
@@ -85,10 +86,10 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
     const speedBaseVals = { run: baseSpeed, climb: halfSpeed, swim: halfSpeed, jump: halfSpeed, flight: (baseSpeed * this.attributes.rank.value), glide: (baseSpeed * 2), swingline: (baseSpeed * 3), levitate: baseSpeed };
     for (const key in this.movement) {
       this.movement[key].label = game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.movementTypes[key].label) ?? k;
-
       switch (this.movement[key].calc) {
         case "default":
           this.movement[key].value = speedBaseVals[key]? speedBaseVals[key] : 0;
+          this.movement[key].noncom = this.movement[key].value;
           break;
         case "half":
           this.movement[key].value = Math.ceil(speedBaseVals[key] * 0.5);
@@ -101,17 +102,18 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
           break;
         case "runspeed":
           this.movement[key].value = this.movement.run.value;
+          break;
         case "rank":
-          if (this.movement[key].mode === foundry.CONST.ACTIVE_EFFECT_MODES.MULTIPLY){
+          if (this.movement[key].rankMode === foundry.CONST.ACTIVE_EFFECT_MODES.MULTIPLY){
             this.movement[key].value *= this.attributes.rank.value;
-          }else if(this.movement[key].mode === foundry.CONST.ACTIVE_EFFECT_MODES.ADD){
+          }else if(this.movement[key].rankMode === foundry.CONST.ACTIVE_EFFECT_MODES.ADD){
             this.movement[key].value += this.attributes.rank.value;
-          }else if(this.movement[key].mode === foundry.CONST.ACTIVE_EFFECT_MODES.OVERRIDE){
+          }else if(this.movement[key].rankMode === foundry.CONST.ACTIVE_EFFECT_MODES.OVERRIDE){
             this.movement[key].value = this.attributes.rank.value;
           }
+          break;
         default:
-          this.movement[key].value += speedBaseVals[key]? speedBaseVals[key] : 0;
-          this.movement[key].noncom += this.movement[key].value;
+          console.log(`case missing for key: ${key}, calc: ${this.movement[key].calc}`);
       }
     }
   }

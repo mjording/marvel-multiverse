@@ -3,7 +3,7 @@
   "name": "Webgrabbing",
   "type": "power",
   "system": {
-    "description": "The character exudes pheromones that affect those nearby.",
+    "description": "The character snares a foe in a web.",
     "powerSet": "Spider-Powers",
     "prerequisites": "Webcasting, Rank 2",
     "action": "Standard",

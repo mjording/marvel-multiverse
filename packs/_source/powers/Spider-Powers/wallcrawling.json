@@ -3,7 +3,7 @@
   "name": "Wallcrawling",
   "type": "power",
   "system": {
-    "description": "The character exudes pheromones that affect those nearby.",
+    "description": "The character can climb like a spider.",
     "powerSet": "Spider-Powers",
     "prerequisites": "",
     "action": "",
@@ -16,7 +16,7 @@
   "flags": {},
   "effects": [
     {
-      "name": "climb at run speed",
+      "name": "climb at runspeed",
       "img": "icons/svg/aura.svg",
       "duration": {
         "startTime": null,
@@ -37,7 +37,7 @@
           "value": "runspeed"
         }
       ],
-      "description": "",
+      "description": "<p><span style='font-family:Roboto Condensed'>Climb movement speed is equal to regular (run) speed.</span></p>",
       "transfer": true,
       "statuses": [],
       "flags": {},
@@ -46,5 +46,5 @@
     }
   ],
   "folder": "a8b9ae895259d5bf",
-  "_key": "!items!85dd0470-438d-4851-8044-a93db49f2fcc "
+  "_key": "!items!85dd0470-438d-4851-8044-a93db49f2fcc"
 }

@@ -3,7 +3,7 @@
   "name": "Spider-Strike",
   "type": "power",
   "system": {
-    "description": "The character exudes pheromones that affect those nearby.",
+    "description": "The character strikes in a blur of punches, kicks and webbing.",
     "powerSet": "Spider-Powers",
     "prerequisites": "",
     "action": "Standard",

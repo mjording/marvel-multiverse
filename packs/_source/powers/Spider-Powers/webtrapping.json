@@ -3,7 +3,7 @@
   "name": "Webtrapping",
   "type": "power",
   "system": {
-    "description": "The character exudes pheromones that affect those nearby.",
+    "description": "The character creates a giant web to trap those within it.",
     "powerSet": "Spider-Powers",
     "prerequisites": "Webgrabbing, Rank 3",
     "action": "Standard",

@@ -58,7 +58,9 @@ export class MarvelMultiverseItemSheet extends ItemSheet {
 
     // Prepare character data and items.
     if (itemData.type == 'power') {
-      context.elements = CONFIG.MARVEL_MULTIVERSE.elements
+      context.elements = CONFIG.MARVEL_MULTIVERSE.elements;
+      context.attackKinds = ['ranged', 'close'];
+      context.attackEdgeModes = ['edge','normal', 'trouble'];
     }
     return context;
   }

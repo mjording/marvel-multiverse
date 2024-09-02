@@ -1,0 +1,12 @@
+{
+  "_id": "1fd487cd-04d5-4fed-8c25-a6061d1c8e06",
+  "name": "Infector",
+  "type": "trait",
+  "system": {
+    "restriction": "",
+    "description": "The character can infect a target with a disease, which muy be chosen along with the trait. Examples include: Brood implantation, Techno-Organic virus, Transmode virus. See the Infected condition (X-Men expansion p 139) for details about how Infection works, and the Infections and Possessions section (p: 146) for the effects of the above diseases."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!1fd487cd-04d5-4fed-8c25-a6061d1c8e06"
+}

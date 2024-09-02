@@ -1,0 +1,20 @@
+{
+  "_id": "6af340c6-d54d-449f-a0ee-ccffa1f89256",
+  "name": "Danger Sense",
+  "type": "power",
+  "system": {
+    "description": "The character can feel danger on the way.",
+    "powerSet": "Sixth Sense",
+    "prerequisites": "Precognition 1. Rank 2",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "Even if the character doesn't get a Fantastic result on their initiative check, they get a turn during the bonus round of any combat they are in. This works even if no one else in the combat can act in the bonus round"
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "34a53ed3fba44fe3",
+  "_key": "!items!6af340c6-d54d-449f-a0ee-ccffa1f89256"
+}

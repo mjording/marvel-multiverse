@@ -11,7 +11,8 @@
     "duration": "Concentration",
     "range": "",
     "cost": "10 Focus",
-    "effect": "It starts to storm in an area up to 5 miles across times the character's rank, centered on the character, All ranges and all speeds are cut in half."
+    "effect": "It starts to storm in an area up to 5 miles across times the character's rank, centered on the character, All ranges and all speeds are cut in half.",
+    "numbered": 2
   },
   "flags": {},
   "effects": [],

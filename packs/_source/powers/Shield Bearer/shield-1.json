@@ -11,7 +11,8 @@
     "duration": "Concentration",
     "range": "",
     "cost": "",
-    "effect": "The character gains Health Damage Reduction 1."
+    "effect": "The character gains Health Damage Reduction 1.",
+    "numbered": 1
   },
   "flags": {},
   "effects": [

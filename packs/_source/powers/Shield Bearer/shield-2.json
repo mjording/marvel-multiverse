@@ -11,7 +11,8 @@
     "duration": "Concentration",
     "range": "",
     "cost": "5 Focus",
-    "effect": "The character gains Health Damage Reduction 2."
+    "effect": "The character gains Health Damage Reduction 2.",
+    "numbered": 2
   },
   "flags": {},
   "effects": [

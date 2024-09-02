@@ -56,11 +56,28 @@ export class MarvelMultiverseItemSheet extends ItemSheet {
     // Prepare active effects for easier access
     context.effects = prepareActiveEffectCategories(this.item.effects);
 
-    // Prepare character data and items.
+    // Prepare data and items.
     if (itemData.type == 'power') {
-      context.elements = CONFIG.MARVEL_MULTIVERSE.elements;
-      context.attackKinds = ['ranged', 'close'];
-      context.attackEdgeModes = ['edge','normal', 'trouble'];
+      context.elements = Object.fromEntries(Object.keys(CONFIG.MARVEL_MULTIVERSE.elements).map((k) => [k,CONFIG.MARVEL_MULTIVERSE.elements[k].label]));
+      context.selectedElement = context.system.element;
+      
+      context.attackKinds = {
+        ranged: {label: 'Ranged'},
+        close: {label: 'Close'}
+      };
+      context.attackEdgeModes = {
+        edge: {label: 'Edge'},
+        normal: {label: 'Normal'},
+        trouble: {label: 'Trouble'}
+      };
+      context.abilities = { 
+        mle: {label: game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.abilities['mle'])},
+        agl: {label: game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.abilities['agl'])},
+        res: {label: game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.abilities['res'])},
+        vig: {label: game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.abilities['vig'])},
+        ego: {label: game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.abilities['ego'])},
+        log: {label: game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.abilities['log'])}
+      };
     }
     return context;
   }

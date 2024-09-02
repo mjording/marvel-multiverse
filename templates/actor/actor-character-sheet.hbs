@@ -32,6 +32,7 @@
               <label for="system.karma.value" class="resource-label">Karma</label>
               <div class="resource-content flexcol attributes attributes-karma">
                 <input type="number" name="system.karma.value" value="{{system.karma.value}}" data-dtype="Number"/>
+                <input type="hidden" name="system.karma.max" value="{{system.karma.value}}"/>
               </div>
             </div>
           </div>
@@ -41,6 +42,7 @@
               <label for="system.health.value" class="resource-label">Health</label>
               <div class="resource-content flexcol attributes attributes-health">
                 <input type="number" name="system.health.value" value="{{system.health.value}}" data-dtype="Number"/>
+                <input type="hidden" name="system.health.max" value="{{system.health.value}}"/>
               </div>
             </div>
             <div class="resource flex-group-center">
@@ -56,6 +58,7 @@
               <label for="system.focus.value" class="resource-label">Focus</label>
               <div class="resource-content flexcol attributes attributes-focus">
                 <input type="number" name="system.focus.value" value="{{system.focus.value}}" data-dtype="Number"/>
+                <input type="hidden" name="system.focus.max" value="{{system.focus.value}}"/>
               </div>
             </div>
             <div class="resource flex-group-center">
@@ -200,7 +203,13 @@
             </div>
           </div>
           <section class="resources actor-powers">
-            <h3>Powers</h3>
+            <h3>Powers  <span class="header-control">
+                <label>Default Element</label>
+                <select name="system.defaultElement">
+                  {{selectOptions elements selected=system.defaultElement labelAttr="label" blank=""}}
+                </select>
+              </span>
+            </h3>
             {{> "systems/marvel-multiverse/templates/actor/parts/actor-powers.hbs"}}
           </section>
         </div>

@@ -11,12 +11,13 @@
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "The character gains Health Damage Reduction 4."
+    "effect": "The character gains Health Damage Reduction 4.",
+    "numbered": 4
   },
   "flags": {},
   "effects": [
     {
-      "name": "Health Damage Reduction 3",
+      "name": "Health Damage Reduction 4",
       "img": "icons/svg/aura.svg",
       "duration": {
         "startTime": null,
@@ -29,12 +30,12 @@
       },
       "disabled": false,
       "origin": "Item.9b7abb0a-b978-48f4-ae69-3f49f7b2d148",
-      "_id": "9a49ba6b895adf17",
+      "_id": "36c021ad96074b8d",
       "changes": [
         {
           "key": "system.healthDamageReduction",
           "mode": 2,
-          "value": 3
+          "value": 4
         }
       ],
       "description": "",
@@ -42,7 +43,7 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!9b7abb0a-b978-48f4-ae69-3f49f7b2d148.9a49ba6b895adf17"
+      "_key": "!items.effects!9b7abb0a-b978-48f4-ae69-3f49f7b2d148.36c021ad96074b8d"
     }
   ],
   "folder": "bbe663a787c7ec04",

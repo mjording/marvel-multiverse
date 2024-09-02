@@ -11,7 +11,8 @@
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "Any damage multiplier for attacks against the character's Focus is reduced by 4."
+    "effect": "Any damage multiplier for attacks against the character's Focus is reduced by 4.",
+    "numbered": 4
   },
   "flags": {},
   "effects": [

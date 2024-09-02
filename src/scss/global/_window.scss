@@ -17,28 +17,6 @@
   transition: grid-template-rows 250ms ease;
 }
 
-.fantastic {
-  border-width: 3px;
-  border-style: double;
-  .summary {
-    .subtitle {
-      color: var(--marvel-mulativerse-color-success);
-      text-transform: uppercase;
-    }
-  }
-}
-
-
-.dice-tooltip .dice-rolls:nth-child(2).roll.d6 {
-  background-image: url(systems/marvel-multiverse/icons/d6-red.svg);
-  .fantastic {
-    :after {
-      content: "m";
-    }  
-  }
- 
-} 
-
 .dice-tooltip .dice-rolls .roll.discarded ~ .roll, .roll ~ .roll.discarded {
   bottom: 15px;
 }
@@ -177,18 +155,20 @@
         }
         .roll {
           line-height: inherit;
+          padding: 5px 7px 0px;
+          font-size: var(--font-size-20);
           // width: 3rem;
           // background-image: none;
-          // .min, .max, .success {
-          //   filter: none;
-          // }
+          .min, .max, .success {
+            filter: none;
+          }
           // .d6 {
             // background-image: none;
             // background: none;
           // }
-          // &.max {
-          //   filter: none;
-          // }
+          &.max {
+            filter: none;
+          }
         }
       }
 
@@ -238,16 +218,54 @@
     overflow: auto;
 }
 
-.dice-tooltip .dice-rolls .roll {
+.dice-tooltip .dice-rolls .d6 {
   min-width: 40px;
-  background-repeat: no-repeat;
-  background-size: 40px 40px;
   font-size: var(--font-size-20);
   color: #000;
   font-weight: normal;
   text-align: center;
   min-height: 40px;
   padding-top: 6px;
+}
+
+.tooltip-part:nth-child(1) .dice-rolls .roll.d6, .tooltip-part:nth-child(3) .dice-rolls .roll.d6 {
+  background-image: url("../icons/d6-white.svg");
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  padding-top: 2px;
+}
+
+
+.tooltip-part:nth-child(2) .dice-rolls .roll.d6 {
+  background-image: url("../icons/d6-red.svg");
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  padding-top: 2px;
+}
+
+li.marvel-roll.d6.fantastic {
+  background-repeat: no-repeat;
+  background-image: url("../icons/d6-red.svg");
+  background-size: 40px 40px;
+  color: wheat;
+  padding-top: 2px;
+}
+
+.dice-tooltip .dice-rolls span.fantastic {
+  font-size: var(--font-size-28);
+  color: white;  
+}
+
+.dice-tooltip .dice-rolls .roll.failure, .dice-tooltip .dice-rolls .roll.min{
+  filter: none;
+}
+
+.dice-tooltip .dice-rolls .roll.success, .dice-tooltip .dice-rolls .roll.max {
+  filter: none;
+}
+
+.dice-tooltip .dice-rolls .roll span {
+  background-image: none;
 }
 
 h1, h2, h3, h4 {

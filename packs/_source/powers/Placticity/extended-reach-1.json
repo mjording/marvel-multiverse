@@ -11,7 +11,8 @@
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "The character's reach quadruples"
+    "effect": "The character's reach quadruples",
+    "numbered": 1
   },
   "flags": {},
   "effects": [

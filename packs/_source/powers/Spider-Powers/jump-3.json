@@ -11,7 +11,8 @@
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "Outside of combat, the character can jump up to 50 times their Jump Speed."
+    "effect": "Outside of combat, the character can jump up to 50 times their Jump Speed.",
+    "numbered": 3
   },
   "flags": {},
   "effects": [

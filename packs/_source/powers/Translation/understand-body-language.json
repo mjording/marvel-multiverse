@@ -1,0 +1,20 @@
+{
+  "_id": "622647e7-3a8f-4955-b0f0-e5b827c23ad6",
+  "name": "Understand Body Language",
+  "type": "power",
+  "system": {
+    "description": "The character can read how a person holds themself.",
+    "powerSet": "Translation",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "When the character encounters a culture for the first time, they can make a Logic vs. TN 13 action check to puzzie out its body language. If they already know any other version of the culture's language, they have an edge. On a success, they understand and can emulate the body language On a Fantastic success, they permanently understand and can use it and never need to make a check for it again. This covers not only any potential full-body language used by an alien species but also the body language of species that use other forms of communication. With such species, understanding their body language allows the character to understand more than the target's words might communicate, such as whether a person is aggressive, shy, anxious reckless and so on."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "eb65a36e3f0c46fd",
+  "_key": "!items!622647e7-3a8f-4955-b0f0-e5b827c23ad6"
+}

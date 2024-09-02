@@ -1,0 +1,12 @@
+{
+  "_id": "cc555879c-c114-4f96-9d78-54c38e9768f0",
+  "name": "Venomous",
+  "type": "trait",
+  "system": {
+    "restriction": "",
+    "description": "When the character uses sharp Melee Weapons powers and gets a Fantastic succesa, they have the option of causing the target to be poisoned rather then bleeding"
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!cc555879c-c114-4f96-9d78-54c38e9768f0"
+}

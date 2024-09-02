@@ -19,8 +19,9 @@
       {{!-- As you add new fields, add them in here! --}}
       {{#if system.isElemental }}
         <div class="resource">
+          <label class="resource-label">Element</label>
           <select name="system.element">
-                      {{selectOptions elements selected=system.element labelAttr="label" blank=""}}
+            {{selectOptions elements selected=selectedElement labelAttr="label" blank=""}}
           </select>
         </div>
       {{/if}}
@@ -61,14 +62,22 @@
         <input type="text" name="system.cost" value="{{system.cost}}" data-dtype="String"/>
       </div>
       <div class="resource">
-        <label class="resource-label">Attack Ability</label>
-        <select name="system.attackAbility">
-          {{selectOptions CONFIG.MARVEL_MULTIVERSE.abilities selected=system.attackAbility labelAttr="label" blank=""}}
-        </select>
+        <label class="resource-label">Attack Range</label>
+        <input type="number" name="system.attackRange" value="{{system.attackRange}}" data-dtype="Number"/>
       </div>
       <div class="resource">
         <label class="resource-label">Attack Target</label>
         <input type="text" name="system.attackTarget" value="{{system.attackTarget}}" data-dtype="String"/>
+      </div>
+      <div class="resource">
+        <label class="resource-label">Attack Multiplier</label>
+        <input type="number" name="system.attackMultiplier" value="{{system.attackMultiplier}}" data-dtype="Number"/>
+      </div>
+      <div class="resource">
+        <label class="resource-label">Attack Ability</label>
+        <select name="system.attackAbility">
+          {{selectOptions abilities selected=system.attackAbility labelAttr="label" blank=""}}
+        </select>
       </div>
       <div class="resource">
         <label class="resource-label">Attack Kind</label>
@@ -76,19 +85,12 @@
           {{selectOptions attackKinds selected=system.attackKind labelAttr="label" blank=""}}
         </select>
       </div>
-      <div class="resource">
-        <label class="resource-label">Attack Range</label>
-        <input type="number" name="system.attackRange" value="{{system.attackRange}}" data-dtype="Number"/>
-      </div>
+      
       <div class="resource">
         <label class="resource-label">Attack Edge Mode</label>
         <select name="system.attackEdgeMode">
           {{selectOptions attackEdgeModes selected=system.attackEdgeMode labelAttr="label" blank=""}}
         </select>
-      </div>
-      <div class="resource">
-        <label class="resource-label">Attack Multiplier</label>
-        <input type="number" name="system.attackMultiplier" value="{{system.attackMultiplier}}" data-dtype="Number"/>
       </div>
       
     </div>

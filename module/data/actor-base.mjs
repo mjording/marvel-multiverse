@@ -5,21 +5,52 @@ export default class MarvelMultiverseActorBase extends foundry.abstract.TypeData
     const requiredInteger = { required: true, nullable: false, integer: true };
     const schema = {};
 
+    schema.attributes = new fields.SchemaField({
+
+      init: new fields.SchemaField({
+        value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+        edge: new fields.BooleanField({ required: true, initial: false }),
+        trouble: new fields.BooleanField({ required: true, initial: false  })
+      }),
+
+      rank: new fields.SchemaField({
+        value: new fields.NumberField({ ...requiredInteger, initial: 1 })
+      }),
+
+    });
+
+    // Iterate over ability names and create a new SchemaField for each.
+    schema.abilities = new fields.SchemaField(Object.keys(CONFIG.MARVEL_MULTIVERSE.abilities).reduce((obj, ability) => {
+      obj[ability] = new fields.SchemaField({
+        value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+        defense: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+        noncom: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+        edge: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+        damageMultiplier: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+        label: new fields.StringField({ required: true, blank: true })
+      });
+      return obj;
+    }, {}));
+
+    console.log(`rank while defining schema Rank: ${schema.attributes.rank}`);
+    console.log(`res while defining schema Rank: ${schema.abilities.res}`);
+
     schema.health = new fields.SchemaField({
-      value: new fields.NumberField({ ...requiredInteger, initial: 10, min: 0 }),
-      max: new fields.NumberField({ ...requiredInteger, initial: 10 })
+      value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+      max: new fields.NumberField({ ...requiredInteger, initial: 0 })
     });
     
     schema.healthDamageReduction = new fields.NumberField({ ...requiredInteger, initial: 0})
     schema.focus = new fields.SchemaField({
-      value: new fields.NumberField({ ...requiredInteger, initial: 5, min: 0 }),
-      max: new fields.NumberField({ ...requiredInteger, initial: 5 })
+      value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+      max: new fields.NumberField({ ...requiredInteger, initial: 0 })
     });
     
     schema.focusDamageReduction = new fields.NumberField({ ...requiredInteger, initial: 0})
+
     schema.karma = new fields.SchemaField({
-      value: new fields.NumberField({ ...requiredInteger, initial: 5, min: 0 }),
-      max: new fields.NumberField({ ...requiredInteger, initial: 5 })
+      value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+      max: new fields.NumberField({ ...requiredInteger, initial:  0})
     });
 
     schema.codename = new fields.StringField({ required: true, blank: true }); // equivalent to passing ({initial: ""}) for StringFields

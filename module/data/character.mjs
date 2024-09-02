@@ -7,30 +7,6 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
     const requiredInteger = { required: true, nullable: false, integer: true };
     const schema = super.defineSchema();
 
-    schema.attributes = new fields.SchemaField({
-      init: new fields.SchemaField({
-        value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
-        edge: new fields.BooleanField({ required: true, initial: false }),
-        trouble: new fields.BooleanField({ required: true, initial: false  })
-      }),
-      rank: new fields.SchemaField({
-        value: new fields.NumberField({ ...requiredInteger, initial: 1 })
-      }),
-    });
-
-    // Iterate over ability names and create a new SchemaField for each.
-    schema.abilities = new fields.SchemaField(Object.keys(CONFIG.MARVEL_MULTIVERSE.abilities).reduce((obj, ability) => {
-      obj[ability] = new fields.SchemaField({
-        value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
-        defense: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
-        noncom: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
-        edge: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
-        damageMultiplier: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
-        label: new fields.StringField({ required: true, blank: true })
-      });
-      return obj;
-    }, {}));
-
     schema.actorSizes = new fields.SchemaField(Object.keys(CONFIG.MARVEL_MULTIVERSE.sizes).reduce((obj, size) => {
       obj[size] = new fields.SchemaField({
         label: new fields.StringField({ required: true, initial: CONFIG.MARVEL_MULTIVERSE.sizes[size].label}),
@@ -55,10 +31,15 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
     schema.occupations = new fields.ArrayField(new fields.ObjectField());
     schema.weapons = new fields.ArrayField(new fields.ObjectField());
     schema.origins = new fields.ArrayField(new fields.ObjectField());
+    schema.gear = new fields.ArrayField(new fields.ObjectField());
     schema.tags = new fields.ArrayField(new fields.ObjectField());
     schema.traits = new fields.ArrayField(new fields.ObjectField());
-    schema.powers = new fields.ArrayField(new fields.ObjectField());
+    schema.powers = new fields.SchemaField(Object.keys(CONFIG.MARVEL_MULTIVERSE.powersets).reduce((obj, powerset) => {
+      obj[powerset] = new fields.ArrayField(new fields.ObjectField());
+      return obj;
+    },{}));
     schema.reach = new fields.NumberField({ ...requiredInteger, initial: 1, min: 0 });
+    schema.defaultElement = new fields.StringField({ required: true, blank: true });
 
     return schema;
   }
@@ -79,7 +60,7 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
 
     this.attributes.init.value += this.abilities.vig.value;
     
-    const baseSpeed = (4 + CONFIG.MARVEL_MULTIVERSE.sizes[this.size].speedMod + Math.ceil((this.abilities.agl.value) / 5))
+    const baseSpeed = ((this.abilities.agl.value < 1 ? 5 : 4) + CONFIG.MARVEL_MULTIVERSE.sizes[this.size].speedMod + Math.ceil((this.abilities.agl.value) / 5))
     const halfSpeed = Math.ceil(baseSpeed * 0.5);
     
     

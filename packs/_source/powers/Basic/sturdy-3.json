@@ -11,7 +11,8 @@
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "The character gains Health Damage Reduction 3."
+    "effect": "The character gains Health Damage Reduction 3.",
+    "numbered": 3
   },
   "flags": {},
   "effects": [

@@ -1,0 +1,21 @@
+{
+  "_id": "f4a1a9ab-cfc7-45fd-9029-9dd4ac9ac795",
+  "name": "Precognition 3",
+  "type": "power",
+  "system": {
+    "description": "The character can see the the month ahead.",
+    "powerSet": "Sixth Sense",
+    "prerequisites": "Precognitinn 2. Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "The character gains a sense of what it going to happen to a particular person, place or item within their reach-including themselves-in the neet month. Otherwise this power works the same as Precognition 1. Alternatively. the character can consider the fate of something within a mile of their location (rather then within their reach) over the next week. or something within 100 miles of their location the next 24 hours The character simply closes thair eyes and thinks about the thing in question which must be something they atready know about.",
+    "numbered": 3
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "34a53ed3fba44fe3",
+  "_key": "!items!f4a1a9ab-cfc7-45fd-9029-9dd4ac9ac795"
+}

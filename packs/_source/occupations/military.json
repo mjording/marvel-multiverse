@@ -34,10 +34,41 @@
         "name": "Situational Awareness",
         "type": "trait",
         "system": {
+          "restriction": "",
           "description": "The character is trained to always keep an eye out for trouble. They have an edge an initiative checks"
         },
         "flags": {},
-        "effects": [],
+        "effects": [
+          {
+            "name": "initiative edge",
+            "img": "icons/svg/aura.svg",
+            "duration": {
+              "startTime": null,
+              "seconds": null,
+              "combat": null,
+              "rounds": null,
+              "turns": null,
+              "startRound": null,
+              "startTurn": null
+            },
+            "disabled": false,
+            "origin": "Item.808b33ee-3105-49bd-8027-d846fc47f730",
+            "_id": "a625582e0569771a",
+            "changes": [
+              {
+                "key": "system.attributes.init.edge",
+                "mode": 5,
+                "value": true
+              }
+            ],
+            "description": "",
+            "transfer": true,
+            "statuses": [],
+            "flags": {},
+            "tint": null,
+            "_key": "!items.effects!808b33ee-3105-49bd-8027-d846fc47f730.a625582e0569771a"
+          }
+        ],
         "_key": "!items!808b33ee-3105-49bd-8027-d846fc47f730"
       }
     ]

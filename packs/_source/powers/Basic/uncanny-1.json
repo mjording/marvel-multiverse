@@ -11,7 +11,8 @@
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "Any damage multiplier for attacks against the character's Focus is reduced by 1. If this power is part of a battle suit, the power is integrated into a removable helmet. Otherwise, it's a part of the character. If this power stems from armor or anything else removable-like Magneto's helmet the character should apply the Tech Reliance trait to it."
+    "effect": "Any damage multiplier for attacks against the character's Focus is reduced by 1. If this power is part of a battle suit, the power is integrated into a removable helmet. Otherwise, it's a part of the character. If this power stems from armor or anything else removable-like Magneto's helmet the character should apply the Tech Reliance trait to it.",
+    "numbered": 1
   },
   "flags": {},
   "effects": [

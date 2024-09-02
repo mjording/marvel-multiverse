@@ -12,7 +12,8 @@
     "range": "",
     "cost": "10 Focus",
     "effect": "The character protects themselves with their element.Any attacks against them that do 20 points of damage or less are instantly absorbed, and the protection continues. If an attack does more than 20 points of damage, it destroys the protection. Either way, the character remains unharmed.",
-    "isElemental": true
+    "isElemental": true,
+    "numbered": 2
   },
   "flags": {},
   "effects": [],

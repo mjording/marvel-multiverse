@@ -87,23 +87,56 @@ export class ChatMessageMarvel extends ChatMessage {
   _highlightFantasticSuccess(html) {
     if ( !this.isContentVisible || !this.rolls.length ) return;
     const originatingMessage = game.messages.get(this.getFlag("marvel-multiverse", "originatingMessage")) ?? this;
+    console.log('in highlightFantastic successes ');
+    
+    const firstRollTerm = this.rolls[0].terms[0];
 
-    // Highlight rolls where the second part is a marvel die roll
-    for ( let [index, dMarvelRoll] of this.rolls.entries() ) {
+    let rollTerm;
+    if(firstRollTerm instanceof foundry.dice.terms.ParentheticalTerm && firstRollTerm.roll.terms[0] instanceof foundry.dice.terms.PoolTerm){
+      rollTerm = firstRollTerm.roll.terms[0];
+    } else if (firstRollTerm instanceof foundry.dice.terms.PoolTerm) {
+      rollTerm = firstRollTerm
+    }
 
-      const [leftD6, marvelDie, rightD6] = dMarvelRoll.dice;
+    const [leftD6, marvelDie, rightD6] = rollTerm.rolls;
 
-      if ( (marvelDie?.faces !== 6) || (marvelDie?.values.length !== 1) ) continue;
+    const isFantastic = marvelDie.terms[0].results[0].result === 1
 
-      const marvelRoll = game.MarvelMultiverse.dice.MarvelMultiverseRoll.fromRoll(dMarvelRoll);
+    if ( isFantastic ) {
+      console.log('isFantastic');
+      const marvelDieItem = html.find(".tooltip-part:nth-child(2)");
 
-      if ( marvelRoll.isFantastic ) {
-        const marvelDieItem = html.find(".tooltip-part:nth-child(2)");
-        marvelDieItem.find('li.d6').each((i, el) => { 
-          el.classList.add("fantastic");
-        });
-        total.classList.add("fantastic");
-      } 
+      marvelDieItem.find('li.d6').each((i, el) => { 
+        el.classList.remove("roll");
+        el.classList.add("fantastic");
+      });
+
+
+      marvelDieItem.find('span').each((i, el) => { 
+        el.classList.remove("roll");
+        el.classList.add("fantastic");
+      });
+
+      const dieTotal = html.find("h3.dice-total");
+
+      for ( let [index, dMarvelRoll] of this.rolls[0].terms[0].rolls.entries() ) {
+        console.log(`this.rolls.entries has index ${index} and dMarvelRoll: ${dMarvelRoll}`);
+      }
+      // Highlight rolls where the second part is a marvel die roll
+      for ( let [index, dMarvelRoll] of this.rolls.entries() ) {
+        console.log(`this.rolls.entries has index ${index} and dMarvelRoll: ${dMarvelRoll}`);
+        const [leftD6, marvelDie, rightD6] = dMarvelRoll.dice;
+
+        if ( (marvelDie?.faces !== 6) || (marvelDie?.values.length !== 1) ) continue;
+        // console.log(`marvelDie result: ${marvelDie?.terms[0].results[0].result}`);
+        const marvelRoll = game.MarvelMultiverse.dice.MarvelMultiverseRoll.fromRoll(dMarvelRoll);
+
+        if ( marvelRoll.isFantastic ) {
+          console.log('isFantastic');
+          
+          total.classList.add("fantastic");
+        }
+      }
     }
   }
 

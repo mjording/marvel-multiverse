@@ -1,0 +1,20 @@
+{
+  "_id": "ddd4b14a-8f48-4503-ab35-5361220aff28",
+  "name": "Intuition",
+  "type": "power",
+  "system": {
+    "description": "The character has a bad feeling about this.",
+    "powerSet": "Sixth Sense",
+    "prerequisites": "Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5 Fous",
+    "effect": "When faced with a decision. the character can get a feeling about which choice would be best for them in the long run When activating this power. the player presents the choice to the Narrator. and the Narrator tells them which choice the intuition is leading the character toward."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "34a53ed3fba44fe3",
+  "_key": "!items!ddd4b14a-8f48-4503-ab35-5361220aff28"
+}

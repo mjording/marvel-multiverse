@@ -11,7 +11,8 @@
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "Multiply the character's regular Run Speed by their rank to get their new Run Speed. Outside of combat, they can move three times as fast."
+    "effect": "Multiply the character's regular Run Speed by their rank to get their new Run Speed. Outside of combat, they can move three times as fast.",
+    "numbered": 2
   },
   "flags": {},
   "effects": [

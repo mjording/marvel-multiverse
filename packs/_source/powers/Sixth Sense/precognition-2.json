@@ -1,0 +1,21 @@
+{
+  "_id": "54ac8f81-7efc-48b6-a988-953688c04f79",
+  "name": "Precognition 2",
+  "type": "power",
+  "system": {
+    "description": "The character can see the week ahead.",
+    "powerSet": "Sixth Sense",
+    "prerequisites": "Precognition 1, Rank 1",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "10 Focus",
+    "effect": "The character gains a sense of what is going to happen to a particular person, place or item within their reach-including themselves-in the next week Otherwise this power works the same as Precognition 1. Alternatively. the character can consider the fate of something within a mile of their location (rather then within their reach) over the next 24 hours The character simply closes thair eyes and thinks about the thing in question which must be something they atready know about.",
+    "numbered": 2
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "34a53ed3fba44fe3",
+  "_key": "!items!54ac8f81-7efc-48b6-a988-953688c04f79"
+}

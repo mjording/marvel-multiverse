@@ -1,0 +1,20 @@
+{
+  "_id": "261479f5-ac74-4e4b-93af-959c8ff9a0f2",
+  "name": "Charmed Life",
+  "type": "power",
+  "system": {
+    "description": "The character - like they were born lucky.",
+    "powerSet": "Luck",
+    "prerequisites": "Rank 4",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character gains an edge on any single action check each round. This does not stack with any other edge."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "c3155c708eb54219",
+  "_key": "!items!261479f5-ac74-4e4b-93af-959c8ff9a0f2"
+}

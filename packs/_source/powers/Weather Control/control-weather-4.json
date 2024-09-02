@@ -11,7 +11,8 @@
     "duration": "Concentration",
     "range": "",
     "cost": "20 Focus",
-    "effect": "It starts to storm in an area up to 5 miles across times the character's rank, centered on the character. All ranges and all speeds are cut to one quarter normal, and flying is impossible."
+    "effect": "It starts to storm in an area up to 5 miles across times the character's rank, centered on the character. All ranges and all speeds are cut to one quarter normal, and flying is impossible.",
+    "numbered": 4
   },
   "flags": {},
   "effects": [],

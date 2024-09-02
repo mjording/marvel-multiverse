@@ -11,7 +11,8 @@
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "The character's reach is 10 times normal."
+    "effect": "The character's reach is 10 times normal.",
+    "numbered": 2
   },
   "flags": {},
   "effects": [

@@ -1,0 +1,20 @@
+{
+  "_id": "3f470016-7fc2-4c67-9a90-608215ba03ed",
+  "name": "Detect Lie",
+  "type": "power",
+  "system": {
+    "description": "The character can tell if you're telling the truth.",
+    "powerSet": "Translation",
+    "prerequisites": "Understand Body Language. Rank 2",
+    "action": "Standard or reaction",
+    "trigger": "Verbal communication the character can understand",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "When someone communicates in an active form the character can understand-verbally, telepathically. using sign language and so on-the character can make an Ego check against the communicator's Ego defense. On a success, the character knows if the communicator is lying. On a Fantastic success, they also know (if possible) why the communicator is lying This power does not allow the character to know the truth, although they may be able to figure it out by detecting lies. Also, It only works on communicators who know they are lying. If they believe what they are saying-even if it is wrong-no lie can be detected."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "eb65a36e3f0c46fd",
+  "_key": "!items!3f470016-7fc2-4c67-9a90-608215ba03ed"
+}

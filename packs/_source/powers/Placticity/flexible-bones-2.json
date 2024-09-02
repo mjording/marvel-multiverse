@@ -11,7 +11,8 @@
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "The character gains Health Damage Reduction 2. They also have a double edge on Agility checks for contortion and escape."
+    "effect": "The character gains Health Damage Reduction 2. They also have a double edge on Agility checks for contortion and escape.",
+    "numbered": 2
   },
   "flags": {},
   "effects": [

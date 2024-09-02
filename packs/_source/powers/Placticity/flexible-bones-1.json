@@ -11,7 +11,8 @@
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "The character gains Health Damage Reduction 1. They also have an edde on Agility checks for contortion and escape."
+    "effect": "The character gains Health Damage Reduction 1. They also have an edde on Agility checks for contortion and escape.",
+    "numbered": 1
   },
   "flags": {},
   "effects": [

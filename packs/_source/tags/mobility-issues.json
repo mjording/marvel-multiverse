@@ -1,0 +1,13 @@
+{
+  "_id": "3e9e867e-80df-4e29-bfff-0b3ca24e4288",
+  "name": "Mobility Issues",
+  "type": "tag",
+  "system": {
+    "description": "The character has mobility issues. This can range from using a cane to using a wheelchair",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!3e9e867e-80df-4e29-bfff-0b3ca24e4288"
+}

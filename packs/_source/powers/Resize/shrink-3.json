@@ -11,7 +11,8 @@
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "The character can shrink down to miniature size. They can return to their normal size at will."
+    "effect": "The character can shrink down to miniature size. They can return to their normal size at will.",
+    "numbered": 3
   },
   "flags": {},
   "effects": [],

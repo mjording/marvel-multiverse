@@ -11,7 +11,8 @@
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "Outside of combat, the character can fly up to 50 times their Flight Speed."
+    "effect": "Outside of combat, the character can fly up to 50 times their Flight Speed.",
+    "numbered": 2
   },
   "flags": {},
   "effects": [

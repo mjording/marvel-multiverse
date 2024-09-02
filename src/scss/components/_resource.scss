@@ -114,3 +114,14 @@ aside.damages {
 .resources h2 {
   margin-bottom: 0;
 }
+
+.header-control {
+  font-size: 0.7rem;
+  float: right;
+  padding: 5px 0px 0px;
+  select {
+    height: 1rem;
+    border: none;
+    padding: 0;
+  }
+}

@@ -11,7 +11,8 @@
     "duration": "Concentration",
     "range": "",
     "cost": "",
-    "effect": "It starts to rain in an area up to 5 miles across times the character's rank, centered on the character. All ranges are cut in half. Movement is not affected."
+    "effect": "It starts to rain in an area up to 5 miles across times the character's rank, centered on the character. All ranges are cut in half. Movement is not affected.",
+    "numbered": 1
   },
   "flags": {},
   "effects": [],

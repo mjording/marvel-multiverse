@@ -11,7 +11,8 @@
     "duration": "Concentration",
     "range": "",
     "cost": "15 Focus",
-    "effect": "It starts to storm in an area up to 5 miles across times the character's rank, centered on the character. All ranges and all speeds are cut in half. If the character also has the Elemental Blast (Electricity) power, they can use it as a reaction when attacked while this power is active,"
+    "effect": "It starts to storm in an area up to 5 miles across times the character's rank, centered on the character. All ranges and all speeds are cut in half. If the character also has the Elemental Blast (Electricity) power, they can use it as a reaction when attacked while this power is active,",
+    "numbered": 3
   },
   "flags": {},
   "effects": [],

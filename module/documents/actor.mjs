@@ -70,8 +70,8 @@ export class MarvelMultiverseActor extends Actor {
     const choice = await roll.configureDialog({
       defaultRollMode: game.settings.get("core", "rollMode"),
       title: "Initiative Roll",
-      chooseModifier: false,
-      defaultAction: rollOptions.edgeMode ?? game.MarvelMultiverse.dice.MarvelMultiverseRoll.EDGE_MODE.NORMAL
+      chooseModifier: true,
+      defaultAction: game.MarvelMultiverse.dice.MarvelMultiverseRoll.EDGE_MODE.NORMAL
     });
     if ( choice === null ) return; // Closed dialog
 

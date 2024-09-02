@@ -46,6 +46,37 @@ MARVEL_MULTIVERSE.sizes = {
   varies: { label: "MARVEL_MULTIVERSE.Size.Varies", speedMod: 4}
 };
 
+MARVEL_MULTIVERSE.powersets = {
+      basic: { label: "Basic"},
+      elementalControl: {label: "Elemental Control"},
+      illusion: {label: "Illusion"},
+      luck: {label: "Luck"},
+      magic: {label: "Magic"},
+      martialArts: {label: "Martial Arts"},
+      meleeWeapons: {label: "Melee Weapons"},
+      omniversalTravel: {label: "Omniversal Travel"},
+      phasing: {label: "Phasing"},
+      plasticity: {label: "Plasticity"},
+      powerControl: {label: "Power Control"},
+      rangedWeapons: {label: "Ranged Weapons"},
+      resize: {label: "Resize"},
+      shieldBearer: {label: "Shield Bearer"},
+      sixthSense: {label: "Sixth Sense"},
+      spiderPowers: {label: "Spider-Powers"},
+      superSpeed: {label: "Super-Speed"},
+      superStrength: {label: "Super-Strength"},
+      tactics: {label: "Tactics"},
+      telekinesis: {label: "Telekinesis"},
+      telepathy: {label: "Telepathy"},
+      teleportation: {label: "Teleportation"},
+      translation: {label: "Translation"},
+      weatherControl: {label: "Weather Control"},
+      
+}
+
+MARVEL_MULTIVERSE.reverseSetList =  Object.fromEntries(Object.keys(MARVEL_MULTIVERSE.powersets).map((k) => [MARVEL_MULTIVERSE.powersets[k].label,k]));
+
+
 MARVEL_MULTIVERSE.movementTypes = {
   run: { label: "MARVEL_MULTIVERSE.Movement.Run", active: true },
   climb: { label: "MARVEL_MULTIVERSE.Movement.Climb", active: true },
@@ -58,20 +89,21 @@ MARVEL_MULTIVERSE.movementTypes = {
 }
 
 MARVEL_MULTIVERSE.elements = {
-  air: { label: "Air"},
-  earth: { label: "Earth"},
-  electricity: { label: "Electricity"},
-  energy: { label: "Energy"},
-  fire: { label: "Fire"},
-  force: { label: "Force"},
-  hellfire: { label: "Hellfire"},
-  ice: { label: "Ice"},
-  iron: { label: "Iron"},
-  sound: { label: "Sound"},
-  water: { label: "Water"},
-  toxin: { label: "Toxin"},
-  chemical: { label: "Chemical"},
+  air: { label: "Air", fantasticEffect: "Target is knocked prone for one round."},
+  earth: { label: "Earth", fantasticEffect: "Target moves at half speed for one round."},
+  electricity: { label: "Electricity", fantasticEffect: "Stuns target for one round."},
+  energy: { label: "Energy", fantasticEffect: "Blinds target for one round."},
+  fire: { label: "Fire", fantasticEffect: "Sets target ablaze."},
+  force: { label: "Force", fantasticEffect: "Target has trouble on all actions for one round."},
+  hellfire: { label: "Hellfire", fantasticEffect: "Splits damage equally between Health and Focus."},
+  ice: { label: "Ice", fantasticEffect: "Paralyzes target for one round."},
+  iron: { label: "Iron", fantasticEffect: "Pins target for one round."},
+  sound: { label: "Sound", fantasticEffect: "Deafens target for one round."},
+  water: { label: "Water", fantasticEffect: "Surprises target until the end of the next round."},
+  toxin: { label: "Toxin", fantasticEffect: "The target is poisoned."},
+  chemical: { label: "Chemical", fantasticEffect: "The target is corroding."},
 }
+
 
 // ASCII Artwork
 MARVEL_MULTIVERSE.ASCII = `

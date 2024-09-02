@@ -142,23 +142,6 @@ export class MarvelMultiverseRoll extends Roll {
     configureModifiers() {
         const valid616 = this.validD616Roll;
         if ( !valid616 ) return;
-        // const [lSix, dMarvel, rSix] = this.terms;
-        // const d616 = this.terms[0];
-        // d616.modifiers = [];
-
-        //  // Handle Advantage or Disadvantage
-        // if ( this.hasEdge ) {
-        //     d616.number = 2;
-        //     d616.modifiers.push("kh");
-        //     d616.options.edge = true;
-        // }
-        // else if ( this.hasTrouble ) {
-        //     d616.number = 2;
-        //     d616.modifiers.push("kl");
-        //     d616.options.trouble = true;
-        // }
-        // else d616.number = 1;
-
         this.options.fantastic = 1;
          
         if (this.isFantastic){  
@@ -220,7 +203,7 @@ export class MarvelMultiverseRoll extends Roll {
      * @returns {Promise<MarvelMultiverseRoll|null>}         A resulting MarvelMultiverseRoll object constructed with the dialog, or null if the
      *                                          dialog was closed
      */
-    async configureDialog({title, defaultRollMode, defaultAction=MarvelMultiverseRoll.EDGE_MODE.NORMAL, chooseModifier=false,
+    async configureDialog({title, defaultRollMode, chooseModifier=false,
         defaultAbility, template}={}, options={}) {
 
         // Render the Dialog inner HTML
@@ -230,14 +213,10 @@ export class MarvelMultiverseRoll extends Roll {
             rollModes: CONFIG.Dice.rollModes,
             chooseModifier,
             defaultAbility,
-            abilities: CONFIG.MARVEL_MULTIVERSE.abilities
+            abilities:  Object.fromEntries(Object.entries(CONFIG.MARVEL_MULTIVERSE.abilities).map((abl) => [abl[0],game.i18n.localize(abl[1])]))
         });
 
         let defaultButton = "normal";
-        switch ( defaultAction ) {
-            case MarvelMultiverseRoll.EDGE_MODE.EDGE: defaultButton = "edge"; break;
-            case MarvelMultiverseRoll.EDGE_MODE.TROUBLE: defaultButton = "trouble"; break;
-        }
 
         // Create the Dialog window and await submission of the form
         return new Promise(resolve => {
@@ -245,18 +224,10 @@ export class MarvelMultiverseRoll extends Roll {
             title,
             content,
             buttons: {
-            edge: {
-                label: "edge",
-                callback: html => resolve(this._onDialogSubmit(html, MarvelMultiverseRoll.EDGE_MODE.EDGE))
-            },
-            normal: {
-                label: "normal",
-                callback: html => resolve(this._onDialogSubmit(html, MarvelMultiverseRoll.EDGE_MODE.NORMAL))
-            },
-            trouble: {
-                label: "trouble",
-                callback: html => resolve(this._onDialogSubmit(html, MarvelMultiverseRoll.EDGE_MODE.TROUBLE))
-            }
+                normal: {
+                    label: "Roll",
+                    callback: html => resolve(this._onDialogSubmit(html, MarvelMultiverseRoll.EDGE_MODE.NORMAL))
+                }
             },
             default: defaultButton,
             close: () => resolve(null)
@@ -269,7 +240,6 @@ export class MarvelMultiverseRoll extends Roll {
     /**
      * Handle submission of the Roll evaluation configuration Dialog
      * @param {jQuery} html            The submitted dialog content
-     * @param {number} edgeMode   The chosen edge mode
      * @returns {MarvelMultiverseRoll}              This damage roll.
      * @private
      */

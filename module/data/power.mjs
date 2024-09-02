@@ -16,6 +16,7 @@ export default class MarvelMultiversePower extends MarvelMultiverseItemBase {
     schema.cost = new fields.StringField({ blank: true });
     schema.effect = new fields.StringField({ blank: true });
     schema.modifiers = new fields.ArrayField(new fields.ObjectField());
+    schema.numbered = new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 });
     schema.attackAbility = new fields.StringField({blank: true});
     schema.attackTarget = new fields.StringField({blank: true});
     schema.attackKind = new fields.StringField({blank: true});

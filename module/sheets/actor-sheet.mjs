@@ -61,6 +61,8 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
     context.rollData = context.actor.getRollData();
     context.sizes = CONFIG.MARVEL_MULTIVERSE.sizes;
 
+    context.elements = Object.fromEntries(Object.keys(CONFIG.MARVEL_MULTIVERSE.elements).map((k) => [k,CONFIG.MARVEL_MULTIVERSE.elements[k].label]));
+
     // Prepare active effects
     context.effects = prepareActiveEffectCategories(
       // A generator that returns all effects stored on the actor
@@ -68,23 +70,9 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       this.actor.allApplicableEffects()
     );
 
-
     return context;
   }
 
-  /**
-   * Organize and classify Items for Character sheets.
-   *
-   * @param {Object} actorData The actor to prepare.
-   *
-   * @return {undefined}
-   */
-  _prepareCharacterData(context) {
-    // Handle ability scores.
-    for (let [k, v] of Object.entries(context.system.abilities)) {
-      v.label = game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.abilities[k]) ?? k;
-    }
-  }
 
   /**
    * Organize and classify Items for Character sheets.
@@ -101,31 +89,8 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
     const occupations = [];
     const tags = [];
     const weapons = [];
-    const powers = {
-      "Basic": [],
-      "Elemental Control": [],
-      "Illusion": [],
-      "Magic": [],
-      "Martial Arts": [],
-      "Melee Weapons": [],
-      "Omniversal Travel": [],
-      "Phasing": [],
-      "Plasticity": [],
-      "Power Control": [],
-      "Ranged Weapons": [],
-      "Resize": [],
-      "Shield Bearer": [],
-      "Sixth Sense": [],
-      "Spider-Powers": [],
-      "Super-Speed": [],
-      "Super-Strength": [],
-      "Tactics": [],
-      "Telekinesis": [],
-      "Telepathy": [],
-      "Teleportation": [],
-      "Weather Control": [],
-    };
-
+    const powers = Object.fromEntries(Object.keys(CONFIG.MARVEL_MULTIVERSE.reverseSetList).map((ps) => [ps, []]));
+    
     // Iterate through items, allocating to containers
     for (let i of context.items) {
       i.img = i.img || Item.DEFAULT_ICON;
@@ -156,6 +121,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
         weapons.push(i);
       }
       
+      
       // Assign and return
       context.gear = gear;
       context.traits = traits;
@@ -164,6 +130,34 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       context.origins = origins;
       context.occupations = occupations;
       context.weapons = weapons;
+    }
+  }
+
+  _prepareItem(item, context) {
+
+  }
+
+  
+  /**
+   * Organize and classify Items for Character sheets.
+   *
+   * @param {Object} actorData The actor to prepare.
+   *
+   * @return {undefined}
+   */
+  _prepareCharacterData(context) {
+    // Handle ability scores.
+    for (let [k, v] of Object.entries(context.system.abilities)) {
+      v.label = game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.abilities[k]) ?? k;
+    }
+
+    for (let i of context.items.filter((item) => item.type === 'power')) {
+      let mappedPowersets = i.system.powerSet.split(',').map((ps) => CONFIG.MARVEL_MULTIVERSE.reverseSetList[ps.trim()]);
+      context.system.powers[mappedPowersets[0]].push(i);
+    }
+
+    for (let i of context.items.filter((item) => item.type === 'origin')) {
+      context.system.origins.push(i);
     }
   }
 
@@ -234,9 +228,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
     const header = event.currentTarget;
     // Get the type of item to create.
     const type = header.dataset.type;
-    console.log(header.dataset.type);
     // Grab any data associated with this control.
-    console.log(Object.keys(header.dataset));
     const data = foundry.utils.duplicate(header.dataset);
     // Initialize a default name.
     const name = `New ${type.capitalize()}`;
@@ -302,11 +294,14 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
             type: "power",
             data: power.system,
           };
+          if (this.actor.system.defaultElement){
+            Object.assign(newItemData, {element: this.actor.system.defaultElement});
+          }
           await Item.create(newItemData, {parent: this.actor});
         });
         return super._onDropItemCreate(itemData);
       } else {
-        return super._onDropItemCreate(itemData); 
+        return super._onDropItemCreate(itemData);
       }
     }
   }

@@ -87,7 +87,6 @@ export class ChatMessageMarvel extends ChatMessage {
   _highlightFantasticSuccess(html) {
     if ( !this.isContentVisible || !this.rolls.length ) return;
     const originatingMessage = game.messages.get(this.getFlag("marvel-multiverse", "originatingMessage")) ?? this;
-    console.log('in highlightFantastic successes ');
     
     const firstRollTerm = this.rolls[0].terms[0];
 
@@ -103,7 +102,6 @@ export class ChatMessageMarvel extends ChatMessage {
     const isFantastic = marvelDie.terms[0].results[0].result === 1
 
     if ( isFantastic ) {
-      console.log('isFantastic');
       const marvelDieItem = html.find(".tooltip-part:nth-child(2)");
 
       marvelDieItem.find('li.d6').each((i, el) => { 
@@ -118,25 +116,7 @@ export class ChatMessageMarvel extends ChatMessage {
       });
 
       const dieTotal = html.find("h3.dice-total");
-
-      for ( let [index, dMarvelRoll] of this.rolls[0].terms[0].rolls.entries() ) {
-        console.log(`this.rolls.entries has index ${index} and dMarvelRoll: ${dMarvelRoll}`);
-      }
-      // Highlight rolls where the second part is a marvel die roll
-      for ( let [index, dMarvelRoll] of this.rolls.entries() ) {
-        console.log(`this.rolls.entries has index ${index} and dMarvelRoll: ${dMarvelRoll}`);
-        const [leftD6, marvelDie, rightD6] = dMarvelRoll.dice;
-
-        if ( (marvelDie?.faces !== 6) || (marvelDie?.values.length !== 1) ) continue;
-        // console.log(`marvelDie result: ${marvelDie?.terms[0].results[0].result}`);
-        const marvelRoll = game.MarvelMultiverse.dice.MarvelMultiverseRoll.fromRoll(dMarvelRoll);
-
-        if ( marvelRoll.isFantastic ) {
-          console.log('isFantastic');
-          
-          total.classList.add("fantastic");
-        }
-      }
+      // total.classList.add("fantastic");
     }
   }
 
@@ -399,70 +379,99 @@ export class ChatMessageMarvel extends ChatMessage {
    */
   async _handleChatButton(action, messageId, dieIndex){
     
-    const TROUBLE = CONFIG.Dice.MarvelMultiverseRoll.EDGE_MODE.TROUBLE;
-    const EDGE = CONFIG.Dice.MarvelMultiverseRoll.EDGE_MODE.EDGE;
-    const chatMessage = game.messages.get(messageId)
-    if (!action || !chatMessage) throw new Error('Missing Information');
+    if (!action || !messageId) throw new Error('Missing Information');
+    
+    const chatMessage = game.messages.get(messageId);
+    const modifier = action === 'edge' ? 'kh' : 'kl';
+
+    console.log(`dieIndex: ${dieIndex}, messageId: ${messageId}, action: ${action}, modifier: ${modifier}`);
     const [roll] = chatMessage.rolls;
     
-    //roll.options.isReRoll = true;
-    // reRoll.dice = [...reRoll.dice];
-    if (!(roll.dice.length === 3 && (roll.dice[1] instanceof game.MarvelMultiverse.dice.MarvelDie))) return;
+    const firstRollTerm = roll.terms[0];
+
+    let rollTerm;
     
-    const [poolTerm] = roll.terms;
-    if (!(poolTerm instanceof foundry.dice.terms.PoolTerm)) return;
-    const targetRoll = poolTerm.rolls[dieIndex];
+    if(firstRollTerm instanceof foundry.dice.terms.ParentheticalTerm && firstRollTerm.roll.terms[0] instanceof foundry.dice.terms.PoolTerm){
+      rollTerm = firstRollTerm.roll.terms[0];
+    } else if (firstRollTerm instanceof foundry.dice.terms.PoolTerm) {
+      rollTerm = firstRollTerm;
+    }
+    
+    if (!(rollTerm.rolls.length === 3 && (rollTerm.rolls[1].terms[0] instanceof game.MarvelMultiverse.dice.MarvelDie))) return;
+    
+    const targetRoll = rollTerm.rolls[dieIndex];
+
+    const targetReg = /\d(.*)/;
+    const targetFormula = targetRoll._formula.replace(targetReg, '2$1');
+
+    console.log(`rollTerm.rolls.length: ${rollTerm.rolls.length}, targetRoll._formula: ${targetRoll._formula}, targetFormula: ${targetFormula} `);
+
+    targetRoll._formula = `${targetFormula}${modifier}`;
+    targetRoll.number = 2;
+
+    console.log(`targetRoll._formula: ${targetRoll._formula}, targetRoll.formula: ${targetRoll.formula}, targetRoll.number: ${targetRoll.number}`);
+    const targetDie = targetRoll.terms[0];
+
+    targetDie.modifiers?.push(modifier);
+    const oldDieResult = targetDie.result;
 
     const newRoll = new MarvelMultiverseRoll(targetRoll._formula, {...targetRoll.data});
     await newRoll.roll();
 
-
-    targetRoll._formula = '2d6kh'
-    targetRoll.number = 2
+    targetDie.results.push(newRoll.terms[0].results[0]);
 
 
-    const targetDie = targetRoll.terms[0];
-
-    const oldDieResult = targetDie.total;
-
-    const modifier = action === 'edge' ? 'kh' : 'kl'
-    targetDie.modifiers?.push(modifier);
-
-    
     const resultResults = targetDie.results.map((result) => result.result);
 
+    const discardResult = targetDie.results[resultResults.indexOf(modifier === 'kh' ? Math.min.apply(Math, resultResults) : Math.max.apply(Math, resultResults))];
+    const activeResult = targetDie.results[resultResults.indexOf(modifier === 'kh' ? Math.max.apply(Math, resultResults) : Math.min.apply(Math, resultResults))];
 
-    const discardResult = targetDie.results[resultResults.indexOf(Math.min.apply(Math, resultResults))];
-    discardResult.active = false;
-    discardResult.discarded = true
-
+    console.log(`activeResult: ${Object.entries(activeResult)}`);
+    console.log(`discardResult: ${Object.entries(discardResult)}`);
     
-    const re = /{(.*),(.*),(.*)}(.*)/;
+    activeResult.active = true;
+    delete activeResult.discarded;
+
+    discardResult.active = false;
+    discardResult.discarded = true;
+
+    console.log(`mod activeResult: ${Object.entries(activeResult)}`);
+    console.log(`mod discardResult: ${Object.entries(discardResult)}`);
+    
+    const re = /(\(?{)(\dd\d),(\ddm),(\dd\d)(}.*)/;
 
     let replacedFormula;
     switch (dieIndex) {
       case 0: {
-        replacedFormula = roll.formula.replace(re, "{2" + modifier + ",$2,$3}$4");
+        replacedFormula = roll.formula.replace(re, "$12d6" + modifier + ",$3,$4$5");
       }
       case 1: {
-        replacedFormula = roll.formula.replace(re, "{$1,2"+ modifier +",$3}$4");
+        replacedFormula = roll.formula.replace(re, "$1$2,2dm"+ modifier +",$4$5");
       }
       case 2: {
-        replacedFormula = roll.formula.replace(re, "{$1,$2,2"+ modifier +"}$4");
+        replacedFormula = roll.formula.replace(re, "$1$2,$3,2d6"+ modifier +"$5");
       }
     }
 
-    targetDie.results.push(newRoll.terms[0].results[0]);
+    
 
     roll._formula = replacedFormula;
+    
+    console.log(`roll.formula: ${roll.formula}, replacedFormula: ${replacedFormula},  roll._formula: ${ roll._formula}`);
+
+
     const rollResults = roll.result.split(" ");
 
-    const newRollResultBase = roll.result.split(" ")[0] - oldDieResult + targetDie.total;
+    const newRollResultBase = rollResults[0] - oldDieResult + targetDie.total;
     rollResults[0] = newRollResultBase.toString();
 
     //roll.result = rollResults.join(" ");
 
-    roll._total = roll.total - oldDieResult + targetDie.total;
+    // roll._total = roll.result - oldDieResult + targetDie.total;
+    roll._total = roll.result - discardResult.result + activeResult.result;
+     
+    console.log(`roll._total: ${roll._total}, roll.total: ${roll.total},roll.result: ${roll.result}`);
+
     
     let update = await roll.toMessage({}, {create: false});
 

@@ -32,9 +32,6 @@ export default class MarvelMultiverseActorBase extends foundry.abstract.TypeData
       return obj;
     }, {}));
 
-    console.log(`rank while defining schema Rank: ${schema.attributes.rank}`);
-    console.log(`res while defining schema Rank: ${schema.abilities.res}`);
-
     schema.health = new fields.SchemaField({
       value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
       max: new fields.NumberField({ ...requiredInteger, initial: 0 })

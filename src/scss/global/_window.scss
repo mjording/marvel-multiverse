@@ -21,6 +21,14 @@
   bottom: 15px;
 }
 
+.dice-tooltip .dice-rolls .marvel-roll:nth-child(2)  {
+  bottom: 15px;
+}
+
+.dice-tooltip .dice-rolls .roll.discarded {
+  opacity: 0.5;
+}
+
 .reroll-buttons {
   max-width: 5em;
   display: flex;

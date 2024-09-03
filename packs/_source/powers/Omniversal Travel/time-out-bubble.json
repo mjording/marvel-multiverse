@@ -10,8 +10,8 @@
     "trigger": "The character or an ally is attacked.",
     "duration": "1 round per rank.",
     "range": "",
-    "cost": "15 Focus",
-    "effect": "The character creates a time bubble that affects themselves and any chosen allies within 1 space per rank. Within the bubble, the character and those allies can act normally while everyone else seems to be frozen in place."
+    "cost": "15 Focus per round",
+    "effect": "The character creates a time bubble that affects themselves and any chosen allies within 1 space per rank. Within the bubble, the character and those allies can act normally while everyone else seems to be frozen in place. The character can choose to activate the power for the maximum duration or choose to stop at any time. However long, they must pay the Focus cost for each round. For example, Quicksilver uses Time-Out as an action and pays 30 Focus to activate it for two rounds. He can take his normal number of actions, reactions and movement, while the other characters cannot take any actions, reactions or movements until after the two rounds end."
   },
   "flags": {},
   "effects": [],

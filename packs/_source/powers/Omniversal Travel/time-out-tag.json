@@ -11,7 +11,7 @@
     "duration": "1 round per rank.",
     "range": "",
     "cost": "15 Focus",
-    "effect": "The character freezes time for one person or thing within their reach. Everything and everyone else can act normally. If the target does not wish to be frozen, the character must grab them first."
+    "effect": "The character freezes time for one person or thing within their reach. Everything and everyone else can act normally. If the target does not wish to be frozen, the character must grab them first. The character can choose to activate the power for the maximum duration or choose to stop at any time. However long, they must pay the Focus cost for each round. For example, Quicksilver uses Time-Out as an action and pays 30 Focus to activate it for two rounds. He can take his normal number of actions, reactions and movement, while the other characters cannot take any actions, reactions or movements until after the two rounds end."
   },
   "flags": {},
   "effects": [],

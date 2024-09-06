@@ -249,6 +249,10 @@ h1, h2, h3, h4 {
   padding: 0;
 }
 
+.directory-item[data-entry-id=""] {
+  display: none !important;
+}
+
 .grid,
 .grid-2col {
   display: grid;

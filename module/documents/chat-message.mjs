@@ -22,7 +22,6 @@ export class ChatMessageMarvel extends ChatMessage {
         const html = await super.getHTML();
 
         this._displayChatActionButtons(html);
-        this._highlightFantasticSuccess(html);
 
         this._enrichChatCard(html[0]);
 
@@ -74,52 +73,7 @@ export class ChatMessageMarvel extends ChatMessage {
         btn.style.display = "none";
       });
     }
-}
-
-    
-  /* -------------------------------------------- */
-
-  /**
-   * Highlight Fantastic success on dMarvel rolls.
-   * @param {jQuery} html     Rendered contents of the message.
-   * @protected
-   */
-  _highlightFantasticSuccess(html) {
-    if ( !this.isContentVisible || !this.rolls.length ) return;
-    const originatingMessage = game.messages.get(this.getFlag("marvel-multiverse", "originatingMessage")) ?? this;
-    
-    const firstRollTerm = this.rolls[0].terms[0];
-
-    let rollTerm;
-    if(firstRollTerm instanceof foundry.dice.terms.ParentheticalTerm && firstRollTerm.roll.terms[0] instanceof foundry.dice.terms.PoolTerm){
-      rollTerm = firstRollTerm.roll.terms[0];
-    } else if (firstRollTerm instanceof foundry.dice.terms.PoolTerm) {
-      rollTerm = firstRollTerm
-    }
-
-    const [leftD6, marvelDie, rightD6] = rollTerm.rolls;
-
-    const isFantastic = marvelDie.terms[0].results[0].result === 1
-
-    if ( isFantastic ) {
-      const marvelDieItem = html.find(".tooltip-part:nth-child(2)");
-
-      marvelDieItem.find('li.d6').each((i, el) => { 
-        el.classList.remove("roll");
-        el.classList.add("fantastic");
-      });
-
-
-      marvelDieItem.find('span').each((i, el) => { 
-        el.classList.remove("roll");
-        el.classList.add("fantastic");
-      });
-
-      const dieTotal = html.find("h3.dice-total");
-      // total.classList.add("fantastic");
-    }
   }
-
 
   
   /* -------------------------------------------- */
@@ -384,7 +338,7 @@ export class ChatMessageMarvel extends ChatMessage {
     const chatMessage = game.messages.get(messageId);
     const modifier = action === 'edge' ? 'kh' : 'kl';
 
-    console.log(`dieIndex: ${dieIndex}, messageId: ${messageId}, action: ${action}, modifier: ${modifier}`);
+    
     const [roll] = chatMessage.rolls;
     
     const firstRollTerm = roll.terms[0];
@@ -404,12 +358,12 @@ export class ChatMessageMarvel extends ChatMessage {
     const targetReg = /\d(.*)/;
     const targetFormula = targetRoll._formula.replace(targetReg, '2$1');
 
-    console.log(`rollTerm.rolls.length: ${rollTerm.rolls.length}, targetRoll._formula: ${targetRoll._formula}, targetFormula: ${targetFormula} `);
+    
 
     targetRoll._formula = `${targetFormula}${modifier}`;
     targetRoll.number = 2;
 
-    console.log(`targetRoll._formula: ${targetRoll._formula}, targetRoll.formula: ${targetRoll.formula}, targetRoll.number: ${targetRoll.number}`);
+    
     const targetDie = targetRoll.terms[0];
 
     targetDie.modifiers?.push(modifier);
@@ -426,8 +380,8 @@ export class ChatMessageMarvel extends ChatMessage {
     const discardResult = targetDie.results[resultResults.indexOf(modifier === 'kh' ? Math.min.apply(Math, resultResults) : Math.max.apply(Math, resultResults))];
     const activeResult = targetDie.results[resultResults.indexOf(modifier === 'kh' ? Math.max.apply(Math, resultResults) : Math.min.apply(Math, resultResults))];
 
-    console.log(`activeResult: ${Object.entries(activeResult)}`);
-    console.log(`discardResult: ${Object.entries(discardResult)}`);
+    
+    
     
     activeResult.active = true;
     delete activeResult.discarded;
@@ -435,8 +389,8 @@ export class ChatMessageMarvel extends ChatMessage {
     discardResult.active = false;
     discardResult.discarded = true;
 
-    console.log(`mod activeResult: ${Object.entries(activeResult)}`);
-    console.log(`mod discardResult: ${Object.entries(discardResult)}`);
+    
+    
     
     const re = /(\(?{)(\dd\d),(\ddm),(\dd\d)(}.*)/;
 
@@ -457,7 +411,7 @@ export class ChatMessageMarvel extends ChatMessage {
 
     roll._formula = replacedFormula;
     
-    console.log(`roll.formula: ${roll.formula}, replacedFormula: ${replacedFormula},  roll._formula: ${ roll._formula}`);
+    
 
 
     const rollResults = roll.result.split(" ");
@@ -470,7 +424,7 @@ export class ChatMessageMarvel extends ChatMessage {
     // roll._total = roll.result - oldDieResult + targetDie.total;
     roll._total = roll.result - discardResult.result + activeResult.result;
      
-    console.log(`roll._total: ${roll._total}, roll.total: ${roll.total},roll.result: ${roll.result}`);
+    
 
     
     let update = await roll.toMessage({}, {create: false});

@@ -1,5 +1,5 @@
 {
-  "_id": "ff4dd501-3f2c-4561-9d46-a93aa20baf47",
+  "_id": "8846c6ca-a5a9-4d3b-9e7e-1ca2bb664189",
   "name": "Sturdy 2",
   "type": "power",
   "system": {
@@ -29,7 +29,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.ff4dd501-3f2c-4561-9d46-a93aa20baf47",
+      "origin": "Item.8846c6ca-a5a9-4d3b-9e7e-1ca2bb664189",
       "_id": "9cfacc0270f59b4b",
       "changes": [
         {
@@ -43,9 +43,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!ff4dd501-3f2c-4561-9d46-a93aa20baf47.9cfacc0270f59b4b"
+      "_key": "!items.effects!8846c6ca-a5a9-4d3b-9e7e-1ca2bb664189.9cfacc0270f59b4b"
     }
   ],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!ff4dd501-3f2c-4561-9d46-a93aa20baf47"
+  "_key": "!items!8846c6ca-a5a9-4d3b-9e7e-1ca2bb664189"
 }

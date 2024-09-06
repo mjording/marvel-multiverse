@@ -1,0 +1,20 @@
+{
+  "_id": "f3e00cc5-f1b8-450a-bc68-8be2ead23473",
+  "name": "Understand Sign Language",
+  "type": "power",
+  "system": {
+    "description": "The character can get what someone is signing.",
+    "powerSet": "Translation",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "When the character encounters an unknown sign langange for the first time, they can make a Logic vs. TN action check to puzzle it out. If they already know any other version of the language, they have an edge. On a success they understand and can sign in the language. On a Fantastic success. they permanently understand and can sign it and never need to make a check for it again."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "eb65a36e3f0c46fd",
+  "_key": "!items!f3e00cc5-f1b8-450a-bc68-8be2ead23473"
+}

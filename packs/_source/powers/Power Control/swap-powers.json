@@ -1,0 +1,22 @@
+{
+  "_id": "c5d30831-a06a-474e-bf67-1596cf943371",
+  "name": "Swap Powers",
+  "type": "power",
+  "system": {
+    "description": "The chararter swaps their powers for a target's powers.",
+    "powerSet": "Power Control",
+    "prerequisites": "Rank 1",
+    "action": "Standard or reaction",
+    "trigger": "The target is attacked",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "10 or more Focus",
+    "effect": "The character makes an Ego attack against a target they can see withia 2 spaces per the character's rank. If the target's powers have costs the characrer must pay the highest of them, or a minimum of 10 Focus. On a success, they swap ali of their non-Swap powers with the target's powers. Both chatacters can now use theit new powers es if they had always had them. When ever a character uses a swapped power they must pay any cost for it normally as well.",
+    "attackAbility": "ego",
+    "attackTarget": "ego"
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9d538083463adac7",
+  "_key": "!items!c5d30831-a06a-474e-bf67-1596cf943371"
+}

@@ -5,9 +5,9 @@
   "system": {
     "description": "The character can enter the Astral Plane",
     "powerSet": "Telepathy",
-    "prerequisites": "Sorcerous, Rank2",
+    "prerequisites": "Sorcerous, Rank 2",
     "action": "Standard",
-    "trigger": "The character is harmed by an attack.",
+    "trigger": "",
     "duration": "Concentration",
     "range": "",
     "cost": "5 Focus",

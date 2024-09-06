@@ -74,7 +74,7 @@
       },
       {
         "_id": "f5cab7c0-06de-4b0f-ba23-96621697a3f8",
-        "name": "Blood Thirsty",
+        "name": "BloodThirsty",
         "type": "trait",
         "system": {
           "restriction": "",

@@ -1,0 +1,20 @@
+{
+  "_id": "5960daba-d136-4e38-9c7b-81b670153d1e",
+  "name": "Scatter",
+  "type": "power",
+  "system": {
+    "description": "The character warns allies to take evasive action.",
+    "powerSet": "Tactics",
+    "prerequisites": "Hit the Dirt, Rank 3",
+    "action": "Reaction",
+    "trigger": "An enemy in line of sight declares an attack on an ally within earshot.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "10 focus",
+    "effect": "Any allies in earshot can be affected, up to a number equal to the character's rank. Each affected ally can move away from you at half Speed and then fall prone. If this makes the ally an ineligible target for the initial attack, that attack automatically fails."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b21090c059bb04d0",
+  "_key": "!items!5960daba-d136-4e38-9c7b-81b670153d1e"
+}

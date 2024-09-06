@@ -1,0 +1,20 @@
+{
+  "_id": "b54d61b2-09ac-4857-9568-757b90507485",
+  "name": "Cosmic Awareness",
+  "type": "power",
+  "system": {
+    "description": "The character can detect details about things anywhere in the universe.",
+    "powerSet": "Sixth Sense",
+    "prerequisites": "Microscopic Awareness. Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "Unlimited",
+    "cost": "15 Focus",
+    "effect": "The character can sense selected things at any distance from them. as long as they are in the same universe as what they are attempting to detect. This can include the location, relative velocity and overall emotional and physical status of any item, creature or group known to the character."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "34a53ed3fba44fe3",
+  "_key": "!items!b54d61b2-09ac-4857-9568-757b90507485"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "07428952-c41c-454d-9965-723441947600",
+  "name": "Jinx You All",
+  "type": "power",
+  "system": {
+    "description": "The character can jinx a whole group of foes at once.",
+    "powerSet": "Luck",
+    "prerequisites": "Evil Eye, Rank 3",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "5 spaces per rank",
+    "cost": "10 Focus per turn",
+    "effect": "The character picks up to one foe per rank in their line of sight. Those foes have trouble on all action checks made for the power's duration. There is no limit on the range from the character to their foes once the power is activated. The character must pay the Focus cost at the start of each of their subsequent turns of concentration to keep the power working."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "c3155c708eb54219",
+  "_key": "!items!07428952-c41c-454d-9965-723441947600"
+}

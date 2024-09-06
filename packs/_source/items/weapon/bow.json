@@ -1,5 +1,5 @@
 {
-  "_id": "f051c779-18b5-4bc2-80b8-ef2d1bdf5bd6",
+  "_id": "9bc47b19-fa5f-447c-a792-91b6460e5fdd",
   "name": "Bow",
   "type": "weapon",
   "system": {
@@ -10,5 +10,5 @@
   "flags": {},
   "effects": [],
   "folder": "8b60348af8f8d703",
-  "_key": "!items!f051c779-18b5-4bc2-80b8-ef2d1bdf5bd6"
+  "_key": "!items!9bc47b19-fa5f-447c-a792-91b6460e5fdd"
 }

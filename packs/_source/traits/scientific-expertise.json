@@ -4,7 +4,7 @@
   "type": "trait",
   "system": {
     "restriction": "",
-    "description": "The character has extensive scientific training. They have an edge on Logic checks made when dealing with scientific research. If they have access to on appropriate Inb at the time, they gain a second edge on such checks."
+    "description": "The character has extensive scientific training They have an edge on Logic checks made when dealing with scientific research, If they have access te an appropriate lab at the time they gain a second edge en such checks."
   },
   "flags": {},
   "effects": [],

@@ -1,0 +1,20 @@
+{
+  "_id": "132b70aa-4407-4432-919a-70c06a33cd6d",
+  "name": "Lucky You",
+  "type": "power",
+  "system": {
+    "description": "The character can give good fortune to a friend.",
+    "powerSet": "Luck",
+    "prerequisites": "Lucky Me, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "Reach",
+    "cost": "5 Focus per turn",
+    "effect": "The character touches an ally. That ally gains an edge on all action checks made while this power is in effect."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "c3155c708eb54219",
+  "_key": "!items!132b70aa-4407-4432-919a-70c06a33cd6d"
+}

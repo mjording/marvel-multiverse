@@ -1,0 +1,20 @@
+{
+  "_id": "be6360a1-f02f-4165-b4a1-17ba9977ab99",
+  "name": "Borrow Senses",
+  "type": "power",
+  "system": {
+    "description": "The character can use another person's senses.",
+    "powerSet": "Telepathy",
+    "prerequisites": "Telepathic Link, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character can use the full senses of someone or something with whom they have established a telepathic link or bond. While they do, they retain the use of their own senses too."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e745fc9dcc37bb2",
+  "_key": "!items!be6360a1-f02f-4165-b4a1-17ba9977ab99"
+}

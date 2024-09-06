@@ -1,0 +1,20 @@
+{
+  "_id": "339df6e0-e3bd-408b-899f-295a9cd3ccd3",
+  "name": "Group Levitation",
+  "type": "power",
+  "system": {
+    "description": "The character can lift others into the air too.",
+    "powerSet": "Telekinesis",
+    "prerequisites": "Levitation, Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "The character can move up to one person per rank through the air in any direction at the character's Run Speed. The levitated targets) must remain within 5 spaces times the character's rank. If any target does not wish to be moved like this, they must be telekinetically grabbed first."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bac06ccb5a9f2d39",
+  "_key": "!items!339df6e0-e3bd-408b-899f-295a9cd3ccd3"
+}

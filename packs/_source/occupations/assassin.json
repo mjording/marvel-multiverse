@@ -1,9 +1,9 @@
 {
-  "_id": "d76ee960-214e-465c-ab23-47953c969690",
+  "_id": "d601c3cb-cf9b-4b9f-b01a-e548e5a8d98a",
   "name": "Assassin",
   "type": "occupation",
   "system": {
-    "description": "The character is a hired killer. They might tell themselves that this is for the greater good. They might be picky about who they take on as clients or targets, but the core of their occupation is ending lives.",
+    "description": "The character is a hired killer. They might tell themselves that this is for the greater good. They might be picky about who they take on as clients or targets, but at the core of their occupation is ending lives.",
     "examples": "Arcade, Bullseye, Elektra, the Punisher.",
     "tags": [
       {
@@ -11,7 +11,7 @@
         "name": "Streetwise",
         "type": "tag",
         "system": {
-          "description": "The character knows how things are handled on the street who's in charpe of various ceiminal enterprises and how ta avoid issues with them",
+          "description": "The character knows how things are handled on the street who's in charpe of various ceiminal enterprises and how ta avoid issues with them.",
           "restriction": "",
           "rarity": ""
         },
@@ -24,8 +24,8 @@
         "name": "Villianous",
         "type": "tag",
         "system": {
-          "description": "The character is a villain, someone who cares little for the rights of others, up to and including their right to live",
-          "restriction": "The character cannot also be Heroic",
+          "description": "The character is a villain, someone who cares little for the rights of others, up to and including their right to live.",
+          "restriction": "The character cannot also be Heroic.",
           "rarity": ""
         },
         "flags": {},
@@ -52,7 +52,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "The character is known for favoring a particular kind of weapon or attack pewer. They have an edge when making attacks that way. This trait can be taken more than once, but each time must be with a different kind of weapon or attack power"
+          "description": "The character is known for favoring a particular kind of weapon or attack pewer. They have an edge when making attacks that way. This trait can be taken more than once, but each time must be with a different kind of weapon or attack power."
         },
         "flags": {},
         "effects": [],
@@ -62,5 +62,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!d76ee960-214e-465c-ab23-47953c969690"
+  "_key": "!items!d601c3cb-cf9b-4b9f-b01a-e548e5a8d98a"
 }

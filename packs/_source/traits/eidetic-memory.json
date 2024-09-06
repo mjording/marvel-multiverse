@@ -1,0 +1,12 @@
+{
+  "_id": "9f0f6561-1e44-4495-931f-ca69f19e6a73",
+  "name": "Eidetic Memory",
+  "type": "trait",
+  "system": {
+    "restriction": "",
+    "description": "The character rarely forgets anything. If their player forgets something, they can ask the Narrator to remind them."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!9f0f6561-1e44-4495-931f-ca69f19e6a73"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "3f8c52d0-90f3-422a-8b55-af2f46564bc9",
+  "name": "Jinx You",
+  "type": "power",
+  "system": {
+    "description": "The character can hit you with a jinx.",
+    "powerSet": "Luck",
+    "prerequisites": "Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "5 Focus per turn",
+    "effect": "The character makes a Melee check to touch the target. On a success, the power takes effect and that foe hass trouble on all action checks made for the power duration. On a Fantastic success, the target also takes standard (not doubled) Melee damage.  The character must pay the Focus cost at the start af each of their subsequent turns of concentration to keep the power working."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "c3155c708eb54219",
+  "_key": "!items!3f8c52d0-90f3-422a-8b55-af2f46564bc9"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "414c8091-4c2a-4446-96e0-a42fab97e1e5",
+  "name": "Telekinetic Protection 4",
+  "type": "power",
+  "system": {
+    "description": "The character's mind protects them like a fortress.",
+    "powerSet": "Telekinesis",
+    "prerequisites": "Telekinetic Protection 3, Rank 5",
+    "action": "Standard or Reaction",
+    "trigger": "The character is attacked or otherwise in danger.",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "20 Focus",
+    "effect": "The character's personal telekinetic field grants them protection. Any attacks against them that do 40 points of damage or less are instantly absorbed, and the protection continues. If an attack does more than 40 points of damage, it destroys the protection. Either way, the character remains unharmed."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bac06ccb5a9f2d39",
+  "_key": "!items!414c8091-4c2a-4446-96e0-a42fab97e1e5"
+}

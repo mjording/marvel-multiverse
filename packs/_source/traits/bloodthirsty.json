@@ -1,6 +1,6 @@
 {
-  "_id": "f5cab7c0-06de-4b0f-ba23-96621697a3f8",
-  "name": "Blood Thirsty",
+  "_id": "8c0c7c96-cbcb-475c-8ef2-2c48bddd65ba",
+  "name": "BloodThirsty",
   "type": "trait",
   "system": {
     "restriction": "",
@@ -8,5 +8,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!f5cab7c0-06de-4b0f-ba23-96621697a3f8"
+  "_key": "!items!8c0c7c96-cbcb-475c-8ef2-2c48bddd65ba"
 }

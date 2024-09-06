@@ -1,0 +1,20 @@
+{
+  "_id": "8b9d73cf-9df8-4bd0-9382-6a2735c0f438",
+  "name": "Telekinetic Protection 3",
+  "type": "power",
+  "system": {
+    "description": "The character's mind protects them like a tank.",
+    "powerSet": "Telekinesis",
+    "prerequisites": "Telekinetic Protection 2, Rank 4",
+    "action": "Standard or Reaction",
+    "trigger": "The character is attacked or otherwise in danger.",
+    "duration": "Concentration",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "The character's personal telekinetic field protects them. Any attacks against them that do 30 points of damage or less are instantly absorbed, and the protection continues. If an attack does more than 30 points of damage, it destroys the protection. Either way, the character remains unharmed. "
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "bac06ccb5a9f2d39",
+  "_key": "!items!8b9d73cf-9df8-4bd0-9382-6a2735c0f438"
+}

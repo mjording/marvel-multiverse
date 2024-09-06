@@ -1,0 +1,310 @@
+{
+  "_id": "5509ce72-7264-4028-a3c0-ed9f394064ec",
+  "name": "Alien: Technarch",
+  "type": "origin",
+  "system": {
+    "description": "The character is a member of the alien species known as the Technarchy. These artificially intelligent techno-organic beings use a Transmode virus to infect other creatures and eventually take over a planet to prepare it to become part of the Phalanx or be devoured.",
+    "examples": "Warlock, Magus.",
+    "suggestedOccupation": "Outsider",
+    "tags": [
+      {
+        "_id": "95b12d2a-935b-40d6-a9a8-3e8031a46229",
+        "name": "A.I.",
+        "type": "tag",
+        "system": {
+          "description": "The character possesses an artificial intelligence in a computerized mind. Their digital nature means that copies or backups can be made of their mind and can even be transferred into other compatible forms.",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!95b12d2a-935b-40d6-a9a8-3e8031a46229"
+      },
+      {
+        "_id": "018ec37f-5d6a-756e-bfc3-efb8b07594f6",
+        "name": "Alien Heritage",
+        "type": "tag",
+        "system": {
+          "description": "The character or at least ane of their ancestors- is not from Earth. Pick an allen race that they belong to, If they were not raised on Earth, they should consider taking the Outsider occupation."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!018ec37f-5d6a-756e-bfc3-efb8b07594f6"
+      },
+      {
+        "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
+        "name": "Extreme Appearance",
+        "type": "tag",
+        "system": {
+          "description": "The character looks very different than the average person As a mutant, the character is automatically a citizen of the (wherever they happen to be) and cannot easily hide their island-nation of Krakoa and can travel to and from there identity, When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme Appearance is common.",
+          "rarity": "In their natural form"
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1"
+      },
+      {
+        "_id": "bab45de7-1e15-4e1e-b504-0e63696817fd",
+        "name": "Powerful",
+        "type": "tag",
+        "system": {
+          "description": "The character has access to the resources of their entire community. In most cases, they must be careful about how they use such resources so that they don't lose that access",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!bab45de7-1e15-4e1e-b504-0e63696817fd"
+      }
+    ],
+    "traits": [
+      {
+        "_id": "51cf3fa0-43b1-4d8f-a4e9-f8ecdb634020",
+        "name": "Enduring Constitution",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character can function for up to 48 hours without sleep and has an edge on Resilience checks to overcome fatigue or weariness."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!51cf3fa0-43b1-4d8f-a4e9-f8ecdb634020"
+      },
+      {
+        "_id": "8dbad125-860a-43c4-95b9-53154ba7806a",
+        "name": "Fresh Eyes",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character has their own way of doing things. This often makes them seem strange to those around them, but it means they can bring new perspectives to existing issues. They have an edge on Logic checks when faced with something for the first time."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!8dbad125-860a-43c4-95b9-53154ba7806a"
+      },
+      {
+        "_id": "1fd487cd-04d5-4fed-8c25-a6061d1c8e06",
+        "name": "Infector",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character can infect a target with a disease, which muy be chosen along with the trait. Examples include: Brood implantation, Techno-Organic virus, Transmode virus. See the Infected condition (X-Men expansion p 139) for details about how Infection works, and the Infections and Possessions section (p: 146) for the effects of the above diseases."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!1fd487cd-04d5-4fed-8c25-a6061d1c8e06"
+      }
+    ],
+    "powers": [
+      {
+        "_id": "7aca5e1f-b3b8-4998-8437-136bf240b26a",
+        "name": "Brain Drain",
+        "type": "power",
+        "system": {
+          "description": "The character fires enchanted bots of electricity from their fingers.",
+          "powerSet": "Magic",
+          "prerequisites": "Rank 2",
+          "action": "Reaction",
+          "trigger": "The target is grabbed.",
+          "duration": "Instant",
+          "range": "",
+          "cost": "5 Focus",
+          "effect": "The character makes an Ego attack against the target's Vigilance. If it succeeds, the target takes regular Focus damage, and the character heals half that much Focus for themselves. On a Fantastic success, the character heals their full Focus damage instead.",
+          "attackAbility": "ego",
+          "attackTarget": "vig"
+        },
+        "flags": {},
+        "effects": [],
+        "folder": "8c23e6cd16b9bb49",
+        "_key": "!items!7aca5e1f-b3b8-4998-8437-136bf240b26a"
+      },
+      {
+        "_id": "018ec3bb-90b5-78a8-b9f3-14ddf0804a50",
+        "name": "Disguise",
+        "type": "power",
+        "system": {
+          "description": "The character appears to be someone else,",
+          "powerSet": "Basic",
+          "prerequisites": "",
+          "action": "Standard",
+          "trigger": "",
+          "duration": "Permanent",
+          "range": "",
+          "cost": "",
+          "effect": "The character instantly alters their appearance so that they appear to be someone else. The target number for anyone trying to see through the disguise is the character's Ego defense. If the character is impersonating someone known to the other person, that person has an edge."
+        },
+        "flags": {},
+        "effects": [],
+        "folder": "bbe663a787c7ec04",
+        "_key": "!items!018ec3bb-90b5-78a8-b9f3-14ddf0804a50"
+      },
+      {
+        "_id": "f40a973e-9efc-4283-9131-0bd5458d88ad",
+        "name": "Environmental Protection",
+        "type": "power",
+        "system": {
+          "description": "Environmental effects don't bother the character.",
+          "powerSet": "Basic",
+          "prerequisites": "",
+          "action": "Permanent",
+          "trigger": "The character takes Health damage.",
+          "duration": "Instant",
+          "range": "",
+          "cost": "15 Focus",
+          "effect": "The character is not harmed by intense cold or heat, the pressure of the deep seas or the intense radiation and vacuum of space. The player can choose any or all of these protections, as best fits with the character concept."
+        },
+        "flags": {},
+        "effects": [],
+        "folder": "bbe663a787c7ec04",
+        "_key": "!items!f40a973e-9efc-4283-9131-0bd5458d88ad"
+      },
+      {
+        "_id": "018ec3bf-1d7c-726c-ad05-939de51fc920",
+        "name": "Extended Reach 1",
+        "type": "power",
+        "system": {
+          "description": "The character's reach grows.",
+          "powerSet": "Plasticity",
+          "prerequisites": "",
+          "action": "",
+          "trigger": "",
+          "duration": "Permanent",
+          "range": "",
+          "cost": "",
+          "effect": "The character's reach quadruples",
+          "numbered": 1
+        },
+        "flags": {},
+        "effects": [
+          {
+            "name": "Reach x4",
+            "img": "icons/svg/aura.svg",
+            "duration": {
+              "startTime": null,
+              "seconds": null,
+              "combat": null,
+              "rounds": null,
+              "turns": null,
+              "startRound": null,
+              "startTurn": null
+            },
+            "disabled": false,
+            "origin": "Item.018ec3bf-1d7c-726c-ad05-939de51fc920",
+            "_id": "bea1573f91f7ac3a",
+            "changes": [
+              {
+                "key": "system.reach",
+                "mode": 1,
+                "value": 4
+              }
+            ],
+            "description": "",
+            "transfer": true,
+            "statuses": [],
+            "flags": {},
+            "tint": null,
+            "_key": "!items.effects!018ec3bf-1d7c-726c-ad05-939de51fc920.bea1573f91f7ac3a"
+          }
+        ],
+        "folder": "b660cb39178688a5",
+        "_key": "!items!018ec3bf-1d7c-726c-ad05-939de51fc920"
+      },
+      {
+        "_id": "018ec3c3-7940-7d9f-b111-ba59315a2292",
+        "name": "Flexible Bones 1",
+        "type": "power",
+        "system": {
+          "description": "The character's skeleton is rubbery.",
+          "powerSet": "Plasticity",
+          "prerequisites": "",
+          "action": "",
+          "trigger": "",
+          "duration": "Permanent",
+          "range": "",
+          "cost": "",
+          "effect": "The character gains Health Damage Reduction 1. They also have an edde on Agility checks for contortion and escape.",
+          "numbered": 1
+        },
+        "flags": {},
+        "effects": [
+          {
+            "name": "Health Damage Reduction 1",
+            "img": "icons/svg/aura.svg",
+            "duration": {
+              "startTime": null,
+              "seconds": null,
+              "combat": null,
+              "rounds": null,
+              "turns": null,
+              "startRound": null,
+              "startTurn": null
+            },
+            "disabled": false,
+            "origin": "Item.018ec3c3-7940-7d9f-b111-ba59315a2292",
+            "_id": "96ae1d4e6e1faf99",
+            "changes": [
+              {
+                "key": "system.healthDamageReduction",
+                "mode": 2,
+                "value": 1
+              }
+            ],
+            "description": "",
+            "transfer": true,
+            "statuses": [],
+            "flags": {},
+            "tint": null,
+            "_key": "!items.effects!018ec3c3-7940-7d9f-b111-ba59315a2292.96ae1d4e6e1faf99"
+          }
+        ],
+        "folder": "b660cb39178688a5",
+        "_key": "!items!018ec3c3-7940-7d9f-b111-ba59315a2292"
+      },
+      {
+        "_id": "a255833d-3de7-4e65-b63b-afd517222ade",
+        "name": "Leech Life",
+        "type": "power",
+        "system": {
+          "description": "The character consumes the life force of another.",
+          "powerSet": "Magic",
+          "prerequisites": "Rank 2",
+          "action": "Reaction",
+          "trigger": "Target is grabbed.",
+          "duration": "Instant",
+          "range": "",
+          "cost": "5 Focus",
+          "effect": "The character makes an Ego attack against the target's Resilience defense. If it succeeds, the target takes regular Health damage, and the character heals half that much Health for themselves. On a Fantastic success, the character heals the full Health damage instead.",
+          "attackAbility": "ego",
+          "attackTarget": "res"
+        },
+        "flags": {},
+        "effects": [],
+        "folder": "8c23e6cd16b9bb49",
+        "_key": "!items!a255833d-3de7-4e65-b63b-afd517222ade"
+      },
+      {
+        "_id": "018ec3c5-65a0-732e-ae14-57121bf2593f",
+        "name": "Shape-Shift",
+        "type": "power",
+        "system": {
+          "description": "The character can change forms.",
+          "powerSet": "Basic",
+          "prerequisites": "Disguise, Rank 3",
+          "action": "standard or reaction",
+          "trigger": "The character is attacked or otherwise in danger.",
+          "duration": "Permanent",
+          "range": "",
+          "cost": "",
+          "effect": "The character can change into another form no more than one size bigger or smaller than their regular form. When in any form the character has access to the natural abilities of that form, For instance, if they transformed into a bird, they could fly. When transformed into a fish, they can breathe water."
+        },
+        "flags": {},
+        "effects": [],
+        "folder": "bbe663a787c7ec04",
+        "_key": "!items!018ec3c5-65a0-732e-ae14-57121bf2593f"
+      }
+    ]
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!5509ce72-7264-4028-a3c0-ed9f394064ec"
+}

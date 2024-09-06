@@ -1,0 +1,12 @@
+{
+  "_id": "9c3626ad-1288-4387-ab1a-d553f321621c",
+  "name": "Clueless",
+  "type": "trait",
+  "system": {
+    "restriction": "",
+    "description": "The character tends to shut out things they're not entirely focused on. They have trouble on any Vigilance checks to spot hidden or invisible things. Enemies have an edge on Agility checks to sneak near or past them."
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!9c3626ad-1288-4387-ab1a-d553f321621c"
+}

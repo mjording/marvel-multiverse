@@ -1,5 +1,5 @@
 {
-  "_id": "db2b94fc-35df-4512-94a2-9825b4c5774d",
+  "_id": "34616b50-455d-48f9-8e16-7a6b394eca94",
   "name": "Educator",
   "type": "occupation",
   "system": {
@@ -46,5 +46,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!db2b94fc-35df-4512-94a2-9825b4c5774d"
+  "_key": "!items!34616b50-455d-48f9-8e16-7a6b394eca94"
 }

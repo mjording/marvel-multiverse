@@ -1,0 +1,20 @@
+{
+  "_id": "10a9ebe6-b720-49a5-899b-acd9e43f393a",
+  "name": "Healing Hands",
+  "type": "power",
+  "system": {
+    "description": "The character has a healing touch",
+    "powerSet": "Healing",
+    "prerequisites": "Let's Go. Rank 3",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "Reach",
+    "cost": "10 or more Focus",
+    "effect": "The character can heal a target creature with a touch. For every point of Focus the character spends, the target regains a point of Health, up to thelr maximum score. The character must spend at least 10 Focus to use the power. Any Health points that would have been healed beyond the target's maximum Health are lost."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "e244d01d5a2f4c4f",
+  "_key": "!items!10a9ebe6-b720-49a5-899b-acd9e43f393a"
+}

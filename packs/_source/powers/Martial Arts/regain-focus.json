@@ -1,0 +1,20 @@
+{
+  "_id": "08cd9bf2-8721-4342-92f8-0f4ad234d0e8",
+  "name": "Regain Focus",
+  "type": "power",
+  "system": {
+    "description": "The character takes a moment to find their center",
+    "powerSet": "Martial Arts",
+    "prerequisites": "Unflappable Poise, Untouchable Position, Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "The character recovers Focus equal to their Vigilance."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9a200a2684a8be54",
+  "_key": "!items!08cd9bf2-8721-4342-92f8-0f4ad234d0e8"
+}

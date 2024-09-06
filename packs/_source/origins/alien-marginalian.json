@@ -1,0 +1,324 @@
+{
+  "_id": "e06c8274-a30e-4a24-b234-c1f713e75d61",
+  "name": "Alien: Marginalian",
+  "type": "origin",
+  "system": {
+    "description": "The character is a Marginal, a species of asexually reproducing hermaphrodites who come from Marginalia, a space between universes. They are legless, shaped Iike a green potato with arms, and they get around by means of levitation.",
+    "examples": "Doop.",
+    "suggestedOccupation": "Outsider",
+    "tags": [
+      {
+        "_id": "018ec37f-5d6a-756e-bfc3-efb8b07594f6",
+        "name": "Alien Heritage",
+        "type": "tag",
+        "system": {
+          "description": "The character or at least one of their ancestors is not from Earth. Pick an alien race that they belong to. If they were not raised on Earth, they should consider taking the Outsider occupation.",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!018ec37f-5d6a-756e-bfc3-efb8b07594f6"
+      },
+      {
+        "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
+        "name": "Extreme Appearance",
+        "type": "tag",
+        "system": {
+          "description": "The character looks very different than the average person (wherever they happen to be) and cannot easily hide their identity. When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme appearance is common.",
+          "restriction": "",
+          "rarity": ""
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1"
+      }
+    ],
+    "traits": [
+      {
+        "_id": "68c91186-1b07-4185-af53-fc473db163e0",
+        "name": "Weird",
+        "type": "trait",
+        "system": {
+          "restriction": "",
+          "description": "The character has something weird (or even wonderful) about them. This causes people to have strong reactions to them, both good and bad. They have an edge on all Ego checks to persuade people inclined to like them and trouble on all Ego checks against people inclined to dislike them."
+        },
+        "flags": {},
+        "effects": [],
+        "_key": "!items!68c91186-1b07-4185-af53-fc473db163e0"
+      }
+    ],
+    "powers": [
+      {
+        "_id": "6fcad11f-dee9-49fa-aa1f-f3e554b1e8ff",
+        "name": "Dimensional Portal",
+        "type": "power",
+        "system": {
+          "description": "The character opens a portal to another place.",
+          "powerSet": "Omniversal Travel",
+          "prerequisites": "Dimensional Travel Together, Rank 4",
+          "action": "Standard",
+          "trigger": "",
+          "duration": "Concentration",
+          "range": "",
+          "cost": "15 Focus",
+          "effect": "The character opens a glowing portal in a space next to them that moves anything that enters it between that space and its destination, which forms a matched glowing portal in the other place. The other end of the portal must be in a clear space in another dimension that the character has been to. Anything can move through the portal in either direction until it is closed, which the character can do at will."
+        },
+        "flags": {},
+        "effects": [],
+        "folder": "882fb16dc4a7430e",
+        "_key": "!items!6fcad11f-dee9-49fa-aa1f-f3e554b1e8ff"
+      },
+      {
+        "_id": "53178756-f5ea-41db-8ca3-637f6ed43814",
+        "name": "Dimensional Travel",
+        "type": "power",
+        "system": {
+          "description": "The character moves from one dimension to another.",
+          "powerSet": "Omniversal Travel",
+          "prerequisites": "Rank 3",
+          "action": "Standard or movement",
+          "trigger": "",
+          "duration": "Instant",
+          "range": "",
+          "cost": "10 Focus",
+          "effect": "The character instantly moves from their current dimension to another dimension within the same universe. For instance: from Earth to Asgard, Limbo or Kun-Lun. When they move to the other dimension, they can arrive in any place they've been to before. Otherwise, they arrive at the most common entrance to that dimension."
+        },
+        "flags": {},
+        "effects": [],
+        "folder": "882fb16dc4a7430e",
+        "_key": "!items!53178756-f5ea-41db-8ca3-637f6ed43814"
+      },
+      {
+        "_id": "5076a549-8629-4a1d-8e88-62e93121fe9a",
+        "name": "Dimensional Travel Other",
+        "type": "power",
+        "system": {
+          "description": "The character sends someone to another dimension.",
+          "powerSet": "Omniversal Travel",
+          "prerequisites": "Dimensional Travel, Rank 4",
+          "action": "Standard, movement or reaction",
+          "trigger": "The target is grabbed",
+          "duration": "Instant",
+          "range": "",
+          "cost": "15 Focus",
+          "effect": "The character makes an Ego check against the Vigilance defense of a target they have grabbed. If the check is successful, the character can send the target to another dimension. The target can be sent to any location in that dimension that the character has been to before. Otherwise, the target arrives at the most common entrance to that dimension.",
+          "attackAbility": "ego",
+          "attackTarget": "vig"
+        },
+        "flags": {},
+        "effects": [],
+        "folder": "882fb16dc4a7430e",
+        "_key": "!items!5076a549-8629-4a1d-8e88-62e93121fe9a"
+      },
+      {
+        "_id": "30c0c890-49b3-4250-a753-e7ab8d9e6502",
+        "name": "Dimensional Travel Together",
+        "type": "power",
+        "system": {
+          "description": "The character sends someone to another dimension.",
+          "powerSet": "Omniversal Travel",
+          "prerequisites": "Dimensional Travel, Rank 3",
+          "action": "Standard, movement or reaction",
+          "trigger": "The target is grabbed",
+          "duration": "Instant",
+          "range": "",
+          "cost": "10 Focus",
+          "effect": "The character moves to a different dimension, taking any person they are touching with them. If the target does not wish to come along, the character must grab them first. When they move to the other dimension, they can arrive In any place they've been to before. Otherwise, they arrive at the most common entrance to that dimension."
+        },
+        "flags": {},
+        "effects": [],
+        "folder": "882fb16dc4a7430e",
+        "_key": "!items!30c0c890-49b3-4250-a753-e7ab8d9e6502"
+      },
+      {
+        "_id": "0619d982-20ca-4ca0-9fcb-01b2228e5a21",
+        "name": "Grow 2",
+        "type": "power",
+        "system": {
+          "description": "The character becomes even bigger!",
+          "powerSet": "Resize",
+          "prerequisites": "",
+          "action": "Standard or reaction",
+          "trigger": "The character is attacked.",
+          "duration": "Permanent",
+          "range": "",
+          "cost": "",
+          "effect": "The character can grow up to huge size. They can return to their normal size at will.",
+          "numbered": 2
+        },
+        "flags": {},
+        "effects": [],
+        "folder": "b74def8c3ea77646",
+        "_key": "!items!0619d982-20ca-4ca0-9fcb-01b2228e5a21"
+      },
+      {
+        "_id": "ccce5902-4be6-4b95-9851-216c6471e72f",
+        "name": "Healing Factor",
+        "type": "power",
+        "system": {
+          "description": "The character heals amazingly fast.",
+          "powerSet": "Basic",
+          "prerequisites": "",
+          "action": "",
+          "trigger": "",
+          "duration": "Permanent",
+          "range": "",
+          "cost": "",
+          "effect": "At the ond of the character’s turn, they regain Health equal to their Resilience, (This works outside of combat too, quickly bringing them back 1o full Health)"
+        },
+        "flags": {},
+        "effects": [],
+        "folder": "bbe663a787c7ec04",
+        "_key": "!items!ccce5902-4be6-4b95-9851-216c6471e72f"
+      },
+      {
+        "_id": "88e754e8-838c-4d9c-8417-fe9a1b6d686e",
+        "name": "Levitation",
+        "type": "power",
+        "system": {
+          "description": "The character can hover and move.",
+          "powerSet": "Telekinesis",
+          "prerequisites": "",
+          "action": "Standard",
+          "trigger": "",
+          "duration": "Permanent",
+          "range": "",
+          "cost": "",
+          "effect": "The character can move through the air in any direction at their Run Speed."
+        },
+        "flags": {},
+        "effects": [],
+        "folder": "bac06ccb5a9f2d39",
+        "_key": "!items!88e754e8-838c-4d9c-8417-fe9a1b6d686e"
+      },
+      {
+        "_id": "af5e1817-98b9-46f9-9f5e-70dac2407699",
+        "name": "Shrink 2",
+        "type": "power",
+        "system": {
+          "description": "The character becomes even smaller!",
+          "powerSet": "Resize",
+          "prerequisites": "Shrink 1",
+          "action": "Standard or reaction",
+          "trigger": "The character is attacked.",
+          "duration": "Permanent",
+          "range": "",
+          "cost": "",
+          "effect": "The character can shrink down to tiny size. They can return to their normal size at will.",
+          "numbered": 2
+        },
+        "flags": {},
+        "effects": [],
+        "folder": "b74def8c3ea77646",
+        "_key": "!items!af5e1817-98b9-46f9-9f5e-70dac2407699"
+      },
+      {
+        "_id": "8846c6ca-a5a9-4d3b-9e7e-1ca2bb664189",
+        "name": "Sturdy 2",
+        "type": "power",
+        "system": {
+          "description": "The character si protected as if by steel.",
+          "powerSet": "Basic",
+          "prerequisites": "Sturdy 1, Rank 2",
+          "action": "",
+          "trigger": "",
+          "duration": "Permanent",
+          "range": "",
+          "cost": "",
+          "effect": "The character gains Health Damage Reduction 2.",
+          "numbered": 2
+        },
+        "flags": {},
+        "effects": [
+          {
+            "name": "Health Damage Reduction 2",
+            "img": "icons/svg/aura.svg",
+            "duration": {
+              "startTime": null,
+              "seconds": null,
+              "combat": null,
+              "rounds": null,
+              "turns": null,
+              "startRound": null,
+              "startTurn": null
+            },
+            "disabled": false,
+            "origin": "Item.8846c6ca-a5a9-4d3b-9e7e-1ca2bb664189",
+            "_id": "9cfacc0270f59b4b",
+            "changes": [
+              {
+                "key": "system.healthDamageReduction",
+                "mode": 2,
+                "value": 2
+              }
+            ],
+            "description": "",
+            "transfer": true,
+            "statuses": [],
+            "flags": {},
+            "tint": null,
+            "_key": "!items.effects!8846c6ca-a5a9-4d3b-9e7e-1ca2bb664189.9cfacc0270f59b4b"
+          }
+        ],
+        "folder": "bbe663a787c7ec04",
+        "_key": "!items!8846c6ca-a5a9-4d3b-9e7e-1ca2bb664189"
+      },
+      {
+        "_id": "6ca1e80c-e48e-4903-8f59-b49990e9ae47",
+        "name": "Uncanny 2",
+        "type": "power",
+        "system": {
+          "description": "The character’s mind isprotected as ifby steel.",
+          "powerSet": "Basic",
+          "prerequisites": "Uncanny 1, Rank 2",
+          "action": "",
+          "trigger": "",
+          "duration": "Permanent",
+          "range": "",
+          "cost": "",
+          "effect": "Any damage multiplier for attacks against the character's Focus is reduced by 2.",
+          "numbered": 2
+        },
+        "flags": {},
+        "effects": [
+          {
+            "name": "Focus Damage Reduction 2",
+            "img": "icons/svg/aura.svg",
+            "duration": {
+              "startTime": null,
+              "seconds": null,
+              "combat": null,
+              "rounds": null,
+              "turns": null,
+              "startRound": null,
+              "startTurn": null
+            },
+            "disabled": false,
+            "origin": "Item.6ca1e80c-e48e-4903-8f59-b49990e9ae47",
+            "_id": "0eb5de0042154018",
+            "changes": [
+              {
+                "key": "system.focusDamageReduction",
+                "mode": 2,
+                "value": 2
+              }
+            ],
+            "description": "",
+            "transfer": true,
+            "statuses": [],
+            "flags": {},
+            "tint": null,
+            "_key": "!items.effects!6ca1e80c-e48e-4903-8f59-b49990e9ae47.0eb5de0042154018"
+          }
+        ],
+        "folder": "bbe663a787c7ec04",
+        "_key": "!items!6ca1e80c-e48e-4903-8f59-b49990e9ae47"
+      }
+    ],
+    "minimumRank": 3
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!e06c8274-a30e-4a24-b234-c1f713e75d61"
+}

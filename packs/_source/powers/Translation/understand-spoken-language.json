@@ -1,0 +1,20 @@
+{
+  "_id": "1befa555-20a2-4fef-b8e1-6cc415e9836d",
+  "name": "Understand Spoken Language",
+  "type": "power",
+  "system": {
+    "description": "The character can get what someone is saying.",
+    "powerSet": "Translation",
+    "prerequisites": "",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "",
+    "effect": "When the character encounters an unknown spoken languuge ftir the first time, they can make a Logic vs. TN 13 action check to puzzle it out. If they already know any other version the language, they have an edge. On a success they understand and can speak the language. On a Fantastic success, they permanently understand and can speak it and never need to make a check for it again."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "eb65a36e3f0c46fd",
+  "_key": "!items!1befa555-20a2-4fef-b8e1-6cc415e9836d"
+}

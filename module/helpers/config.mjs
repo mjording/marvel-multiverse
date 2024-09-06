@@ -54,6 +54,7 @@ MARVEL_MULTIVERSE.powersets = {
       magic: {label: "Magic"},
       martialArts: {label: "Martial Arts"},
       meleeWeapons: {label: "Melee Weapons"},
+      narrative: {label: "Narrative"},
       omniversalTravel: {label: "Omniversal Travel"},
       phasing: {label: "Phasing"},
       plasticity: {label: "Plasticity"},

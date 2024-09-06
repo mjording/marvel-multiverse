@@ -25,7 +25,7 @@
       "thumbnail": "systems/marvel-multiverse/ui/official/mmrpg-setup-thumbnail.png"
     }
   ],
-  "version": "1.5.3",
+  "version": "1.5.4",
   "compatibility": {
     "minimum": 12,
     "verified": "12.328"
@@ -106,33 +106,17 @@
       "color": "#cd2c1e",
       "packs": [
         "tags",
-        "traits"
-      ],
-      "folders": [
-        {
-          "name": "Character Features",
-          "sorting": "m",
-          "color": "#cd2c1e",
-          "packs": [
-            "origins",
-            "occupations"
-          ]
-        },
-        {
-          "name": "Items & Powers",
-          "sorting": "m",
-          "color": "#941919 ",
-          "packs": [
-            "items",
-            "powers"
-          ]
-        }
+        "traits",
+        "origins",
+        "occupations",
+        "items",
+        "powers"
       ]
     }
   ],
   "socket": true,
   "manifest": "https://raw.githubusercontent.com/mjording/marvel-multiverse/main/system.json",
-  "download": "https://github.com/mjording/marvel-multiverse/releases/download/release-1.5.3/marvel-multiverse-release-1.5.3.zip",
+  "download": "https://github.com/mjording/marvel-multiverse/releases/download/release-1.5.4/marvel-multiverse-release-1.5.4.zip",
   "background": "systems/marvel-multiverse/ui/official/mmrpg-background.webp",
   "grid": {
     "distance": 5,

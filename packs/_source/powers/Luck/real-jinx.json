@@ -1,0 +1,20 @@
+{
+  "_id": "0599d6d4-1a83-4a40-9800-57eb55ba6c27",
+  "name": "Real Jinx",
+  "type": "power",
+  "system": {
+    "description": "The character is bad luck-for their foes.",
+    "powerSet": "Luck",
+    "prerequisites": "Rank 4",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "All tharacters who attempt to harm the character by direct action have trouble on their action checks. Tha doea not stack with any other trouble."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "c3155c708eb54219",
+  "_key": "!items!0599d6d4-1a83-4a40-9800-57eb55ba6c27"
+}

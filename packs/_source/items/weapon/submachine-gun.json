@@ -1,5 +1,5 @@
 {
-  "_id": "b9595ee2-eac9-4c36-b4d1-27acd64d54f6",
+  "_id": "6d84ac7e-2de4-464a-8abc-5a64f8092bd9",
   "name": "Submachine Gun",
   "type": "weapon",
   "system": {
@@ -10,5 +10,5 @@
   "flags": {},
   "effects": [],
   "folder": "8b60348af8f8d703",
-  "_key": "!items!b9595ee2-eac9-4c36-b4d1-27acd64d54f6"
+  "_key": "!items!6d84ac7e-2de4-464a-8abc-5a64f8092bd9"
 }

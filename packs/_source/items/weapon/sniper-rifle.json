@@ -1,5 +1,5 @@
 {
-  "_id": "a1e3d82b-b3b3-4ae4-af13-61c00b239da5",
+  "_id": "a1e3d8971841dc-ec99-42f6-8542-436f139c73de",
   "name": "Sniper Rifle",
   "type": "weapon",
   "system": {
@@ -10,5 +10,5 @@
   "flags": {},
   "effects": [],
   "folder": "8b60348af8f8d703",
-  "_key": "!items!a1e3d82b-b3b3-4ae4-af13-61c00b239da5"
+  "_key": "!items!a1e3d8971841dc-ec99-42f6-8542-436f139c73de"
 }

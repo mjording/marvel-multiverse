@@ -1,0 +1,21 @@
+{
+  "_id": "5e61c50f-6d73-4589-9c35-35b3fe769f26",
+  "name": "Postcognition 3",
+  "type": "power",
+  "system": {
+    "description": "The character knows what happened in the past year.",
+    "powerSet": "Sixth Sense",
+    "prerequisites": "Postcognition 2. Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "20 Focus",
+    "effect": "The character can sense what happened to a particular person, place, or item within their reach-incuding themselves in any 24 hour period in the past year. If using the power to analyze a person, they sense the event from the person's point of view using that person's senses. If the person is unconscious, dead or atherwise senseless at any point during that time, the character cannot sense anything at those points either. If using the power to analyze a place, the character can sense everything that happened in that place over that period of time, uaing their own senses. It seems to the character as if they are standing in their current location and position. If using the power to analyze an item, the character senses how the item was affected or used over that period of time, no matter where it was located or how it moved. They can sense things as if the item had their senses. The character can fast forward and rewind through the period of time and stop at interesting parts, allowing them to play out in real time.",
+    "numbered": 2
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "34a53ed3fba44fe3",
+  "_key": "!items!5e61c50f-6d73-4589-9c35-35b3fe769f26"
+}

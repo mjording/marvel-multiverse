@@ -14,15 +14,18 @@ export class MarvelDie extends foundry.dice.terms.Die {
 	 * @param {DiceTermResult} result
 	 */
 	getResultCSS(result) {
-		let resultStyle = '';
+		let resultStyles = ['marvel-roll', 'die', 'd6']
 
 		if (result.result === 1) {
-			resultStyle = 'fantastic';
+			resultStyles.push('fantastic');
 		} else if (result.result === 6) {
-			resultStyle = 'max';
+			resultStyles.push('max');
 		}
 
-		return ['marvel-roll', 'd6', resultStyle];
+		if (result.discarded){
+			resultStyles.push('discarded');
+		}
+		return resultStyles;
 	}
 
 	/**

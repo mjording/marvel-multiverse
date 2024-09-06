@@ -1,0 +1,20 @@
+{
+  "_id": "bcd46107-946d-4030-8266-e4edbb7a1285",
+  "name": "Indecipherable",
+  "type": "power",
+  "system": {
+    "description": "The character can tell if you're telling the truth.",
+    "powerSet": "Translation",
+    "prerequisites": "Understand Spoken Language. Understand Unusual Communication. Rank 3",
+    "action": "",
+    "trigger": "",
+    "duration": "Permanent",
+    "range": "",
+    "cost": "",
+    "effect": "The character has constructed an internal language that only they can understand. They think in this language entirely, and when they communicate with others, they are transtating from that language. This effectively renders them immune to telepathic powers like Mind Reading or Mind Interrogation, as anyone trying to read their mind cannot understand this unique language."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "eb65a36e3f0c46fd",
+  "_key": "!items!bcd46107-946d-4030-8266-e4edbb7a1285"
+}

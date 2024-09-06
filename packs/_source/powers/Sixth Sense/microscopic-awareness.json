@@ -1,0 +1,20 @@
+{
+  "_id": "51f43dd1-f02e-48d3-804d-692c34fa0c09",
+  "name": "Microscopic Awareness",
+  "type": "power",
+  "system": {
+    "description": "The character can detect details about the smallest things.",
+    "powerSet": "Sixth Sense",
+    "prerequisites": "Rank 2",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Concentration",
+    "range": "1 space per rank",
+    "cost": "5 Focus",
+    "effect": "The character can see and identify items that would normally require a microscope to detect, much less comprehend. This includes things like fingerprints, a single strand of hair and even a person's DNA. In the case of DNA. the character can use this to identify a person and link them to close relatives with similar DNA."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "34a53ed3fba44fe3",
+  "_key": "!items!51f43dd1-f02e-48d3-804d-692c34fa0c09"
+}

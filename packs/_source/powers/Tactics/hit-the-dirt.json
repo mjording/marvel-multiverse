@@ -1,0 +1,20 @@
+{
+  "_id": "eefd8c40-b367-45c8-80c2-20e3b3f7721f",
+  "name": "Hit the Dirt",
+  "type": "power",
+  "system": {
+    "description": "The character gets their allies to take cover.",
+    "powerSet": "Tactics",
+    "prerequisites": "Keep Moving, Rank 2",
+    "action": "Reaction",
+    "trigger": "An enemy in line of sight makes an attack on an ally within earshot.",
+    "duration": "Instant",
+    "range": "",
+    "cost": "5 Focus",
+    "effect": "All allies within earshot can fall prone if they wish and are able to. If falling prone makes the ally an ineligible target for the initial attack, the attack automatically fails."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "b21090c059bb04d0",
+  "_key": "!items!eefd8c40-b367-45c8-80c2-20e3b3f7721f"
+}

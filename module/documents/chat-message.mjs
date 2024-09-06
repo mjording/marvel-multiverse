@@ -337,10 +337,7 @@ export class ChatMessageMarvel extends ChatMessage {
     
     const chatMessage = game.messages.get(messageId);
     const modifier = action === 'edge' ? 'kh' : 'kl';
-
-    
     const [roll] = chatMessage.rolls;
-    
     const firstRollTerm = roll.terms[0];
 
     let rollTerm;
@@ -358,39 +355,29 @@ export class ChatMessageMarvel extends ChatMessage {
     const targetReg = /\d(.*)/;
     const targetFormula = targetRoll._formula.replace(targetReg, '2$1');
 
-    
-
     targetRoll._formula = `${targetFormula}${modifier}`;
     targetRoll.number = 2;
 
-    
+    rollTerm.terms[dieIndex] = targetRoll._formula
     const targetDie = targetRoll.terms[0];
-
+    targetDie.number = 2;
     targetDie.modifiers?.push(modifier);
-    const oldDieResult = targetDie.result;
 
     const newRoll = new MarvelMultiverseRoll(targetRoll._formula, {...targetRoll.data});
     await newRoll.roll();
 
     targetDie.results.push(newRoll.terms[0].results[0]);
 
-
     const resultResults = targetDie.results.map((result) => result.result);
 
     const discardResult = targetDie.results[resultResults.indexOf(modifier === 'kh' ? Math.min.apply(Math, resultResults) : Math.max.apply(Math, resultResults))];
     const activeResult = targetDie.results[resultResults.indexOf(modifier === 'kh' ? Math.max.apply(Math, resultResults) : Math.min.apply(Math, resultResults))];
 
-    
-    
-    
     activeResult.active = true;
     delete activeResult.discarded;
 
     discardResult.active = false;
     discardResult.discarded = true;
-
-    
-    
     
     const re = /(\(?{)(\dd\d),(\ddm),(\dd\d)(}.*)/;
 
@@ -407,34 +394,12 @@ export class ChatMessageMarvel extends ChatMessage {
       }
     }
 
-    
-
     roll._formula = replacedFormula;
-    
-    
-
-
-    const rollResults = roll.result.split(" ");
-
-    const newRollResultBase = rollResults[0] - oldDieResult + targetDie.total;
-    rollResults[0] = newRollResultBase.toString();
-
-    //roll.result = rollResults.join(" ");
-
-    // roll._total = roll.result - oldDieResult + targetDie.total;
-    roll._total = roll.result - discardResult.result + activeResult.result;
+    roll._total = roll.total - discardResult.result + activeResult.result;
      
-    
-
-    
     let update = await roll.toMessage({}, {create: false});
-
-    // [
-    //   "blind", "timestamp", "user", "whisper", "speaker",
-    //   "emote", "flags", "sound", "type", "_id"
-    // ].forEach(k => delete update[k]);
-
     update = foundry.utils.mergeObject(chatMessage.toJSON(), update);
+
     return chatMessage.update(update);
  }
 

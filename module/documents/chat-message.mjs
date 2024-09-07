@@ -153,9 +153,17 @@ export class ChatMessageMarvel extends ChatMessage {
         if ( !(roll instanceof game.MarvelMultiverse.dice.DamageRoll) ) this._enrichRollTooltip(roll, el);
       });
       // this._enrichDamageTooltip(this.rolls.filter(r => r instanceof game.MarvelMultiverse.dice.DamageRoll), html);
-
+      const flavorText = html.querySelector("span.flavor-text");
+      const isInitiative = flavorText && flavorText.innerHTML.includes("Initiative")
       
-      html.querySelectorAll("button.retroEdgeMode").forEach(el => el.addEventListener("click", this._onClickRetroButton.bind(this)));
+      html.querySelectorAll("button.retroEdgeMode").forEach(
+        el => {
+          if (isInitiative){          
+            el.setAttribute('data-initiative', true);
+          }
+          el.addEventListener("click", this._onClickRetroButton.bind(this))
+        }
+      );
     }
     
     // Attack targets
@@ -320,9 +328,10 @@ export class ChatMessageMarvel extends ChatMessage {
     const target = event.currentTarget;
     
     const action = target.dataset.retroAction;
+    const isInit = target.dataset.initiative;
     const dieIndex = Math.round(target.dataset.index);
     const messageId = target.closest('[data-message-id]').dataset.messageId;
-    this._handleChatButton(action, messageId, dieIndex);
+    this._handleChatButton(action, messageId, dieIndex, isInit);
   }
 
  /**
@@ -331,8 +340,8 @@ export class ChatMessageMarvel extends ChatMessage {
    * @param {string} messageId
    * @param {number} dieIndex
    */
-  async _handleChatButton(action, messageId, dieIndex){
-    
+  async _handleChatButton(action, messageId, dieIndex, isInit){
+
     if (!action || !messageId) throw new Error('Missing Information');
     
     const chatMessage = game.messages.get(messageId);
@@ -400,6 +409,12 @@ export class ChatMessageMarvel extends ChatMessage {
     let update = await roll.toMessage({}, {create: false});
     update = foundry.utils.mergeObject(chatMessage.toJSON(), update);
 
+    if( isInit ){
+      const actorId = game.actors.contents.find((a) => a.name === chatMessage.alias)._id
+      const combatant = game.combat.combatants.contents.find((combatant) => combatant.actorId === actorId)
+      await combatant.update({initiative: roll.total})
+    }
+    
     return chatMessage.update(update);
  }
 

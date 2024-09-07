@@ -3,7 +3,7 @@
   "name": "Restore",
   "type": "power",
   "system": {
-    "description": "The choracter can heal a shattered mind.",
+    "description": "The character can heal a shattered mind.",
     "powerSet": "Healing",
     "prerequisites": "Soothing Touch, Rank 5",
     "action": "Standard",

@@ -3,15 +3,15 @@
   "name": "Wisdom",
   "type": "power",
   "system": {
-    "description": "The character not only has brains but knows when to use thom",
+    "description": "The character not only has brains but knows when to use them",
     "powerSet": "Basic",
     "prerequisites": "",
     "action": "",
     "trigger": "",
-    "duration": "Permanont",
+    "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "The character can use their Epo delense score against Logic attacks too"
+    "effect": "The character can use their Ego defense score against Logic attacks too"
   },
   "flags": {},
   "effects": [],

@@ -4,7 +4,7 @@
   "type": "trait",
   "system": {
     "restriction": "",
-    "description": "The character is extremely brave. They have an edge on any action checks required to denl with fear."
+    "description": "The character is extremely brave. They have an edge on any action checks required to deal with fear."
   },
   "flags": {},
   "effects": [],

@@ -4,7 +4,7 @@
   "type": "trait",
   "system": {
     "restriction": "",
-    "description": "If the eharacter fails an action check, they gain an edge on the check if they try the same action again en thelr nesxt turn,"
+    "description": "If the character fails an action check, they gain an edge on the check if they try the same action again on their next turn,"
   },
   "flags": {},
   "effects": [],

@@ -3,7 +3,7 @@
   "name": "Externally Immortal",
   "type": "tag",
   "system": {
-    "description": "The character is nearly imposible to permanently kill. If they die, they are either revived somehow or reincarnated with thetr full memories and then they age quickly til they reach the ags of their first death, at which point they stop aging at all. The only way for an External to permanently die is for another External to kill all the others within a certain period of time and eithes drain their life energies or eat their hearts, which grants the killer the victim's powers. Otherwise they come back again.",
+    "description": "The character is nearly imposible to permanently kill. If they die, they are either revived somehow or reincarnated with thetr full memories and then they age quickly til they reach the ags of their first death, at which point they stop aging at all. The only way for an External to permanently die is for another External to kill all the others within a certain period of time and either drain their life energies or eat their hearts, which grants the killer the victim's powers. Otherwise they come back again.",
     "restriction": "For Externals only",
     "rarity": ""
   },

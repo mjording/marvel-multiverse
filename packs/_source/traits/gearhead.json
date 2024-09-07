@@ -4,7 +4,7 @@
   "type": "trait",
   "system": {
     "restriction": "",
-    "description": "The character knows their way around machines. They have an edge on Logic checka to figure out how any machine works."
+    "description": "The character knows their way around machines. They have an edge on Logic checks to figure out how any machine works."
   },
   "flags": {},
   "effects": [],

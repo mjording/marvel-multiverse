@@ -4,7 +4,7 @@
   "type": "trait",
   "system": {
     "restriction": "",
-    "description": "The character knows how to handle themselves better than mest. They have an edge on Melee attacks against enemiesofRank 1."
+    "description": "The character knows how to handle themselves better than most. They have an edge on Melee attacks against enemies of Rank 1."
   },
   "flags": {},
   "effects": [],

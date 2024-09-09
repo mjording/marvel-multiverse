@@ -37,12 +37,12 @@
             </div>
           </div>
           {{!-- Health & Health DR --}}
-          <div class="attribute-resources resource-block flexrow">
+          <div class="attribute-resources resource-block health-block flexrow">
             <div class="resource flex-group-center">
               <label for="system.health.value" class="resource-label">Health</label>
-              <div class="resource-content flexcol attributes attributes-health">
+              <div class="resource-content flexcol attributes attribute-health">
                 <input type="number" name="system.health.value" value="{{system.health.value}}" data-dtype="Number"/>
-                <input type="hidden" name="system.health.max" value="{{system.health.value}}"/>
+                <input type="number" name="system.health.max" value="{{system.health.max}}" data-dtype="Number"/>
               </div>
             </div>
             <div class="resource flex-group-center">
@@ -53,12 +53,12 @@
             </div>
           </div>
           {{!-- Focus & Focus DR --}}
-          <div class="attribute-resources resource-block flexrow">
+          <div class="attribute-resources resource-block focus-block flexrow">
             <div class="resource flex-group-center">
               <label for="system.focus.value" class="resource-label">Focus</label>
-              <div class="resource-content flexcol attributes attributes-focus">
+              <div class="resource-content flexcol attributes attribute-focus">
                 <input type="number" name="system.focus.value" value="{{system.focus.value}}" data-dtype="Number"/>
-                <input type="hidden" name="system.focus.max" value="{{system.focus.value}}"/>
+                <input type="number" name="system.focus.max" value="{{system.focus.max}}" data-dtype="Number"/>
               </div>
             </div>
             <div class="resource flex-group-center">

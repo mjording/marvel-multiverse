@@ -40,11 +40,21 @@
   font-size: large; 
 }
 
-.attributes-health {
-  font-size: x-large;
-}
-.attributes-focus {
-  font-size: x-large;
+.attribute-health, .attribute-focus {
+  margin: 0;
+  display:inline-block;
+  input {
+    &:nth-child(1){
+      font-size: x-large;
+      min-width: 2.2em;
+    }
+    &:nth-child(2) {
+      min-width: 2em;
+      height: 1em;
+      font-size: small;
+      padding-top: 3px;
+    } 
+  }
 }
 
 .resource-block, .personalInfo {

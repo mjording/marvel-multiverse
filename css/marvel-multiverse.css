@@ -558,11 +558,19 @@ li.roll-damage {
   margin: auto;
   font-size: large;
 }
-.marvel-multiverse .attributes-health {
-  font-size: x-large;
+.marvel-multiverse .attribute-health, .marvel-multiverse .attribute-focus {
+  margin: 0;
+  display: inline-block;
 }
-.marvel-multiverse .attributes-focus {
+.marvel-multiverse .attribute-health input:nth-child(1), .marvel-multiverse .attribute-focus input:nth-child(1) {
   font-size: x-large;
+  min-width: 2.2em;
+}
+.marvel-multiverse .attribute-health input:nth-child(2), .marvel-multiverse .attribute-focus input:nth-child(2) {
+  min-width: 2em;
+  height: 1em;
+  font-size: small;
+  padding-top: 3px;
 }
 .marvel-multiverse .resource-block, .marvel-multiverse .personalInfo {
   margin-top: 1em;

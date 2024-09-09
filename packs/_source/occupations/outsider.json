@@ -3,7 +3,7 @@
   "name": "Outsider",
   "type": "occupation",
   "system": {
-    "description": "The character comes from another planet, dimension or time and is not familiar with how things work on this Barth. They may have had another occupation back where they came mrom, but it's not generally applicable here.",
+    "description": "The character comes from another planet, dimension or time and is not familiar with how things work on this Earth. They may have had another occupation back where they came from, but it's not generally applicable here.",
     "example": "Groot, Rocket Raccoon, Thor (Odinsen)",
     "traits": [
       {

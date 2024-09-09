@@ -15,9 +15,6 @@ export default function simplifyRollFormula(formula, { preserveFlavor=false, det
   catch(err) { console.warn(`Unable to simplify formula '${formula}': ${err}`); }
   Roll.validate(roll.formula);
 
-  // Optionally strip flavor annotations.
-  // if ( !preserveFlavor ) roll.terms = Roll.parse(roll.formula.replace(foundry.dice.terms.RollTerm.FLAVOR_REGEXP, ""));
-
   if ( deterministic ) {
     // Perform arithmetic simplification to simplify parsing through the terms.
     roll.terms = _simplifyOperatorTerms(roll.terms);
@@ -39,10 +36,15 @@ export default function simplifyRollFormula(formula, { preserveFlavor=false, det
         if ( preserveFlavor ) termData.options = { flavor: term.flavor };
         term = new foundry.dice.terms.NumericTerm(termData);
       }
+
       determ = term.isDeterministic && (!multiplicative || determ);
+      
       if ( determ ) temp.unshift(term);
+      
       else temp = [];
+      
       term = roll.terms[--i];
+      
       while ( term instanceof foundry.dice.terms.OperatorTerm ) {
         if ( determ ) temp.unshift(term);
         if ( (term.operator === "*") || (term.operator === "/") || (term.operator === "%") ) multiplicative = true;

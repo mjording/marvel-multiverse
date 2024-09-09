@@ -139,7 +139,7 @@
         <div class="damages-resources resource-block resources flexcol">
           <h3>Damages</h3>
           <ol class="items-list">
-            <li class='item resource meleeDamages flexrow rollable' data-roll="({1d6,1dm,1d6}* @abilities.mle.damageMultiplier) + @abilities.mle.value" data-item-id='{{item._id}}'>
+            <li class='item resource meleeDamages flexrow  roll-damage' data-action="rollDamage"  data-ability='mle'>
               <div class="melee-damage resource">
                 <div class="resource-reduced-label vert-text">Melee</div>
                 <img src="systems/marvel-multiverse/icons/marvel-1.svg" title="MARVEL_MULTIVERSE.MarvelResult.M" alt="">
@@ -151,7 +151,7 @@
                 <h3>+ {{system.abilities.mle.value}}</h3>
               </div>
             </li>
-            <li class='item resource agilityDamages flexrow rollable' data-roll="({1d6,1dm,1d6}* @abilities.agl.damageMultiplier) + @abilities.agl.value" data-item-id='{{item._id}}'>
+            <li class='item resource agilityDamages flexrow  roll-damage' data-action="rollDamage" data-ability='agl'>
               <div class="resource">
                 <div class="resource-reduced-label vert-text">Agility</div>
                 <img src="systems/marvel-multiverse/icons/marvel-1.svg" title="MARVEL_MULTIVERSE.MarvelResult.M" alt="">
@@ -163,7 +163,7 @@
                 <h3>+ {{system.abilities.agl.value}}</h3>
               </div>
             </li>
-            <li class="item resource egoDamages flexrow rollable" data-roll="({1d6,1dm,1d6}* @abilities.ego.damageMultiplier) + @abilities.ego.value">
+            <li class="item resource egoDamages flexrow roll-damage"  data-action="rollDamage" data-ability='ego'>
               <div class="resource">
                 <div class="resource-reduced-label vert-text">Ego</div>
                 <img src="systems/marvel-multiverse/icons/marvel-1.svg" title="MARVEL_MULTIVERSE.MarvelResult.M" alt="">
@@ -175,7 +175,7 @@
                 <h3>+ {{system.abilities.ego.value}}</h3>
               </div>
             </li>
-            <li class="item resource logicDamages flexrow rollable" data-roll="({1d6,1dm,1d6}* @abilities.log.damageMultiplier) + @abilities.log.value">
+            <li class="item resource logicDamages flexrow roll-damage" data-action="rollDamage"  data-ability='log'>
               <div class="resource">
                 <div class="resource-reduced-label vert-text">Logic</div> 
                 <img src="systems/marvel-multiverse/icons/marvel-1.svg" title="MARVEL_MULTIVERSE.MarvelResult.M" alt="">

@@ -85,6 +85,13 @@ export class MarvelMultiverseRoll extends Roll {
 
 
     /**
+     * The HTML template path used to configure evaluation of this Roll
+     * @type {string}
+     */
+    static DAMAGE_EVALUATION_TEMPLATE = "systems/marvel-multiverse/templates/chat/damage-roll-dialog.hbs";
+
+
+    /**
      * The  template path used to Roll in chat
      * @type {string}
      */
@@ -194,8 +201,6 @@ export class MarvelMultiverseRoll extends Roll {
      * Create a Dialog prompt used to configure evaluation of an existing MarvelMultiverseRoll instance.
      * @param {object} data                     Dialog configuration data
      * @param {string} [data.title]             The title of the shown dialog window
-     * @param {number} [data.defaultRollMode]   The roll mode that the roll mode select element should default to
-     * @param {number} [data.defaultAction]     The button marked as default
      * @param {boolean} [data.chooseModifier]   Choose which ability modifier should be applied to the roll?
      * @param {string} [data.defaultAbility]    For tool rolls, the default ability modifier applied to the roll
      * @param {string} [data.template]          A custom path to an HTML template to use instead of the default
@@ -203,14 +208,12 @@ export class MarvelMultiverseRoll extends Roll {
      * @returns {Promise<MarvelMultiverseRoll|null>}         A resulting MarvelMultiverseRoll object constructed with the dialog, or null if the
      *                                          dialog was closed
      */
-    async configureDialog({title, defaultRollMode, chooseModifier=false,
+    async configureDialog({title, chooseModifier=false,
         defaultAbility, template}={}, options={}) {
 
         // Render the Dialog inner HTML
         const content = await renderTemplate(template ?? this.constructor.EVALUATION_TEMPLATE, {
             formulas: [{formula: `${this.formula} + @bonus`}],
-            defaultRollMode,
-            rollModes: CONFIG.Dice.rollModes,
             chooseModifier,
             defaultAbility,
             abilities:  Object.fromEntries(Object.entries(CONFIG.MARVEL_MULTIVERSE.abilities).map((abl) => [abl[0],game.i18n.localize(abl[1])]))
@@ -220,18 +223,43 @@ export class MarvelMultiverseRoll extends Roll {
 
         // Create the Dialog window and await submission of the form
         return new Promise(resolve => {
-        new Dialog({
-            title,
-            content,
-            buttons: {
-                normal: {
-                    label: "Roll",
-                    callback: html => resolve(this._onDialogSubmit(html, MarvelMultiverseRoll.EDGE_MODE.NORMAL))
-                }
-            },
-            default: defaultButton,
-            close: () => resolve(null)
-        }, options).render(true);
+            new Dialog({
+                title,
+                content,
+                buttons: {
+                    normal: {
+                        label: "Roll",
+                        callback: html => resolve(this._onDamageDialogSubmit(html))
+                    }
+                },
+                default: defaultButton,
+                close: () => resolve(null)
+            }, options).render(true);
+        });
+    }
+
+    async configureDamageDialog({title, ability, abilityValue, damageMultiplier, template}={}, options={}) {
+        const content = await renderTemplate(template ?? this.constructor.DAMAGE_EVALUATION_TEMPLATE, {
+            ability: ability,
+            abilityValue: abilityValue,
+            damageMultiplier: damageMultiplier
+        });
+
+       
+
+        return new Promise(resolve => {
+            new Dialog({
+                title,
+                content,
+                buttons: {
+                    normal: {
+                        label: "Roll",
+                        callback: html => resolve(this._onDamageDialogSubmit(html))
+                    }
+                },
+                default: "normal",
+                close: () => resolve(null)
+            }, options).render(true);
         });
     }
 
@@ -243,9 +271,11 @@ export class MarvelMultiverseRoll extends Roll {
      * @returns {MarvelMultiverseRoll}              This damage roll.
      * @private
      */
-    _onDialogSubmit(html, edgeMode) {
-        const form = html[0].querySelector("form");
 
+
+    _onDialogSubmit(html) {
+        const form = html[0].querySelector("form");
+        
         // Append a situational bonus term
         if ( form.bonus.value ) {
             const bonus = new Roll(form.bonus.value, this.data);
@@ -269,78 +299,30 @@ export class MarvelMultiverseRoll extends Roll {
         }
 
         // Apply advantage or disadvantage
-        this.options.edgeMode = edgeMode;
-        this.options.rollMode = form.rollMode.value;
         this.configureModifiers();
         return this;
     }
 
-    /**
-	 * Override the default Roll rendering behavior to account for a difference between d616 rolls and other rolls.
-	 *
-	 * @param {string} flavor Optional flavor text for the roll.
-	 * @param {string} template Chat template path.
-	 * @param {boolean} isPrivate Whether the roll is private.
-	 */
-	async render({ flavor, template = this.constructor.CHAT_TEMPLATE, isPrivate = false } = {}) {
-		if (!this._evaluated) {
-			await this.evaluate({ async: true });
-		}
+    
+    _onDamageDialogSubmit(html) {
+        const form = html[0].querySelector("form");
 
-		
-		if (!this.validD616Roll) {
-			const useTemplate = template === this.constructor.CHAT_TEMPLATE ? Roll.CHAT_TEMPLATE : template;
-			return super.render({ flavor, template: useTemplate, isPrivate });
-		}
+       
+        if ( form.damageMultiplier?.value ) {
+            this.terms.push(new foundry.dice.terms.OperatorTerm({operator: "*"}));
+            this.terms.push(new foundry.dice.terms.NumericTerm({number: form.damageMultiplier.value}));
+        }
 
-		const isFantastic = this.dice[1].getResultLabel(this.dice[1].results[0]) === 'm';
+       
+        // Customize the modifier
+        if ( form.abilityValue?.value ) {
+            const abilityValue = form.abilityValue.value;
+            this.terms.push(new foundry.dice.terms.OperatorTerm({operator: "+"}));
+            this.terms.push(new foundry.dice.terms.NumericTerm({number: abilityValue}));
+        }
 
-		const modifierTerms = [...this.terms];
-		modifierTerms.splice(0, 5);
-
-		const modifiers = modifierTerms.reduce(
-			/**
-			 * @typedef {object} ResolvedModifier
-			 * @property {string} operator Term symbol
-			 * @property {number} value The actual term
-			 * @property {string} flavor Flavor text
-			 */
-			/**
-			 * @param {ResolvedModifier[]} mods
-			 * @param term
-			 */
-			(mods, term) => {
-				if (term.operator) {
-					return [
-						...mods,
-						{
-							operator: term.operator,
-							number: 0,
-							flavor: undefined,
-						},
-					];
-				} else {
-					mods[mods.length - 1].number = term.number;
-					mods[mods.length - 1].flavor = term.options?.flavor;
-
-					return mods;
-				}
-			},
-			[],
-		);
-
-		const chatData = {
-			dice: this.dice.map((d) => d.getTooltipData()),
-			flavor: isPrivate ? null : flavor,
-			isFantastic,
-			isPrivate,
-			isReRoll: this.options.isReRoll,
-			modifiers,
-			total: isPrivate ? '?' : Math.round(this.total * 100) / 100,
-			user: game.user.id,
-			withTrouble: this.options.withTrouble,
-		};
-
-		return renderTemplate(template, chatData);
-	}
+        this.configureModifiers();
+       
+        return this;
+    }
 }

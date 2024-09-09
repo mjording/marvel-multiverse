@@ -8,6 +8,7 @@
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
     <a class="item" data-tab="attributes">Attributes</a>
+    <a class="item" data-tab="effects">Effects</a>
   </nav>
 
   {{!-- Sheet Body --}}
@@ -24,6 +25,10 @@
         <label class="resource-label">restriction</label>
         <input type="text" name="system.restriction" value="{{system.restriction}}" data-dtype="String"/>
       </div>
+    </div>
+    {{!-- Effects Tab --}}
+    <div class="tab trait-effects" data-group="primary" data-tab="effects"></div>
+       {{> "systems/marvel-multiverse/templates/item/parts/item-effects.hbs"}}
     </div>
   </section>
 

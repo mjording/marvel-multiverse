@@ -176,8 +176,8 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
 
     // -------------------------------------------------------------
     // Everything below here is only needed if the sheet is editable
-    if (!this.isEditable) return;
-
+    // if (!this.isEditable) return;
+    
     // Add Inventory Item
     html.on('click', '.item-create', this._onItemCreate.bind(this));
 
@@ -205,6 +205,15 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
     html.on('click', '.roll-initiative', (ev) => {
       this.actor.rollInitiative({createCombatants: true});
       //this.actor.rollInitiativeDialog({event: ev});
+    });
+
+    html.on('click', '.roll-damage', (ev) => {
+      const row = ev.currentTarget.closest('li');
+      const options = {
+        ability: row.dataset.ability,
+        event: ev
+      }
+      this.actor.rollDamageDialog(options);
     });
 
     // Drag events for macros.

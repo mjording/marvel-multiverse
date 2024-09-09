@@ -3,7 +3,7 @@
   "name": "Evasion",
   "type": "power",
   "system": {
-    "description": "The character can dodpe fists quickly,",
+    "description": "The character can dodge fists quickly,",
     "powerSet": "Basic",
     "prerequisites": "",
     "action": "",
@@ -11,7 +11,7 @@
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "The character can use their Agility defense score apainst Melee attacks too."
+    "effect": "The character can use their Agility defense score against Melee attacks too."
   },
   "flags": {},
   "effects": [],

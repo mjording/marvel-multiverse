@@ -53,9 +53,42 @@ export class MarvelMultiverseActor extends Actor {
 
     data.rank = this.system.attributes.rank.value;
 
-   
-
     return { ...super.getRollData(), ...data };
+  }
+
+
+  /**
+   * Roll Damage for this Actor with a dialog that provides an opportunity to change damaage multiplier.
+   * @param {object} [rollOptions]      Options forwarded to the Actor#getInitiativeRoll method
+   * @returns {Promise<void>}           A promise which resolves once initiative has been rolled for the Actor
+   */
+  async rollDamageDialog(rollOptions={}) {
+    // Create and configure the Initiative roll
+    const ability = rollOptions.ability;
+    const damageMultiplier = this.system.abilities[ability].damageMultiplier;
+    const abilityValue = this.system.abilities[ability].value;
+    const roll = new CONFIG.Dice.MarvelMultiverseRoll("{1d6,1dm,1d6}");
+
+    const choice = await roll.configureDamageDialog({
+      title: "Damage Roll",
+      ability: ability,
+      abilityValue: abilityValue,
+      damageMultiplier: damageMultiplier
+    });
+    
+    if ( choice === null ) return; // Closed dialog
+
+    await choice.evaluate();
+
+    choice.toMessage({
+      speaker:  ChatMessage.getSpeaker({ actor: this }),
+      rollMode:  game.settings.get('core', 'rollMode'),
+      formula: choice.formula,
+      flavor: "Damage Roll",
+      title: ability
+    });
+    
+    return choice;
   }
 
 
@@ -68,10 +101,8 @@ export class MarvelMultiverseActor extends Actor {
     // Create and configure the Initiative roll
     const roll = this.getInitiativeRoll(rollOptions);
     const choice = await roll.configureDialog({
-      defaultRollMode: game.settings.get("core", "rollMode"),
       title: "Initiative Roll",
-      chooseModifier: true,
-      defaultAction: game.MarvelMultiverse.dice.MarvelMultiverseRoll.EDGE_MODE.NORMAL
+      chooseModifier: true
     });
     if ( choice === null ) return; // Closed dialog
 

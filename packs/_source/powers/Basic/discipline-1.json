@@ -3,7 +3,7 @@
   "name": "Discipline 1",
   "type": "power",
   "system": {
-    "description": "The character worlks to hone their power.",
+    "description": "The character works to hone their power.",
     "powerSet": "Basic",
     "prerequisites": "",
     "action": "",

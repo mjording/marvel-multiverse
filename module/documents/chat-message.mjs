@@ -20,7 +20,6 @@ export class ChatMessageMarvel extends ChatMessage {
     /** @inheritDoc */
     async getHTML(...args) {
         const html = await super.getHTML();
-
         this._displayChatActionButtons(html);
 
         this._enrichChatCard(html[0]);
@@ -87,21 +86,15 @@ export class ChatMessageMarvel extends ChatMessage {
     // Header matter
     const { scene: sceneId, token: tokenId, actor: actorId } = this.speaker;
     const actor = game.scenes.get(sceneId)?.tokens.get(tokenId)?.actor ?? game.actors.get(actorId);
-
     // let img;
     let nameText;
     if ( this.isContentVisible ) {
-      // img = actor?.img ?? this.user.avatar;
       nameText = this.alias;
     } else {
-      // img = this.user.avatar;
       nameText = this.user.name;
     }
 
     const avatar = document.createElement("div");
-    // avatar.classList.add("avatar");
-    // avatar.innerHTML = `<img src="${img}" alt="${nameText}">`;
-
     const name = document.createElement("span");
     name.classList.add("name-stacked");
     name.innerHTML = `<span class="title">${nameText}</span>`;
@@ -129,32 +122,25 @@ export class ChatMessageMarvel extends ChatMessage {
 
     // Enriched roll flavor
     const [roll] = this.rolls;
-
-    const [rollTerm] = roll?.terms;
-
-    
     
     if ( this.isContentVisible ) {
       
-      const flavor = document.createElement("div");
-      flavor.classList.add("marvel-multiverse", "chat-card");
-      flavor.innerHTML = `
+      const chatCard = document.createElement("div");
+      chatCard.classList.add("marvel-multiverse", "chat-card");
+      chatCard.innerHTML = `
         <section class="card-header description">
           <header class="summary">
             <div class="name-stacked">
-              <span class="title">${roll?.formula ?? ''}</span>
+              <span class="title">${this.title ?? ''}</span>
             </div>
           </header>
         </section>
       `;
-      html.querySelector(".message-content").insertAdjacentElement("afterbegin", flavor);
+      html.querySelector(".message-content").insertAdjacentElement("afterbegin", chatCard);
 
-      html.querySelectorAll(".dice-tooltip").forEach((el, i) => {
-        if ( !(roll instanceof game.MarvelMultiverse.dice.DamageRoll) ) this._enrichRollTooltip(roll, el);
-      });
-      // this._enrichDamageTooltip(this.rolls.filter(r => r instanceof game.MarvelMultiverse.dice.DamageRoll), html);
+
       const flavorText = html.querySelector("span.flavor-text");
-      const isInitiative = flavorText && flavorText.innerHTML.includes("Initiative")
+      const isInitiative = flavorText && flavorText.innerHTML.includes("Initiative");
       
       html.querySelectorAll("button.retroEdgeMode").forEach(
         el => {
@@ -165,9 +151,7 @@ export class ChatMessageMarvel extends ChatMessage {
         }
       );
     }
-    
-    // Attack targets
-    // this._enrichAttackTargets(html);
+   
 
   }
 
@@ -180,10 +164,11 @@ export class ChatMessageMarvel extends ChatMessage {
    */
   _enrichRollTooltip(roll, html) {
     const constant = Number(simplifyRollFormula(roll.formula, { deterministic: true }));
-    
     if ( !constant ) return;
     const sign = constant < 0 ? "-" : "+";
     const part = document.createElement("section");
+    
+    
     part.classList.add("tooltip-part", "constant");
     part.innerHTML = `
       <div class="dice mice">
@@ -236,74 +221,6 @@ export class ChatMessageMarvel extends ChatMessage {
       target.addEventListener("mouseout", this._onTargetHoverOut.bind(this));
     });
     html.querySelector(".message-content")?.appendChild(evaluation);
-  }
-
-  
-  /* -------------------------------------------- */
-
-  /**
-   * Coalesce damage rolls into a single breakdown.
-   * @param {DamageRoll[]} rolls  The damage rolls.
-   * @param {HTMLElement} html    The chat card markup.
-   * @protected
-   */
-  _enrichDamageTooltip(rolls, html) {
-    if ( !rolls.length ) return;
-    let { formula, total, breakdown } = aggregateDamageRolls(rolls).reduce((obj, r) => {
-      obj.formula.push(r.formula);
-      obj.total += r.total;
-      this._aggregateDamageRoll(r, obj.breakdown);
-      return obj;
-    }, { formula: [], total: 0, breakdown: {} });
-    formula = formula.join("").replace(/^ \+ /, "");
-    html.querySelectorAll(".dice-roll").forEach(el => el.remove());
-    const roll = document.createElement("div");
-    roll.classList.add("dice-roll");
-
-    const tooltipContents = Object.entries(breakdown).reduce((str, [type, { total, constant, dice }]) => {
-      const config = CONFIG.MARVEL_MULTIVERSE.damageTypes[type] ?? CONFIG.MARVEL_MULTIVERSE.healingTypes[type];
-      return `${str}
-        <section class="tooltip-part">
-          <div class="dice">
-            <ol class="dice-rolls">
-              ${dice.reduce((str, { result, classes }) => `
-                ${str}<li class="roll ${classes}">${result}</li>
-              `, "")}
-              ${constant ? `
-              <li class="constant"><span class="sign">${constant < 0 ? "-" : "+"}</span>${Math.abs(constant)}</li>
-              ` : ""}
-            </ol>
-            <div class="total">
-              ${config ? `<img src="${config.icon}" alt="${config.label}">` : ""}
-              <span class="label">${config?.label ?? ""}</span>
-              <span class="value">${total}</span>
-            </div>
-          </div>
-        </section>
-      `;
-    }, "");
-
-    roll.innerHTML = `
-      <div class="dice-result">
-        <div class="dice-formula">${formula}</div>
-        <div class="dice-tooltip flexrow">
-          ${tooltipContents}
-        </div>
-        <h4 class="dice-total">${total}</h4>
-      </div>
-    `;
-    html.querySelector(".message-content").appendChild(roll);
-
-    if ( game.user.isGM ) {
-      const damageApplication = document.createElement("damage-application");
-      damageApplication.classList.add("marvel-multiverse");
-      damageApplication.damages = aggregateDamageRolls(rolls, { respectProperties: true }).map(roll => ({
-        value: roll.total,
-        type: roll.options.type,
-        properties: new Set(roll.options.properties ?? [])
-      }));
-      html.querySelector(".message-content").appendChild(damageApplication);
-    }
   }
 
   /* -------------------------------------------- */

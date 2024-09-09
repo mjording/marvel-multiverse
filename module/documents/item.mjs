@@ -58,7 +58,6 @@ export class MarvelMultiverseItem extends Item {
     else {
       // Retrieve roll data.
       const rollData = this.getRollData();
-
       // Invoke the roll and submit it to chat.
       const roll = new Roll(rollData.formula, rollData.actor);
       // If you need to store the value first, uncomment the next line.

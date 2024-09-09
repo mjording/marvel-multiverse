@@ -11,7 +11,6 @@ import { MARVEL_MULTIVERSE } from './module/helpers/config.mjs';
 // Import DataModel classes
 import * as models from './module/data/_module.mjs';
 import * as dice from "./module/dice/_module.mjs";
-//import { registerChatLog } from './module/chat/MarvelChatLog.mjs';
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
@@ -205,9 +204,6 @@ Hooks.on("renderSettings", (app, [html]) => {
   if ( pip ) badge.querySelector(".system-info").insertAdjacentElement("beforeend", pip);
   heading.insertAdjacentElement("afterend", badge);
 });
-
-
-//Hooks.on("getChatLogEntryContext", ChatMessageMarvel._getChatLogEntryContext());
 
 Hooks.on("renderChatLog", (app, html, data) => {
   ChatMessageMarvel.onRenderChatLog(html);

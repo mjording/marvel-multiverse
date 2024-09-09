@@ -87,7 +87,6 @@ export async function dMarvelRoll({
   const {isFantastic, isFastForward} = _determineFantasticMode({fantastical, fastForward, event});
 
   if (fantastical) { 
-    console.log('JUST IN CASE WE ARE USING THIS');
     roll.dice[1].results.map(r => {
         if(r.result === 1){
             r.discarded = false;

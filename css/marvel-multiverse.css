@@ -253,6 +253,20 @@ h1, h2, h3, h4 {
   display: none !important;
 }
 
+.six-one-six-die {
+  min-width: 10em;
+}
+.six-one-six-die img {
+  width: 3em;
+  height: 3em;
+  border: none;
+  float: left;
+}
+
+li.roll-damage .resource:nth-child(2), li.roll-damage .resource:nth-child(2) {
+  cursor: pointer;
+}
+
 .grid,
 .grid-2col {
   display: grid;

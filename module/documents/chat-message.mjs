@@ -150,6 +150,7 @@ export class ChatMessageMarvel extends ChatMessage {
           el.addEventListener("click", this._onClickRetroButton.bind(this))
         }
       );
+      html.querySelector("button.damage")?.addEventListener("click", this._onClickDamageButton.bind(this))
     }
    
 
@@ -237,6 +238,68 @@ export class ChatMessageMarvel extends ChatMessage {
   }
 
   /**
+   * Handle clicking roll damage button.
+   * @param {PointerEvent} event      The initiating click event.
+   */
+  _onClickDamageButton(event) {
+    
+    event.stopPropagation();
+    const target = event.currentTarget;
+    const messageId = target.closest('[data-message-id]').dataset.messageId;
+    const fantastic = target.parentNode.querySelector('li.roll.marvel-roll.fantastic');
+    
+    const flavorText = target.closest('span.flavor-text');
+    // const re = /\[ability\]\s(?<ability>\w*)/
+    
+    // const ability = re.exec(flavorText).groups.ability
+    const ability = "Agility";
+    this._handleDamageChatButton(messageId, ability, fantastic);
+  }
+
+
+  /**
+   * Handles the damage from the chat log
+   * @param {string} messageId
+   * @param {string} ability
+   * @param {string} fantastic
+   */
+  async _handleDamageChatButton(messageId, ability, fantastic){
+    
+    const abilityAbr = MARVEL_MULTIVERSE.damageAbilityAbr[ability]
+    const chatMessage = game.messages.get(messageId);
+    const sixOneSixPool = chatMessage.rolls[0].terms[0];
+    
+    const marvelRoll = sixOneSixPool.rolls[1];
+    
+    const actor = game.actors.contents.find((a) => a.name === chatMessage.alias);
+
+    
+    
+    const damageMultiplier = actor.system.abilities[abilityAbr].damageMultiplier;
+    
+
+    const abilityValue = actor.system.abilities[abilityAbr].value;
+    
+    const dmg = marvelRoll.total * damageMultiplier + abilityValue;
+    let fantasticDmg;
+    
+    if(fantastic){
+      fantasticDmg = dmg * 2;
+    }
+
+    const content = `Delivers <b>${dmg}</b> points [ MarvelDie: ${marvelRoll.total} * ${ability} damage multiplier: ${damageMultiplier} + ${ability} score ${abilityValue} ] of damage ${fantastic ? 'fantastic roll 2x close attack Dmg: ' + fantasticDmg : ''}`;
+    const msgData = {
+      speaker: ChatMessage.getSpeaker({ actor: actor }),
+      rollMode: game.settings.get('core', 'rollMode'),
+      flavor: `[ability] ${ability}`,
+      title: 'Damage',
+      content: content,
+    }
+    ChatMessage.create(msgData);
+    // this.create(msgData);
+  }
+
+  /**
    * Handle clicking a retro button.
    * @param {PointerEvent} event      The initiating click event.
    */
@@ -251,12 +314,14 @@ export class ChatMessageMarvel extends ChatMessage {
     this._handleChatButton(action, messageId, dieIndex, isInit);
   }
 
- /**
+
+
+  /**
    * Handles our button clicks from the chat log
    * @param {string} action
    * @param {string} messageId
-   * @param {number} dieIndex
-   */
+ * @param {number} dieIndex
+  */
   async _handleChatButton(action, messageId, dieIndex, isInit){
 
     if (!action || !messageId) throw new Error('Missing Information');

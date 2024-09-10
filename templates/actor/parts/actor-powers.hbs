@@ -29,7 +29,9 @@
                     class='rollable'
                     title='Roll Power'
                     data-roll='{1d6,1dm,1d6}+@abilities.{{item.system.attackAbility}}.value'
-                    data-label='{{item.system.attackAbility}}'
+                    data-power='{{item.system.name}}'
+                    data-powerSet='{{item.system.powerSet}}'
+                    data-label='@abilities.{{item.system.attackAbility}}.label'
                   >
                     <i class='fa-regular fa-dice'></i>'
                   </a>

@@ -12,6 +12,12 @@ MARVEL_MULTIVERSE.abilities = {
   log: 'MARVEL_MULTIVERSE.Ability.Log.long',
 };
 
+MARVEL_MULTIVERSE.damageAbilityAbr = {
+  Melee: 'mle',
+  Agility: 'agl',
+  Ego: 'ego',
+  Logic: 'logic'
+}
 
 MARVEL_MULTIVERSE.MARVEL_RESULTS = {
   1: { label: "MARVEL_MULTIVERSE.MarvelResult.M", image: `systems/marvel-multiverse/icons/marvel-1.svg`},

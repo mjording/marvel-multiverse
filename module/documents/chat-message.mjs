@@ -249,9 +249,7 @@ export class ChatMessageMarvel extends ChatMessage {
     const fantastic = target.parentNode.querySelector('li.roll.marvel-roll.fantastic');
     
     const messageHeader = target.closest('li.chat-message');
-    console.log(`messageHeader: ${messageHeader}`);
     const flavorText = messageHeader.querySelector('span.flavor-text').innerHTML;
-    
     const re = /\[ability\]\s(?<ability>\w*)/
     const ability = re.exec(flavorText).groups.ability
     this._handleDamageChatButton(messageId, ability, fantastic);

@@ -16,7 +16,7 @@ MARVEL_MULTIVERSE.damageAbilityAbr = {
   Melee: 'mle',
   Agility: 'agl',
   Ego: 'ego',
-  Logic: 'logic'
+  Logic: 'log'
 }
 
 MARVEL_MULTIVERSE.damageAbility =  Object.fromEntries(Object.keys(MARVEL_MULTIVERSE.damageAbilityAbr).map((k) => [MARVEL_MULTIVERSE.damageAbilityAbr[k],k]));

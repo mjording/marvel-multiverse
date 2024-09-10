@@ -336,12 +336,20 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
 
     // Handle rolls that supply the formula directly.
     if (dataset.roll) {
-      let label = dataset.label ? `[ability] ${dataset.label}` : '';
+      console.log(`dataset.label: ${dataset.label}`);
+      console.log(`dataset keys${Object.keys(dataset)}`);
+      console.log(`dataset.power: ${dataset.power}`);
+      const ability = CONFIG.MARVEL_MULTIVERSE.damageAbility[dataset.label] ?? dataset.label
+      let label = `[ability] ${ability}`;
+      let title = dataset.power ? `[power] ${dataset.power}` : "";
+
+      console.log(`title: ${title}`);
       let roll = new Roll(dataset.roll, this.actor.getRollData());
       roll.toMessage({
         speaker: ChatMessage.getSpeaker({ actor: this.actor }),
         flavor: label,
         rollMode: game.settings.get('core', 'rollMode'),
+        title: title
       });
       return roll;
     }

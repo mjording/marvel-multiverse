@@ -248,11 +248,12 @@ export class ChatMessageMarvel extends ChatMessage {
     const messageId = target.closest('[data-message-id]').dataset.messageId;
     const fantastic = target.parentNode.querySelector('li.roll.marvel-roll.fantastic');
     
-    const flavorText = target.closest('span.flavor-text');
-    // const re = /\[ability\]\s(?<ability>\w*)/
+    const messageHeader = target.closest('li.chat-message');
+    console.log(`messageHeader: ${messageHeader}`);
+    const flavorText = messageHeader.querySelector('span.flavor-text').innerHTML;
     
-    // const ability = re.exec(flavorText).groups.ability
-    const ability = "Agility";
+    const re = /\[ability\]\s(?<ability>\w*)/
+    const ability = re.exec(flavorText).groups.ability
     this._handleDamageChatButton(messageId, ability, fantastic);
   }
 
@@ -264,20 +265,12 @@ export class ChatMessageMarvel extends ChatMessage {
    * @param {string} fantastic
    */
   async _handleDamageChatButton(messageId, ability, fantastic){
-    
-    const abilityAbr = MARVEL_MULTIVERSE.damageAbilityAbr[ability]
+    const abilityAbr = MARVEL_MULTIVERSE.damageAbilityAbr[ability] ?? ability;
     const chatMessage = game.messages.get(messageId);
     const sixOneSixPool = chatMessage.rolls[0].terms[0];
-    
     const marvelRoll = sixOneSixPool.rolls[1];
-    
     const actor = game.actors.contents.find((a) => a.name === chatMessage.alias);
-
-    
-    
     const damageMultiplier = actor.system.abilities[abilityAbr].damageMultiplier;
-    
-
     const abilityValue = actor.system.abilities[abilityAbr].value;
     
     const dmg = marvelRoll.total * damageMultiplier + abilityValue;
@@ -296,7 +289,6 @@ export class ChatMessageMarvel extends ChatMessage {
       content: content,
     }
     ChatMessage.create(msgData);
-    // this.create(msgData);
   }
 
   /**

@@ -19,6 +19,9 @@ MARVEL_MULTIVERSE.damageAbilityAbr = {
   Logic: 'logic'
 }
 
+MARVEL_MULTIVERSE.damageAbility =  Object.fromEntries(Object.keys(MARVEL_MULTIVERSE.damageAbilityAbr).map((k) => [MARVEL_MULTIVERSE.damageAbilityAbr[k],k]));
+
+
 MARVEL_MULTIVERSE.MARVEL_RESULTS = {
   1: { label: "MARVEL_MULTIVERSE.MarvelResult.M", image: `systems/marvel-multiverse/icons/marvel-1.svg`},
   2: { label: "MARVEL_MULTIVERSE.MarvelResult.2", image: `systems/marvel-multiverse/icons/marvel-2.svg`},

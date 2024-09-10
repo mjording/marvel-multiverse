@@ -303,7 +303,10 @@ export class ChatMessageMarvel extends ChatMessage {
     const isInit = target.dataset.initiative;
     const dieIndex = Math.round(target.dataset.index);
     const messageId = target.closest('[data-message-id]').dataset.messageId;
-    this._handleChatButton(action, messageId, dieIndex, isInit);
+
+    const messageHeader = target.closest('li.chat-message');
+    const flavorText = messageHeader.querySelector('span.flavor-text').innerHTML;
+    this._handleChatButton(action, messageId, dieIndex, isInit, flavorText);
   }
 
 
@@ -314,7 +317,7 @@ export class ChatMessageMarvel extends ChatMessage {
    * @param {string} messageId
  * @param {number} dieIndex
   */
-  async _handleChatButton(action, messageId, dieIndex, isInit){
+  async _handleChatButton(action, messageId, dieIndex, isInit, flavor){
 
     if (!action || !messageId) throw new Error('Missing Information');
     
@@ -324,6 +327,7 @@ export class ChatMessageMarvel extends ChatMessage {
     const firstRollTerm = roll.terms[0];
 
     let rollTerm;
+    
     
     if(firstRollTerm instanceof foundry.dice.terms.ParentheticalTerm && firstRollTerm.roll.terms[0] instanceof foundry.dice.terms.PoolTerm){
       rollTerm = firstRollTerm.roll.terms[0];
@@ -379,8 +383,8 @@ export class ChatMessageMarvel extends ChatMessage {
 
     roll._formula = replacedFormula;
     roll._total = roll.total - discardResult.result + activeResult.result;
-     
-    let update = await roll.toMessage({}, {create: false});
+    
+    let update = await roll.toMessage({flavor: flavor}, {create: false});
     update = foundry.utils.mergeObject(chatMessage.toJSON(), update);
 
     if( isInit ){

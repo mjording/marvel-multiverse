@@ -22,10 +22,10 @@ export default class MarvelMultiverseActorBase extends foundry.abstract.TypeData
     // Iterate over ability names and create a new SchemaField for each.
     schema.abilities = new fields.SchemaField(Object.keys(CONFIG.MARVEL_MULTIVERSE.abilities).reduce((obj, ability) => {
       obj[ability] = new fields.SchemaField({
-        value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
-        defense: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
-        noncom: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
-        edge: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+        value: new fields.NumberField({ required: true, nullable: false, initial: 0, min: -3 }),
+        defense: new fields.NumberField({ required: true, nullable: false, initial: 0, min: 0 }),
+        noncom: new fields.NumberField({ required: true, nullable: false, initial: 0, min: 0 }),
+        edge: new fields.BooleanField({ required: true, initial: false }),
         damageMultiplier: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
         label: new fields.StringField({ required: true, blank: true })
       });
@@ -33,13 +33,13 @@ export default class MarvelMultiverseActorBase extends foundry.abstract.TypeData
     }, {}));
 
     schema.health = new fields.SchemaField({
-      value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+      value: new fields.NumberField({ required: true, nullable: false, initial: 0 }),
       max: new fields.NumberField({ ...requiredInteger, initial: 0 })
     });
     
     schema.healthDamageReduction = new fields.NumberField({ ...requiredInteger, initial: 0})
     schema.focus = new fields.SchemaField({
-      value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+      value: new fields.NumberField({ required: true, nullable: false, initial: 0 }),
       max: new fields.NumberField({ ...requiredInteger, initial: 0 })
     });
     

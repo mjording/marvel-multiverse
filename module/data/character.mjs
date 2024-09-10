@@ -85,13 +85,12 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
           this.movement[key].value = this.movement.run.value;
           break;
         case "rank":
-          if (this.movement[key].rankMode === foundry.CONST.ACTIVE_EFFECT_MODES.MULTIPLY){
-            this.movement[key].value *= this.attributes.rank.value;
-          }else if(this.movement[key].rankMode === foundry.CONST.ACTIVE_EFFECT_MODES.ADD){
-            this.movement[key].value += this.attributes.rank.value;
-          }else if(this.movement[key].rankMode === foundry.CONST.ACTIVE_EFFECT_MODES.OVERRIDE){
-            this.movement[key].value = this.attributes.rank.value;
-          }
+          console.log("applying calc with rank");
+          console.log(`calc on ${key}: ${this.movement[key].value}`);
+          const val = this.movement[key].value == 0 ? baseSpeed : this.movement[key].value;
+          console.log(`multiplying movement: [${key}: ${val}] by rank: ${this.attributes.rank.value}`);
+          this.movement[key].value = val * this.attributes.rank.value;
+          console.log(`resulting in ${this.movement[key].value}`);
           break;
         default:
           console.log(`case missing for key: ${key}, calc: ${this.movement[key].calc}`);

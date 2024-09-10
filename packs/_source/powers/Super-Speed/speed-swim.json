@@ -33,8 +33,7 @@
       "changes": [
         {
           "key": "system.movement.swim.calc",
-          "mode": 1,
-          "rankMode": 1,
+          "mode": 5,
           "value": "rank"
         },
         {

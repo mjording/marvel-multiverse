@@ -199,8 +199,7 @@
               },
               {
                 "key": "system.movement.flight.calc",
-                "mode": 1,
-                "rankMode": 1,
+                "mode": 5,
                 "value": "rank"
               },
               {

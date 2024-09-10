@@ -58,41 +58,6 @@ export class MarvelMultiverseActor extends Actor {
 
 
   /**
-   * Roll Damage for this Actor with a dialog that provides an opportunity to change damaage multiplier.
-   * @param {object} [rollOptions]      Options forwarded to the Actor#getInitiativeRoll method
-   * @returns {Promise<void>}           A promise which resolves once initiative has been rolled for the Actor
-   */
-  async rollDamageDialog(rollOptions={}) {
-    // Create and configure the Initiative roll
-    const ability = rollOptions.ability;
-    const damageMultiplier = this.system.abilities[ability].damageMultiplier;
-    const abilityValue = this.system.abilities[ability].value;
-    const roll = new CONFIG.Dice.MarvelMultiverseRoll("{1d6,1dm,1d6}");
-
-    const choice = await roll.configureDamageDialog({
-      title: "Damage Roll",
-      ability: ability,
-      abilityValue: abilityValue,
-      damageMultiplier: damageMultiplier
-    });
-    
-    if ( choice === null ) return; // Closed dialog
-
-    await choice.evaluate();
-
-    choice.toMessage({
-      speaker:  ChatMessage.getSpeaker({ actor: this }),
-      rollMode:  game.settings.get('core', 'rollMode'),
-      formula: choice.formula,
-      flavor: "Damage Roll",
-      title: ability
-    });
-    
-    return choice;
-  }
-
-
-  /**
    * Roll initiative for this Actor with a dialog that provides an opportunity to elect advantage or other bonuses.
    * @param {object} [rollOptions]      Options forwarded to the Actor#getInitiativeRoll method
    * @returns {Promise<void>}           A promise which resolves once initiative has been rolled for the Actor

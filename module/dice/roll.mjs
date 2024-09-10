@@ -238,31 +238,6 @@ export class MarvelMultiverseRoll extends Roll {
         });
     }
 
-    async configureDamageDialog({title, ability, abilityValue, damageMultiplier, template}={}, options={}) {
-        const content = await renderTemplate(template ?? this.constructor.DAMAGE_EVALUATION_TEMPLATE, {
-            ability: ability,
-            abilityValue: abilityValue,
-            damageMultiplier: damageMultiplier
-        });
-
-       
-
-        return new Promise(resolve => {
-            new Dialog({
-                title,
-                content,
-                buttons: {
-                    normal: {
-                        label: "Roll",
-                        callback: html => resolve(this._onDamageDialogSubmit(html))
-                    }
-                },
-                default: "normal",
-                close: () => resolve(null)
-            }, options).render(true);
-        });
-    }
-
     /* -------------------------------------------- */
 
     /**
@@ -303,26 +278,4 @@ export class MarvelMultiverseRoll extends Roll {
         return this;
     }
 
-    
-    _onDamageDialogSubmit(html) {
-        const form = html[0].querySelector("form");
-
-       
-        if ( form.damageMultiplier?.value ) {
-            this.terms.push(new foundry.dice.terms.OperatorTerm({operator: "*"}));
-            this.terms.push(new foundry.dice.terms.NumericTerm({number: form.damageMultiplier.value}));
-        }
-
-       
-        // Customize the modifier
-        if ( form.abilityValue?.value ) {
-            const abilityValue = form.abilityValue.value;
-            this.terms.push(new foundry.dice.terms.OperatorTerm({operator: "+"}));
-            this.terms.push(new foundry.dice.terms.NumericTerm({number: abilityValue}));
-        }
-
-        this.configureModifiers();
-       
-        return this;
-    }
 }

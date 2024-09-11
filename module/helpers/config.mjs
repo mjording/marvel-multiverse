@@ -43,16 +43,17 @@ MARVEL_MULTIVERSE.DICE_RESULTS = {
 
 
 MARVEL_MULTIVERSE.sizes = {
-  microscopic: { label: "MARVEL_MULTIVERSE.Size.Microscopic", speedMod: -5},
-  miniature: { label: "MARVEL_MULTIVERSE.Size.Miniature", speedMod: -4},
-  tiny: { label: "MARVEL_MULTIVERSE.Size.Tiny", speedMod: -3},
-  little: { label: "MARVEL_MULTIVERSE.Size.Little", speedMod: -2},
-  small: { label: "MARVEL_MULTIVERSE.Size.Small", speedMod: -1},
-  average: { label: "MARVEL_MULTIVERSE.Size.Average", speedMod: 0},
-  big: { label: "MARVEL_MULTIVERSE.Size.Big", speedMod: 1},
-  huge: { label: "MARVEL_MULTIVERSE.Size.Huge", speedMod: 2},
-  gargantuan: { label: "MARVEL_MULTIVERSE.Size.Gargantuan", speedMod: 3},
-  varies: { label: "MARVEL_MULTIVERSE.Size.Varies", speedMod: 4}
+  microscopic: { label: "MARVEL_MULTIVERSE.Size.Microscopic", sizeMultiplier: 0},
+  miniature: { label: "MARVEL_MULTIVERSE.Size.Miniature", sizeMultiplier: 0},
+  tiny: { label: "MARVEL_MULTIVERSE.Size.Tiny", sizeMultiplier: 0},
+  little: { label: "MARVEL_MULTIVERSE.Size.Little", sizeMultiplier: 0.25},
+  small: { label: "MARVEL_MULTIVERSE.Size.Small", sizeMultiplier: 0},
+  average: { label: "MARVEL_MULTIVERSE.Size.Average", sizeMultiplier: 0},
+  big: { label: "MARVEL_MULTIVERSE.Size.Big", sizeMultiplier: 0},
+  huge: { label: "MARVEL_MULTIVERSE.Size.Huge", sizeMultiplier: 5},
+  gigantic: { label: "MARVEL_MULTIVERSE.Size.Gigantic", sizeMultiplier: 20},
+  titanic: { label: "MARVEL_MULTIVERSE.Size.Titanic", sizeMultiplier: 80},
+  gargantuan: { label: "MARVEL_MULTIVERSE.Size.Gargantuan", sizeMultiplier: 320}
 };
 
 MARVEL_MULTIVERSE.powersets = {
@@ -115,6 +116,398 @@ MARVEL_MULTIVERSE.elements = {
   chemical: { label: "Chemical", fantasticEffect: "The target is corroding."},
 }
 
+MARVEL_MULTIVERSE.sizeEffects = {
+  microscopic: {
+    "name": "Microscopic Effects",
+    "disabled": false,
+    "changes": [
+      {
+        "key": "system.size",
+        "mode": 5,
+        "value": "microscopic"
+      },
+      {
+        "key": "system.abilities.mle.defense",
+        "mode": 2,
+        "value": 5
+      },
+      {
+        "key": "system.abilities.agl.defense",
+        "mode": 2,
+        "value": 5
+      }
+    ],
+    "description": "",
+    "transfer": true,
+    "statuses": [],
+    "flags": {}
+  },
+  miniature: {
+    "name": "Miniature Effects",
+    "disabled": false,
+    "changes": [
+      {
+        "key": "system.size",
+        "mode": 5,
+        "value": "miniature"
+      },
+      {
+        "key": "system.abilities.mle.defense",
+        "mode": 2,
+        "value": 4
+      },
+      {
+        "key": "system.abilities.agl.defense",
+        "mode": 2,
+        "value": 4
+      }
+    ],
+    "description": "",
+    "transfer": true,
+    "statuses": [],
+    "flags": {}
+  },
+  tiny: {
+    "name": "Tiny Effects",
+    "disabled": false,
+    "changes": [
+      {
+        "key": "system.size",
+        "mode": 5,
+        "value": "tiny"
+      },
+      {
+        "key": "system.abilities.mle.defense",
+        "mode": 2,
+        "value": 3
+      },
+      {
+        "key": "system.abilities.agl.defense",
+        "mode": 2,
+        "value": 3
+      }
+    ],
+    "description": "",
+    "transfer": true,
+    "statuses": [],
+    "flags": {}
+  },
+  little: {
+    "name": "Little Effects",
+    "disabled": false,
+    "changes": [
+      {
+        "key": "system.size",
+        "mode": 5,
+        "value": "little"
+      },
+      {
+        "key": "system.abilities.mle.defense",
+        "mode": 2,
+        "value": 2
+      },
+      {
+        "key": "system.abilities.agl.defense",
+        "mode": 2,
+        "value": 2
+      },
+      {
+        "key": "prototypeToken.width",
+        "mode":  1,
+        "value": 0.25
+      },
+      {
+        "key": "prototypeToken.height",
+        "mode":  1,
+        "value": 0.25
+      }
+    ],
+    "description": "",
+    "transfer": true,
+    "statuses": [],
+    "flags": {}
+  },
+  small: {
+    "name": "Small Effects",
+    "disabled": false,
+    "changes": [
+      {
+        "key": "system.size",
+        "mode": 5,
+        "value": "small"
+      },
+      {
+        "key": "system.abilities.mle.defense",
+        "mode": 2,
+        "value": 1
+      },
+      {
+        "key": "system.abilities.agl.defense",
+        "mode": 2,
+        "value": 1
+      },
+      {
+        "key": "system.movement.run.value",
+        "mode": 2,
+        "value": -1
+      }
+    ],
+    "description": "",
+    "transfer": true,
+    "statuses": [],
+    "flags": {},
+  },
+  average: {
+    "name": "Average Effects",
+    "disabled": false,
+    "changes": [
+      {
+        "key": "system.size",
+        "mode": 5,
+        "value": "average"
+      }
+    ],
+    "description": "",
+    "transfer": true,
+    "statuses": [],
+    "flags": {}
+  },
+  big: {
+    "name": "Big Effects",
+    "disabled": false,
+    "changes": [
+      {
+        "key": "system.size",
+        "mode": 5,
+        "value": "big"
+      },
+      {
+        "key": "system.abilities.mle.defense",
+        "mode": 2,
+        "value": -1
+      },
+      {
+        "key": "system.abilities.agl.defense",
+        "mode": 2,
+        "value": -1
+      },
+      {
+        "key": "system.reach",
+        "mode": 5,
+        "value": 2
+      },
+      {
+        "key": "system.movement.run.value",
+        "mode": 2,
+        "value": 1
+      }
+    ],
+    "description": "",
+    "transfer": true,
+    "statuses": [],
+    "flags": {}
+  },
+  huge: {
+    "name": "Huge Effects",
+    "disabled": false,
+    "changes": [
+      {
+        "key": "system.size",
+        "mode": 5,
+        "value": "huge"
+      },
+      {
+        "key": "system.abilities.mle.defense",
+        "mode": 2,
+        "value": -2
+      },
+      {
+        "key": "system.abilities.agl.defense",
+        "mode": 2,
+        "value": -2
+      },
+      {
+        "key": "system.reach",
+        "mode": 5,
+        "value": 5
+      },
+      {
+        "key": "system.movement.run.value",
+        "mode": 1,
+        "value": 5
+      },
+      {
+        "key": "system.abilities.mle.damageMultiplier",
+        "mode": 2,
+        "value": 2
+      },
+      {
+        "key": "prototypeToken.width",
+        "mode":  1,
+        "value": 5
+      },
+      {
+        "key": "prototypeToken.height",
+        "mode":  1,
+        "value": 5
+      }
+    ],
+    "description": "",
+    "transfer": true,
+    "statuses": [],
+    "flags": {}
+  },
+  gigantic: {
+    "name": "Gigantic Effects",
+    "disabled": false,
+    "changes": [
+      {
+        "key": "system.size",
+        "mode": 5,
+        "value": "gigantic"
+      },
+      {
+        "key": "system.abilities.mle.defense",
+        "mode": 2,
+        "value": -3
+      },
+      {
+        "key": "system.abilities.agl.defense",
+        "mode": 2,
+        "value": -3
+      },
+      {
+        "key": "system.reach",
+        "mode": 5,
+        "value": 20
+      },
+      {
+        "key": "system.movement.run.value",
+        "mode": 1,
+        "value": 20
+      },
+      {
+        "key": "system.abilities.mle.damageMultiplier",
+        "mode": 2,
+        "value": 4
+      },
+      {
+        "key": "prototypeToken.width",
+        "mode":  1,
+        "value": 20
+      },
+      {
+        "key": "prototypeToken.height",
+        "mode":  1,
+        "value": 20
+      }
+    ],
+    "description": "",
+    "transfer": true,
+    "statuses": [],
+    "flags": {}
+  },
+  titanic: {
+    "name": "Titanic Effects",
+    "disabled": false,
+    "changes": [
+      {
+        "key": "system.size",
+        "mode": 5,
+        "value": "titanic"
+      },
+      {
+        "key": "system.abilities.mle.defense",
+        "mode": 2,
+        "value": -4
+      },
+      {
+        "key": "system.abilities.agl.defense",
+        "mode": 2,
+        "value": -4
+      },
+      {
+        "key": "system.reach",
+        "mode": 5,
+        "value": 80
+      },
+      {
+        "key": "system.movement.run.value",
+        "mode": 1,
+        "value": 80
+      },
+      {
+        "key": "system.abilities.mle.damageMultiplier",
+        "mode": 2,
+        "value": 6
+      },
+      {
+        "key": "prototypeToken.width",
+        "mode":  1,
+        "value": 80
+      },
+      {
+        "key": "prototypeToken.height",
+        "mode":  1,
+        "value": 80
+      }
+    ],
+    "description": "",
+    "transfer": true,
+    "statuses": [],
+    "flags": {}
+  },
+  gargantuan: {
+    "name": "Gargantuan Effects",
+    "disabled": false,
+    "changes": [
+      {
+        "key": "system.size",
+        "mode": 5,
+        "value": "gargantuan"
+      },
+      {
+        "key": "system.abilities.mle.defense",
+        "mode": 2,
+        "value": -5
+      },
+      {
+        "key": "system.abilities.agl.defense",
+        "mode": 2,
+        "value": -5
+      },
+      {
+        "key": "system.reach",
+        "mode": 5,
+        "value": 320
+      },
+      {
+        "key": "system.movement.run.value",
+        "mode": 1,
+        "value": 320
+      },
+      {
+        "key": "system.abilities.mle.damageMultiplier",
+        "mode": "2",
+        "value": "8"
+      },
+      {
+        "key": "prototypeToken.width",
+        "mode":  1,
+        "value": 320
+      },
+      {
+        "key": "prototypeToken.height",
+        "mode":  1,
+        "value": 320
+      }
+    ],
+    "description": "",
+    "transfer": true,
+    "statuses": [],
+    "flags": {}
+  }
+}
 
 // ASCII Artwork
 MARVEL_MULTIVERSE.ASCII = `

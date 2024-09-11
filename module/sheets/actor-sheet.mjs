@@ -59,7 +59,13 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
 
     // Add roll data for TinyMCE editors.
     context.rollData = context.actor.getRollData();
+
     context.sizes = CONFIG.MARVEL_MULTIVERSE.sizes;
+
+    context.sizeSelection = Object.fromEntries(
+      Object.keys(CONFIG.MARVEL_MULTIVERSE.sizes).map((key) => [key, game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.sizes[key].label)])
+    );
+
 
     context.elements = Object.fromEntries(Object.keys(CONFIG.MARVEL_MULTIVERSE.elements).map((k) => [k,CONFIG.MARVEL_MULTIVERSE.elements[k].label]));
 
@@ -201,6 +207,8 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
 
     // Rollable abilities.
     html.on('click', '.rollable', this._onRoll.bind(this));
+
+    html.on('change', 'select[name="system.size"]', this._onSizeChange.bind(this))
     
     html.on('click', '.roll-initiative', (ev) => {
       this.actor.rollInitiative({createCombatants: true});
@@ -225,6 +233,31 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
         li.addEventListener('dragstart', handler, false);
       });
     }
+  }
+
+    /**
+   * Handle changes to actor size
+   * @param {Event} event   The originating click event
+   * @private
+   */
+  async _onSizeChange(event){
+    event.preventDefault();
+    const selected = event.target.value;
+    this._changeSizeEffect(selected);
+  }
+
+
+  async _changeSizeEffect(effectKey){
+    const sizeEffectNames = Object.keys(CONFIG.MARVEL_MULTIVERSE.sizeEffects).map((key) => CONFIG.MARVEL_MULTIVERSE.sizeEffects[key].name )
+
+    const currentSizeEffects = this.actor.effects.contents.filter((effect) => sizeEffectNames.includes(effect.name));
+    const currentSizeEffectIds =  currentSizeEffects.map((ae) => ae._id);
+
+    if (currentSizeEffectIds.length > 0){
+      this.actor.deleteEmbeddedDocuments("ActiveEffect", currentSizeEffectIds);
+    }  
+    const effect = CONFIG.MARVEL_MULTIVERSE.sizeEffects[effectKey];
+    ActiveEffect.create(effect, {parent: this.actor});
   }
 
   /**
@@ -316,6 +349,9 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
           await Item.create(newItemData, {parent: this.actor});
         });
         // create the origin
+        return super._onDropItemCreate(itemData);
+      } else if (itemData.type === "trait" && ["Big", "Small"].includes(itemData.name)) {
+        this._changeSizeEffect(itemData.name.toLowerCase());
         return super._onDropItemCreate(itemData);
       } else {
         return super._onDropItemCreate(itemData);

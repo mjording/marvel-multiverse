@@ -9,20 +9,20 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
 
     schema.actorSizes = new fields.SchemaField(Object.keys(CONFIG.MARVEL_MULTIVERSE.sizes).reduce((obj, size) => {
       obj[size] = new fields.SchemaField({
-        label: new fields.StringField({ required: true, initial: CONFIG.MARVEL_MULTIVERSE.sizes[size].label}),
-        speedMod: new fields.NumberField({ required: true, initial: CONFIG.MARVEL_MULTIVERSE.sizes[size].speedMod})
+        label: new fields.StringField({ required: true, initial: CONFIG.MARVEL_MULTIVERSE.sizes[size].label})
       });
       return obj;
     }, {}));
 
+    
     schema.movement = new fields.SchemaField(Object.keys(CONFIG.MARVEL_MULTIVERSE.movementTypes).reduce((obj, movement) => {
       obj[movement] = new fields.SchemaField({
         label: new fields.StringField({ required: true, initial: CONFIG.MARVEL_MULTIVERSE.movementTypes[movement].label }),
-        value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
-        noncom: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
+        value: new fields.NumberField({ ...requiredInteger, initial: 5, min: 0 }),
+        noncom: new fields.NumberField({ ...requiredInteger, initial: 5, min: 0 }),
         active: new fields.BooleanField({ required: true, initial: CONFIG.MARVEL_MULTIVERSE.movementTypes[movement].active }),
         rankMode: new fields.StringField({ required: true, blank: true }),
-        calc: new fields.StringField({initial: "default"})
+        calc: new fields.StringField({blank: true})
       });
       return obj;
     }, {}));
@@ -58,38 +58,34 @@ export default class MarvelMultiverseCharacter extends MarvelMultiverseActorBase
       this.abilities[key].label = game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.abilities[key]) ?? key;
     }
 
+    this.movement.climb.value = Math.ceil(this.movement.run.value * 0.5);
+    this.movement.jump.value = Math.ceil(this.movement.run.value * 0.5);
+    this.movement.swim.value = Math.ceil(this.movement.run.value * 0.5);
+
+
     this.attributes.init.value += this.abilities.vig.value;
     
-    const baseSpeed = ((this.abilities.agl.value < 1 ? 5 : 4) + CONFIG.MARVEL_MULTIVERSE.sizes[this.size].speedMod + Math.ceil((this.abilities.agl.value) / 5))
-    const halfSpeed = Math.ceil(baseSpeed * 0.5);
-    
-    
-    const speedBaseVals = { run: baseSpeed, climb: halfSpeed, swim: halfSpeed, jump: halfSpeed, flight: (baseSpeed * this.attributes.rank.value), glide: (baseSpeed * 2), swingline: (baseSpeed * 3), levitate: baseSpeed };
     for (const key in this.movement) {
       this.movement[key].label = game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.movementTypes[key].label) ?? k;
       switch (this.movement[key].calc) {
-        case "default":
-          this.movement[key].value = speedBaseVals[key]? speedBaseVals[key] : 0;
-          this.movement[key].noncom = this.movement[key].value;
+        case "half": {
+          this.movement[key].value = Math.ceil(this.movement[key].value * 0.5);
           break;
-        case "half":
-          this.movement[key].value = Math.ceil(speedBaseVals[key] * 0.5);
+        }
+        case "double": {
+          this.movement[key].value *=  2;
           break;
-        case "double":
-          this.movement[key].value = speedBaseVals[key] * 2;
-          break;
+        }
         case "triple":
-          this.movement[key].value = speedBaseVals[key] * 3;
+          this.movement[key].value *= 3;
           break;
         case "runspeed":
           this.movement[key].value = this.movement.run.value;
           break;
         case "rank":
-          const val = this.movement[key].value == 0 ? baseSpeed : this.movement[key].value;
+          const val = this.movement[key].value == 0 ? 1 : this.movement[key].value;
           this.movement[key].value = val * this.attributes.rank.value;
           break;
-        default:
-          console.log(`case missing for key: ${key}, calc: ${this.movement[key].calc}`);
       }
     }
   }

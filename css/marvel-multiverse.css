@@ -541,7 +541,11 @@ li.roll-damage {
   max-height: 1.5em;
 }
 .marvel-multiverse .bio-sm select {
-  max-width: 6em;
+  max-width: 4rem;
+  font-size: x-small;
+  border: none;
+  padding: 0;
+  height: 2em;
 }
 .marvel-multiverse .melee-damages div {
   margin: 0;

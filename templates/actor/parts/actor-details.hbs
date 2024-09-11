@@ -18,8 +18,10 @@
 </div>
 <div class="personalInfo bio-sm grid grid-3col">
   <div>
-    <label for="system.size" class="resource-reduced-label align-left" data-label="size">size</label>
-    <div class="actor-size">{{system.size}}</div>
+    <label>Size</label>
+    <select name="system.size">
+      {{selectOptions sizeSelection labelAttr="label" selected=system.size blank=""}}
+    </select>
   </div>
   <div>
     <label for="system.eyes" class="resource-reduced-label align-left" data-label="system.eyes">eyes</label>

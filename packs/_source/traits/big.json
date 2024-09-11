@@ -28,21 +28,6 @@
           "key": "system.size",
           "mode": 5,
           "value": "big"
-        },
-        {
-          "key": "system.abilities.mel.defense",
-          "mode": 2,
-          "value": -1
-        },
-        {
-          "key": "system.abilities.agl.defense",
-          "mode": 2,
-          "value": -1
-        },
-        {
-          "key": "system.reach",
-          "mode": 5,
-          "value": 2
         }
       ],
       "description": "",

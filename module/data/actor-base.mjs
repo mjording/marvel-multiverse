@@ -6,7 +6,6 @@ export default class MarvelMultiverseActorBase extends foundry.abstract.TypeData
     const schema = {};
 
     schema.attributes = new fields.SchemaField({
-
       init: new fields.SchemaField({
         value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),
         edge: new fields.BooleanField({ required: true, initial: false }),
@@ -23,7 +22,7 @@ export default class MarvelMultiverseActorBase extends foundry.abstract.TypeData
     schema.abilities = new fields.SchemaField(Object.keys(CONFIG.MARVEL_MULTIVERSE.abilities).reduce((obj, ability) => {
       obj[ability] = new fields.SchemaField({
         value: new fields.NumberField({ required: true, nullable: false, initial: 0, min: -3 }),
-        defense: new fields.NumberField({ required: true, nullable: false, initial: 0, min: 0 }),
+        defense: new fields.NumberField({ required: true, nullable: false, initial: 0 }),
         noncom: new fields.NumberField({ required: true, nullable: false, initial: 0, min: 0 }),
         edge: new fields.BooleanField({ required: true, initial: false }),
         damageMultiplier: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0 }),

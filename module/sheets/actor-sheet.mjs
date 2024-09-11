@@ -185,7 +185,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
     html.on('click', '.item-delete', (ev) => {
       const li = $(ev.currentTarget).parents('.item');
       const item = this.actor.items.get(li.data('itemId'));
-      item.delete();
+      this.actor.deleteEmbeddedDocuments("Item",[li.data('itemId')]);
       li.slideUp(200, () => this.render(false));
     });
 
@@ -282,6 +282,12 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
    */
   _onDropItemCreate (itemData) {
     if (!this.actor.items.map((item) => item.name).includes(itemData.name)) {
+      if( itemData.type === "power" && itemData.system.powerSet === "Elemental Control"){
+        if (!itemData.system.element){
+          itemData.system.element = this.actor.system.defaultElement;
+        }
+      }
+
       if ( itemData.type === "occupation" ) {
         itemData.system.tags.forEach(async (tag) => {
           this._createTag(tag);
@@ -289,6 +295,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
         itemData.system.traits.forEach(async (trait) => {
           this._createTrait(trait);
         });
+        // create the occupation
         return super._onDropItemCreate(itemData);
       } else if ( itemData.type === "origin" ) {
         itemData.system.tags.forEach(async (tag) => {
@@ -308,6 +315,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
           }
           await Item.create(newItemData, {parent: this.actor});
         });
+        // create the origin
         return super._onDropItemCreate(itemData);
       } else {
         return super._onDropItemCreate(itemData);

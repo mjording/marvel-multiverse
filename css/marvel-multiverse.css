@@ -525,6 +525,15 @@ li.roll-damage {
 .marvel-multiverse .tox .tox-edit-area {
   padding: 0 8px;
 }
+.marvel-multiverse .editor-container {
+  min-height: 4em;
+}
+.marvel-multiverse .personality .editor-container {
+  min-height: 6em;
+}
+.marvel-multiverse .history .editor-container {
+  min-height: 8em;
+}
 .marvel-multiverse .resource-label {
   font-weight: bold;
 }

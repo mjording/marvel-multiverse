@@ -68,3 +68,15 @@
     padding: 0 8px;
   }
 }
+
+.editor-container {
+  min-height: 4em;
+}
+
+.personality .editor-container {
+  min-height: 6em;
+}
+
+.history .editor-container {
+  min-height: 8em;
+}

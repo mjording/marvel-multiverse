@@ -17,8 +17,8 @@
     <div class="tab tag-attributes" data-group="primary" data-tab="attributes">
       {{!-- As you add new fields, add them in here! --}}
       <div class="resource">
-        <label for="system.description" class="resource-reduced-label rollable align-left" data-label="description">Description</label>
-        <textarea name="system.description" data-dtype="String">{{system.description}}</textarea>
+        <label for="system.description" class="resource-reduced-label rollable align-left" data-label="description">Description</label> 
+        {{editor system.description target="system.description" button=false engine="prosemirror" collaborate=false}}
       </div>
       <div class="resource">
         <label class="resource-label">restriction</label>

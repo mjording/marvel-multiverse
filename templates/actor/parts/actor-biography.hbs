@@ -1,12 +1,12 @@
 <div class="personalInfo flexcol history">
     <label for="system.history" class="resource-reduced-label rollable align-left" data-label="history">History</label>
-    <textarea name="system.history">{{system.history}}</textarea>
+    {{editor system.history target="system.history" button=false engine="prosemirror" collaborate=false}}
 </div>
 <div class="personalInfo flexcol personality">
     <label for="system.personality" class="resource-reduced-label rollable align-left" data-label="personality">Personality</label>
-    <textarea name="system.personality">{{system.personality}}</textarea>
+    {{editor system.personality target="system.personality" button=false engine="prosemirror" collaborate=false}}
 </div>
 <div class="personalInfo flexcol distinguishingFeatures">
     <label for="system.distinguishingFeatures" class="resource-reduced-label rollable align-left" data-label="distinguishingFeatures">Distinguishing Features</label>
-    <textarea name="system.distinguishingFeatures">{{system.distinguishingFeatures}}</textarea>
+    {{editor system.distinguishingFeatures target="system.distinguishingFeatures" button=false engine="prosemirror" collaborate=false}}
 </div>

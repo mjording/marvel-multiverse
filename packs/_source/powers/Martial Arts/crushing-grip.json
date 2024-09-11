@@ -11,9 +11,11 @@
     "duration": "Instant",
     "range": "",
     "cost": "5 Focus",
-    "effect": "The character makes a Melee attack against the grabbed target's Resilience defense. FI it's a success, the target takes regular damage. On a Fantastic success, the target takes double damage instead and is pinned.",
+    "effect": "The character makes a Melee attack against the grabbed target's Resilience defense. If it's a success, the target takes regular damage. On a Fantastic success, the target takes double damage instead and is pinned.",
     "attackAbility": "mle",
-    "attackTarget": "res"
+    "attackTarget": "res",
+    "attackKind": "close",
+    "damageType": "health"
   },
   "flags": {},
   "effects": [],

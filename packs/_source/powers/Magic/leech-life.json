@@ -13,7 +13,8 @@
     "cost": "5 Focus",
     "effect": "The character makes an Ego attack against the target's Resilience defense. If it succeeds, the target takes regular Health damage, and the character heals half that much Health for themselves. On a Fantastic success, the character heals the full Health damage instead.",
     "attackAbility": "ego",
-    "attackTarget": "res"
+    "attackTarget": "res",
+    "damageType": "health"
   },
   "flags": {},
   "effects": [],

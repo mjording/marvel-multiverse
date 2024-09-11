@@ -14,7 +14,9 @@
     "effect": "The character splits their attack or make two close attacks against separate targets within reach (or they can focus a single attack on a single target). Make a single Melee check and compare it to the targets' Melee defenses, On a success, the affected target takes half regular damage. On a Fantastic success, the affected target takes full damage.",
     "attackAbility": "mle",
     "attackTarget": "mle",
-    "attackMultiplier": 2
+    "attackMultiplier": 2,
+    "attackKind": "close",
+    "damageType": "health"
   },
   "flags": {},
   "effects": [],

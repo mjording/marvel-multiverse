@@ -14,7 +14,8 @@
     "effect": "The character makes a ranged attack with trouble on an enemy within the weapon's range. If the attack is a success, the enemy takes double normal damage. On a Fantastic success, the enemy takes triple damage. Either way, if the enemy suffers any actual damage, they are also stunned for one round.",
     "attackAbility": "agl",
     "attackTarget": "agl",
-    "attackEdgeMode": "trouble"
+    "attackEdgeMode": "trouble",
+    "attackKind": "ranged"
   },
   "flags": {},
   "effects": [],

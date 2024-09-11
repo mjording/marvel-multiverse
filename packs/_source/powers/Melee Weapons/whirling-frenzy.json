@@ -13,7 +13,9 @@
     "cost": "5 Focus",
     "effect": "The character makes a Melee check and compares it against the Melee defense of every enemy within their reach. If an attack is a success, the enemy takes half regular damage. On a Fantastic success, the enemy takes full damage and suffers the weapon's special effect.",
     "attackAbility": "agl",
-    "attackTarget": "agl"
+    "attackTarget": "agl",
+    "attackKind": "close",
+    "damageType": "health"
   },
   "flags": {},
   "effects": [],

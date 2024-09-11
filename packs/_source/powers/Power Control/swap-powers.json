@@ -11,7 +11,7 @@
     "duration": "Concentration",
     "range": "",
     "cost": "10 or more Focus",
-    "effect": "The character makes an Ego attack against a target they can see withia 2 spaces per the character's rank. If the target's powers have costs the characrer must pay the highest of them, or a minimum of 10 Focus. On a success, they swap ali of their non-Swap powers with the target's powers. Both chatacters can now use theit new powers es if they had always had them. When ever a character uses a swapped power they must pay any cost for it normally as well.",
+    "effect": "The character makes an Ego attack against a target they can see withia 2 spaces per the character's rank. If the target's powers have costs the character must pay the highest of them, or a minimum of 10 Focus. On a success, they swap ali of their non-Swap powers with the target's powers. Both characters can now use their new powers es if they had always had them. Whenever a character uses a swapped power they must pay any cost for it normally as well.",
     "attackAbility": "ego",
     "attackTarget": "ego"
   },

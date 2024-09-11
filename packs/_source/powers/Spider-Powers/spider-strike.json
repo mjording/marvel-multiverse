@@ -13,7 +13,9 @@
     "cost": "",
     "effect": "The character splits their attack to make two close attacks against separate targets within reach (or they can focus a single attack on a single target). Make a single Melee check and compare it to the targets' Melee defenses. On a success, the affected target takes half regular damage. On a Fantastic success, the affected target takes full damage and is paralyzed by webbing. Breaking free from webbing requires a Melee check (target number 20).After the attacks, the character may run, jump or climb at half speed for free.",
     "attackAbility": "mle",
-    "attackTarget": "mle"
+    "attackTarget": "mle",
+    "attackKind": "close",
+    "damageType": "health"
   },
   "flags": {},
   "effects": [],

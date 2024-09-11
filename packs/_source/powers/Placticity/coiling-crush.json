@@ -13,7 +13,9 @@
     "cost": "10 Focus",
     "effect": "The character makes a Melee attack. On a success, the enemy is paralyzed. On a Fantastic success, the enemy also takes regular damage. During the character's subsequent turns, they can spend their movement action to make a Melee check against the enemy's Resilience. If this succeeds, they inflict regular Health damage. On a Fantastic success, they do double damage instead. During the paralyzed enemy's turn, they can make a Melee check against the character's Melee defense to break free.",
     "attackAbility": "mle",
-    "attackTarget": "mle"
+    "attackTarget": "mle",
+    "attackKind": "close",
+    "damageType": "health"
   },
   "flags": {},
   "effects": [],

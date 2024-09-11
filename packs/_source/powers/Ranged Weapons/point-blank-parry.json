@@ -13,7 +13,9 @@
     "cost": "5 Focus",
     "effect": "The character makes a ranged attack against the enemy who missed them. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and is bleeding.",
     "attackAbility": "agl",
-    "attackTarget": "agl"
+    "attackTarget": "agl",
+    "attackKind": "ranged",
+    "damageType": "health"
   },
   "flags": {},
   "effects": [],

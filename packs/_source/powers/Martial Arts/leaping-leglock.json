@@ -13,7 +13,9 @@
     "cost": "15 Focus",
     "effect": "The character makes a close attack against an enemy. If the attack is a success, the enemy is grabbed and dealt regular damage. On a Fantastic success, the enemy takes double damage and is grabbed and stunned for one round. Either way, both the character and the enemy are knocked prone.",
     "attackAbility": "mle",
-    "attackTarget": "mle"
+    "attackTarget": "mle",
+    "attackKind": "close",
+    "damageType": "health"
   },
   "flags": {},
   "effects": [],

@@ -13,7 +13,9 @@
     "cost": "",
     "effect": "The character makes a Melee attack against a target. If the attack is a success, it Inflicts regular Focus damage (instead of Health damage), On a Fantastic success, the target takes double damage instead and is stunned for one round",
     "attackAbility": "mle",
-    "attackTarget": "mle"
+    "attackTarget": "mle",
+    "attackKind": "close",
+    "damageType": "focus"
   },
   "flags": {},
   "effects": [],

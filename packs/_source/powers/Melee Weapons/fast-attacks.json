@@ -13,7 +13,9 @@
     "cost": "",
     "effect": "The character splits their attack to make two close atacks against separate targets within reach (or they can focus a single nutack on a single target). Make a single Melee check and compare ti to the targets' Melee defenses. On a success, the affected target takes half regular damage. On a Fantastic success, the affected target takes full damage, and the character can make a bonus attack with this power against any target within reach, with the same effect.",
     "attackAbility": "mle",
-    "attackTarget": "mle"
+    "attackTarget": "mle",
+    "attackKind": "close",
+    "damageType": "health"
   },
   "flags": {},
   "effects": [],

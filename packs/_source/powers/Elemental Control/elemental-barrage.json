@@ -11,10 +11,12 @@
     "duration": "Instant",
     "range": "",
     "cost": "15 Focus",
-    "effect": "The character designates a space within their line of sight. The attack can affect every enemy within 01 spaces of that. The character makes a single Ego check and compares ti ot each target's Resilience defense. Affected enemies take half regular damage. On a Fantastic success, they take full regular damage and the elemental type's special effect.",
+    "effect": "The character designates a space within their line of sight. The attack can affect every enemy within 10 spaces of that. The character makes a single Ego check and compares it to each target's Resilience defense. Affected enemies take half regular damage. On a Fantastic success, they take full regular damage and the elemental type's special effect.",
     "attackAbility": "ego",
     "attackTarget": "res",
-    "isElemental": true
+    "isElemental": true,
+    "damageType": "health",
+    "attackKind": "ranged"
   },
   "flags": {},
   "effects": [],

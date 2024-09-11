@@ -13,7 +13,9 @@
     "cost": "10 Focus",
     "effect": "The character makes a Melee check and compares that against the Agility defense of every target within the character's reach plus their rank in spaces. Any targets the attack succeeds against take half regular damage. On a Fantastic success, the targets take full damage and are knocked prone.",
     "attackAbility": "mle",
-    "attackTarget": "agl"
+    "attackTarget": "agl",
+    "attackKind": "ranged",
+    "damageType": "health"
   },
   "flags": {},
   "effects": [],

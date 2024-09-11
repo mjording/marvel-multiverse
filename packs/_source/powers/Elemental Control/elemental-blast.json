@@ -15,7 +15,9 @@
     "isElemental": true,
     "attackAbility": "agl",
     "attackTarget": "agl",
-    "attackEdgeMode": "edge"
+    "attackEdgeMode": "edge",
+    "attackKind": "ranged",
+    "damageType": "health"
   },
   "flags": {},
   "effects": [],

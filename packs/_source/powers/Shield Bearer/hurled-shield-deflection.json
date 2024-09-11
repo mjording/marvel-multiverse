@@ -3,7 +3,7 @@
   "name": "Hurled Shield Deflection",
   "type": "power",
   "system": {
-    "description": "TThe character hurls their mighty shield to save an ally from an attack.",
+    "description": "The character hurls their mighty shield to save an ally from an attack.",
     "powerSet": "Shield Bearer",
     "prerequisites": "Shield Deflection, Rank 2",
     "action": "Reaction",
@@ -13,7 +13,8 @@
     "cost": "5 Focus",
     "effect": "The enemy has trouble on the attack. The shield then bounces back to the character.",
     "attackAbility": "agl",
-    "attackTarget": "agl"
+    "attackTarget": "agl",
+    "attackKind": "ranged"
   },
   "flags": {},
   "effects": [],

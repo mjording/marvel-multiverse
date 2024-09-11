@@ -13,7 +13,9 @@
     "cost": "5 Focus",
     "effect": "The character makes an Ego check against an enemy in their line of sight and compares that against the target's Vigilance defense. If the attack is a success, the enemy is deafened for one turn. On a Fantastic success, it also inflicts regular damage.",
     "attackAbility": "ego",
-    "attackTarget": "vig"
+    "attackTarget": "vig",
+    "damageType": "health",
+    "attackKind": "ranged"
   },
   "flags": {},
   "effects": [],

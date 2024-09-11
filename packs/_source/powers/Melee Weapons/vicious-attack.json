@@ -13,7 +13,9 @@
     "cost": "",
     "effect": "The character makes a close attack. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and suffers the weapon's special effect.",
     "attackAbility": "mle",
-    "attackTarget": "mle"
+    "attackTarget": "mle",
+    "attackKind": "close",
+    "damageType": "health"
   },
   "flags": {},
   "effects": [],

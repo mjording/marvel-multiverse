@@ -13,7 +13,9 @@
     "cost": "",
     "effect": "The character splits their attack to make two ranged attacks against separate targets (or they can focus a single attack on a single target). Make a single Agility check and compare it to the targets' Agility defenses. On a success, the affected target takes half regular damage. On a Fantastic success, the affected target takes full damage, and the character can make a bonus attack with this power against any available target, with the same effect.",
     "attackAbility": "agl",
-    "attackTarget": "agl"
+    "attackTarget": "agl",
+    "attackKind": "ranged",
+    "damageType": "health"
   },
   "flags": {},
   "effects": [],

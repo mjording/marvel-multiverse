@@ -13,7 +13,8 @@
     "cost": "",
     "effect": "The character makes a ranged attack against an enemy within 2 spaces. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and is bleeding.",
     "attackAbility": "agl",
-    "attackTarget": "agl"
+    "attackTarget": "agl",
+    "attackKind": "ranged"
   },
   "flags": {},
   "effects": [],

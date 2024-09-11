@@ -13,7 +13,9 @@
     "cost": "5 Focus",
     "effect": "The character makes a Logic attack against the Melee defense of a target within 5 spaces times the character's rank. If the attack is a success, it inflicts regular damage. On a Fantastic success, the damage is doubled instead, and the target is stunned for one round.",
     "attackAbility": "log",
-    "attackTarget": "mle"
+    "attackTarget": "mle",
+    "attackKind": "ranged",
+    "damageType": "health"
   },
   "flags": {},
   "effects": [],

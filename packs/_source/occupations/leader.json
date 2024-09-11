@@ -3,7 +3,7 @@
   "name": "Leader",
   "type": "occupation",
   "system": {
-    "description": "The character is the leader of a city, reagion, state, or nation. This includes things like being the elected mayor of New York City or the hereditary king of a country.",
+    "description": "The character is the leader of a city, region, state, or nation. This includes things like being the elected mayor of New York City or the hereditary king of a country.",
     "examples": "Jessica Jones, Misty Knight",
     "tags": [
       {
@@ -11,9 +11,10 @@
         "name": "Authority",
         "type": "tag",
         "system": {
-          "description": "The character has a legal authority of some kind. They might be a commissioned officer, privateer, bounty hunter, doctor, firearms dealer, lawyer, pharmacist, police officer, private investigator, mayor, governor, and so on. This tag can be selected multiple times if appropriate.",
+          "description": "The character has a legal authority of some kind. They might be a commissioned officer, privateer, bounty hunter, doctor, firearms dealer, lawyer, pharmacist, police officer, private investigator, mayor, governor and so on. This tag can be selected multiple times if appropriate.",
           "restriction": "",
-          "rarity": ""
+          "rarity": "",
+          "multiple": true
         },
         "flags": {},
         "effects": [],

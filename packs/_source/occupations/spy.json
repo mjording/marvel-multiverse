@@ -22,16 +22,16 @@
     ],
     "traits": [
       {
-        "_id": "cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7",
-        "name": "Connections",
+        "_id": "7c124b29-734d-4493-b9cf-07b5c044fdf7",
+        "name": "Connections: Espionage",
         "type": "trait",
         "system": {
-          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a palice officer, a politician, a mobster and soon. By makingan Egocheck, the character can call an their contact wo provide help in the form of glues, informntion ar resources, The Hnrrator determines the TH of the Ego check based on the favor requested This trait can be selected multiple thmes, using many different types, These include Celebrities, Community, Criminal, Espionape, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on",
+          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and soon. By making an Egocheck, the character can call an their contact to provide help in the form of clues, informntion or resources, The Narrrator determines the TN of the Ego check based on the favor requested This trait can be selected multiple thmes, using many different types, These include Celebrities, Community, Criminal, Espionage, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on",
           "restriction": "Espionage"
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7"
+        "_key": "!items!7c124b29-734d-4493-b9cf-07b5c044fdf7"
       },
       {
         "_id": "2258cbcd-0ef1-4e7c-b8ee-ad65ccc19dc6",
@@ -39,7 +39,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "The character is good at figuring out what peopke want and using it against them. They have an edge on Logic checks to investigate people and on Ego checks to pursuade people they've investigated."
+          "description": "The character is good at figuring out what people want and using it against them. They have an edge on Logic checks to investigate people and on Ego checks to pursuade people they've investigated."
         },
         "flags": {},
         "effects": [],

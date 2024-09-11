@@ -1,12 +1,12 @@
 {
-  "_id": "cb0b69673a89-9cdb-44ad-afca-7527c76e42e5",
+  "_id": "a1efbb68-d7ef-4db9-958d-b0a99d4014fc",
   "name": "Connections: Celebrities",
   "type": "trait",
   "system": {
-    "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a palice officer, a politician, a mobster and soon. By makingan Egocheck, the character can call an their contact wo provide help in the form of glues, informntion ar resources, The Hnrrator determines the TH of the Ego check based on the favor requested This trait can be selected multiple thmes, using many different types, These include Celebrities, Community, Criminal, Espionape, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on",
+    "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and soon. By making an Egocheck, the character can call an their contact to provide help in the form of clues, informntion or resources, The Narrrator determines the TN of the Ego check based on the favor requested This trait can be selected multiple thmes, using many different types, These include Celebrities, Community, Criminal, Espionage, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on",
     "restriction": "Celebrities"
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!cb0b69673a89-9cdb-44ad-afca-7527c76e42e5"
+  "_key": "!items!a1efbb68-d7ef-4db9-958d-b0a99d4014fc"
 }

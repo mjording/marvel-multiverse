@@ -8,7 +8,7 @@
     "prerequisites": "Chaotic, Rank 2",
     "action": "Standard",
     "trigger": "",
-    "duration": "Concentration",
+    "duration": "Instant",
     "range": "",
     "cost": "5 Focus",
     "effect": "The character fires a hex bolt at a foe. Make an Ego check against the target's Agility defense. On a success, the attack does regular damage. On a Fantastic success, it does double damage and causes the target trouble for one round.",

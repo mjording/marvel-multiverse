@@ -8,7 +8,7 @@
     "prerequisites": "Extended Reach 1, Rank 2",
     "action": "Movement",
     "trigger": "",
-    "duration": "Instant",
+    "duration": "Concentration",
     "range": "",
     "cost": "",
     "effect": "The character's Run Speed doubles, as does their Climb Speed."

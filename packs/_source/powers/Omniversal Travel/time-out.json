@@ -10,7 +10,7 @@
     "trigger": "The character or an ally is attacked.",
     "duration": "1 round per rank.",
     "range": "",
-    "cost": "15 Focus",
+    "cost": "15 Focus per round.",
     "effect": "The character freezes time for everyone but themselves. During this period, they can act normally while everyone else seems to be frozen in place. The character can choose to activate the power for the maximum duration or choose to stop at any time. However long, they must pay the Focus cost for each round. For example, Quicksilver uses Time-Out as an action and pays 30 Focus to activate it for two rounds. He can take his normal number of actions, reactions and movement, while the other characters cannot take any actions, reactions or movements until after the two rounds end."
   },
   "flags": {},

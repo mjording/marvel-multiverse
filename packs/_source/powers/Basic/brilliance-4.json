@@ -1,22 +1,22 @@
 {
-  "_id": "a7f21207-84d7-405e-bfa1-257c59ccd1f3",
-  "name": "Brillance 1",
+  "_id": "307e8cbe-a6aa-4fe0-8215-7eee65205721",
+  "name": "Brilliance 4",
   "type": "power",
   "system": {
-    "description": "The character puts their brain ot work.",
+    "description": "The character's intelligence is unparalleled",
     "powerSet": "Basic",
-    "prerequisites": "",
+    "prerequisites": "Brilliance 3, Rank 4",
     "action": "",
     "trigger": "",
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "The character adds +1 to their Logic damage multiplier, and they gain a +1 bonus to Logic checks other than attacks."
+    "effect": "The character adds +4 to their Logic damage multiplier, and they gain a +4 bonus to Logic checks other than attacks."
   },
   "flags": {},
   "effects": [
     {
-      "name": "Logic Ability Modifiers +1",
+      "name": "Logic Damage Multiplier +4",
       "img": "icons/svg/aura.svg",
       "duration": {
         "startTime": null,
@@ -28,18 +28,18 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.a7f21207-84d7-405e-bfa1-257c59ccd1f3",
-      "_id": "9a49ba6b895adf17",
+      "origin": "Item.307e8cbe-a6aa-4fe0-8215-7eee65205721",
+      "_id": "97e339faf1d56611",
       "changes": [
         {
           "key": "system.abilities.log.damageMultiplier",
           "mode": 2,
-          "value": 1
+          "value": 4
         },
         {
           "key": "system.abilities.log.noncom",
           "mode": 2,
-          "value": 1
+          "value": 4
         }
       ],
       "description": "",
@@ -47,9 +47,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!a7f21207-84d7-405e-bfa1-257c59ccd1f3.9a49ba6b895adf17"
+      "_key": "!items.effects!307e8cbe-a6aa-4fe0-8215-7eee65205721.97e339faf1d56611"
     }
   ],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!a7f21207-84d7-405e-bfa1-257c59ccd1f3"
+  "_key": "!items!307e8cbe-a6aa-4fe0-8215-7eee65205721"
 }

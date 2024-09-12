@@ -138,11 +138,6 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       context.weapons = weapons;
     }
   }
-
-  _prepareItem(item, context) {
-
-  }
-
   
   /**
    * Organize and classify Items for Character sheets.
@@ -297,6 +292,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
         data: traitData.system,
       };
       await Item.create(newItemData, {parent: this.actor});
+      //super._onDropItemCreate(itemData);
     }
   }
 
@@ -308,6 +304,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
         data: tagData.system,
       };
       await Item.create(newItemData, {parent: this.actor});
+      // super._onDropItemCreate(itemData);
     }
   }
   
@@ -323,21 +320,26 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
 
       if ( itemData.type === "occupation" ) {
         itemData.system.tags.forEach(async (tag) => {
+          console.log(`occupation: ${itemData.name} has tag ${tag.name}`);
           this._createTag(tag);
         });
         itemData.system.traits.forEach(async (trait) => {
+          console.log(`occupation: ${itemData.trait} has trait ${trait.trait}`);
           this._createTrait(trait);
         });
         // create the occupation
         return super._onDropItemCreate(itemData);
       } else if ( itemData.type === "origin" ) {
         itemData.system.tags.forEach(async (tag) => {
+          console.log(`origin: ${itemData.name} has tag ${tag.name}`);
           this._createTag(tag);
         });
         itemData.system.traits.forEach(async (trait) => {
+          console.log(`origin: ${itemData.name} has trait ${trait.name}`);
           this._createTrait(trait);
         });
         itemData.system.powers.forEach(async (power) => {
+          console.log(`origin: ${itemData.name} has power ${power.name}`);
           let newItemData = {
             name: power.name,
             type: "power",

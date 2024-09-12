@@ -1,22 +1,22 @@
 {
-  "_id": "307e8cbe-a6aa-4fe0-8215-7eee65205721",
-  "name": "Brillance 4",
+  "_id": "e4e3df31-c9ab-4414-b778-ed10a8b303e1",
+  "name": "Brilliance 2",
   "type": "power",
   "system": {
-    "description": "The character's intelligence is unparalleled",
+    "description": "Everything makes more sense to the character.",
     "powerSet": "Basic",
-    "prerequisites": "Brilliance 3, Rank 4",
+    "prerequisites": "Brilliance 1, Rank 2",
     "action": "",
     "trigger": "",
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "The character adds +4 to their Logic damage multiplier, and they gain a +4 bonus to Logic checks other than attacks."
+    "effect": "The character adds +2 to their Logic damage multiplier, and they gain a +2 bonus to Logic checks other than attacks."
   },
   "flags": {},
   "effects": [
     {
-      "name": "Logic Damage Multiplier +4",
+      "name": "Logic Damage Multiplier +2",
       "img": "icons/svg/aura.svg",
       "duration": {
         "startTime": null,
@@ -28,18 +28,18 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.307e8cbe-a6aa-4fe0-8215-7eee65205721",
-      "_id": "97e339faf1d56611",
+      "origin": "Item.e4e3df31-c9ab-4414-b778-ed10a8b303e1",
+      "_id": "855f5f7a52b8e0fd",
       "changes": [
         {
           "key": "system.abilities.log.damageMultiplier",
           "mode": 2,
-          "value": 4
+          "value": 2
         },
         {
           "key": "system.abilities.log.noncom",
           "mode": 2,
-          "value": 4
+          "value": 2
         }
       ],
       "description": "",
@@ -47,9 +47,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!307e8cbe-a6aa-4fe0-8215-7eee65205721.97e339faf1d56611"
+      "_key": "!items.effects!e4e3df31-c9ab-4414-b778-ed10a8b303e1.855f5f7a52b8e0fd"
     }
   ],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!307e8cbe-a6aa-4fe0-8215-7eee65205721"
+  "_key": "!items!e4e3df31-c9ab-4414-b778-ed10a8b303e1"
 }

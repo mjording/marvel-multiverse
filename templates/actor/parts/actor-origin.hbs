@@ -1,14 +1,14 @@
 {{#each origins as |item id|}}
-  <div class='item flexrow' data-item-id='{{item._id}}'>
-    <div class='item-name rollable' data-roll-type='item'>
+  <div class="mm-origin-container item" data-item-id="{{item._id}}">
+    <div class="item-name rollable" data-roll-type="item">
       <a class="rollable" data-roll-type="item">
-        <h4>{{item.name}}<a
-          class='item-control item-delete'
-          title='{{localize "DOCUMENT.Delete" type='origin'}}'
-        >
-          <i class='fas fa-trash'></i>
-        </a></h4>
-      </a> 
+        <h4>
+          <span>{{item.name}}</span>
+          <a class="item-control item-delete" title="{{localize 'DOCUMENT.Delete' type='origin'}}">
+            <i class="fas fa-trash"></i>
+          </a>
+        </h4>
+      </a>
     </div>
   </div>
 {{/each}}

@@ -49,3 +49,44 @@
   justify-content: center;
   text-align: center;
 }
+
+.flexcol,
+.flexrow {
+  &.-gap-xs {
+    gap: $mm-spacing-xs;
+  }
+
+  &.-gap-sm {
+    gap: $mm-spacing-sm;
+  }
+
+  &.-gap-md {
+    gap: $mm-spacing-md;
+  }
+
+  &.-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  &.-space-between {
+    justify-content: space-between;
+  }
+
+  &.-space-evenly {
+    justify-content: space-evenly;
+  }
+
+  &.-relative {
+    position: relative;
+  }
+
+  &.-static {
+    flex: 0 0 auto;
+  }
+
+  &.-static-children {
+    > * {
+      flex: 0 0 auto;
+    }
+  }
+}

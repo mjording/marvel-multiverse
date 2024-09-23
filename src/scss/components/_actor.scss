@@ -1,0 +1,908 @@
+%focus-state {
+  box-shadow:
+    inset 0 0 0 2px $mm-primary-red,
+    inset 0 0 0 3px white,
+    0 1px 2px 0 RGBA(0,0,0, 0.3);
+  text-shadow: none;
+  outline: none;
+}
+
+.marvel-multiverse.sheet.actor {
+  input,
+  select {
+    &:focus {
+      @extend %focus-state;
+    }
+  }
+
+  .rollable {
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: none;
+      color: $mm-primary-red !important;
+      text-shadow: none;
+    }
+  }
+
+  .window-content {
+    background-position: top -360px center;
+    background-repeat: no-repeat;
+    background-size: 2800px;
+    background-image: url("../ui/official/mm-heroes-background.jpg");
+    color: $mm-text-color;
+    font-family: 'Roboto Slab';
+    min-width: 690px;
+    overflow-x: auto;
+
+    .character {
+      gap: $mm-spacing-md;
+      height: 100%;
+    }
+  }
+
+  .sheet-header {
+    flex: 0 0 auto;
+
+    .header-fields .flexrow {
+      .flexcol:first-child {
+        flex: 0 0 210px;
+      }
+    }
+  }
+
+  .sheet-tabs {
+    align-items: center;
+    background: $mm-primary-red;
+    border: none;
+    clip-path: polygon(0% 20px, 20px 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0% 100%);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: $mm-spacing-sm;
+    width: 100%;
+
+    .sheet-tabs-wrapper {
+      display: flex;
+      width: 100%;
+    }
+
+    .item {
+      align-items: center;
+      background: $mm-secondary-red;
+      box-shadow: none;
+      color: white;
+      display: flex;
+      font-family: 'Roboto Condensed';
+      font-size: 16px;
+      font-weight: 600;
+      height: 36px;
+      justify-content: center;
+      text-shadow: none;
+      text-transform: uppercase;
+
+      &.active {
+        background: white;
+        color: $mm-primary-red;
+      }
+
+      &:nth-of-type(1) {
+        flex-basis: calc(33% + 16px);
+        margin-inline-end: -10px;
+        padding-inline-end: 16px;
+        clip-path: polygon(0% 20px, 20px 0%, 100% 0%, calc(100% - 16px) 100%, 0% 100%);
+      }
+
+      &:nth-of-type(2) {
+        flex-basis: calc(33% + 6px);
+        clip-path: polygon(16px 0%, 100% 0%, calc(100% - 16px) 100%, 0% 100%);
+      }
+
+      &:nth-of-type(3) {
+        flex-basis: calc(33% + 16px);
+        margin-inline-start: -10px;
+        padding-inline-start: 16px;
+        clip-path: polygon(0% 100%, 16px 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%);
+      }
+    }
+  }
+
+  .sheet-body {
+    overflow: hidden;
+
+    .tab > .flexrow {
+      height: 100%;
+    }
+  }
+
+  .mm-styled-container {
+    display: inline-grid;
+    flex: 0 0 auto;
+    position: relative;
+
+    &.-flex-relative {
+      flex: 1 1 auto;
+    }
+
+    &.-sm {
+      .mm-styled-field {
+        input,
+        select {
+          font-size: 12px;
+          padding: $mm-spacing-xs $mm-spacing-sm;
+        }
+      }
+    }
+  }
+
+  .mm-styled-label {
+    background: $mm-field-bg;
+    border-block-start: 2px solid $mm-primary-red;
+    bottom: -4px;
+    display: inline-flex;
+    font-size: 10px;
+    font-weight: 700;
+    margin: auto;
+    padding: 0 $mm-spacing-xs;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+
+    &.-align-left {
+      margin-inline-start: 14px;
+
+      ~ .mm-styled-field {
+        text-align: left;
+      }
+    }
+
+    &.-align-right {
+      margin-inline-end: 14px;
+
+      ~ .mm-styled-field {
+        text-align: right;
+      }
+    }
+
+    &::before,
+    &::after {
+      background: $mm-field-bg;
+      border-inline-start: 2px solid $mm-primary-red;
+      content: "";
+      height: 15px;
+      position: absolute;
+      top: 0;
+      width: 8px;
+    }
+
+    &::before {
+      left: -7px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      right: -7px;
+      transform: rotate(135deg);
+    }
+
+    ~ .mm-styled-field {
+      text-align: center;
+    }
+
+    span {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .mm-styled-field {
+    background: $mm-primary-red;
+    border-radius: $mm-border-radius-sm;
+    min-height: 20px;
+    padding: $mm-spacing-xs;
+    position: relative;
+
+    &.-no-bg {
+      &::before {
+        display: none;
+      }
+    }
+
+    &::before {
+      background: $mm-field-bg;
+      border-radius: $mm-border-radius-sm;
+      bottom: $mm-spacing-xs;
+      content: "";
+      left: $mm-spacing-xs;
+      position: absolute;
+      right: $mm-spacing-xs;
+      top: $mm-spacing-xs;
+    }
+
+    img {
+      position: relative;
+      z-index: 1;
+    }
+
+    input,
+    select {
+      background: none;
+      border: none;
+      color: $mm-text-color;
+      font-size: 14px;
+      font-weight: 600;
+      height: auto;
+      padding: $mm-spacing-sm $mm-spacing-md;
+      position: relative;
+      text-transform: uppercase;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
+  .mm-label {
+    color: $mm-subtext-color;
+    flex: 0 0 auto;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+
+    &.-sm {
+      font-size: 10px;
+    }
+  }
+
+  .mm-field {
+    flex: 1 1 auto;
+    position: relative;
+    z-index: 1;
+
+     input {
+      background: none;
+      border: none;
+      color: $mm-text-color;
+      font-size: 14px;
+      font-weight: 600;
+      height: 100%;
+      padding: 0;
+      position: relative;
+      text-transform: uppercase;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
+  .mm-codename-container {
+    margin-block-end: $mm-spacing-sm;
+    width: 50%;
+  }
+
+  .mm-hero-portrait-container {
+    align-items: center;
+    display: flex;
+    height: 190px;
+    justify-content: center;
+    max-height: 190px;
+    position: relative;
+  }
+
+  .mm-hero-portrait {
+    align-items: center;
+    background: $mm-primary-red;
+    clip-path: polygon(0 0, 70% 0%, 100% 30%, 100% 100%, 100% 100%, 30% 100%, 0% 70%, 0 0);
+    display: flex;
+    height: 90%;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+
+    img {
+      border-radius: 2px;
+      border: none;
+      height: auto;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .mm-rank-container {
+    align-items: center;
+    background: $mm-primary-red;
+    clip-path: polygon(12px 0%, calc(100% - 12px) 0%, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0% calc(100% - 12px), 0% 12px);
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 60px;
+    height: 60px;
+    left: 0;
+    margin: 0;
+    padding: $mm-spacing-sm $mm-spacing-xs;
+    position: absolute;
+    text-align: center;
+    top: 4px;
+    width: 60px;
+
+    &::before {
+      background: $mm-field-bg;
+      bottom: 2px;
+      clip-path: polygon(12px 0%, calc(100% - 12px) 0%, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0% calc(100% - 12px), 0% 12px);
+      content: "";
+      left: 2px;
+      position: absolute;
+      right: 3px;
+      top: 2px;
+    }
+
+    input {
+      font-size: 28px;
+      width: 50%;
+    }
+  }
+
+  .mm-karma-container {
+    align-items: center;
+    background: $mm-primary-red;
+    bottom: -4px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 7px, calc(100% - 5px) 12px, calc(100% - 5px) calc(100% - 12px), 100% calc(100% - 7px), 100% 100%, 0% 100%, 0% calc(100% - 7px), 5px calc(100% - 12px), 5px 12px, 0% 7px);
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 70px;
+    height: 60px;
+    margin: 0;
+    padding: $mm-spacing-sm $mm-spacing-xs;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 70px;
+
+    &::before {
+      background: $mm-field-bg;
+      bottom: 2px;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 5px, calc(100% - 5px) 10px, calc(100% - 5px) calc(100% - 10px), 100% calc(100% - 5px), 100% 100%, 0% 100%, 0% calc(100% - 5px), 5px calc(100% - 10px), 5px 10px, 0% 5px);
+      content: "";
+      left: 3px;
+      position: absolute;
+      right: 3px;
+      top: 2px;
+    }
+
+    input {
+      font-size: 28px;
+      width: 50%;
+    }
+  }
+
+  .mm-health-container,
+  .mm-focus-container,
+  .mm-speed-container {
+    align-items: center;
+    background: $mm-primary-red;
+    clip-path: polygon(8px 0%, calc(100% - 8px) 0%, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0% calc(100% - 8px), 0% 8px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70px;
+    padding: $mm-spacing-md $mm-spacing-sm;
+    padding-inline-end: 72px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    &::before {
+      background: $mm-field-bg;
+      bottom: 2px;
+      clip-path: polygon(8px 0%, calc(100% - 8px) 0%, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0% calc(100% - 8px), 0% 8px);
+      content: "";
+      left: 2px;
+      position: absolute;
+      right: 3px;
+      top: 3px;
+    }
+
+    hr {
+      border: none;
+      border-block-end: 1px solid $mm-text-color;
+      margin: 0;
+      width: 100%;
+    }
+
+    .mm-field {
+      align-items: center;
+      display: inline-flex;
+      font-size: 20px;
+      justify-content: end;
+
+      input {
+        font-size: inherit;
+        height: 24px;
+        max-width: 40px;
+        width: auto;
+      }
+    }
+  }
+
+  .mm-focus-container {
+    background: $mm-primary-blue;
+
+    ~ .mm-dr-container {
+      background: $mm-secondary-blue;
+    }
+  }
+
+  .mm-dr-container,
+  .mm-initiative-container {
+    background: $mm-secondary-red;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 12px 100%, 0% calc(100% - 12px));
+    display: flex;
+    flex-direction: column;
+    height: 54px;
+    justify-content: center;
+    padding: $mm-spacing-sm $mm-spacing-xs;
+    position: absolute;
+    right: -2px;
+    text-align: center;
+    top: -4px;
+    width: 72px;
+
+    &::before {
+      background: white;
+      bottom: 2px;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 12px 100%, 0% calc(100% - 12px));
+      content: "";
+      left: 2px;
+      position: absolute;
+      right: 2px;
+      top: 2px;
+    }
+
+    .mm-field {
+      align-items: center;
+      display: flex;
+      font-size: 20px;
+      justify-content: center;
+      line-height: 1;
+    }
+  }
+
+  .mm-speed-fields {
+    font-size: 12px;
+    line-height: 1;
+    padding-block-start: 1px;
+    text-align: left;
+    width: 80%;
+    z-index: 1;
+  }
+
+  .mm-occupation-container,
+  .mm-origin-container {
+    position: relative;
+    z-index: 1;
+
+    h4 {
+      color: $mm-text-color;
+      display: flex;
+      font-size: 12px;
+      font-weight: 600;
+      height: auto;
+      padding: $mm-spacing-xs $mm-spacing-sm;
+      position: relative;
+      text-transform: uppercase;
+      width: 100%;
+      z-index: 1;
+
+      > .rollable {
+        flex: 1 1 auto;
+      }
+    }
+  }
+
+  .mm-damage-container,
+  .mm-abilities-container,
+  .mm-powers-container,
+  .mm-gear-container {
+    background: $mm-primary-red;
+    clip-path: polygon(0% 0%, 104px 0%, 135px 28px, 100% 28px, 100% 100%, 0% 100%);
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column;
+    padding: 3px;
+    position: relative;
+    width: 100%;
+
+    h3 {
+      background: $mm-secondary-red;
+      border-block-end: 1px solid $mm-secondary-red;
+      clip-path: polygon(0% 0%, calc(100% - 30px) 0%, 100% 100%, 0% 100%);
+      color: white;
+      font-family: 'Roboto';
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0;
+      padding-block-start: $mm-spacing-sm;
+      padding-inline-end: 55px;
+      padding-inline-start: $mm-spacing-md;
+      position: relative;
+      top: 1px;
+      width: 131px;
+      // width: fit-content;
+    }
+  }
+
+  .mm-powers-container,
+  .mm-gear-container {
+    flex: 1 1 50%;
+    height: 100%;
+  }
+
+  .mm-abilities-container {
+    .mm-ability-rows {
+      background-image: linear-gradient(180deg, $mm-secondary-red, transparent 25%), url("../ui/official/mmrpg-crimson-bg.jpg");
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: 1920px;
+      display: flex;
+      flex-direction: column;
+      gap: $mm-spacing-sm;
+      height: 100%;
+      list-style: none;
+      margin: 0;
+      padding: $mm-spacing-md 0;
+      width: 100%;
+
+      &::before {
+        background: $mm-field-bg;
+        bottom: 4px;
+        content: "";
+        position: absolute;
+        right: 4px;
+        top: 31px;
+        width: 25%;
+      }
+
+      li {
+        display: flex;
+        z-index: 1;
+
+        &:first-of-type {
+          font-size: 10px;
+          font-weight: 600;
+          text-transform: uppercase;
+
+          div:nth-of-type(4) {
+            color: $mm-text-color;
+          }
+        }
+
+        > div {
+          align-items: flex-end;
+          color: white;
+          display: inline-flex;
+          flex: 1 1 25%;
+          justify-content: center;
+          text-align: center;
+
+          &:first-child {
+            justify-content: start;
+            text-align: start;
+          }
+
+          &.mm-ability-name {
+            align-items: center;
+          }
+
+          > div,
+          > input {
+            align-items: center;
+            background: $mm-field-bg;
+            border: 2px solid black;
+            color: $mm-text-color;
+            display: flex;
+            font-size: 18px;
+            font-weight: 600;
+            height: 28px;
+            justify-content: center;
+            line-height: 1;
+            min-width: initial;
+            padding: 0;
+            width: 54px;
+          }
+
+          > span {
+            align-items: center;
+            background: $mm-secondary-red;
+            clip-path: polygon(8px 0%, calc(100% - 8px) 0%, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0% calc(100% - 8px), 0% 8px);
+            color: white;
+            display: flex;
+            font-size: 18px;
+            font-weight: 600;
+            height: 28px;
+            justify-content: center;
+            line-height: 1;
+            min-width: initial;
+            padding: 0;
+            width: 54px;
+
+            &:hover {
+              background: white;
+            }
+          }
+        }
+      }
+    }
+
+    .mm-ability-name {
+      color: white;
+      font-size: 18px;
+      padding-inline-start: $mm-spacing-md;
+
+      &:hover {
+        background: $mm-primary-red;
+        color: white !important;
+      }
+    }
+  }
+
+  .mm-damage-container {
+    .mm-damage-rows {
+      background-image: linear-gradient(180deg, $mm-secondary-red, transparent 25%), url('../ui/official/mmrpg-crimson-bg.jpg');
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: 1920px;
+      display: flex;
+      flex-direction: column;
+      gap: $mm-spacing-sm;
+      height: 100%;
+      justify-content: space-evenly;
+      list-style: none;
+      margin: 0;
+      padding: $mm-spacing-md 0;
+      width: 100%;
+
+      li {
+        align-items: center;
+        color: white;
+        display: flex;
+        padding: 0 $mm-spacing-md;
+        position: relative;
+        z-index: 1;
+
+        > * {
+          display: inline-flex;
+          flex: 1 1 25%;
+          justify-content: center;
+
+          &:first-chld {
+            flex: 0 0 auto;
+          }
+        }
+
+        > span {
+          flex: 0 0 auto;
+          padding: 0 $mm-spacing-md;
+        }
+      }
+
+      h6 {
+        color: white;
+        flex: 0 0 auto;
+        font-size: 10px;
+        font-weight: 600;
+        margin: 0;
+        transform: rotate(-90deg);
+        width: 24px;
+      }
+    }
+
+    .mm-damage-multiply,
+    .mm-damage-addition {
+      align-items: center;
+      background: $mm-field-bg;
+      border: 2px solid black;
+      color: $mm-text-color;
+      display: flex;
+      font-size: 18px;
+      font-weight: 600;
+      gap: $mm-spacing-sm;
+      height: 36px;
+      justify-content: center;
+      line-height: 1;
+      padding: $mm-spacing-sm $mm-spacing-md;
+      position: relative;
+
+      > * {
+        display: inline-flex;
+      }
+
+      img {
+        border: none;
+        flex: initial;
+        height: auto;
+        margin: 0;
+        max-height: 100%;
+      }
+    }
+
+    .mm-damage-multiply {
+      &::before,
+      &::after {
+        align-items: center;
+        bottom: 0;
+        color: $mm-text-color;
+        display: flex;
+        font-size: 28px;
+        font-weight: 400;
+        position: absolute;
+        top: 0;
+      }
+
+      &::before {
+        content: "[";
+        left: -1px;
+      }
+
+      &::after {
+        content: "]";
+        right: -1px;
+      }
+    }
+  }
+
+  .mm-powers-container {
+    .mm-powers-list {
+      background-image: linear-gradient(180deg, $mm-secondary-red, transparent 25%), url('../ui/official/mmrpg-crimson-bg.jpg');
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: 1920px;
+      display: flex;
+      flex-direction: column;
+      gap: $mm-spacing-sm;
+      height: 100%;
+      margin: 0;
+      overflow: auto;
+      padding: $mm-spacing-md $mm-spacing-md $mm-spacing-sm;
+      width: 100%;
+    }
+  }
+
+  .mm-power-set {
+    display: flex;
+    flex-direction: column;
+    gap: $mm-spacing-sm;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    .mm-power-set-header {
+      align-items: center;
+      color: white;
+      display: flex;
+      flex: 0 0 auto;
+      width: 100%;
+
+      > span {
+        background: $mm-primary-red;
+        border-radius: 18px;
+        display: inline-flex;
+        flex: 0 0 auto;
+        font-size: 10px;
+        height: 18px;
+        padding: $mm-spacing-xs $mm-spacing-sm;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      > hr {
+        border: none;
+        border-block-end: 1px solid $mm-primary-red;
+      }
+
+      .item-controls {
+        padding: 0;
+      }
+
+      .item-control {
+        &:hover {
+          background: $mm-primary-red;
+          color: white;
+          text-shadow: none;
+        }
+      }
+    }
+
+    .mm-power-set-power {
+      align-items: center;
+      background: $mm-primary-red;
+      clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0% 100%);
+      color: $mm-text-color;
+      display: flex;
+      font-size: 12px;
+      gap: $mm-spacing-md;
+      line-height: 1;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+
+      &::before {
+        background-color: $mm-field-bg;
+        bottom: 2px;
+        clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0% 100%);
+        content: "";
+        left: 2px;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+      }
+
+      .item-control {
+        border-color: transparent;
+
+        &:hover {
+          color: $mm-primary-red;
+          text-shadow: none;
+        }
+      }
+    }
+
+    .mm-power-set-power-name {
+      flex: 1 1 auto;
+      font-weight: 600;
+      padding: $mm-spacing-md;
+      padding-inline-start: $mm-spacing-lg;
+      position: relative;
+      text-transform: uppercase;
+      z-index: 1;
+
+      > a {
+        display: inline-flex;
+        flex-direction: column;
+        gap: $mm-spacing-xs;
+        width: 100%;
+
+        span:nth-of-type(2) {
+          color: $mm-subtext-color;
+          font-size: 10px;
+        }
+      }
+    }
+
+    .item-controls {
+      display: flex;
+      flex: 0 0 auto;
+      gap: $mm-spacing-xs;
+      padding-inline-end: $mm-spacing-lg;
+      padding-inline-start: $mm-spacing-sm;
+      z-index: 1;
+    }
+
+    .item-control {
+      align-items: center;
+      border-radius: $mm-border-radius-sm;
+      border: 1px solid $mm-primary-red;
+      display: flex;
+      height: 18px;
+      justify-content: center;
+      padding: $mm-spacing-xs;
+      width: 18px;
+    }
+  }
+
+  .mm-gear-container {
+    .mm-gear-list {
+      background-image: linear-gradient(180deg, $mm-secondary-red, transparent 25%), url('../ui/official/mmrpg-crimson-bg.jpg');
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: 1920px;
+      display: flex;
+      flex-direction: column;
+      gap: $mm-spacing-sm;
+      height: 100%;
+      margin: 0;
+      overflow: auto;
+      padding: $mm-spacing-md $mm-spacing-md $mm-spacing-sm;
+      width: 100%;
+    }
+  }
+}

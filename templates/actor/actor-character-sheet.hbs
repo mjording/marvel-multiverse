@@ -100,7 +100,8 @@
               <div class="mm-dr-container">
                 <label class="mm-label -sm" for="system.health.damage-reduction">Damage Reduction</label>
                 <div class="mm-field">
-                  -{{system.healthDamageReduction}}
+                  {{#if (gt system.healthDamageReduction 0)}}-{{/if}}
+                  {{system.healthDamageReduction}}
                 </div>
               </div>
             </div>
@@ -117,7 +118,8 @@
               <div class="mm-dr-container">
                 <label class="mm-label -sm" for="system.health.damage-reduction">Damage Reduction</label>
                 <div class="mm-field">
-                  -{{system.focusDamageReduction}}
+                  {{#if (gt system.focusDamageReduction 0)}}-{{/if}}
+                  {{system.focusDamageReduction}}
                 </div>
               </div>
             </div>

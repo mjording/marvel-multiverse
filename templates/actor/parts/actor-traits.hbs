@@ -1,33 +1,33 @@
-<ol class='items-list'>
-  <li class='item flexrow items-header'>
-    <div class='item-name'>Trait</div>
-    <div class='item-controls'>
+<ol class="mm-power-set">
+  <li class="flexrow item mm-power-set-header">
+    <hr />
+    <div class="item-controls">
       <a
-        class='item-control item-create'
-        title='Create item'
-        data-type='trait'
+        class="item-control item-create"
+        title="Create item"
+        data-type="trait"
       >
-        <i class='fas fa-plus'></i>New
+        <i class="fas fa-plus"></i>
       </a>
     </div>
   </li>
   {{#each traits as |item id|}}
-    <li class='item flexrow' data-item-id='{{item._id}}'>
-      <div class='item-name'>
-        <h4><a class='rollable' data-roll-type='item'>{{item.name}}</a></h4>
+    <li class="flexrow item mm-power-set-power" data-item-id='{{item._id}}'>
+      <div class="item-name mm-power-set-power-name">
+        <a class="rollable" data-roll-type="item">{{item.name}}</a>
       </div>
-      <div class='item-controls'>
+      <div class="item-controls">
         <a
-          class='item-control item-edit'
-          title='{{localize "DOCUMENT.Edit" type='trait'}}'
+          class="item-control item-edit"
+          title="{{localize 'DOCUMENT.Edit' type="trait"}}"
         >
-          <i class='fas fa-edit'></i>
+          <i class="fas fa-edit"></i>
         </a>
         <a
-          class='item-control item-delete'
-          title='{{localize "DOCUMENT.Delete" type='trait'}}'
+          class="item-control item-edit"
+          title="{{localize 'DOCUMENT.Delete' type="trait"}}"
         >
-          <i class='fas fa-trash'></i>
+          <i class="fas fa-trash"></i>
         </a>
       </div>
     </li>

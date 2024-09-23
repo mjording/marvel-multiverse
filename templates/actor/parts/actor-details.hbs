@@ -1,74 +1,78 @@
-<div class="flexrow -nowrap -gap-xs">
-  <div class="mm-styled-container -flex-relative -sm">
-    <label class="mm-styled-label -align-left" for="system.realname" data-label="Real Name"><span>real name</span></label>
-    <div class="mm-styled-field">
-      <input type="text" name="system.realname" value="{{system.realname}}" data-dtype="String"/>
+<div class="flexcol">
+  <div class="flexrow -nowrap -gap-md">
+    <div class="mm-styled-container -flex-relative -sm">
+      <label class="mm-styled-label -align-left"><span>occupation</span></label>
+      <div class="mm-styled-field">
+        {{> "systems/marvel-multiverse/templates/actor/parts/actor-occupation.hbs"}}
+      </div>
+    </div>
+    <div class="mm-styled-container -flex-relative -sm">
+      <label class="mm-styled-label -align-left"><span>origin</span></label>
+      <div class="mm-styled-field">
+        {{> "systems/marvel-multiverse/templates/actor/parts/actor-origin.hbs"}}
+      </div>
     </div>
   </div>
-  <div class="mm-styled-container -flex-relative -sm">
-    <label class="mm-styled-label -align-right" for="system.gender" data-label="system.gender"><span>gender</span></label>
-    <div class="mm-styled-field">
-      <input type="text" name="system.gender" value="{{system.gender}}" data-dtype="String"/>
+  <div class="flexrow -nowrap -gap-md">
+    <div class="mm-styled-container -flex-relative -sm">
+      <label class="mm-styled-label -align-left" for="system.realname" data-label="Real Name"><span>real name</span></label>
+      <div class="mm-styled-field">
+        <input type="text" name="system.realname" value="{{system.realname}}" data-dtype="String"/>
+      </div>
+    </div>
+    <div class="mm-styled-container -flex-relative -sm">
+      <label class="mm-styled-label -align-left" for="system.gender" data-label="system.gender"><span>gender</span></label>
+      <div class="mm-styled-field">
+        <input type="text" name="system.gender" value="{{system.gender}}" data-dtype="String"/>
+      </div>
+    </div>
+    <div class="mm-styled-container -flex-relative -sm">
+      <label class="mm-styled-label -align-left"><span>Size</span></label>
+      <div class="mm-styled-field">
+        <select name="system.size">
+          {{selectOptions sizeSelection labelAttr="label" selected=system.size blank=""}}
+        </select>
+      </div>
     </div>
   </div>
-</div>
-<div class="flexrow -nowrap -gap-xs">
-  <div class="mm-styled-container -flex-relative -sm">
-    <label class="mm-styled-label -align-left" for="system.height" data-label="system.height"><span>height</span></label>
-    <div class="mm-styled-field">
-      <input type="text" name="system.height" value="{{system.height}}" data-dtype="String"/>
+  <div class="flexrow -nowrap -gap-md">
+    <div class="mm-styled-container -flex-relative -sm">
+      <label class="mm-styled-label -align-left" for="system.height" data-label="system.height"><span>height</span></label>
+      <div class="mm-styled-field">
+        <input type="text" name="system.height" value="{{system.height}}" data-dtype="String"/>
+      </div>
+    </div>
+    <div class="mm-styled-container -flex-relative -sm">
+      <label class="mm-styled-label -align-left" for="system.weight" data-label="system.weight"><span>weight</span></label>
+      <div class="mm-styled-field">
+        <input type="text" name="system.weight" value="{{system.weight}}" data-dtype="String"/>
+      </div>
+    </div>
+    <div class="mm-styled-container -flex-relative -sm">
+      <label class="mm-styled-label -align-left" for="system.eyes" data-label="system.eyes"><span>eyes</span></label>
+      <div class="mm-styled-field">
+        <input type="text" name="system.eyes" value="{{system.eyes}}" data-dtype="String"/>
+      </div>
+    </div>
+    <div class="mm-styled-container -flex-relative -sm">
+      <label class="mm-styled-label -align-left" for="system.hair" data-label="system.hair"><span>hair</span></label>
+      <div class="mm-styled-field">
+        <input type="text" name="system.hair" value="{{system.hair}}" data-dtype="String"/>
+      </div>
     </div>
   </div>
-  <div class="mm-styled-container -flex-relative -sm">
-    <label class="mm-styled-label -align-right" for="system.weight" data-label="system.weight"><span>weight</span></label>
-    <div class="mm-styled-field">
-      <input type="text" name="system.weight" value="{{system.weight}}" data-dtype="String"/>
+  <div class="flexrow -nowrap -gap-md">
+    <div class="mm-styled-container -flex-relative -sm">
+      <label class="mm-styled-label -align-left" for="system.teams" data-label="teams"><span>teams</span></label>
+      <div class="mm-styled-field">
+        <input type="text" name="system.teams" value="{{system.teams}}" data-dtype="String"/>
+      </div>
     </div>
-  </div>
-</div>
-<div class="mm-styled-container -sm">
-  <label class="mm-styled-label -align-left"><span>Size</span></label>
-  <div class="mm-styled-field">
-    <select name="system.size">
-      {{selectOptions sizeSelection labelAttr="label" selected=system.size blank=""}}
-    </select>
-  </div>
-</div>
-<div class="flexrow -nowrap -gap-xs">
-  <div class="mm-styled-container -flex-relative -sm">
-    <label class="mm-styled-label -align-left" for="system.eyes" data-label="system.eyes"><span>eyes</span></label>
-    <div class="mm-styled-field">
-      <input type="text" name="system.eyes" value="{{system.eyes}}" data-dtype="String"/>
+    <div class="mm-styled-container -flex-relative -sm">
+      <label class="mm-styled-label -align-left"><span>Base</span></label>
+      <div class="mm-styled-field">
+        <input type="text" name="system.base" value="{{system.base}}" data-dtype="String"/>
+      </div>
     </div>
-  </div>
-  <div class="mm-styled-container -flex-relative -sm">
-    <label class="mm-styled-label -align-right" for="system.hair" data-label="system.hair"><span>hair</span></label>
-    <div class="mm-styled-field">
-      <input type="text" name="system.hair" value="{{system.hair}}" data-dtype="String"/>
-    </div>
-  </div>
-</div>
-<div class="mm-styled-container -sm">
-  <label class="mm-styled-label -align-left" for="system.teams" data-label="teams"><span>teams</span></label>
-  <div class="mm-styled-field">
-    <input type="text" name="system.teams" value="{{system.teams}}" data-dtype="String"/>
-  </div>
-</div>
-<div class="mm-styled-container -sm">
-  <label class="mm-styled-label -align-left"><span>Base</span></label>
-  <div class="mm-styled-field">
-    <input type="text" name="system.base" value="{{system.base}}" data-dtype="String"/>
-  </div>
-</div>
-<div class="mm-styled-container -sm">
-  <label class="mm-styled-label -align-left"><span>occupation</span></label>
-  <div class="mm-styled-field">
-    {{> "systems/marvel-multiverse/templates/actor/parts/actor-occupation.hbs"}}
-  </div>
-</div>
-<div class="mm-styled-container -sm">
-  <label class="mm-styled-label -align-left"><span>origin</span></label>
-  <div class="mm-styled-field">
-    {{> "systems/marvel-multiverse/templates/actor/parts/actor-origin.hbs"}}
   </div>
 </div>

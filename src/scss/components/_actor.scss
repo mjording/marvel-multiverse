@@ -502,7 +502,8 @@
   .mm-damage-container,
   .mm-abilities-container,
   .mm-powers-container,
-  .mm-gear-container {
+  .mm-gear-container,
+  .mm-biofill-container {
     background: $mm-primary-red;
     clip-path: polygon(0% 0%, 104px 0%, 135px 28px, 100% 28px, 100% 100%, 0% 100%);
     display: flex;
@@ -904,5 +905,19 @@
       padding: $mm-spacing-md $mm-spacing-md $mm-spacing-sm;
       width: 100%;
     }
+  }
+
+  .mm-biofill-container {
+    .editor {
+      background: $mm-field-bg;
+    }
+  }
+
+  .mm-bio-container {
+    display: flex;
+    flex-direction: column;
+    gap: $mm-spacing-md;
+    height: 100%;
+    overflow: auto;
   }
 }

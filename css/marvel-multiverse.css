@@ -1240,7 +1240,8 @@ li.roll-damage {
 .marvel-multiverse.sheet.actor .mm-damage-container,
 .marvel-multiverse.sheet.actor .mm-abilities-container,
 .marvel-multiverse.sheet.actor .mm-powers-container,
-.marvel-multiverse.sheet.actor .mm-gear-container {
+.marvel-multiverse.sheet.actor .mm-gear-container,
+.marvel-multiverse.sheet.actor .mm-biofill-container {
   background: #e41d18;
   clip-path: polygon(0% 0%, 104px 0%, 135px 28px, 100% 28px, 100% 100%, 0% 100%);
   display: flex;
@@ -1253,7 +1254,8 @@ li.roll-damage {
 .marvel-multiverse.sheet.actor .mm-damage-container h3,
 .marvel-multiverse.sheet.actor .mm-abilities-container h3,
 .marvel-multiverse.sheet.actor .mm-powers-container h3,
-.marvel-multiverse.sheet.actor .mm-gear-container h3 {
+.marvel-multiverse.sheet.actor .mm-gear-container h3,
+.marvel-multiverse.sheet.actor .mm-biofill-container h3 {
   background: #8b0502;
   border-block-end: 1px solid #8b0502;
   clip-path: polygon(0% 0%, calc(100% - 30px) 0%, 100% 100%, 0% 100%);
@@ -1589,4 +1591,14 @@ li.roll-damage {
   overflow: auto;
   padding: 8px 8px 4px;
   width: 100%;
+}
+.marvel-multiverse.sheet.actor .mm-biofill-container .editor {
+  background: #fff2ec;
+}
+.marvel-multiverse.sheet.actor .mm-bio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+  overflow: auto;
 }

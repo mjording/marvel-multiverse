@@ -202,7 +202,7 @@
 
   {{!-- Sheet Body --}}
   <section class="sheet-body">
-    {{!-- Abilities, Damages, & powers Tab --}}
+    {{!-- Powers & Gear --}}
     <div class="tab" data-group="primary" data-tab="powersgear">
       {{!-- Traits, Tags & Powers --}}
       <div class="flexrow -gap-sm -nowrap">
@@ -210,12 +210,14 @@
           <h3>Powers</h3>
           <div class="mm-powers-list">
             {{> "systems/marvel-multiverse/templates/actor/parts/actor-powers.hbs"}}
-            <span class="header-control">
-              <label>Default Element</label>
-              <select name="system.defaultElement">
-                {{selectOptions elements selected=system.defaultElement labelAttr="label" blank=""}}
-              </select>
-            </span>
+            <div class="mm-styled-container -flex-relative -sm">
+              <label class="mm-styled-label -align-left"><span>Default Element</span></label>
+              <div class="mm-styled-field">
+                <select name="system.defaultElement">
+                  {{selectOptions elements selected=system.defaultElement labelAttr="label" blank=""}}
+                </select>
+              </div>
+            </div>
           </div>
         </div>
         <div class="mm-gear-container">
@@ -232,25 +234,32 @@
       </div>
     </div>
 
-    {{!-- Biography Tab --}}
+    {{!-- Traits & Tags --}}
     <div class="tab biography" data-group="primary" data-tab="traitstags">
+      <div class="flexrow -gap-sm -nowrap">
+        <div class="mm-powers-container">
+          <h3>Traits</h3>
+          <div class="mm-powers-list">
+            {{> "systems/marvel-multiverse/templates/actor/parts/actor-traits.hbs"}}
+          </div>
+        </div>
+        <div class="mm-powers-container">
+          <h3>Tags</h3>
+          <div class="mm-powers-list">
+            {{> "systems/marvel-multiverse/templates/actor/parts/actor-tags.hbs"}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{!-- Biography --}}
+    <div class="tab items" data-group="primary" data-tab="biography">
+      <div class="mm-bio-container">
         {{!-- Character Details --}}
         <div class="flexcol -static-children">
            {{> "systems/marvel-multiverse/templates/actor/parts/actor-details.hbs"}}
         </div>
         {{> "systems/marvel-multiverse/templates/actor/parts/actor-biography.hbs"}}
-    </div>
-
-    {{!-- Owned Items Tab --}}
-    <div class="tab items" data-group="primary" data-tab="biography">
-      <h3>Traits & Tags</h3>
-      <div class="resources flexrow">
-        <div class="actor-traits resource flexcol">
-          {{> "systems/marvel-multiverse/templates/actor/parts/actor-traits.hbs"}}
-        </div>
-        <div class="actor-tags resource flexcol">
-          {{> "systems/marvel-multiverse/templates/actor/parts/actor-tags.hbs"}}
-        </div>
       </div>
     </div>
   </section>

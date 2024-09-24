@@ -1054,6 +1054,7 @@ li.roll-damage {
   margin: 0;
   position: relative;
   z-index: 1;
+  max-height: 100%;
 }
 .marvel-multiverse.sheet.actor .mm-rank-container {
   align-items: center;
@@ -1275,6 +1276,9 @@ li.roll-damage {
 .marvel-multiverse.sheet.actor .mm-gear-container {
   flex: 1 1 50%;
   height: 100%;
+}
+.marvel-multiverse.sheet.actor .trait-tag-container {
+  height: 50%;
 }
 .marvel-multiverse.sheet.actor .mm-abilities-container .mm-ability-rows {
   background-image: linear-gradient(180deg, #8b0502, transparent 25%), url("../ui/official/mmrpg-crimson-bg.jpg");

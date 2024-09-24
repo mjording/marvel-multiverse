@@ -196,63 +196,51 @@
   <nav class="sheet-tabs tabs" data-group="primary">
     {{!-- Default tab is specified in actor-sheet.mjs --}}
     <div class="sheet-tabs-wrapper">
-    <a class="item active" data-tab="powersgear">Powers & Gear</a>
-    <a class="item" data-tab="traitstags">Traits & Tags</a>
+    <a class="item active" data-tab="powerstraitstags">Powers Traits & Tags</a>
     <a class="item" data-tab="biography">Biography</a>
+    <a class="item" data-tab="gear">Gear & Weapons</a>
     </div>
   </nav>
 
   {{!-- Sheet Body --}}
   <section class="sheet-body">
-    {{!-- Powers & Gear --}}
-    <div class="tab" data-group="primary" data-tab="powersgear">
-      {{!-- Traits, Tags & Powers --}}
+    {{!-- Traits, Tags & Powers --}}
+    <div class="tab" data-group="primary" data-tab="powerstraitstags">
       <div class="flexrow -gap-sm -nowrap">
+        {{!-- Powers --}}
         <div class="mm-powers-container">
           <h3>Powers</h3>
-          <div class="mm-powers-list">
-            {{> "systems/marvel-multiverse/templates/actor/parts/actor-powers.hbs"}}
-            <div class="mm-styled-container -flex-relative -sm">
-              <label class="mm-styled-label -align-left"><span>Default Element</span></label>
-              <div class="mm-styled-field">
-                <select name="system.defaultElement">
-                  {{selectOptions elements selected=system.defaultElement labelAttr="label" blank=""}}
-                </select>
-              </div>
+          <div class="mm-styled-container -flex-relative -sm">
+            <label class="mm-styled-label -align-left"><span>Default Element</span></label>
+            <div class="mm-styled-field">
+              <select name="system.defaultElement">
+                {{selectOptions elements selected=system.defaultElement labelAttr="label" blank=""}}
+              </select>
             </div>
           </div>
+          <div class="mm-powers-list">            
+            {{> "systems/marvel-multiverse/templates/actor/parts/actor-powers.hbs"}}
+          </div>
         </div>
-        <div class="mm-gear-container">
-          <h3>Gear</h3>
-          <div class="mm-gear-list">
-            <section class="resources actor-weapons">
-              {{> "systems/marvel-multiverse/templates/actor/parts/actor-weapons.hbs"}}
-            </section>
-            <section class="resources actor-items">
-              {{> "systems/marvel-multiverse/templates/actor/parts/actor-items.hbs"}}
-            </section>
+        {{!-- Traits & Tags --}}
+        <div class="mm-powers-container">
+          <div class="mm-powers-container trait-tag-container">
+            <h3>Traits</h3>
+            <div class="mm-powers-list">
+              {{> "systems/marvel-multiverse/templates/actor/parts/actor-traits.hbs"}}
+            </div>
+          </div>
+          <div class="mm-powers-container trait-tag-container">
+            <h3>Tags</h3>
+            <div class="mm-powers-list">
+              {{> "systems/marvel-multiverse/templates/actor/parts/actor-tags.hbs"}}
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    {{!-- Traits & Tags --}}
-    <div class="tab biography" data-group="primary" data-tab="traitstags">
-      <div class="flexrow -gap-sm -nowrap">
-        <div class="mm-powers-container">
-          <h3>Traits</h3>
-          <div class="mm-powers-list">
-            {{> "systems/marvel-multiverse/templates/actor/parts/actor-traits.hbs"}}
-          </div>
-        </div>
-        <div class="mm-powers-container">
-          <h3>Tags</h3>
-          <div class="mm-powers-list">
-            {{> "systems/marvel-multiverse/templates/actor/parts/actor-tags.hbs"}}
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
     {{!-- Biography --}}
     <div class="tab items" data-group="primary" data-tab="biography">
@@ -263,6 +251,22 @@
         </div>
         {{> "systems/marvel-multiverse/templates/actor/parts/actor-biography.hbs"}}
       </div>
+    </div>
+
+    {{!-- Gear --}}
+    <div class="tab gear" data-group="primary" data-tab="gear">
+      <div class="mm-gear-container">
+        <h3>Gear</h3>
+        <div class="mm-gear-list">
+          <section class="resources actor-weapons">
+            {{> "systems/marvel-multiverse/templates/actor/parts/actor-weapons.hbs"}}
+          </section>
+          <section class="resources actor-items">
+            {{> "systems/marvel-multiverse/templates/actor/parts/actor-items.hbs"}}
+          </section>
+        </div>
+      </div>
+      
     </div>
   </section>
 </form>

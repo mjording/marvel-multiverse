@@ -1,36 +1,34 @@
-<ol class='items-list weapon-list'>
-  <li class='item flexrow items-header'>
-    <div class='item-name'>Weapon</div>
-    <div class='item-formula'>{{localize 'Roll Formula'}}</div>
-    <div class='item-controls'>
+<ol class="mm-power-set">
+  <li class="flexrow item mm-power-set-header">
+    <span>Weapon</span>
+    <hr />
+    <div class="item-controls">
       <a
-        class='item-control item-create'
-        title='Create item'
-        data-type='weapon'
+        class="item-control item-create"
+        title="Create item"
+        data-type="weapon"
       >
-        <i class='fas fa-plus'></i>New
+        <i class="fas fa-plus"></i>
       </a>
     </div>
   </li>
   {{#each weapons as |item id|}}
-    <li class='item flexrow' data-item-id='{{item._id}}'>
-      <div class='item-name'>
-        <h4><a class='rollable' data-roll="{{item.formula}}" >{{item.name}}</a></h4>
+    <li class="flexrow item mm-power-set-power" data-item-id='{{item._id}}'>
+      <div class="item-name mm-power-set-power-name">
+        <a class="rollable" data-roll="{{item.formula}}" >{{item.name}}</a>
       </div>
-      
-      <div class='item-formula'>{{item.formula}}</div>
-      <div class='item-controls'>
+      <div class="item-controls">
         <a
-          class='item-control item-edit'
-          title='{{localize "DOCUMENT.Edit" type='weapon'}}'
+          class="item-control item-edit"
+          title="{{localize 'DOCUMENT.Edit' type="weapon"}}"
         >
-          <i class='fas fa-edit'></i>
+          <i class="fas fa-edit"></i>
         </a>
         <a
-          class='item-control item-delete'
-          title='{{localize "DOCUMENT.Delete" type='weapon'}}'
+          class="item-control item-delete"
+          title="{{localize 'DOCUMENT.Delete' type="weapon"}}"
         >
-          <i class='fas fa-trash'></i>
+          <i class="fas fa-trash"></i>
         </a>
       </div>
     </li>

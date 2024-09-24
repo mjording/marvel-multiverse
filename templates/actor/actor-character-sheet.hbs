@@ -1,236 +1,269 @@
 <form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
-  {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
-    {{!-- Default tab is specified in actor-sheet.mjs --}}
-    <a class="item active" data-tab="abilities">Abilities</a>
-    <a class="item" data-tab="biography">Biography</a>
-    <a class="item" data-tab="items">Items</a>
-  </nav>
-
   {{!-- Sheet Header --}}
   <header class="sheet-header">
     <div class="header-fields">
-      <div class="resources flexrow">
-         {{!-- Name & Portrait --}}
-        <div class="resource flex-group-center">
-          <aside class="sidebar">
-            <h2 class="charname personalInfo"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h2>
-            <img class="character-portrait" src="{{actor.img}}" data-edit="img" title="{{actor.name}}"/>              
-          </aside>
-        </div>
-
-        <div class="flexrcol">
-          {{!-- Rank & Karma --}}
-          <div class="attribute-resources resource-block flexrow">
-            <div class="resource flex-group-center">
-              <label for="system.attributes.rank.value" class="resource-label">Rank</label>
-              <div class="resource-content flexcol attributes attributes-rank">
+      <div class="flexrow -gap-sm">
+        <div class="flexcol -gap-sm -space-between">
+          {{!-- Portrait --}}
+          <div class="mm-hero-portrait-container">
+            <div class="mm-hero-portrait">
+              <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}"/>
+            </div>
+            {{!-- Rank & Karma --}}
+            <div class="mm-rank-container">
+              <label class="mm-label" for="system.attributes.rank.value"><span>Rank</span></label>
+              <div class="mm-field">
                 <input type="number" name="system.attributes.rank.value" value="{{system.attributes.rank.value}}" data-dtype="Number"/>
               </div>
             </div>
-            <div class="resource flex-group-center">
-              <label for="system.karma.value" class="resource-label">Karma</label>
-              <div class="resource-content flexcol attributes attributes-karma">
+            <div class="mm-karma-container">
+              <label class="mm-label" for="system.karma.value"><span>Karma</span></label>
+              <div class="mm-field">
                 <input type="number" name="system.karma.value" value="{{system.karma.value}}" data-dtype="Number"/>
                 <input type="hidden" name="system.karma.max" value="{{system.karma.value}}"/>
               </div>
             </div>
           </div>
-          {{!-- Health & Health DR --}}
-          <div class="attribute-resources resource-block health-block flexrow">
-            <div class="resource flex-group-center">
-              <label for="system.health.value" class="resource-label">Health</label>
-              <div class="resource-content flexcol attributes attribute-health">
-                <input type="number" name="system.health.value" value="{{system.health.value}}" data-dtype="Number"/>
-                <input type="number" name="system.health.max" value="{{system.health.max}}" data-dtype="Number"/>
-              </div>
-            </div>
-            <div class="resource flex-group-center">
-              <label for="system.health.damage-reduction" class="resource-reduced-label">Damage Reduction</label>
-              <div class="resource-content flexcol damage-reduction">
-                <h3>{{system.healthDamageReduction}}</h3>
-              </div>
+          {{!-- Damage --}}
+          <div class="mm-damage-container">
+            <h3>Damage</h3>
+            <ul class="mm-damage-rows">
+              <li>
+                <h6>Melee</h6>
+                <div class="mm-damage-multiply">
+                  <img src="systems/marvel-multiverse/icons/marvel-1.svg" title="MARVEL_MULTIVERSE.MarvelResult.M" alt="">
+                  <span>x</span>
+                  <span>{{system.abilities.mle.damageMultiplier}}</span>
+                </div>
+                <span>+</span>
+                <div class="mm-damage-addition">
+                  {{system.abilities.mle.value}}
+                </div>
+              </li>
+              <li>
+                <h6>Agility</h6>
+                <div class="mm-damage-multiply">
+                  <img src="systems/marvel-multiverse/icons/marvel-1.svg" title="MARVEL_MULTIVERSE.MarvelResult.M" alt="">
+                  <span>x</span>
+                  <span>{{system.abilities.agl.damageMultiplier}}</span>
+                </div>
+                <span>+</span>
+                <div class="mm-damage-addition">
+                  {{system.abilities.agl.value}}
+                </div>
+              </li>
+              <li>
+                <h6>Ego</h6>
+                <div class="mm-damage-multiply">
+                  <img src="systems/marvel-multiverse/icons/marvel-1.svg" title="MARVEL_MULTIVERSE.MarvelResult.M" alt="">
+                  <span>x</span>
+                  <span>{{system.abilities.ego.damageMultiplier}}</span>
+                </div>
+                <span>+</span>
+                <div class="mm-damage-addition">
+                  {{system.abilities.ego.value}}
+                </div>
+              </li>
+              <li>
+                <h6>Logic</h6>
+                <div class="mm-damage-multiply">
+                  <img src="systems/marvel-multiverse/icons/marvel-1.svg" title="MARVEL_MULTIVERSE.MarvelResult.M" alt="">
+                  <span>x</span>
+                  <span>{{system.abilities.log.damageMultiplier}}</span>
+                </div>
+                <span>+</span>
+                <div class="mm-damage-addition">
+                  {{system.abilities.log.value}}
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flexcol -static-children -gap-sm -space-between">
+          <div class="mm-codename-container mm-styled-container">
+            <label class="mm-styled-label -align-left" for="name"><span>Codename</span></label>
+            <div class="mm-styled-field">
+              <input name="name" type="text" value="{{actor.name}}" placeholder="Codename"/>
             </div>
           </div>
-          {{!-- Focus & Focus DR --}}
-          <div class="attribute-resources resource-block focus-block flexrow">
-            <div class="resource flex-group-center">
-              <label for="system.focus.value" class="resource-label">Focus</label>
-              <div class="resource-content flexcol attributes attribute-focus">
-                <input type="number" name="system.focus.value" value="{{system.focus.value}}" data-dtype="Number"/>
-                <input type="number" name="system.focus.max" value="{{system.focus.max}}" data-dtype="Number"/>
+          <div class="flexrow -gap-sm">
+            {{!-- Health & Health DR --}}
+            <div class="flexrow -relative">
+              <div class="mm-health-container">
+                <label class="mm-label" for="system.health.value">Health</label>
+                <div class="flexcol mm-field -static-children">
+                  <input type="number" name="system.health.value" value="{{system.health.value}}" data-dtype="Number"/>
+                  <hr />
+                  <input type="number" name="system.health.max" value="{{system.health.max}}" data-dtype="Number"/>
+                </div>
+              </div>
+              <div class="mm-dr-container">
+                <label class="mm-label -sm" for="system.health.damage-reduction">Damage Reduction</label>
+                <div class="mm-field">
+                  {{#if (gt system.healthDamageReduction 0)}}-{{/if}}
+                  {{system.healthDamageReduction}}
+                </div>
               </div>
             </div>
-            <div class="resource flex-group-center">
-              <label for="system.health.damage-reduction" class="resource-reduced-label">Damage Reduction</label>
-              <div class="resource-content flexcol damage-reduction">
-                <h3>{{system.focusDamageReduction}}</h3>
+            {{!-- Focus & Focus DR --}}
+            <div class="flexrow -relative">
+              <div class="mm-focus-container">
+                <label class="mm-label" for="system.focus.value">Focus</label>
+                <div class="flexcol mm-field -static-children">
+                  <input type="number" name="system.focus.value" value="{{system.focus.value}}" data-dtype="Number"/>
+                  <hr />
+                  <input type="number" name="system.focus.max" value="{{system.focus.max}}" data-dtype="Number"/>
+                </div>
+              </div>
+              <div class="mm-dr-container">
+                <label class="mm-label -sm" for="system.health.damage-reduction">Damage Reduction</label>
+                <div class="mm-field">
+                  {{#if (gt system.focusDamageReduction 0)}}-{{/if}}
+                  {{system.focusDamageReduction}}
+                </div>
               </div>
             </div>
-          </div>
-          {{!-- Speed & Initative --}}
-          <div class="attribute-resources resource-block flexrow">
-            <div class="resource flex-group-center">
-              <label for="system.speed" class="resource-label">Speed</label>
-              <div class="resource-content flexcol attributes-speed">
-                <div class="flexcol">
+            {{!-- Speed & Initative --}}
+            <div class="flexrow -relative">
+              <div class="mm-speed-container">
+                <label class="mm-label" for="system.speed">Speed</label>
+                <div class="mm-speed-fields">
                   {{#each system.movement as |mvmnt|}}
                     {{#if mvmnt.active }}
-                      <div class="flexrow">
-                        <div class="resource">{{mvmnt.label}}</div> <div class="resource">{{mvmnt.value}}</div>
+                      <div class="flexrow -gap-sm">
+                        <span>{{mvmnt.label}}:</span><span>{{mvmnt.value}}</span>
                       </div>
                     {{/if}}
                   {{/each}}
                 </div>
               </div>
-            </div>
-            <div class="resource rollable roll-initiative flex-group-center" data-action="rollInitiative">
-              <label class="resource-reduced-label">Initative</label>
-              <div class="resource-content flexcol attributes-init">
-                <h3>{{system.attributes.init.value}} {{#if system.attributes.init.edge }}<span>E</span>{{/if}}</h3>
+              <div class="mm-initiative-container rollable roll-initiative" data-action="rollInitiative">
+                <label class="mm-label -sm">Initative</label>
+                <div class="mm-field">
+                  {{system.attributes.init.value}} {{#if system.attributes.init.edge }}<span>E</span>{{/if}}
+                </div>
               </div>
             </div>
           </div>
-         
-        </div> 
-
-        {{!-- Character Details --}}
-        <div class="resource flex-group-center actor-details">
-           {{> "systems/marvel-multiverse/templates/actor/parts/actor-details.hbs"}}
+          {{!-- Abilities --}}
+          <div class="flexrow mm-abilities-container">
+            <h3>Abilities</h3>
+            <ul class="mm-ability-rows">
+              <li>
+                <div></div>
+                <div>Ability Score</div>
+                <div>Defense Score</div>
+                <div>Non-Combat<br />Checks</div>
+              </li>
+              {{#each system.abilities as |ability key|}}
+                <li>
+                  <div class="mm-ability-name rollable" data-roll="{1d6,1dm,1d6}+@abilities.{{key}}.value" data-label="{{ability.label}}">
+                    {{#if (eq key "mle")}}
+                      Melee
+                    {{else if (eq key "agl")}}
+                      Agility
+                    {{else if (eq key "res")}}
+                      Resilience
+                    {{else if (eq key "res")}}
+                      Resilience
+                    {{else if (eq key "vig")}}
+                      Vigilance
+                    {{else if (eq key "ego")}}
+                      Ego
+                    {{else if (eq key "log")}}
+                      Logic
+                    {{/if}}
+                  </div>
+                  <div>
+                    <input type="number" name="system.abilities.{{key}}.value" value="{{ability.value}}" data-dtype="Number"/>
+                  </div>
+                  <div>
+                    <div>{{ability.defense}}</div>
+                  </div>
+                  <div>
+                    <span class="rollable" data-roll="{1d6,1dm,1d6}+@abilities.{{key}}.noncom" data-label="{{ability.label}}">{{numberFormat ability.noncom decimals=0 sign=true}}</span>
+                  </div>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
         </div>
       </div>
-    </div>  
+    </div>
   </header>
 
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    {{!-- Default tab is specified in actor-sheet.mjs --}}
+    <div class="sheet-tabs-wrapper">
+    <a class="item active" data-tab="powersgear">Powers & Gear</a>
+    <a class="item" data-tab="traitstags">Traits & Tags</a>
+    <a class="item" data-tab="biography">Biography</a>
+    </div>
+  </nav>
 
   {{!-- Sheet Body --}}
   <section class="sheet-body">
-    {{!-- Abilities, Damages, & powers Tab --}}
-    <div class="tab abilities flexrow" data-group="primary" data-tab="abilities">
-       {{!-- Abilities and damages --}}
-      <section class="resources">
-        <div class="ability-resources resources resource-block flexcol">
-          <h3>Abilities</h3>
-          <ol class="items-list">
-            <li class="item resource flexrow items-header">
-              <div>Ability</div>
-              <div class="ability-score">Score</div>
-              <div class="ability-defense">Defense</div>
-              <div class="ability-noncom">Noncom</div>
-            </li>
-            {{#each system.abilities as |ability key|}}
-              <li class="item resource ability flexrow flex-group-center">
-                <div class="resource rollable" data-roll="{1d6,1dm,1d6}+@abilities.{{key}}.value" data-label="{{ability.label}}">{{numberFormat ability.value decimals=0 sign=true}}
-                  <div>{{key}}</div>
-                </div>  
-                <div class="resource">
-                  <input type="number" name="system.abilities.{{key}}.value" value="{{ability.value}}" data-dtype="Number"/>
-                </div>
-                <div class="resource">
-                  <div>{{ ability.defense }}</div>
-                </div>
-                <div class="resource">
-                    <span class="ability-mod rollable" data-roll="{1d6,1dm,1d6}+@abilities.{{key}}.noncom" data-label="{{ability.label}}">{{numberFormat ability.noncom decimals=0 sign=true}}</span>
-                </div>
-              </li>
-            {{/each}}
-          </ol>
-        </div>
-        <div class="damages-resources resource-block resources flexcol">
-          <h3>Damages</h3>
-          <ol class="items-list">
-            <li class='item resource meleeDamages flexrow'>
-              <div class="melee-damage resource">
-                <div class="resource-reduced-label vert-text">Melee</div>
-                <img src="systems/marvel-multiverse/icons/marvel-1.svg" title="MARVEL_MULTIVERSE.MarvelResult.M" alt="">
-              </div>
-              <div class="resource">
-                <h3>x {{system.abilities.mle.damageMultiplier}}</h3>
-              </div>
-              <div class="resource">
-                <h3>+ {{system.abilities.mle.value}}</h3>
-              </div>
-            </li>
-            <li class='item resource agilityDamages flexrow'>
-              <div class="resource">
-                <div class="resource-reduced-label vert-text">Agility</div>
-                <img src="systems/marvel-multiverse/icons/marvel-1.svg" title="MARVEL_MULTIVERSE.MarvelResult.M" alt="">
-              </div>
-              <div class="resource">
-                <h3>x {{system.abilities.agl.damageMultiplier}}</h3>
-              </div>
-              <div class="resource">
-                <h3>+ {{system.abilities.agl.value}}</h3>
-              </div>
-            </li>
-            <li class="item resource egoDamages flexrow">
-              <div class="resource">
-                <div class="resource-reduced-label vert-text">Ego</div>
-                <img src="systems/marvel-multiverse/icons/marvel-1.svg" title="MARVEL_MULTIVERSE.MarvelResult.M" alt="">
-              </div>
-              <div class="resource">
-                <h3>x {{system.abilities.ego.damageMultiplier}}</h3>
-              </div>
-              <div class="resource">
-                <h3>+ {{system.abilities.ego.value}}</h3>
-              </div>
-            </li>
-            <li class="item resource logicDamages flexrow">
-              <div class="resource">
-                <div class="resource-reduced-label vert-text">Logic</div> 
-                <img src="systems/marvel-multiverse/icons/marvel-1.svg" title="MARVEL_MULTIVERSE.MarvelResult.M" alt="">
-              </div>
-              <div class="resource">
-                 <h3>x {{system.abilities.log.damageMultiplier}}</h3>
-              </div>
-              <div class="resource">
-                <h3>+ {{system.abilities.log.value}}</h3>
-              </div>            
-            </li>
-          </ol> 
-        </div>
-      </section>
+    {{!-- Powers & Gear --}}
+    <div class="tab" data-group="primary" data-tab="powersgear">
       {{!-- Traits, Tags & Powers --}}
-      <section class="traits-tags-powers">
-        <div class="trait-tag-power-resources resource-block flexcol">
-          <h3>Traits & Tags</h3>
-          <div class="resources flexrow">
-            <div class="actor-traits resource flexcol">
-              {{> "systems/marvel-multiverse/templates/actor/parts/actor-traits.hbs"}}
-            </div>
-            <div class="actor-tags resource flexcol">
-              {{> "systems/marvel-multiverse/templates/actor/parts/actor-tags.hbs"}}
-            </div>
-          </div>
-          <section class="resources actor-powers">
-            <h3>Powers  <span class="header-control">
-                <label>Default Element</label>
+      <div class="flexrow -gap-sm -nowrap">
+        <div class="mm-powers-container">
+          <h3>Powers</h3>
+          <div class="mm-powers-list">
+            {{> "systems/marvel-multiverse/templates/actor/parts/actor-powers.hbs"}}
+            <div class="mm-styled-container -flex-relative -sm">
+              <label class="mm-styled-label -align-left"><span>Default Element</span></label>
+              <div class="mm-styled-field">
                 <select name="system.defaultElement">
                   {{selectOptions elements selected=system.defaultElement labelAttr="label" blank=""}}
                 </select>
-              </span>
-            </h3>
-            {{> "systems/marvel-multiverse/templates/actor/parts/actor-powers.hbs"}}
-          </section>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+        <div class="mm-gear-container">
+          <h3>Gear</h3>
+          <div class="mm-gear-list">
+            <section class="resources actor-weapons">
+              {{> "systems/marvel-multiverse/templates/actor/parts/actor-weapons.hbs"}}
+            </section>
+            <section class="resources actor-items">
+              {{> "systems/marvel-multiverse/templates/actor/parts/actor-items.hbs"}}
+            </section>
+          </div>
+        </div>
+      </div>
     </div>
 
-    {{!-- Biography Tab --}}
-    <div class="tab biography" data-group="primary" data-tab="biography">
+    {{!-- Traits & Tags --}}
+    <div class="tab biography" data-group="primary" data-tab="traitstags">
+      <div class="flexrow -gap-sm -nowrap">
+        <div class="mm-powers-container">
+          <h3>Traits</h3>
+          <div class="mm-powers-list">
+            {{> "systems/marvel-multiverse/templates/actor/parts/actor-traits.hbs"}}
+          </div>
+        </div>
+        <div class="mm-powers-container">
+          <h3>Tags</h3>
+          <div class="mm-powers-list">
+            {{> "systems/marvel-multiverse/templates/actor/parts/actor-tags.hbs"}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{!-- Biography --}}
+    <div class="tab items" data-group="primary" data-tab="biography">
+      <div class="mm-bio-container">
+        {{!-- Character Details --}}
+        <div class="flexcol -static-children">
+           {{> "systems/marvel-multiverse/templates/actor/parts/actor-details.hbs"}}
+        </div>
         {{> "systems/marvel-multiverse/templates/actor/parts/actor-biography.hbs"}}
+      </div>
     </div>
-
-    {{!-- Owned Items Tab --}}
-    <div class="tab items" data-group="primary" data-tab="items">
-      <section class="resources actor-weapons">
-        {{> "systems/marvel-multiverse/templates/actor/parts/actor-weapons.hbs"}}
-      </section>
-      <section class="resources actor-items">
-        {{> "systems/marvel-multiverse/templates/actor/parts/actor-items.hbs"}}
-      </section>
-    </div>
-
   </section>
 </form>
 

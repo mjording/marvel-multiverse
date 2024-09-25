@@ -3,7 +3,7 @@
   "name": "Sturdy 2",
   "type": "power",
   "system": {
-    "description": "The character si protected as if by steel.",
+    "description": "The character is protected as if by steel.",
     "powerSet": "Basic",
     "prerequisites": "Sturdy 1, Rank 2",
     "action": "",

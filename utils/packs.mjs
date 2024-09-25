@@ -163,8 +163,8 @@ async function cleanPacks(packName, entryName) {
         continue;
       }
       cleanPackEntry(json);
-      fs.rmSync(src, { force: true });
-      writeFile(src, `${JSON.stringify(json, null, 2)}\n`, { mode: 0o664 });
+      await fs.rm(src, { force: true });
+      await writeFile(src, `${JSON.stringify(json, null, 2)}\n`, { mode: 0o664 });
     }
   }
 }
@@ -184,14 +184,23 @@ async function cleanPacks(packName, entryName) {
 async function compilePacks(packName) {
   // Determine which source folders to process
   const folders = fs.readdirSync(PACK_SRC, { withFileTypes: true }).filter(file =>
-    file.isDirectory() && ( !packName || (packName === file.name) )
+    file.isDirectory() && (!packName || (packName === file.name))
   );
 
-  for ( const folder of folders ) {
+  for (const folder of folders) {
     const src = path.join(PACK_SRC, folder.name);
     const dest = path.join(PACK_DEST, folder.name);
     logger.info(`Compiling pack ${folder.name}`);
-    await compilePack(src, dest, { recursive: true, log: true, transformEntry: cleanPackEntry });
+
+    try {
+      await compilePack(src, dest, { recursive: true, log: true, transformEntry: cleanPackEntry });
+    } catch (error) {
+      if (error.code === 'LEVEL_ITERATOR_NOT_OPEN') {
+        logger.error(`Iterator issue: ${error.message} while compiling ${folder.name}`);
+      } else {
+        logger.error(`Failed to compile ${folder.name}: ${error.message}`);
+      }
+    }
   }
 }
 
@@ -213,53 +222,37 @@ async function extractPacks(packName, entryName) {
   entryName = entryName?.toLowerCase();
 
   // Load system.json.
-  const system = JSON.parse(fs.readFileSync("./system.json", { encoding: "utf8" }));
+  let system;
+  try {
+    system = JSON.parse(fs.readFileSync("./system.json", { encoding: "utf8" }));
+  } catch (err) {
+    console.error("Failed to read system.json:", err);
+    return;
+  }
 
   // Determine which source packs to process.
   const packs = system.packs.filter(p => !packName || p.name === packName);
 
-  for ( const packInfo of packs ) {
+  for (const packInfo of packs) {
     const dest = path.join(PACK_SRC, packInfo.name);
     logger.info(`Extracting pack ${packInfo.name}`);
 
-    const folders = {};
-    const containers = {};
-    await extractPack(packInfo.path, dest, {
-      log: false, transformEntry: e => {
-        if ( e._key.startsWith("!folders") ) folders[e._id] = { name: slugify(e.name), folder: e.folder };
-        else if ( e.type === "container" ) containers[e._id] = {
-          name: slugify(e.name), container: e.system?.container, folder: e.folder
-        };
-        return false;
+    try {
+      await extractPack(packInfo.path, dest, {
+        log: true,
+        transformEntry: entry => {
+          if (entryName && (entryName !== entry.name.toLowerCase())) return false;
+          cleanPackEntry(entry);
+          return true; // Ensure to return true to continue processing
+        },
+      });
+    } catch (error) {
+      if (error.code === 'LEVEL_ITERATOR_NOT_OPEN') {
+        logger.error(`Iterator issue: ${error.message} while extracting ${packInfo.name}`);
+      } else {
+        logger.error(`Failed to extract ${packInfo.name}: ${error.message}`);
       }
-    });
-    const buildPath = (collection, entry, parentKey) => {
-      let parent = collection[entry[parentKey]];
-      entry.path = entry.name;
-      while ( parent ) {
-        entry.path = path.join(parent.name, entry.path);
-        parent = collection[parent[parentKey]];
-      }
-    };
-    Object.values(folders).forEach(f => buildPath(folders, f, "folder"));
-    Object.values(containers).forEach(c => {
-      buildPath(containers, c, "container");
-      const folder = folders[c.folder];
-      if ( folder ) c.path = path.join(folder.path, c.path);
-    });
-
-    await extractPack(packInfo.path, dest, {
-      log: true, transformEntry: entry => {
-        if ( entryName && (entryName !== entry.name.toLowerCase()) ) return false;
-        cleanPackEntry(entry);
-      }, transformName: entry => {
-        if ( entry._id in folders ) return path.join(folders[entry._id].path, "_folder.json");
-        if ( entry._id in containers ) return path.join(containers[entry._id].path, "_container.json");
-        const outputName = slugify(entry.name);
-        const parent = containers[entry.system?.container] ?? folders[entry.folder];
-        return path.join(parent?.path ?? "", `${outputName}.json`);
-      }
-    });
+    }
   }
 }
 

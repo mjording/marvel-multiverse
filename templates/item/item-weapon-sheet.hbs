@@ -1,56 +1,73 @@
 <form class="{{cssClass}}" autocomplete="off">
   <header class="sheet-header">
-    <div class="header-fields">
-      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    <div class="mm-styled-field -lg -img">
+      <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+      <div class="mm-styled-input">
+        <input name="name" type="text" value="{{item.name}}" placeholder="Name"/>
+      </div>
     </div>
   </header>
 
   {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
+  <nav class="sheet-tabs tabs mm-tabs -two" data-group="primary">
     <a class="item" data-tab="attributes">Attributes</a>
     <a class="item" data-tab="effects">Effects</a>
   </nav>
 
   {{!-- Sheet Body --}}
   <section class="sheet-body">
-    
     {{!-- Attributes Tab --}}
     <div class="tab weapon-attributes" data-group="primary" data-tab="attributes">
       {{!-- As you add new fields, add them in here! --}}
-      <div class="resource">
-        <label for="system.description" class="resource-reduced-label rollable align-left" data-label="description">Description</label>
-        {{editor system.description target="system.description" button=false engine="prosemirror" collaborate=false}}
+      <div class="mm-styled-field -fill">
+        <label class="mm-styled-label -align-left rollable" for="system.description" data-label="description"><span>Description</span></label>
+        <div class="mm-styled-input">
+          {{editor system.description target="system.description" button=false engine="prosemirror" collaborate=false}}
+        </div>
       </div>
-      <div class="resource">
-        <label class="resource-label">equipped</label>
-        <input type="checkbox" id="equipped" name="system.equipped"  {{ checked system.equipped }}>
+      <div class="mm-styled-field -fill">
+        <label class="mm-styled-label -align-left"><span>equipped</span></label>
+        <div class="mm-styled-input">
+          <input type="checkbox" id="equipped" name="system.equipped"  {{ checked system.equipped }}>
+        </div>
       </div>
       {{!-- As you add new fields, add them in here! --}}
-      <div class="resource">
-        <label class="resource-label">Roll Formula:</label>
-        <span>{{system.formula}}</span>
-        <div class="grid grid-4col">
-          <div class="grid-span-1">
-            <label class="resource-label">Number of Dice</label>
-            <input type="text" name="system.roll.diceNum" value="{{system.roll.diceNum}}" data-dtype="Number" />
+      <div class="flexcol gap-sm">
+        <div class="mm-styled-field -fill">
+          <label class="mm-styled-label -align-left"><span>Roll Formula</span></label>
+          <div class="mm-styled-input">
+            <div class="plain-text">{{system.formula}}</div>
           </div>
-          <div class="grid-span-1">
-            <label class="resource-label">Die Size</label>
-            <input type="text" name="system.roll.diceSize" value="{{system.roll.diceSize}}" data-dtype="String" />
+        </div>
+        <div class="flexrow -nowrap -gap-sm">
+          <div class="mm-styled-field -flex-relative">
+            <label class="mm-styled-label -align-left"><span># of Dice</span></label>
+            <div class="mm-styled-input">
+              <input type="text" name="system.roll.diceNum" value="{{system.roll.diceNum}}" data-dtype="Number" />
+            </div>
           </div>
-          <div class="grid-span-2">
-            <label class="resource-label">Roll Modifier</label>
-            <input type="text" name="system.roll.diceBonus" value="{{system.roll.diceBonus}}" data-dtype="String" />
+          <div class="mm-styled-field -flex-relative">
+            <label class="mm-styled-label"><span>Die Size</span></label>
+            <div class="mm-styled-input">
+              <input type="text" name="system.roll.diceSize" value="{{system.roll.diceSize}}" data-dtype="String" />
+            </div>
+          </div>
+          <div class="mm-styled-field">
+            <label class="mm-styled-label -align-right"><span>Roll Modifier</span></label>
+            <div class="mm-styled-input">
+              <input type="text" name="system.roll.diceBonus" value="{{system.roll.diceBonus}}" data-dtype="String" />
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="resource">
-        <label class="resource-label">Damage Multiplier Bonus</label>
-        <input type="text" name="system.damageMultiplierBonus" value="{{system.damageMultiplierBonus}}" data-dtype="String"/>
+      <div class="mm-styled-field -fill">
+        <label class="mm-styled-label -align-left"><span>Damage Multiplier Bonus</span></label>
+        <div class="mm-styled-input">
+          <input type="text" name="system.damageMultiplierBonus" value="{{system.damageMultiplierBonus}}" data-dtype="String"/>
+        </div>
       </div>
     </div>
-    
+
     <div class="tab weapon-effects" data-group="primary" data-tab="effects">
        {{> "systems/marvel-multiverse/templates/item/parts/item-effects.hbs"}}
     </div>

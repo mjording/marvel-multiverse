@@ -1,14 +1,41 @@
-.effects .item {
-  .effect-source,
-  .effect-duration,
-  .effect-controls {
-    text-align: center;
-    border-left: 1px solid #c9c7b8;
-    border-right: 1px solid #c9c7b8;
-    font-size: 12px;
-  }
+.mm-item-list {
+  &.-effects {
+    .mm-item,
+    .mm-item-header {
+      > * {
+        flex: 1 1 auto;
+      }
 
-  .effect-controls {
-    border: none;
+      .item-controls {
+        flex: 0 0 auto;
+      }
+    }
+
+    .mm-item-header {
+      > div > span {
+        background: $mm-primary-red;
+        border-radius: 18px;
+        display: inline-flex;
+        flex: 0 0 auto;
+        font-size: 10px;
+        height: 18px;
+        padding: $mm-spacing-xs $mm-spacing-sm;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+
+    .mm-item-name {
+      align-items: center;
+      display: flex;
+      gap: $mm-spacing-sm;
+
+      img {
+        background: $mm-primary-red;
+        border: none;
+        height: 18px;
+        width: 18px;
+      }
+    }
   }
 }

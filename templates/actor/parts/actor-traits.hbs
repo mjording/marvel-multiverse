@@ -1,5 +1,6 @@
-<ol class="mm-power-set">
-  <li class="flexrow item mm-power-set-header">
+<ol class="mm-item-list">
+  <li class="flexrow item mm-item-header">
+    <span>Traits</span>
     <hr />
     <div class="item-controls">
       <a
@@ -12,8 +13,8 @@
     </div>
   </li>
   {{#each traits as |item id|}}
-    <li class="flexrow item mm-power-set-power" data-item-id='{{item._id}}'>
-      <div class="item-name mm-power-set-power-name">
+    <li class="flexrow item mm-item" data-item-id='{{item._id}}'>
+      <div class="item-name mm-item-name">
         <a class="rollable" data-roll-type="item">{{item.name}}</a>
       </div>
       <div class="item-controls">

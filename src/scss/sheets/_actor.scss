@@ -1,0 +1,97 @@
+.marvel-multiverse.sheet.actor {
+  // Header
+  //// Column One
+  @import './blocks/portrait';
+  @import './blocks/karma';
+  @import './blocks/rank';
+  @import './blocks/damage';
+  //// Column Two
+  @import './blocks/codename';
+  @import './blocks/stats';
+  @import './blocks/abilities';
+
+  // Body
+  //// Tab Bio
+  @import './blocks/bio';
+
+  .window-content {
+    min-width: 690px;
+    overflow-x: auto;
+
+    > form {
+      height: 100%;
+    }
+  }
+
+  .sheet-header {
+    flex: 0 0 auto;
+
+    .header-fields .flexrow {
+      .flexcol:first-child {
+        flex: 0 0 210px;
+      }
+    }
+  }
+
+  .sheet-body {
+    overflow: hidden;
+
+    .tab[data-tab],
+    .tab[data-tab] > .flexrow {
+      height: 100%;
+    }
+  }
+
+  .rollable {
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: none;
+      color: $mm-primary-red !important;
+      text-shadow: none;
+    }
+  }
+
+  .mm-styled-container {
+    &.mm-damage-block {
+      .mm-styled-container-body {
+        justify-content: space-evenly;
+        padding: $mm-spacing-md 0;
+      }
+    }
+
+    &.mm-abilities-block {
+      .mm-styled-container-body {
+        padding: $mm-spacing-md 0;
+        overflow: initial;
+      }
+    }
+
+    &.mm-powers-block {
+      flex: 1 1 50%;
+      height: 100%;
+
+      .mm-styled-container-body {
+        padding-block-start: 0;
+
+        > .mm-styled-field {
+          background: $mm-secondary-red;
+          padding: $mm-spacing-md 0;
+          position: sticky;
+          top: 0;
+          width: 100%;
+          z-index: 2;
+        }
+      }
+    }
+
+    &.mm-traitstags-block {
+      flex: 1 1 50%;
+      height: 100%;
+    }
+
+    &.mm-gear-block {
+      height: 100%;
+    }
+  }
+}

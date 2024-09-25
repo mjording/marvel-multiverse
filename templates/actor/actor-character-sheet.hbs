@@ -2,32 +2,32 @@
   {{!-- Sheet Header --}}
   <header class="sheet-header">
     <div class="header-fields">
-      <div class="flexrow -gap-sm">
+      <div class="flexrow -gap-md">
         <div class="flexcol -gap-sm -space-between">
           {{!-- Portrait --}}
-          <div class="mm-hero-portrait-container">
+          <div class="mm-hero-portrait-block">
             <div class="mm-hero-portrait">
               <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}"/>
             </div>
             {{!-- Rank & Karma --}}
-            <div class="mm-rank-container">
+            <div class="mm-rank-block">
               <label class="mm-label" for="system.attributes.rank.value"><span>Rank</span></label>
-              <div class="mm-field">
+              <div class="mm-input">
                 <input type="number" name="system.attributes.rank.value" value="{{system.attributes.rank.value}}" data-dtype="Number"/>
               </div>
             </div>
-            <div class="mm-karma-container">
+            <div class="mm-karma-block">
               <label class="mm-label" for="system.karma.value"><span>Karma</span></label>
-              <div class="mm-field">
+              <div class="mm-input">
                 <input type="number" name="system.karma.value" value="{{system.karma.value}}" data-dtype="Number"/>
                 <input type="hidden" name="system.karma.max" value="{{system.karma.value}}"/>
               </div>
             </div>
           </div>
           {{!-- Damage --}}
-          <div class="mm-damage-container">
+          <div class="mm-styled-container mm-damage-block">
             <h3>Damage</h3>
-            <ul class="mm-damage-rows">
+            <ul class="mm-styled-container-body mm-damage-rows">
               <li>
                 <h6>Melee</h6>
                 <div class="mm-damage-multiply">
@@ -80,52 +80,50 @@
           </div>
         </div>
         <div class="flexcol -static-children -gap-sm -space-between">
-          <div class="mm-codename-container mm-styled-container">
+          <div class="mm-codename-block mm-styled-field">
             <label class="mm-styled-label -align-left" for="name"><span>Codename</span></label>
-            <div class="mm-styled-field">
+            <div class="mm-styled-input">
               <input name="name" type="text" value="{{actor.name}}" placeholder="Codename"/>
             </div>
           </div>
           <div class="flexrow -gap-sm">
             {{!-- Health & Health DR --}}
             <div class="flexrow -relative">
-              <div class="mm-health-container">
+              <div class="mm-stat-block">
                 <label class="mm-label" for="system.health.value">Health</label>
-                <div class="flexcol mm-field -static-children">
+                <div class="flexcol mm-input -static-children">
                   <input type="number" name="system.health.value" value="{{system.health.value}}" data-dtype="Number"/>
                   <hr />
                   <input type="number" name="system.health.max" value="{{system.health.max}}" data-dtype="Number"/>
                 </div>
               </div>
-              <div class="mm-dr-container">
+              <div class="mm-stat-corner-block">
                 <label class="mm-label -sm" for="system.health.damage-reduction">Damage Reduction</label>
-                <div class="mm-field">
-                  {{#if (gt system.healthDamageReduction 0)}}-{{/if}}
-                  {{system.healthDamageReduction}}
+                <div class="mm-input">
+                  {{#if (gt system.healthDamageReduction 0)}}-{{/if}}{{system.healthDamageReduction}}
                 </div>
               </div>
             </div>
             {{!-- Focus & Focus DR --}}
             <div class="flexrow -relative">
-              <div class="mm-focus-container">
+              <div class="mm-stat-block -focus">
                 <label class="mm-label" for="system.focus.value">Focus</label>
-                <div class="flexcol mm-field -static-children">
+                <div class="flexcol mm-input -static-children">
                   <input type="number" name="system.focus.value" value="{{system.focus.value}}" data-dtype="Number"/>
                   <hr />
                   <input type="number" name="system.focus.max" value="{{system.focus.max}}" data-dtype="Number"/>
                 </div>
               </div>
-              <div class="mm-dr-container">
+              <div class="mm-stat-corner-block">
                 <label class="mm-label -sm" for="system.health.damage-reduction">Damage Reduction</label>
-                <div class="mm-field">
-                  {{#if (gt system.focusDamageReduction 0)}}-{{/if}}
-                  {{system.focusDamageReduction}}
+                <div class="mm-input">
+                  {{#if (gt system.focusDamageReduction 0)}}-{{/if}}{{system.focusDamageReduction}}
                 </div>
               </div>
             </div>
             {{!-- Speed & Initative --}}
             <div class="flexrow -relative">
-              <div class="mm-speed-container">
+              <div class="mm-stat-block">
                 <label class="mm-label" for="system.speed">Speed</label>
                 <div class="mm-speed-fields">
                   {{#each system.movement as |mvmnt|}}
@@ -137,18 +135,18 @@
                   {{/each}}
                 </div>
               </div>
-              <div class="mm-initiative-container rollable roll-initiative" data-action="rollInitiative">
+              <div class="mm-stat-corner-block rollable roll-initiative" data-action="rollInitiative">
                 <label class="mm-label -sm">Initative</label>
-                <div class="mm-field">
+                <div class="mm-input">
                   {{system.attributes.init.value}} {{#if system.attributes.init.edge }}<span>E</span>{{/if}}
                 </div>
               </div>
             </div>
           </div>
           {{!-- Abilities --}}
-          <div class="flexrow mm-abilities-container">
+          <div class="flexrow mm-styled-container mm-abilities-block">
             <h3>Abilities</h3>
-            <ul class="mm-ability-rows">
+            <ul class="mm-styled-container-body mm-ability-rows">
               <li>
                 <div></div>
                 <div>Ability Score</div>
@@ -193,58 +191,50 @@
   </header>
 
   {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
+  <nav class="sheet-tabs tabs mm-tabs -three" data-group="primary">
     {{!-- Default tab is specified in actor-sheet.mjs --}}
     <div class="sheet-tabs-wrapper">
-    <a class="item active" data-tab="powerstraitstags">Powers Traits & Tags</a>
-    <a class="item" data-tab="biography">Biography</a>
-    <a class="item" data-tab="gear">Gear & Weapons</a>
+      <a class="item active" data-tab="abilities">Abilities</a>
+      <a class="item" data-tab="biography">Biography</a>
+      <a class="item" data-tab="gear">Gear & Weapons</a>
     </div>
   </nav>
 
   {{!-- Sheet Body --}}
   <section class="sheet-body">
-    {{!-- Traits, Tags & Powers --}}
-    <div class="tab" data-group="primary" data-tab="powerstraitstags">
+    {{!-- Powers + Traits & Tags --}}
+    <div class="tab" data-group="primary" data-tab="abilities">
+
       <div class="flexrow -gap-sm -nowrap">
         {{!-- Powers --}}
-        <div class="mm-powers-container">
+        <div class="mm-styled-container mm-powers-block">
           <h3>Powers</h3>
-          <div class="mm-styled-container -flex-relative -sm">
-            <label class="mm-styled-label -align-left"><span>Default Element</span></label>
-            <div class="mm-styled-field">
-              <select name="system.defaultElement">
-                {{selectOptions elements selected=system.defaultElement labelAttr="label" blank=""}}
-              </select>
+          <div class="mm-styled-container-body">
+            <div class="mm-styled-field -sm">
+              <label class="mm-styled-label -align-left"><span>Default Element</span></label>
+              <div class="mm-styled-input">
+                <select name="system.defaultElement">
+                  {{selectOptions elements selected=system.defaultElement labelAttr="label" blank=""}}
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="mm-powers-list">            
             {{> "systems/marvel-multiverse/templates/actor/parts/actor-powers.hbs"}}
           </div>
         </div>
         {{!-- Traits & Tags --}}
-        <div class="mm-powers-container">
-          <div class="mm-powers-container trait-tag-container">
-            <h3>Traits</h3>
-            <div class="mm-powers-list">
-              {{> "systems/marvel-multiverse/templates/actor/parts/actor-traits.hbs"}}
-            </div>
-          </div>
-          <div class="mm-powers-container trait-tag-container">
-            <h3>Tags</h3>
-            <div class="mm-powers-list">
-              {{> "systems/marvel-multiverse/templates/actor/parts/actor-tags.hbs"}}
-            </div>
+        <div class="mm-styled-container mm-traitstags-block">
+          <h3>Traits & Tags</h3>
+          <div class="mm-styled-container-body">
+            {{> "systems/marvel-multiverse/templates/actor/parts/actor-traits.hbs"}}
+            {{> "systems/marvel-multiverse/templates/actor/parts/actor-tags.hbs"}}
           </div>
         </div>
       </div>
     </div>
 
-    
-
     {{!-- Biography --}}
     <div class="tab items" data-group="primary" data-tab="biography">
-      <div class="mm-bio-container">
+      <div class="mm-bio-block">
         {{!-- Character Details --}}
         <div class="flexcol -static-children">
            {{> "systems/marvel-multiverse/templates/actor/parts/actor-details.hbs"}}
@@ -255,18 +245,14 @@
 
     {{!-- Gear --}}
     <div class="tab gear" data-group="primary" data-tab="gear">
-      <div class="mm-gear-container">
+      <div class="mm-styled-container mm-gear-block">
         <h3>Gear</h3>
-        <div class="mm-gear-list">
-          <section class="resources actor-weapons">
-            {{> "systems/marvel-multiverse/templates/actor/parts/actor-weapons.hbs"}}
-          </section>
-          <section class="resources actor-items">
-            {{> "systems/marvel-multiverse/templates/actor/parts/actor-items.hbs"}}
-          </section>
+        <div class="mm-styled-container-body">
+          {{> "systems/marvel-multiverse/templates/actor/parts/actor-weapons.hbs"}}
+          {{> "systems/marvel-multiverse/templates/actor/parts/actor-items.hbs"}}
         </div>
       </div>
-      
+
     </div>
   </section>
 </form>

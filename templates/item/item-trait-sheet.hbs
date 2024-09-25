@@ -1,12 +1,15 @@
 <form class="{{cssClass}}" autocomplete="off">
   <header class="sheet-header">
-    <div class="header-fields">
-      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    <div class="mm-styled-field -lg -img">
+      <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+      <div class="mm-styled-input">
+        <input name="name" type="text" value="{{item.name}}" placeholder="Name"/>
+      </div>
     </div>
   </header>
 
   {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
+  <nav class="sheet-tabs tabs mm-tabs -two" data-group="primary">
     <a class="item" data-tab="attributes">Attributes</a>
     <a class="item" data-tab="effects">Effects</a>
   </nav>
@@ -15,20 +18,23 @@
   <section class="sheet-body">
 
    {{!-- Attributes Tab --}}
-    <div class="tab trait-attributes" data-group="primary" data-tab="attributes">
+    <div class="tab flexcol -gap-sm" data-group="primary" data-tab="attributes">
       {{!-- As you add new fields, add them in here! --}}
-      <div class="resource">
-        <label for="system.description" class="resource-reduced-label rollable align-left" data-label="description">Description</label>
-        {{editor system.description target="system.description" button=false engine="prosemirror" collaborate=false}}
-        
+      <div class="mm-styled-field -fill">
+        <label class="mm-styled-label -align-left rollable" for="system.description" data-label="description"><span>Description</span></label>
+        <div class="mm-styled-input">
+          {{editor system.description target="system.description" button=false engine="prosemirror" collaborate=false}}
+        </div>
       </div>
-      <div class="resource">
-        <label class="resource-label">restriction</label>
-        <input type="text" name="system.restriction" value="{{system.restriction}}" data-dtype="String"/>
+      <div class="mm-styled-field -fill">
+        <label class="mm-styled-label -align-left"><span>restriction</span></label>
+        <div class="mm-styled-input">
+          <input type="text" name="system.restriction" value="{{system.restriction}}" data-dtype="String"/>
+        </div>
       </div>
     </div>
     {{!-- Effects Tab --}}
-    <div class="tab trait-effects" data-group="primary" data-tab="effects"></div>
+    <div class="tab trait-effects" data-group="primary" data-tab="effects">
        {{> "systems/marvel-multiverse/templates/item/parts/item-effects.hbs"}}
     </div>
   </section>

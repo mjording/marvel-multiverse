@@ -1,0 +1,94 @@
+.mm-abilities-block {
+  .mm-ability-rows {
+    &::before {
+      background: $mm-input-bg;
+      bottom: 4px;
+      content: "";
+      position: absolute;
+      right: 4px;
+      top: 31px;
+      width: 25%;
+    }
+
+    li {
+      display: flex;
+      z-index: 1;
+
+      &:first-of-type {
+        font-size: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        div:nth-of-type(4) {
+          color: $mm-text-color;
+        }
+      }
+
+      > div {
+        align-items: flex-end;
+        color: white;
+        display: inline-flex;
+        flex: 1 1 25%;
+        justify-content: center;
+        text-align: center;
+
+        &:first-child {
+          justify-content: start;
+          text-align: start;
+        }
+
+        &.mm-ability-name {
+          align-items: center;
+        }
+
+        > div,
+        > input {
+          align-items: center;
+          background: $mm-input-bg;
+          border: 2px solid black;
+          color: $mm-text-color;
+          display: flex;
+          font-size: 18px;
+          font-weight: 600;
+          height: 28px;
+          justify-content: center;
+          line-height: 1;
+          min-width: initial;
+          padding: 0;
+          width: 54px;
+        }
+
+        > span {
+          align-items: center;
+          background: $mm-secondary-red;
+          clip-path: polygon(8px 0%, calc(100% - 8px) 0%, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0% calc(100% - 8px), 0% 8px);
+          color: white;
+          display: flex;
+          font-size: 18px;
+          font-weight: 600;
+          height: 28px;
+          justify-content: center;
+          line-height: 1;
+          min-width: initial;
+          padding: 0;
+          width: 54px;
+
+          &:hover {
+            background: white;
+          }
+        }
+      }
+    }
+  }
+
+  .mm-ability-name {
+    color: white;
+    font-size: 18px;
+    padding-inline-start: $mm-spacing-md;
+
+    &:hover {
+      background: $mm-primary-red;
+      color: white !important;
+    }
+  }
+}

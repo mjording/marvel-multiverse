@@ -1,0 +1,32 @@
+.mm-rank-block {
+  align-items: center;
+  background: $mm-primary-red;
+  clip-path: polygon(12px 0%, calc(100% - 12px) 0%, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0% calc(100% - 12px), 0% 12px);
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 60px;
+  height: 60px;
+  left: 0;
+  margin: 0;
+  padding: $mm-spacing-sm $mm-spacing-xs;
+  position: absolute;
+  text-align: center;
+  top: 4px;
+  width: 60px;
+
+  &::before {
+    background: $mm-input-bg;
+    bottom: 2px;
+    clip-path: polygon(12px 0%, calc(100% - 12px) 0%, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0% calc(100% - 12px), 0% 12px);
+    content: "";
+    left: 2px;
+    position: absolute;
+    right: 3px;
+    top: 2px;
+  }
+
+  input {
+    font-size: 28px;
+    width: 50%;
+  }
+}

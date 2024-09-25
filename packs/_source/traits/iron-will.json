@@ -4,7 +4,7 @@
   "type": "trait",
   "system": {
     "restriction": "",
-    "description": "Enemies have trouble on attacks to control the character’s mind or influence their behavior. Also, the character gains an edge on checks to break free of mind control or other compulsions."
+    "description": "Enemies have trouble on attacks to control the character's mind or influence their behavior. Also, the character gains an edge on checks to break free of mind control or other compulsions."
   },
   "flags": {},
   "effects": [],

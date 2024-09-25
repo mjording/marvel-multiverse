@@ -1,0 +1,253 @@
+//
+// Stylized fields /w header
+// <div class="mm-styled-field">
+//   <div class="mm-styled-label"><span>Name</span></div>
+//   <div class="mm-styled-input"><input /></div>
+// </div>
+//
+
+.mm-styled-field {
+  align-self: start;
+  display: inline-grid;
+  flex: 0 0 auto;
+  position: relative;
+
+  &.-flex-relative {
+    flex: 1 1 auto;
+  }
+
+  &.-sm {
+    .mm-styled-input {
+      input,
+      select {
+        font-size: 12px;
+        padding: $mm-spacing-xs $mm-spacing-sm;
+      }
+    }
+  }
+
+  &.-lg {
+    .mm-styled-input {
+      input,
+      select {
+        font-size: 22px;
+        padding: $mm-spacing-md;
+      }
+    }
+  }
+
+  &.-fill {
+    width: 100%;
+  }
+
+  &.-img {
+    .sheet & { // for specificity
+      display: flex;
+      gap: $mm-spacing-sm;
+
+      .mm-styled-input {
+        flex: 1 1 auto;
+      }
+
+      > img {
+        background: $mm-secondary-red;
+        border: none;
+        flex: 0 0 auto;
+        height: 49px;
+        margin: 0;
+        max-width: 100px;
+      }
+    }
+  }
+}
+
+.mm-styled-label {
+  background: $mm-input-bg;
+  border-block-start: 2px solid $mm-primary-red;
+  bottom: -4px;
+  display: inline-flex;
+  font-size: 10px;
+  font-weight: 700;
+  margin: auto;
+  min-height: 15px;
+  padding: 0 $mm-spacing-xs;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+
+  &.-align-left {
+    margin-inline-start: 14px;
+
+    ~ .mm-styled-input {
+      text-align: left;
+    }
+  }
+
+  &.-align-right {
+    margin-inline-end: 14px;
+
+    ~ .mm-styled-input {
+      text-align: right;
+    }
+  }
+
+  &::before,
+  &::after {
+    background: $mm-input-bg;
+    border-inline-start: 2px solid $mm-primary-red;
+    content: "";
+    height: 15px;
+    position: absolute;
+    top: 0;
+    width: 8px;
+  }
+
+  &::before {
+    left: -7px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    right: -7px;
+    transform: rotate(135deg);
+  }
+
+  ~ .mm-styled-input {
+    text-align: center;
+  }
+
+  span {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.mm-styled-input {
+  background: $mm-primary-red;
+  border-radius: $mm-border-radius-sm;
+  min-height: 24px;
+  padding: $mm-spacing-xs;
+  position: relative;
+
+  &.-no-bg {
+    &::before {
+      display: none;
+    }
+  }
+
+  &::before {
+    background: $mm-input-bg;
+    border-radius: $mm-border-radius-sm;
+    bottom: $mm-spacing-xs;
+    content: "";
+    left: $mm-spacing-xs;
+    position: absolute;
+    right: $mm-spacing-xs;
+    top: $mm-spacing-xs;
+  }
+
+  > img {
+    position: relative;
+    z-index: 1;
+  }
+
+  > input,
+  > select,
+  .plain-text {
+    background: none;
+    border: none;
+    color: $mm-text-color;
+    font-size: 14px;
+    font-weight: 600;
+    height: auto;
+    padding: $mm-spacing-sm $mm-spacing-md;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 1;
+
+    &:focus {
+      @include focus-state;
+    }
+  }
+
+  > input[type="checkbox"] {
+    width: auto;
+  }
+
+  .editor {
+    background: $mm-input-bg;
+    z-index: 2;
+
+    > .editor-content {
+      padding: $mm-spacing-sm;
+    }
+  }
+
+  .editor-menu {
+    border-radius: 0;
+  }
+
+  .editor-container {
+    min-height: 70px;
+  }
+}
+
+//
+// Standalone Label & Field
+//
+
+.mm-label {
+  color: $mm-subtext-color;
+  flex: 0 0 auto;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+
+  &.-sm {
+    font-size: 10px;
+  }
+}
+
+.mm-input {
+  flex: 1 1 auto;
+  position: relative;
+  z-index: 1;
+
+  &.-lg {
+    font-size: 18px;
+  }
+
+  input {
+    background: none;
+    border: none;
+    color: $mm-text-color;
+    font-size: 14px;
+    font-weight: 600;
+    height: 100%;
+    padding: 0;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 1;
+
+    &:focus {
+      @include focus-state;
+    }
+  }
+
+  .editor {
+    background: $mm-input-bg;
+  }
+
+  .editor-menu {
+    border-radius: 0;
+  }
+
+  .editor-container {
+    min-height: 120px;
+  }
+}

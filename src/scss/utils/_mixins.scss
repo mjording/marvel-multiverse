@@ -14,3 +14,12 @@
 @mixin hide {
   display: none;
 }
+
+@mixin focus-state {
+  box-shadow:
+    inset 0 0 0 2px $mm-primary-red,
+    inset 0 0 0 3px white,
+    0 1px 2px 0 RGBA(0,0,0, 0.3);
+  text-shadow: none;
+  outline: none;
+}

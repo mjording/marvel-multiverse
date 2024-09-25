@@ -80,10 +80,19 @@
           </div>
         </div>
         <div class="flexcol -static-children -gap-sm -space-between">
-          <div class="mm-codename-block mm-styled-field">
-            <label class="mm-styled-label -align-left" for="name"><span>Codename</span></label>
-            <div class="mm-styled-input">
-              <input name="name" type="text" value="{{actor.name}}" placeholder="Codename"/>
+          <div class="flexrow -nowrap -gap-sm">
+            <div class="mm-styled-field -flex-relative">
+              <label class="mm-styled-label -align-left" for="name"><span>Codename</span></label>
+              <div class="mm-styled-input">
+                <input name="name" type="text" value="{{actor.name}}" placeholder="Codename"/>
+              </div>
+            </div>
+            <div class="mm-styled-field -flex-relative">
+              <label class="mm-styled-label -align-right"><span>Team Maneuver</span></label>
+              <div class="mm-styled-input">
+                <!-- Should probably be a dropdown with the ones selectable -->
+                <input type="text" value="Offense" data-dtype="String"/>
+              </div>
             </div>
           </div>
           <div class="flexrow -gap-sm">

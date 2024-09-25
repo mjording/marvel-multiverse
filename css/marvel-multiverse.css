@@ -1140,10 +1140,6 @@ li.roll-damage {
   content: "]";
   right: -1px;
 }
-.marvel-multiverse.sheet.actor .mm-codename-block {
-  margin-block-end: 4px;
-  width: 50%;
-}
 .marvel-multiverse.sheet.actor .mm-stat-block {
   align-items: center;
   background: #e41d18;

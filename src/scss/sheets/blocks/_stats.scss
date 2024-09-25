@@ -1,0 +1,116 @@
+.mm-stat-block {
+  align-items: center;
+  background: $mm-primary-red;
+  clip-path: polygon(8px 0%, calc(100% - 8px) 0%, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0% calc(100% - 8px), 0% 8px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 90px;
+  padding: $mm-spacing-md $mm-spacing-sm;
+  padding-inline-end: 72px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  &.-focus {
+    background: $mm-primary-blue;
+
+    ~ .mm-dr-block {
+      background: $mm-secondary-blue;
+    }
+  }
+
+  &::before {
+    background: $mm-input-bg;
+    bottom: 2px;
+    clip-path: polygon(8px 0%, calc(100% - 8px) 0%, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0% calc(100% - 8px), 0% 8px);
+    content: "";
+    left: 2px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+  }
+
+  hr {
+    border: none;
+    border-block-end: 1px solid $mm-text-color;
+    margin: 0;
+    width: 100%;
+  }
+
+  .mm-input {
+    align-items: center;
+    display: inline-flex;
+    font-size: 20px;
+    justify-content: end;
+
+    input {
+      font-size: inherit;
+      height: 24px;
+      max-width: 40px;
+      width: auto;
+    }
+  }
+}
+
+.mm-stat-corner-block {
+  background: $mm-secondary-red;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 12px 100%, 0% calc(100% - 12px));
+  display: flex;
+  flex-direction: column;
+  height: 54px;
+  justify-content: center;
+  padding: $mm-spacing-sm $mm-spacing-xs;
+  position: absolute;
+  right: -2px;
+  text-align: center;
+  top: -4px;
+  width: 72px;
+
+  &::before {
+    background: white;
+    bottom: 2px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 12px 100%, 0% calc(100% - 12px));
+    content: "";
+    left: 2px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+  }
+
+  .mm-input {
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1;
+  }
+}
+
+.mm-speed-fields {
+  align-self: start;
+  display: inline-flex;
+  flex-direction: column;
+  font-size: 12px;
+  height: 100%;
+  justify-content: end;
+  line-height: 1.1;
+  padding-block-start: 1px;
+  padding-inline-start: $mm-spacing-sm;
+  text-align: left;
+  width: 120%;
+  z-index: 1;
+
+  .flexrow {
+    overflow: hidden;
+  }
+
+  span {
+    display: inline-block;
+    overflow: hidden;
+
+    &:first-child {
+      max-width: 72px;
+    }
+  }
+}

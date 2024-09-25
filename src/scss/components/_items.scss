@@ -1,128 +1,154 @@
-// Section Header
-.items-header {
-  margin: 2px 0;
-  padding: 0;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.05);
-  border: $border-groove;
-  // font-weight: bold;
-  > * {
-    font-size: 12px;
-    text-align: center;
-  }
-  .item-name {
-    font-weight: bold;
-    padding-left: 5px;
-    text-align: left;
-    display: flex;
-    // font-size: 16px;
-  }
-}
-
-
-.abilities {
-  ol.items-list {
-    padding: 0;
-  }
-}
-// -----------------------------------------
-// Items Lists
-// -----------------------------------------
-
-.items-list {
+// Basic list w/ controls
+.mm-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: $mm-spacing-sm;
   list-style: none;
   margin: 0;
   padding: 0;
-  overflow-y: auto;
-  scrollbar-width: thin;
-  color: $c-tan;
-  z-index: 100;
-  position: relative;
-  opacity: 0.9;
-  background-color: beige;
 
-
-  // Child lists
-  .item-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  // Item Name
-  .item-name {
-    flex: 2;
-    margin: 0;
-    overflow: hidden;
-    font-size: 13px;
-    text-align: left;
-    align-items: center;
-    display: flex;
-    h3, h4 {
-      margin: 0;
-      overflow-x: hidden;
-    }
-  }
-
-  // Control Buttons
   .item-controls {
     display: flex;
-    flex: 0 0 100px;
-    justify-content: flex-end;
-    a {
-      font-size: 12px;
-      text-align: center;
-      margin: 0 6px;
-    }
+    flex: 0 0 auto;
+    gap: $mm-spacing-xs;
+    padding-inline-end: $mm-spacing-lg;
+    padding-inline-start: $mm-spacing-sm;
+    z-index: 1;
   }
 
-  // Individual Item
-  .item {
+  .item-control {
     align-items: center;
-    padding: 0 2px; // to align with the header border
-    border-bottom: 1px solid $c-faint;
-    &:last-child { border-bottom: none; }
-    .item-name {
-      color: $c-dark;
-      .item-image {
-        flex: 0 0 30px;
-        height: 30px;
-        background-size: 30px;
-        border: none;
-        margin-right: 5px;
-      }
-    }
+    border-radius: $mm-border-radius-sm;
+    border: 1px solid $mm-primary-red;
+    display: flex;
+    height: 18px;
+    justify-content: center;
+    padding: $mm-spacing-xs;
+    width: 18px;
   }
+}
 
-  .item-prop {
+.mm-item-header {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex: 0 0 auto;
+  width: 100%;
+
+  > span {
+    background: $mm-primary-red;
+    border-radius: 18px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    font-size: 10px;
+    height: 18px;
+    padding: $mm-spacing-xs $mm-spacing-sm;
     text-align: center;
-    border-left: 1px solid #c9c7b8;
-    border-right: 1px solid #c9c7b8;
-    font-size: 12px;
+    text-transform: uppercase;
   }
 
-  // Section Header
-  .items-header {
-    margin: 2px 0;
+  > hr {
+    border: none;
+    border-block-end: 1px solid $mm-primary-red;
+  }
+
+  .item-controls {
     padding: 0;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.05);
-    border: $border-groove;
-    font-weight: bold;
-    > * {
-      font-size: 12px;
-      text-align: center;
-    }
-    .item-name {
-      padding-left: 5px;
-      text-align: left;
+  }
+
+  .item-control {
+    &:hover {
+      background: $mm-primary-red;
+      color: white;
+      text-shadow: none;
     }
   }
 }
 
-// Example style for MarvelMultiverse (can be removed if not needed).
-.item-formula {
-  
-  flex: 0 0 200px;
-  padding: 0 8px;
+.mm-item {
+  align-items: center;
+  background: $mm-primary-red;
+  clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0% 100%);
+  color: $mm-text-color;
+  display: flex;
+  font-size: 12px;
+  gap: $mm-spacing-md;
+  line-height: 1;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    background-color: $mm-input-bg;
+    bottom: 2px;
+    clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0% 100%);
+    content: "";
+    left: 2px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+  }
+
+  .item-control {
+    border-color: transparent;
+
+    &:hover {
+      color: $mm-primary-red;
+      text-shadow: none;
+    }
+  }
+}
+
+.mm-item-name {
+  flex: 1 1 auto;
+  font-weight: 600;
+  padding: $mm-spacing-md;
+  padding-inline-start: $mm-spacing-lg;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+
+  > a {
+    display: inline-flex;
+    flex-direction: column;
+    gap: $mm-spacing-xs;
+    width: 100%;
+
+    span:nth-of-type(2) {
+      color: $mm-subtext-color;
+      font-size: 10px;
+    }
+  }
+}
+
+.mm-input-item {
+  position: relative;
+  z-index: 1;
+
+  h4 {
+    color: $mm-text-color;
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    height: auto;
+    margin: 0;
+    padding: $mm-spacing-xs $mm-spacing-sm;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 1;
+
+    > .rollable {
+      flex: 1 1 auto;
+    }
+
+    .item-control {
+      border-color: transparent;
+
+      &:hover {
+        color: $mm-primary-red;
+        text-shadow: none;
+      }
+    }
+  }
 }

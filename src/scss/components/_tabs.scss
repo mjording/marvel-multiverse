@@ -1,0 +1,90 @@
+.sheet nav.mm-tabs {
+  align-items: center;
+  background: $mm-primary-red;
+  border: none;
+  clip-path: polygon(0% 20px, 20px 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0% 100%);
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  margin: 0;
+  padding: $mm-spacing-sm;
+  width: 100%;
+
+  &.-one {
+    .item {
+
+    }
+  }
+
+  &.-two {
+    .item {
+      &:nth-of-type(1) {
+        flex-basis: calc(50% + 16px);
+        margin-inline-end: -10px;
+        padding-inline-end: 16px;
+        clip-path: polygon(0% 20px, 20px 0%, 100% 0%, calc(100% - 16px) 100%, 0% 100%);
+      }
+
+      &:nth-of-type(2) {
+        flex-basis: calc(50% + 16px);
+        margin-inline-start: -10px;
+        padding-inline-start: 16px;
+        clip-path: polygon(0% 100%, 16px 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%);
+      }
+    }
+  }
+
+  &.-three {
+    .item {
+      &:nth-of-type(1) {
+        flex-basis: calc(33% + 16px);
+        margin-inline-end: -10px;
+        padding-inline-end: 16px;
+        clip-path: polygon(0% 20px, 20px 0%, 100% 0%, calc(100% - 16px) 100%, 0% 100%);
+      }
+
+      &:nth-of-type(2) {
+        flex-basis: calc(33% + 6px);
+        clip-path: polygon(16px 0%, 100% 0%, calc(100% - 16px) 100%, 0% 100%);
+      }
+
+      &:nth-of-type(3) {
+        flex-basis: calc(33% + 16px);
+        margin-inline-start: -10px;
+        padding-inline-start: 16px;
+        clip-path: polygon(0% 100%, 16px 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%);
+      }
+    }
+  }
+
+  &.-four {
+    .item {
+
+    }
+  }
+
+  .sheet-tabs-wrapper {
+    display: flex;
+    width: 100%;
+  }
+
+  .item {
+    align-items: center;
+    background: $mm-secondary-red;
+    box-shadow: none;
+    color: white;
+    display: flex;
+    font-family: $font-tertiary;
+    font-size: 16px;
+    font-weight: 600;
+    height: 36px;
+    justify-content: center;
+    text-shadow: none;
+    text-transform: uppercase;
+
+    &.active {
+      background: white;
+      color: $mm-primary-red;
+    }
+  }
+}

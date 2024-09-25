@@ -1,12 +1,18 @@
-<div class="mm-biofill-container">
-    <h3 for="system.history" data-label="history">History</h3>
-    {{editor system.history target="system.history" button=false engine="prosemirror" collaborate=false}}
+<div class="mm-styled-container">
+  <h3 for="system.history" data-label="history">History</h3>
+  <div class="mm-input">
+      {{editor system.history target="system.history" button=false engine="prosemirror" collaborate=false}}
+  </div>
 </div>
-<div class="mm-biofill-container">
-    <h3 for="system.personality" data-label="personality">Personality</h3>
+<div class="mm-styled-container">
+  <h3 for="system.personality" data-label="personality">Personality</h3>
+  <div class="mm-input">
     {{editor system.personality target="system.personality" button=false engine="prosemirror" collaborate=false}}
+  </div>
 </div>
-<div class="mm-biofill-container">
-    <h3 for="system.distinguishingFeatures" data-label="distinguishingFeatures">Features</h3>
+<div class="mm-styled-container">
+  <h3 for="system.distinguishingFeatures" data-label="distinguishingFeatures">Features</h3>
+  <div class="mm-input">
     {{editor system.distinguishingFeatures target="system.distinguishingFeatures" button=false engine="prosemirror" collaborate=false}}
+  </div>
 </div>

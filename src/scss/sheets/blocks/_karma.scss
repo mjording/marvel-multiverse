@@ -1,0 +1,32 @@
+.mm-karma-block {
+  align-items: center;
+  background: $mm-primary-red;
+  bottom: -4px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 7px, calc(100% - 5px) 12px, calc(100% - 5px) calc(100% - 12px), 100% calc(100% - 7px), 100% 100%, 0% 100%, 0% calc(100% - 7px), 5px calc(100% - 12px), 5px 12px, 0% 7px);
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 70px;
+  height: 60px;
+  margin: 0;
+  padding: $mm-spacing-sm $mm-spacing-xs;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 70px;
+
+  &::before {
+    background: $mm-input-bg;
+    bottom: 2px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 5px, calc(100% - 5px) 10px, calc(100% - 5px) calc(100% - 10px), 100% calc(100% - 5px), 100% 100%, 0% 100%, 0% calc(100% - 5px), 5px calc(100% - 10px), 5px 10px, 0% 5px);
+    content: "";
+    left: 3px;
+    position: absolute;
+    right: 3px;
+    top: 2px;
+  }
+
+  input {
+    font-size: 28px;
+    width: 50%;
+  }
+}

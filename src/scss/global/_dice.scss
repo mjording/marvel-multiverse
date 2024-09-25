@@ -1,16 +1,3 @@
-.window-app {
-  font-family: $font-primary;
-}
-
-.rollable {
-  &:hover,
-  &:focus {
-    color: #000;
-    text-shadow: 0 0 10px red;
-    cursor: pointer;
-  }
-}
-
 .dice-tooltip-collapser {
   display: grid;
   grid-template-rows: 0fr;
@@ -243,7 +230,6 @@
   padding-top: 2px;
 }
 
-
 .tooltip-part:nth-child(2) .dice-rolls .roll.d6 {
   background-image: url("../icons/d6-red.svg");
   background-repeat: no-repeat;
@@ -276,17 +262,13 @@ li.marvel-roll.d6.fantastic {
   background-image: none;
 }
 
-h1, h2, h3, h4 {
-  margin: 0;
-  padding: 0;
-}
-
 .directory-item[data-entry-id='']{
   display: none !important;
 }
 
 .six-one-six-die {
   min-width: 10em;
+
   img {
     width: 3em;
     height: 3em;

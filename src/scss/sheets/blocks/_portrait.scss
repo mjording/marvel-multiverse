@@ -1,0 +1,31 @@
+.mm-hero-portrait-block {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  height: 210px;
+  justify-content: center;
+  position: relative;
+}
+
+.mm-hero-portrait {
+  align-items: center;
+  background: $mm-primary-red;
+  clip-path: polygon(0 0, 70% 0%, 100% 30%, 100% 100%, 100% 100%, 30% 100%, 0% 70%, 0 0);
+  display: flex;
+  height: 90%;
+  justify-content: center;
+  position: relative;
+  width: 90%;
+
+  img {
+    border-radius: 2px;
+    border: none;
+    flex: 0 0 auto;
+    height: auto;
+    margin: 0;
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+}

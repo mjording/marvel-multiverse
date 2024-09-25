@@ -1,0 +1,90 @@
+.mm-damage-block {
+  .mm-damage-rows {
+    li {
+      align-items: center;
+      color: white;
+      display: flex;
+      padding: 0 $mm-spacing-md;
+      position: relative;
+      z-index: 1;
+
+      > * {
+        display: inline-flex;
+        flex: 1 1 25%;
+        justify-content: center;
+
+        &:first-chld {
+          flex: 0 0 auto;
+        }
+      }
+
+      > span {
+        flex: 0 0 auto;
+        padding: 0 $mm-spacing-md;
+      }
+    }
+
+    h6 {
+      color: white;
+      flex: 0 0 auto;
+      font-size: 10px;
+      font-weight: 600;
+      margin: 0;
+      transform: rotate(-90deg);
+      width: 24px;
+    }
+  }
+
+  .mm-damage-multiply,
+  .mm-damage-addition {
+    align-items: center;
+    background: $mm-input-bg;
+    border: 2px solid black;
+    color: $mm-text-color;
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    gap: 3px;
+    height: 36px;
+    justify-content: center;
+    line-height: 1;
+    padding: $mm-spacing-sm $mm-spacing-md;
+    position: relative;
+
+    > * {
+      display: inline-flex;
+    }
+
+    img {
+      border: none;
+      flex: initial;
+      height: auto;
+      margin: 0;
+      max-height: 100%;
+    }
+  }
+
+  .mm-damage-multiply {
+    &::before,
+    &::after {
+      align-items: center;
+      bottom: 0;
+      color: $mm-text-color;
+      display: flex;
+      font-size: 28px;
+      font-weight: 400;
+      position: absolute;
+      top: 0;
+    }
+
+    &::before {
+      content: "[";
+      left: -1px;
+    }
+
+    &::after {
+      content: "]";
+      right: -1px;
+    }
+  }
+}

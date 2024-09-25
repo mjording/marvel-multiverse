@@ -1,5 +1,5 @@
-<ol class="mm-power-set">
-  <li class="flexrow item mm-power-set-header">
+<ol class="mm-item-list">
+  <li class="flexrow item mm-item-header">
     <span>{{localize "Items"}}</span>
     <hr />
     <div class="item-controls">
@@ -13,8 +13,8 @@
     </div>
   </li>
   {{#each gear as |item id|}}
-    <li class="flexrow item mm-power-set-power" data-item-id='{{item._id}}'>
-      <div class="item-name mm-power-set-power-name">
+    <li class="flexrow item mm-item" data-item-id='{{item._id}}'>
+      <div class="item-name mm-item-name">
         <span>{{item.name}}</span>
       </div>
       <div class="item-controls">

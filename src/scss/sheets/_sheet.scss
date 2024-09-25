@@ -1,0 +1,14 @@
+.marvel-multiverse.sheet {
+  .window-content {
+    background-position: top -360px center;
+    background-repeat: no-repeat;
+    background-size: 2800px;
+    background-image: url("../ui/official/mm-heroes-background.jpg");
+    color: $mm-text-color;
+    font-family: $font-primary;
+
+    > form {
+      gap: $mm-spacing-md;
+    }
+  }
+}

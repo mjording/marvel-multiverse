@@ -1,12 +1,15 @@
 <form class="{{cssClass}}" autocomplete="off">
   <header class="sheet-header">
-    <div class="header-fields">
-      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    <div class="mm-styled-field -lg -img">
+      <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+      <div class="mm-styled-input">
+        <input name="name" type="text" value="{{item.name}}" placeholder="Name"/>
+      </div>
     </div>
   </header>
 
   {{!-- Sheet Tab Navigation --}}
-  <nav class="sheet-tabs tabs" data-group="primary">
+  <nav class="sheet-tabs tabs mm-tabs -two" data-group="primary">
     <a class="item" data-tab="attributes">Attributes</a>
     <a class="item" data-tab="effects">Effects</a>
   </nav>
@@ -15,84 +18,114 @@
   <section class="sheet-body">
 
     {{!-- Attributes Tab --}}
-    <div class="tab power-attributes" data-group="primary" data-tab="attributes">
+    <div class="tab flexcol -gap-sm" data-group="primary" data-tab="attributes">
       {{!-- As you add new fields, add them in here! --}}
       {{#if system.isElemental }}
-        <div class="resource">
-          <label class="resource-label">Element</label>
-          <select name="system.element">
-            {{selectOptions elements selected=selectedElement labelAttr="label" blank=""}}
-          </select>
+        <div class="mm-styled-field -fill">
+          <label class="mm-styled-label -align-left"><span>Element</span></label>
+          <div class="mm-styled-input">
+            <select name="system.element">
+              {{selectOptions elements selected=selectedElement labelAttr="label" blank=""}}
+            </select>
+          </div>
         </div>
       {{/if}}
-      <div class="resource">
-        <label for="system.description" class="resource-reduced-label rollable align-left" data-label="description">Description</label>
-        {{editor system.description target="system.description" button=false engine="prosemirror" collaborate=false}}
+      <div class="mm-styled-field -fill">
+        <label class="mm-styled-label -align-left rollable" for="system.description" data-label="description"><span>Description</span></label>
+        <div class="mm-styled-input">
+          {{editor system.description target="system.description" button=false engine="prosemirror" collaborate=false}}
+        </div>
+      </div>
+      <div class="mm-styled-field -fill">
+        <label class="mm-styled-label -align-left rollable" for="system.effect" data-label="effect"><span>Effect</span></label>
+        <div class="mm-styled-input">
+          {{editor system.effect target="system.effect" button=false engine="prosemirror" collaborate=false}}
+        </div>
+      </div>
+      <div class="mm-styled-field -fill">
+        <label class="mm-styled-label -align-left"><span>Power Set</span></label>
+        <div class="mm-styled-input">
+          <input type="text" name="system.powerSet" value="{{system.powerSet}}" data-dtype="String"/>
+        </div>
+      </div>
+      <div class="mm-styled-field -fill">
+        <label class="mm-styled-label -align-left"><span>prerequisites</span></label>
+        <div class="mm-styled-input">
+          <input type="text" name="system.prerequisites" value="{{system.prerequisites}}" data-dtype="String"/>
+        </div>
       </div>
       <div class="resource">
-        <label for="system.effect" class="resource-reduced-label rollable align-left" data-label="effect">Effect</label>
-        {{editor system.effect target="system.effect" button=false engine="prosemirror" collaborate=false}}
+        <label class="mm-styled-label -align-left"><span>action</span></label>
+        <div class="mm-styled-input">
+          <input type="text" name="system.action" value="{{system.action}}" data-dtype="String"/>
+        </div>
       </div>
-      <div class="resource">
-        <label class="resource-label">Power Set</label>
-        <input type="text" name="system.powerSet" value="{{system.powerSet}}" data-dtype="String"/>
+      <div class="mm-styled-field -fill">
+        <label class="mm-styled-label -align-left"><span>trigger</span></label>
+        <div class="mm-styled-input">
+          <input type="text" name="system.trigger" value="{{system.trigger}}" data-dtype="String"/>
+        </div>
       </div>
-      <div class="resource">
-        <label class="resource-label">prerequisites</label>
-        <input type="text" name="system.prerequisites" value="{{system.prerequisites}}" data-dtype="String"/>
+      <div class="mm-styled-field -fill">
+        <label class="mm-styled-label -align-left"><span>duration</span></label>
+        <div class="mm-styled-input">
+          <input type="text" name="system.duration" value="{{system.duration}}" data-dtype="String"/>
+        </div>
       </div>
-      <div class="resource">
-        <label class="resource-label">action</label>
-        <input type="text" name="system.action" value="{{system.action}}" data-dtype="String"/>
+      <div class="mm-styled-field -fill">
+        <label class="mm-styled-label -align-left"><span>range</span></label>
+        <div class="mm-styled-input">
+          <input type="text" name="system.range" value="{{system.range}}" data-dtype="String"/>
+        </div>
       </div>
-      <div class="resource">
-        <label class="resource-label">trigger</label>
-        <input type="text" name="system.trigger" value="{{system.trigger}}" data-dtype="String"/>
+      <div class="mm-styled-field -fill">
+        <label class="mm-styled-label -align-left"><span>cost</span></label>
+        <div class="mm-styled-input">
+          <input type="text" name="system.cost" value="{{system.cost}}" data-dtype="String"/>
+        </div>
       </div>
-      <div class="resource">
-        <label class="resource-label">duration</label>
-        <input type="text" name="system.duration" value="{{system.duration}}" data-dtype="String"/>
+      <div class="mm-styled-field -fill">
+        <label class="mm-styled-label -align-left"><span>Attack Range</span></label>
+        <div class="mm-styled-input">
+          <input type="number" name="system.attackRange" value="{{system.attackRange}}" data-dtype="Number"/>
+        </div>
       </div>
-      <div class="resource">
-        <label class="resource-label">range</label>
-        <input type="text" name="system.range" value="{{system.range}}" data-dtype="String"/>
+      <div class="mm-styled-field -fill">
+        <label class="mm-styled-label -align-left"><span>Attack Target</span></label>
+        <div class="mm-styled-input">
+          <input type="text" name="system.attackTarget" value="{{system.attackTarget}}" data-dtype="String"/>
+        </div>
       </div>
-      <div class="resource">
-        <label class="resource-label">cost</label>
-        <input type="text" name="system.cost" value="{{system.cost}}" data-dtype="String"/>
+      <div class="mm-styled-field -fill">
+        <label class="mm-styled-label -align-left"><span>Attack Multiplier</span></label>
+        <div class="mm-styled-input">
+          <input type="number" name="system.attackMultiplier" value="{{system.attackMultiplier}}" data-dtype="Number"/>
+        </div>
       </div>
-      <div class="resource">
-        <label class="resource-label">Attack Range</label>
-        <input type="number" name="system.attackRange" value="{{system.attackRange}}" data-dtype="Number"/>
+      <div class="mm-styled-field -fill">
+        <label class="mm-styled-label -align-left"><span>Attack Ability</span></label>
+        <div class="mm-styled-input">
+          <select name="system.attackAbility">
+            {{selectOptions abilities selected=system.attackAbility labelAttr="label" blank=""}}
+          </select>
+        </div>
       </div>
-      <div class="resource">
-        <label class="resource-label">Attack Target</label>
-        <input type="text" name="system.attackTarget" value="{{system.attackTarget}}" data-dtype="String"/>
+      <div class="mm-styled-field -fill">
+        <label class="mm-styled-label -align-left"><span>Attack Kind</span></label>
+        <div class="mm-styled-input">
+          <select name="system.attackKind">
+            {{selectOptions attackKinds selected=system.attackKind labelAttr="label" blank=""}}
+          </select>
+        </div>
       </div>
-      <div class="resource">
-        <label class="resource-label">Attack Multiplier</label>
-        <input type="number" name="system.attackMultiplier" value="{{system.attackMultiplier}}" data-dtype="Number"/>
+      <div class="mm-styled-field -fill">
+        <label class="mm-styled-label -align-left"><span>Attack Edge Mode</span></label>
+        <div class="mm-styled-input">
+          <select name="system.attackEdgeMode">
+            {{selectOptions attackEdgeModes selected=system.attackEdgeMode labelAttr="label" blank=""}}
+          </select>
+        </div>
       </div>
-      <div class="resource">
-        <label class="resource-label">Attack Ability</label>
-        <select name="system.attackAbility">
-          {{selectOptions abilities selected=system.attackAbility labelAttr="label" blank=""}}
-        </select>
-      </div>
-      <div class="resource">
-        <label class="resource-label">Attack Kind</label>
-        <select name="system.attackKind">
-          {{selectOptions attackKinds selected=system.attackKind labelAttr="label" blank=""}}
-        </select>
-      </div>
-      
-      <div class="resource">
-        <label class="resource-label">Attack Edge Mode</label>
-        <select name="system.attackEdgeMode">
-          {{selectOptions attackEdgeModes selected=system.attackEdgeMode labelAttr="label" blank=""}}
-        </select>
-      </div>
-      
     </div>
     <div class="tab power-effects" data-group="primary" data-tab="effects">
        {{> "systems/marvel-multiverse/templates/item/parts/item-effects.hbs"}}

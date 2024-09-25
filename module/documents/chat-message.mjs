@@ -357,51 +357,68 @@ export class ChatMessageMarvel extends ChatMessage {
     if (!(rollTerm.rolls.length === 3 && (rollTerm.rolls[1].terms[0] instanceof game.MarvelMultiverse.dice.MarvelDie))) return;
     
     const targetRoll = rollTerm.rolls[dieIndex];
-
-    const targetReg = /\d(.*)/;
-    const targetFormula = targetRoll._formula.replace(targetReg, '2$1');
-
-    targetRoll._formula = `${targetFormula}${modifier}`;
-    targetRoll.number = 2;
-
-    rollTerm.terms[dieIndex] = targetRoll._formula
     const targetDie = targetRoll.terms[0];
-    targetDie.number = 2;
-    targetDie.modifiers?.push(modifier);
+    const formulaReg = /(?<number>\d)d(?<dieType>\d|m).*/;
+    const formulaGroups = formulaReg.exec(targetRoll._formula)?.groups;
+
+    const formulaNumber = formulaGroups.number;
+    const formulaDie = formulaGroups.dieType;
+
+    targetDie.number += 1;
+    
+    const targetFormula = `${targetDie.number}d${formulaDie}`;
+  
+    targetRoll._formula = `${targetFormula}${modifier}`;
+    
+    rollTerm.terms[dieIndex] = targetRoll._formula
+
+    if (!targetDie.modifiers.includes(modifier)) {
+      targetDie.modifiers?.push(modifier) 
+    }
 
     const newRoll = new MarvelMultiverseRoll(targetRoll._formula, {...targetRoll.data});
     await newRoll.roll();
 
+    const old_result = targetDie.results.find((r) => r.active).result
+
     targetDie.results.push(newRoll.terms[0].results[0]);
 
     const resultResults = targetDie.results.map((result) => result.result);
+    
+    let activeResult;
 
-    const discardResult = targetDie.results[resultResults.indexOf(modifier === 'kh' ? Math.min.apply(Math, resultResults) : Math.max.apply(Math, resultResults))];
-    const activeResult = targetDie.results[resultResults.indexOf(modifier === 'kh' ? Math.max.apply(Math, resultResults) : Math.min.apply(Math, resultResults))];
-
+    if ( targetDie instanceof game.MarvelMultiverse.dice.MarvelDie && resultResults.indexOf(1) > -1 ){
+      activeResult = targetDie.results[resultResults.indexOf(modifier === 'kh' ? 1 : Math.max.apply(Math, resultResults))];
+    } else {
+      activeResult = targetDie.results[resultResults.indexOf(modifier === 'kh' ? Math.max.apply(Math, resultResults) : Math.min.apply(Math, resultResults))];
+    }
     activeResult.active = true;
     delete activeResult.discarded;
 
-    discardResult.active = false;
-    discardResult.discarded = true;
+    targetDie.results.filter((r) => r !== activeResult).forEach((result, i) => {
+      result.active = false;
+      result.discarded = true;
+    });
     
+
     const re = /(\(?{)(\dd\d),(\ddm),(\dd\d)(}.*)/;
 
     let replacedFormula;
     switch (dieIndex) {
       case 0: {
-        replacedFormula = roll.formula.replace(re, "$12d6" + modifier + ",$3,$4$5");
+        replacedFormula = roll.formula.replace(re, "$1"+ targetDie.number +"d6" + modifier + ",$3,$4$5");
       }
       case 1: {
-        replacedFormula = roll.formula.replace(re, "$1$2,2dm"+ modifier +",$4$5");
+        replacedFormula = roll.formula.replace(re, "$1$2,"+ targetDie.number +"dm"+ modifier +",$4$5");
       }
       case 2: {
-        replacedFormula = roll.formula.replace(re, "$1$2,$3,2d6"+ modifier +"$5");
+        replacedFormula = roll.formula.replace(re, "$1$2,$3,"+ targetDie.number +"d6"+ modifier +"$5");
       }
     }
 
     roll._formula = replacedFormula;
-    roll._total = roll.total - discardResult.result + activeResult.result;
+    const resultAct =  targetDie instanceof game.MarvelMultiverse.dice.MarvelDie && resultResults.indexOf(1) > -1 ? 6 : activeResult.result;
+    roll._total = roll.total - old_result + resultAct;
     
     let update = await roll.toMessage({flavor: flavor}, {create: false});
     update = foundry.utils.mergeObject(chatMessage.toJSON(), update);

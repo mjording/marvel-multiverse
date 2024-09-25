@@ -3,7 +3,7 @@
   "name": "Assassin",
   "type": "occupation",
   "system": {
-    "description": "The character is a hired killer. They might tell themselves that this is for the greater good. They might be picky about who they take on as clients or targets, but at the core of their occupation is ending lives.",
+    "description": "The character is a hired killer. They might tell themselves that this is for the greater good. They might be picky about who they take on as clients or targets, but the core of their occupation is ending lives.",
     "examples": "Arcade, Bullseye, Elektra, the Punisher.",
     "tags": [
       {
@@ -11,7 +11,7 @@
         "name": "Streetwise",
         "type": "tag",
         "system": {
-          "description": "The character knows how things are handled on the street who's in charge of various criminal enterprises and how ta avoid issues with them",
+          "description": "The character knows how things are handled on the street, who's in charge of various criminal enterprises and how to avoid issues with them.",
           "restriction": "",
           "rarity": ""
         },
@@ -39,7 +39,7 @@
         "name": "Connections",
         "type": "trait",
         "system": {
-          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and soon. By making an Egocheck, the character can call an their contact to provide help in the form of clues, informntion or resources, The Narrrator determines the TN of the Ego check based on the favor requested This trait can be selected multiple thmes, using many different types, These include Celebrities, Community, Criminal, Espionage, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on",
+          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and so on. By making an Ego check, the character can call on their contact to provide help in the form of clues, information or resources. The Narrator determines the TN of the Ego check based on the favor requested. This trait can be selected multiple times, using many different types. These include Celebrities, Community, Criminal, Espionage, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on.",
           "restriction": "",
           "multiple": true
         },
@@ -53,7 +53,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "The character is known for favoring a particular kind of weapon or attack pewer. They have an edge when making attacks that way. This trait can be taken more than once, but each time must be with a different kind of weapon or attack power."
+          "description": "The character is known for favoring a particular kind of weapon or attack power. They have an edge when making attacks that way. This trait can be taken more than once, but each time must be with a different kind of weapon or attack power."
         },
         "flags": {},
         "effects": [],

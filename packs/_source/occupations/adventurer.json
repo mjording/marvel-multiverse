@@ -3,15 +3,15 @@
   "name": "Adventurer",
   "type": "occupation",
   "system": {
-    "description": "The character focuses on having adventures. Perhaps they've independently wealthy and don't need another occupation, or maybe they hire out their services.",
-    "examples": "Iron Fist (Danny Rand), Luke Cage, Hawkeye (Kate Bishop)",
+    "description": "The character focuses on having adventures. Perhaps they're independently wealthy and don't need another occupation, or maybe they hire out their services.",
+    "examples": "Iron Fist (Danny Rand), Luke Cage, Hawkeye (Kate Bishop).",
     "tags": [
       {
         "_id": "16b9b183-3707-4eee-b122-eb87611706dc",
         "name": "Black Market Access",
         "type": "tag",
         "system": {
-          "description": "The character knows how and where they can buy and sell hard-to-find and potentially illegal things",
+          "description": "The character knows how and where they can buy and sell hard-to-find and potentially illegal things.",
           "restriction": "",
           "rarity": ""
         },
@@ -27,7 +27,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "The character is extremely brave. They have an edge on any action checks required to denl with fear."
+          "description": "The character is extremely brave. They have an edge on any action checks required to deal with fear."
         },
         "flags": {},
         "effects": [],
@@ -38,7 +38,7 @@
         "name": "Connections",
         "type": "trait",
         "system": {
-          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and soon. By making an Egocheck, the character can call an their contact to provide help in the form of clues, informntion or resources, The Narrrator determines the TN of the Ego check based on the favor requested This trait can be selected multiple thmes, using many different types, These include Celebrities, Community, Criminal, Espionage, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on",
+          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and so on. By making an Ego check, the character can call on their contact to provide help in the form of clues, information or resources. The Narrator determines the TN of the Ego check based on the favor requested. This trait can be selected multiple times, using many different types. These include Celebrities, Community, Criminal, Espionage, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on.",
           "restriction": "",
           "multiple": true
         },

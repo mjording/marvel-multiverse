@@ -4,7 +4,7 @@
   "type": "trait",
   "system": {
     "restriction": "",
-    "description": "The character's regular size is beyond those for small, average or big, as shown on the Resize Effects table (see p. 73 of the Core Rulebook). When picking this trait, the player must choose the character's size: microscopic, miniature, tiny, little, huge gigantic titanic or gargantuan. Apply the modifiers listed an the Resize Effects table, Just as if the character had grown or shrunk to that size, but permanently. The one exception is a character's Flight Speed If they are microscopic, miniature, tiny or little, calculate theit Flight Speed as if they were small-sized. If they are huge gigantic, titanic or gargantuan, calculate their Flight Speed as if they were big-sized"
+    "description": "The character's regular size is beyond those for small, average or big, as shown on the Resize Effects table (see p. 73 of the Core Rulebook). When picking this trait, the player must choose the character's size: microscopic, miniature, tiny, little, huge gigantic titanic or gargantuan. Apply the modifiers listed an the Resize Effects table, Just as if the character had grown or shrunk to that size, but permanently. The one exception is a character's Flight Speed If they are microscopic, miniature, tiny or little, calculate their Flight Speed as if they were small-sized. If they are huge gigantic, titanic or gargantuan, calculate their Flight Speed as if they were big-sized."
   },
   "flags": {},
   "effects": [],

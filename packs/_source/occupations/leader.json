@@ -3,8 +3,8 @@
   "name": "Leader",
   "type": "occupation",
   "system": {
-    "description": "The character is the leader of a city, region, state, or nation. This includes things like being the elected mayor of New York City or the hereditary king of a country.",
-    "examples": "Jessica Jones, Misty Knight",
+    "description": "The character is the leader of a city, region, state or nation. This includes things like being the elected mayor of New York City or the hereditary king of a country.",
+    "examples": "Black Bolt, Black Panther (T'Challa), Doctor Doom, Sub-Mariner (Namor), Thor (Odinson).",
     "tags": [
       {
         "_id": "b049f27e-5dcc-4edc-bad8-b9cdf8278979",
@@ -25,7 +25,7 @@
         "name": "Powerful",
         "type": "tag",
         "system": {
-          "description": "The character has access to the resources of their entire community. In most cases, they must be careful about how they use such rresources so that they don't lose that access",
+          "description": "The character has access to the resources of their entire community. In most cases, they must be careful about how they use such resources so that they don't lose that access.",
           "restriction": "",
           "rarity": ""
         },

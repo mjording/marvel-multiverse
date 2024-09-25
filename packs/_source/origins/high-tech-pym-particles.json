@@ -14,7 +14,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "The character relies on technolopy for powers. When they take damape that would render them unconscious they can instead choose to lose all of their technology-related powers and remain conscious with 1 polnt of Health remaining. Assuming the character has access to parts and tools. Lost powers can be repaired after a battle"
+          "description": "The character relies on technology for powers. When they take damage that would render them unconscious, they can instead choose to lose all of their technology-related powers and remain conscious with 1 point of Health remaining. Assuming the character has access to parts and tools, lost powers can be repaired after a battle."
         },
         "flags": {},
         "effects": [],

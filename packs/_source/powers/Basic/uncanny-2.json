@@ -3,7 +3,7 @@
   "name": "Uncanny 2",
   "type": "power",
   "system": {
-    "description": "The character’s mind isprotected as ifby steel.",
+    "description": "The character's mind isprotected as ifby steel.",
     "powerSet": "Basic",
     "prerequisites": "Uncanny 1, Rank 2",
     "action": "",

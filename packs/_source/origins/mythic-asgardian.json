@@ -12,7 +12,7 @@
         "name": "Supernatural",
         "type": "tag",
         "system": {
-          "description": "The character has powers that are magical or based on something magical",
+          "description": "The character has powers that are magical or based on something magical.",
           "restriction": "",
           "rarity": ""
         },
@@ -25,7 +25,7 @@
         "name": "Worshiped",
         "type": "tag",
         "system": {
-          "description": "The character is worshipped by others as a god",
+          "description": "The character is worshipped by others as a god.",
           "restriction": "",
           "rarity": ""
         },
@@ -41,7 +41,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "The churacter is stronger than regular humans. Treat them as one size bigger for lifting. carrying. swinging and throwing things. (This does not stack with other factors.)"
+          "description": "The character is stronger than regular humans. Treat them as one size bigger for lifting, carrying, swinging and throwing things. (This does not stack with other factors.)"
         },
         "flags": {},
         "effects": [],
@@ -53,7 +53,7 @@
         "type": "trait",
         "system": {
           "restriction": "This trait can be selected only by characters with a mythic origin and an attachment to a particular pantheon, like Asgardian or Olympian.",
-          "description": "The character-or at least one of their ancestors-is a god. Pick something that they are the god of. They don't have to be a god that most people have heard of. In fact, they can be the god of something entirely new. However, they cannot generally be the god of something that's already been claimed by someone else in their pantheon.Other gods are often jealous of their positions and take issue with such rivals. The character has an edge when dealing with something that they are the god of."
+          "description": "The character—or at least one of their ancestors—is a god. Pick something that they are the god of. They don’t have to be a god that most people have heard of. In fact, they can be the god of something entirely new. However, they cannot generally be the god of something that’s already been claimed by someone else in their pantheon. Other gods are often jealous of their positions and take issue with such rivals. The character has an edge when dealing with something that they are the god of."
         },
         "flags": {},
         "effects": [],

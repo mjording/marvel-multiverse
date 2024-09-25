@@ -3,15 +3,15 @@
   "name": "Scientist",
   "type": "occupation",
   "system": {
-    "description": "The character solves problems by means of scientific research, They are often among the smartest people In the world, and other heroes turn to them for their advice.",
-    "examples": "Doctor Octopus (Otto Octavius). Hulk (Bruce Banner), Mister Fantastic. Moon Girl.",
+    "description": "The character solves problems by means of scientific research. They are often among the smartest people in the world, and other heroes turn to them for their expertise.",
+    "examples": "Doctor Octopus (Otto Octavius), Hulk (Bruce Banner), Mister Fantastic, Moon Girl.",
     "tags": [
       {
         "_id": "cfaebe92-146f-4210-93f2-4b6fb5e7aa40",
         "name": "Lab Access",
         "type": "tag",
         "system": {
-          "description": "The character either owns or has access to a laboratory filled with the technical equipment, supplies and tools they need or their work. This can be anything from a well-stocked high-school classroom to a forensics lab to an industrial site.",
+          "description": "The character either owns or has access to a laboratory filled with the technical equipment, supplies and tools they need for their work. This can be anything from a well-stocked high-school classroom to a forensics lab to an industrial site.",
           "restriction": "",
           "rarity": ""
         },
@@ -26,7 +26,7 @@
         "name": "Scientific Expertise",
         "type": "trait",
         "system": {
-          "description": "The character has extensive scientific training. They have an edge on Logic checks made when dealing with scientific research. If they have access to on appropriate Inb at the time, they gain a second edge on such checks."
+          "description": "The character has extensive scientific training. They have an edge on Logic checks made when dealing with scientific research. If they have access to an appropriate lab at the time, they gain a second edge on such checks."
         },
         "flags": {},
         "effects": [],

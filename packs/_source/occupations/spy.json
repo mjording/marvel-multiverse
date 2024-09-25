@@ -4,14 +4,14 @@
   "type": "occupation",
   "system": {
     "description": "The character is an expert in espionage. They served as a spy for a nation or corporation and know how to find things out about people and organizations.",
-    "examples": "Black Widow (Natasha Romanoff), Paggy Carter, Winter Soldier.",
+    "examples": "Black Widow (Natasha Romanoff), Peggy Carter, Winter Soldier.",
     "tags": [
       {
         "_id": "16b9b183-3707-4eee-b122-eb87611706dc",
         "name": "Black Market Access",
         "type": "tag",
         "system": {
-          "description": "The character knows how and where they can buy and sell hard-to-find and potentially illegal things",
+          "description": "The character knows how and where they can buy and sell hard-to-find and potentially illegal things.",
           "restriction": "",
           "rarity": ""
         },
@@ -26,8 +26,8 @@
         "name": "Connections: Espionage",
         "type": "trait",
         "system": {
-          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and soon. By making an Egocheck, the character can call an their contact to provide help in the form of clues, informntion or resources, The Narrrator determines the TN of the Ego check based on the favor requested This trait can be selected multiple thmes, using many different types, These include Celebrities, Community, Criminal, Espionage, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on",
-          "restriction": "Espionage"
+          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and so on. By making an Ego check, the character can call on their contact to provide help in the form of clues, information or resources. The Narrator determines the TN of the Ego check based on the favor requested. This trait can be selected multiple times, using many different types. These include Celebrities, Community, Criminal, Espionage, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on.",
+          "restriction": "Espionage."
         },
         "flags": {},
         "effects": [],
@@ -39,7 +39,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "The character is good at figuring out what people want and using it against them. They have an edge on Logic checks to investigate people and on Ego checks to pursuade people they've investigated."
+          "description": "The character is good at figuring out what people want and using it against them. They have an edge on Logic checks to investigate people and on Ego checks to persuade people they’ve investigated."
         },
         "flags": {},
         "effects": [],

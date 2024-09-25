@@ -4,15 +4,15 @@
   "type": "occupation",
   "system": {
     "description": "The character comes from another planet, dimension or time and is not familiar with how things work on this Earth. They may have had another occupation back where they came from, but it's not generally applicable here.",
-    "example": "Groot, Rocket Raccoon, Thor (Odinsen)",
+    "example": "Groot, Rocket Raccoon, Thor (Odinson).",
     "traits": [
       {
         "_id": "646ce550-4167-466e-9d7e-d717d9329e2a",
         "name": "Connections: Outsiders",
         "type": "trait",
         "system": {
-          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and soon. By making an Egocheck, the character can call an their contact to provide help in the form of clues, informntion or resources, The Narrrator determines the TN of the Ego check based on the favor requested This trait can be selected multiple thmes, using many different types, These include Celebrities, Community, Criminal, Espionage, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on",
-          "restriction": "Outsiders",
+          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and so on. By making an Ego check, the character can call on their contact to provide help in the form of clues, information or resources. The Narrator determines the TN of the Ego check based on the favor requested. This trait can be selected multiple times, using many different types. These include Celebrities, Community, Criminal, Espionage, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on.",
+          "restriction": "Outsiders.",
           "multiple": true
         },
         "flags": {},
@@ -37,7 +37,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "The character doesn't understand local customs They have trouble on checks made when trying to decipher such things er when trying to pass themselves off as a local."
+          "description": "The character doesn’t understand local customs. They have trouble on checks made when trying to decipher such things or when trying to pass themselves off as a local."
         },
         "flags": {},
         "effects": [],

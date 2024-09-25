@@ -4,7 +4,7 @@
   "type": "trait",
   "system": {
     "restriction": "",
-    "description": "The charactor can react quickly in combat, This grants them one additional reaction each round"
+    "description": "The character can react quickly in combat. This grants them one additional reaction each round."
   },
   "flags": {},
   "effects": [],

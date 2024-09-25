@@ -4,7 +4,7 @@
   "type": "trait",
   "system": {
     "restriction": "",
-    "description": "The character la an expert investigator They have an edge on Vigilance checks to spot clues and on Logic checks related to interpreting clues If they have access to a forensies lab at the time, they gain a second edge on such checks."
+    "description": "The character is an expert investigator, trained in the arts of forensic science. They have an edge on Vigilance checks to spot clues and on Logic (investigation) checks. If they have access to a forensics lab at the time, they can add +2 to such checks."
   },
   "flags": {},
   "effects": [],

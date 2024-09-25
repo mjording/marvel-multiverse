@@ -5,7 +5,7 @@
   "system": {
     "description": "The character is a member Homo mermanus, a variant race of humanity. Atlanteans breathe water through gills on both sides of their neck, and they cannot breathe air for longer than ten minutes. If they live in the Atlantic Ocean, they likely have blue skin and hail from Atlantis. If they come from the Pacific Ocean, they likely have green skin and live in Lemuria.",
     "examples": "Attuma, Sub-Mariner (Namor), Namora, Warlord Krang.",
-    "suggestedOccupation": "Outsider",
+    "suggestedOccupation": "Outsider.",
     "tags": [
       {
         "_id": "e3390c92-5cbc-401f-85dc-f125d8c564b4",
@@ -25,7 +25,7 @@
         "name": "Extreme Appearance",
         "type": "tag",
         "system": {
-          "description": "The character looks very different than the average person As a mutant, the character s automatically a citizen of the (wherever they happen to be) and cannot easily hide their island-nation of Krakoa and can travel to and from there identity, When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme Appearance is common.",
+          "description": "The character looks very different than the average person (wherever they happen to be) and cannot easily hide their identity. When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme appearance is common.",
           "restriction": "",
           "rarity": ""
         },
@@ -41,7 +41,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "The character is stronger than regular humans. Treat them as one size bigger for lifting. carrying. swinging and throwing things. (This does not stack with other factors.)"
+          "description": "The character is stronger than regular humans. Treat them as one size bigger for lifting, carrying, swinging and throwing things. (This does not stack with other factors.)"
         },
         "flags": {},
         "effects": [],
@@ -53,7 +53,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "The character cannot breathe Earth's air for long, They lose 1 point of Health for every minute they do not have some sort af assistance to allow them to breathe properly"
+          "description": "The character cannot breathe Earth’s air for long. They lose 1 point of Health for every minute they do not have some sort of assistance to allow them to breathe properly."
         },
         "flags": {},
         "effects": [],

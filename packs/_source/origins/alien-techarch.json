@@ -5,7 +5,7 @@
   "system": {
     "description": "The character is a member of the alien species known as the Technarchy. These artificially intelligent techno-organic beings use a Transmode virus to infect other creatures and eventually take over a planet to prepare it to become part of the Phalanx or be devoured.",
     "examples": "Warlock, Magus.",
-    "suggestedOccupation": "Outsider",
+    "suggestedOccupation": "Outsider.",
     "tags": [
       {
         "_id": "95b12d2a-935b-40d6-a9a8-3e8031a46229",
@@ -25,7 +25,7 @@
         "name": "Alien Heritage",
         "type": "tag",
         "system": {
-          "description": "The character or at least ane of their ancestors- is not from Earth. Pick an allen race that they belong to, If they were not raised on Earth, they should consider taking the Outsider occupation."
+          "description": "The character or at least one of their ancestors is not from Earth. Pick an alien race that they belong to. If they were not raised on Earth, they should consider taking the Outsider occupation."
         },
         "flags": {},
         "effects": [],
@@ -36,7 +36,7 @@
         "name": "Extreme Appearance",
         "type": "tag",
         "system": {
-          "description": "The character looks very different than the average person As a mutant, the character is automatically a citizen of the (wherever they happen to be) and cannot easily hide their island-nation of Krakoa and can travel to and from there identity, When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme Appearance is common.",
+          "description": "The character looks very different than the average person (wherever they happen to be) and cannot easily hide their identity. When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme appearance is common.",
           "rarity": "In their natural form"
         },
         "flags": {},
@@ -48,7 +48,7 @@
         "name": "Powerful",
         "type": "tag",
         "system": {
-          "description": "The character has access to the resources of their entire community. In most cases, they must be careful about how they use such resources so that they don't lose that access",
+          "description": "The character has access to the resources of their entire community. In most cases, they must be careful about how they use such resources so that they don't lose that access.",
           "restriction": "",
           "rarity": ""
         },
@@ -88,7 +88,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "The character can infect a target with a disease, which muy be chosen along with the trait. Examples include: Brood implantation, Techno-Organic virus, Transmode virus. See the Infected condition (X-Men expansion p 139) for details about how Infection works, and the Infections and Possessions section (p: 146) for the effects of the above diseases."
+          "description": "The character can infect a target with a disease, which must be chosen along with the trait. Examples include: Brood implantation, Techno-Organic virus, Transmode virus. See the infected condition for details about how infection works, and the Infections and Possessions section (p146) for the effects of the above diseases."
         },
         "flags": {},
         "effects": [],

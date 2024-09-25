@@ -3,9 +3,9 @@
   "name": "Alien",
   "type": "origin",
   "system": {
-    "description": "The character is not human and probably not from Earth or at least Earth-616. The Marvel Multiverse features all sorts of different alien races. The most common of these-Kree, Skrulls and so on—have their own entries. If the character doesn't fit one of those, then this origin applies.",
-    "examples": "Devil Dinosaur, Gamara, Groot, Rocket Raccoon.",
-    "suggestedOccupation": "Outsider",
+    "description": "The character is not human and probably not from Earth or at least Earth-616. The Marvel Multiverse features all sorts of different alien races. The most common of these—Kree, Skrulls and so on—have their own entries. If the character doesn't fit one of those, then this origin applies.",
+    "examples": "Devil Dinosaur, Gamora, Groot, Rocket Raccoon.",
+    "suggestedOccupation": "Outsider.",
     "tags": [
       {
         "_id": "018ec37f-5d6a-756e-bfc3-efb8b07594f6",

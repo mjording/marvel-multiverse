@@ -3,7 +3,7 @@
   "name": "Supernatural",
   "type": "tag",
   "system": {
-    "description": "The character has powers that are magical or based on something magical",
+    "description": "The character has powers that are magical or based on something magical.",
     "restriction": "",
     "rarity": ""
   },

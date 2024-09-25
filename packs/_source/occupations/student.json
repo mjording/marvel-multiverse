@@ -3,8 +3,8 @@
   "name": "Student",
   "type": "occupation",
   "system": {
-    "description": "The character attends school or college on a full-time basis. What they study or fecus on is up to them and their school. Most people start out with this occupation, but once they graduate, they move on to something new. If that happens with your character, you can then select a new occupation to replace this one.",
-    "examples": "Moon Girl, Ms. Marvel (Kamala Khan), Spider-Man (Miles Morales)",
+    "description": "The character attends school or college on a full-time basis. What they study or focus on is up to them and their school. Most people start out with this occupation, but once they graduate, they move on to something new. If that happens with your character, you can then select a new occupation to replace this one.",
+    "examples": "Moon Girl, Ms. Marvel (Kamala Khan), Spider-Man (Miles Morales).",
     "tags": [
       {
         "_id": "c85988d7-df69-4274-870e-4f77da435d8f",
@@ -40,7 +40,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "If the eharacter fails an action check, they gain an edge on the check if they try the same action again en thelr nesxt turn,"
+          "description": "If the character fails an action check, they gain an edge on the check if they try the same action again on their next turn."
         },
         "flags": {},
         "effects": [],

@@ -3,8 +3,8 @@
   "name": "External Awareness",
   "type": "trait",
   "system": {
-    "restriction": "For Externals only",
-    "description": "The character has a telepathic link with all other Externals. This  allows them to know where other Externals are now, and when other Externals are first killed. - Know when an External kills - Telepathically call for other Externals "
+    "restriction": "For Externals only.",
+    "description": "The character has a telepathic link with all other Externals. This allows them to: Know where other Externals are. Know when other Externals are first killed. Know when an External kills another External. Telepathically call for other Externals."
   },
   "flags": {},
   "effects": [],

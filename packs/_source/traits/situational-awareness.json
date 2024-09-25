@@ -4,7 +4,7 @@
   "type": "trait",
   "system": {
     "restriction": "",
-    "description": "The character is trained to always keep an eye out for trouble. They have an edge an initiative checks"
+    "description": "The character is trained to always keep an eye out for trouble. They have an edge on initiative checks."
   },
   "flags": {},
   "effects": [

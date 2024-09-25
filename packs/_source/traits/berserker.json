@@ -4,7 +4,7 @@
   "type": "trait",
   "system": {
     "restriction": "",
-    "description": "The character often loses control of their temper. Any time they take physical damage, they must make an Ego check with a TN equal to the amount of damage done. If they fail, they go berserk and must charge at full speed into combat with the enemy who hurt them. Being berserk gives the character an edge on all close attncks ond adds +2 to their Melee, Resilience and Ego defenses. However, it takes -2 from their Agility defense, and they cannot use ranged weapons.If the character defeats the enemy who hurt them, they must then charge to attack the next closest foe, At the end of the character's turn, they lose 5 Focus. When their Focus is reduced to the point that the character could not voluntarily spend any more Focus—or if there are no enemies in sight—the berserk state automatically ends."
+    "description": "The character often loses control of their temper. Any time they take physical damage, they must make an Ego check with a TN equal to the amount of damage done. If they fail, they go berserk and must charge at full speed into combat with the enemy who hurt them. Being berserk gives the character an edge on all close attacks and adds +2 to their Melee, Resilience and Ego defenses. However, it takes –2 from their Agility defense, and they cannot use ranged weapons. If the character defeats the enemy who hurt them, they must then charge to attack the next closest foe. At the end of the character’s turn, they lose 5 Focus. When their Focus is reduced to the point that the character could not voluntarily spend any more Focus—or if there are no enemies in sight—the berserk state automatically ends."
   },
   "flags": {},
   "effects": [],

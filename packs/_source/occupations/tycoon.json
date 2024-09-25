@@ -3,8 +3,8 @@
   "name": "Tycoon",
   "type": "occupation",
   "system": {
-    "description": "The character is wildly wealthy and well-known. They want for nothing, and they make a splash wherever they go. They get invited to the best parties and let into all the VIP sections",
-    "examples": "Iron Man (Tony Stark), Iron Monger (Obadiah Stane), Mandarin, Sunspot, Wasp (Janet Van Dyne)",
+    "description": "The character is wildly wealthy and well-known. They want for nothing, and they make a splash wherever they go. They get invited to the best parties and let into all the VIP sections.",
+    "examples": "Iron Man (Tony Stark), Iron Monger (Obadiah Stane), Mandarin, Sunspot, Wasp (Janet Van Dyne).",
     "tags": [
       {
         "_id": "cf0de069-0260-45a0-be6d-606b2905a3db",
@@ -26,8 +26,8 @@
         "name": "Connections: Police",
         "type": "trait",
         "system": {
-          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and soon. By making an Egocheck, the character can call an their contact to provide help in the form of clues, informntion or resources, The Narrrator determines the TN of the Ego check based on the favor requested This trait can be selected multiple thmes, using many different types, These include Celebrities, Community, Criminal, Espionage, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on",
-          "restriction": "Police",
+          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and so on. By making an Ego check, the character can call on their contact to provide help in the form of clues, information or resources. The Narrator determines the TN of the Ego check based on the favor requested. This trait can be selected multiple times, using many different types. These include Celebrities, Community, Criminal, Espionage, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on.",
+          "restriction": "Police.",
           "multiple": true
         },
         "flags": {},
@@ -39,7 +39,7 @@
         "name": "Famous",
         "type": "trait",
         "system": {
-          "description": "The character is widely known-at least among a certain group of people or a population. They may be well liked or they may be hated, but either way, they are famous. They have an edge when making an Ego check to persuade someone who thinks favorably of them. They have trouble when making an Ego check to persuade someone who dislikes them. If the character has a secret identity, this trait works for only one of their identities. However, it can be taken multiple times for multiple identities."
+          "description": "The character is widely known—at least among a certain group of people or a population. They may be well-liked or they may be hated, but either way, they are famous. They have an edge when making an Ego check to persuade someone who thinks favorably of them. They have trouble when making an Ego check to persuade someone who dislikes them. If the character has a secret identity, this trait works for only one of their identities. However, it can be taken multiple times for multiple identities."
         },
         "flags": {},
         "effects": [],

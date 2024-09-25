@@ -3,7 +3,7 @@
   "name": "Worshiped",
   "type": "tag",
   "system": {
-    "description": "The character is worshipped by others as a god",
+    "description": "The character is worshipped by others as a god.",
     "restriction": "",
     "rarity": ""
   },

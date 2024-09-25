@@ -3,7 +3,7 @@
   "name": "Mental Health Conditions",
   "type": "tag",
   "system": {
-    "description": "The character has mental health conditions. These might include anxiety, depression, dissociative identity disorder or other conditions",
+    "description": "The character has mental health conditions. These might include anxiety, depression, dissociative identity disorder or other conditions.",
     "restriction": "",
     "rarity": ""
   },

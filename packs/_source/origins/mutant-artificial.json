@@ -3,8 +3,8 @@
   "name": "Mutant: Artificial",
   "type": "origin",
   "system": {
-    "description": "The character's powers spring from DNA manipulation-or a natural, inherent condition-that makes them appear to be a true mutant. They believe themselves to be a mutant, or they did for years. However, they were not born with an X Gene.",
-    "examples": "Deadpool, Mister Sinister, Quicksilver, Scarlet Witch",
+    "description": "The character's powers spring from DNA manipulation—or a natural, inherent condition—that makes them appear to be a true mutant. They believe themselves to be a mutant, or they did for years. However, they were not born with an X-Gene.",
+    "examples": "Deadpool, Mister Sinister, Quicksilver, Scarlet Witch.",
     "suggestedOccupation": "Outsider",
     "tags": [
       {
@@ -25,8 +25,8 @@
         "name": "Mutant Associate",
         "type": "tag",
         "system": {
-          "description": "Much of the public believes-or has believed-the chararter to be a mutant. While this isn't technically true the character is lumped in with other mutants in moat people's minds.",
-          "restriction": "For non mutents or those with the Mutant Artifical origin.",
+          "description": "Much of the public believes—or has believed—the character to be a mutant. While this isn't technically true, the character is lumped in with other mutants in most people's minds.",
+          "restriction": "For non-mutants or those with the Mutant: Artificial origin.",
           "rarity": ""
         },
         "flags": {},

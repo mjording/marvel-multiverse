@@ -3,7 +3,7 @@
   "name": "Monstrous: Werewolf",
   "type": "origin",
   "system": {
-    "description": "The character is afflicted with lycanthropy, a magical disease that causes them to take on the shape of a werewolf during the three nights of the full moon. They can transmit this magical disease to victims of their choosing who survive their attacks When a character becomes a werewolf, they gain the Lunar Transformation and Alternate Form tags. When the character takes on their werewolf form, they go up one rank and gain the rest of the listed tags, traits and powers. They do not gain any additional powers or traits from this bump in rank, but they do gain 5 ability points and add +1 to their damage multiplier. If they have the Heroic tag, they also add 1 to their Karma. When they return to human form, they lose the benefits of their werewolf form. The character can switch forms voluntarily at any point-except during the three nights that the moon is at its fullest. On those nights, while the moon is above the horizon, the character must transform into a werewolf and is ruled by their animal nature. They cannot help but hunt and attack any people or creatures they come across, no matter if they are friend or foe.",
+    "description": "The character is afflicted with lycanthropy, a magical disease that causes them to take on the shape of a werewolf during the three nights of the full moon. They can transmit this magical disease to victims of their choosing who survive their attacks. When a character becomes a werewolf, they gain the Lunar Transformation and Alternate Form tags. When the character takes on their werewolf form, they go up one rank and gain the rest of the listed tags, traits and powers. They do not gain any additional powers or traits from this bump in rank, but they do gain 5 ability points and add +1 to their damage multiplier. If they have the Heroic tag, they also add 1 to their Karma. When they return to human form, they lose the benefits of their werewolf form. The character can switch forms voluntarily at any point—except during the three nights that the moon is at its fullest. On those nights, while the moon is above the horizon, the character must transform into a werewolf and is ruled by their animal nature. They cannot help but hunt and attack any people or creatures they come across, no matter if they are friend or foe.",
     "examples": "Werewolf by Night (Jack Russell), Werewolf by Night (Jake Gomez).",
     "suggestedOccupation": "",
     "tags": [
@@ -39,7 +39,7 @@
         "type": "tag",
         "system": {
           "description": "On the three nights that the moon is at its fullest and while the moon is above the horizon, the character must transform into a werewolf and is ruled by their animal nature. They cannot help but hunt and attack any people or creatures they come across, no matter if they are friend or foe.",
-          "restriction": "For Werewolves only",
+          "restriction": "For werewolves only.",
           "rarity": ""
         },
         "flags": {},
@@ -66,7 +66,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "The character often loses control of their temper. Any time they take physical damage, they must make an Ego check with a TN equal to the amount of damage done. If they fail, they go berserk and must charge at full speed into combat with the enemy who hurt them. Being berserk gives the character an edge on all close attncks ond adds +2 to their Melee, Resilience and Ego defenses. However, it takes -2 from their Agility defense, and they cannot use ranged weapons.If the character defeats the enemy who hurt them, they must then charge to attack the next closest foe, At the end of the character's turn, they lose 5 Focus. When their Focus is reduced to the point that the character could not voluntarily spend any more Focus—or if there are no enemies in sight—the berserk state automatically ends."
+          "description": "The character often loses control of their temper. Any time they take physical damage, they must make an Ego check with a TN equal to the amount of damage done. If they fail, they go berserk and must charge at full speed into combat with the enemy who hurt them. Being berserk gives the character an edge on all close attacks and adds +2 to their Melee, Resilience and Ego defenses. However, it takes –2 from their Agility defense, and they cannot use ranged weapons. If the character defeats the enemy who hurt them, they must then charge to attack the next closest foe. At the end of the character's turn, they lose 5 Focus. When their Focus is reduced to the point that the character could not voluntarily spend any more Focus—or if there are no enemies in sight—the berserk state automatically ends."
         },
         "flags": {},
         "effects": [],
@@ -77,7 +77,7 @@
         "name": "Weakness",
         "type": "trait",
         "system": {
-          "restriction": "Silver",
+          "restriction": "Silver.",
           "description": "The character suffers an unusual amount of harm from certain substances. Any attack made with that substance ignores all inherent damage reduction the character has and cannot be healed by their Healing Factor."
         },
         "flags": {},
@@ -120,7 +120,7 @@
           "duration": "Permanent",
           "range": "",
           "cost": "",
-          "effect": "At the ond of the character’s turn, they regain Health equal to their Resilience, (This works outside of combat too, quickly bringing them back 1o full Health)"
+          "effect": "At the ond of the character's turn, they regain Health equal to their Resilience, (This works outside of combat too, quickly bringing them back 1o full Health)"
         },
         "flags": {},
         "effects": [],

@@ -4,7 +4,7 @@
   "type": "occupation",
   "system": {
     "description": "The character works as a reporter or editor for a news organization. This can range anywhere from the Daily Bugle to TNM (Threats and Menaces). It can also include any sort of reporting, whether TV, radio, newspaper or online.",
-    "examples": " Silk, Spider-Man (Peter Parker), Venom (Eddie Brock).",
+    "examples": "Silk, Spider-Man (Peter Parker), Venom (Eddie Brock).",
     "traits": [
       {
         "_id": "48d39dde-f603-4f55-8a0d-6530efd5a37f",
@@ -23,8 +23,8 @@
         "name": "Connections: Sources",
         "type": "trait",
         "system": {
-          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and soon. By making an Egocheck, the character can call an their contact to provide help in the form of clues, informntion or resources, The Narrrator determines the TN of the Ego check based on the favor requested This trait can be selected multiple thmes, using many different types, These include Celebrities, Community, Criminal, Espionage, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on",
-          "restriction": "Sources",
+          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and so on. By making an Ego check, the character can call on their contact to provide help in the form of clues, information or resources. The Narrator determines the TN of the Ego check based on the favor requested. This trait can be selected multiple times, using many different types. These include Celebrities, Community, Criminal, Espionage, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on.",
+          "restriction": "Sources.",
           "multiple": true
         },
         "flags": {},
@@ -37,7 +37,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "The character knowe how to break news items and pur crem Inte context te craft a story around them. They have an edge on Ego or Logic rolls made when giving their opinion via media."
+          "description": "The character knows how to break news items and put them into context to craft a story around them. They have an edge on Ego or Logic rolls made when giving their opinion via media."
         },
         "flags": {},
         "effects": [],

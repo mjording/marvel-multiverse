@@ -4,7 +4,7 @@
   "type": "trait",
   "system": {
     "restriction": "",
-    "description": "The character suffers direct harm when exposed to a particular substance. They cannot voluntarily enter the same space with it. If they are touched by it, they instantly sufter the damage of a Rank 3 attack roll that automatically succeeds. This continues each turn until they are separated from the substance or are killed or destroyed. Damage caused by Anathema ignores all damage reduction the character has and cannot be healed by their Healing Factor."
+    "description": "The character suffers direct harm when exposed to a particular substance. They cannot voluntarily enter the same space with it. If they are touched by it, they instantly suffer the damage of a Rank 3 attack roll that automatically succeeds. This continues each turn until they are separated from the substance or are killed or destroyed. Damage caused by Anathema ignores all damage reduction the character has and cannot be healed by their Healing Factor."
   },
   "flags": {},
   "effects": [],

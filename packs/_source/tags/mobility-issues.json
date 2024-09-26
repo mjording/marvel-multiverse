@@ -3,7 +3,7 @@
   "name": "Mobility Issues",
   "type": "tag",
   "system": {
-    "description": "The character has mobility issues. This can range from using a cane to using a wheelchair",
+    "description": "The character has mobility issues. This can range from using a cane to using a wheelchair.",
     "restriction": "",
     "rarity": ""
   },

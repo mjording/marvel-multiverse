@@ -4,7 +4,7 @@
   "type": "trait",
   "system": {
     "restriction": "",
-    "description": "The character has an extraordinary origin. This trait can be aelected multiple times, but ench time must be cleared with the Narrator, Take care to make sure that the origins make some kind of sense when combined togather",
+    "description": "The character has an additional origin. This trait can be selected multiple times, but each time must be cleared with the Narrator. Take care to make sure that the origins make some kind of sense when combined together.",
     "multiple": true
   },
   "flags": {},

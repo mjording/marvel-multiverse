@@ -4,7 +4,7 @@
   "type": "origin",
   "system": {
     "description": "The character's powers spring from them being a member of the subspecies Homo superior. They have a latent X-Gene that grants them powers, often triggered at adolescence.",
-    "examples": "Cyclops, Jean Grey, Storm, Walvering (Lopan), Wolverine (Laura Kinney).",
+    "examples": "Cyclops, Jean Grey, Storm, Wolverine (Logan).",
     "suggestedOccupation": "Outsider",
     "tags": [
       {
@@ -25,7 +25,7 @@
         "name": "X-Gene",
         "type": "tag",
         "system": {
-          "description": "The character has mutant genes that cause them to develop super-powers",
+          "description": "The character has mutant genes that cause them to develop super-powers.",
           "restriction": "For mutants only.",
           "rarity": ""
         },

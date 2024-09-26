@@ -3,9 +3,9 @@
   "name": "Alien: Marginalian",
   "type": "origin",
   "system": {
-    "description": "The character is a Marginal, a species of asexually reproducing hermaphrodites who come from Marginalia, a space between universes. They are legless, shaped Iike a green potato with arms, and they get around by means of levitation.",
+    "description": "The character is a Marginal, a species of asexually reproducing hermaphrodites who come from Marginalia, a space between universes. They are legless, shaped like a green potato with arms, and they get around by means of levitation.",
     "examples": "Doop.",
-    "suggestedOccupation": "Outsider",
+    "suggestedOccupation": "Outsider.",
     "tags": [
       {
         "_id": "018ec37f-5d6a-756e-bfc3-efb8b07594f6",
@@ -165,7 +165,7 @@
           "duration": "Permanent",
           "range": "",
           "cost": "",
-          "effect": "At the ond of the character’s turn, they regain Health equal to their Resilience, (This works outside of combat too, quickly bringing them back 1o full Health)"
+          "effect": "At the ond of the character's turn, they regain Health equal to their Resilience, (This works outside of combat too, quickly bringing them back 1o full Health)"
         },
         "flags": {},
         "effects": [],
@@ -269,7 +269,7 @@
         "name": "Uncanny 2",
         "type": "power",
         "system": {
-          "description": "The character’s mind isprotected as ifby steel.",
+          "description": "The character's mind isprotected as ifby steel.",
           "powerSet": "Basic",
           "prerequisites": "Uncanny 1, Rank 2",
           "action": "",

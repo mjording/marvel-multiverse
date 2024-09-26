@@ -3,8 +3,8 @@
   "name": "Arokkii",
   "type": "tag",
   "system": {
-    "description": "The character hails from Arakka which was once part of the same island as Krakoa before it was severed and went into the dark dimension of Amenth. Arakko has since returned to the regular world and been transplanted onto a terraformed Mars. Arakkii society emphasizes independence. Arakkii do not accept help from others and often settle disputes by means of formal duels. They refuse to allow the Five to resurrect them.",
-    "restriction": " For mutants only",
+    "description": "The character hails from Arakko, which was once part of the same island as Krakoa before it was severed and sent into the dark dimension of Amenth. Arakko has since returned to the regular world and been transplanted onto a terraformed Mars. Arakkii society emphasizes independence. Arakkii do not accept help from others and often settle disputes by means of formal duels. They refuse to allow the Five to resurrect them.",
+    "restriction": "For mutants only.",
     "rarity": ""
   },
   "flags": {},

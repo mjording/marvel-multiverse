@@ -4,7 +4,7 @@
   "type": "trait",
   "system": {
     "restriction": "",
-    "description": "The character is known for favoring a particular kind of weapon or attack pewer. They have an edge when making attacks that way. This trait can be taken more than once, but each time must be with a different kind of weapon or attack power"
+    "description": "The character is known for favoring a particular kind of weapon or attack power. They have an edge when making attacks that way. This trait can be taken more than once, but each time must be with a different kind of weapon or attack power."
   },
   "flags": {},
   "effects": [],

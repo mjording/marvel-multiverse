@@ -3,8 +3,8 @@
   "name": "Monstrous: Vampire",
   "type": "origin",
   "system": {
-    "description": "The character was once alive but was embraced by a vampire and has risen from death as a vampire too. They can transmit this magical disease to victims of their choosing. When a character becomes a vampire, they go up one rank and gain the listed tags, traits and powers. They do not gain any additional powers or traits from this bump in rank, but they do gain 3 ability points and add +1 to their damage multiplier. If they have the Heroie tag, they also add 1 to their Karma.The character was once alive but was embraced by a vampire and has risen from death as a vampire too. They can transmit this magical disease to victims of their choosing. When a character becomes a vampire, they go up one rank and gain the listed tags, traits and powers. They do not gain any additional powers or traits from this bump in rank, but they do gain 3 ability points and add +1 to their damage multiplier. If they have the Heroie tag, they also add 1 to their Karma.",
-    "examples": "Baron Blood, Dracula, Blade (half vampire)",
+    "description": "The character was once alive but was embraced by a vampire and has risen from death as a vampire too. They can transmit this magical disease to victims of their choosing. When a character becomes a vampire, they go up one rank and gain the listed tags, traits and powers. They do not gain any additional powers or traits from this bump in rank, but they do gain 5 ability points and add +1 to their damage multiplier. If they have the Heroic tag, they also add 1 to their Karma.",
+    "examples": "Baron Blood, Dracula, Blade (half vampire).",
     "suggestedOccupation": "",
     "tags": [
       {
@@ -25,7 +25,7 @@
         "name": "Deceased",
         "type": "tag",
         "system": {
-          "description": "The character is technically dead-although presumably still able to interact with the rest of the world in some way. They might be a vampire, a ghost, a zombie or even a brain floating in a jar.",
+          "description": "The character is technically dead—although presumably still able to interact with the rest of the world in some way. They might be a vampire, a ghost, a zombie or even a brain floating in a jar.",
           "restriction": "",
           "rarity": ""
         },
@@ -65,8 +65,8 @@
         "name": "Anathema",
         "type": "trait",
         "system": {
-          "restriction": "Garlic/Holy Symbols (including Holy Water)/Sunshine",
-          "description": "The character suffers direct harm when exposed to a particular substance. They cannot voluntarily enter the same space with it. If they are touched by it, they instantly sufter the damage of a Rank 3 attack roll that automatically succeeds. This continues each turn until they are separated from the substance or are killed or destroyed. Damage caused by Anathema ignores all damage reduction the character has and cannot be healed by their Healing Factor."
+          "restriction": "Garlic/Holy Symbols (including Holy Water)/Sunshine.",
+          "description": "The character suffers direct harm when exposed to a particular substance. They cannot voluntarily enter the same space with it. If they are touched by it, they instantly suffer the damage of a Rank 3 attack roll that automatically succeeds. This continues each turn until they are separated from the substance or are killed or destroyed. Damage caused by Anathema ignores all damage reduction the character has and cannot be healed by their Healing Factor."
         },
         "flags": {},
         "effects": [],
@@ -78,7 +78,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "The character likes hurting people-even killing them. After they knock someone unconscious, they must make a Challenging Ego check to keep from continuing to attack them until they're dead. A character with this trait cannot take the Heroic tag."
+          "description": "The character likes hurting people—even killing them. After they knock someone unconscious, they must make a Challenging Ego check to keep from continuing to attack them until they're dead. A character with this trait cannot take the Heroic tag."
         },
         "flags": {},
         "effects": [],
@@ -89,7 +89,7 @@
         "name": "Weakness",
         "type": "trait",
         "system": {
-          "restriction": "Silver, Wood",
+          "restriction": "Silver, Wood.",
           "description": "The character suffers an unusual amount of harm from certain substances. Any attack made with that substance ignores all inherent damage reduction the character has and cannot be healed by their Healing Factor."
         },
         "flags": {},
@@ -153,7 +153,7 @@
           "duration": "Permanent",
           "range": "",
           "cost": "",
-          "effect": "At the ond of the character’s turn, they regain Health equal to their Resilience, (This works outside of combat too, quickly bringing them back 1o full Health)"
+          "effect": "At the ond of the character's turn, they regain Health equal to their Resilience, (This works outside of combat too, quickly bringing them back 1o full Health)"
         },
         "flags": {},
         "effects": [],

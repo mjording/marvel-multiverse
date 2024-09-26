@@ -3,7 +3,7 @@
   "name": "Entertainer",
   "type": "occupation",
   "system": {
-    "description": "The character entertains others for a living. They could be a singer, a dancer, an actor, a musician, a writer, a filmmaker, a speaker or something similar. They aren't shy -- at least when on the job -- and they work hard to both gain an audience and keep them engaged.",
+    "description": "The character entertains others for a living. They could be a singer, a dancer, an actor, a musician, a writer, a filmmaker, a speaker or something similar. They aren't shy—at least when on the job—and they work hard to both gain an audience and keep them engaged.",
     "examples": "Dazzler, Echo, Mysterio, Wonder Man.",
     "traits": [
       {
@@ -11,7 +11,7 @@
         "name": "Famous",
         "type": "trait",
         "system": {
-          "description": "The character is widely known, at least among a certain group of people or a population. They may be well liked or they may be hated, but either way, they are famous. They have an edge when making an Ego check to persuade someone who thinks favorably of them. They have trouble when making an Ego check to persuade someone who dislikes them. If the character has a secret identity, this trait works for only one of their identities. However, it can be taken multiple times for multiple identities."
+          "description": "The character is widely known—at least among a certain group of people or a population. They may be well-liked or they may be hated, but either way, they are famous. They have an edge when making an Ego check to persuade someone who thinks favorably of them. They have trouble when making an Ego check to persuade someone who dislikes them. If the character has a secret identity, this trait works for only one of their identities. However, it can be taken multiple times for multiple identities."
         },
         "flags": {},
         "effects": [],
@@ -22,7 +22,7 @@
         "name": "Public Speaking",
         "type": "trait",
         "system": {
-          "description": "The character knows how to get the attention of a crowd, whether that's at a political rally or in front of a jury or a cinsgroom. They have an edge on Ego checks when attempting to persuade groups."
+          "description": "The character knows how to get the attention of a crowd, whether that's at a political rally or in front of a jury or a classroom. They have an edge on Ego checks when attempting to persuade groups."
         },
         "flags": {},
         "effects": [],

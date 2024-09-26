@@ -3,16 +3,16 @@
   "name": "Alien: Skrull",
   "type": "origin",
   "system": {
-    "description": "The character is a member of the Skrull, a reptilian humanoid race of shape-shifters who formed the interstellar Skrull Empire. In their natural form, they have green skin, red or green eyes, pointed ears and furrowed chins. They sprang from the planet Skrullos in the Andromeda Galaxy. The original Skulls could not shape-shift, but the Celestials experimented on them to form Eternal Skrulls and Deviant Skrulls, much like they did with humans on Earth. The Deviant Skulls became the dominant form of the species, driving the originals to extinction.",
-    "examples": "Hulkling (half Skrull and half Kree), Lyja, Super-Skrull (Ki'rt)",
-    "suggestedOccupation": "Outsider",
+    "description": "The character is a member of the Skrull, a reptilian humanoid race of shape-shifters who formed the interstellar Skrull Empire. In their natural form, they have green skin, red or green eyes, pointed ears and furrowed chins. They sprang from the planet Skrullos in the Andromeda Galaxy. The original Skrulls could not shape-shift, but the Celestials experimented on them to form Eternal Skrulls and Deviant Skrulls, much like they did with humans on Earth. The Deviant Skrulls became the dominant form of the species, driving the originals to extinction.",
+    "examples": "Hulkling (half Skrull and half Kree), Lyja, Super-Skrull (Kl'rt).",
+    "suggestedOccupation": "Outsider.",
     "tags": [
       {
         "_id": "018ec37f-5d6a-756e-bfc3-efb8b07594f6",
         "name": "Alien Heritage",
         "type": "tag",
         "system": {
-          "description": "The character or at least ane of their ancestors- is not from Earth. Pick an allen race that they belong to, If they were not raised on Earth, they should consider taking the Outsider occupation."
+          "description": "The character or at least one of their ancestors is not from Earth. Pick an alien race that they belong to. If they were not raised on Earth, they should consider taking the Outsider occupation."
         },
         "flags": {},
         "effects": [],
@@ -23,7 +23,7 @@
         "name": "Extreme Appearance",
         "type": "tag",
         "system": {
-          "description": "The character looks very different than the average person As a mutant, the character is automatically a citizen of the (wherever they happen to be) and cannot easily hide their island-nation of Krakoa and can travel to and from there identity, When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme Appearance is common.",
+          "description": "The character looks very different than the average person (wherever they happen to be) and cannot easily hide their identity. When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme appearance is common.",
           "rarity": "In their natural form"
         },
         "flags": {},

@@ -5,7 +5,7 @@
   "system": {
     "description": "The character is a member of the Brood, one of the most feared alien species in the galaxy. The Brood are insectoid creatures overseen by Brood Queens who all serve the Empress Brood. The Empress rules the entire Brood population through a hive mind that extends across the universe. Only Brood Queens (including the Empress) can implant a Brood embryo in creatures from other species, which is how the Brood reproduce. Queens prefer to implant embryos in an unconscious host to prevent the host from knowing about it. They often poison the host with their tail stinger and wait for them to fall before implanting the embryo, which neutralizes the poison. If a character is fully taken over by a Brood embryo implanted in them, they automatically gain this origin, along with the Extraordinary Origin trait.",
     "examples": "Broo, Brood Drone, Brood Queen, Empress Brood.",
-    "suggestedOccupation": "Military",
+    "suggestedOccupation": "Military.",
     "tags": [
       {
         "_id": "018ec37f-5d6a-756e-bfc3-efb8b07594f6",
@@ -54,7 +54,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "The character is extremely brave. They have an edge on any action checks required to denl with fear."
+          "description": "The character is extremely brave. They have an edge on any action checks required to deal with fear."
         },
         "flags": {},
         "effects": [],
@@ -65,8 +65,8 @@
         "name": "Hive Mind",
         "type": "trait",
         "system": {
-          "restriction": "For Brood only",
-          "description": "The character has some independence but is connected to others of their kind by a telepathic network with an unlimited range and an unlimited number of members. When orders by the leadet of that network. the character must make an Ego vs TN 18 action check or follow those orders. On a Fantastic success, the character can choose to permanently break free from the network."
+          "restriction": "For Brood only.",
+          "description": "The character has some independence but is connected to others of their kind by a telepathic network with an unlimited range and an unlimited number of members. When given orders by the leader of that network, the character must make an Ego vs. TN 18 action check or follow those orders. On a Fantastic success, the character can choose to permanently break free from the network."
         },
         "flags": {},
         "effects": [],
@@ -78,7 +78,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "The character can infect a target with a disease, which muy be chosen along with the trait. Examples include: Brood implantation, Techno-Organic virus, Transmode virus. See the Infected condition (X-Men expansion p 139) for details about how Infection works, and the Infections and Possessions section (p: 146) for the effects of the above diseases."
+          "description": "The character can infect a target with a disease, which must be chosen along with the trait. Examples include: Brood implantation, Techno-Organic virus, Transmode virus. See the infected condition for details about how infection works, and the Infections and Possessions section (p146) for the effects of the above diseases."
         },
         "flags": {},
         "effects": [],
@@ -90,7 +90,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "When the character uses sharp Melee Weapons powers and gets a Fantastic success, they have the option of causing the target to be poisoned rather then bleeding"
+          "description": "When the character uses sharp Melee Weapons powers and gets a Fantastic success, they have the option of causing a target to be poisoned rather than bleeding."
         },
         "flags": {},
         "effects": [],

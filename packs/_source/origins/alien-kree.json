@@ -4,8 +4,8 @@
   "type": "origin",
   "system": {
     "description": "The character is a member of the Kree, a humanoid race from the planet Hala who formed the interstellar Kree Empire in the region of space known as the Large Magellanic Cloud. They resemble humans but are stronger and tougher. Many of them have blue skin, but a good number of them have pink skin. The air on Hala has much more nitrogen in it, and Kree who are raised in it (or something like it) have a hard time breathing the air on Earth.",
-    "examples": "Captain Marvel (Mae-Vell), Hulkling (half Skrull and half Kree), Magnitron (Yon-Rogp), Ronan the Accuser",
-    "suggestedOccupation": "Outsider",
+    "examples": "Captain Marvel (Mar-Vell), Hulkling (half Skrull and half Kree), Magnitron (Yon-Rogg), Ronan the Accuser.",
+    "suggestedOccupation": "Outsider.",
     "tags": [
       {
         "_id": "018ec37f-5d6a-756e-bfc3-efb8b07594f6",
@@ -41,7 +41,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "The character cannot breathe Earth's air for long, They lose 1 point of Health for every minute they do not have some sort af assistance to allow them to breathe properly"
+          "description": "The character cannot breathe Earth's air for long. They lose 1 point of Health for every minute they do not have some sort of assistance to allow them to breathe properly."
         },
         "flags": {},
         "effects": [],
@@ -53,7 +53,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "The churacter is stronger than regular humans. Treat them as one size bigger for lifting. carrying. swinging and throwing things. (This does not stack with other factors.)"
+          "description": "The character is stronger than regular humans. Treat them as one size bigger for lifting, carrying, swinging and throwing things. (This does not stack with other factors.)"
         },
         "flags": {},
         "effects": [],

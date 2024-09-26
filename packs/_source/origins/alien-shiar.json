@@ -3,16 +3,16 @@
   "name": "Alien: Shi'ar",
   "type": "origin",
   "system": {
-    "description": "The character is a member of the Shi'ar, an avian humanoid race from the planet Chandilar who formed the interstellar Shi'ar Empire in the Shi'ar Galaxy, They resemble humans but are moch stramger and have feathers instead af halr on their heads",
-    "examples": "Adam X, Deathbired, Majestrix Lilandra Heramani",
-    "suggestedOccupation": "Outsider",
+    "description": "The character is a member of the Shi'ar, an avian humanoid race from the planet Chandilar who formed the interstellar Shi'ar Empire in the Shi'ar Galaxy. They resemble humans but are much stronger and have feathers instead of hair on their heads.",
+    "examples": "Adam-X, Deathbird, Majestrix Lilandra Neramani.",
+    "suggestedOccupation": "Outsider.",
     "tags": [
       {
         "_id": "018ec37f-5d6a-756e-bfc3-efb8b07594f6",
         "name": "Alien Heritage",
         "type": "tag",
         "system": {
-          "description": "The character or at least ane of their ancestors- is not from Earth. Pick an allen race that they belong to, If they were not raised on Earth, they should consider taking the Outsider occupation."
+          "description": "The character or at least one of their ancestors is not from Earth. Pick an alien race that they belong to. If they were not raised on Earth, they should consider taking the Outsider occupation."
         },
         "flags": {},
         "effects": [],
@@ -23,7 +23,7 @@
         "name": "Extreme Appearance",
         "type": "tag",
         "system": {
-          "description": "The character looks very different than the average person As a mutant, the character is automatically a citizen of the (wherever they happen to be) and cannot easily hide their island-nation of Krakoa and can travel to and from there identity, When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme Appearance is common.",
+          "description": "The character looks very different than the average person (wherever they happen to be) and cannot easily hide their identity. When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme appearance is common.",
           "rarity": ""
         },
         "flags": {},
@@ -37,7 +37,7 @@
         "name": "Enhanced Physique",
         "type": "trait",
         "system": {
-          "description": "The churacter is stronger than regular humans. Treat them as one size bigger for lifting. carrying. swinging and throwing things. (This does not stack with other factors.)"
+          "description": "The character is stronger than regular humans. Treat them as one size bigger for lifting, carrying, swinging and throwing things. (This does not stack with other factors.)"
         },
         "flags": {},
         "effects": [],

@@ -3,7 +3,7 @@
   "name": "Symbiote",
   "type": "origin",
   "system": {
-    "description": "The character has bonded with one of the Klyntar, a race of alien symbiotes created by the alien god Knull. Most of these creatures on Earth display spiderlike powers. When a character bonds with a symbiote, they go up one rank and gain the listed tags, traits and powers, Any remaining powers they select are often from the Spider-Powers set but do not have to be. Many symbiotes have the Disguise power. If the symbiote is Venom or one of its progeny, Spider-Man (Peter Parker) cannot gain any benefits from his Spider-Sense power against the bonded character.",
+    "description": "The character has bonded with one of the Klyntar, a race of alien symbiotes created by the alien god Knull. Most of these creatures on Earth display spiderlike powers. When a character bonds with a symbiote, they go up one rank and gain the listed tags, traits and powers. Any remaining powers they select are often from the Spider-Powers set but do not have to be. Many symbiotes have the Disguise power. If the symbiote is Venom or one of its progeny, Spider-Man (Peter Parker) cannot gain any benefits from his Spider-Sense power against the bonded character.",
     "examples": "Carnage, Venom (Eddie Brock), Shriek.",
     "suggestedOccupation": "",
     "tags": [],
@@ -14,7 +14,7 @@
         "type": "trait",
         "system": {
           "restriction": "Extreme Heat/Extreme Sonics.",
-          "description": "The character suffers direct harm when exposed to a particular substance. They cannot voluntarily enter the same space with it. If they are touched by it, they instantly sufter the damage of a Rank 3 attack roll that automatically succeeds. This continues each turn until they are separated from the substance or are killed or destroyed. Damage caused by Anathema ignores all damage reduction the character has and cannot be healed by their Healing Factor."
+          "description": "The character suffers direct harm when exposed to a particular substance. They cannot voluntarily enter the same space with it. If they are touched by it, they instantly suffer the damage of a Rank 3 attack roll that automatically succeeds. This continues each turn until they are separated from the substance or are killed or destroyed. Damage caused by Anathema ignores all damage reduction the character has and cannot be healed by their Healing Factor."
         },
         "flags": {},
         "effects": [],

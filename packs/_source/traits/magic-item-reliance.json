@@ -4,7 +4,7 @@
   "type": "trait",
   "system": {
     "restriction": "",
-    "description": "The character relies on a magically empowered item for some or all of their powers. When they take Health damage that would render then unconscious they can instead choose to lose all of their magic-item-related powers and remain conscious with 1 point of Health left. Similarly, if they take Focus damage that would render them demoralized, they can instead choose to lose all of their magic-item-related powers and have 1 point of Focus left. Magic items are notoriously difficult to destroy. They cannot be harmed by most attacks. However, they can be taken away or lost. Many characters would go to great lengths to recover the magic items that grant them powers."
+    "description": "The character relies on a magically empowered item for some or all of their powers. When they take Health damage that would render them unconscious, they can instead choose to lose all of their magic-item–related powers and remain conscious with 1 point of Health left. Similarly, if they take Focus damage that would render them demoralized, they can instead choose to lose all of their magic-item–related powers and have 1 point of Focus left. Magic items are notoriously difficult to destroy. They cannot be harmed by most attacks. However, they can be taken away or lost. Many characters would go to great lengths to recover the magic items that grant them powers."
   },
   "flags": {},
   "effects": [],

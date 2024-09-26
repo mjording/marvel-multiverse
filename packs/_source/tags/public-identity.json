@@ -3,7 +3,7 @@
   "name": "Public Identity",
   "type": "tag",
   "system": {
-    "description": "The character's real identity is known to the public. This can make it easier for them to ask their friends and family—and even strangers-for help. Unfortunately, it also makes it easier for their enemies to find them and even to threaten those same friends and family.",
+    "description": "The character's real identity is known to the public. This can make it easier for them to ask their friends and family—and even strangers—for help. Unfortunately, it also makes it easier for their enemies to find them and even to threaten those same friends and family.",
     "restriction": "",
     "rarity": ""
   },

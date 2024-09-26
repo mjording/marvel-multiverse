@@ -4,7 +4,7 @@
   "type": "trait",
   "system": {
     "restriction": "",
-    "description": "The character rubs people the wrong way. This gives them trouble when trying to make Ego checks to persunde someone to help them out. It gives them an edge when they're trying to make Ego checks to Intimidate someone."
+    "description": "The character rubs people the wrong way. This gives them trouble when trying to make Ego checks to persuade someone to help them out. It gives them an edge when they're trying to make Ego checks to intimidate someone."
   },
   "flags": {},
   "effects": [],

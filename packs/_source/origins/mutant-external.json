@@ -12,8 +12,8 @@
         "name": "Externally Immortal",
         "type": "tag",
         "system": {
-          "description": "The character is nearly imposible to permanently kill. If they die, they are either revived somehow or reincarnated with thetr full memories and then they age quickly til they reach the ags of their first death, at which point they stop aging at all. The only way for an External to permanently die is for another External to kill all the others within a certain period of time and eithes drain their life energies or eat their hearts, which grants the killer the victim's powers. Otherwise they come back again.",
-          "restriction": "For Externals only",
+          "description": "The character has a telepathic link with all other Externals. This allows them to: Know where other Externals are. Know when other Externals are first killed. Know when an External kills another External. Telepathically call for other Externals.",
+          "restriction": "For Externals only.",
           "rarity": ""
         },
         "flags": {},
@@ -38,7 +38,7 @@
         "name": "X-Gene",
         "type": "tag",
         "system": {
-          "description": "The character has mutant genes that cause them to develop super-powers",
+          "description": "The character has mutant genes that cause them to develop super-powers.",
           "restriction": "For mutants only.",
           "rarity": ""
         },

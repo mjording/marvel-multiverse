@@ -3,15 +3,15 @@
   "name": "Educator",
   "type": "occupation",
   "system": {
-    "description": "The character educates others. They might be a grade school teacher, a college professor or some other kind of instructor. They do their best to bring the knowledge they have to other people.",
-    "examples": "Agatha Harkness, Blue Marvel, Professor X",
+    "description": "The character educates others. They might be a grade-school teacher, a college professor or some other kind of instructor. They do their best to bring the knowledge they have to other people.",
+    "examples": "Agatha Harkness, Blue Marvel, Professor X.",
     "traits": [
       {
         "_id": "cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7",
         "name": "Connections",
         "type": "trait",
         "system": {
-          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and soon. By making an Egocheck, the character can call an their contact to provide help in the form of clues, informntion or resources, The Narrrator determines the TN of the Ego check based on the favor requested This trait can be selected multiple thmes, using many different types, These include Celebrities, Community, Criminal, Espionage, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on",
+          "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and so on. By making an Ego check, the character can call on their contact to provide help in the form of clues, information or resources. The Narrator determines the TN of the Ego check based on the favor requested. This trait can be selected multiple times, using many different types. These include Celebrities, Community, Criminal, Espionage, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on.",
           "restriction": "",
           "multiple": true
         },

@@ -3,7 +3,7 @@
   "name": "Heroic",
   "type": "tag",
   "system": {
-    "description": "The character acts heroically. They help people in need, and they do their best not to kill, even with people who might deserve it.",
+    "description": "The character acts heroically. They help people in need, and they do their best not to kill—even with people who might deserve it.",
     "restriction": "The character cannot also be Villainous.",
     "rarity": ""
   },

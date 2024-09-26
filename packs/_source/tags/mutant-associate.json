@@ -3,8 +3,8 @@
   "name": "Mutant Associate",
   "type": "tag",
   "system": {
-    "description": "Much of the public believes-or has believed-the character to be a mutant. While this isn't technically true the character is lumped in with other mutants in moat people's minds.",
-    "restriction": "For non mutants or those with the Mutant Artifical origin.",
+    "description": "Much of the public believes—or has believed—the character to be a mutant. While this isn't technically true, the character is lumped in with other mutants in most people's minds.",
+    "restriction": "For non-mutants or those with the Mutant: Artificial origin.",
     "rarity": ""
   },
   "flags": {},

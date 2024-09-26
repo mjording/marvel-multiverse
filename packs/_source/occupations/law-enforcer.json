@@ -40,7 +40,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "The character knows how to ask the right questions in the Haht way They have an edge on ago or Logic checks made when asking questions."
+          "description": "The character knows how to ask the right questions in the right way. They have an edge on Ego or Logic checks made when asking questions."
         },
         "flags": {},
         "effects": [],
@@ -52,7 +52,7 @@
         "type": "trait",
         "system": {
           "restriction": "",
-          "description": "The character la an expert investigator They have an edge on Vigilance checks to spot clues and on Logic checks related to interpreting clues If they have access to a forensies lab at the time, they gain a second edge on such checks."
+          "description": "The character is an expert investigator, trained in the arts of forensic science. They have an edge on Vigilance checks to spot clues and on Logic (investigation) checks. If they have access to a forensics lab at the time, they can add +2 to such checks."
         },
         "flags": {},
         "effects": [],

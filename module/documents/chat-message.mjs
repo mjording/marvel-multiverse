@@ -347,7 +347,6 @@ export class ChatMessageMarvel extends ChatMessage {
 
     let rollTerm;
     
-    
     if(firstRollTerm instanceof foundry.dice.terms.ParentheticalTerm && firstRollTerm.roll.terms[0] instanceof foundry.dice.terms.PoolTerm){
       rollTerm = firstRollTerm.roll.terms[0];
     } else if (firstRollTerm instanceof foundry.dice.terms.PoolTerm) {
@@ -358,48 +357,55 @@ export class ChatMessageMarvel extends ChatMessage {
     
     const targetRoll = rollTerm.rolls[dieIndex];
     const targetDie = targetRoll.terms[0];
+    const targetIsMarvel = targetDie instanceof game.MarvelMultiverse.dice.MarvelDie
     const formulaReg = /(?<number>\d)d(?<dieType>\d|m).*/;
     const formulaGroups = formulaReg.exec(targetRoll._formula)?.groups;
 
-    const formulaNumber = formulaGroups.number;
     const formulaDie = formulaGroups.dieType;
 
     targetDie.number += 1;
     
     const targetFormula = `${targetDie.number}d${formulaDie}`;
-  
+
     targetRoll._formula = `${targetFormula}${modifier}`;
     
     rollTerm.terms[dieIndex] = targetRoll._formula
 
-    if (!targetDie.modifiers.includes(modifier)) {
-      targetDie.modifiers?.push(modifier) 
-    }
+    targetDie.modifiers = [modifier];
 
+    const oldRollResult = targetDie.results.find((r) => r.active);
+    const oldFantastic = targetIsMarvel && oldRollResult.result === 1;
+    const oldResult = oldRollResult.result === 1 ? 6 : oldRollResult.result;
+    
     const newRoll = new MarvelMultiverseRoll(targetRoll._formula, {...targetRoll.data});
     await newRoll.roll();
 
-    const old_result = targetDie.results.find((r) => r.active).result
+    const newRollResult = newRoll.terms[0].results[0];
+    const newResult = newRollResult.result === 1 ? 6 : newRollResult.result
 
-    targetDie.results.push(newRoll.terms[0].results[0]);
-
-    const resultResults = targetDie.results.map((result) => result.result);
-    
-    let activeResult;
-
-    if ( targetDie instanceof game.MarvelMultiverse.dice.MarvelDie && resultResults.indexOf(1) > -1 ){
-      activeResult = targetDie.results[resultResults.indexOf(modifier === 'kh' ? 1 : Math.max.apply(Math, resultResults))];
+    if (modifier === 'kh') { 
+      if ( oldFantastic || oldResult >= newResult ){
+        newRollResult.active = false;
+        newRollResult.discarded = true;
+      } else if( newResult > oldResult) {
+        oldRollResult.active = false;
+        oldRollResult.discarded = true;
+        newRollResult.active = true;
+        delete newRollResult.discarded;
+      }
     } else {
-      activeResult = targetDie.results[resultResults.indexOf(modifier === 'kh' ? Math.max.apply(Math, resultResults) : Math.min.apply(Math, resultResults))];
+      if ( oldResult <= newResult ){
+        newRollResult.active = false;
+        newRollResult.discarded = true;
+      } else {
+        oldRollResult.active = false;
+        oldRollResult.discarded = true;
+        newRollResult.active = true;
+        delete newRollResult.discarded;
+      }
     }
-    activeResult.active = true;
-    delete activeResult.discarded;
 
-    targetDie.results.filter((r) => r !== activeResult).forEach((result, i) => {
-      result.active = false;
-      result.discarded = true;
-    });
-    
+    targetDie.results.push(newRollResult);
 
     const re = /(\(?{)(\dd\d),(\ddm),(\dd\d)(}.*)/;
 
@@ -417,8 +423,10 @@ export class ChatMessageMarvel extends ChatMessage {
     }
 
     roll._formula = replacedFormula;
-    const resultAct =  targetDie instanceof game.MarvelMultiverse.dice.MarvelDie && resultResults.indexOf(1) > -1 ? 6 : activeResult.result;
-    roll._total = roll.total - old_result + resultAct;
+
+    if ( newRollResult.active ){
+      roll._total = roll.total - oldResult + newResult;
+    }
     
     let update = await roll.toMessage({flavor: flavor}, {create: false});
     update = foundry.utils.mergeObject(chatMessage.toJSON(), update);

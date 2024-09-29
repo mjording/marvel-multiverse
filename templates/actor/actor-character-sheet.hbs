@@ -62,7 +62,7 @@
                 <span>+</span>
                 <div class="mm-damage-addition">
                   {{system.abilities.ego.value}}
-                </div>
+                </div>  
               </li>
               <li>
                 <h6>Logic</h6>
@@ -90,8 +90,12 @@
             <div class="mm-styled-field -flex-relative">
               <label class="mm-styled-label -align-right"><span>Team Maneuver</span></label>
               <div class="mm-styled-input">
-                <!-- Should probably be a dropdown with the ones selectable -->
-                <input type="text" value="Offense" data-dtype="String"/>
+                <select name="system.teamManeuver.maneuverType">
+                  {{selectOptions teamManeuverTypes selected=system.teamManeuver.maneuverType labelAttr="label" blank=""}}
+                </select>
+                <select name="system.teamManeuver.level">
+                  {{selectOptions teamManeuverLevels selected=system.teamManeuver.level}}
+                </select>
               </div>
             </div>
           </div>

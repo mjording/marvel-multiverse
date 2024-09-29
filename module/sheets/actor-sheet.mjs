@@ -66,6 +66,8 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       Object.keys(CONFIG.MARVEL_MULTIVERSE.sizes).map((key) => [key, game.i18n.localize(CONFIG.MARVEL_MULTIVERSE.sizes[key].label)])
     );
 
+    context.teamManeuverTypes = Object.fromEntries(CONFIG.MARVEL_MULTIVERSE.teamManeuvers.map((teamMan) => [teamMan.maneuverType.toLowerCase(), teamMan.maneuverType] ))
+    context.teamManeuverLevels = Object.fromEntries([1,2,3].map((tml) => [tml, tml.toString() ]));
 
     context.elements = Object.fromEntries(Object.keys(CONFIG.MARVEL_MULTIVERSE.elements).map((k) => [k,CONFIG.MARVEL_MULTIVERSE.elements[k].label]));
 
@@ -320,26 +322,21 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
 
       if ( itemData.type === "occupation" ) {
         itemData.system.tags.forEach(async (tag) => {
-          console.log(`occupation: ${itemData.name} has tag ${tag.name}`);
           this._createTag(tag);
         });
         itemData.system.traits.forEach(async (trait) => {
-          console.log(`occupation: ${itemData.trait} has trait ${trait.trait}`);
           this._createTrait(trait);
         });
         // create the occupation
         return super._onDropItemCreate(itemData);
       } else if ( itemData.type === "origin" ) {
         itemData.system.tags.forEach(async (tag) => {
-          console.log(`origin: ${itemData.name} has tag ${tag.name}`);
           this._createTag(tag);
         });
         itemData.system.traits.forEach(async (trait) => {
-          console.log(`origin: ${itemData.name} has trait ${trait.name}`);
           this._createTrait(trait);
         });
         itemData.system.powers.forEach(async (power) => {
-          console.log(`origin: ${itemData.name} has power ${power.name}`);
           let newItemData = {
             name: power.name,
             type: "power",

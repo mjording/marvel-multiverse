@@ -1,5 +1,5 @@
 {
-  "_id": "b69282e6-b8a1-4480-9633-5ddb1accd822",
+  "_id": "a5d45292-52a6-45f7-9c29-452721f623a6",
   "name": "Battle Ready",
   "type": "trait",
   "system": {
@@ -9,7 +9,7 @@
   "flags": {},
   "effects": [
     {
-      "name": "Focus increase",
+      "name": "Extra Focus",
       "img": "icons/svg/aura.svg",
       "duration": {
         "startTime": null,
@@ -22,10 +22,15 @@
       },
       "disabled": false,
       "origin": "Item.a5d45292-52a6-45f7-9c29-452721f623a6",
-      "_id": "a625582e0569771a",
+      "_id": "e2872ee882894756",
       "changes": [
         {
-          "key": "system.focus",
+          "key": "system.focus.max",
+          "mode": 2,
+          "value": 30
+        },
+        {
+          "key": "system.focus.value",
           "mode": 2,
           "value": 30
         }
@@ -35,8 +40,8 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!a5d45292-52a6-45f7-9c29-452721f623a6.a625582e0569771a"
+      "_key": "!items.effects!a5d45292-52a6-45f7-9c29-452721f623a6.e2872ee882894756"
     }
   ],
-  "_key": "!items!b69282e6-b8a1-4480-9633-5ddb1accd822"
+  "_key": "!items!a5d45292-52a6-45f7-9c29-452721f623a6"
 }

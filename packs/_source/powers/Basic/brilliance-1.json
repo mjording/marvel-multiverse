@@ -3,7 +3,7 @@
   "name": "Brilliance 1",
   "type": "power",
   "system": {
-    "description": "The character puts their brain ot work.",
+    "description": "The character puts their brain to work.",
     "powerSet": "Basic",
     "prerequisites": "",
     "action": "",

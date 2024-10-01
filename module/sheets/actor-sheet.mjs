@@ -3,6 +3,7 @@ import {
   prepareActiveEffectCategories,
 } from '../helpers/effects.mjs';
 
+
 /**
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
@@ -212,14 +213,6 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
       //this.actor.rollInitiativeDialog({event: ev});
     });
 
-    html.on('click', '.roll-damage', (ev) => {
-      const row = ev.currentTarget.closest('li');
-      const options = {
-        ability: row.dataset.ability,
-        event: ev
-      }
-      this.actor.rollDamageDialog(options);
-    });
 
     // Drag events for macros.
     if (this.actor.isOwner) {

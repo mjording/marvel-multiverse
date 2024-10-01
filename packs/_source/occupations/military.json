@@ -53,7 +53,7 @@
             },
             "disabled": false,
             "origin": "Item.808b33ee-3105-49bd-8027-d846fc47f730",
-            "_id": "a625582e0569771a",
+            "_id": "80788f0993a845ac",
             "changes": [
               {
                 "key": "system.attributes.init.edge",
@@ -66,7 +66,7 @@
             "statuses": [],
             "flags": {},
             "tint": null,
-            "_key": "!items.effects!808b33ee-3105-49bd-8027-d846fc47f730.a625582e0569771a"
+            "_key": "!items.effects!808b33ee-3105-49bd-8027-d846fc47f730.80788f0993a845ac"
           }
         ],
         "_key": "!items!808b33ee-3105-49bd-8027-d846fc47f730"

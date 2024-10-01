@@ -3,11 +3,11 @@
   "name": "Combat Trickery",
   "type": "power",
   "system": {
-    "description": "The character s a tricky one!",
+    "description": "The character's a tricky one!",
     "powerSet": "Basic",
     "prerequisites": "Rank 2",
     "action": "Reaction",
-    "trigger": "The charncter males an attachk.",
+    "trigger": "The character makes an attack.",
     "duration": "Instant",
     "range": "",
     "cost": "5 focus",

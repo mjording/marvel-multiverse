@@ -3,7 +3,7 @@
   "name": "Brawling",
   "type": "power",
   "system": {
-    "description": "The characier has the moves and |5 hard 1o hit,",
+    "description": "The character has the moves and is hard to hit,",
     "powerSet": "Basic",
     "prerequisites": "",
     "action": "",
@@ -11,7 +11,7 @@
     "duration": "Permanent",
     "range": "",
     "cost": "",
-    "effect": "The characier can use their Melee defense score against Apility attacks too."
+    "effect": "The character can use their Melee defense score against Agility attacks too."
   },
   "flags": {},
   "effects": [],

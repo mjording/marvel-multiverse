@@ -7,7 +7,7 @@
     "examples": "Ant-Man (Scott Lang), Black Cat, Gambit.",
     "tags": [
       {
-        "_id": "98f29093-58a9-423a-9af1-bb04d6e231c3",
+        "_id": "sTOkQnuofMc4Skgd",
         "name": "Streetwise",
         "type": "tag",
         "system": {
@@ -17,10 +17,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!98f29093-58a9-423a-9af1-bb04d6e231c3"
+        "_key": "!items!sTOkQnuofMc4Skgd"
       },
       {
-        "_id": "16b9b183-3707-4eee-b122-eb87611706dc",
+        "_id": "zWTQEAUOQsvcyNd7",
         "name": "Black Market Access",
         "type": "tag",
         "system": {
@@ -30,12 +30,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!16b9b183-3707-4eee-b122-eb87611706dc"
+        "_key": "!items!zWTQEAUOQsvcyNd7"
       }
     ],
     "traits": [
       {
-        "_id": "41faf003-0cc5-4eac-91b7-b4a725e50940",
+        "_id": "XMZ2HTZIlvVRKTSW",
         "name": "Connections: Criminal",
         "type": "trait",
         "system": {
@@ -44,7 +44,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!41faf003-0cc5-4eac-91b7-b4a725e50940"
+        "_key": "!items!XMZ2HTZIlvVRKTSW"
       }
     ]
   },

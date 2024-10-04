@@ -8,7 +8,7 @@
     "suggestedOccupation": "",
     "tags": [
       {
-        "_id": "e5396fe1-8f4b-41b7-8886-be6c645f7e26",
+        "_id": "6fBuya40ZqhFufiD",
         "name": "Supernatural",
         "type": "tag",
         "system": {
@@ -18,10 +18,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!e5396fe1-8f4b-41b7-8886-be6c645f7e26"
+        "_key": "!items!6fBuya40ZqhFufiD"
       },
       {
-        "_id": "1ade8e12-db6f-429a-9c2f-bee4ca08c390",
+        "_id": "KGrn2kq3aS5HdPKf",
         "name": "Worshiped",
         "type": "tag",
         "system": {
@@ -31,12 +31,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!1ade8e12-db6f-429a-9c2f-bee4ca08c390"
+        "_key": "!items!KGrn2kq3aS5HdPKf"
       }
     ],
     "traits": [
       {
-        "_id": "2de68fb5-264d-498e-a94e-aefc619c6e59",
+        "_id": "qXxLcIEUkPZbUG0L",
         "name": "Enhanced Physique",
         "type": "trait",
         "system": {
@@ -45,10 +45,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!2de68fb5-264d-498e-a94e-aefc619c6e59"
+        "_key": "!items!qXxLcIEUkPZbUG0L"
       },
       {
-        "_id": "d6b35402-9d59-4882-9b63-4605ab98add2",
+        "_id": "WaV4TaJMTAODzfzf",
         "name": "God Heritage",
         "type": "trait",
         "system": {
@@ -57,7 +57,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!d6b35402-9d59-4882-9b63-4605ab98add2"
+        "_key": "!items!WaV4TaJMTAODzfzf"
       }
     ]
   },

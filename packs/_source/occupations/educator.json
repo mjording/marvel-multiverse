@@ -7,7 +7,7 @@
     "examples": "Agatha Harkness, Blue Marvel, Professor X.",
     "traits": [
       {
-        "_id": "cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7",
+        "_id": "1C2neohcCRMXkpys",
         "name": "Connections",
         "type": "trait",
         "system": {
@@ -17,10 +17,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7"
+        "_key": "!items!1C2neohcCRMXkpys"
       },
       {
-        "_id": "82b93a41-9b60-4e3b-9153-221acd46073c",
+        "_id": "QoW6vp4t518b0Cyg",
         "name": "Font of Information",
         "type": "trait",
         "system": {
@@ -29,10 +29,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!82b93a41-9b60-4e3b-9153-221acd46073c"
+        "_key": "!items!QoW6vp4t518b0Cyg"
       },
       {
-        "_id": "99bd01b5-807c-44d1-ba46-364f552da175",
+        "_id": "pn4fS9TQYr8IELsd",
         "name": "Presence",
         "type": "trait",
         "system": {
@@ -41,7 +41,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!99bd01b5-807c-44d1-ba46-364f552da175"
+        "_key": "!items!pn4fS9TQYr8IELsd"
       }
     ]
   },

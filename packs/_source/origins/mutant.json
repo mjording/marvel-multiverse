@@ -8,7 +8,7 @@
     "suggestedOccupation": "Outsider",
     "tags": [
       {
-        "_id": "e9eefe0dbdb-d34e-4252-9390-bf9c9c5ed5ef",
+        "_id": "FLj25V9KsgBRGmdT",
         "name": "Hounded",
         "type": "tag",
         "system": {
@@ -18,10 +18,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!e9eefe0dbdb-d34e-4252-9390-bf9c9c5ed5ef"
+        "_key": "!items!FLj25V9KsgBRGmdT"
       },
       {
-        "_id": "27c5a564-fb1b-44de-8e03-7ed2f726fdfc",
+        "_id": "v74c4tbt02uOrI8z",
         "name": "X-Gene",
         "type": "tag",
         "system": {
@@ -31,7 +31,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!27c5a564-fb1b-44de-8e03-7ed2f726fdfc"
+        "_key": "!items!v74c4tbt02uOrI8z"
       }
     ],
     "traits": []

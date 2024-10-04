@@ -281,25 +281,13 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
 
   async _createTrait (traitData) {
     if (!this.actor.items.map((item) => item.name).includes(traitData.name) && !traitData.multiple){
-      let newItemData = {
-        name: traitData.name,
-        type: "trait",
-        data: traitData.system,
-      };
-      await Item.create(newItemData, {parent: this.actor});
-      //super._onDropItemCreate(itemData);
+      super._onDropItemCreate(traitData);
     }
   }
 
   async _createTag (tagData) {
     if (!this.actor.items.map((item) => item.name).includes(tagData.name) && !tagData.multiple){
-      let newItemData = {
-        name: tagData.name,
-        type: "tag",
-        data: tagData.system,
-      };
-      await Item.create(newItemData, {parent: this.actor});
-      // super._onDropItemCreate(itemData);
+      super._onDropItemCreate(tagData);
     }
   }
   
@@ -312,8 +300,8 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
           itemData.system.element = this.actor.system.defaultElement;
         }
       }
-
-      if ( itemData.type === "occupation" ) {
+      
+      if( itemData.type === "occupation" ) {
         itemData.system.tags.forEach(async (tag) => {
           this._createTag(tag);
         });
@@ -342,7 +330,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
         });
         // create the origin
         return super._onDropItemCreate(itemData);
-      } else if (itemData.type === "trait" && ["Big", "Small"].includes(itemData.name)) {
+      }  else if (itemData.type === "trait" && ["Big", "Small"].includes(itemData.name)) {
         this._changeSizeEffect(itemData.name.toLowerCase());
         return super._onDropItemCreate(itemData);
       } else {

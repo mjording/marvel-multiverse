@@ -7,7 +7,7 @@
     "examples": "Dazzler, Echo, Mysterio, Wonder Man.",
     "traits": [
       {
-        "_id": "ddd9cf24-d311-4844-a7e8-537d4952798d",
+        "_id": "58PVeQda5zFxROcb",
         "name": "Famous",
         "type": "trait",
         "system": {
@@ -15,10 +15,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!ddd9cf24-d311-4844-a7e8-537d4952798d"
+        "_key": "!items!58PVeQda5zFxROcb"
       },
       {
-        "_id": "141554d7-5bf2-4e58-bcb4-49316d8e4167",
+        "_id": "MQiwVKYeYAAa6zdm",
         "name": "Public Speaking",
         "type": "trait",
         "system": {
@@ -26,10 +26,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!141554d7-5bf2-4e58-bcb4-49316d8e4167"
+        "_key": "!items!MQiwVKYeYAAa6zdm"
       },
       {
-        "_id": "99bd01b5-807c-44d1-ba46-364f552da175",
+        "_id": "pn4fS9TQYr8IELsd",
         "name": "Presence",
         "type": "trait",
         "system": {
@@ -37,7 +37,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!99bd01b5-807c-44d1-ba46-364f552da175"
+        "_key": "!items!pn4fS9TQYr8IELsd"
       }
     ]
   },

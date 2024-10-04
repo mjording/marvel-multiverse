@@ -8,7 +8,7 @@
     "suggestedOccupation": "Outsider.",
     "tags": [
       {
-        "_id": "e3390c92-5cbc-401f-85dc-f125d8c564b4",
+        "_id": "dOtXmmN3Wrf6LBqV",
         "name": "Amphibious",
         "type": "tag",
         "system": {
@@ -18,10 +18,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!e3390c92-5cbc-401f-85dc-f125d8c564b4"
+        "_key": "!items!dOtXmmN3Wrf6LBqV"
       },
       {
-        "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
+        "_id": "cTYI0iDJwrB7t8Zq",
         "name": "Extreme Appearance",
         "type": "tag",
         "system": {
@@ -31,12 +31,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1"
+        "_key": "!items!cTYI0iDJwrB7t8Zq"
       }
     ],
     "traits": [
       {
-        "_id": "2de68fb5-264d-498e-a94e-aefc619c6e59",
+        "_id": "qXxLcIEUkPZbUG0L",
         "name": "Enhanced Physique",
         "type": "trait",
         "system": {
@@ -45,10 +45,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!2de68fb5-264d-498e-a94e-aefc619c6e59"
+        "_key": "!items!qXxLcIEUkPZbUG0L"
       },
       {
-        "_id": "018ec3a6-bbe2-7302-814b-be2430ddfc95",
+        "_id": "IiJY4qZ22F9RmXxk",
         "name": "Breathe Different",
         "type": "trait",
         "system": {
@@ -57,7 +57,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!018ec3a6-bbe2-7302-814b-be2430ddfc95"
+        "_key": "!items!IiJY4qZ22F9RmXxk"
       }
     ]
   },

@@ -8,7 +8,7 @@
     "suggestedOccupation": "",
     "tags": [
       {
-        "_id": "493a0ea4-a288-4aa8-830a-9cebb9bc7132",
+        "_id": "iVKiXScePf6WCNdi",
         "name": "Alternate Form",
         "type": "tag",
         "system": {
@@ -18,10 +18,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!493a0ea4-a288-4aa8-830a-9cebb9bc7132"
+        "_key": "!items!iVKiXScePf6WCNdi"
       },
       {
-        "_id": "5857841d-893e-44c8-87db-552130519583",
+        "_id": "9gP6PczqLN8w66uM",
         "name": "Deceased",
         "type": "tag",
         "system": {
@@ -31,10 +31,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!5857841d-893e-44c8-87db-552130519583"
+        "_key": "!items!9gP6PczqLN8w66uM"
       },
       {
-        "_id": "4f29efec-5032-4f8c-a419-d6eca3b257ff",
+        "_id": "fBageBmfjQ1mBh1O",
         "name": "Imageless",
         "type": "tag",
         "system": {
@@ -44,12 +44,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!4f29efec-5032-4f8c-a419-d6eca3b257ff"
+        "_key": "!items!fBageBmfjQ1mBh1O"
       }
     ],
     "traits": [
       {
-        "_id": "6b94013d-93e7-4752-ac32-ff8af5b5f205",
+        "_id": "c2B1oku7LKehKv2S",
         "name": "Monster",
         "type": "trait",
         "system": {
@@ -58,10 +58,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!6b94013d-93e7-4752-ac32-ff8af5b5f205"
+        "_key": "!items!c2B1oku7LKehKv2S"
       },
       {
-        "_id": "47f9ba30-cb32-497c-8364-f1db64cd93a5",
+        "_id": "ilcUJqW4kKC8Soul",
         "name": "Anathema",
         "type": "trait",
         "system": {
@@ -70,10 +70,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!47f9ba30-cb32-497c-8364-f1db64cd93a5"
+        "_key": "!items!ilcUJqW4kKC8Soul"
       },
       {
-        "_id": "f5cab7c0-06de-4b0f-ba23-96621697a3f8",
+        "_id": "giaO7vnY7R73bqrr",
         "name": "BloodThirsty",
         "type": "trait",
         "system": {
@@ -82,10 +82,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!f5cab7c0-06de-4b0f-ba23-96621697a3f8"
+        "_key": "!items!giaO7vnY7R73bqrr"
       },
       {
-        "_id": "c11bc885-0552-496c-996e-4c8a33740e6c",
+        "_id": "GWfvcE4vjJit0azi",
         "name": "Weakness",
         "type": "trait",
         "system": {
@@ -94,13 +94,13 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!c11bc885-0552-496c-996e-4c8a33740e6c"
+        "_key": "!items!GWfvcE4vjJit0azi"
       }
     ],
     "Limitation": "Unless the character has another origin, they cannot choose other powers.",
     "powers": [
       {
-        "_id": "9c1b6e71-f0ec-44d7-a4b7-1aab5f3ed7c7",
+        "_id": "qPO9atM8lstQlTpm",
         "name": "Animal Communication",
         "type": "power",
         "system": {
@@ -118,10 +118,10 @@
         "flags": {},
         "effects": [],
         "folder": "9e745fc9dcc37bb2",
-        "_key": "!items!9c1b6e71-f0ec-44d7-a4b7-1aab5f3ed7c7"
+        "_key": "!items!qPO9atM8lstQlTpm"
       },
       {
-        "_id": "acd2fe13-b3ec-4690-a30e-2465dae6d208",
+        "_id": "C6K9GjTNbbTYFQGy",
         "name": "Command",
         "type": "power",
         "system": {
@@ -138,10 +138,10 @@
         "flags": {},
         "effects": [],
         "folder": "9e745fc9dcc37bb2",
-        "_key": "!items!acd2fe13-b3ec-4690-a30e-2465dae6d208"
+        "_key": "!items!C6K9GjTNbbTYFQGy"
       },
       {
-        "_id": "ccce5902-4be6-4b95-9851-216c6471e72f",
+        "_id": "rKtil3qVYx7o61lL",
         "name": "Healing Factor",
         "type": "power",
         "system": {
@@ -158,10 +158,10 @@
         "flags": {},
         "effects": [],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!ccce5902-4be6-4b95-9851-216c6471e72f"
+        "_key": "!items!rKtil3qVYx7o61lL"
       },
       {
-        "_id": "a255833d-3de7-4e65-b63b-afd517222ade",
+        "_id": "g7Wqzpeod6uVHeV1",
         "name": "Leech Life",
         "type": "power",
         "system": {
@@ -178,10 +178,10 @@
         "flags": {},
         "effects": [],
         "folder": "8c23e6cd16b9bb49",
-        "_key": "!items!a255833d-3de7-4e65-b63b-afd517222ade"
+        "_key": "!items!g7Wqzpeod6uVHeV1"
       },
       {
-        "_id": "d82f8686-795a-43bb-b1b8-e5e0cd2ef72f",
+        "_id": "rJ3KMZQWpKUdheWX",
         "name": "Mighty 1",
         "type": "power",
         "system": {
@@ -210,7 +210,7 @@
               "startTurn": null
             },
             "disabled": false,
-            "origin": "Item.d82f8686-795a-43bb-b1b8-e5e0cd2ef72f",
+            "origin": "Item.rJ3KMZQWpKUdheWX",
             "_id": "86a0562a3464b7c1",
             "changes": [
               {
@@ -229,14 +229,14 @@
             "statuses": [],
             "flags": {},
             "tint": null,
-            "_key": "!items.effects!d82f8686-795a-43bb-b1b8-e5e0cd2ef72f.86a0562a3464b7c1"
+            "_key": "!items.effects!rJ3KMZQWpKUdheWX.86a0562a3464b7c1"
           }
         ],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!d82f8686-795a-43bb-b1b8-e5e0cd2ef72f"
+        "_key": "!items!rJ3KMZQWpKUdheWX"
       },
       {
-        "_id": "ff4dd501-3f2c-4561-9d46-a93aa20baf47",
+        "_id": "0bTrKA7ROyGlOte3",
         "name": "Sturdy 2",
         "type": "power",
         "system": {
@@ -265,7 +265,7 @@
               "startTurn": null
             },
             "disabled": false,
-            "origin": "Item.ff4dd501-3f2c-4561-9d46-a93aa20baf47",
+            "origin": "Item.0bTrKA7ROyGlOte3",
             "_id": "9cfacc0270f59b4b",
             "changes": [
               {
@@ -279,14 +279,14 @@
             "statuses": [],
             "flags": {},
             "tint": null,
-            "_key": "!items.effects!ff4dd501-3f2c-4561-9d46-a93aa20baf47.9cfacc0270f59b4b"
+            "_key": "!items.effects!0bTrKA7ROyGlOte3.9cfacc0270f59b4b"
           }
         ],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!ff4dd501-3f2c-4561-9d46-a93aa20baf47"
+        "_key": "!items!0bTrKA7ROyGlOte3"
       },
       {
-        "_id": "c9665c3e-5a01-436b-bad1-bbdf76f08a40",
+        "_id": "YjoiYsdw8NSOmoDn",
         "name": "Telepathic Link",
         "type": "power",
         "system": {
@@ -303,7 +303,7 @@
         "flags": {},
         "effects": [],
         "folder": "9e745fc9dcc37bb2",
-        "_key": "!items!c9665c3e-5a01-436b-bad1-bbdf76f08a40"
+        "_key": "!items!YjoiYsdw8NSOmoDn"
       }
     ]
   },

@@ -8,7 +8,7 @@
     "suggestedOccupation": "",
     "tags": [
       {
-        "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
+        "_id": "cTYI0iDJwrB7t8Zq",
         "name": "Extreme Appearance",
         "type": "tag",
         "system": {
@@ -17,12 +17,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1"
+        "_key": "!items!cTYI0iDJwrB7t8Zq"
       }
     ],
     "traits": [
       {
-        "_id": "67d72599-e0e3-40f3-aa54-bf98b55780cf",
+        "_id": "FpFegyRxkuHv2Uf8",
         "name": "Tech Reliance",
         "type": "trait",
         "system": {
@@ -31,7 +31,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!67d72599-e0e3-40f3-aa54-bf98b55780cf"
+        "_key": "!items!FpFegyRxkuHv2Uf8"
       }
     ]
   },

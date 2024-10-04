@@ -7,7 +7,7 @@
     "examples": "Doc Samson, Doctor Strange, the Night Nurse (Linda Carter), Thor (Jane Foster).",
     "traits": [
       {
-        "_id": "4d6b10f0-3a22-4fe5-8bef-b0ebc85a27bb",
+        "_id": "rWPInpv8FBBqrMIs",
         "name": "Clinician",
         "type": "trait",
         "system": {
@@ -16,10 +16,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!4d6b10f0-3a22-4fe5-8bef-b0ebc85a27bb"
+        "_key": "!items!rWPInpv8FBBqrMIs"
       },
       {
-        "_id": "af56c716-28fe-49e5-b417-6f9987b814ab",
+        "_id": "xe0YGUDxiVWElpHE",
         "name": "First Aid",
         "type": "trait",
         "system": {
@@ -28,7 +28,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!af56c716-28fe-49e5-b417-6f9987b814ab"
+        "_key": "!items!xe0YGUDxiVWElpHE"
       }
     ]
   },

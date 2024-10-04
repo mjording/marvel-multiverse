@@ -8,7 +8,7 @@
     "suggestedOccupation": "",
     "tags": [
       {
-        "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
+        "_id": "cTYI0iDJwrB7t8Zq",
         "name": "Extreme Appearance",
         "type": "tag",
         "system": {
@@ -18,10 +18,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1"
+        "_key": "!items!cTYI0iDJwrB7t8Zq"
       },
       {
-        "_id": "7956b6ab-c0a4-4b5a-846a-b89d801aa6e7",
+        "_id": "YgPPXIuNu4P7SUK4",
         "name": "Green Door",
         "type": "tag",
         "system": {
@@ -31,12 +31,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!7956b6ab-c0a4-4b5a-846a-b89d801aa6e7"
+        "_key": "!items!YgPPXIuNu4P7SUK4"
       }
     ],
     "traits": [
       {
-        "_id": "fa236e49-36dc-45b6-8c2e-e42a512ab454",
+        "_id": "HLRSFq7h3p5W6FYe",
         "name": "Weird",
         "type": "trait",
         "system": {
@@ -45,7 +45,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!fa236e49-36dc-45b6-8c2e-e42a512ab454"
+        "_key": "!items!HLRSFq7h3p5W6FYe"
       }
     ]
   },

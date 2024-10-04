@@ -8,7 +8,7 @@
     "suggestedOccupation": "",
     "tags": [
       {
-        "_id": "6b0aa7d0-5cff-4f83-bc5b-78d308dd782f",
+        "_id": "XU72N4s2vphkgp9o",
         "name": "Sorcerous",
         "type": "tag",
         "system": {
@@ -18,10 +18,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!6b0aa7d0-5cff-4f83-bc5b-78d308dd782f"
+        "_key": "!items!XU72N4s2vphkgp9o"
       },
       {
-        "_id": "e5396fe1-8f4b-41b7-8886-be6c645f7e26",
+        "_id": "6fBuya40ZqhFufiD",
         "name": "Supernatural",
         "type": "tag",
         "system": {
@@ -31,7 +31,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!e5396fe1-8f4b-41b7-8886-be6c645f7e26"
+        "_key": "!items!6fBuya40ZqhFufiD"
       }
     ],
     "traits": []

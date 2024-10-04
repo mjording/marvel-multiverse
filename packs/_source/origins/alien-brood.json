@@ -8,7 +8,7 @@
     "suggestedOccupation": "Military.",
     "tags": [
       {
-        "_id": "018ec37f-5d6a-756e-bfc3-efb8b07594f6",
+        "_id": "q8ee046cEAITCKE0",
         "name": "Alien Heritage",
         "type": "tag",
         "system": {
@@ -18,10 +18,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!018ec37f-5d6a-756e-bfc3-efb8b07594f6"
+        "_key": "!items!q8ee046cEAITCKE0"
       },
       {
-        "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
+        "_id": "cTYI0iDJwrB7t8Zq",
         "name": "Extreme Appearance",
         "type": "tag",
         "system": {
@@ -31,10 +31,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1"
+        "_key": "!items!cTYI0iDJwrB7t8Zq"
       },
       {
-        "_id": "6937209b-663e-47ff-b64a-5b7e82d61f70",
+        "_id": "Yzb2fTZrEvGCJeXt",
         "name": "Villianous",
         "type": "tag",
         "system": {
@@ -44,12 +44,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!6937209b-663e-47ff-b64a-5b7e82d61f70"
+        "_key": "!items!Yzb2fTZrEvGCJeXt"
       }
     ],
     "traits": [
       {
-        "_id": "accf570f-b1fa-47e5-901c-ff7f92a4c8e2",
+        "_id": "pkQjwaw9nlxMuJYj",
         "name": "Fearless",
         "type": "trait",
         "system": {
@@ -58,10 +58,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!accf570f-b1fa-47e5-901c-ff7f92a4c8e2"
+        "_key": "!items!pkQjwaw9nlxMuJYj"
       },
       {
-        "_id": "9c3770e6-ddec-4e10-bd58-3ee7ea473ecb",
+        "_id": "gJ219x3S9A3Laevq",
         "name": "Hive Mind",
         "type": "trait",
         "system": {
@@ -70,10 +70,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!9c3770e6-ddec-4e10-bd58-3ee7ea473ecb"
+        "_key": "!items!gJ219x3S9A3Laevq"
       },
       {
-        "_id": "1fd487cd-04d5-4fed-8c25-a6061d1c8e06",
+        "_id": "9SkJ8HbHTTSP3c6v",
         "name": "Infector",
         "type": "trait",
         "system": {
@@ -82,7 +82,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!1fd487cd-04d5-4fed-8c25-a6061d1c8e06"
+        "_key": "!items!9SkJ8HbHTTSP3c6v"
       },
       {
         "_id": "cc555879c-c114-4f96-9d78-54c38e9768f0",
@@ -99,7 +99,7 @@
     ],
     "powers": [
       {
-        "_id": "817bd137-8c8d-49b5-9ff9-c236837ff093",
+        "_id": "7mzvjkPYY84TPfUG",
         "name": "Additional Limbs",
         "type": "power",
         "system": {
@@ -128,7 +128,7 @@
               "startTurn": null
             },
             "disabled": false,
-            "origin": "Item.817bd137-8c8d-49b5-9ff9-c236837ff093",
+            "origin": "Item.7mzvjkPYY84TPfUG",
             "_id": "a6eaf872deb07f00",
             "changes": [
               {
@@ -147,14 +147,14 @@
             "statuses": [],
             "flags": {},
             "tint": null,
-            "_key": "!items.effects!817bd137-8c8d-49b5-9ff9-c236837ff093.a6eaf872deb07f00"
+            "_key": "!items.effects!7mzvjkPYY84TPfUG.a6eaf872deb07f00"
           }
         ],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!817bd137-8c8d-49b5-9ff9-c236837ff093"
+        "_key": "!items!7mzvjkPYY84TPfUG"
       },
       {
-        "_id": "c13d00e1-967e-464f-8b60-5a8892dc4561",
+        "_id": "v19LX4DaSGCbMfQX",
         "name": "Flight 1",
         "type": "power",
         "system": {
@@ -184,7 +184,7 @@
               "startTurn": null
             },
             "disabled": false,
-            "origin": "Item.c13d00e1-967e-464f-8b60-5a8892dc4561",
+            "origin": "Item.v19LX4DaSGCbMfQX",
             "_id": "8a3f551a15466854",
             "changes": [
               {
@@ -213,14 +213,14 @@
             "statuses": [],
             "flags": {},
             "tint": null,
-            "_key": "!items.effects!c13d00e1-967e-464f-8b60-5a8892dc4561.8a3f551a15466854"
+            "_key": "!items.effects!v19LX4DaSGCbMfQX.8a3f551a15466854"
           }
         ],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!c13d00e1-967e-464f-8b60-5a8892dc4561"
+        "_key": "!items!v19LX4DaSGCbMfQX"
       },
       {
-        "_id": "d82f8686-795a-43bb-b1b8-e5e0cd2ef72f",
+        "_id": "rJ3KMZQWpKUdheWX",
         "name": "Mighty 1",
         "type": "power",
         "system": {
@@ -250,7 +250,7 @@
               "startTurn": null
             },
             "disabled": false,
-            "origin": "Item.d82f8686-795a-43bb-b1b8-e5e0cd2ef72f",
+            "origin": "Item.rJ3KMZQWpKUdheWX",
             "_id": "86a0562a3464b7c1",
             "changes": [
               {
@@ -269,14 +269,14 @@
             "statuses": [],
             "flags": {},
             "tint": null,
-            "_key": "!items.effects!d82f8686-795a-43bb-b1b8-e5e0cd2ef72f.86a0562a3464b7c1"
+            "_key": "!items.effects!rJ3KMZQWpKUdheWX.86a0562a3464b7c1"
           }
         ],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!d82f8686-795a-43bb-b1b8-e5e0cd2ef72f"
+        "_key": "!items!rJ3KMZQWpKUdheWX"
       },
       {
-        "_id": "9519f67f-078a-44ee-8d5f-3ebc86a5eb70",
+        "_id": "vJ6EoOqSeRyh7WpD",
         "name": "Sturdy 1",
         "type": "power",
         "system": {
@@ -306,7 +306,7 @@
               "startTurn": null
             },
             "disabled": false,
-            "origin": "Item.9519f67f-078a-44ee-8d5f-3ebc86a5eb70",
+            "origin": "Item.vJ6EoOqSeRyh7WpD",
             "_id": "88ddbaf40c7ed97b",
             "changes": [
               {
@@ -320,11 +320,11 @@
             "statuses": [],
             "flags": {},
             "tint": null,
-            "_key": "!items.effects!9519f67f-078a-44ee-8d5f-3ebc86a5eb70.88ddbaf40c7ed97b"
+            "_key": "!items.effects!vJ6EoOqSeRyh7WpD.88ddbaf40c7ed97b"
           }
         ],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!9519f67f-078a-44ee-8d5f-3ebc86a5eb70"
+        "_key": "!items!vJ6EoOqSeRyh7WpD"
       }
     ],
     "minimumRank": 2,

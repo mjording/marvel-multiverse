@@ -30,6 +30,17 @@
         flex: 0 0 210px;
       }
     }
+
+    .team-maneuver {
+      select:first-child {
+        width: 9em;
+        float: left;
+      }
+      select:last-child {
+        width: 1em;
+        float: right;
+      }
+    }
   }
 
   .sheet-body {

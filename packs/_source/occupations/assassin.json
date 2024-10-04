@@ -7,7 +7,7 @@
     "examples": "Arcade, Bullseye, Elektra, the Punisher.",
     "tags": [
       {
-        "_id": "98f29093-58a9-423a-9af1-bb04d6e231c3",
+        "_id": "sTOkQnuofMc4Skgd",
         "name": "Streetwise",
         "type": "tag",
         "system": {
@@ -17,10 +17,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!98f29093-58a9-423a-9af1-bb04d6e231c3"
+        "_key": "!items!sTOkQnuofMc4Skgd"
       },
       {
-        "_id": "6937209b-663e-47ff-b64a-5b7e82d61f70",
+        "_id": "Yzb2fTZrEvGCJeXt",
         "name": "Villianous",
         "type": "tag",
         "system": {
@@ -30,12 +30,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!6937209b-663e-47ff-b64a-5b7e82d61f70"
+        "_key": "!items!Yzb2fTZrEvGCJeXt"
       }
     ],
     "traits": [
       {
-        "_id": "cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7",
+        "_id": "1C2neohcCRMXkpys",
         "name": "Connections",
         "type": "trait",
         "system": {
@@ -45,10 +45,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!cb0b53fd-cbb4-4968-ba6b-f4120ff2dbf7"
+        "_key": "!items!1C2neohcCRMXkpys"
       },
       {
-        "_id": "221e47d6-3167-4056-b6e5-798f3cee6b0d",
+        "_id": "FoqLWM0YsAJE3O9D",
         "name": "Signature Attack",
         "type": "trait",
         "system": {
@@ -57,7 +57,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!221e47d6-3167-4056-b6e5-798f3cee6b0d"
+        "_key": "!items!FoqLWM0YsAJE3O9D"
       }
     ]
   },

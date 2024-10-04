@@ -8,7 +8,7 @@
     "suggestedOccupation": "Outsider.",
     "tags": [
       {
-        "_id": "96427e46-6723-4866-83fe-5ce699fee54c",
+        "_id": "iuMUcpODqA9hRHNA",
         "name": "Eternally Immortal",
         "type": "tag",
         "system": {
@@ -18,10 +18,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!96427e46-6723-4866-83fe-5ce699fee54c"
+        "_key": "!items!iuMUcpODqA9hRHNA"
       },
       {
-        "_id": "c191436f-2040-4a02-b505-7559fb2e1899",
+        "_id": "MP6QVO07MZF5M7sz",
         "name": "Mahd Wy'ry",
         "type": "tag",
         "system": {
@@ -31,7 +31,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!c191436f-2040-4a02-b505-7559fb2e1899"
+        "_key": "!items!MP6QVO07MZF5M7sz"
       }
     ],
     "traits": []

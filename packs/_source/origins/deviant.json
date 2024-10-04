@@ -8,7 +8,7 @@
     "suggestedOccupation": "Outsider.",
     "tags": [
       {
-        "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
+        "_id": "cTYI0iDJwrB7t8Zq",
         "name": "Extreme Appearance",
         "type": "tag",
         "system": {
@@ -18,10 +18,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1"
+        "_key": "!items!cTYI0iDJwrB7t8Zq"
       },
       {
-        "_id": "9b4e854e-d228-4200-939c-a82c5970d5db",
+        "_id": "d2WaQos1EtT01G2v",
         "name": "Hunted",
         "type": "tag",
         "system": {
@@ -31,7 +31,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!9b4e854e-d228-4200-939c-a82c5970d5db"
+        "_key": "!items!d2WaQos1EtT01G2v"
       }
     ],
     "traits": []

@@ -7,7 +7,7 @@
     "examples": "Doctor Octopus (Otto Octavius), Hulk (Bruce Banner), Mister Fantastic, Moon Girl.",
     "tags": [
       {
-        "_id": "cfaebe92-146f-4210-93f2-4b6fb5e7aa40",
+        "_id": "6OcqqaksN4HVGE4m",
         "name": "Lab Access",
         "type": "tag",
         "system": {
@@ -17,12 +17,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!cfaebe92-146f-4210-93f2-4b6fb5e7aa40"
+        "_key": "!items!6OcqqaksN4HVGE4m"
       }
     ],
     "traits": [
       {
-        "_id": "ed8a73fd-6302-4297-a850-7440e623951c",
+        "_id": "tOmOxAiCoVa8UnLP",
         "name": "Scientific Expertise",
         "type": "trait",
         "system": {
@@ -30,10 +30,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!ed8a73fd-6302-4297-a850-7440e623951c"
+        "_key": "!items!tOmOxAiCoVa8UnLP"
       },
       {
-        "_id": "2b4a4441-4801-4de7-b0e2-c992b60a1ae5",
+        "_id": "Raclt6WYW5LMpHfP",
         "name": "Inventor",
         "type": "trait",
         "system": {
@@ -41,7 +41,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!2b4a4441-4801-4de7-b0e2-c992b60a1ae5"
+        "_key": "!items!Raclt6WYW5LMpHfP"
       }
     ]
   },

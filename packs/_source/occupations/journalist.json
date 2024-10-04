@@ -7,7 +7,7 @@
     "examples": "Silk, Spider-Man (Peter Parker), Venom (Eddie Brock).",
     "traits": [
       {
-        "_id": "48d39dde-f603-4f55-8a0d-6530efd5a37f",
+        "_id": "NLlOYqvfd6DFU32p",
         "name": "Audience",
         "type": "trait",
         "system": {
@@ -16,10 +16,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!48d39dde-f603-4f55-8a0d-6530efd5a37f"
+        "_key": "!items!NLlOYqvfd6DFU32p"
       },
       {
-        "_id": "d923fd33-9925-4e72-97e3-e350ba4c2ead",
+        "_id": "STshmPa0RzoQ1pra",
         "name": "Connections: Sources",
         "type": "trait",
         "system": {
@@ -29,10 +29,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!d923fd33-9925-4e72-97e3-e350ba4c2ead"
+        "_key": "!items!STshmPa0RzoQ1pra"
       },
       {
-        "_id": "5cec94e6-d898-49de-865e-0e6e2af5d5ca",
+        "_id": "Enp0m1s92XgbRLfE",
         "name": "Pundit",
         "type": "trait",
         "system": {
@@ -41,7 +41,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!5cec94e6-d898-49de-865e-0e6e2af5d5ca"
+        "_key": "!items!Enp0m1s92XgbRLfE"
       }
     ]
   },

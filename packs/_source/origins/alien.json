@@ -8,7 +8,7 @@
     "suggestedOccupation": "Outsider.",
     "tags": [
       {
-        "_id": "018ec37f-5d6a-756e-bfc3-efb8b07594f6",
+        "_id": "q8ee046cEAITCKE0",
         "name": "Alien Heritage",
         "type": "tag",
         "system": {
@@ -18,10 +18,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!018ec37f-5d6a-756e-bfc3-efb8b07594f6"
+        "_key": "!items!q8ee046cEAITCKE0"
       },
       {
-        "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
+        "_id": "cTYI0iDJwrB7t8Zq",
         "name": "Extreme Appearance",
         "type": "tag",
         "system": {
@@ -31,7 +31,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1"
+        "_key": "!items!cTYI0iDJwrB7t8Zq"
       }
     ],
     "traits": []

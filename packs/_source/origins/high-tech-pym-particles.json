@@ -9,7 +9,7 @@
     "tags": [],
     "traits": [
       {
-        "_id": "67d72599-e0e3-40f3-aa54-bf98b55780cf",
+        "_id": "FpFegyRxkuHv2Uf8",
         "name": "Tech Reliance",
         "type": "trait",
         "system": {
@@ -18,12 +18,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!67d72599-e0e3-40f3-aa54-bf98b55780cf"
+        "_key": "!items!FpFegyRxkuHv2Uf8"
       }
     ],
     "powers": [
       {
-        "_id": "d248cfcc-ee47-4db4-94e9-204201203bbd",
+        "_id": "eTaKCWFQoLn5X4lr",
         "name": "Shrink 1",
         "type": "power",
         "system": {
@@ -40,10 +40,10 @@
         "flags": {},
         "effects": [],
         "folder": "b74def8c3ea77646",
-        "_key": "!items!d248cfcc-ee47-4db4-94e9-204201203bbd"
+        "_key": "!items!eTaKCWFQoLn5X4lr"
       },
       {
-        "_id": "ed4e23f2-a323-4999-b9fe-3a724b58afd4",
+        "_id": "szSEXqUgEPxAqMLe",
         "name": "Grow 1",
         "type": "power",
         "system": {
@@ -60,7 +60,7 @@
         "flags": {},
         "effects": [],
         "folder": "b74def8c3ea77646",
-        "_key": "!items!ed4e23f2-a323-4999-b9fe-3a724b58afd4"
+        "_key": "!items!szSEXqUgEPxAqMLe"
       }
     ]
   },

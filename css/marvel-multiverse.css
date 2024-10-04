@@ -1342,6 +1342,14 @@ li.roll-damage {
 .marvel-multiverse.sheet.actor .sheet-header .header-fields .flexrow .flexcol:first-child {
   flex: 0 0 210px;
 }
+.marvel-multiverse.sheet.actor .sheet-header .team-maneuver select:first-child {
+  width: 9em;
+  float: left;
+}
+.marvel-multiverse.sheet.actor .sheet-header .team-maneuver select:last-child {
+  width: 1em;
+  float: right;
+}
 .marvel-multiverse.sheet.actor .sheet-body {
   overflow: hidden;
 }

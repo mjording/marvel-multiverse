@@ -7,7 +7,7 @@
     "examples": "Nick Fury Jr., Human Torch (Jim Hammond), Maria Hill, Photon (Monica Rambeau).",
     "tags": [
       {
-        "_id": "b049f27e-5dcc-4edc-bad8-b9cdf8278979",
+        "_id": "ZAyTxLpKuxalsoJf",
         "name": "Authority",
         "type": "tag",
         "system": {
@@ -17,7 +17,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!b049f27e-5dcc-4edc-bad8-b9cdf8278979"
+        "_key": "!items!ZAyTxLpKuxalsoJf"
       },
       {
         "_id": "2923685c-d460-4d8f-a9d5-21a570f7702f",
@@ -35,7 +35,7 @@
     ],
     "traits": [
       {
-        "_id": "1e9ef04f-7007-41f5-b7f8-3486a1f86e84",
+        "_id": "EFIY2oJioxXysG3S",
         "name": "Interrogation",
         "type": "trait",
         "system": {
@@ -44,10 +44,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!1e9ef04f-7007-41f5-b7f8-3486a1f86e84"
+        "_key": "!items!EFIY2oJioxXysG3S"
       },
       {
-        "_id": "8118ada3-5aa4-43aa-9cdd-1ba3f8ce1008",
+        "_id": "N1xbQL5LqE9Phb6E",
         "name": "Investigation",
         "type": "trait",
         "system": {
@@ -56,7 +56,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!8118ada3-5aa4-43aa-9cdd-1ba3f8ce1008"
+        "_key": "!items!N1xbQL5LqE9Phb6E"
       }
     ]
   },

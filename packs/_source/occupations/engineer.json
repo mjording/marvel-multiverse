@@ -7,7 +7,7 @@
     "examples": "Ghost Rider (Robbie Reyes), Iron Man (Tony Stark), Whiplash.",
     "traits": [
       {
-        "_id": "171b2116-92ca-4944-89dd-3d51b8c879f4",
+        "_id": "GiErnbUbWz3uaaI1",
         "name": "Gearhead",
         "type": "trait",
         "system": {
@@ -16,10 +16,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!171b2116-92ca-4944-89dd-3d51b8c879f4"
+        "_key": "!items!GiErnbUbWz3uaaI1"
       },
       {
-        "_id": "2b4a4441-4801-4de7-b0e2-c992b60a1ae5",
+        "_id": "Raclt6WYW5LMpHfP",
         "name": "Inventor",
         "type": "trait",
         "system": {
@@ -28,12 +28,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!2b4a4441-4801-4de7-b0e2-c992b60a1ae5"
+        "_key": "!items!Raclt6WYW5LMpHfP"
       }
     ],
     "tags": [
       {
-        "_id": "cfaebe92-146f-4210-93f2-4b6fb5e7aa40",
+        "_id": "6OcqqaksN4HVGE4m",
         "name": "Lab Access",
         "type": "tag",
         "system": {
@@ -43,7 +43,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!cfaebe92-146f-4210-93f2-4b6fb5e7aa40"
+        "_key": "!items!6OcqqaksN4HVGE4m"
       }
     ]
   },

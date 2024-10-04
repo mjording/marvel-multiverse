@@ -8,7 +8,7 @@
     "suggestedOccupation": "Outsider.",
     "tags": [
       {
-        "_id": "018ec37f-5d6a-756e-bfc3-efb8b07594f6",
+        "_id": "q8ee046cEAITCKE0",
         "name": "Alien Heritage",
         "type": "tag",
         "system": {
@@ -18,10 +18,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!018ec37f-5d6a-756e-bfc3-efb8b07594f6"
+        "_key": "!items!q8ee046cEAITCKE0"
       },
       {
-        "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
+        "_id": "cTYI0iDJwrB7t8Zq",
         "name": "Extreme Appearance",
         "type": "tag",
         "system": {
@@ -31,12 +31,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1"
+        "_key": "!items!cTYI0iDJwrB7t8Zq"
       }
     ],
     "traits": [
       {
-        "_id": "68c91186-1b07-4185-af53-fc473db163e0",
+        "_id": "zleRKnyc4ULezfDl",
         "name": "Weird",
         "type": "trait",
         "system": {
@@ -45,12 +45,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!68c91186-1b07-4185-af53-fc473db163e0"
+        "_key": "!items!zleRKnyc4ULezfDl"
       }
     ],
     "powers": [
       {
-        "_id": "6fcad11f-dee9-49fa-aa1f-f3e554b1e8ff",
+        "_id": "cbqOfS8gOuXcSTLL",
         "name": "Dimensional Portal",
         "type": "power",
         "system": {
@@ -67,10 +67,10 @@
         "flags": {},
         "effects": [],
         "folder": "882fb16dc4a7430e",
-        "_key": "!items!6fcad11f-dee9-49fa-aa1f-f3e554b1e8ff"
+        "_key": "!items!cbqOfS8gOuXcSTLL"
       },
       {
-        "_id": "53178756-f5ea-41db-8ca3-637f6ed43814",
+        "_id": "2IPM74RkO66nciFw",
         "name": "Dimensional Travel",
         "type": "power",
         "system": {
@@ -87,10 +87,10 @@
         "flags": {},
         "effects": [],
         "folder": "882fb16dc4a7430e",
-        "_key": "!items!53178756-f5ea-41db-8ca3-637f6ed43814"
+        "_key": "!items!2IPM74RkO66nciFw"
       },
       {
-        "_id": "5076a549-8629-4a1d-8e88-62e93121fe9a",
+        "_id": "66uas2LSVtRpd4Rj",
         "name": "Dimensional Travel Other",
         "type": "power",
         "system": {
@@ -109,10 +109,10 @@
         "flags": {},
         "effects": [],
         "folder": "882fb16dc4a7430e",
-        "_key": "!items!5076a549-8629-4a1d-8e88-62e93121fe9a"
+        "_key": "!items!66uas2LSVtRpd4Rj"
       },
       {
-        "_id": "30c0c890-49b3-4250-a753-e7ab8d9e6502",
+        "_id": "zcQmiy8lj7W3DZif",
         "name": "Dimensional Travel Together",
         "type": "power",
         "system": {
@@ -129,10 +129,10 @@
         "flags": {},
         "effects": [],
         "folder": "882fb16dc4a7430e",
-        "_key": "!items!30c0c890-49b3-4250-a753-e7ab8d9e6502"
+        "_key": "!items!zcQmiy8lj7W3DZif"
       },
       {
-        "_id": "0619d982-20ca-4ca0-9fcb-01b2228e5a21",
+        "_id": "xts3noWzBFYlHzo2",
         "name": "Grow 2",
         "type": "power",
         "system": {
@@ -150,10 +150,10 @@
         "flags": {},
         "effects": [],
         "folder": "b74def8c3ea77646",
-        "_key": "!items!0619d982-20ca-4ca0-9fcb-01b2228e5a21"
+        "_key": "!items!xts3noWzBFYlHzo2"
       },
       {
-        "_id": "ccce5902-4be6-4b95-9851-216c6471e72f",
+        "_id": "rKtil3qVYx7o61lL",
         "name": "Healing Factor",
         "type": "power",
         "system": {
@@ -170,10 +170,10 @@
         "flags": {},
         "effects": [],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!ccce5902-4be6-4b95-9851-216c6471e72f"
+        "_key": "!items!rKtil3qVYx7o61lL"
       },
       {
-        "_id": "88e754e8-838c-4d9c-8417-fe9a1b6d686e",
+        "_id": "OIMOCbKEsXI9C8jD",
         "name": "Levitation",
         "type": "power",
         "system": {
@@ -190,10 +190,10 @@
         "flags": {},
         "effects": [],
         "folder": "bac06ccb5a9f2d39",
-        "_key": "!items!88e754e8-838c-4d9c-8417-fe9a1b6d686e"
+        "_key": "!items!OIMOCbKEsXI9C8jD"
       },
       {
-        "_id": "af5e1817-98b9-46f9-9f5e-70dac2407699",
+        "_id": "CwnHlxORX50pOYsV",
         "name": "Shrink 2",
         "type": "power",
         "system": {
@@ -211,10 +211,10 @@
         "flags": {},
         "effects": [],
         "folder": "b74def8c3ea77646",
-        "_key": "!items!af5e1817-98b9-46f9-9f5e-70dac2407699"
+        "_key": "!items!CwnHlxORX50pOYsV"
       },
       {
-        "_id": "8846c6ca-a5a9-4d3b-9e7e-1ca2bb664189",
+        "_id": "8urZ4KiKpv89yDVY",
         "name": "Sturdy 2",
         "type": "power",
         "system": {
@@ -244,7 +244,7 @@
               "startTurn": null
             },
             "disabled": false,
-            "origin": "Item.8846c6ca-a5a9-4d3b-9e7e-1ca2bb664189",
+            "origin": "Item.8urZ4KiKpv89yDVY",
             "_id": "9cfacc0270f59b4b",
             "changes": [
               {
@@ -258,14 +258,14 @@
             "statuses": [],
             "flags": {},
             "tint": null,
-            "_key": "!items.effects!8846c6ca-a5a9-4d3b-9e7e-1ca2bb664189.9cfacc0270f59b4b"
+            "_key": "!items.effects!8urZ4KiKpv89yDVY.9cfacc0270f59b4b"
           }
         ],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!8846c6ca-a5a9-4d3b-9e7e-1ca2bb664189"
+        "_key": "!items!8urZ4KiKpv89yDVY"
       },
       {
-        "_id": "6ca1e80c-e48e-4903-8f59-b49990e9ae47",
+        "_id": "iZJrKmqSwU8vXqIS",
         "name": "Uncanny 2",
         "type": "power",
         "system": {
@@ -295,7 +295,7 @@
               "startTurn": null
             },
             "disabled": false,
-            "origin": "Item.6ca1e80c-e48e-4903-8f59-b49990e9ae47",
+            "origin": "Item.iZJrKmqSwU8vXqIS",
             "_id": "0eb5de0042154018",
             "changes": [
               {
@@ -309,11 +309,11 @@
             "statuses": [],
             "flags": {},
             "tint": null,
-            "_key": "!items.effects!6ca1e80c-e48e-4903-8f59-b49990e9ae47.0eb5de0042154018"
+            "_key": "!items.effects!iZJrKmqSwU8vXqIS.0eb5de0042154018"
           }
         ],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!6ca1e80c-e48e-4903-8f59-b49990e9ae47"
+        "_key": "!items!iZJrKmqSwU8vXqIS"
       }
     ],
     "minimumRank": 3

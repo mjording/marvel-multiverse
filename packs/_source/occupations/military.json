@@ -7,7 +7,7 @@
     "example": "Captain America (Steve Rogers), Captain Marvel (Carol Danvers), War Machine, Wolverine (Logan).",
     "traits": [
       {
-        "_id": "b69282e6-b8a1-4480-9633-5ddb1accd822",
+        "_id": "J9DayS2OSDi76nK3",
         "name": "Battle Ready",
         "type": "trait",
         "system": {
@@ -15,10 +15,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!b69282e6-b8a1-4480-9633-5ddb1accd822"
+        "_key": "!items!J9DayS2OSDi76nK3"
       },
       {
-        "_id": "a8c3d8a4-4718-4b3e-96f1-d68eb7597315",
+        "_id": "GOkmd0KmGboRYqiX",
         "name": "Connections: Military",
         "type": "trait",
         "system": {
@@ -27,10 +27,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!a8c3d8a4-4718-4b3e-96f1-d68eb7597315"
+        "_key": "!items!GOkmd0KmGboRYqiX"
       },
       {
-        "_id": "808b33ee-3105-49bd-8027-d846fc47f730",
+        "_id": "IMbictrWg4k65rJY",
         "name": "Situational Awareness",
         "type": "trait",
         "system": {
@@ -52,7 +52,7 @@
               "startTurn": null
             },
             "disabled": false,
-            "origin": "Item.808b33ee-3105-49bd-8027-d846fc47f730",
+            "origin": "Item.IMbictrWg4k65rJY",
             "_id": "80788f0993a845ac",
             "changes": [
               {
@@ -66,10 +66,10 @@
             "statuses": [],
             "flags": {},
             "tint": null,
-            "_key": "!items.effects!808b33ee-3105-49bd-8027-d846fc47f730.80788f0993a845ac"
+            "_key": "!items.effects!IMbictrWg4k65rJY.80788f0993a845ac"
           }
         ],
-        "_key": "!items!808b33ee-3105-49bd-8027-d846fc47f730"
+        "_key": "!items!IMbictrWg4k65rJY"
       }
     ]
   },

@@ -8,7 +8,7 @@
     "suggestedOccupation": "Outsider.",
     "tags": [
       {
-        "_id": "95b12d2a-935b-40d6-a9a8-3e8031a46229",
+        "_id": "Df3ixqweXZ77mpg0",
         "name": "A.I.",
         "type": "tag",
         "system": {
@@ -18,10 +18,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!95b12d2a-935b-40d6-a9a8-3e8031a46229"
+        "_key": "!items!Df3ixqweXZ77mpg0"
       },
       {
-        "_id": "018ec37f-5d6a-756e-bfc3-efb8b07594f6",
+        "_id": "q8ee046cEAITCKE0",
         "name": "Alien Heritage",
         "type": "tag",
         "system": {
@@ -29,10 +29,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!018ec37f-5d6a-756e-bfc3-efb8b07594f6"
+        "_key": "!items!q8ee046cEAITCKE0"
       },
       {
-        "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
+        "_id": "cTYI0iDJwrB7t8Zq",
         "name": "Extreme Appearance",
         "type": "tag",
         "system": {
@@ -41,10 +41,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1"
+        "_key": "!items!cTYI0iDJwrB7t8Zq"
       },
       {
-        "_id": "bab45de7-1e15-4e1e-b504-0e63696817fd",
+        "_id": "7bggrQuRWLhuUXyW",
         "name": "Powerful",
         "type": "tag",
         "system": {
@@ -54,12 +54,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!bab45de7-1e15-4e1e-b504-0e63696817fd"
+        "_key": "!items!7bggrQuRWLhuUXyW"
       }
     ],
     "traits": [
       {
-        "_id": "51cf3fa0-43b1-4d8f-a4e9-f8ecdb634020",
+        "_id": "LoLixQyN1XUPDTOX",
         "name": "Enduring Constitution",
         "type": "trait",
         "system": {
@@ -68,10 +68,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!51cf3fa0-43b1-4d8f-a4e9-f8ecdb634020"
+        "_key": "!items!LoLixQyN1XUPDTOX"
       },
       {
-        "_id": "8dbad125-860a-43c4-95b9-53154ba7806a",
+        "_id": "GbVoUmZQVxYlKLO9",
         "name": "Fresh Eyes",
         "type": "trait",
         "system": {
@@ -80,10 +80,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!8dbad125-860a-43c4-95b9-53154ba7806a"
+        "_key": "!items!GbVoUmZQVxYlKLO9"
       },
       {
-        "_id": "1fd487cd-04d5-4fed-8c25-a6061d1c8e06",
+        "_id": "9SkJ8HbHTTSP3c6v",
         "name": "Infector",
         "type": "trait",
         "system": {
@@ -92,12 +92,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!1fd487cd-04d5-4fed-8c25-a6061d1c8e06"
+        "_key": "!items!9SkJ8HbHTTSP3c6v"
       }
     ],
     "powers": [
       {
-        "_id": "7aca5e1f-b3b8-4998-8437-136bf240b26a",
+        "_id": "koztrVWDI32IPiQ2",
         "name": "Brain Drain",
         "type": "power",
         "system": {
@@ -118,10 +118,10 @@
         "flags": {},
         "effects": [],
         "folder": "8c23e6cd16b9bb49",
-        "_key": "!items!7aca5e1f-b3b8-4998-8437-136bf240b26a"
+        "_key": "!items!koztrVWDI32IPiQ2"
       },
       {
-        "_id": "018ec3bb-90b5-78a8-b9f3-14ddf0804a50",
+        "_id": "uV1jKFUWY3LzWAkl",
         "name": "Disguise",
         "type": "power",
         "system": {
@@ -138,10 +138,10 @@
         "flags": {},
         "effects": [],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!018ec3bb-90b5-78a8-b9f3-14ddf0804a50"
+        "_key": "!items!uV1jKFUWY3LzWAkl"
       },
       {
-        "_id": "f40a973e-9efc-4283-9131-0bd5458d88ad",
+        "_id": "55JFEkuCOICgpk8i",
         "name": "Environmental Protection",
         "type": "power",
         "system": {
@@ -158,10 +158,10 @@
         "flags": {},
         "effects": [],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!f40a973e-9efc-4283-9131-0bd5458d88ad"
+        "_key": "!items!55JFEkuCOICgpk8i"
       },
       {
-        "_id": "018ec3bf-1d7c-726c-ad05-939de51fc920",
+        "_id": "y9wvLxDeUlbgKfcA",
         "name": "Extended Reach 1",
         "type": "power",
         "system": {
@@ -191,7 +191,7 @@
               "startTurn": null
             },
             "disabled": false,
-            "origin": "Item.018ec3bf-1d7c-726c-ad05-939de51fc920",
+            "origin": "Item.y9wvLxDeUlbgKfcA",
             "_id": "bea1573f91f7ac3a",
             "changes": [
               {
@@ -205,14 +205,14 @@
             "statuses": [],
             "flags": {},
             "tint": null,
-            "_key": "!items.effects!018ec3bf-1d7c-726c-ad05-939de51fc920.bea1573f91f7ac3a"
+            "_key": "!items.effects!y9wvLxDeUlbgKfcA.bea1573f91f7ac3a"
           }
         ],
         "folder": "b660cb39178688a5",
-        "_key": "!items!018ec3bf-1d7c-726c-ad05-939de51fc920"
+        "_key": "!items!y9wvLxDeUlbgKfcA"
       },
       {
-        "_id": "018ec3c3-7940-7d9f-b111-ba59315a2292",
+        "_id": "Cz1imI5LnsmZ7P5v",
         "name": "Flexible Bones 1",
         "type": "power",
         "system": {
@@ -242,7 +242,7 @@
               "startTurn": null
             },
             "disabled": false,
-            "origin": "Item.018ec3c3-7940-7d9f-b111-ba59315a2292",
+            "origin": "Item.Cz1imI5LnsmZ7P5v",
             "_id": "96ae1d4e6e1faf99",
             "changes": [
               {
@@ -256,14 +256,14 @@
             "statuses": [],
             "flags": {},
             "tint": null,
-            "_key": "!items.effects!018ec3c3-7940-7d9f-b111-ba59315a2292.96ae1d4e6e1faf99"
+            "_key": "!items.effects!Cz1imI5LnsmZ7P5v.96ae1d4e6e1faf99"
           }
         ],
         "folder": "b660cb39178688a5",
-        "_key": "!items!018ec3c3-7940-7d9f-b111-ba59315a2292"
+        "_key": "!items!Cz1imI5LnsmZ7P5v"
       },
       {
-        "_id": "a255833d-3de7-4e65-b63b-afd517222ade",
+        "_id": "g7Wqzpeod6uVHeV1",
         "name": "Leech Life",
         "type": "power",
         "system": {
@@ -284,10 +284,10 @@
         "flags": {},
         "effects": [],
         "folder": "8c23e6cd16b9bb49",
-        "_key": "!items!a255833d-3de7-4e65-b63b-afd517222ade"
+        "_key": "!items!g7Wqzpeod6uVHeV1"
       },
       {
-        "_id": "018ec3c5-65a0-732e-ae14-57121bf2593f",
+        "_id": "E2VtGoJbd5TEpwri",
         "name": "Shape-Shift",
         "type": "power",
         "system": {
@@ -304,7 +304,7 @@
         "flags": {},
         "effects": [],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!018ec3c5-65a0-732e-ae14-57121bf2593f"
+        "_key": "!items!E2VtGoJbd5TEpwri"
       }
     ]
   },

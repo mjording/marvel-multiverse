@@ -9,7 +9,7 @@
     "tags": [],
     "traits": [
       {
-        "_id": "47f9ba30-cb32-497c-8364-f1db64cd93a5",
+        "_id": "ilcUJqW4kKC8Soul",
         "name": "Anathema",
         "type": "trait",
         "system": {
@@ -18,12 +18,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!47f9ba30-cb32-497c-8364-f1db64cd93a5"
+        "_key": "!items!ilcUJqW4kKC8Soul"
       }
     ],
     "powers": [
       {
-        "_id": "31563611-7627-477b-9d2f-24008680f6ce",
+        "_id": "yb97VVVc5sEekOAY",
         "name": "Elemental Protection 2",
         "type": "power",
         "system": {
@@ -40,10 +40,10 @@
         "flags": {},
         "effects": [],
         "folder": "a9ecc3931cffa8a5",
-        "_key": "!items!31563611-7627-477b-9d2f-24008680f6ce"
+        "_key": "!items!yb97VVVc5sEekOAY"
       },
       {
-        "_id": "f40a973e-9efc-4283-9131-0bd5458d88ad",
+        "_id": "55JFEkuCOICgpk8i",
         "name": "Environmental Protection",
         "type": "power",
         "system": {
@@ -60,10 +60,10 @@
         "flags": {},
         "effects": [],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!f40a973e-9efc-4283-9131-0bd5458d88ad"
+        "_key": "!items!55JFEkuCOICgpk8i"
       },
       {
-        "_id": "d82f8686-795a-43bb-b1b8-e5e0cd2ef72f",
+        "_id": "rJ3KMZQWpKUdheWX",
         "name": "Mighty 1",
         "type": "power",
         "system": {
@@ -92,7 +92,7 @@
               "startTurn": null
             },
             "disabled": false,
-            "origin": "Item.d82f8686-795a-43bb-b1b8-e5e0cd2ef72f",
+            "origin": "Item.rJ3KMZQWpKUdheWX",
             "_id": "86a0562a3464b7c1",
             "changes": [
               {
@@ -111,11 +111,11 @@
             "statuses": [],
             "flags": {},
             "tint": null,
-            "_key": "!items.effects!d82f8686-795a-43bb-b1b8-e5e0cd2ef72f.86a0562a3464b7c1"
+            "_key": "!items.effects!rJ3KMZQWpKUdheWX.86a0562a3464b7c1"
           }
         ],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!d82f8686-795a-43bb-b1b8-e5e0cd2ef72f"
+        "_key": "!items!rJ3KMZQWpKUdheWX"
       }
     ],
     "limitation": "They should select most of the rest of their powers from the Magic: Demonic and Elemental Control: Hellfire sets. The character should be at least Rank 4. Unless the character has another origin, they cannot choose other powers."

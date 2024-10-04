@@ -8,7 +8,7 @@
     "suggestedOccupation": "",
     "tags": [
       {
-        "_id": "493a0ea4-a288-4aa8-830a-9cebb9bc7132",
+        "_id": "iVKiXScePf6WCNdi",
         "name": "Alternate Form",
         "type": "tag",
         "system": {
@@ -18,10 +18,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!493a0ea4-a288-4aa8-830a-9cebb9bc7132"
+        "_key": "!items!iVKiXScePf6WCNdi"
       },
       {
-        "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
+        "_id": "cTYI0iDJwrB7t8Zq",
         "name": "Extreme Appearance",
         "type": "tag",
         "system": {
@@ -31,10 +31,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1"
+        "_key": "!items!cTYI0iDJwrB7t8Zq"
       },
       {
-        "_id": "36f6eb15-6377-46e9-b0e1-e57fbce3b21e",
+        "_id": "y3HXLx5dcgKdcEw5",
         "name": "Lunar Transformation",
         "type": "tag",
         "system": {
@@ -44,12 +44,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!36f6eb15-6377-46e9-b0e1-e57fbce3b21e"
+        "_key": "!items!y3HXLx5dcgKdcEw5"
       }
     ],
     "traits": [
       {
-        "_id": "6b94013d-93e7-4752-ac32-ff8af5b5f205",
+        "_id": "c2B1oku7LKehKv2S",
         "name": "Monster",
         "type": "trait",
         "system": {
@@ -58,10 +58,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!6b94013d-93e7-4752-ac32-ff8af5b5f205"
+        "_key": "!items!c2B1oku7LKehKv2S"
       },
       {
-        "_id": "12341f76-5473-42f1-862b-93dab48322ac",
+        "_id": "ktYRW4ENrQNViaTy",
         "name": "Berserker",
         "type": "trait",
         "system": {
@@ -70,10 +70,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!12341f76-5473-42f1-862b-93dab48322ac"
+        "_key": "!items!ktYRW4ENrQNViaTy"
       },
       {
-        "_id": "c11bc885-0552-496c-996e-4c8a33740e6c",
+        "_id": "GWfvcE4vjJit0azi",
         "name": "Weakness",
         "type": "trait",
         "system": {
@@ -82,13 +82,13 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!c11bc885-0552-496c-996e-4c8a33740e6c"
+        "_key": "!items!GWfvcE4vjJit0azi"
       }
     ],
     "Limitation": "Unless the character has another origin, they cannot choose other powers.",
     "powers": [
       {
-        "_id": "60333607-8cb3-4cf1-9ea1-d48f96e073ab",
+        "_id": "GimTxYXydif7ILVH",
         "name": "Evasion",
         "type": "power",
         "system": {
@@ -105,10 +105,10 @@
         "flags": {},
         "effects": [],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!60333607-8cb3-4cf1-9ea1-d48f96e073ab"
+        "_key": "!items!GimTxYXydif7ILVH"
       },
       {
-        "_id": "ccce5902-4be6-4b95-9851-216c6471e72f",
+        "_id": "rKtil3qVYx7o61lL",
         "name": "Healing Factor",
         "type": "power",
         "system": {
@@ -125,10 +125,10 @@
         "flags": {},
         "effects": [],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!ccce5902-4be6-4b95-9851-216c6471e72f"
+        "_key": "!items!rKtil3qVYx7o61lL"
       },
       {
-        "_id": "d82f8686-795a-43bb-b1b8-e5e0cd2ef72f",
+        "_id": "rJ3KMZQWpKUdheWX",
         "name": "Mighty 1",
         "type": "power",
         "system": {
@@ -157,7 +157,7 @@
               "startTurn": null
             },
             "disabled": false,
-            "origin": "Item.d82f8686-795a-43bb-b1b8-e5e0cd2ef72f",
+            "origin": "Item.rJ3KMZQWpKUdheWX",
             "_id": "86a0562a3464b7c1",
             "changes": [
               {
@@ -176,14 +176,14 @@
             "statuses": [],
             "flags": {},
             "tint": null,
-            "_key": "!items.effects!d82f8686-795a-43bb-b1b8-e5e0cd2ef72f.86a0562a3464b7c1"
+            "_key": "!items.effects!rJ3KMZQWpKUdheWX.86a0562a3464b7c1"
           }
         ],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!d82f8686-795a-43bb-b1b8-e5e0cd2ef72f"
+        "_key": "!items!rJ3KMZQWpKUdheWX"
       },
       {
-        "_id": "ff4dd501-3f2c-4561-9d46-a93aa20baf47",
+        "_id": "0bTrKA7ROyGlOte3",
         "name": "Sturdy 2",
         "type": "power",
         "system": {
@@ -212,7 +212,7 @@
               "startTurn": null
             },
             "disabled": false,
-            "origin": "Item.ff4dd501-3f2c-4561-9d46-a93aa20baf47",
+            "origin": "Item.0bTrKA7ROyGlOte3",
             "_id": "9cfacc0270f59b4b",
             "changes": [
               {
@@ -226,11 +226,11 @@
             "statuses": [],
             "flags": {},
             "tint": null,
-            "_key": "!items.effects!ff4dd501-3f2c-4561-9d46-a93aa20baf47.9cfacc0270f59b4b"
+            "_key": "!items.effects!0bTrKA7ROyGlOte3.9cfacc0270f59b4b"
           }
         ],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!ff4dd501-3f2c-4561-9d46-a93aa20baf47"
+        "_key": "!items!0bTrKA7ROyGlOte3"
       },
       {
         "_id": "f3dbd8d1-6b67-4f00-a8ba-bee2c6372545",

@@ -7,7 +7,7 @@
     "example": "Groot, Rocket Raccoon, Thor (Odinson).",
     "traits": [
       {
-        "_id": "646ce550-4167-466e-9d7e-d717d9329e2a",
+        "_id": "UR4Kd3dH5xci8gQd",
         "name": "Connections: Outsiders",
         "type": "trait",
         "system": {
@@ -17,10 +17,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!646ce550-4167-466e-9d7e-d717d9329e2a"
+        "_key": "!items!UR4Kd3dH5xci8gQd"
       },
       {
-        "_id": "8dbad125-860a-43c4-95b9-53154ba7806a",
+        "_id": "GbVoUmZQVxYlKLO9",
         "name": "Fresh Eyes",
         "type": "trait",
         "system": {
@@ -29,10 +29,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!8dbad125-860a-43c4-95b9-53154ba7806a"
+        "_key": "!items!GbVoUmZQVxYlKLO9"
       },
       {
-        "_id": "3877ade3-18de-432b-bb8a-24349cefb96b",
+        "_id": "J7IlAeQ4la6xCIBP",
         "name": "Stranger",
         "type": "trait",
         "system": {
@@ -41,7 +41,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!3877ade3-18de-432b-bb8a-24349cefb96b"
+        "_key": "!items!J7IlAeQ4la6xCIBP"
       }
     ]
   },

@@ -8,7 +8,7 @@
     "tags": [],
     "traits": [
       {
-        "_id": "392c6060-d9e5-4cbf-bae9-ef4fba5d9d80",
+        "_id": "edm02ykRGyh00hhp",
         "name": "Dealmaker",
         "type": "trait",
         "system": {
@@ -17,10 +17,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!392c6060-d9e5-4cbf-bae9-ef4fba5d9d80"
+        "_key": "!items!edm02ykRGyh00hhp"
       },
       {
-        "_id": "0f6e398f-e802-49e5-8459-624e42339b3e",
+        "_id": "ayIaypfwQ8LSgZkb",
         "name": "Legal Eagle",
         "type": "trait",
         "system": {
@@ -29,10 +29,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!0f6e398f-e802-49e5-8459-624e42339b3e"
+        "_key": "!items!ayIaypfwQ8LSgZkb"
       },
       {
-        "_id": "141554d7-5bf2-4e58-bcb4-49316d8e4167",
+        "_id": "MQiwVKYeYAAa6zdm",
         "name": "Public Speaking",
         "type": "trait",
         "system": {
@@ -41,7 +41,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!141554d7-5bf2-4e58-bcb4-49316d8e4167"
+        "_key": "!items!MQiwVKYeYAAa6zdm"
       }
     ]
   },

@@ -8,7 +8,7 @@
     "suggestedOccupation": "",
     "tags": [
       {
-        "_id": "e5396fe1-8f4b-41b7-8886-be6c645f7e26",
+        "_id": "6fBuya40ZqhFufiD",
         "name": "Supernatural",
         "type": "tag",
         "system": {
@@ -18,10 +18,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!e5396fe1-8f4b-41b7-8886-be6c645f7e26"
+        "_key": "!items!6fBuya40ZqhFufiD"
       },
       {
-        "_id": "440e49ad-e303-4aff-a554-e2b57df9abfd",
+        "_id": "DZrvxpm8ZDvYARXo",
         "name": "Chaotic",
         "type": "tag",
         "system": {
@@ -31,7 +31,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!440e49ad-e303-4aff-a554-e2b57df9abfd"
+        "_key": "!items!DZrvxpm8ZDvYARXo"
       }
     ],
     "traits": []

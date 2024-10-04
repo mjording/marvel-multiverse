@@ -7,7 +7,7 @@
     "examples": "Cassandra Nova.",
     "traits": [
       {
-        "_id": "6b94013d-93e7-4752-ac32-ff8af5b5f205",
+        "_id": "c2B1oku7LKehKv2S",
         "name": "Monster",
         "type": "trait",
         "system": {
@@ -16,12 +16,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!6b94013d-93e7-4752-ac32-ff8af5b5f205"
+        "_key": "!items!c2B1oku7LKehKv2S"
       }
     ],
     "powers": [
       {
-        "_id": "3ffc0c6f-b2cb-4090-abde-96e808c33342",
+        "_id": "WKHcNDydpNdNoVSj",
         "name": "DNA Manipulation",
         "type": "power",
         "system": {
@@ -38,7 +38,7 @@
         "flags": {},
         "effects": [],
         "folder": "26cb724b2bd54b2e",
-        "_key": "!items!3ffc0c6f-b2cb-4090-abde-96e808c33342"
+        "_key": "!items!WKHcNDydpNdNoVSj"
       }
     ]
   },

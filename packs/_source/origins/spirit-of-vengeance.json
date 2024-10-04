@@ -8,7 +8,7 @@
     "suggestedOccupation": "",
     "tags": [
       {
-        "_id": "493a0ea4-a288-4aa8-830a-9cebb9bc7132",
+        "_id": "iVKiXScePf6WCNdi",
         "name": "Alternate Form",
         "type": "tag",
         "system": {
@@ -18,10 +18,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!493a0ea4-a288-4aa8-830a-9cebb9bc7132"
+        "_key": "!items!iVKiXScePf6WCNdi"
       },
       {
-        "_id": "0b4b0d6d-4813-4942-9773-780f77e3b366",
+        "_id": "mfXxO2r53F9Ix6re",
         "name": "Cursed",
         "type": "tag",
         "system": {
@@ -31,10 +31,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!0b4b0d6d-4813-4942-9773-780f77e3b366"
+        "_key": "!items!mfXxO2r53F9Ix6re"
       },
       {
-        "_id": "e5396fe1-8f4b-41b7-8886-be6c645f7e26",
+        "_id": "6fBuya40ZqhFufiD",
         "name": "Supernatural",
         "type": "tag",
         "system": {
@@ -44,13 +44,13 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!e5396fe1-8f4b-41b7-8886-be6c645f7e26"
+        "_key": "!items!6fBuya40ZqhFufiD"
       }
     ],
     "traits": [],
     "powers": [
       {
-        "_id": "31563611-7627-477b-9d2f-24008680f6ce",
+        "_id": "yb97VVVc5sEekOAY",
         "name": "Elemental Protection 2",
         "type": "power",
         "system": {
@@ -67,10 +67,10 @@
         "flags": {},
         "effects": [],
         "folder": "a9ecc3931cffa8a5",
-        "_key": "!items!31563611-7627-477b-9d2f-24008680f6ce"
+        "_key": "!items!yb97VVVc5sEekOAY"
       },
       {
-        "_id": "f40a973e-9efc-4283-9131-0bd5458d88ad",
+        "_id": "55JFEkuCOICgpk8i",
         "name": "Environmental Protection",
         "type": "power",
         "system": {
@@ -87,10 +87,10 @@
         "flags": {},
         "effects": [],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!f40a973e-9efc-4283-9131-0bd5458d88ad"
+        "_key": "!items!55JFEkuCOICgpk8i"
       },
       {
-        "_id": "ccce5902-4be6-4b95-9851-216c6471e72f",
+        "_id": "rKtil3qVYx7o61lL",
         "name": "Healing Factor",
         "type": "power",
         "system": {
@@ -107,10 +107,10 @@
         "flags": {},
         "effects": [],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!ccce5902-4be6-4b95-9851-216c6471e72f"
+        "_key": "!items!rKtil3qVYx7o61lL"
       },
       {
-        "_id": "a73ffc14-eaac-469d-bc67-4a3bb70289aa",
+        "_id": "2nEDkl95B9AEgBJW",
         "name": "Mighty 2",
         "type": "power",
         "system": {
@@ -139,7 +139,7 @@
               "startTurn": null
             },
             "disabled": false,
-            "origin": "Item.a73ffc14-eaac-469d-bc67-4a3bb70289aa",
+            "origin": "Item.2nEDkl95B9AEgBJW",
             "_id": "a35fd80b6b2cca2c",
             "changes": [
               {
@@ -158,14 +158,14 @@
             "statuses": [],
             "flags": {},
             "tint": null,
-            "_key": "!items.effects!a73ffc14-eaac-469d-bc67-4a3bb70289aa.a35fd80b6b2cca2c"
+            "_key": "!items.effects!2nEDkl95B9AEgBJW.a35fd80b6b2cca2c"
           }
         ],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!a73ffc14-eaac-469d-bc67-4a3bb70289aa"
+        "_key": "!items!2nEDkl95B9AEgBJW"
       },
       {
-        "_id": "a1a206ba-2150-4f8a-be83-314a1fa3ab74",
+        "_id": "GZHCEwpA0varVil4",
         "name": "Hellfire Chains",
         "type": "power",
         "system": {
@@ -182,10 +182,10 @@
         "flags": {},
         "effects": [],
         "folder": "8c23e6cd16b9bb49",
-        "_key": "!items!a1a206ba-2150-4f8a-be83-314a1fa3ab74"
+        "_key": "!items!GZHCEwpA0varVil4"
       },
       {
-        "_id": "97ea19c0-bf19-4107-805a-5e71ebff6cc9",
+        "_id": "aIhFvhibdgr3kjae",
         "name": "Penance Stare",
         "type": "power",
         "system": {
@@ -202,10 +202,10 @@
         "flags": {},
         "effects": [],
         "folder": "8c23e6cd16b9bb49",
-        "_key": "!items!97ea19c0-bf19-4107-805a-5e71ebff6cc9"
+        "_key": "!items!aIhFvhibdgr3kjae"
       },
       {
-        "_id": "03a4c509-164c-4cfc-a448-9b636303f813",
+        "_id": "KsxkGd418QbSZJRa",
         "name": "Possess Vehicle",
         "type": "power",
         "system": {
@@ -222,7 +222,7 @@
         "flags": {},
         "effects": [],
         "folder": "8c23e6cd16b9bb49",
-        "_key": "!items!03a4c509-164c-4cfc-a448-9b636303f813"
+        "_key": "!items!KsxkGd418QbSZJRa"
       }
     ],
     "limitation": "They should select most of the rest of their powers from the Magic: Demonic and Elemental Control: Hellfire sets. The character should be at least Rank 4. Unless the character has another origin, they cannot choose other powers."

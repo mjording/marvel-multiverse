@@ -7,7 +7,7 @@
     "examples": "Iron Man (Tony Stark), Iron Monger (Obadiah Stane), Mandarin, Sunspot, Wasp (Janet Van Dyne).",
     "tags": [
       {
-        "_id": "cf0de069-0260-45a0-be6d-606b2905a3db",
+        "_id": "sF1yUL7n9ewoWbAm",
         "name": "Rich",
         "type": "tag",
         "system": {
@@ -17,12 +17,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!cf0de069-0260-45a0-be6d-606b2905a3db"
+        "_key": "!items!sF1yUL7n9ewoWbAm"
       }
     ],
     "traits": [
       {
-        "_id": "7e688def-7a33-4b89-95b6-35dc77b11ed6",
+        "_id": "1JaM7YojOn0H4TaF",
         "name": "Connections: Police",
         "type": "trait",
         "system": {
@@ -32,10 +32,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!7e688def-7a33-4b89-95b6-35dc77b11ed6"
+        "_key": "!items!1JaM7YojOn0H4TaF"
       },
       {
-        "_id": "ddd9cf24-d311-4844-a7e8-537d4952798d",
+        "_id": "58PVeQda5zFxROcb",
         "name": "Famous",
         "type": "trait",
         "system": {
@@ -43,7 +43,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!ddd9cf24-d311-4844-a7e8-537d4952798d"
+        "_key": "!items!58PVeQda5zFxROcb"
       }
     ]
   },

@@ -7,7 +7,7 @@
     "examples": "Black Bolt, Black Panther (T'Challa), Doctor Doom, Sub-Mariner (Namor), Thor (Odinson).",
     "tags": [
       {
-        "_id": "b049f27e-5dcc-4edc-bad8-b9cdf8278979",
+        "_id": "ZAyTxLpKuxalsoJf",
         "name": "Authority",
         "type": "tag",
         "system": {
@@ -18,10 +18,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!b049f27e-5dcc-4edc-bad8-b9cdf8278979"
+        "_key": "!items!ZAyTxLpKuxalsoJf"
       },
       {
-        "_id": "bab45de7-1e15-4e1e-b504-0e63696817fd",
+        "_id": "7bggrQuRWLhuUXyW",
         "name": "Powerful",
         "type": "tag",
         "system": {
@@ -31,12 +31,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!bab45de7-1e15-4e1e-b504-0e63696817fd"
+        "_key": "!items!7bggrQuRWLhuUXyW"
       }
     ],
     "traits": [
       {
-        "_id": "99bd01b5-807c-44d1-ba46-364f552da175",
+        "_id": "pn4fS9TQYr8IELsd",
         "name": "Presence",
         "type": "trait",
         "system": {
@@ -44,7 +44,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!99bd01b5-807c-44d1-ba46-364f552da175"
+        "_key": "!items!pn4fS9TQYr8IELsd"
       }
     ]
   },

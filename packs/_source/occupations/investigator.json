@@ -7,7 +7,7 @@
     "examples": "Jessica Jones, Misty Knight.",
     "traits": [
       {
-        "_id": "7e688def-7a33-4b89-95b6-35dc77b11ed6",
+        "_id": "1JaM7YojOn0H4TaF",
         "name": "Connections",
         "type": "trait",
         "system": {
@@ -17,10 +17,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!7e688def-7a33-4b89-95b6-35dc77b11ed6"
+        "_key": "!items!1JaM7YojOn0H4TaF"
       },
       {
-        "_id": "1e9ef04f-7007-41f5-b7f8-3486a1f86e84",
+        "_id": "EFIY2oJioxXysG3S",
         "name": "Interrogation",
         "type": "trait",
         "system": {
@@ -29,10 +29,10 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!1e9ef04f-7007-41f5-b7f8-3486a1f86e84"
+        "_key": "!items!EFIY2oJioxXysG3S"
       },
       {
-        "_id": "8118ada3-5aa4-43aa-9cdd-1ba3f8ce1008",
+        "_id": "N1xbQL5LqE9Phb6E",
         "name": "Investigation",
         "type": "trait",
         "system": {
@@ -41,7 +41,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!8118ada3-5aa4-43aa-9cdd-1ba3f8ce1008"
+        "_key": "!items!N1xbQL5LqE9Phb6E"
       }
     ]
   },

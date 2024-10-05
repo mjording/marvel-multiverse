@@ -166,7 +166,7 @@ If either of these conditions are not met on the commit that tag points at, the 
 - The `system.json` file's `download` url must match the expected outcome of the release CI artifact. This should simply be changing version numbers in the url to match the release version.
 
 ```text
-https://github.com/mjording/marvel-multiverse/releases/download/release-1.7.7/marvel-multiverse-1.7.7.zip
+https://github.com/mjording/marvel-multiverse/releases/download/release-1.7.8/marvel-multiverse-1.7.8.zip
                                                      └─ Tag Name ──┘     └─ V ─┘ (version)
 ```
 

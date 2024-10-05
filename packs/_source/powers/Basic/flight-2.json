@@ -44,6 +44,16 @@
           "value": false
         },
         {
+          "key": "system.movement.flight.calc",
+          "mode": 5,
+          "value": "runspeed"
+        },
+        {
+          "key": "system.movement.flight.calc",
+          "mode": 5,
+          "value": "rank"
+        },
+        {
           "key": "system.movement.flight.noncom",
           "mode": 1,
           "value": 50

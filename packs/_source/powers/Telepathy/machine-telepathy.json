@@ -1,7 +1,8 @@
 {
-  "_id": "fd64b20d-001e-4162-bfa8-40fc338e77fb",
+  "_id": "SNtfVa6AmiTOSv9L",
   "name": "Machine Telepathy",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can communicate with machines with their mind.",
     "powerSet": "Telepathy",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e745fc9dcc37bb2",
-  "_key": "!items!fd64b20d-001e-4162-bfa8-40fc338e77fb"
+  "_key": "!items!SNtfVa6AmiTOSv9L"
 }

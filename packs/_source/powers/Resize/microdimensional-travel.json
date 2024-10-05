@@ -1,7 +1,8 @@
 {
-  "_id": "bc4d37b4-0b97-49a3-99f0-315ccd8bebcc",
+  "_id": "UGQBRqF1E9Fu4VLy",
   "name": "Microdimensional Travel",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character shrinks out of the universal",
     "powerSet": "Resize",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "b74def8c3ea77646",
-  "_key": "!items!bc4d37b4-0b97-49a3-99f0-315ccd8bebcc"
+  "_key": "!items!UGQBRqF1E9Fu4VLy"
 }

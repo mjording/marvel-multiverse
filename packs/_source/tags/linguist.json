@@ -1,7 +1,8 @@
 {
-  "_id": "45b607f0-d765-4445-ba92-1c359694d0de",
+  "_id": "G33vnqWbW0zTQZgQ",
   "name": "Linguist",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character is fluent in a language other than their native tongue. This tag can be selected multiple times, once for each language.",
     "restriction": "",
@@ -10,5 +11,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!45b607f0-d765-4445-ba92-1c359694d0de"
+  "_key": "!items!G33vnqWbW0zTQZgQ"
 }

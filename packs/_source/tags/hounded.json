@@ -1,7 +1,8 @@
 {
-  "_id": "e9eefe0dbdb-d34e-4252-9390-bf9c9c5ed5ef",
+  "_id": "Cktq592tZT82Mtoe",
   "name": "Hounded",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character is a member of a group of people who are persecuted for simply being themselves.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!e9eefe0dbdb-d34e-4252-9390-bf9c9c5ed5ef"
+  "_key": "!items!Cktq592tZT82Mtoe"
 }

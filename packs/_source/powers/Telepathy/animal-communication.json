@@ -1,7 +1,8 @@
 {
-  "_id": "9c1b6e71-f0ec-44d7-a4b7-1aab5f3ed7c7",
+  "_id": "jF9aCTHubhJIXwkb",
   "name": "Animal Communication",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can communicate with a type of animal.",
     "powerSet": "Telepathy",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e745fc9dcc37bb2",
-  "_key": "!items!9c1b6e71-f0ec-44d7-a4b7-1aab5f3ed7c7"
+  "_key": "!items!jF9aCTHubhJIXwkb"
 }

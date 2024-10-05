@@ -1,12 +1,13 @@
 {
-  "_id": "49c0e119-1439-48d2-b993-204a67089974",
+  "_id": "LE1gzW9SsUy8kGAt",
   "name": "Skeptical",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character is hard to fool. People lying to them have trouble on their Ego checks to persuade the character of something."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!49c0e119-1439-48d2-b993-204a67089974"
+  "_key": "!items!LE1gzW9SsUy8kGAt"
 }

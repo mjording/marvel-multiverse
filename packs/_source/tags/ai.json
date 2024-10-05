@@ -1,7 +1,8 @@
 {
-  "_id": "95b12d2a-935b-40d6-a9a8-3e8031a46229",
+  "_id": "FHLBF0XAHsPcjJZ1",
   "name": "A.I.",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character possesses an artificial intelligence in a computerized mind. Their digital nature means that copies or backups can be made of their mind and can even be transferred into other compatible forms.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!95b12d2a-935b-40d6-a9a8-3e8031a46229"
+  "_key": "!items!FHLBF0XAHsPcjJZ1"
 }

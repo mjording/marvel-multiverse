@@ -1,7 +1,8 @@
 {
-  "_id": "311869e3-ff11-4a49-9685-3f619772466b",
+  "_id": "5Q8J2vF8khcD5Pev",
   "name": "Magic",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character's powers arise from supernatural means. There are many different traditions within magic, each with their own teachings.",
     "examples": "Clea, Doctor Voodoo (Jericho Drumm), Enchantress.",
@@ -25,5 +26,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!311869e3-ff11-4a49-9685-3f619772466b"
+  "_key": "!items!5Q8J2vF8khcD5Pev"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "db9ee275-12ea-4192-a711-ee8e18b23197",
+  "_id": "TVbUIZRvpwJm2WuY",
   "name": "Multiversal Travel Other",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/portal.svg",
   "system": {
     "description": "The character moves from one universe to another.",
     "powerSet": "Omniversal Travel",
@@ -19,5 +20,5 @@
   "flags": {},
   "effects": [],
   "folder": "882fb16dc4a7430e",
-  "_key": "!items!db9ee275-12ea-4192-a711-ee8e18b23197"
+  "_key": "!items!TVbUIZRvpwJm2WuY"
 }

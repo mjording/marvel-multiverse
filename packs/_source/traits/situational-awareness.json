@@ -1,7 +1,8 @@
 {
-  "_id": "808b33ee-3105-49bd-8027-d846fc47f730",
+  "_id": "YX1AC9Ki6XF4xxx8",
   "name": "Situational Awareness",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character is trained to always keep an eye out for trouble. They have an edge on initiative checks."
@@ -21,7 +22,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.808b33ee-3105-49bd-8027-d846fc47f730",
+      "origin": "Item.YX1AC9Ki6XF4xxx8",
       "_id": "a625582e0569771a",
       "changes": [
         {
@@ -35,8 +36,8 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!808b33ee-3105-49bd-8027-d846fc47f730.a625582e0569771a"
+      "_key": "!items.effects!YX1AC9Ki6XF4xxx8.a625582e0569771a"
     }
   ],
-  "_key": "!items!808b33ee-3105-49bd-8027-d846fc47f730"
+  "_key": "!items!YX1AC9Ki6XF4xxx8"
 }

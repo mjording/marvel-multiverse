@@ -1,7 +1,8 @@
 {
-  "_id": "b7e62609-0acc-4d90-82b7-072247d17021",
+  "_id": "rYtGi1b1KbSc9JP6",
   "name": "Teleport 1",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character teleports someplace else.",
     "powerSet": "Teleportation",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "a7603bf9acca778a",
-  "_key": "!items!b7e62609-0acc-4d90-82b7-072247d17021"
+  "_key": "!items!rYtGi1b1KbSc9JP6"
 }

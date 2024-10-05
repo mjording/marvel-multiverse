@@ -1,7 +1,8 @@
 {
-  "_id": "417fa3d6-1fa5-4f8c-ac39-73c9f4ae58dd",
+  "_id": "KulFXtot4dZZM6aI",
   "name": "Monstrous: Vampire",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character was once alive but was embraced by a vampire and has risen from death as a vampire too. They can transmit this magical disease to victims of their choosing. When a character becomes a vampire, they go up one rank and gain the listed tags, traits and powers. They do not gain any additional powers or traits from this bump in rank, but they do gain 5 ability points and add +1 to their damage multiplier. If they have the Heroic tag, they also add 1 to their Karma.",
     "examples": "Baron Blood, Dracula, Blade (half vampire).",
@@ -309,5 +310,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!417fa3d6-1fa5-4f8c-ac39-73c9f4ae58dd"
+  "_key": "!items!KulFXtot4dZZM6aI"
 }

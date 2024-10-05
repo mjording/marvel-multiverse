@@ -1,7 +1,8 @@
 {
-  "_id": "f3b296a4-66df-4ce9-87b2-303d85331eb4",
+  "_id": "4VONBF8NIzNb7KTd",
   "name": "Webgrabbing",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character snares a foe in a web.",
     "powerSet": "Spider-Powers",
@@ -19,5 +20,5 @@
   "flags": {},
   "effects": [],
   "folder": "a8b9ae895259d5bf",
-  "_key": "!items!f3b296a4-66df-4ce9-87b2-303d85331eb4 "
+  "_key": "!items!4VONBF8NIzNb7KTd "
 }

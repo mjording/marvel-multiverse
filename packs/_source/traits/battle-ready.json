@@ -1,7 +1,8 @@
 {
-  "_id": "a5d45292-52a6-45f7-9c29-452721f623a6",
+  "_id": "AlnpAp5Bl0hhT1T3",
   "name": "Battle Ready",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character is always mentally prepared for any sort of trouble to start. Add +30 Focus."
@@ -21,7 +22,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.a5d45292-52a6-45f7-9c29-452721f623a6",
+      "origin": "Item.AlnpAp5Bl0hhT1T3",
       "_id": "e2872ee882894756",
       "changes": [
         {
@@ -40,8 +41,8 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!a5d45292-52a6-45f7-9c29-452721f623a6.e2872ee882894756"
+      "_key": "!items.effects!AlnpAp5Bl0hhT1T3.e2872ee882894756"
     }
   ],
-  "_key": "!items!a5d45292-52a6-45f7-9c29-452721f623a6"
+  "_key": "!items!AlnpAp5Bl0hhT1T3"
 }

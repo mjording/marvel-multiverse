@@ -1,7 +1,8 @@
 {
-  "_id": "7e688def-7a33-4b89-95b6-35dc77b11ed6",
+  "_id": "35I0bgCgJraUoUd3",
   "name": "Connections: Police",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and so on. By making an Ego check, the character can call on their contact to provide help in the form of clues, information or resources. The Narrator determines the TN of the Ego check based on the favor requested. This trait can be selected multiple times, using many different types. These include Celebrities, Community, Criminal, Espionage, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on.",
     "restriction": "Police.",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!7e688def-7a33-4b89-95b6-35dc77b11ed6"
+  "_key": "!items!35I0bgCgJraUoUd3"
 }

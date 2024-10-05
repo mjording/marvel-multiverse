@@ -1,7 +1,8 @@
 {
-  "_id": "cf6a8c1a-3992-4b40-a56a-964ec714d677",
+  "_id": "JowNvBE3za7LGiV4",
   "name": "Resize Other",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can resize someone they are touching.",
     "powerSet": "Resize",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "b74def8c3ea77646",
-  "_key": "!items!cf6a8c1a-3992-4b40-a56a-964ec714d677"
+  "_key": "!items!JowNvBE3za7LGiV4"
 }

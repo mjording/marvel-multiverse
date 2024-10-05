@@ -1,7 +1,8 @@
 {
-  "_id": "1e62afa4-fdd7-46dd-95b2-11207d969f30",
+  "_id": "5a1NiKj7riqEuMlH",
   "name": "Shield 2",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character's shield protects them like a wall.",
     "powerSet": "Shield Bearer",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.1e62afa4-fdd7-46dd-95b2-11207d969f30",
+      "origin": "Item.5a1NiKj7riqEuMlH",
       "_id": "a0299651f0c224d1",
       "changes": [
         {
@@ -43,9 +44,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!1e62afa4-fdd7-46dd-95b2-11207d969f30.a0299651f0c224d1"
+      "_key": "!items.effects!5a1NiKj7riqEuMlH.a0299651f0c224d1"
     }
   ],
   "folder": "926e8d815f4d3fd7",
-  "_key": "!items!1e62afa4-fdd7-46dd-95b2-11207d969f30"
+  "_key": "!items!5a1NiKj7riqEuMlH"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "6b40255f-2257-4081-9c4a-250076dbb8dd",
+  "_id": "SijZLH7oqfXV2XmU",
   "name": "Supernova",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/four-elements.svg",
   "system": {
     "description": "The character blasts out a massive burst of their element.",
     "powerSet": "Elemental Control",
@@ -21,5 +22,5 @@
   "flags": {},
   "effects": [],
   "folder": "a9ecc3931cffa8a5",
-  "_key": "!items!6b40255f-2257-4081-9c4a-250076dbb8dd"
+  "_key": "!items!SijZLH7oqfXV2XmU"
 }

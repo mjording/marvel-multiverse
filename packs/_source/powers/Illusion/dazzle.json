@@ -1,7 +1,8 @@
 {
-  "_id": "eb514086-b88b-4078-a57f-6431674e0da1",
+  "_id": "g8gZYnqqAaNwBQid",
   "name": "Dazzle",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/illusion.svg",
   "system": {
     "description": "The character blasts a blinding light into the face of their foe.",
     "powerSet": "Illusion",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "ba98409134c2014d",
-  "_key": "!items!eb514086-b88b-4078-a57f-6431674e0da1"
+  "_key": "!items!g8gZYnqqAaNwBQid"
 }

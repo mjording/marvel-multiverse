@@ -1,7 +1,8 @@
 {
-  "_id": "e90b9a84-084e-4479-8627-751287c3f1a2",
+  "_id": "zWE34dh4AKJCFt9M",
   "name": "Vision Issues",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character has trouble seeing that can range from partial to full blindness. This can also include color blindness, astigmatisms and being nearsighted or farsighted.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!e90b9a84-084e-4479-8627-751287c3f1a2"
+  "_key": "!items!zWE34dh4AKJCFt9M"
 }

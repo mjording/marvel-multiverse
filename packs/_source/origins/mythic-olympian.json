@@ -1,7 +1,8 @@
 {
-  "_id": "736faab2-3b37-4e4a-9542-fc430673e258",
+  "_id": "QKzpM7RHuYAZKDhT",
   "name": "Mythic: Olympian",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character is a member of the Olympian people, resembling the gods of Ancient Greece and Rome. They call Olympus their home. The character can be one of the many gods who have been named throughout history, or they can be one of the lesser-known gods of Olympus. They should choose something that they are the god of.",
     "examples": "Ares, Athena, Hercules, Zeus.",
@@ -63,5 +64,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!736faab2-3b37-4e4a-9542-fc430673e258"
+  "_key": "!items!QKzpM7RHuYAZKDhT"
 }

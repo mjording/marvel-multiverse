@@ -1,7 +1,8 @@
 {
-  "_id": "4bebb29f-8046-4c80-bc15-63b3d14b673f",
+  "_id": "mWXeEvjajUtWX39E",
   "name": "Elemental Grab",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/four-elements.svg",
   "system": {
     "description": "The character uses their element to snare a target.",
     "powerSet": "Elemental Control",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "a9ecc3931cffa8a5",
-  "_key": "!items!4bebb29f-8046-4c80-bc15-63b3d14b673f"
+  "_key": "!items!mWXeEvjajUtWX39E"
 }

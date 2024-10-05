@@ -1,7 +1,8 @@
 {
-  "_id": "9f14ec49-0c15-4f4e-abef-e23282e4788a",
+  "_id": "bgubMN6oofdPZVta",
   "name": "High Tech: Battle Suit",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character wears a high-tech suit that grants them powers. When the battle suit is removed, the character no longer has access to the powers it grants. They are entirely—or at least mostly—normal underneath. Most characters with this origin have the Extreme Appearance tag when wearing their battle suit.",
     "examples": "Iron Man (Tony Stark), Ironheart, War Machine.",
@@ -24,5 +25,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!9f14ec49-0c15-4f4e-abef-e23282e4788a"
+  "_key": "!items!bgubMN6oofdPZVta"
 }

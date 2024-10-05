@@ -1,7 +1,8 @@
 {
-  "_id": "018ec3c8-e4ad-782c-b996-6d3b70f915af",
+  "_id": "9XnFJOgVAcoROUip",
   "name": "Slip Free",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/placticity.svg",
   "system": {
     "description": "The character is impossible to restrain.",
     "powerSet": "Plasticity",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "b660cb39178688a5",
-  "_key": "!items!018ec3c8-e4ad-782c-b996-6d3b70f915af"
+  "_key": "!items!9XnFJOgVAcoROUip"
 }

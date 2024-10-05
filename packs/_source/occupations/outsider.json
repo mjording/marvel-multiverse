@@ -1,7 +1,8 @@
 {
-  "_id": "549cc118-c245-47ae-b94d-ee1389bb8cd8",
+  "_id": "N9jAuPT6x5H1SfpU",
   "name": "Outsider",
   "type": "occupation",
+  "img": "systems/marvel-multiverse/icons/work.svg",
   "system": {
     "description": "The character comes from another planet, dimension or time and is not familiar with how things work on this Earth. They may have had another occupation back where they came from, but it's not generally applicable here.",
     "example": "Groot, Rocket Raccoon, Thor (Odinson).",
@@ -47,5 +48,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!549cc118-c245-47ae-b94d-ee1389bb8cd8"
+  "_key": "!items!N9jAuPT6x5H1SfpU"
 }

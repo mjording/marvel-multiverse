@@ -1,7 +1,8 @@
 {
-  "_id": "21a2b886-3fe0-4ff9-a9ac-a085a2b23a16",
+  "_id": "e72f1NrlBWR1BNsF",
   "name": "Law Enforcer",
   "type": "occupation",
+  "img": "systems/marvel-multiverse/icons/work.svg",
   "system": {
     "description": "The character works as a law enforcement officer. They could be anything from a town cop to an agent of S.H.I.E.L.D. They have a great deal of authority inside their jurisdiction and often command respect outside of it as well.",
     "examples": "Nick Fury Jr., Human Torch (Jim Hammond), Maria Hill, Photon (Monica Rambeau).",
@@ -20,7 +21,7 @@
         "_key": "!items!ZAyTxLpKuxalsoJf"
       },
       {
-        "_id": "2923685c-d460-4d8f-a9d5-21a570f7702f",
+        "_id": "e72f1NrlBWR1BNsF",
         "name": "Backup",
         "type": "tag",
         "system": {
@@ -30,7 +31,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!2923685c-d460-4d8f-a9d5-21a570f7702f"
+        "_key": "!items!e72f1NrlBWR1BNsF"
       }
     ],
     "traits": [
@@ -62,5 +63,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!21a2b886-3fe0-4ff9-a9ac-a085a2b23a16"
+  "_key": "!items!e72f1NrlBWR1BNsF"
 }

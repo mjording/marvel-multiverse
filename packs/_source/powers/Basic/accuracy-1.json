@@ -1,7 +1,8 @@
 {
-  "_id": "86c084f3-201d-4b2f-9512-939c0df457cb",
+  "_id": "PGSginCgCb9Jh5ev",
   "name": "Accuracy 1",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character is an ace with ranged attacks.",
     "powerSet": "Basic",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.86c084f3-201d-4b2f-9512-939c0df457cb",
+      "origin": "Item.PGSginCgCb9Jh5ev",
       "_id": "af0e66ce9d016c9c",
       "changes": [
         {
@@ -48,9 +49,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!86c084f3-201d-4b2f-9512-939c0df457cb.af0e66ce9d016c9c"
+      "_key": "!items.effects!PGSginCgCb9Jh5ev.af0e66ce9d016c9c"
     }
   ],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!86c084f3-201d-4b2f-9512-939c0df457cb"
+  "_key": "!items!PGSginCgCb9Jh5ev"
 }

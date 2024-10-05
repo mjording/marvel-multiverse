@@ -1,7 +1,8 @@
 {
-  "_id": "307e8cbe-a6aa-4fe0-8215-7eee65205721",
+  "_id": "BoVI1rgKdF3yztsf",
   "name": "Brilliance 4",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character's intelligence is unparalleled",
     "powerSet": "Basic",
@@ -28,7 +29,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.307e8cbe-a6aa-4fe0-8215-7eee65205721",
+      "origin": "Item.BoVI1rgKdF3yztsf",
       "_id": "97e339faf1d56611",
       "changes": [
         {
@@ -47,9 +48,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!307e8cbe-a6aa-4fe0-8215-7eee65205721.97e339faf1d56611"
+      "_key": "!items.effects!BoVI1rgKdF3yztsf.97e339faf1d56611"
     }
   ],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!307e8cbe-a6aa-4fe0-8215-7eee65205721"
+  "_key": "!items!BoVI1rgKdF3yztsf"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "f2a08b2b-2b3a-4473-a0ff-243c007de28d",
+  "_id": "NsfZ2oporYhr2IT8",
   "name": "Icy Tendrils of Ikthalon",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/magic.svg",
   "system": {
     "description": "The character unleashes freezing tendrils at a foe.",
     "powerSet": "Magic",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "8c23e6cd16b9bb49",
-  "_key": "!items!f2a08b2b-2b3a-4473-a0ff-243c007de28d"
+  "_key": "!items!NsfZ2oporYhr2IT8"
 }

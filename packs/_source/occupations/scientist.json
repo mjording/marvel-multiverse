@@ -1,7 +1,8 @@
 {
-  "_id": "1185fff1-928b-44c4-8f4f-21a09c4c8c6d",
+  "_id": "Hnyaqj2Ki7Q4KVNb",
   "name": "Scientist",
   "type": "occupation",
+  "img": "systems/marvel-multiverse/icons/work.svg",
   "system": {
     "description": "The character solves problems by means of scientific research. They are often among the smartest people in the world, and other heroes turn to them for their expertise.",
     "examples": "Doctor Octopus (Otto Octavius), Hulk (Bruce Banner), Mister Fantastic, Moon Girl.",
@@ -47,5 +48,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!1185fff1-928b-44c4-8f4f-21a09c4c8c6d"
+  "_key": "!items!Hnyaqj2Ki7Q4KVNb"
 }

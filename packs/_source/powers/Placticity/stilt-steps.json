@@ -1,7 +1,8 @@
 {
-  "_id": "c77caa2d-f9d7-4d58-81c6-befcf7d9e400",
+  "_id": "TECXR5BEZFzL5Tmo",
   "name": "Stilt Steps",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/placticity.svg",
   "system": {
     "description": "The character can stretch their legs like extendable stilts.",
     "powerSet": "Plasticity",
@@ -28,7 +29,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.a89ad743-4aee-47e4-9673-90c879b66506",
+      "origin": "Item.TECXR5BEZFzL5Tmo",
       "_id": "2de0ec2e33f44ed7",
       "changes": [
         {
@@ -42,7 +43,7 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!a89ad743-4aee-47e4-9673-90c879b66506.2de0ec2e33f44ed7"
+      "_key": "!items.effects!TECXR5BEZFzL5Tmo.2de0ec2e33f44ed7"
     },
     {
       "name": "Double Climb Speed",
@@ -57,7 +58,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.a89ad743-4aee-47e4-9673-90c879b66506",
+      "origin": "Item.TECXR5BEZFzL5Tmo",
       "_id": "a63fb94513a84abc",
       "changes": [
         {
@@ -71,9 +72,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!a89ad743-4aee-47e4-9673-90c879b66506.a63fb94513a84abc"
+      "_key": "!items.effects!TECXR5BEZFzL5Tmo.a63fb94513a84abc"
     }
   ],
   "folder": "b660cb39178688a5",
-  "_key": "!items!c77caa2d-f9d7-4d58-81c6-befcf7d9e400"
+  "_key": "!items!TECXR5BEZFzL5Tmo"
 }

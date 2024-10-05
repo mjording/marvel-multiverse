@@ -1,7 +1,8 @@
 {
-  "_id": "ccb86953-2a13-4c2e-bfc1-4505d6bdd05d",
+  "_id": "wXQmhsbKLoRIs1j3",
   "name": "Telekinetic Grab",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can grab a foe with their mind.",
     "powerSet": "Telekinesis",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "bac06ccb5a9f2d39",
-  "_key": "!items!ccb86953-2a13-4c2e-bfc1-4505d6bdd05d"
+  "_key": "!items!wXQmhsbKLoRIs1j3"
 }

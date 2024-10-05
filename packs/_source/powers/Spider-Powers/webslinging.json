@@ -1,7 +1,8 @@
 {
-  "_id": "cef91242-52c8-4056-a3df-61fef891e03f",
+  "_id": "OUnWsLp4rRXvnWvu",
   "name": "Webslinging",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can swing through the city on their webs.",
     "powerSet": "Spider-Powers",
@@ -28,7 +29,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.cef91242-52c8-4056-a3df-61fef891e03f",
+      "origin": "Item.OUnWsLp4rRXvnWvu",
       "_id": "95f7d7e39e4c4b16",
       "changes": [
         {
@@ -47,9 +48,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!cef91242-52c8-4056-a3df-61fef891e03f.95f7d7e39e4c4b16"
+      "_key": "!items.effects!OUnWsLp4rRXvnWvu.95f7d7e39e4c4b16"
     }
   ],
   "folder": "a8b9ae895259d5bf",
-  "_key": "!items!cef91242-52c8-4056-a3df-61fef891e03f "
+  "_key": "!items!OUnWsLp4rRXvnWvu "
 }

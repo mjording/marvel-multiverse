@@ -1,12 +1,13 @@
 {
-  "_id": "018ec3a6-bbe2-7302-814b-be2430ddfc95",
+  "_id": "rVrtW5KJj6B7LPxi",
   "name": "Breathe Different",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character cannot breathe Earth's air for long. They lose 1 point of Health for every minute they do not have some sort of assistance to allow them to breathe properly."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!018ec3a6-bbe2-7302-814b-be2430ddfc95"
+  "_key": "!items!rVrtW5KJj6B7LPxi"
 }

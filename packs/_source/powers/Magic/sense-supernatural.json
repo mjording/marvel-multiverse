@@ -1,7 +1,8 @@
 {
-  "_id": "ca4b9ea5-9fd9-4c48-987b-065562eae729",
+  "_id": "OmF9FVy0G4rBW6tB",
   "name": "Sense Supernatural",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/magic.svg",
   "system": {
     "description": "The character can look into a person's soul.",
     "powerSet": "Magic",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "8c23e6cd16b9bb49",
-  "_key": "!items!ca4b9ea5-9fd9-4c48-987b-065562eae729"
+  "_key": "!items!OmF9FVy0G4rBW6tB"
 }

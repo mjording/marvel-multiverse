@@ -1,7 +1,8 @@
 {
-  "_id": "414c8091-4c2a-4446-96e0-a42fab97e1e5",
+  "_id": "AixXhTboaPGt1ZjM",
   "name": "Telekinetic Protection 4",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character's mind protects them like a fortress.",
     "powerSet": "Telekinesis",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "bac06ccb5a9f2d39",
-  "_key": "!items!414c8091-4c2a-4446-96e0-a42fab97e1e5"
+  "_key": "!items!AixXhTboaPGt1ZjM"
 }

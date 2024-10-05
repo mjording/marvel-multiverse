@@ -1,12 +1,13 @@
 {
-  "_id": "0f6b0ebc-a3fb-47fb-a92f-d3161780beb3",
+  "_id": "IhYx9NyLnjd2AyNO",
   "name": "Out of Shape",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character is in poor physical condition. They are considered one size smaller for the purposes of lifting, carrying, swinging and throwing things."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!0f6b0ebc-a3fb-47fb-a92f-d3161780beb3"
+  "_key": "!items!IhYx9NyLnjd2AyNO"
 }

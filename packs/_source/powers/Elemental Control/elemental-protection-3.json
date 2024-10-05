@@ -1,7 +1,8 @@
 {
-  "_id": "c57ef718-fa37-4853-bdd5-356a3cba8b04",
+  "_id": "kLIU9Me8SZFWsOeG",
   "name": "Elemental Protection 3",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/four-elements.svg",
   "system": {
     "description": "The character's elemental protection is like a tank.",
     "powerSet": "Elemental Control",
@@ -18,5 +19,5 @@
   "flags": {},
   "effects": [],
   "folder": "a9ecc3931cffa8a5",
-  "_key": "!items!c57ef718-fa37-4853-bdd5-356a3cba8b04"
+  "_key": "!items!kLIU9Me8SZFWsOeG"
 }

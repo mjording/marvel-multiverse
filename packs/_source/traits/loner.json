@@ -1,12 +1,13 @@
 {
-  "_id": "acbb3ccf-92ea-47a4-a86f-46ea19f7ea85",
+  "_id": "bmyyrbPUhyY6rHo9",
   "name": "Loner",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character does not play well with others. They cannot be given an edge via assistance by someone who is not a teammate."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!acbb3ccf-92ea-47a4-a86f-46ea19f7ea85"
+  "_key": "!items!bmyyrbPUhyY6rHo9"
 }

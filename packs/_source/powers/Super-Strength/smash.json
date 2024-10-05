@@ -1,7 +1,8 @@
 {
-  "_id": "ca42cdba-7c15-4083-868a-9a78835c188e",
+  "_id": "570XiJcPf8fOktGu",
   "name": "Smash",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "SMASH!",
     "powerSet": "Super-Strength",
@@ -21,5 +22,5 @@
   "flags": {},
   "effects": [],
   "folder": "88848a43d8a58388",
-  "_key": "!items!ca42cdba-7c15-4083-868a-9a78835c188e"
+  "_key": "!items!570XiJcPf8fOktGu"
 }

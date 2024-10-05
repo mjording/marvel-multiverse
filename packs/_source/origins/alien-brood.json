@@ -1,7 +1,8 @@
 {
-  "_id": "c0db9dab-a960-4c0f-9de6-817539afc5de",
+  "_id": "kMmH30K2P2CauI3G",
   "name": "Alien: Brood",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character is a member of the Brood, one of the most feared alien species in the galaxy. The Brood are insectoid creatures overseen by Brood Queens who all serve the Empress Brood. The Empress rules the entire Brood population through a hive mind that extends across the universe. Only Brood Queens (including the Empress) can implant a Brood embryo in creatures from other species, which is how the Brood reproduce. Queens prefer to implant embryos in an unconscious host to prevent the host from knowing about it. They often poison the host with their tail stinger and wait for them to fall before implanting the embryo, which neutralizes the poison. If a character is fully taken over by a Brood embryo implanted in them, they automatically gain this origin, along with the Extraordinary Origin trait.",
     "examples": "Broo, Brood Drone, Brood Queen, Empress Brood.",
@@ -85,7 +86,7 @@
         "_key": "!items!9SkJ8HbHTTSP3c6v"
       },
       {
-        "_id": "cc555879c-c114-4f96-9d78-54c38e9768f0",
+        "_id": "kMmH30K2P2CauI3G",
         "name": "Venomous",
         "type": "trait",
         "system": {
@@ -94,7 +95,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!cc555879c-c114-4f96-9d78-54c38e9768f0"
+        "_key": "!items!kMmH30K2P2CauI3G"
       }
     ],
     "powers": [
@@ -332,5 +333,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!c0db9dab-a960-4c0f-9de6-817539afc5de"
+  "_key": "!items!kMmH30K2P2CauI3G"
 }

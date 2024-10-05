@@ -1,7 +1,8 @@
 {
-  "_id": "a0837191-e96a-4033-b803-8997d5e641ba",
+  "_id": "EXNGCYscdDNqIEzl",
   "name": "Mighty 4",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character is among the strongest there are.",
     "powerSet": "Basic",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.a0837191-e96a-4033-b803-8997d5e641ba",
+      "origin": "Item.EXNGCYscdDNqIEzl",
       "_id": "a9ec50b1aa55b246",
       "changes": [
         {
@@ -48,9 +49,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!a0837191-e96a-4033-b803-8997d5e641ba.a9ec50b1aa55b246"
+      "_key": "!items.effects!EXNGCYscdDNqIEzl.a9ec50b1aa55b246"
     }
   ],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!a0837191-e96a-4033-b803-8997d5e641ba"
+  "_key": "!items!EXNGCYscdDNqIEzl"
 }

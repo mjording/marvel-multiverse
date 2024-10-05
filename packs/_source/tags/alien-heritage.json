@@ -1,7 +1,8 @@
 {
-  "_id": "018ec37f-5d6a-756e-bfc3-efb8b07594f6",
+  "_id": "Qcjd4oeDDJ5jyic3",
   "name": "Alien Heritage",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character or at least one of their ancestors is not from Earth. Pick an alien race that they belong to. If they were not raised on Earth, they should consider taking the Outsider occupation.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!018ec37f-5d6a-756e-bfc3-efb8b07594f6"
+  "_key": "!items!Qcjd4oeDDJ5jyic3"
 }

@@ -1,12 +1,13 @@
 {
-  "_id": "9a0eb20a-f515-4d44-ad2e-3582ae5d3a72",
+  "_id": "PiFFqfQg3QeUGH9X",
   "name": "Gullible",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character is easy to fool. People lying to them have an edge on their Ego checks to persuade the character of something."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!9a0eb20a-f515-4d44-ad2e-3582ae5d3a72"
+  "_key": "!items!PiFFqfQg3QeUGH9X"
 }

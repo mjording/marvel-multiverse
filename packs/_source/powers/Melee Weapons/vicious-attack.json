@@ -1,7 +1,8 @@
 {
-  "_id": "142b4935-7bc9-4b38-a1ec-9baab4cf0716",
+  "_id": "wJyB7ojAhEU1JsPL",
   "name": "Vicious Attack",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/melee.svg",
   "system": {
     "description": "The character strikes a felling blow.",
     "powerSet": "Melee Weapons",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e7ef5735852365a",
-  "_key": "!items!142b4935-7bc9-4b38-a1ec-9baab4cf0716"
+  "_key": "!items!wJyB7ojAhEU1JsPL"
 }

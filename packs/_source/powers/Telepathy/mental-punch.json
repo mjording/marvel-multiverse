@@ -1,7 +1,8 @@
 {
-  "_id": "49ae2125-37a9-4faf-9aee-a11528bb735d",
+  "_id": "gqEPne2OBGlUEjf4",
   "name": "Mental Punch",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can blast a foe's mind in melee.",
     "powerSet": "Telepathy",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e745fc9dcc37bb2",
-  "_key": "!items!49ae2125-37a9-4faf-9aee-a11528bb735d"
+  "_key": "!items!gqEPne2OBGlUEjf4"
 }

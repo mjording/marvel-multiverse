@@ -1,7 +1,8 @@
 {
-  "_id": "86d6f661-61f7-4256-8960-8993ca08948e",
+  "_id": "XFnYlW1pW0WM0E13",
   "name": "Time-Out Bubble",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/portal.svg",
   "system": {
     "description": "The character and allies step out of time.",
     "powerSet": "Omniversal Travel",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "882fb16dc4a7430e",
-  "_key": "!items!86d6f661-61f7-4256-8960-8993ca08948e"
+  "_key": "!items!XFnYlW1pW0WM0E13"
 }

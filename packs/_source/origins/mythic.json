@@ -1,7 +1,8 @@
 {
-  "_id": "5efe81c6-1f93-4fd3-8c8c-1d5335e7e618",
+  "_id": "hdvXYz71CJZqpUfo",
   "name": "Mythic",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character is a creature or person of myth and legend. While they may appear human, they are something else.",
     "examples": "Angela (Aldrif Odinsdottir), Fairies, Malekith.",
@@ -25,5 +26,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!5efe81c6-1f93-4fd3-8c8c-1d5335e7e618"
+  "_key": "!items!hdvXYz71CJZqpUfo"
 }

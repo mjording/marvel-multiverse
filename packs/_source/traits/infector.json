@@ -1,12 +1,13 @@
 {
-  "_id": "1fd487cd-04d5-4fed-8c25-a6061d1c8e06",
+  "_id": "dBadkfApSnp0sHaE",
   "name": "Infector",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character can infect a target with a disease, which must be chosen along with the trait. Examples include: Brood implantation, Techno-Organic virus, Transmode virus. See the infected condition for details about how infection works, and the Infections and Possessions section (p146) for the effects of the above diseases."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!1fd487cd-04d5-4fed-8c25-a6061d1c8e06"
+  "_key": "!items!dBadkfApSnp0sHaE"
 }

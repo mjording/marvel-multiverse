@@ -1,7 +1,8 @@
 {
-  "_id": "1b06ce78-16cf-455a-99dd-fdc576aa8394",
+  "_id": "OGG5E7tOsgNjYN9h",
   "name": "Keep Moving",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can keep allies moving under fire.",
     "powerSet": "Tactics",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "b21090c059bb04d0",
-  "_key": "!items!1b06ce78-16cf-455a-99dd-fdc576aa8394"
+  "_key": "!items!OGG5E7tOsgNjYN9h"
 }

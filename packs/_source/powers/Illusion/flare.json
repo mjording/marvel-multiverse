@@ -1,7 +1,8 @@
 {
-  "_id": "8eeca7dc-f62b-46d5-9d97-cc8539db338a",
+  "_id": "d0SzUJAfpWMwyj4i",
   "name": "Flare",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/illusion.svg",
   "system": {
     "description": "The character generates a dozzling flare of light,",
     "powerSet": "Illusion",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "ba98409134c2014d",
-  "_key": "!items!8eeca7dc-f62b-46d5-9d97-cc8539db338a"
+  "_key": "!items!d0SzUJAfpWMwyj4i"
 }

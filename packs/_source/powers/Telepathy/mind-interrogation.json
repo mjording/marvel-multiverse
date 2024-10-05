@@ -1,7 +1,8 @@
 {
-  "_id": "c5c4f4a6-4017-472a-82e2-e0ffcfd9095a",
+  "_id": "IST753LyktCGARIi",
   "name": "Mind Interrogation",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can root through a target's mind.",
     "powerSet": "Telepathy",
@@ -18,5 +19,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e745fc9dcc37bb2",
-  "_key": "!items!c5c4f4a6-4017-472a-82e2-e0ffcfd9095a"
+  "_key": "!items!IST753LyktCGARIi"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "4f1034d6-ce04-4220-b6ad-dd92f65872d5",
+  "_id": "6vBqlJymmuLoKMyk",
   "name": "Cloak Group",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character mentally hides themseives and their friends.",
     "powerSet": "Telepathy",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e745fc9dcc37bb2",
-  "_key": "!items!4f1034d6-ce04-4220-b6ad-dd92f65872d5"
+  "_key": "!items!6vBqlJymmuLoKMyk"
 }

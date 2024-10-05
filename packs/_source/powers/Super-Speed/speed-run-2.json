@@ -1,7 +1,8 @@
 {
-  "_id": "df77410b-f559-41b1-a0d6-5b8a2bc67739",
+  "_id": "RF4L6FVzbxDyPJRY",
   "name": "Speed Run 2",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character runs as fast as a jet!",
     "powerSet": "Super-Speed",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.df77410b-f559-41b1-a0d6-5b8a2bc67739",
+      "origin": "Item.RF4L6FVzbxDyPJRY",
       "_id": "dfbfa6c746da4fd9",
       "changes": [
         {
@@ -48,9 +49,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!df77410b-f559-41b1-a0d6-5b8a2bc67739.dfbfa6c746da4fd9"
+      "_key": "!items.effects!RF4L6FVzbxDyPJRY.dfbfa6c746da4fd9"
     }
   ],
   "folder": "b670a4a72be89d71",
-  "_key": "!items!df77410b-f559-41b1-a0d6-5b8a2bc67739"
+  "_key": "!items!RF4L6FVzbxDyPJRY"
 }

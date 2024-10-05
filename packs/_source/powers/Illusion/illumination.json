@@ -1,7 +1,8 @@
 {
-  "_id": "4ad26482-ca3d-49a5-acb2-b45618c7035e",
+  "_id": "MogcilX99AUMJlqJ",
   "name": "Illumination",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/illusion.svg",
   "system": {
     "description": "The character creates a bright light.",
     "powerSet": "Illusion",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "ba98409134c2014d",
-  "_key": "!items!4ad26482-ca3d-49a5-acb2-b45618c7035e"
+  "_key": "!items!MogcilX99AUMJlqJ"
 }

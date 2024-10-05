@@ -1,12 +1,13 @@
 {
-  "_id": "2de68fb5-264d-498e-a94e-aefc619c6e59",
+  "_id": "Hn1lp9yEFDW4iFRI",
   "name": "Enhanced Physique",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character is stronger than regular humans. Treat them as one size bigger for lifting, carrying, swinging and throwing things. (This does not stack with other factors.)"
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!2de68fb5-264d-498e-a94e-aefc619c6e59"
+  "_key": "!items!Hn1lp9yEFDW4iFRI"
 }

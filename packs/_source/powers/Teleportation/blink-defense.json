@@ -1,7 +1,8 @@
 {
-  "_id": "4689d174-b6ee-4c41-a4fd-b9a57e4c12fc",
+  "_id": "uIJ1JmZb4EvA3mRv",
   "name": "Blink Defense",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character teleports a short distance away.",
     "powerSet": "Teleportation",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "a7603bf9acca778a",
-  "_key": "!items!4689d174-b6ee-4c41-a4fd-b9a57e4c12fc"
+  "_key": "!items!uIJ1JmZb4EvA3mRv"
 }

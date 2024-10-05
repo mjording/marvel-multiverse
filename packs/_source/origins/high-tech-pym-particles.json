@@ -1,7 +1,8 @@
 {
-  "_id": "96745eea-887a-4ab8-aa32-12a827d6c30f",
+  "_id": "BEM0ZpWjkeXSRhjC",
   "name": "High Tech: Pym Particles",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character uses Pym Particles (named after their inventor, Henry Pym) to dramatically grow or shrink in size. After long-enough exposure to Pym Particles, many people are able to generate such particles on their own without the need of external aid. They may still need to use extra Pym Particles to reach extremely large or small sizes.",
     "examples": "Ant-Man (Scott Lang), Giant-Man (Rax Malhotra), Wasp (Janet Van Dyne).",
@@ -66,5 +67,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!96745eea-887a-4ab8-aa32-12a827d6c30f"
+  "_key": "!items!BEM0ZpWjkeXSRhjC"
 }

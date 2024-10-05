@@ -1,12 +1,13 @@
 {
-  "_id": "d1aac25e-8d51-478d-91f8-3e7e69e8622d",
+  "_id": "p03NsTEeg92pZz63",
   "name": "Connections: Super Heroes",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and so on. By making an Ego check, the character can call on their contact to provide help in the form of clues, information or resources. The Narrator determines the TN of the Ego check based on the favor requested. This trait can be selected multiple times, using many different types. These include Celebrities, Community, Criminal, Espionage, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on.",
     "restriction": "Super Heroes."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!d1aac25e-8d51-478d-91f8-3e7e69e8622d"
+  "_key": "!items!p03NsTEeg92pZz63"
 }

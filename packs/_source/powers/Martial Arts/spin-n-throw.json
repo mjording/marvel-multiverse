@@ -1,7 +1,8 @@
 {
-  "_id": "aa019797-4163-44cb-9f9c-84798698b204",
+  "_id": "JEItlxBepX3mNGdp",
   "name": "Spin & Throw",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/martial-arts.svg",
   "system": {
     "description": "The character throws a grabbed foe to the ground.",
     "powerSet": "Martial Arts",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "9a200a2684a8be54",
-  "_key": "!items!aa019797-4163-44cb-9f9c-84798698b204"
+  "_key": "!items!JEItlxBepX3mNGdp"
 }

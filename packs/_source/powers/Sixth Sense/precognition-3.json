@@ -1,7 +1,8 @@
 {
-  "_id": "f4a1a9ab-cfc7-45fd-9029-9dd4ac9ac795",
+  "_id": "iEWHhcouN1guY3TE",
   "name": "Precognition 3",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can see the the month ahead.",
     "powerSet": "Sixth Sense",
@@ -17,5 +18,5 @@
   "flags": {},
   "effects": [],
   "folder": "34a53ed3fba44fe3",
-  "_key": "!items!f4a1a9ab-cfc7-45fd-9029-9dd4ac9ac795"
+  "_key": "!items!iEWHhcouN1guY3TE"
 }

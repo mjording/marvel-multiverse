@@ -1,7 +1,8 @@
 {
-  "_id": "d248cfcc-ee47-4db4-94e9-204201203bbd",
+  "_id": "WbQIqHF2MLbVn47W",
   "name": "Shrink 1",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character thinks small.",
     "powerSet": "Resize",
@@ -17,5 +18,5 @@
   "flags": {},
   "effects": [],
   "folder": "b74def8c3ea77646",
-  "_key": "!items!d248cfcc-ee47-4db4-94e9-204201203bbd"
+  "_key": "!items!WbQIqHF2MLbVn47W"
 }

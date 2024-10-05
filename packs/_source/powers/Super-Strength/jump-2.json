@@ -1,7 +1,8 @@
 {
-  "_id": "ba496709-a6b2-4295-9317-ed837a9532a9",
+  "_id": "WpErC2aBVVJjvt7d",
   "name": "Jump 2",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can leap around with dazzling speed.",
     "powerSet": "Spider-Powers",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.ba496709-a6b2-4295-9317-ed837a9532a9 ",
+      "origin": "Item.WpErC2aBVVJjvt7d ",
       "_id": "ad19c5484f6a42df",
       "changes": [
         {
@@ -53,9 +54,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!ba496709-a6b2-4295-9317-ed837a9532a9.ad19c5484f6a42df"
+      "_key": "!items.effects!WpErC2aBVVJjvt7d.ad19c5484f6a42df"
     }
   ],
   "folder": "88848a43d8a58388",
-  "_key": "!items!ba496709-a6b2-4295-9317-ed837a9532a9 "
+  "_key": "!items!WpErC2aBVVJjvt7d "
 }

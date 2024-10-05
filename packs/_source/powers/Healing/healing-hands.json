@@ -1,7 +1,8 @@
 {
-  "_id": "10a9ebe6-b720-49a5-899b-acd9e43f393a",
+  "_id": "v4wnQsxkb32CNQay",
   "name": "Healing Hands",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/healing.svg",
   "system": {
     "description": "The character has a healing touch",
     "powerSet": "Healing",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "e244d01d5a2f4c4f",
-  "_key": "!items!10a9ebe6-b720-49a5-899b-acd9e43f393a"
+  "_key": "!items!v4wnQsxkb32CNQay"
 }

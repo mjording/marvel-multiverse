@@ -1,7 +1,8 @@
 {
-  "_id": "290db8fc-55c7-4104-a7f5-20b83c10de12",
+  "_id": "wV9HsaX8zr2U8ybW",
   "name": "Telekinetic Protection 2",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character toughens their mind against physical damage.",
     "powerSet": "Telekinesis",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "bac06ccb5a9f2d39",
-  "_key": "!items!290db8fc-55c7-4104-a7f5-20b83c10de12"
+  "_key": "!items!wV9HsaX8zr2U8ybW"
 }

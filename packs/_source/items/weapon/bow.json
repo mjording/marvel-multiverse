@@ -1,7 +1,8 @@
 {
-  "_id": "9bc47b19-fa5f-447c-a792-91b6460e5fdd",
+  "_id": "0XgDOUXsuxjPL9J0",
   "name": "Bow",
   "type": "weapon",
+  "img": "systems/marvel-multiverse/icons/weapons.svg",
   "system": {
     "description": "A bow is a ranged weapon that projects arrows powered by the elasticity of the bow. It is a simple weapon that can be used by anyone.",
     "range": "15",
@@ -10,5 +11,5 @@
   "flags": {},
   "effects": [],
   "folder": "8b60348af8f8d703",
-  "_key": "!items!9bc47b19-fa5f-447c-a792-91b6460e5fdd"
+  "_key": "!items!0XgDOUXsuxjPL9J0"
 }

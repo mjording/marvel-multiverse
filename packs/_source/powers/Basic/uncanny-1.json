@@ -1,7 +1,8 @@
 {
-  "_id": "ae4cb640-e0a0-432d-af32-e00f881cbc4f",
+  "_id": "qJAahZYu0b5RQUoJ",
   "name": "Uncanny 1",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character has protection against mental assaulis.",
     "powerSet": "Basic",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.ae4cb640-e0a0-432d-af32-e00f881cbc4f",
+      "origin": "Item.qJAahZYu0b5RQUoJ",
       "_id": "3e7d7941450141ac",
       "changes": [
         {
@@ -43,9 +44,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!ae4cb640-e0a0-432d-af32-e00f881cbc4f.3e7d7941450141ac"
+      "_key": "!items.effects!qJAahZYu0b5RQUoJ.3e7d7941450141ac"
     }
   ],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!ae4cb640-e0a0-432d-af32-e00f881cbc4f"
+  "_key": "!items!qJAahZYu0b5RQUoJ"
 }

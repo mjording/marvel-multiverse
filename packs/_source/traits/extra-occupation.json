@@ -1,12 +1,13 @@
 {
-  "_id": "3e1f1fd4-faa8-4ede-a81f-8802c33136a0",
+  "_id": "4NjvHZjSPts4SVhj",
   "name": "Extra Occupation",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character has a busy life and has done all sorts of things. They can choose another occupation."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!3e1f1fd4-faa8-4ede-a81f-8802c33136a0"
+  "_key": "!items!4NjvHZjSPts4SVhj"
 }

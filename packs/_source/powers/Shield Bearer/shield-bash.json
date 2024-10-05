@@ -1,7 +1,8 @@
 {
-  "_id": "fd972e54-1fd8-413c-b92d-062f54490884",
+  "_id": "LawMsb09eUEiG8FE",
   "name": "Shield Bash",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character bashes a foe with their shield.",
     "powerSet": "Shield Bearer",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "926e8d815f4d3fd7",
-  "_key": "!items!fd972e54-1fd8-413c-b92d-062f54490884"
+  "_key": "!items!LawMsb09eUEiG8FE"
 }

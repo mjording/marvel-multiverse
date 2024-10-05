@@ -1,7 +1,8 @@
 {
-  "_id": "ad4097bf-c17e-4114-9bc0-567559200a1a",
+  "_id": "K6nJnrQ41nJ4w0e4",
   "name": "Kill Zone",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character shoots at every target that moves through their kill zone.",
     "powerSet": "Ranged Weapons",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "82ef84dfce4c7abf",
-  "_key": "!items!ad4097bf-c17e-4114-9bc0-567559200a1a"
+  "_key": "!items!K6nJnrQ41nJ4w0e4"
 }

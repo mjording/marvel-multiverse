@@ -1,7 +1,8 @@
 {
-  "_id": "e25746af-8b1b-433e-8e26-8f28785b2f72",
+  "_id": "IIO8sNoSsyZbmq6h",
   "name": "Flexible Fingers",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/placticity.svg",
   "system": {
     "description": "The character can tur their fingers and hands into whatever tool they need.",
     "powerSet": "Plasticity",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "b660cb39178688a5",
-  "_key": "!items!e25746af-8b1b-433e-8e26-8f28785b2f72"
+  "_key": "!items!IIO8sNoSsyZbmq6h"
 }

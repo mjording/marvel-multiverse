@@ -1,7 +1,8 @@
 {
-  "_id": "59d05786-1dbd-49ad-ad34-89133e8c09ad",
+  "_id": "PWAaoZoUYYaAAIb1",
   "name": "High Tech: Android",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character is an artificial person. Their body (when they have one) is made of plastic, metal and circuitry rather than flesh and blood. Their powers come from technology embedded in their artificial body.",
     "examples": "Human Torch (Jim Hammond), Jocasta, Machine Man, Vision.",
@@ -51,5 +52,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!59d05786-1dbd-49ad-ad34-89133e8c09ad"
+  "_key": "!items!PWAaoZoUYYaAAIb1"
 }

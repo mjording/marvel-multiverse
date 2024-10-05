@@ -1,7 +1,8 @@
 {
-  "_id": "74f27775-4d76-47e7-93cc-601329c0c2ac",
+  "_id": "WnQEnG1uzvEYQqJJ",
   "name": "Bounce Back",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/placticity.svg",
   "system": {
     "description": "The character bounces back from even the hardest falls.",
     "powerSet": "Plasticity",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "b660cb39178688a5",
-  "_key": "!items!74f27775-4d76-47e7-93cc-601329c0c2ac"
+  "_key": "!items!WnQEnG1uzvEYQqJJ"
 }

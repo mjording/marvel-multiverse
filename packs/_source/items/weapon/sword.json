@@ -1,7 +1,8 @@
 {
-  "_id": "33c513ae-f9b2-4366-9edd-85a795257ae3",
+  "_id": "fzr9JkNDZ7z0PkCK",
   "name": "Sword",
   "type": "weapon",
+  "img": "systems/marvel-multiverse/icons/weapons.svg",
   "system": {
     "description": "A sword is a long, edged piece of metal used as a cutting, thrusting, or bludgeoning weapon. The blade is usually 35 to 45 inches long, with a hilt that is 6 to 8 inches long. The blade is usually double-edged, although single-edged swords are also available. The sword is a versatile weapon that can be used in a variety of situations. It can be used to cut, thrust, or bludgeon an opponent. The sword is a weapon that requires skill and training to use effectively. It is a weapon that is used by knights, soldiers, and other warriors. The sword is a weapon that is used in many different cultures and time periods. The sword is a weapon that is used in many different styles of fighting, including fencing, kendo, and kenjutsu. The sword is a weapon that is used in many different types of combat, including dueling, battle, and self-defense. The sword is a weapon that is used in many different types of games, including role-playing games, video games, and board games.",
     "range": "Reach",
@@ -10,5 +11,5 @@
   "flags": {},
   "effects": [],
   "folder": "8b60348af8f8d703",
-  "_key": "!items!33c513ae-f9b2-4366-9edd-85a795257ae3"
+  "_key": "!items!fzr9JkNDZ7z0PkCK"
 }

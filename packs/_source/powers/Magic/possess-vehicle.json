@@ -1,7 +1,8 @@
 {
-  "_id": "03a4c509-164c-4cfc-a448-9b636303f813",
+  "_id": "SCLpSbnaqoJtL78c",
   "name": "Possess Vehicle",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/magic.svg",
   "system": {
     "description": "The character takes control of a vehicle.",
     "powerSet": "Magic",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "8c23e6cd16b9bb49",
-  "_key": "!items!03a4c509-164c-4cfc-a448-9b636303f813"
+  "_key": "!items!SCLpSbnaqoJtL78c"
 }

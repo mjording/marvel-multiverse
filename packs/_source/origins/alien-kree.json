@@ -1,7 +1,8 @@
 {
-  "_id": "018ec39e-62bc-7d59-a075-43b9351c7de5",
+  "_id": "jqx3NALhjcSjBJ9y",
   "name": "Alien: Kree",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character is a member of the Kree, a humanoid race from the planet Hala who formed the interstellar Kree Empire in the region of space known as the Large Magellanic Cloud. They resemble humans but are stronger and tougher. Many of them have blue skin, but a good number of them have pink skin. The air on Hala has much more nitrogen in it, and Kree who are raised in it (or something like it) have a hard time breathing the air on Earth.",
     "examples": "Captain Marvel (Mar-Vell), Hulkling (half Skrull and half Kree), Magnitron (Yon-Rogg), Ronan the Accuser.",
@@ -63,5 +64,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!018ec39e-62bc-7d59-a075-43b9351c7de5"
+  "_key": "!items!jqx3NALhjcSjBJ9y"
 }

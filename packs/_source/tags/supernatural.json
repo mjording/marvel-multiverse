@@ -1,7 +1,8 @@
 {
-  "_id": "e5396fe1-8f4b-41b7-8886-be6c645f7e26",
+  "_id": "Z0VZf1L4CbzQ00P0",
   "name": "Supernatural",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character has powers that are magical or based on something magical.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!e5396fe1-8f4b-41b7-8886-be6c645f7e26"
+  "_key": "!items!Z0VZf1L4CbzQ00P0"
 }

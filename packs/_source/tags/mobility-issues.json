@@ -1,7 +1,8 @@
 {
-  "_id": "3e9e867e-80df-4e29-bfff-0b3ca24e4288",
+  "_id": "SVUHZwPOYLAFa7oX",
   "name": "Mobility Issues",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character has mobility issues. This can range from using a cane to using a wheelchair.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!3e9e867e-80df-4e29-bfff-0b3ca24e4288"
+  "_key": "!items!SVUHZwPOYLAFa7oX"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "6de34a9c-4e10-4596-ad40-3ec18dcfe8d8",
+  "_id": "S2XOLo1hmGeyPR8v",
   "name": "Molecular Destabilization",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character has lightning-fast moves.",
     "powerSet": "Super-Speed",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "b670a4a72be89d71",
-  "_key": "!items!6de34a9c-4e10-4596-ad40-3ec18dcfe8d8"
+  "_key": "!items!S2XOLo1hmGeyPR8v"
 }

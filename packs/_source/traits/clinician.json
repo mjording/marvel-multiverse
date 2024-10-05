@@ -1,12 +1,13 @@
 {
-  "_id": "4d6b10f0-3a22-4fe5-8bef-b0ebc85a27bb",
+  "_id": "crcCBrOFzJTYJVUh",
   "name": "Clinician",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character has an edge on Logic checks to determine what is medically wrong with someone they examine."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!4d6b10f0-3a22-4fe5-8bef-b0ebc85a27bb"
+  "_key": "!items!crcCBrOFzJTYJVUh"
 }

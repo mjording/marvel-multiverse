@@ -1,7 +1,8 @@
 {
-  "_id": "9038760b-5b83-437c-b4cf-1392e5bb0c9c",
+  "_id": "nMTDO07M0v0MOjph",
   "name": "Rubberneck",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/placticity.svg",
   "system": {
     "description": "The character can reach past an enemy and punch them from behind.",
     "powerSet": "Plasticity",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "b660cb39178688a5",
-  "_key": "!items!9038760b-5b83-437c-b4cf-1392e5bb0c9c"
+  "_key": "!items!nMTDO07M0v0MOjph"
 }

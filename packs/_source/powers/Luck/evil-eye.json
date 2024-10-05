@@ -1,7 +1,8 @@
 {
-  "_id": "9d4f0af8-ca02-4b70-bce2-1de8f209b7be",
+  "_id": "zFthXeiXzdI646hT",
   "name": "Evil Eye",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/four-leaf-clover.svg",
   "system": {
     "description": "The character can suffer trouble on those who cross their path.",
     "powerSet": "Luck",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "c3155c708eb54219",
-  "_key": "!items!9d4f0af8-ca02-4b70-bce2-1de8f209b7be"
+  "_key": "!items!zFthXeiXzdI646hT"
 }

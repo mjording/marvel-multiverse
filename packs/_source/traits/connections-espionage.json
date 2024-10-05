@@ -1,12 +1,13 @@
 {
-  "_id": "7c124b29-734d-4493-b9cf-07b5c044fdf7",
+  "_id": "3A2rvhAUZyuzrBaq",
   "name": "Connections: Espionage",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "description": "The character knows someone with access to and knowledge of a particular field. The connection could be a reporter, a police officer, a politician, a mobster and so on. By making an Ego check, the character can call on their contact to provide help in the form of clues, information or resources. The Narrator determines the TN of the Ego check based on the favor requested. This trait can be selected multiple times, using many different types. These include Celebrities, Community, Criminal, Espionage, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on.",
     "restriction": "Espionage."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!7c124b29-734d-4493-b9cf-07b5c044fdf7"
+  "_key": "!items!3A2rvhAUZyuzrBaq"
 }

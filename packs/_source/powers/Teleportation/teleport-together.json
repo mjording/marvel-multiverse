@@ -1,7 +1,8 @@
 {
-  "_id": "5c443cc0-14ec-4bcc-be36-b8d584714878",
+  "_id": "CkqFsZADhKMOoezY",
   "name": "Teleport Together",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can teleport someone they are touching.",
     "powerSet": "Teleportation",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "a7603bf9acca778a",
-  "_key": "!items!5c443cc0-14ec-4bcc-be36-b8d584714878"
+  "_key": "!items!CkqFsZADhKMOoezY"
 }

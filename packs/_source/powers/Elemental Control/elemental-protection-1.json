@@ -1,7 +1,8 @@
 {
-  "_id": "67e5146f-8ba2-469c-9458-9fa5f01a1aaa",
+  "_id": "uAoyI1Aq2lNWhYLG",
   "name": "Elemental Protection 1",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/four-elements.svg",
   "system": {
     "description": "The character protects themselves with their element.",
     "powerSet": "Elemental Control",
@@ -18,5 +19,5 @@
   "flags": {},
   "effects": [],
   "folder": "a9ecc3931cffa8a5",
-  "_key": "!items!67e5146f-8ba2-469c-9458-9fa5f01a1aaa"
+  "_key": "!items!uAoyI1Aq2lNWhYLG"
 }

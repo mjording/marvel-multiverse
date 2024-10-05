@@ -1,7 +1,8 @@
 {
-  "_id": "f0fd9b09-c048-42aa-abc7-26573967af26",
+  "_id": "GEmxVDGmNMFNgsnP",
   "name": "Reverse-Momentum Throw",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/martial-arts.svg",
   "system": {
     "description": "The character uses the momentum of their attacker to hurl them to the ground.",
     "powerSet": "Martial Arts",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9a200a2684a8be54",
-  "_key": "!items!f0fd9b09-c048-42aa-abc7-26573967af26"
+  "_key": "!items!GEmxVDGmNMFNgsnP"
 }

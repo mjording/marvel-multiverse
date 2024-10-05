@@ -1,7 +1,8 @@
 {
-  "_id": "d083f665-2686-40f8-9f61-0f498c1f85ca",
+  "_id": "QLLyXfcYEKDwxuzt",
   "name": "Telekinetic Barrier",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character forms a protective barrier with their mind.",
     "powerSet": "Telekinesis",
@@ -18,5 +19,5 @@
   "flags": {},
   "effects": [],
   "folder": "bac06ccb5a9f2d39",
-  "_key": "!items!d083f665-2686-40f8-9f61-0f498c1f85ca"
+  "_key": "!items!QLLyXfcYEKDwxuzt"
 }

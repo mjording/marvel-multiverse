@@ -1,7 +1,8 @@
 {
-  "_id": "b8931e96-80ec-48f1-a19b-ee02f7a64211",
+  "_id": "ktORqNBc2M6xdogx",
   "name": "Headshot",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "Ouch!",
     "powerSet": "Ranged Weapons",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "82ef84dfce4c7abf",
-  "_key": "!items!b8931e96-80ec-48f1-a19b-ee02f7a64211"
+  "_key": "!items!ktORqNBc2M6xdogx"
 }

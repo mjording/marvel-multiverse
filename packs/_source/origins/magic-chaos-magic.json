@@ -1,7 +1,8 @@
 {
-  "_id": "357c1080-5436-432b-893d-f15736f4cb39",
+  "_id": "I3vULwxR9Ck3dDrP",
   "name": "Magic: Chaos Magic",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character is able to use chaos magic, which allows them to bend reality to their will. It stems from the ancient god Chthon.",
     "examples": "Morgan Le Fay, Scarlet Witch, Wiccan.",
@@ -38,5 +39,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!357c1080-5436-432b-893d-f15736f4cb39"
+  "_key": "!items!I3vULwxR9Ck3dDrP"
 }

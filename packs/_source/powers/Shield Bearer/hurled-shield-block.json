@@ -1,7 +1,8 @@
 {
-  "_id": "b7132536-4f72-48b1-954a-26096b5e820c",
+  "_id": "327efF8NUh544gW0",
   "name": "Hurled Shield Block",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character hurls their mighty shield to protect an ally from an attack.",
     "powerSet": "Shield Bearer",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "926e8d815f4d3fd7",
-  "_key": "!items!b7132536-4f72-48b1-954a-26096b5e820c"
+  "_key": "!items!327efF8NUh544gW0"
 }

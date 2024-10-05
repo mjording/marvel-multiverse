@@ -1,7 +1,8 @@
 {
-  "_id": "f193f0c1-a805-40bc-87d3-9da7b0e7e540",
+  "_id": "QXYTu3fuIUaZlxRE",
   "name": "Telepathic Possession",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character mentally takes over someone else's body.",
     "powerSet": "Telepathy",
@@ -19,5 +20,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e745fc9dcc37bb2",
-  "_key": "!items!f193f0c1-a805-40bc-87d3-9da7b0e7e540"
+  "_key": "!items!QXYTu3fuIUaZlxRE"
 }

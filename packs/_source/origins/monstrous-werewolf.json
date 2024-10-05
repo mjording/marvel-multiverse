@@ -1,7 +1,8 @@
 {
-  "_id": "c649e354-2465-40e2-9a3d-207bf0d4fd4e",
+  "_id": "KzOd2L3zaDzob5nq",
   "name": "Monstrous: Werewolf",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character is afflicted with lycanthropy, a magical disease that causes them to take on the shape of a werewolf during the three nights of the full moon. They can transmit this magical disease to victims of their choosing who survive their attacks. When a character becomes a werewolf, they gain the Lunar Transformation and Alternate Form tags. When the character takes on their werewolf form, they go up one rank and gain the rest of the listed tags, traits and powers. They do not gain any additional powers or traits from this bump in rank, but they do gain 5 ability points and add +1 to their damage multiplier. If they have the Heroic tag, they also add 1 to their Karma. When they return to human form, they lose the benefits of their werewolf form. The character can switch forms voluntarily at any point—except during the three nights that the moon is at its fullest. On those nights, while the moon is above the horizon, the character must transform into a werewolf and is ruled by their animal nature. They cannot help but hunt and attack any people or creatures they come across, no matter if they are friend or foe.",
     "examples": "Werewolf by Night (Jack Russell), Werewolf by Night (Jake Gomez).",
@@ -233,7 +234,7 @@
         "_key": "!items!0bTrKA7ROyGlOte3"
       },
       {
-        "_id": "f3dbd8d1-6b67-4f00-a8ba-bee2c6372545",
+        "_id": "KzOd2L3zaDzob5nq",
         "name": "Heightened Senses 1",
         "type": "power",
         "system": {
@@ -250,11 +251,11 @@
         "flags": {},
         "effects": [],
         "folder": "bbe663a787c7ec04",
-        "_key": "!items!f3dbd8d1-6b67-4f00-a8ba-bee2c6372545"
+        "_key": "!items!KzOd2L3zaDzob5nq"
       }
     ]
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!c649e354-2465-40e2-9a3d-207bf0d4fd4e"
+  "_key": "!items!KzOd2L3zaDzob5nq"
 }

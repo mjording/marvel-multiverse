@@ -1,7 +1,8 @@
 {
-  "_id": "0fb7d8cd-abaa-45e8-b74c-5b17c723d49c",
+  "_id": "KNjS0hnwRaOYE8ts",
   "name": "Hurled Shield Deflection",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character hurls their mighty shield to save an ally from an attack.",
     "powerSet": "Shield Bearer",
@@ -19,5 +20,5 @@
   "flags": {},
   "effects": [],
   "folder": "926e8d815f4d3fd7",
-  "_key": "!items!0fb7d8cd-abaa-45e8-b74c-5b17c723d49c"
+  "_key": "!items!KNjS0hnwRaOYE8ts"
 }

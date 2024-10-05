@@ -1,7 +1,8 @@
 {
-  "_id": "cfaebe92-146f-4210-93f2-4b6fb5e7aa40",
+  "_id": "K42TenyIOYhKZpBd",
   "name": "Lab Access",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character either owns or has access to a laboratory filled with the technical equipment, supplies and tools they need for their work. This can be anything from a well-stocked high-school classroom to a forensics lab to an industrial site.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!cfaebe92-146f-4210-93f2-4b6fb5e7aa40"
+  "_key": "!items!K42TenyIOYhKZpBd"
 }

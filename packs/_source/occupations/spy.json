@@ -1,7 +1,8 @@
 {
-  "_id": "37c42446-5d7d-4798-8921-84726b98ed2a",
+  "_id": "dI954QVUcbCiU4bG",
   "name": "Spy",
   "type": "occupation",
+  "img": "systems/marvel-multiverse/icons/work.svg",
   "system": {
     "description": "The character is an expert in espionage. They served as a spy for a nation or corporation and know how to find things out about people and organizations.",
     "examples": "Black Widow (Natasha Romanoff), Peggy Carter, Winter Soldier.",
@@ -49,5 +50,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!37c42446-5d7d-4798-8921-84726b98ed2a"
+  "_key": "!items!dI954QVUcbCiU4bG"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "eb130b4e-4a37-47c3-bdfb-0b0f2c02afbd",
+  "_id": "POmZq28ocIhnO6Hn",
   "name": "Run on Water",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character has lightning-fast moves.",
     "powerSet": "Super-Speed",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "b670a4a72be89d71",
-  "_key": "!items!eb130b4e-4a37-47c3-bdfb-0b0f2c02afbd"
+  "_key": "!items!POmZq28ocIhnO6Hn"
 }

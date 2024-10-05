@@ -1,7 +1,8 @@
 {
-  "_id": "915f0f5c-ce1e-4939-8261-bed58f0d9d7a",
+  "_id": "VAJojgNi07Vetb6r",
   "name": "Immovable",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "Nobody pushes the character around.",
     "powerSet": "Shield Bearer",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "926e8d815f4d3fd7",
-  "_key": "!items!915f0f5c-ce1e-4939-8261-bed58f0d9d7a"
+  "_key": "!items!VAJojgNi07Vetb6r"
 }

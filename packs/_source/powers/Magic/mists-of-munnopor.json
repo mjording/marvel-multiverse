@@ -1,7 +1,8 @@
 {
-  "_id": "c3cf51d6-0c66-4622-a2ea-f3da6abf8103",
+  "_id": "YwsMZGbuxOUNl2rP",
   "name": "Mists of Munnopor",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/magic.svg",
   "system": {
     "description": "The character weaves a thick fog.",
     "powerSet": "Magic",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "8c23e6cd16b9bb49",
-  "_key": "!items!c3cf51d6-0c66-4622-a2ea-f3da6abf8103"
+  "_key": "!items!YwsMZGbuxOUNl2rP"
 }

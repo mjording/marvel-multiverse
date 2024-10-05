@@ -1,7 +1,8 @@
 {
-  "_id": "f2435ca7-fb74-4d67-8c48-9d0361b60188",
+  "_id": "Xt9J2unG1w68nsdG",
   "name": "Elemental Infusion",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/four-elements.svg",
   "system": {
     "description": "The character infuses a weapon with their element.",
     "powerSet": "Elemental Control",
@@ -17,5 +18,5 @@
   "flags": {},
   "effects": [],
   "folder": "a9ecc3931cffa8a5",
-  "_key": "!items!f2435ca7-fb74-4d67-8c48-9d0361b60188"
+  "_key": "!items!Xt9J2unG1w68nsdG"
 }

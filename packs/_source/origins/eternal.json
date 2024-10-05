@@ -1,7 +1,8 @@
 {
-  "_id": "88936296-663e-4bfb-8735-bf00b9c1c4ed",
+  "_id": "URCb7rIQZwy9IsQI",
   "name": "Eternal",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character is a member of Homo immortalis, a variant race of humanity created by the Celestials. They are scattered across Earth, but their headquarters lies in the city of Olympia, high in the mountains in Greece and folded into an echo dimension. Some live on Titan (a moon of Saturn) instead. The Eternals live by three principles: Protect Celestials. Protect the Machine (a sentient A.I. deeply connected with the Earth). Correct excess deviation. Only one hundred Eternals were originally created, and only two have been born since: Thanos and Eros. The character is either one of the lesser-known one hundred or a new Eternal brought to life through extraordinary means. Through a ritual usually initiated by the Prime Eternal (their official leader), Eternals can be called to be part of a collective being known as the Uni-Mind.",
     "examples": "Ikaris, Sersi, Sprite, Thanos, Thena.",
@@ -38,5 +39,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!88936296-663e-4bfb-8735-bf00b9c1c4ed"
+  "_key": "!items!URCb7rIQZwy9IsQI"
 }

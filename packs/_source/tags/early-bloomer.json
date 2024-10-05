@@ -1,7 +1,8 @@
 {
-  "_id": "852e859c-6895-4bd9-8884-6d2082d72701",
+  "_id": "qk4izD4q2PGsVtAj",
   "name": "Early Bloomer",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character is a rare kind of throwback mutant who gained their powers at birth. In most cases, this means their parents hid their powers as long as they could—or that the authorities took charge of them early on, supposedly for everyone's protection.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!852e859c-6895-4bd9-8884-6d2082d72701"
+  "_key": "!items!qk4izD4q2PGsVtAj"
 }

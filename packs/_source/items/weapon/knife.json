@@ -1,7 +1,8 @@
 {
-  "_id": "9d69811d-ab48-4d16-b05a-cf89d406b8d3",
+  "_id": "UnHYyhfw2lStMD28",
   "name": "Knife",
   "type": "weapon",
+  "img": "systems/marvel-multiverse/icons/weapons.svg",
   "system": {
     "description": "A knife is a small, sharp blade that is used for cutting or as a weapon. It is a simple weapon that is easy to conceal and can be used for a variety of purposes.",
     "range": "Reach",
@@ -10,5 +11,5 @@
   "flags": {},
   "effects": [],
   "folder": "8b60348af8f8d703",
-  "_key": "!items!9d69811d-ab48-4d16-b05a-cf89d406b8d3"
+  "_key": "!items!UnHYyhfw2lStMD28"
 }

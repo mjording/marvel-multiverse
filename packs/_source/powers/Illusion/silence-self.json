@@ -1,7 +1,8 @@
 {
-  "_id": "f3b67ac7-4b6a-496a-8ed5-0b827edf01b9",
+  "_id": "k7TZTHQgTxF8JZOl",
   "name": "Silence Self",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/illusion.svg",
   "system": {
     "description": "Silence falls on the character.",
     "powerSet": "Illusion",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "ba98409134c2014d",
-  "_key": "!items!f3b67ac7-4b6a-496a-8ed5-0b827edf01b9"
+  "_key": "!items!k7TZTHQgTxF8JZOl"
 }

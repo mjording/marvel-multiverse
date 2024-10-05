@@ -1,7 +1,8 @@
 {
-  "_id": "5de6e1da-feac-4813-aac2-ba872ac27f2b",
+  "_id": "Ox3Tjne8x754MzIK",
   "name": "Mirage",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can make mirages appear in a target's mind.",
     "powerSet": "Telepathy",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e745fc9dcc37bb2",
-  "_key": "!items!5de6e1da-feac-4813-aac2-ba872ac27f2b"
+  "_key": "!items!Ox3Tjne8x754MzIK"
 }

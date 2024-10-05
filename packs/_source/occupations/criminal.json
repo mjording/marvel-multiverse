@@ -1,7 +1,8 @@
 {
-  "_id": "3f5c7d63-f25c-4042-bd1a-c8b9cbc2beee",
+  "_id": "NT1q7oY8c9RhBMsA",
   "name": "Criminal",
   "type": "occupation",
+  "img": "systems/marvel-multiverse/icons/work.svg",
   "system": {
     "description": "The character did something that put them on the wrong side of the law. They might have spent time in jail for their crimes, or they might have gotten away with them scot-free. The fact that they break the law doesn't necessarily make them a bad person, but law enforcers usually don't care about such distinctions. If they are currently wanted by the law for their crimes, they should also take the Hunted tag. If they have served time, they should take the Convict tag too.",
     "examples": "Ant-Man (Scott Lang), Black Cat, Gambit.",
@@ -50,5 +51,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!3f5c7d63-f25c-4042-bd1a-c8b9cbc2beee"
+  "_key": "!items!NT1q7oY8c9RhBMsA"
 }

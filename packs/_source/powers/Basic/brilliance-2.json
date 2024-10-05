@@ -1,7 +1,8 @@
 {
-  "_id": "e4e3df31-c9ab-4414-b778-ed10a8b303e1",
+  "_id": "Zae5MjyYaVokGTn4",
   "name": "Brilliance 2",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "Everything makes more sense to the character.",
     "powerSet": "Basic",
@@ -28,7 +29,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.e4e3df31-c9ab-4414-b778-ed10a8b303e1",
+      "origin": "Item.Zae5MjyYaVokGTn4",
       "_id": "855f5f7a52b8e0fd",
       "changes": [
         {
@@ -47,9 +48,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!e4e3df31-c9ab-4414-b778-ed10a8b303e1.855f5f7a52b8e0fd"
+      "_key": "!items.effects!Zae5MjyYaVokGTn4.855f5f7a52b8e0fd"
     }
   ],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!e4e3df31-c9ab-4414-b778-ed10a8b303e1"
+  "_key": "!items!Zae5MjyYaVokGTn4"
 }

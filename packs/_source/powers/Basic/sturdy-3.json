@@ -1,7 +1,8 @@
 {
-  "_id": "41171f4e-8507-4227-aba4-5106b4fc4e5f",
+  "_id": "V0U97kSFgUq7CHgz",
   "name": "Sturdy 3",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character is protected like a tank.",
     "powerSet": "Basic",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.41171f4e-8507-4227-aba4-5106b4fc4e5f",
+      "origin": "Item.V0U97kSFgUq7CHgz",
       "_id": "92108c2699a34021",
       "changes": [
         {
@@ -43,9 +44,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!41171f4e-8507-4227-aba4-5106b4fc4e5f.92108c2699a34021"
+      "_key": "!items.effects!V0U97kSFgUq7CHgz.92108c2699a34021"
     }
   ],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!41171f4e-8507-4227-aba4-5106b4fc4e5f"
+  "_key": "!items!V0U97kSFgUq7CHgz"
 }

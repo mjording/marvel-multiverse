@@ -1,7 +1,8 @@
 {
-  "_id": "018ec3aa-ab76-7375-92a1-fb48f5c28cc6",
+  "_id": "8bmIfDklkESAP95k",
   "name": "Alien: Shi'ar",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character is a member of the Shi'ar, an avian humanoid race from the planet Chandilar who formed the interstellar Shi'ar Empire in the Shi'ar Galaxy. They resemble humans but are much stronger and have feathers instead of hair on their heads.",
     "examples": "Adam-X, Deathbird, Majestrix Lilandra Neramani.",
@@ -47,5 +48,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!018ec3aa-ab76-7375-92a1-fb48f5c28cc6"
+  "_key": "!items!8bmIfDklkESAP95k"
 }

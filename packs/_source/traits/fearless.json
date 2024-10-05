@@ -1,12 +1,13 @@
 {
-  "_id": "accf570f-b1fa-47e5-901c-ff7f92a4c8e2",
+  "_id": "6kjH0ktGRGF2OF7C",
   "name": "Fearless",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character is extremely brave. They have an edge on any action checks required to deal with fear."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!accf570f-b1fa-47e5-901c-ff7f92a4c8e2"
+  "_key": "!items!6kjH0ktGRGF2OF7C"
 }

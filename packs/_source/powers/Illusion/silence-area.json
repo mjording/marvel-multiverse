@@ -1,7 +1,8 @@
 {
-  "_id": "47530a27-e9b9-47be-810c-4ffae8ba4850",
+  "_id": "kpLyMXpRNWinP9Qc",
   "name": "Silence Area",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/illusion.svg",
   "system": {
     "description": "An unnatural silence falls over the area.",
     "powerSet": "Illusion",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "ba98409134c2014d",
-  "_key": "!items!47530a27-e9b9-47be-810c-4ffae8ba4850"
+  "_key": "!items!kpLyMXpRNWinP9Qc"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "e06c8274-a30e-4a24-b234-c1f713e75d61",
+  "_id": "OBDy15neuudbSGC6",
   "name": "Alien: Marginalian",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character is a Marginal, a species of asexually reproducing hermaphrodites who come from Marginalia, a space between universes. They are legless, shaped like a green potato with arms, and they get around by means of levitation.",
     "examples": "Doop.",
@@ -320,5 +321,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!e06c8274-a30e-4a24-b234-c1f713e75d61"
+  "_key": "!items!OBDy15neuudbSGC6"
 }

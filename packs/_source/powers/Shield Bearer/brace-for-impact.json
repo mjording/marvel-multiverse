@@ -1,7 +1,8 @@
 {
-  "_id": "6d48f2bd-8c1e-4e08-af09-79bae30009c5",
+  "_id": "xUoaVAtKTKsv8gir",
   "name": "Brace for Impact",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character mentally toughens themselves for a fight.",
     "powerSet": "Shield Bearer",
@@ -14,6 +15,6 @@
     "effect": "For every point of Focus spent, the character can ignore 1 point of Health damage dealt by the attack."
   },
   "folder": "926e8d815f4d3fd7",
-  "_key": "!items!6d48f2bd-8c1e-4e08-af09-79bae30009c5",
+  "_key": "!items!xUoaVAtKTKsv8gir",
   "flags": {}
 }

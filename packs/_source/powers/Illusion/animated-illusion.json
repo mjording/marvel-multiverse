@@ -1,7 +1,8 @@
 {
-  "_id": "23b6e189-0380-40de-9079-eeddb00df8ad",
+  "_id": "z6HFnRaGe5Ai9Gcj",
   "name": "Animated Illusion",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/illusion.svg",
   "system": {
     "description": "By manipulating visual light, the character creates a moving hologram.",
     "powerSet": "Illusion",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "ba98409134c2014d",
-  "_key": "!items!23b6e189-0380-40de-9079-eeddb00df8ad"
+  "_key": "!items!z6HFnRaGe5Ai9Gcj"
 }

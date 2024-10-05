@@ -1,7 +1,8 @@
 {
-  "_id": "a255833d-3de7-4e65-b63b-afd517222ade",
+  "_id": "ESdydSYhUDvegH7Z",
   "name": "Leech Life",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/magic.svg",
   "system": {
     "description": "The character consumes the life force of another.",
     "powerSet": "Magic",
@@ -19,5 +20,5 @@
   "flags": {},
   "effects": [],
   "folder": "8c23e6cd16b9bb49",
-  "_key": "!items!a255833d-3de7-4e65-b63b-afd517222ade"
+  "_key": "!items!ESdydSYhUDvegH7Z"
 }

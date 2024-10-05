@@ -1,7 +1,8 @@
 {
-  "_id": "a08f9275-115d-42a7-bac2-1a71818f338e",
+  "_id": "81NFpoxl6jVRUsPq",
   "name": "Summon Portal",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/magic.svg",
   "system": {
     "description": "The character opens a portal between space and dimensions.",
     "powerSet": "Magic",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "8c23e6cd16b9bb49",
-  "_key": "!items!a08f9275-115d-42a7-bac2-1a71818f338e"
+  "_key": "!items!81NFpoxl6jVRUsPq"
 }

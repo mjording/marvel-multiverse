@@ -1,7 +1,8 @@
 {
-  "_id": "8c11f699-0711-44c2-89e7-9a90d21a70f4",
+  "_id": "tbeXIRtKRwpWZ8PH",
   "name": "Mental Health Conditions",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character has mental health conditions. These might include anxiety, depression, dissociative identity disorder or other conditions.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!8c11f699-0711-44c2-89e7-9a90d21a70f4"
+  "_key": "!items!tbeXIRtKRwpWZ8PH"
 }

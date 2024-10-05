@@ -1,7 +1,8 @@
 {
-  "_id": "53178756-f5ea-41db-8ca3-637f6ed43814",
+  "_id": "7IKeclR3HmLlg8PJ",
   "name": "Dimensional Travel",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/portal.svg",
   "system": {
     "description": "The character moves from one dimension to another.",
     "powerSet": "Omniversal Travel",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "882fb16dc4a7430e",
-  "_key": "!items!53178756-f5ea-41db-8ca3-637f6ed43814"
+  "_key": "!items!7IKeclR3HmLlg8PJ"
 }

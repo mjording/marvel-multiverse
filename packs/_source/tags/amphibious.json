@@ -1,7 +1,8 @@
 {
-  "_id": "e3390c92-5cbc-401f-85dc-f125d8c564b4",
+  "_id": "cqamKQooBxIFLVJm",
   "name": "Amphibious",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character can breathe just fine underwater and can see and hear well in it too.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!e3390c92-5cbc-401f-85dc-f125d8c564b4"
+  "_key": "!items!cqamKQooBxIFLVJm"
 }

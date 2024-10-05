@@ -1,12 +1,13 @@
 {
-  "_id": "743d40d7-ae7b-4fdd-948c-ff82c58d60aa",
+  "_id": "FbEVj8NPPg4xVkU6",
   "name": "Piloting",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character knows how to operate vehicles of all kinds. They have an edge on Agility checks triggered when piloting or driving a vehicle during a movement action. This applies to cars, boats, aircraft and so on."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!743d40d7-ae7b-4fdd-948c-ff82c58d60aa"
+  "_key": "!items!FbEVj8NPPg4xVkU6"
 }

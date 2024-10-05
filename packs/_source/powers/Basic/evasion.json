@@ -1,7 +1,8 @@
 {
-  "_id": "60333607-8cb3-4cf1-9ea1-d48f96e073ab",
+  "_id": "DEpW2tZg8a68twPH",
   "name": "Evasion",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can dodge fists quickly,",
     "powerSet": "Basic",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!60333607-8cb3-4cf1-9ea1-d48f96e073ab"
+  "_key": "!items!DEpW2tZg8a68twPH"
 }

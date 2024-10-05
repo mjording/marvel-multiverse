@@ -1,7 +1,8 @@
 {
-  "_id": "92ed7a97-89f8-4e8e-a950-44832d37fc13",
+  "_id": "nTfvYGskLZUrx4yv",
   "name": "Invisibility",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/illusion.svg",
   "system": {
     "description": "The character turns as transparent as glass.",
     "powerSet": "Illusion",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "ba98409134c2014d",
-  "_key": "!items!92ed7a97-89f8-4e8e-a950-44832d37fc13"
+  "_key": "!items!nTfvYGskLZUrx4yv"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "5c6fd57a-b50c-48da-9a85-6089f473f56f",
+  "_id": "dyJhq11QekwA3kIx",
   "name": "Clobber",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character pummels their foe with enough force ot knock them flat.",
     "powerSet": "Super-Strength",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "88848a43d8a58388",
-  "_key": "!items!5c6fd57a-b50c-48da-9a85-6089f473f56f"
+  "_key": "!items!dyJhq11QekwA3kIx"
 }

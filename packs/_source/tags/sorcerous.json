@@ -1,7 +1,8 @@
 {
-  "_id": "6b0aa7d0-5cff-4f83-bc5b-78d308dd782f",
+  "_id": "jdSF3Aw6grPdWprR",
   "name": "Sorcerous",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character has dedicated themself to the study of traditional magic, also known as sorcery.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!6b0aa7d0-5cff-4f83-bc5b-78d308dd782f"
+  "_key": "!items!jdSF3Aw6grPdWprR"
 }

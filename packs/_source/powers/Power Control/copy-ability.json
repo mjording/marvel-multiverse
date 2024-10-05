@@ -1,7 +1,8 @@
 {
-  "_id": "90e0d65f-225b-4ba7-bc9f-6601b12ba292",
+  "_id": "70iVIHunMilPC6X6",
   "name": "Copy Ability",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character duplicates another character's ability.",
     "powerSet": "Power Control",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9d538083463adac7",
-  "_key": "!items!90e0d65f-225b-4ba7-bc9f-6601b12ba292"
+  "_key": "!items!70iVIHunMilPC6X6"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "46e4b501-a1c8-4483-9ed6-86de2fdaea3d",
+  "_id": "nnmvCBn8OGU03QvH",
   "name": "Steal Powers",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character removes a target's power and takes it for their own!",
     "powerSet": "Power Control",
@@ -19,5 +20,5 @@
   "flags": {},
   "effects": [],
   "folder": "9d538083463adac7",
-  "_key": "!items!46e4b501-a1c8-4483-9ed6-86de2fdaea3d"
+  "_key": "!items!nnmvCBn8OGU03QvH"
 }

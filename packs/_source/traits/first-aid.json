@@ -1,12 +1,13 @@
 {
-  "_id": "af56c716-28fe-49e5-b417-6f9987b814ab",
+  "_id": "tZGAriy9TdNt12Sb",
   "name": "First Aid",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character knows how to administer first aid. They have an edge on Logic checks to stop bleeding."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!af56c716-28fe-49e5-b417-6f9987b814ab"
+  "_key": "!items!tZGAriy9TdNt12Sb"
 }

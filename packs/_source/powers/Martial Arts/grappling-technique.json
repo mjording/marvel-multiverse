@@ -1,7 +1,8 @@
 {
-  "_id": "94c34a9d-9391-49cf-a0f9-498180857ccf",
+  "_id": "0f6fOwThDIGLrbxE",
   "name": "Grappling Technique",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/martial-arts.svg",
   "system": {
     "description": "The character snags an enemy.",
     "powerSet": "Martial Arts",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "9a200a2684a8be54",
-  "_key": "!items!94c34a9d-9391-49cf-a0f9-498180857ccf"
+  "_key": "!items!0f6fOwThDIGLrbxE"
 }

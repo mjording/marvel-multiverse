@@ -1,7 +1,8 @@
 {
-  "_id": "ccce5902-4be6-4b95-9851-216c6471e72f",
+  "_id": "w0JXTcF5QKfGbpYA",
   "name": "Healing Factor",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character heals amazingly fast.",
     "powerSet": "Basic",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!ccce5902-4be6-4b95-9851-216c6471e72f"
+  "_key": "!items!w0JXTcF5QKfGbpYA"
 }

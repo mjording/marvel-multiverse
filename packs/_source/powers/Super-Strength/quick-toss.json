@@ -1,7 +1,8 @@
 {
-  "_id": "5c6d56dc-54d0-41bc-856d-4367b378cd61",
+  "_id": "Jnw0TATiOPAOgRRM",
   "name": "Quick Toss",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character tosses a person like a toy.",
     "powerSet": "Super-Strength",
@@ -18,5 +19,5 @@
   "flags": {},
   "effects": [],
   "folder": "88848a43d8a58388",
-  "_key": "!items!5c6d56dc-54d0-41bc-856d-4367b378cd61"
+  "_key": "!items!Jnw0TATiOPAOgRRM"
 }

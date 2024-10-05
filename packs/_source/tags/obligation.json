@@ -1,7 +1,8 @@
 {
-  "_id": "a5292f14-01c1-43a9-9d2a-aa9b344200e3",
+  "_id": "ZXh29rCOebS1AKKY",
   "name": "Obligation",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character is responsible to certain people, places or organizations who rely on them. This tag can be selected multiple times, using many different categories. These include family, school, society, sports, work and so on.",
     "restriction": "",
@@ -10,5 +11,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!a5292f14-01c1-43a9-9d2a-aa9b344200e3"
+  "_key": "!items!ZXh29rCOebS1AKKY"
 }

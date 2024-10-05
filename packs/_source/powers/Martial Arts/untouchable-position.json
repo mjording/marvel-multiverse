@@ -1,7 +1,8 @@
 {
-  "_id": "d4bd15a5-553f-4d1a-b1cb-6c79046d24fb",
+  "_id": "owsgvdOSYAkIY3Ip",
   "name": "Untouchable Position",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/martial-arts.svg",
   "system": {
     "description": "The character's enemies struggle to gang up on them.",
     "powerSet": "Martial Arts",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9a200a2684a8be54",
-  "_key": "!items!d4bd15a5-553f-4d1a-b1cb-6c79046d24fb"
+  "_key": "!items!owsgvdOSYAkIY3Ip"
 }

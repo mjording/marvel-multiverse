@@ -1,7 +1,8 @@
 {
-  "_id": "57117ccb-1a41-49b3-8675-9b718e5a2266",
+  "_id": "s1rbIflleUsIsC2N",
   "name": "Club",
   "type": "weapon",
+  "img": "systems/marvel-multiverse/icons/weapons.svg",
   "system": {
     "description": "A club is a short, stout weapon made of wood or metal. It is a simple weapon that is easy to use and can be found in the hands of many warriors.",
     "range": "Reach",
@@ -10,5 +11,5 @@
   "flags": {},
   "effects": [],
   "folder": "8b60348af8f8d703",
-  "_key": "!items!57117ccb-1a41-49b3-8675-9b718e5a2266"
+  "_key": "!items!s1rbIflleUsIsC2N"
 }

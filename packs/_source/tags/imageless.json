@@ -1,7 +1,8 @@
 {
-  "_id": "4f29efec-5032-4f8c-a419-d6eca3b257ff",
+  "_id": "B2DckgXPTJtZzuxC",
   "name": "Imageless",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character casts no reflection, and their image cannot be captured by cameras.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!4f29efec-5032-4f8c-a419-d6eca3b257ff"
+  "_key": "!items!B2DckgXPTJtZzuxC"
 }

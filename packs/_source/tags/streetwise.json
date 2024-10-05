@@ -1,7 +1,8 @@
 {
-  "_id": "98f29093-58a9-423a-9af1-bb04d6e231c3",
+  "_id": "JaeN3kJTQHwD0SBP",
   "name": "Streetwise",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character knows how things are handled on the street, who's in charge of various criminal enterprises and how to avoid issues with them.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!98f29093-58a9-423a-9af1-bb04d6e231c3"
+  "_key": "!items!JaeN3kJTQHwD0SBP"
 }

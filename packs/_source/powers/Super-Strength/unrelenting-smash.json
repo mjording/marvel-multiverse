@@ -1,7 +1,8 @@
 {
-  "_id": "f535a929-3cf8-487b-8b3d-36f0502a68d1",
+  "_id": "XzTh6gejjmBpBDJk",
   "name": "Unrelenting Smash",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character smashes everything in reach.",
     "powerSet": "Super-Strength",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "88848a43d8a58388",
-  "_key": "!items!f535a929-3cf8-487b-8b3d-36f0502a68d1"
+  "_key": "!items!XzTh6gejjmBpBDJk"
 }

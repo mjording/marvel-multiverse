@@ -1,7 +1,8 @@
 {
-  "_id": "c7917324-1bfb-4e29-a708-e64a34637b42",
+  "_id": "GjNdUjutIj2toI1n",
   "name": "Adventurer",
   "type": "occupation",
+  "img": "systems/marvel-multiverse/icons/work.svg",
   "system": {
     "description": "The character focuses on having adventures. Perhaps they're independently wealthy and don't need another occupation, or maybe they hire out their services.",
     "examples": "Iron Fist (Danny Rand), Luke Cage, Hawkeye (Kate Bishop).",
@@ -50,5 +51,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!c7917324-1bfb-4e29-a708-e64a34637b42"
+  "_key": "!items!GjNdUjutIj2toI1n"
 }

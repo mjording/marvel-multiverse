@@ -1,7 +1,8 @@
 {
-  "_id": "30c0c890-49b3-4250-a753-e7ab8d9e6502",
+  "_id": "NuM6rfHJ5GI71FpS",
   "name": "Dimensional Travel Together",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/portal.svg",
   "system": {
     "description": "The character sends someone to another dimension.",
     "powerSet": "Omniversal Travel",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "882fb16dc4a7430e",
-  "_key": "!items!30c0c890-49b3-4250-a753-e7ab8d9e6502"
+  "_key": "!items!NuM6rfHJ5GI71FpS"
 }

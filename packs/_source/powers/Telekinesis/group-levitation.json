@@ -1,7 +1,8 @@
 {
-  "_id": "339df6e0-e3bd-408b-899f-295a9cd3ccd3",
+  "_id": "6mQt18XUIxGRbfWm",
   "name": "Group Levitation",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can lift others into the air too.",
     "powerSet": "Telekinesis",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "bac06ccb5a9f2d39",
-  "_key": "!items!339df6e0-e3bd-408b-899f-295a9cd3ccd3"
+  "_key": "!items!6mQt18XUIxGRbfWm"
 }

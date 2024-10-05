@@ -1,7 +1,8 @@
 {
-  "_id": "8b9d73cf-9df8-4bd0-9382-6a2735c0f438",
+  "_id": "UIyMJI4oUQfK2iEM",
   "name": "Telekinetic Protection 3",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character's mind protects them like a tank.",
     "powerSet": "Telekinesis",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "bac06ccb5a9f2d39",
-  "_key": "!items!8b9d73cf-9df8-4bd0-9382-6a2735c0f438"
+  "_key": "!items!UIyMJI4oUQfK2iEM"
 }

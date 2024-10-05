@@ -1,7 +1,8 @@
 {
-  "_id": "7aca5e1f-b3b8-4998-8437-136bf240b26a",
+  "_id": "uVAbi9P9RYp53tbd",
   "name": "Brain Drain",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/magic.svg",
   "system": {
     "description": "The character fires enchanted bots of electricity from their fingers.",
     "powerSet": "Magic",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "8c23e6cd16b9bb49",
-  "_key": "!items!7aca5e1f-b3b8-4998-8437-136bf240b26a"
+  "_key": "!items!uVAbi9P9RYp53tbd"
 }

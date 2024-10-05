@@ -1,7 +1,8 @@
 {
-  "_id": "6fcad11f-dee9-49fa-aa1f-f3e554b1e8ff",
+  "_id": "exSy6CSOqsIgiIV6",
   "name": "Dimensional Portal",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/portal.svg",
   "system": {
     "description": "The character opens a portal to another place.",
     "powerSet": "Omniversal Travel",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "882fb16dc4a7430e",
-  "_key": "!items!6fcad11f-dee9-49fa-aa1f-f3e554b1e8ff"
+  "_key": "!items!exSy6CSOqsIgiIV6"
 }

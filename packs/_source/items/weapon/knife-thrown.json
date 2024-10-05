@@ -1,7 +1,8 @@
 {
-  "_id": "44018699-f26b-4711-a164-70f4de65b4fb",
+  "_id": "uyZiEpiq4X9OMRaU",
   "name": "Knife Thrown",
   "type": "weapon",
+  "img": "systems/marvel-multiverse/icons/weapons.svg",
   "system": {
     "description": "A knife is a small, sharp blade that is used for cutting or as a weapon. It is a simple weapon that is easy to conceal and can be used for a variety of purposes.",
     "range": "5",
@@ -10,5 +11,5 @@
   "flags": {},
   "effects": [],
   "folder": "8b60348af8f8d703",
-  "_key": "!items!44018699-f26b-4711-a164-70f4de65b4fb"
+  "_key": "!items!uyZiEpiq4X9OMRaU"
 }

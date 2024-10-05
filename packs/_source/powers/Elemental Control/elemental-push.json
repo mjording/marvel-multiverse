@@ -1,7 +1,8 @@
 {
-  "_id": "f721554d-6baa-4b67-938e-c14a3f6e7990",
+  "_id": "KOGbtsAQoEHQm7gg",
   "name": "Elemental Push",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/four-elements.svg",
   "system": {
     "description": "The character can move a target with their element.",
     "powerSet": "Elemental Control",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "a9ecc3931cffa8a5",
-  "_key": "!items!f721554d-6baa-4b67-938e-c14a3f6e7990"
+  "_key": "!items!KOGbtsAQoEHQm7gg"
 }

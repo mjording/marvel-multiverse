@@ -1,7 +1,8 @@
 {
-  "_id": "018ec3c5-65a0-732e-ae14-57121bf2593f",
+  "_id": "OsAk3mhZAtvGrl4e",
   "name": "Shape-Shift",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can change forms.",
     "powerSet": "Basic",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!018ec3c5-65a0-732e-ae14-57121bf2593f"
+  "_key": "!items!OsAk3mhZAtvGrl4e"
 }

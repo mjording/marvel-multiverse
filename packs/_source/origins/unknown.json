@@ -1,7 +1,8 @@
 {
-  "_id": "58f10316-9dc2-41de-8b97-eb7a74723efb",
+  "_id": "2wwQyfGKeQacXVtW",
   "name": "Unknown",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character has developed powers but is not entirely sure how. It could be that the player or the Narrator knows, but the character does not, or maybe nobody else does either. Astonishing things happen all the time in the Marvel Multiverse, and there's no way to classify them all. The source of these powers may be explained in time. It could turn out that the character actually has a standard type of origin, or it could be that they have an origin that's utterly unique.",
     "examples": "Squirrel Girl, Taskmaster.",
@@ -25,5 +26,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!58f10316-9dc2-41de-8b97-eb7a74723efb"
+  "_key": "!items!2wwQyfGKeQacXVtW"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "34f2d012-89d5-4cd3-8804-9ceb2b5288d6",
+  "_id": "MfC05kdl2BW3ql4R",
   "name": "Lucky Us",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/four-leaf-clover.svg",
   "system": {
     "description": "The character can share their good fortune with many friends.",
     "powerSet": "Luck",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "c3155c708eb54219",
-  "_key": "!items!34f2d012-89d5-4cd3-8804-9ceb2b5288d6"
+  "_key": "!items!MfC05kdl2BW3ql4R"
 }

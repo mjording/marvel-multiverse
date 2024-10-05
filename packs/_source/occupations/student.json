@@ -1,7 +1,8 @@
 {
-  "_id": "8d16cdd3-4be3-4888-bc58-d2f1ce14d53e",
+  "_id": "BwSPq35eiRRhfTAi",
   "name": "Student",
   "type": "occupation",
+  "img": "systems/marvel-multiverse/icons/work.svg",
   "system": {
     "description": "The character attends school or college on a full-time basis. What they study or focus on is up to them and their school. Most people start out with this occupation, but once they graduate, they move on to something new. If that happens with your character, you can then select a new occupation to replace this one.",
     "examples": "Moon Girl, Ms. Marvel (Kamala Khan), Spider-Man (Miles Morales).",
@@ -20,7 +21,7 @@
         "_key": "!items!AsvzlKtmzuweDUrD"
       },
       {
-        "_id": "a5292f14-01c1-43a9-9d2a-aa9b344200e3",
+        "_id": "BwSPq35eiRRhfTAi",
         "name": "Obligation",
         "type": "tag",
         "system": {
@@ -30,12 +31,12 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!a5292f14-01c1-43a9-9d2a-aa9b344200e3"
+        "_key": "!items!BwSPq35eiRRhfTAi"
       }
     ],
     "traits": [
       {
-        "_id": "6e3266c1-3477-40a3-b22a-afbcfcf4dd41",
+        "_id": "BwSPq35eiRRhfTAi",
         "name": "Quick Learner",
         "type": "trait",
         "system": {
@@ -44,11 +45,11 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!6e3266c1-3477-40a3-b22a-afbcfcf4dd41"
+        "_key": "!items!BwSPq35eiRRhfTAi"
       }
     ]
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!8d16cdd3-4be3-4888-bc58-d2f1ce14d53e"
+  "_key": "!items!BwSPq35eiRRhfTAi"
 }

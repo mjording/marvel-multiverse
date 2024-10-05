@@ -1,7 +1,8 @@
 {
-  "_id": "a255af3a-cac7-4df1-af39-47e9029214e8",
+  "_id": "0F1Alg83HguQoyj1",
   "name": "Externally Immortal",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character is nearly impossible to permanently kill. If they die, they are either revived somehow or reincarnated with their full memories, and then they age quickly till they reach the age of their first death, at which point they stop aging at all. The only way for an External to permanently die is for another External to kill all the others within a certain period of time and either drain their life energies or eat their hearts, which grants the killer the victim's powers. Otherwise, they come back again.",
     "restriction": "For Externals only.",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!a255af3a-cac7-4df1-af39-47e9029214e8"
+  "_key": "!items!0F1Alg83HguQoyj1"
 }

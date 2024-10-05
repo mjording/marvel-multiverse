@@ -1,12 +1,13 @@
 {
-  "_id": "6dac7626-04ef-4bad-8d83-868d57a5d435",
+  "_id": "yukMvCC0lkN9uFKd",
   "name": "Combat Reflexes",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character can react quickly in combat. This grants them one additional reaction each round."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!6dac7626-04ef-4bad-8d83-868d57a5d435"
+  "_key": "!items!yukMvCC0lkN9uFKd"
 }

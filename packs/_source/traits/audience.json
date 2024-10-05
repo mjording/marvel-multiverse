@@ -1,12 +1,13 @@
 {
-  "_id": "48d39dde-f603-4f55-8a0d-6530efd5a37f",
+  "_id": "N0Fmujd7qZsnAwpR",
   "name": "Audience",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "Many people follow the character's work and treat them with the respect they deserve. By making an Ego check, the character can persuade their audience to provide help in the form of information or resources. The Narrator determines the TN of the Ego check based on the favor requested."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!48d39dde-f603-4f55-8a0d-6530efd5a37f"
+  "_key": "!items!N0Fmujd7qZsnAwpR"
 }

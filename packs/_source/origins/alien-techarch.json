@@ -1,7 +1,8 @@
 {
-  "_id": "5509ce72-7264-4028-a3c0-ed9f394064ec",
+  "_id": "HgunmYb5VPPZRwWb",
   "name": "Alien: Technarch",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character is a member of the alien species known as the Technarchy. These artificially intelligent techno-organic beings use a Transmode virus to infect other creatures and eventually take over a planet to prepare it to become part of the Phalanx or be devoured.",
     "examples": "Warlock, Magus.",
@@ -310,5 +311,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!5509ce72-7264-4028-a3c0-ed9f394064ec"
+  "_key": "!items!HgunmYb5VPPZRwWb"
 }

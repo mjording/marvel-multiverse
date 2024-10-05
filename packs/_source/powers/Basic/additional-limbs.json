@@ -1,7 +1,8 @@
 {
-  "_id": "817bd137-8c8d-49b5-9ff9-c236837ff093",
+  "_id": "909yho4GgMb4QRlE",
   "name": "Additional Limbs",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character has extra limbs that can grab objects and attack foes.",
     "powerSet": "Basic",
@@ -28,7 +29,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.817bd137-8c8d-49b5-9ff9-c236837ff093",
+      "origin": "Item.909yho4GgMb4QRlE",
       "_id": "a6eaf872deb07f00",
       "changes": [
         {
@@ -47,9 +48,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!817bd137-8c8d-49b5-9ff9-c236837ff093.a6eaf872deb07f00"
+      "_key": "!items.effects!909yho4GgMb4QRlE.a6eaf872deb07f00"
     }
   ],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!817bd137-8c8d-49b5-9ff9-c236837ff093"
+  "_key": "!items!909yho4GgMb4QRlE"
 }

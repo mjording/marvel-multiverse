@@ -1,7 +1,8 @@
 {
-  "_id": "398cbfa4-3263-4333-bad6-a13956f2161c",
+  "_id": "lbIak9xp5RO0clFP",
   "name": "ESP",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can sense the presence of others.",
     "powerSet": "Telepathy",
@@ -18,5 +19,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e745fc9dcc37bb2",
-  "_key": "!items!398cbfa4-3263-4333-bad6-a13956f2161c"
+  "_key": "!items!lbIak9xp5RO0clFP"
 }

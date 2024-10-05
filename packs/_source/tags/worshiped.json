@@ -1,7 +1,8 @@
 {
-  "_id": "1ade8e12-db6f-429a-9c2f-bee4ca08c390",
+  "_id": "NGKIIdVPgspK8QXE",
   "name": "Worshiped",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character is worshipped by others as a god.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!1ade8e12-db6f-429a-9c2f-bee4ca08c390"
+  "_key": "!items!NGKIIdVPgspK8QXE"
 }

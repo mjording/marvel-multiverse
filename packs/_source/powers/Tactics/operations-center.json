@@ -1,7 +1,8 @@
 {
-  "_id": "46f5e81a-21e3-406e-8608-ef478f741511",
+  "_id": "j9lS4vUptRActg2k",
   "name": "Operations Center",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character directs their allies in combat.",
     "powerSet": "Tactics",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "b21090c059bb04d0",
-  "_key": "!items!46f5e81a-21e3-406e-8608-ef478f741511"
+  "_key": "!items!j9lS4vUptRActg2k"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "e3eeb686-747a-4d26-bb4d-ea16f7f7bdcc",
+  "_id": "fXqNhRTCpKGO9qyx",
   "name": "Flight 2",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can zoom across the sky.",
     "powerSet": "Basic",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.e3eeb686-747a-4d26-bb4d-ea16f7f7bdcc",
+      "origin": "Item.fXqNhRTCpKGO9qyx",
       "_id": "91c6c00c1d209c8a",
       "changes": [
         {
@@ -53,9 +54,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!e3eeb686-747a-4d26-bb4d-ea16f7f7bdcc.91c6c00c1d209c8a"
+      "_key": "!items.effects!fXqNhRTCpKGO9qyx.91c6c00c1d209c8a"
     }
   ],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!e3eeb686-747a-4d26-bb4d-ea16f7f7bdcc"
+  "_key": "!items!fXqNhRTCpKGO9qyx"
 }

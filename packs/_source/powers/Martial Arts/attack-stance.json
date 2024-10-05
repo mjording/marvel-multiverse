@@ -1,7 +1,8 @@
 {
-  "_id": "5884f106-801d-482a-9134-37d66ccad299",
+  "_id": "cCVjyNL1fTcyAq9g",
   "name": "Attack Stance",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/martial-arts.svg",
   "system": {
     "description": "The character enters an aggressive attack stance, ready to strike in any direction.",
     "powerSet": "Martial Arts",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9a200a2684a8be54",
-  "_key": "!items!5884f106-801d-482a-9134-37d66ccad299"
+  "_key": "!items!cCVjyNL1fTcyAq9g"
 }

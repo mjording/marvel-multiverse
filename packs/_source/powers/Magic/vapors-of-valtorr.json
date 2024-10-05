@@ -1,7 +1,8 @@
 {
-  "_id": "ea0296f3-e8b7-40bc-877a-c4c23e5d32e4",
+  "_id": "Jmvdg1hkbsm4nmat",
   "name": "Vapors of Valtorr",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/magic.svg",
   "system": {
     "description": "The character weaves an inky mist that can attack those inside it.",
     "powerSet": "Magic",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "8c23e6cd16b9bb49",
-  "_key": "!items!ea0296f3-e8b7-40bc-877a-c4c23e5d32e4"
+  "_key": "!items!Jmvdg1hkbsm4nmat"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "1ae0cdd1-b8bd-4f0a-a6a1-80b2e5a83bdb",
+  "_id": "aXtJVLJTC69Hk3Hb",
   "name": "Shield 4",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character's shield protects like a concrete barrier.",
     "powerSet": "Shield Bearer",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.1ae0cdd1-b8bd-4f0a-a6a1-80b2e5a83bdb",
+      "origin": "Item.aXtJVLJTC69Hk3Hb",
       "_id": "4d30dd52335b4e0a",
       "changes": [
         {
@@ -43,9 +44,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!1ae0cdd1-b8bd-4f0a-a6a1-80b2e5a83bdb.4d30dd52335b4e0a"
+      "_key": "!items.effects!aXtJVLJTC69Hk3Hb.4d30dd52335b4e0a"
     }
   ],
   "folder": "926e8d815f4d3fd7",
-  "_key": "!items!1ae0cdd1-b8bd-4f0a-a6a1-80b2e5a83bdb"
+  "_key": "!items!aXtJVLJTC69Hk3Hb"
 }

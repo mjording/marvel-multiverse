@@ -1,7 +1,8 @@
 {
-  "_id": "478d8f3f-f914-43c2-86ec-60ec1e44d186",
+  "_id": "U05Ab1iyXVoqifyw",
   "name": "Extended Reach 2",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/placticity.svg",
   "system": {
     "description": "The character can reach a looong way.",
     "powerSet": "Plasticity",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.478d8f3f-f914-43c2-86ec-60ec1e44d186",
+      "origin": "Item.U05Ab1iyXVoqifyw",
       "_id": "8e970b1af8c05839",
       "changes": [
         {
@@ -43,9 +44,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!478d8f3f-f914-43c2-86ec-60ec1e44d186.8e970b1af8c05839"
+      "_key": "!items.effects!U05Ab1iyXVoqifyw.8e970b1af8c05839"
     }
   ],
   "folder": "b660cb39178688a5",
-  "_key": "!items!478d8f3f-f914-43c2-86ec-60ec1e44d186"
+  "_key": "!items!U05Ab1iyXVoqifyw"
 }

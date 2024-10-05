@@ -1,7 +1,8 @@
 {
-  "_id": "71cf0ee2-8166-4797-a349-e8723088a1ff",
+  "_id": "BYuRscd9D6akdwkr",
   "name": "Body Sphere",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/placticity.svg",
   "system": {
     "description": "The character can form their body into a protective sphere.",
     "powerSet": "Plasticity",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "b660cb39178688a5",
-  "_key": "!items!71cf0ee2-8166-4797-a349-e8723088a1ff"
+  "_key": "!items!BYuRscd9D6akdwkr"
 }

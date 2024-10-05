@@ -1,7 +1,8 @@
 {
-  "_id": "366f199a-8773-4d6d-b28f-ff8594d2f5e7",
+  "_id": "x5OfOd7ILzUlNNyJ",
   "name": "Elemental Barrage",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/four-elements.svg",
   "system": {
     "description": "The character hurls a barrage of their element at their foes.",
     "powerSet": "Elemental Control",
@@ -21,5 +22,5 @@
   "flags": {},
   "effects": [],
   "folder": "a9ecc3931cffa8a5",
-  "_key": "!items!366f199a-8773-4d6d-b28f-ff8594d2f5e7"
+  "_key": "!items!x5OfOd7ILzUlNNyJ"
 }

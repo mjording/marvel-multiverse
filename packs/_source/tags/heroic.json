@@ -1,7 +1,8 @@
 {
-  "_id": "b4aaeca2-8c69-41da-b7d8-6fc42d4eb41a",
+  "_id": "ec08DwCRiwlBeNjL",
   "name": "Heroic",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character acts heroically. They help people in need, and they do their best not to kill—even with people who might deserve it.",
     "restriction": "The character cannot also be Villainous.",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!b4aaeca2-8c69-41da-b7d8-6fc42d4eb41a"
+  "_key": "!items!ec08DwCRiwlBeNjL"
 }

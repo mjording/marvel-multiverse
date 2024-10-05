@@ -1,7 +1,8 @@
 {
-  "_id": "7281c595-4df1-4a0c-b7ec-34192d9d1ead",
+  "_id": "U9a1HC2Pyw10QB6D",
   "name": "Webgliding",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can glide through the air on their webbing.",
     "powerSet": "Spider-Powers",
@@ -28,7 +29,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.7281c595-4df1-4a0c-b7ec-34192d9d1ead",
+      "origin": "Item.U9a1HC2Pyw10QB6D",
       "_id": "2d3e40eec3034f1e",
       "changes": [
         {
@@ -52,9 +53,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!7281c595-4df1-4a0c-b7ec-34192d9d1ead.2d3e40eec3034f1e"
+      "_key": "!items.effects!U9a1HC2Pyw10QB6D.2d3e40eec3034f1e"
     }
   ],
   "folder": "a8b9ae895259d5bf",
-  "_key": "!items!7281c595-4df1-4a0c-b7ec-34192d9d1ead "
+  "_key": "!items!U9a1HC2Pyw10QB6D "
 }

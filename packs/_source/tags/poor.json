@@ -1,7 +1,8 @@
 {
-  "_id": "6fdb0327-6141-42bc-b02c-c689fab264ee",
+  "_id": "WVgealH1rgGgk3L7",
   "name": "Poor",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character has little access to money and struggles to make ends meet. This can cause them all sorts of problems.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!6fdb0327-6141-42bc-b02c-c689fab264ee"
+  "_key": "!items!WVgealH1rgGgk3L7"
 }

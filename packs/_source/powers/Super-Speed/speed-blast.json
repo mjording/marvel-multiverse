@@ -1,7 +1,8 @@
 {
-  "_id": "ab709e8f-8941-4791-9b28-8d722d436899",
+  "_id": "iIdSnxWEbckUMfpE",
   "name": "Speed Blast",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character fans their arms fast enough to blast a targes a a gust of air!",
     "powerSet": "Super-Speed",
@@ -19,5 +20,5 @@
   "flags": {},
   "effects": [],
   "folder": "b670a4a72be89d71",
-  "_key": "!items!ab709e8f-8941-4791-9b28-8d722d436899"
+  "_key": "!items!iIdSnxWEbckUMfpE"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "6eb741a6-532c-4e76-beee-62db81466c3a",
+  "_id": "7baXplrfXa9PmJAf",
   "name": "Slow-Motion Dodge",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "Time seems to slow down for the character, making it easy to dodge enemy attacks.",
     "powerSet": "Basic",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!6eb741a6-532c-4e76-beee-62db81466c3a"
+  "_key": "!items!7baXplrfXa9PmJAf"
 }

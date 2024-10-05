@@ -1,7 +1,8 @@
 {
-  "_id": "5f7d7778-0e1d-4ade-9e63-2efc333960d2",
+  "_id": "UoP7BewebClZwREz",
   "name": "Health Care Worker",
   "type": "occupation",
+  "img": "systems/marvel-multiverse/icons/work.svg",
   "system": {
     "description": "The character is a doctor, nurse, therapist or other person dedicated to helping heal others. They likely have access to an office where they practice their craft.",
     "examples": "Doc Samson, Doctor Strange, the Night Nurse (Linda Carter), Thor (Jane Foster).",
@@ -34,5 +35,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!5f7d7778-0e1d-4ade-9e63-2efc333960d2"
+  "_key": "!items!UoP7BewebClZwREz"
 }

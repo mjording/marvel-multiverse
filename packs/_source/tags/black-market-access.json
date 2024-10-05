@@ -1,7 +1,8 @@
 {
-  "_id": "16b9b183-3707-4eee-b122-eb87611706dc",
+  "_id": "uchcV5sQ5HNaIy0O",
   "name": "Black Market Access",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character knows how and where they can buy and sell hard-to-find and potentially illegal things.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!16b9b183-3707-4eee-b122-eb87611706dc"
+  "_key": "!items!uchcV5sQ5HNaIy0O"
 }

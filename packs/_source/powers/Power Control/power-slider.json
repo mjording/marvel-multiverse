@@ -1,7 +1,8 @@
 {
-  "_id": "f4a150de-c969-4008-8b18-ab3c65c0ed47",
+  "_id": "bE7scjHAROnD6dwa",
   "name": "Power Slider",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character's power waxes and wanes with what's vital to them.",
     "powerSet": "Power Control",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9d538083463adac7",
-  "_key": "!items!f4a150de-c969-4008-8b18-ab3c65c0ed47"
+  "_key": "!items!bE7scjHAROnD6dwa"
 }

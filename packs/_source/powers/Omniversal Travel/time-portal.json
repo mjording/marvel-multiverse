@@ -1,7 +1,8 @@
 {
-  "_id": "b1e09993-5ff9-48de-b562-58f0c0e20b0d",
+  "_id": "bX9xalyCyUliIzhM",
   "name": "Time Portal",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/portal.svg",
   "system": {
     "description": "The character opens a portal in time.",
     "powerSet": "Omniversal Travel",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "882fb16dc4a7430e",
-  "_key": "!items!bb1e09993-5ff9-48de-b562-58f0c0e20b0d"
+  "_key": "!items!bX9xalyCyUliIzhM"
 }

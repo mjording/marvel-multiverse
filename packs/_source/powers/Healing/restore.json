@@ -1,7 +1,8 @@
 {
-  "_id": "50f24025-2b44-4d9d-8607-ef105f800603",
+  "_id": "z976UT36V8Bl8Raw",
   "name": "Restore",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/healing.svg",
   "system": {
     "description": "The character can heal a shattered mind.",
     "powerSet": "Healing",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "e244d01d5a2f4c4f",
-  "_key": "!items!50f24025-2b44-4d9d-8607-ef105f800603"
+  "_key": "!items!z976UT36V8Bl8Raw"
 }

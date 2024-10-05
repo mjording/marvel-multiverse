@@ -1,7 +1,8 @@
 {
-  "_id": "bda97cf2-90bc-4c95-b4e7-3f2ec389f4f3",
+  "_id": "DBPKEf5bM5QhDNU3",
   "name": "Telekinetic Manipulation",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can handle physical things with their mind.",
     "powerSet": "Telekinesis",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "bac06ccb5a9f2d39",
-  "_key": "!items!bda97cf2-90bc-4c95-b4e7-3f2ec389f4f3"
+  "_key": "!items!DBPKEf5bM5QhDNU3"
 }

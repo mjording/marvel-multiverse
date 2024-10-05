@@ -1,7 +1,8 @@
 {
-  "_id": "1a495d42-9ef5-41a9-a68f-48f5af399a8c",
+  "_id": "6Q33kB176ofDFybB",
   "name": "Reverse Punch",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/placticity.svg",
   "system": {
     "description": "The character can reach past an enemy and punch them from behind.",
     "powerSet": "Plasticity",
@@ -21,5 +22,5 @@
   "flags": {},
   "effects": [],
   "folder": "b660cb39178688a5",
-  "_key": "!items!1a495d42-9ef5-41a9-a68f-48f5af399a8c"
+  "_key": "!items!6Q33kB176ofDFybB"
 }

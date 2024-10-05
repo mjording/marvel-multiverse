@@ -1,7 +1,8 @@
 {
-  "_id": "961dc3c6-8b59-4221-8cc5-3e2e4d6bbe0d",
+  "_id": "lNwrLtAxYuauivLT",
   "name": "Quick Phase",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/phasing.svg",
   "system": {
     "description": "The character can become as intangible as a ghost.",
     "powerSet": "Phasing",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "a47971e64f3d687d",
-  "_key": "!items!961dc3c6-8b59-4221-8cc5-3e2e4d6bbe0d"
+  "_key": "!items!lNwrLtAxYuauivLT"
 }

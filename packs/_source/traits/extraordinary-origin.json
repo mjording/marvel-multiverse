@@ -1,7 +1,8 @@
 {
-  "_id": "101e505a-f5ee-4473-99de-e93ed06bb93e",
+  "_id": "pQ7i5R14YO31pSbp",
   "name": "Extraordinary Origin",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character has an additional origin. This trait can be selected multiple times, but each time must be cleared with the Narrator. Take care to make sure that the origins make some kind of sense when combined together.",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!101e505a-f5ee-4473-99de-e93ed06bb93e"
+  "_key": "!items!pQ7i5R14YO31pSbp"
 }

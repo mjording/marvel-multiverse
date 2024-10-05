@@ -1,7 +1,8 @@
 {
-  "_id": "bb83e78a-ff23-4e97-9ff7-32ed8cebc48d",
+  "_id": "x0GttbkC39eimJvU",
   "name": "Time-Out Tag",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/portal.svg",
   "system": {
     "description": "The character freezes a person or thing in time.",
     "powerSet": "Omniversal Travel",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "882fb16dc4a7430e",
-  "_key": "!items!bb83e78a-ff23-4e97-9ff7-32ed8cebc48d"
+  "_key": "!items!x0GttbkC39eimJvU"
 }

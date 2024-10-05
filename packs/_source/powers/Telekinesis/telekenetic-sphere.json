@@ -1,7 +1,8 @@
 {
-  "_id": "52356461-35d4-46b2-bbd5-b6b5be604594",
+  "_id": "nUNd8X07l6V8s8Dj",
   "name": "Telekinetic Sphere",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can create a protective sphere with their mind.",
     "powerSet": "Telekinesis",
@@ -18,5 +19,5 @@
   "flags": {},
   "effects": [],
   "folder": "bac06ccb5a9f2d39",
-  "_key": "!items!52356461-35d4-46b2-bbd5-b6b5be604594"
+  "_key": "!items!nUNd8X07l6V8s8Dj"
 }

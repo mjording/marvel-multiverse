@@ -1,7 +1,8 @@
 {
-  "_id": "caeb5c26-3b28-44c2-a06f-82e766656d31",
+  "_id": "GDF6EoLs3yPi1I6u",
   "name": "Thunder",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character causes a deafening crack of thunder.",
     "powerSet": "Weather Control",
@@ -18,5 +19,5 @@
   "flags": {},
   "effects": [],
   "folder": "ad2abe37b615e936",
-  "_key": "!items!caeb5c26-3b28-44c2-a06f-82e766656d31"
+  "_key": "!items!GDF6EoLs3yPi1I6u"
 }

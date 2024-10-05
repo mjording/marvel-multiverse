@@ -1,7 +1,8 @@
 {
-  "_id": "27c5a564-fb1b-44de-8e03-7ed2f726fdfc",
+  "_id": "llk6Hh9ca5yi7FBW",
   "name": "X-Gene",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character has mutant genes that cause them to develop super-powers.",
     "restriction": "For mutants only.",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!27c5a564-fb1b-44de-8e03-7ed2f726fdfc"
+  "_key": "!items!llk6Hh9ca5yi7FBW"
 }

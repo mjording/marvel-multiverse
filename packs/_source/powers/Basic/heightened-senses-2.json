@@ -1,7 +1,8 @@
 {
-  "_id": "7360bce2-1b0d-4330-9734-e2a1951192fb",
+  "_id": "IJYTfpo7A0tahxPO",
   "name": "Heightened Senses 2",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The characler has superior senses.",
     "powerSet": "Basic",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!7360bce2-1b0d-4330-9734-e2a1951192fb"
+  "_key": "!items!IJYTfpo7A0tahxPO"
 }

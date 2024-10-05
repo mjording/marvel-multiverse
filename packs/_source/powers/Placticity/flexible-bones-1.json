@@ -1,7 +1,8 @@
 {
-  "_id": "018ec3c3-7940-7d9f-b111-ba59315a2292",
+  "_id": "BSwvmn7hr3cMkOJA",
   "name": "Flexible Bones 1",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/placticity.svg",
   "system": {
     "description": "The character's skeleton is rubbery.",
     "powerSet": "Plasticity",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.018ec3c3-7940-7d9f-b111-ba59315a2292",
+      "origin": "Item.BSwvmn7hr3cMkOJA",
       "_id": "96ae1d4e6e1faf99",
       "changes": [
         {
@@ -43,9 +44,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!018ec3c3-7940-7d9f-b111-ba59315a2292.96ae1d4e6e1faf99"
+      "_key": "!items.effects!BSwvmn7hr3cMkOJA.96ae1d4e6e1faf99"
     }
   ],
   "folder": "b660cb39178688a5",
-  "_key": "!items!018ec3c3-7940-7d9f-b111-ba59315a2292"
+  "_key": "!items!BSwvmn7hr3cMkOJA"
 }

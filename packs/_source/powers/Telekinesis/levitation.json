@@ -1,7 +1,8 @@
 {
-  "_id": "88e754e8-838c-4d9c-8417-fe9a1b6d686e",
+  "_id": "DttyfrVfrTR26qia",
   "name": "Levitation",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can hover and move.",
     "powerSet": "Telekinesis",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "bac06ccb5a9f2d39",
-  "_key": "!items!88e754e8-838c-4d9c-8417-fe9a1b6d686e"
+  "_key": "!items!DttyfrVfrTR26qia"
 }

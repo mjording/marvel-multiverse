@@ -1,7 +1,8 @@
 {
-  "_id": "9519f67f-078a-44ee-8d5f-3ebc86a5eb70",
+  "_id": "P7n1zCUzTaosWBS1",
   "name": "Sturdy 1",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character has protection from physical damage.",
     "powerSet": "Basic",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.9519f67f-078a-44ee-8d5f-3ebc86a5eb70",
+      "origin": "Item.P7n1zCUzTaosWBS1",
       "_id": "88ddbaf40c7ed97b",
       "changes": [
         {
@@ -43,9 +44,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!9519f67f-078a-44ee-8d5f-3ebc86a5eb70.88ddbaf40c7ed97b"
+      "_key": "!items.effects!P7n1zCUzTaosWBS1.88ddbaf40c7ed97b"
     }
   ],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!9519f67f-078a-44ee-8d5f-3ebc86a5eb70"
+  "_key": "!items!P7n1zCUzTaosWBS1"
 }

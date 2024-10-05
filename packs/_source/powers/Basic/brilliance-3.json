@@ -1,7 +1,8 @@
 {
-  "_id": "c07c0329-0adf-4e96-a125-8b77c62be13b",
+  "_id": "w2wEPeluup9C303u",
   "name": "Brilliance 3",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "Little can stop the character's mind.",
     "powerSet": "Basic",
@@ -28,7 +29,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.c07c0329-0adf-4e96-a125-8b77c62be13b",
+      "origin": "Item.w2wEPeluup9C303u",
       "_id": "a7984afdfb7a3dfb",
       "changes": [
         {
@@ -47,9 +48,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!c07c0329-0adf-4e96-a125-8b77c62be13b.a7984afdfb7a3dfb"
+      "_key": "!items.effects!w2wEPeluup9C303u.a7984afdfb7a3dfb"
     }
   ],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!c07c0329-0adf-4e96-a125-8b77c62be13b"
+  "_key": "!items!w2wEPeluup9C303u"
 }

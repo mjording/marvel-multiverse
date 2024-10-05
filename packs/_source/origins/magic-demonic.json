@@ -1,7 +1,8 @@
 {
-  "_id": "44bcaf4f-d0af-4ab0-be59-ea0ab6c826a2",
+  "_id": "stg9Bt3SeMZ4r7rW",
   "name": "Magic: Demonic",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character taps into (or is cursed by) the powers of Hell. They may be a native of one of the Nine Circles of Hell, or their powers might simply come from a Hellish source.",
     "examples": "Belasco, Blackheart, Daimon Hellstrom, Dormammu.",
@@ -38,5 +39,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!44bcaf4f-d0af-4ab0-be59-ea0ab6c826a2"
+  "_key": "!items!stg9Bt3SeMZ4r7rW"
 }

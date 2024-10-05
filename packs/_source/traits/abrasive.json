@@ -1,12 +1,13 @@
 {
-  "_id": "4374f408-f849-4854-a035-43949bc315f1",
+  "_id": "ajeId1iqaYcNIZ3z",
   "name": "Abrasive",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character rubs people the wrong way. This gives them trouble when trying to make Ego checks to persuade someone to help them out. It gives them an edge when they're trying to make Ego checks to intimidate someone."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!4374f408-f849-4854-a035-43949bc315f1"
+  "_key": "!items!ajeId1iqaYcNIZ3z"
 }

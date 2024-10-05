@@ -1,7 +1,8 @@
 {
-  "_id": "a89ad743-4aee-47e4-9673-90c879b66506",
+  "_id": "R128rlNSkXlJSpx4",
   "name": "Body Sheet",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/placticity.svg",
   "system": {
     "description": "The character can flatten themselves like a sheet.",
     "powerSet": "Plasticity",
@@ -28,7 +29,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.a89ad743-4aee-47e4-9673-90c879b66506",
+      "origin": "Item.R128rlNSkXlJSpx4",
       "_id": "0f2bcd3cbc2644a3",
       "changes": [
         {
@@ -42,7 +43,7 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!a89ad743-4aee-47e4-9673-90c879b66506.0f2bcd3cbc2644a3"
+      "_key": "!items.effects!R128rlNSkXlJSpx4.0f2bcd3cbc2644a3"
     },
     {
       "name": "Glide at run speed times rank",
@@ -57,7 +58,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.a89ad743-4aee-47e4-9673-90c879b66506",
+      "origin": "Item.R128rlNSkXlJSpx4",
       "_id": "e44701e6257846ae",
       "changes": [
         {
@@ -81,9 +82,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!a89ad743-4aee-47e4-9673-90c879b66506.e44701e6257846ae"
+      "_key": "!items.effects!R128rlNSkXlJSpx4.e44701e6257846ae"
     }
   ],
   "folder": "b660cb39178688a5",
-  "_key": "!items!a89ad743-4aee-47e4-9673-90c879b66506"
+  "_key": "!items!R128rlNSkXlJSpx4"
 }

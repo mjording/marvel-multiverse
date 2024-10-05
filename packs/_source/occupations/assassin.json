@@ -1,7 +1,8 @@
 {
-  "_id": "d601c3cb-cf9b-4b9f-b01a-e548e5a8d98a",
+  "_id": "z4vLSY6NsDC11AoE",
   "name": "Assassin",
   "type": "occupation",
+  "img": "systems/marvel-multiverse/icons/work.svg",
   "system": {
     "description": "The character is a hired killer. They might tell themselves that this is for the greater good. They might be picky about who they take on as clients or targets, but the core of their occupation is ending lives.",
     "examples": "Arcade, Bullseye, Elektra, the Punisher.",
@@ -63,5 +64,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!d601c3cb-cf9b-4b9f-b01a-e548e5a8d98a"
+  "_key": "!items!z4vLSY6NsDC11AoE"
 }

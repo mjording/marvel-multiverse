@@ -1,7 +1,8 @@
 {
-  "_id": "b7631919-e73e-4586-a716-6d1a04ee5146",
+  "_id": "fIYIWtQcvFzwnjNg",
   "name": "Resize Object",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can change the size of an object within reach.",
     "powerSet": "Resize",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "b74def8c3ea77646",
-  "_key": "!items!b7631919-e73e-4586-a716-6d1a04ee5146"
+  "_key": "!items!fIYIWtQcvFzwnjNg"
 }

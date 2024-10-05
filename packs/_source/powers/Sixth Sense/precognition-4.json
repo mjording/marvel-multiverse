@@ -1,7 +1,8 @@
 {
-  "_id": "6b9f19af-448e-4a31-b3b6-96871ad1c743",
+  "_id": "3ssNC4EFVH7xFL6N",
   "name": "Precognition 4",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can see a whole year ahead",
     "powerSet": "Sixth Sense",
@@ -17,5 +18,5 @@
   "flags": {},
   "effects": [],
   "folder": "34a53ed3fba44fe3",
-  "_key": "!items!6b9f19af-448e-4a31-b3b6-96871ad1c743"
+  "_key": "!items!3ssNC4EFVH7xFL6N"
 }

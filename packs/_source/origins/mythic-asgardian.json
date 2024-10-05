@@ -1,7 +1,8 @@
 {
-  "_id": "187846b6-f990-488a-a2bb-24a62f6f4dd1",
+  "_id": "ToJVfbfeToTPWLZK",
   "name": "Mythic: Asgardian",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character is a member of the Asgardian people, resembling the Norse gods. They call Asgard their home. The character can be one of the many gods who have been named throughout history, or they can be one of the lesser-known gods of Asgard. They should choose something that they are the god of.",
     "examples": "Hela, Heimdall, Loki, Sif, Thor (Odinson).",
@@ -63,5 +64,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!187846b6-f990-488a-a2bb-24a62f6f4dd1"
+  "_key": "!items!ToJVfbfeToTPWLZK"
 }

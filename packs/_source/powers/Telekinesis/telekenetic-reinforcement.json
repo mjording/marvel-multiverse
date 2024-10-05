@@ -1,7 +1,8 @@
 {
-  "_id": "36cd2125-c105-4903-b252-7fafed8aec9a",
+  "_id": "F5Gn0inlZrUXXYvR",
   "name": "Telekinetic Reinforcement",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character reinforces their defenses with their mind.",
     "powerSet": "Telekinesis",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "bac06ccb5a9f2d39",
-  "_key": "!items!36cd2125-c105-4903-b252-7fafed8aec9a"
+  "_key": "!items!F5Gn0inlZrUXXYvR"
 }

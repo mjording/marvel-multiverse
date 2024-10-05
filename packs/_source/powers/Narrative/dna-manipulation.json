@@ -1,7 +1,8 @@
 {
-  "_id": "3ffc0c6f-b2cb-4090-abde-96e808c33342",
+  "_id": "9RDhSNtOACNty7s5",
   "name": "DNA Manipulation",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/narrative.svg",
   "system": {
     "description": "The character is able to identify, copy and manipulate DNA in themselves and others.",
     "powerSet": "Narrative",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "26cb724b2bd54b2e",
-  "_key": "!items!3ffc0c6f-b2cb-4090-abde-96e808c33342"
+  "_key": "!items!9RDhSNtOACNty7s5"
 }

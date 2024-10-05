@@ -1,12 +1,13 @@
 {
-  "_id": "1e9ef04f-7007-41f5-b7f8-3486a1f86e84",
+  "_id": "GPE9Ug6YY95PFOgY",
   "name": "Interrogation",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character knows how to ask the right questions in the right way. They have an edge on Ego or Logic checks made when asking questions."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!1e9ef04f-7007-41f5-b7f8-3486a1f86e84"
+  "_key": "!items!GPE9Ug6YY95PFOgY"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "2ff6e733-64a5-4ebe-b6d8-2c63774334c9",
+  "_id": "7lgGWVhxbNObX6qt",
   "name": "Orders",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character forces someone to follow a complex set of orders.",
     "powerSet": "Telepathy",
@@ -18,5 +19,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e745fc9dcc37bb2",
-  "_key": "!items!2ff6e733-64a5-4ebe-b6d8-2c63774334c9"
+  "_key": "!items!7lgGWVhxbNObX6qt"
 }

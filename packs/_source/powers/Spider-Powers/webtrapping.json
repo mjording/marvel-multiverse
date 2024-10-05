@@ -1,7 +1,8 @@
 {
-  "_id": "7749c977-d061-4b33-9310-b9f4e8a11f26",
+  "_id": "o5RpcWtwpi2LDW4X",
   "name": "Webtrapping",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character creates a giant web to trap those within it.",
     "powerSet": "Spider-Powers",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "a8b9ae895259d5bf",
-  "_key": "!items!7749c977-d061-4b33-9310-b9f4e8a11f26 "
+  "_key": "!items!o5RpcWtwpi2LDW4X "
 }

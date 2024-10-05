@@ -1,7 +1,8 @@
 {
-  "_id": "0ddad535-c904-4b95-9ef3-8cb96f84dcae",
+  "_id": "al7lhotKjUYoRVeZ",
   "name": "Phase Self",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/phasing.svg",
   "system": {
     "description": "The character can become as intangible as a ghost.",
     "powerSet": "Phasing",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "a47971e64f3d687d",
-  "_key": "!items!0ddad535-c904-4b95-9ef3-8cb96f84dcae"
+  "_key": "!items!al7lhotKjUYoRVeZ"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "dda9522f-4744-4bbc-815d-71409d8319cf",
+  "_id": "R0p4cCKaDpzuT5rg",
   "name": "Clone Moves",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character duplicates another character's combat moves.",
     "powerSet": "Power Control",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9d538083463adac7",
-  "_key": "!items!dda9522f-4744-4bbc-815d-71409d8319cf"
+  "_key": "!items!R0p4cCKaDpzuT5rg"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "ddd31544-90ce-47c4-bc42-3a282ce228f0",
+  "_id": "oI7dXbod4ih0ea83",
   "name": "Phase Object",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/phasing.svg",
   "system": {
     "description": "The character can make something they're touching intangible.",
     "powerSet": "Phasing",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "a47971e64f3d687d",
-  "_key": "!items!ddd31544-90ce-47c4-bc42-3a282ce228f0"
+  "_key": "!items!oI7dXbod4ih0ea83"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "4fa673f7-96a2-4c11-bdab-5d8c7f620f1b",
+  "_id": "TLVyh39jd2cunceY",
   "name": "Mighty 3",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character could lift a house.",
     "powerSet": "Basic",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.4fa673f7-96a2-4c11-bdab-5d8c7f620f1b",
+      "origin": "Item.TLVyh39jd2cunceY",
       "_id": "a426ef7a29976298",
       "changes": [
         {
@@ -48,9 +49,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!4fa673f7-96a2-4c11-bdab-5d8c7f620f1b.a426ef7a29976298"
+      "_key": "!items.effects!TLVyh39jd2cunceY.a426ef7a29976298"
     }
   ],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!4fa673f7-96a2-4c11-bdab-5d8c7f620f1b"
+  "_key": "!items!TLVyh39jd2cunceY"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "98d6f6b8-3134-4f9c-abac-483c45c7d48e",
+  "_id": "v5Q1Gp1YKOHx01vk",
   "name": "Investigator",
   "type": "occupation",
+  "img": "systems/marvel-multiverse/icons/work.svg",
   "system": {
     "description": "The character is trained to solve mysteries. This can be as a private detective or as part of an official law enforcement organization, ranging from the New York Police Department to the Federal Bureau of Investigation, S.H.I.E.L.D. or even the Nova Corps.",
     "examples": "Jessica Jones, Misty Knight.",
@@ -47,5 +48,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!98d6f6b8-3134-4f9c-abac-483c45c7d48e"
+  "_key": "!items!v5Q1Gp1YKOHx01vk"
 }

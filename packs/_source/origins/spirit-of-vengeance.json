@@ -1,7 +1,8 @@
 {
-  "_id": "28b8dad9-3507-4e3a-8c5d-598335e85ea7",
+  "_id": "GVuwuEX6ZN8SPvLK",
   "name": "Spirit of Vengeance",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character has been possessed by a Spirit of Vengeance. Their purpose is to find sinners and impose penance. When a character becomes possessed by a Spirit of Vengeance, they gain the Alternate Form tag, which they can use voluntarily at any point. When the character takes on their Ghost Rider form, they gain access to the listed tags, traits and powers. When they return to human form, they lose the benefits of their Ghost Rider form.",
     "examples": "Ghost Rider (Johnny Blaze), Ghost Rider (Danny Ketch), Ghost Rider (Robbie Reyes).",
@@ -229,5 +230,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!28b8dad9-3507-4e3a-8c5d-598335e85ea7"
+  "_key": "!items!GVuwuEX6ZN8SPvLK"
 }

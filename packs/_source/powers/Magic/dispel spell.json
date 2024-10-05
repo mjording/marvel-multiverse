@@ -1,7 +1,8 @@
 {
-  "_id": "b4ba6a61-4601-4202-be97-23408dedef18",
+  "_id": "YLFowRuCN6RmwFJT",
   "name": "Dispel Spell",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/magic.svg",
   "system": {
     "description": "The character puts an end to a foe's magic.",
     "powerSet": "Magic",
@@ -18,5 +19,5 @@
   "flags": {},
   "effects": [],
   "folder": "8c23e6cd16b9bb49",
-  "_key": "!items!b4ba6a61-4601-4202-be97-23408dedef18"
+  "_key": "!items!YLFowRuCN6RmwFJT"
 }

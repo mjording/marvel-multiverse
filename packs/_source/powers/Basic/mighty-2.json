@@ -1,7 +1,8 @@
 {
-  "_id": "a73ffc14-eaac-469d-bc67-4a3bb70289aa",
+  "_id": "b0XDPnQWiTLz4HPz",
   "name": "Mighty 2",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character could lift a bus.",
     "powerSet": "Basic",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.a73ffc14-eaac-469d-bc67-4a3bb70289aa",
+      "origin": "Item.b0XDPnQWiTLz4HPz",
       "_id": "a35fd80b6b2cca2c",
       "changes": [
         {
@@ -48,9 +49,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!a73ffc14-eaac-469d-bc67-4a3bb70289aa.a35fd80b6b2cca2c"
+      "_key": "!items.effects!b0XDPnQWiTLz4HPz.a35fd80b6b2cca2c"
     }
   ],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!a73ffc14-eaac-469d-bc67-4a3bb70289aa"
+  "_key": "!items!b0XDPnQWiTLz4HPz"
 }

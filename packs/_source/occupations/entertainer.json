@@ -1,7 +1,8 @@
 {
-  "_id": "11d8fe22-ce8e-4178-8cb8-d9306b651c93",
+  "_id": "1Y5Lr8dDiMFzSwPO",
   "name": "Entertainer",
   "type": "occupation",
+  "img": "systems/marvel-multiverse/icons/work.svg",
   "system": {
     "description": "The character entertains others for a living. They could be a singer, a dancer, an actor, a musician, a writer, a filmmaker, a speaker or something similar. They aren't shy—at least when on the job—and they work hard to both gain an audience and keep them engaged.",
     "examples": "Dazzler, Echo, Mysterio, Wonder Man.",
@@ -43,5 +44,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!11d8fe22-ce8e-4178-8cb8-d9306b651c93"
+  "_key": "!items!1Y5Lr8dDiMFzSwPO"
 }

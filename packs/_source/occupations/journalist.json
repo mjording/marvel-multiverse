@@ -1,7 +1,8 @@
 {
-  "_id": "ace9b5e7-1783-4398-91ff-48f7e8db2f2d",
+  "_id": "CS3grYXkyhEsXa8W",
   "name": "Journalist",
   "type": "occupation",
+  "img": "systems/marvel-multiverse/icons/work.svg",
   "system": {
     "description": "The character works as a reporter or editor for a news organization. This can range anywhere from the Daily Bugle to TNM (Threats and Menaces). It can also include any sort of reporting, whether TV, radio, newspaper or online.",
     "examples": "Silk, Spider-Man (Peter Parker), Venom (Eddie Brock).",
@@ -47,5 +48,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!ace9b5e7-1783-4398-91ff-48f7e8db2f2d"
+  "_key": "!items!CS3grYXkyhEsXa8W"
 }

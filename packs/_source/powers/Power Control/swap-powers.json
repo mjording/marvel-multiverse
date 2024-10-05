@@ -1,7 +1,8 @@
 {
-  "_id": "c5d30831-a06a-474e-bf67-1596cf943371",
+  "_id": "FAIIYAtKJfNikdSj",
   "name": "Swap Powers",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The chararter swaps their powers for a target's powers.",
     "powerSet": "Power Control",
@@ -18,5 +19,5 @@
   "flags": {},
   "effects": [],
   "folder": "9d538083463adac7",
-  "_key": "!items!c5d30831-a06a-474e-bf67-1596cf943371"
+  "_key": "!items!FAIIYAtKJfNikdSj"
 }

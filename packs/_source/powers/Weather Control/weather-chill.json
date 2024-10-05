@@ -1,7 +1,8 @@
 {
-  "_id": "efdd370d-cf15-4343-83e1-28db43fa370f",
+  "_id": "x0PzSSxW01NIcGBS",
   "name": "Weather Chill",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character cools things down.",
     "powerSet": "Weather Control",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "ad2abe37b615e936",
-  "_key": "!items!efdd370d-cf15-4343-83e1-28db43fa370f"
+  "_key": "!items!x0PzSSxW01NIcGBS"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "46c00d40-27ff-4f2b-807b-9ba36e944496",
+  "_id": "oHdjIgnfjQUQYAlS",
   "name": "Fast Attacks",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/melee.svg",
   "system": {
     "description": "The character's weapons lash out!",
     "powerSet": "Melee Weapons",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e7ef5735852365a",
-  "_key": "!items!46c00d40-27ff-4f2b-807b-9ba36e944496"
+  "_key": "!items!oHdjIgnfjQUQYAlS"
 }

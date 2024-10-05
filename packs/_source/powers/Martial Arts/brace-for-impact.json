@@ -1,7 +1,8 @@
 {
-  "_id": "8f376450-e173-4f9b-a6c0-d74956a0db10",
+  "_id": "0Q2XBi8YlDhDtZFu",
   "name": "Brace for Impact",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/martial-arts.svg",
   "system": {
     "description": "The character mentally toughens themselves for a fight.",
     "powerSet": "Martial Arts",
@@ -14,6 +15,6 @@
     "effect": "For every point of Focus spent, the character can ignore 1 point of Health damage dealt by the attack."
   },
   "folder": "9a200a2684a8be54",
-  "_key": "!items!8f376450-e173-4f9b-a6c0-d74956a0db10",
+  "_key": "!items!0Q2XBi8YlDhDtZFu",
   "flags": {}
 }

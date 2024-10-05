@@ -1,7 +1,8 @@
 {
-  "_id": "b07565dd-f612-4831-8a1e-ea7edfabc02e",
+  "_id": "4ngchITUUlOsBT09",
   "name": "Weapons Blazing",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character blazes away at two foes at once.",
     "powerSet": "Ranged Weapons",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "82ef84dfce4c7abf",
-  "_key": "!items!b07565dd-f612-4831-8a1e-ea7edfabc02e"
+  "_key": "!items!4ngchITUUlOsBT09"
 }

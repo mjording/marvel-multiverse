@@ -1,7 +1,8 @@
 {
-  "_id": "7a755208-37f0-4697-b80b-cf1beb2ea62a",
+  "_id": "Z2bM6AFg0F0jtzm3",
   "name": "Counterstrike Technique",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/martial-arts.svg",
   "system": {
     "description": "The character counters an enemy's strike with one of their own.",
     "powerSet": "Martial Arts",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9a200a2684a8be54",
-  "_key": "!items!7a755208-37f0-4697-b80b-cf1beb2ea62a"
+  "_key": "!items!Z2bM6AFg0F0jtzm3"
 }

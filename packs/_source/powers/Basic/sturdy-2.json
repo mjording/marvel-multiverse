@@ -1,7 +1,8 @@
 {
-  "_id": "8846c6ca-a5a9-4d3b-9e7e-1ca2bb664189",
+  "_id": "hsnCEEZan02fsZBy",
   "name": "Sturdy 2",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character is protected as if by steel.",
     "powerSet": "Basic",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.8846c6ca-a5a9-4d3b-9e7e-1ca2bb664189",
+      "origin": "Item.hsnCEEZan02fsZBy",
       "_id": "9cfacc0270f59b4b",
       "changes": [
         {
@@ -43,9 +44,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!8846c6ca-a5a9-4d3b-9e7e-1ca2bb664189.9cfacc0270f59b4b"
+      "_key": "!items.effects!hsnCEEZan02fsZBy.9cfacc0270f59b4b"
     }
   ],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!8846c6ca-a5a9-4d3b-9e7e-1ca2bb664189"
+  "_key": "!items!hsnCEEZan02fsZBy"
 }

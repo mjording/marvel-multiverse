@@ -1,7 +1,8 @@
 {
-  "_id": "14b92bb9-a376-4816-81ae-b460fb047df1",
+  "_id": "InUekWyvSZpy4TCE",
   "name": "Spider Sense",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character has a sense of danger that tingles when threats are near.",
     "powerSet": "Spider-Powers",
@@ -28,7 +29,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.14b92bb9-a376-4816-81ae-b460fb047df1",
+      "origin": "Item.InUekWyvSZpy4TCE",
       "_id": "8a6fd587a0e59998",
       "changes": [
         {
@@ -47,9 +48,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!14b92bb9-a376-4816-81ae-b460fb047df1.8a6fd587a0e59998"
+      "_key": "!items.effects!InUekWyvSZpy4TCE.8a6fd587a0e59998"
     }
   ],
   "folder": "a8b9ae895259d5bf",
-  "_key": "!items!14b92bb9-a376-4816-81ae-b460fb047df1"
+  "_key": "!items!InUekWyvSZpy4TCE"
 }

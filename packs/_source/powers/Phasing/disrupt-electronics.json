@@ -1,7 +1,8 @@
 {
-  "_id": "7abed4b0-6b87-4e2b-951f-814561e1534b",
+  "_id": "UG62Wp4Zf4UpJ2Bu",
   "name": "Disrupt Electronics",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/phasing.svg",
   "system": {
     "description": "The character con scramble electronies by moving through them.",
     "powerSet": "Phasing",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "a47971e64f3d687d",
-  "_key": "!items!7abed4b0-6b87-4e2b-951f-814561e1534b"
+  "_key": "!items!UG62Wp4Zf4UpJ2Bu"
 }

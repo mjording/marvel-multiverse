@@ -1,7 +1,8 @@
 {
-  "_id": "48f443ba-5ddc-44cb-a047-1654bc98b8a2",
+  "_id": "np9MzuarSglr1qpB",
   "name": "Signature Weapon",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character is known for owning and using a specific type of weapon, like Hawkeye's bow or Elektra's sai. This tag can be taken more than once, but each time must be with a different weapon.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!48f443ba-5ddc-44cb-a047-1654bc98b8a2"
+  "_key": "!items!np9MzuarSglr1qpB"
 }

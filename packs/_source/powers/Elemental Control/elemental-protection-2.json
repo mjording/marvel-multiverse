@@ -1,7 +1,8 @@
 {
-  "_id": "31563611-7627-477b-9d2f-24008680f6ce",
+  "_id": "uAHD0MlhlyVNnT7J",
   "name": "Elemental Protection 2",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/four-elements.svg",
   "system": {
     "description": "The character's elemental protection is like armor.",
     "powerSet": "Elemental Control",
@@ -18,5 +19,5 @@
   "flags": {},
   "effects": [],
   "folder": "a9ecc3931cffa8a5",
-  "_key": "!items!31563611-7627-477b-9d2f-24008680f6ce"
+  "_key": "!items!uAHD0MlhlyVNnT7J"
 }

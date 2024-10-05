@@ -1,7 +1,8 @@
 {
-  "_id": "95633be5-c7d9-48ed-9200-fe338fb3706e",
+  "_id": "dWG6wJa9DP1iEFxK",
   "name": "Fast Strikes",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/martial-arts.svg",
   "system": {
     "description": "The character unleashes aflurry of strikes.",
     "powerSet": "Martial Arts",
@@ -21,5 +22,5 @@
   "flags": {},
   "effects": [],
   "folder": "9a200a2684a8be54",
-  "_key": "!items!95633be5-c7d9-48ed-9200-fe338fb3706e"
+  "_key": "!items!dWG6wJa9DP1iEFxK"
 }

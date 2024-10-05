@@ -1,7 +1,8 @@
 {
-  "_id": "78d4e612-5632-4b55-a47c-98a730287164",
+  "_id": "RfsCKQU8tWB5Rk4Z",
   "name": "Flames of the Faltine",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/magic.svg",
   "system": {
     "description": "The character shoots jets of enchanted fire from their hands.",
     "powerSet": "Magic",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "8c23e6cd16b9bb49",
-  "_key": "!items!78d4e612-5632-4b55-a47c-98a730287164"
+  "_key": "!items!RfsCKQU8tWB5Rk4Z"
 }

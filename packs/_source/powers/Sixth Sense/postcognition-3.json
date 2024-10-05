@@ -1,7 +1,8 @@
 {
-  "_id": "5e61c50f-6d73-4589-9c35-35b3fe769f26",
+  "_id": "VLbgw5shFgAQcYDI",
   "name": "Postcognition 3",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character knows what happened in the past year.",
     "powerSet": "Sixth Sense",
@@ -17,5 +18,5 @@
   "flags": {},
   "effects": [],
   "folder": "34a53ed3fba44fe3",
-  "_key": "!items!5e61c50f-6d73-4589-9c35-35b3fe769f26"
+  "_key": "!items!VLbgw5shFgAQcYDI"
 }

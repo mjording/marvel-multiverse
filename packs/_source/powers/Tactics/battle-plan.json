@@ -1,7 +1,8 @@
 {
-  "_id": "f7eb212a-e576-43e7-89b0-aaf5a0feaeb6",
+  "_id": "bOANdTD4xJzT89Wh",
   "name": "Battle Plan",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character always has a plan.",
     "powerSet": "Tactics",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "b21090c059bb04d0",
-  "_key": "!items!f7eb212a-e576-43e7-89b0-aaf5a0feaeb6"
+  "_key": "!items!bOANdTD4xJzT89Wh"
 }

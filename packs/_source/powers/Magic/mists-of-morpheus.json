@@ -1,7 +1,8 @@
 {
-  "_id": "768f6ab5-49c4-4b3d-8ced-b418b51f60be",
+  "_id": "mPOPW6GvHs9VHJnN",
   "name": "Mists of Morpheus",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/magic.svg",
   "system": {
     "description": "The character causes their foe to fall asleep.",
     "powerSet": "Magic",
@@ -18,5 +19,5 @@
   "flags": {},
   "effects": [],
   "folder": "8c23e6cd16b9bb49",
-  "_key": "!items!768f6ab5-49c4-4b3d-8ced-b418b51f60be"
+  "_key": "!items!mPOPW6GvHs9VHJnN"
 }

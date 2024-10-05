@@ -1,7 +1,8 @@
 {
-  "_id": "acaee486-4090-4391-9261-7ee44964bd70",
+  "_id": "4gibd6cFrOtcvLeq",
   "name": "Military",
   "type": "occupation",
+  "img": "systems/marvel-multiverse/icons/work.svg",
   "system": {
     "description": "The character serves (or at least once served) in a military organization and relies on that training. They can sometimes call on their fellow soldiers for help. They may have worked for a nation or possibly as part of a mercenary outfit. If they are on active duty, their time is often not their own, and they should take the tag Obligation: Duty.",
     "example": "Captain America (Steve Rogers), Captain Marvel (Carol Danvers), War Machine, Wolverine (Logan).",
@@ -75,5 +76,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!acaee486-4090-4391-9261-7ee44964bd70"
+  "_key": "!items!4gibd6cFrOtcvLeq"
 }

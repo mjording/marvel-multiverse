@@ -1,7 +1,8 @@
 {
-  "_id": "d4fb69ce-8b4e-4ada-a397-1900bfba250e",
+  "_id": "LQftHVqNSojGjIoE",
   "name": "Leader",
   "type": "occupation",
+  "img": "systems/marvel-multiverse/icons/work.svg",
   "system": {
     "description": "The character is the leader of a city, region, state or nation. This includes things like being the elected mayor of New York City or the hereditary king of a country.",
     "examples": "Black Bolt, Black Panther (T'Challa), Doctor Doom, Sub-Mariner (Namor), Thor (Odinson).",
@@ -50,5 +51,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!d4fb69ce-8b4e-4ada-a397-1900bfba250e"
+  "_key": "!items!LQftHVqNSojGjIoE"
 }

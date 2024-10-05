@@ -1,7 +1,8 @@
 {
-  "_id": "c25a2830-719b-4857-a7a9-dbfc4448a838",
+  "_id": "Ppt16p6K3tw1hz9e",
   "name": "Do This All Day",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/martial-arts.svg",
   "system": {
     "description": "The character draws on their inner strength to heal themselves.",
     "powerSet": "Martial Arts",
@@ -14,6 +15,6 @@
     "effect": "The character heals 2 points of Health for every point of Focus they spend."
   },
   "folder": "9a200a2684a8be54",
-  "_key": "!items!c25a2830-719b-4857-a7a9-dbfc4448a838",
+  "_key": "!items!Ppt16p6K3tw1hz9e",
   "flags": {}
 }

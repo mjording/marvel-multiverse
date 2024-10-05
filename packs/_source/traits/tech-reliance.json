@@ -1,12 +1,13 @@
 {
-  "_id": "67d72599-e0e3-40f3-aa54-bf98b55780cf",
+  "_id": "hJUcH262GAV1NPqL",
   "name": "Tech Reliance",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character relies on technology for powers. When they take damage that would render them unconscious, they can instead choose to lose all of their technology-related powers and remain conscious with 1 point of Health remaining. Assuming the character has access to parts and tools, lost powers can be repaired after a battle."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!67d72599-e0e3-40f3-aa54-bf98b55780cf"
+  "_key": "!items!hJUcH262GAV1NPqL"
 }

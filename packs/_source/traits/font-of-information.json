@@ -1,12 +1,13 @@
 {
-  "_id": "82b93a41-9b60-4e3b-9153-221acd46073c",
+  "_id": "iHw3uW7S0AIjQpxC",
   "name": "Font of Information",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character has an edge on Logic checks having to do with knowledge."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!82b93a41-9b60-4e3b-9153-221acd46073c"
+  "_key": "!items!iHw3uW7S0AIjQpxC"
 }

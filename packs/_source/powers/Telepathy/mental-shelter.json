@@ -1,7 +1,8 @@
 {
-  "_id": "35b4f5bb-7416-414e-8098-893b7e0bbe85",
+  "_id": "2HhIRZ60mtFUcGKs",
   "name": "Mental Shelter",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can create a shelter for their mind.",
     "powerSet": "Telepathy",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e745fc9dcc37bb2",
-  "_key": "!items!35b4f5bb-7416-414e-8098-893b7e0bbe85"
+  "_key": "!items!2HhIRZ60mtFUcGKs"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "d6fbf54f-35cc-4271-a44f-3c115f9366fe",
+  "_id": "6xMTrUYWuhTRP3Jq",
   "name": "Telepathic Network",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can speak telepathically with a group of people.",
     "powerSet": "Telepathy",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e745fc9dcc37bb2",
-  "_key": "!items!d6fbf54f-35cc-4271-a44f-3c115f9366fe"
+  "_key": "!items!6xMTrUYWuhTRP3Jq"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "81093aa8-9b28-4eed-bdd0-7a5217909a0e",
+  "_id": "8MaB6fHzANxJzpbq",
   "name": "Always Ready",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/martial-arts.svg",
   "system": {
     "description": "The character is prepared to fight.",
     "powerSet": "Martial Arts",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9a200a2684a8be54",
-  "_key": "!items!81093aa8-9b28-4eed-bdd0-7a5217909a0e"
+  "_key": "!items!8MaB6fHzANxJzpbq"
 }

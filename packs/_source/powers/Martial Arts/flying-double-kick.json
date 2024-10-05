@@ -1,7 +1,8 @@
 {
-  "_id": "036210d5-1586-4d35-8463-288194a90ad4",
+  "_id": "zwMNsvxAe63Xdw8S",
   "name": "Flying Double Kick",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/martial-arts.svg",
   "system": {
     "description": "The character leaps into the air and snap kicks two enemies at once.",
     "powerSet": "Martial Arts",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "9a200a2684a8be54",
-  "_key": "!items!036210d5-1586-4d35-8463-288194a90ad4"
+  "_key": "!items!zwMNsvxAe63Xdw8S"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "11e691ad-1d15-4d08-980f-2331f62bbff7",
+  "_id": "ColdLRCBIrBcDuAm",
   "name": "Big",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character's size is big, which applies –1 to their Melee and Agility defenses, adds +1 to their Run Speed, and increases their reach to 2. They still occupy a single space."
@@ -22,7 +23,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.11e691ad-1d15-4d08-980f-2331f62bbff7",
+      "origin": "Item.ColdLRCBIrBcDuAm",
       "changes": [
         {
           "key": "system.size",
@@ -35,8 +36,8 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!11e691ad-1d15-4d08-980f-2331f62bbff7.9f6539800d0c702a"
+      "_key": "!items.effects!ColdLRCBIrBcDuAm.9f6539800d0c702a"
     }
   ],
-  "_key": "!items!11e691ad-1d15-4d08-980f-2331f62bbff7"
+  "_key": "!items!ColdLRCBIrBcDuAm"
 }

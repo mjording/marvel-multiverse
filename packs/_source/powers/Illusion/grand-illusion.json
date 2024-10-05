@@ -1,7 +1,8 @@
 {
-  "_id": "7c4db056-9861-4069-b46a-24dfb80fe037",
+  "_id": "UQG3sZnzI8JvK34o",
   "name": "Grand Illusion",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/illusion.svg",
   "system": {
     "description": "By manipulating light and sound, the charcter creates an incredibly real hologram.",
     "powerSet": "Illusion",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "ba98409134c2014d",
-  "_key": "!items!7c4db056-9861-4069-b46a-24dfb80fe037"
+  "_key": "!items!UQG3sZnzI8JvK34o"
 }

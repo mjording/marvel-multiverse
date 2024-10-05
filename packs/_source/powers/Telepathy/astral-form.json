@@ -1,7 +1,8 @@
 {
-  "_id": "4bf9c3af-780f-4806-a8c4-771d61fe1604",
+  "_id": "PFBiZRmjgWY9PxMK",
   "name": "Astral Form",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can enter the Astral Plane",
     "powerSet": "Telepathy",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e745fc9dcc37bb2",
-  "_key": "!items!4bf9c3af-780f-4806-a8c4-771d61fe1604"
+  "_key": "!items!PFBiZRmjgWY9PxMK"
 }

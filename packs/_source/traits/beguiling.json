@@ -1,12 +1,13 @@
 {
-  "_id": "56adbe56-8629-4084-a63b-d97649a0c722",
+  "_id": "Q6dFOh8cRCtrX9MW",
   "name": "Beguiling",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character has an edge when making an Ego check to persuade someone who could be attracted to them."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!56adbe56-8629-4084-a63b-d97649a0c722"
+  "_key": "!items!Q6dFOh8cRCtrX9MW"
 }

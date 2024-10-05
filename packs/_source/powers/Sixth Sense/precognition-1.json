@@ -1,7 +1,8 @@
 {
-  "_id": "59517e6f-75d4-4adc-a64f-54eaac09d449",
+  "_id": "FstckWSfAHGeKgrv",
   "name": "Precognition 1",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can see the near future.",
     "powerSet": "Sixth Sense",
@@ -17,5 +18,5 @@
   "flags": {},
   "effects": [],
   "folder": "34a53ed3fba44fe3",
-  "_key": "!items!59517e6f-75d4-4adc-a64f-54eaac09d449"
+  "_key": "!items!FstckWSfAHGeKgrv"
 }

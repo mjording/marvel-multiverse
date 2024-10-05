@@ -1,12 +1,13 @@
 {
-  "_id": "171b2116-92ca-4944-89dd-3d51b8c879f4",
+  "_id": "UcsWaf8ZFzcLYVu0",
   "name": "Gearhead",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character knows their way around machines. They have an edge on Logic checks to figure out how any machine works."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!171b2116-92ca-4944-89dd-3d51b8c879f4"
+  "_key": "!items!UcsWaf8ZFzcLYVu0"
 }

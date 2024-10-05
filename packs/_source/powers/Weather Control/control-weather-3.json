@@ -1,7 +1,8 @@
 {
-  "_id": "389971c1-dd9e-4716-a58b-53fdcf6ffe2d",
+  "_id": "nZpyTkt7a1Vk9Ahm",
   "name": "Control Weather 3",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character creates a thunderstorm.",
     "powerSet": "Weather Control",
@@ -17,5 +18,5 @@
   "flags": {},
   "effects": [],
   "folder": "ad2abe37b615e936",
-  "_key": "!items!389971c1-dd9e-4716-a58b-53fdcf6ffe2d"
+  "_key": "!items!nZpyTkt7a1Vk9Ahm"
 }

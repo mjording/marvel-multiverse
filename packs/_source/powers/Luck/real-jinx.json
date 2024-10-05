@@ -1,7 +1,8 @@
 {
-  "_id": "0599d6d4-1a83-4a40-9800-57eb55ba6c27",
+  "_id": "melmQel0EKI6x1Dz",
   "name": "Real Jinx",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/four-leaf-clover.svg",
   "system": {
     "description": "The character is bad luck-for their foes.",
     "powerSet": "Luck",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "c3155c708eb54219",
-  "_key": "!items!0599d6d4-1a83-4a40-9800-57eb55ba6c27"
+  "_key": "!items!melmQel0EKI6x1Dz"
 }

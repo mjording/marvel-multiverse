@@ -1,12 +1,13 @@
 {
-  "_id": "68c91186-1b07-4185-af53-fc473db163e0",
+  "_id": "Y1tWNTnnTTZXwfvi",
   "name": "Weird",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character has something weird (or even wonderful) about them. This causes people to have strong reactions to them, both good and bad. They have an edge on all Ego checks to persuade people inclined to like them and trouble on all Ego checks against people inclined to dislike them."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!68c91186-1b07-4185-af53-fc473db163e0"
+  "_key": "!items!Y1tWNTnnTTZXwfvi"
 }

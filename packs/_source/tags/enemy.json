@@ -1,7 +1,8 @@
 {
-  "_id": "2739bcfe-03a8-4a13-9f3b-29f55b30ac66",
+  "_id": "Un26UfhbYyNuiP0Q",
   "name": "Enemy",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "There's someone out there who has sworn to defeat the character. The enemy is of at least the same rank as the character and is obsessed with bringing them down. This tag can be taken multiple times, but it should be reserved for truly obsessed foes.",
     "restriction": "",
@@ -10,5 +11,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!2739bcfe-03a8-4a13-9f3b-29f55b30ac66"
+  "_key": "!items!Un26UfhbYyNuiP0Q"
 }

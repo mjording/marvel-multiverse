@@ -1,7 +1,8 @@
 {
-  "_id": "261479f5-ac74-4e4b-93af-959c8ff9a0f2",
+  "_id": "XGaRTk8xwYBUUYdo",
   "name": "Charmed Life",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/four-leaf-clover.svg",
   "system": {
     "description": "The character - like they were born lucky.",
     "powerSet": "Luck",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "c3155c708eb54219",
-  "_key": "!items!261479f5-ac74-4e4b-93af-959c8ff9a0f2"
+  "_key": "!items!XGaRTk8xwYBUUYdo"
 }

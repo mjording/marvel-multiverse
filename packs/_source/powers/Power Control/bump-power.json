@@ -1,7 +1,8 @@
 {
-  "_id": "aad97df2-50e7-48ec-a8e3-da9b3c25e048",
+  "_id": "CdzRWVpRIkIE0q4l",
   "name": "Bump Power",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character bumps up another character's power.",
     "powerSet": "Power Control",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9d538083463adac7",
-  "_key": "!items!aad97df2-50e7-48ec-a8e3-da9b3c25e048"
+  "_key": "!items!CdzRWVpRIkIE0q4l"
 }

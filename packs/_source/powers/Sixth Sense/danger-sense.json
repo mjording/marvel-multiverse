@@ -1,7 +1,8 @@
 {
-  "_id": "6af340c6-d54d-449f-a0ee-ccffa1f89256",
+  "_id": "KdVAEjrKMnvmyfIV",
   "name": "Danger Sense",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can feel danger on the way.",
     "powerSet": "Sixth Sense",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "34a53ed3fba44fe3",
-  "_key": "!items!6af340c6-d54d-449f-a0ee-ccffa1f89256"
+  "_key": "!items!KdVAEjrKMnvmyfIV"
 }

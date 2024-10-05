@@ -1,7 +1,8 @@
 {
-  "_id": "9c21a531-f343-4ff5-93a6-c121084c74d2",
+  "_id": "5gMWbznecfi1IuYa",
   "name": "Edit Memory",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character alters someone's memory..",
     "powerSet": "Telepathy",
@@ -18,5 +19,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e745fc9dcc37bb2",
-  "_key": "!items!9c21a531-f343-4ff5-93a6-c121084c74d2"
+  "_key": "!items!5gMWbznecfi1IuYa"
 }

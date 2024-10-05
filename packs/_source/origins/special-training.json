@@ -1,7 +1,8 @@
 {
-  "_id": "e3beb996-a9ef-417e-97ad-7f31ef7864ee",
+  "_id": "bXX11hIMAEe095et",
   "name": "Special Training",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character's powers come from long hours of practice. Their intense focus grants them abilities that would astonish most people.",
     "examples": "Hawkeye (Clint Barton), Hawkeye (Kate Bishop), Nick Fury Jr., Shang-Chi.",
@@ -25,5 +26,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!e3beb996-a9ef-417e-97ad-7f31ef7864ee"
+  "_key": "!items!bXX11hIMAEe095et"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "add76620-f1dc-4e86-b576-3ecd435df862",
+  "_id": "AgfTMeLAADgDBA6K",
   "name": "Shrinking Dodge",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character shrinks to avoid an attack.",
     "powerSet": "Resize",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "b74def8c3ea77646",
-  "_key": "!items!add76620-f1dc-4e86-b576-3ecd435df862"
+  "_key": "!items!AgfTMeLAADgDBA6K"
 }

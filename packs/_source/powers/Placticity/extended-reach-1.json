@@ -1,7 +1,8 @@
 {
-  "_id": "018ec3bf-1d7c-726c-ad05-939de51fc920",
+  "_id": "UxgMUMU0XKHyujjv",
   "name": "Extended Reach 1",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/placticity.svg",
   "system": {
     "description": "The character's reach grows.",
     "powerSet": "Plasticity",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.018ec3bf-1d7c-726c-ad05-939de51fc920",
+      "origin": "Item.UxgMUMU0XKHyujjv",
       "_id": "bea1573f91f7ac3a",
       "changes": [
         {
@@ -43,9 +44,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!018ec3bf-1d7c-726c-ad05-939de51fc920.bea1573f91f7ac3a"
+      "_key": "!items.effects!UxgMUMU0XKHyujjv.bea1573f91f7ac3a"
     }
   ],
   "folder": "b660cb39178688a5",
-  "_key": "!items!018ec3bf-1d7c-726c-ad05-939de51fc920"
+  "_key": "!items!UxgMUMU0XKHyujjv"
 }

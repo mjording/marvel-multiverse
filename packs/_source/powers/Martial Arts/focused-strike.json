@@ -1,7 +1,8 @@
 {
-  "_id": "d598154b-1974-449f-9256-65cbd93d4f33",
+  "_id": "aUO9Rmlx2HWYGUJM",
   "name": "Focused Strike",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/martial-arts.svg",
   "system": {
     "description": "The character finds the right spot and strikes:",
     "powerSet": "Martial Arts",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "9a200a2684a8be54",
-  "_key": "!items!d598154b-1974-449f-9256-65cbd93d4f33"
+  "_key": "!items!aUO9Rmlx2HWYGUJM"
 }

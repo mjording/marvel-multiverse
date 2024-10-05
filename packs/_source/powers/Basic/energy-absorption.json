@@ -1,7 +1,8 @@
 {
-  "_id": "36bef5eb-b1b7-41df-ad5a-16f14393c244",
+  "_id": "9M3g5S4KjZZ7X5dO",
   "name": "Energy Absorption",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character turns damage into power.",
     "powerSet": "Basic",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!36bef5eb-b1b7-41df-ad5a-16f14393c244"
+  "_key": "!items!9M3g5S4KjZZ7X5dO"
 }

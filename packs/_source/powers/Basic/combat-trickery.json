@@ -1,7 +1,8 @@
 {
-  "_id": "c8e71d73-a163-4e34-a176-62517e587f79",
+  "_id": "4zdHtVusW1bpoMQR",
   "name": "Combat Trickery",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character's a tricky one!",
     "powerSet": "Basic",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!c8e71d73-a163-4e34-a176-62517e587f79"
+  "_key": "!items!4zdHtVusW1bpoMQR"
 }

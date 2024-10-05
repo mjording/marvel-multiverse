@@ -1,7 +1,8 @@
 {
-  "_id": "be6360a1-f02f-4165-b4a1-17ba9977ab99",
+  "_id": "XIwBfIWH8iVpZOfq",
   "name": "Borrow Senses",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can use another person's senses.",
     "powerSet": "Telepathy",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e745fc9dcc37bb2",
-  "_key": "!items!be6360a1-f02f-4165-b4a1-17ba9977ab99"
+  "_key": "!items!XIwBfIWH8iVpZOfq"
 }

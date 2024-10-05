@@ -1,7 +1,8 @@
 {
-  "_id": "05535e76-755c-45f7-a767-b462ffab912e",
+  "_id": "xcAIS7tsxb4uo29Z",
   "name": "Spider-Dodge",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can leap into the sky with a single bound.",
     "powerSet": "Spider-Powers",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "a8b9ae895259d5bf",
-  "_key": "!items!05535e76-755c-45f7-a767-b462ffab912e "
+  "_key": "!items!xcAIS7tsxb4uo29Z "
 }

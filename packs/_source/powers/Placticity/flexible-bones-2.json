@@ -1,7 +1,8 @@
 {
-  "_id": "baca268f-47bd-4e6f-8182-6251ae1b2cee",
+  "_id": "tdZP26lpAxILt7kG",
   "name": "Flexible Bones 2",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/placticity.svg",
   "system": {
     "description": "The character's skeleton is flexible and pliable.",
     "powerSet": "Plasticity",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.018ec3c3-7940-7d9f-b111-ba59315a2292",
+      "origin": "Item.tdZP26lpAxILt7kG",
       "_id": "94f510e48af31bfc ",
       "changes": [
         {
@@ -43,9 +44,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!baca268f-47bd-4e6f-8182-6251ae1b2cee.94f510e48af31bfc"
+      "_key": "!items.effects!tdZP26lpAxILt7kG.94f510e48af31bfc"
     }
   ],
   "folder": "b660cb39178688a5",
-  "_key": "!items!baca268f-47bd-4e6f-8182-6251ae1b2cee"
+  "_key": "!items!tdZP26lpAxILt7kG"
 }

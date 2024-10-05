@@ -1,7 +1,8 @@
 {
-  "_id": "5960daba-d136-4e38-9c7b-81b670153d1e",
+  "_id": "ZuG8VGoLf8zsQtGz",
   "name": "Scatter",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character warns allies to take evasive action.",
     "powerSet": "Tactics",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "b21090c059bb04d0",
-  "_key": "!items!5960daba-d136-4e38-9c7b-81b670153d1e"
+  "_key": "!items!ZuG8VGoLf8zsQtGz"
 }

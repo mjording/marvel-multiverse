@@ -1,7 +1,8 @@
 {
-  "_id": "03470375-1622-4598-a2a7-80f46931c5a2",
+  "_id": "boc8qlPnZHs4dS1H",
   "name": "Blink Barrage",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character teleports rapidly around an opponent.",
     "powerSet": "Teleportation",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "a7603bf9acca778a",
-  "_key": "!items!03470375-1622-4598-a2a7-80f46931c5a2"
+  "_key": "!items!boc8qlPnZHs4dS1H"
 }

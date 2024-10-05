@@ -1,7 +1,8 @@
 {
-  "_id": "2fa3eed6-a4bd-4925-8875-e95f620629c4",
+  "_id": "LZGpOUPnHc7wRNKe",
   "name": "Orchestra of Overkill",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character conducts a symphony of shooting.",
     "powerSet": "Ranged Weapons",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "82ef84dfce4c7abf",
-  "_key": "!items!2fa3eed6-a4bd-4925-8875-e95f620629c4"
+  "_key": "!items!LZGpOUPnHc7wRNKe"
 }

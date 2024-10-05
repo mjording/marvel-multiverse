@@ -1,7 +1,8 @@
 {
-  "_id": "6996bbd1-c70d-4457-9654-4c6c3ad0d948",
+  "_id": "UbhhYpzKg4XTis2V",
   "name": "Extend Invisiblity",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/illusion.svg",
   "system": {
     "description": "The character blasts a blinding light into the face of their foe.",
     "powerSet": "Illusion",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "ba98409134c2014d",
-  "_key": "!items!6996bbd1-c70d-4457-9654-4c6c3ad0d948"
+  "_key": "!items!UbhhYpzKg4XTis2V"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "86f4f856-176a-40ee-86bd-8403ada10a73",
+  "_id": "hwp96jSC9kAeqdLK",
   "name": "Stopping Power",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character keeps shooting at the target.",
     "powerSet": "Ranged Weapons",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "82ef84dfce4c7abf",
-  "_key": "!items!86f4f856-176a-40ee-86bd-8403ada10a73"
+  "_key": "!items!hwp96jSC9kAeqdLK"
 }

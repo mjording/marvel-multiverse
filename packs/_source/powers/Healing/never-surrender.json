@@ -1,7 +1,8 @@
 {
-  "_id": "45108de8-1a92-484a-864b-4a1c37667802",
+  "_id": "NckTxGoxDB7CAQTN",
   "name": "Never Surrender",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/healing.svg",
   "system": {
     "description": "The character can get a friend back on their feet.",
     "powerSet": "Healing",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "e244d01d5a2f4c4f",
-  "_key": "!items!45108de8-1a92-484a-864b-4a1c37667802"
+  "_key": "!items!NckTxGoxDB7CAQTN"
 }

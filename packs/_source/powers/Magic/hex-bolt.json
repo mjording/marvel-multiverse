@@ -1,7 +1,8 @@
 {
-  "_id": "bae45ac9-3df7-449d-a3a3-4e7b4a4cd6c0",
+  "_id": "PqMGbwWoHM2H0rfK",
   "name": "Hex Bolt",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/magic.svg",
   "system": {
     "description": "The character shoots out chains covered in hellfire.",
     "powerSet": "Magic",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "8c23e6cd16b9bb49",
-  "_key": "!items!bae45ac9-3df7-449d-a3a3-4e7b4a4cd6c0"
+  "_key": "!items!PqMGbwWoHM2H0rfK"
 }

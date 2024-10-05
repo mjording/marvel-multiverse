@@ -1,7 +1,8 @@
 {
-  "_id": "c34743ca-e961-4c5c-91b3-08c488e11df4",
+  "_id": "Tk0OXCyok6Xa7eaG",
   "name": "Furious Attacks",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/melee.svg",
   "system": {
     "description": "The character's weapons smash into the foe.",
     "powerSet": "Melee Weapons",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e7ef5735852365a",
-  "_key": "!items!c34743ca-e961-4c5c-91b3-08c488e11df4"
+  "_key": "!items!Tk0OXCyok6Xa7eaG"
 }

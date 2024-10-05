@@ -1,7 +1,8 @@
 {
-  "_id": "1d4997a9-2468-4ec7-80ce-683dbb870319",
+  "_id": "lav6rm8VKjnVcJ6j",
   "name": "High Tech",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character's powers arise from high-tech devices that are well beyond the limits of modern-day engineering. This can come in many forms.",
     "examples": "Doctor Octopus (Otto Octavius), Gauntlet (Joseph Green), Mysterio (Quentin Beck), the Trapster.",
@@ -24,5 +25,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!1d4997a9-2468-4ec7-80ce-683dbb870319"
+  "_key": "!items!lav6rm8VKjnVcJ6j"
 }

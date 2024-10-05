@@ -1,7 +1,8 @@
 {
-  "_id": "b7b9b3a4-1a31-48f0-b1f0-1120c413b705",
+  "_id": "RQB2iJt50ZNhVT7P",
   "name": "Probability Manipulation Hex",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/magic.svg",
   "system": {
     "description": "The character makes unlikely things happen.",
     "powerSet": "Magic",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "8c23e6cd16b9bb49",
-  "_key": "!items!b7b9b3a4-1a31-48f0-b1f0-1120c413b705"
+  "_key": "!items!RQB2iJt50ZNhVT7P"
 }

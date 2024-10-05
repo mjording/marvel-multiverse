@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 64 64"
+   x="0px"
+   y="0px"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="placticity.svg"
+   width="64"
+   height="64"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="14.6625"
+     inkscape:cx="32.02046"
+     inkscape:cy="34.543905"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <path
+     d="M 48.63,4.94 47.96,3.05 c -10.29,3.63 -21.63,3.63 -31.93,0 l -0.67,1.89 c 5.36,1.89 11,2.84 16.63,2.84 5.63,0 11.27,-0.95 16.63,-2.84 z"
+     id="path1" />
+  <path
+     d="m 59.06,15.37 c -3.78,10.72 -3.78,22.53 0,33.26 l 1.89,-0.67 c -3.63,-10.29 -3.63,-21.63 0,-31.93 l -1.89,-0.67 z"
+     id="path2" />
+  <path
+     d="M 4.94,48.63 C 8.72,37.91 8.72,26.1 4.94,15.37 l -1.89,0.67 c 3.63,10.29 3.63,21.63 0,31.93 l 1.89,0.67 z"
+     id="path3" />
+  <path
+     d="m 47.96,60.94 0.67,-1.89 c -10.72,-3.78 -22.53,-3.78 -33.26,0 l 0.67,1.89 c 10.29,-3.63 21.63,-3.63 31.93,0 z"
+     id="path4" />
+  <path
+     d="m 15.7,56.62 c 10.56,-3.64 22.03,-3.64 32.59,0 L 60.99,61 56.61,48.3 c -3.64,-10.56 -3.64,-22.03 0,-32.59 l 4.38,-12.7 -12.7,4.38 c -10.56,3.64 -22.03,3.64 -32.59,0 L 3,3 7.38,15.7 c 3.64,10.56 3.64,22.03 0,32.59 L 3,60.99 15.7,56.61 Z m 28.83,-9.26 0.71,-0.71 -4.95,-4.95 1.41,-1.41 4.95,4.95 0.71,-0.71 2.83,5.66 z m 0,-30.73 5.66,-2.83 -2.83,5.66 -0.71,-0.71 -4.95,4.95 -1.41,-1.41 4.95,-4.95 z m -7.54,14.36 h 7 v -1 l 6,2 -6,2 v -1 h -7 z m -5,-17 2,6 h -1 v 7 h -2 v -7 h -1 z m -1,30 v -7 h 2 v 7 h 1 l -2,6 -2,-6 z m -4,-11 h -7 v 1 l -6,-2 6,-2 v 1 h 7 z m -7.54,-16.36 -0.71,0.71 4.95,4.95 -1.41,1.41 -4.95,-4.95 -0.71,0.71 -2.83,-5.66 z m -2.83,27.9 0.71,0.71 4.95,-4.95 1.41,1.41 -4.95,4.95 0.71,0.71 -5.66,2.83 z"
+     id="path5" />
+</svg>

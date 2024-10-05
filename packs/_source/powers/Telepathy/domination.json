@@ -1,7 +1,8 @@
 {
-  "_id": "bee684a5-3203-4a85-990a-76405b6235e2",
+  "_id": "iROA9RYQ5970rls2",
   "name": "Domination",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character forces someone to follow their orders-permanently.",
     "powerSet": "Telepathy",
@@ -21,5 +22,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e745fc9dcc37bb2",
-  "_key": "!items!bee684a5-3203-4a85-990a-76405b6235e2"
+  "_key": "!items!iROA9RYQ5970rls2"
 }

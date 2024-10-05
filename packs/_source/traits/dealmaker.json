@@ -1,12 +1,13 @@
 {
-  "_id": "392c6060-d9e5-4cbf-bae9-ef4fba5d9d80",
+  "_id": "vqOD3szNGG9gfsHz",
   "name": "Dealmaker",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "description": "The character is skilled at the art of negotiation. They have an edge on action checks that have to do with making deals.",
     "restriction": ""
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!392c6060-d9e5-4cbf-bae9-ef4fba5d9d80"
+  "_key": "!items!vqOD3szNGG9gfsHz"
 }

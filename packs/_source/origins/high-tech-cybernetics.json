@@ -1,7 +1,8 @@
 {
-  "_id": "018ec3d1-ecce-7b20-a61a-06491f604812",
+  "_id": "xYwxxiS074bgs93S",
   "name": "High Tech: Cybernetics",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character has high-tech, surgically embedded implants that grant them powers. These cannot be removed without great care or pain. If the implants are obvious, the character gets the Extreme Appearance tag. Otherwise, the implants have been hidden inside their body (as with the lacing of Wolverine's skeleton with adamantium) and might be visible only when in use (like when Wolverine uses his claws), if then.",
     "examples": "Deathlok (all of them), Sabretooth, Winter Soldier, Wolverine (Logan).",
@@ -37,5 +38,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!018ec3d1-ecce-7b20-a61a-06491f604812"
+  "_key": "!items!xYwxxiS074bgs93S"
 }

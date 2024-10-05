@@ -1,7 +1,8 @@
 {
-  "_id": "acd2fe13-b3ec-4690-a30e-2465dae6d208",
+  "_id": "Omskaflo1U5WfALk",
   "name": "Command",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character forces someone to follow an order.",
     "powerSet": "Telepathy",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e745fc9dcc37bb2",
-  "_key": "!items!acd2fe13-b3ec-4690-a30e-2465dae6d208"
+  "_key": "!items!Omskaflo1U5WfALk"
 }

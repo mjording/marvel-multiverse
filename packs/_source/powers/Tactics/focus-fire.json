@@ -1,7 +1,8 @@
 {
-  "_id": "81d1937b-24df-4a17-9766-f332a2af0aaa",
+  "_id": "inK06lDXeL653TFf",
   "name": "Focus Fire",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character calls out a target.",
     "powerSet": "Tactics",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "b21090c059bb04d0",
-  "_key": "!items!81d1937b-24df-4a17-9766-f332a2af0aaa"
+  "_key": "!items!inK06lDXeL653TFf"
 }

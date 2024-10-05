@@ -1,7 +1,8 @@
 {
-  "_id": "0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1",
+  "_id": "RICzbmWdAfggffCY",
   "name": "Extreme Appearance",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character looks very different than the average person (wherever they happen to be) and cannot easily hide their identity. When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme appearance is common.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!0055e5ee-10d6-4e3e-aca5-7b0d5180d3b1"
+  "_key": "!items!RICzbmWdAfggffCY"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "9be89df0-17ea-4371-b90f-93d721b6cb2a",
+  "_id": "OI0s6FeixVS32Ldd",
   "name": "Crimson Bands of Cyttorak",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/magic.svg",
   "system": {
     "description": "The character unleashes red bands of magic that lash out to capture their target.",
     "powerSet": "Magic",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "8c23e6cd16b9bb49",
-  "_key": "!items!9be89df0-17ea-4371-b90f-93d721b6cb2a"
+  "_key": "!items!OI0s6FeixVS32Ldd"
 }

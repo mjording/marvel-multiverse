@@ -1,7 +1,8 @@
 {
-  "_id": "ead0603e-1824-4751-9b08-a367a0d0e46e",
+  "_id": "EdyvYROMR3IP1T99",
   "name": "Mind Reading",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can read thoughts.",
     "powerSet": "Telepathy",
@@ -18,5 +19,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e745fc9dcc37bb2",
-  "_key": "!items!ead0603e-1824-4751-9b08-a367a0d0e46e"
+  "_key": "!items!EdyvYROMR3IP1T99"
 }

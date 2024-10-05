@@ -1,7 +1,8 @@
 {
-  "_id": "c85988d7-df69-4274-870e-4f77da435d8f",
+  "_id": "zuc4ZexwGYLJEhfz",
   "name": "Mentor",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character knows an older person they can ask for advice, even when it comes to having super-powers. This tag can be selected multiple times.",
     "restriction": "",
@@ -10,5 +11,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!c85988d7-df69-4274-870e-4f77da435d8f"
+  "_key": "!items!zuc4ZexwGYLJEhfz"
 }

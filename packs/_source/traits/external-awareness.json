@@ -1,12 +1,13 @@
 {
-  "_id": "3b91c1b1-ed25-4a1e-bc58-63a54d6e7e73",
+  "_id": "YDUqy0L1b9U0kHGf",
   "name": "External Awareness",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "For Externals only.",
     "description": "The character has a telepathic link with all other Externals. This allows them to: Know where other Externals are. Know when other Externals are first killed. Know when an External kills another External. Telepathically call for other Externals."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!3b91c1b1-ed25-4a1e-bc58-63a54d6e7e73"
+  "_key": "!items!YDUqy0L1b9U0kHGf"
 }

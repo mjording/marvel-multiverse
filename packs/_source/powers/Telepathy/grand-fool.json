@@ -1,7 +1,8 @@
 {
-  "_id": "ce85eb19-0945-4a4d-b875-83b576f6df07",
+  "_id": "EaL7zZSPtIiLsU6L",
   "name": "Grand Fool",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character mentally makes the group they're with appear to be like other people.",
     "powerSet": "Telepathy",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e745fc9dcc37bb2",
-  "_key": "!items!ce85eb19-0945-4a4d-b875-83b576f6df07"
+  "_key": "!items!EaL7zZSPtIiLsU6L"
 }

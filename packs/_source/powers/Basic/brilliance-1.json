@@ -1,7 +1,8 @@
 {
-  "_id": "a7f21207-84d7-405e-bfa1-257c59ccd1f3",
+  "_id": "QMYbS40FNhofS1D0",
   "name": "Brilliance 1",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character puts their brain to work.",
     "powerSet": "Basic",
@@ -28,7 +29,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.a7f21207-84d7-405e-bfa1-257c59ccd1f3",
+      "origin": "Item.QMYbS40FNhofS1D0",
       "_id": "9a49ba6b895adf17",
       "changes": [
         {
@@ -47,9 +48,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!a7f21207-84d7-405e-bfa1-257c59ccd1f3.9a49ba6b895adf17"
+      "_key": "!items.effects!QMYbS40FNhofS1D0.9a49ba6b895adf17"
     }
   ],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!a7f21207-84d7-405e-bfa1-257c59ccd1f3"
+  "_key": "!items!QMYbS40FNhofS1D0"
 }

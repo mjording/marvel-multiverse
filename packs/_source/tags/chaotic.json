@@ -1,7 +1,8 @@
 {
-  "_id": "440e49ad-e303-4aff-a554-e2b57df9abfd",
+  "_id": "eObTV4I4pBxyZcVV",
   "name": "Chaotic",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character has been affected by the chaos lord Chthon.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!440e49ad-e303-4aff-a554-e2b57df9abfd"
+  "_key": "!items!eObTV4I4pBxyZcVV"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "4fb2a930-8276-40a6-82c8-69098c861638",
+  "_id": "TIgxxSeSyVa5Wg4k",
   "name": "Monstrous",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character is some kind of monster. They may have a human form—or may have once been human—but they get their powers from their unnatural monstrousness.",
     "examples": "Cullen Bloodstone, Living Mummy, Man-Thing.",
@@ -24,5 +25,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!4fb2a930-8276-40a6-82c8-69098c861638"
+  "_key": "!items!TIgxxSeSyVa5Wg4k"
 }

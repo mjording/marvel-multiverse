@@ -1,7 +1,8 @@
 {
-  "_id": "057aaffddb-8625-45fc-8c51-2d2e8eaeb790",
+  "_id": "aJK1lFLcA37cZC5u",
   "name": "Spider-Pheromones",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character exudes pheromones that affect those nearby.",
     "powerSet": "Spider-Powers",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "a8b9ae895259d5bf",
-  "_key": "!items!057aaffddb-8625-45fc-8c51-2d2e8eaeb790 "
+  "_key": "!items!aJK1lFLcA37cZC5u "
 }

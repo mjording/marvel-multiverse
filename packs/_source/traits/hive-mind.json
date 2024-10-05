@@ -1,12 +1,13 @@
 {
-  "_id": "9c3770e6-ddec-4e10-bd58-3ee7ea473ecb",
+  "_id": "hT90xmhrF62jjq5J",
   "name": "Hive Mind",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "For Brood only.",
     "description": "The character has some independence but is connected to others of their kind by a telepathic network with an unlimited range and an unlimited number of members. When given orders by the leader of that network, the character must make an Ego vs. TN 18 action check or follow those orders. On a Fantastic success, the character can choose to permanently break free from the network."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!9c3770e6-ddec-4e10-bd58-3ee7ea473ecb"
+  "_key": "!items!hT90xmhrF62jjq5J"
 }

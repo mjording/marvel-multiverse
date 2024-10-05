@@ -1,7 +1,8 @@
 {
-  "_id": "49943c16-0e63-4e2d-8cfc-c22954e45770",
+  "_id": "s1RvyuAo0EEJON2X",
   "name": "Uncanny 4",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character's mind is protected like a battleship.",
     "powerSet": "Basic",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.49943c16-0e63-4e2d-8cfc-c22954e45770",
+      "origin": "Item.s1RvyuAo0EEJON2X",
       "_id": "c0ec1a1711494d35",
       "changes": [
         {
@@ -43,9 +44,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!49943c16-0e63-4e2d-8cfc-c22954e45770.c0ec1a1711494d35"
+      "_key": "!items.effects!s1RvyuAo0EEJON2X.c0ec1a1711494d35"
     }
   ],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!49943c16-0e63-4e2d-8cfc-c22954e45770"
+  "_key": "!items!s1RvyuAo0EEJON2X"
 }

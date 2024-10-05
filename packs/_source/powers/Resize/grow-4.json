@@ -1,7 +1,8 @@
 {
-  "_id": "da2e03e6-ce09-4015-8ff2-72da16828da7",
+  "_id": "xU0g0C5AEocqXkXq",
   "name": "Grow 4",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can tackle kaiju!",
     "powerSet": "Resize",
@@ -17,5 +18,5 @@
   "flags": {},
   "effects": [],
   "folder": "b74def8c3ea77646",
-  "_key": "!items!da2e03e6-ce09-4015-8ff2-72da16828da7"
+  "_key": "!items!xU0g0C5AEocqXkXq"
 }

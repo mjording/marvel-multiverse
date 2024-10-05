@@ -1,7 +1,8 @@
 {
-  "_id": "37b22e37-7b1a-4de8-9f59-b778de798fbf",
+  "_id": "DJXEOEEiYV7HT5Xa",
   "name": "Discipline 1",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character works to hone their power.",
     "powerSet": "Basic",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.37b22e37-7b1a-4de8-9f59-b778de798fbf",
+      "origin": "Item.DJXEOEEiYV7HT5Xa",
       "_id": "b9c4bffb004a2166",
       "changes": [
         {
@@ -48,9 +49,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!37b22e37-7b1a-4de8-9f59-b778de798fbf.b9c4bffb004a2166"
+      "_key": "!items.effects!DJXEOEEiYV7HT5Xa.b9c4bffb004a2166"
     }
   ],
-  "_key": "!items!37b22e37-7b1a-4de8-9f59-b778de798fbf",
+  "_key": "!items!DJXEOEEiYV7HT5Xa",
   "flags": {}
 }

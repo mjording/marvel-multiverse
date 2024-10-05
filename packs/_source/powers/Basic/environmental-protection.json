@@ -1,7 +1,8 @@
 {
-  "_id": "f40a973e-9efc-4283-9131-0bd5458d88ad",
+  "_id": "hMqJO6IadE92wPVq",
   "name": "Environmental Protection",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "Environmental effects don't bother the character.",
     "powerSet": "Basic",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!f40a973e-9efc-4283-9131-0bd5458d88ad"
+  "_key": "!items!hMqJO6IadE92wPVq"
 }

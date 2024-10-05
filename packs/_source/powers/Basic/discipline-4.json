@@ -1,7 +1,8 @@
 {
-  "_id": "a9bd5838-a8fa-4b41-930d-cf471242d7a3",
+  "_id": "NHFzyWIjdD24fZ1Q",
   "name": "Discipline 4",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character has mastered their power.",
     "powerSet": "Basic",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.a9bd5838-a8fa-4b41-930d-cf471242d7a3",
+      "origin": "Item.NHFzyWIjdD24fZ1Q",
       "_id": "857033105dfa1946",
       "changes": [
         {
@@ -48,9 +49,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!a9bd5838-a8fa-4b41-930d-cf471242d7a3.857033105dfa1946"
+      "_key": "!items.effects!NHFzyWIjdD24fZ1Q.857033105dfa1946"
     }
   ],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!a9bd5838-a8fa-4b41-930d-cf471242d7a3"
+  "_key": "!items!NHFzyWIjdD24fZ1Q"
 }

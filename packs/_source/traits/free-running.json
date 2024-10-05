@@ -1,12 +1,13 @@
 {
-  "_id": "bbb0da80-ed57-4cf8-8d20-20a01f4a327c",
+  "_id": "kFwhv43PEHWHjBXj",
   "name": "Free Running",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character has an edge on Agility checks made to perform acrobatics during a movement action."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!bbb0da80-ed57-4cf8-8d20-20a01f4a327c"
+  "_key": "!items!kFwhv43PEHWHjBXj"
 }

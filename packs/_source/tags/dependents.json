@@ -1,7 +1,8 @@
 {
-  "_id": "d0b7c3ed-8f85-4114-a998-0f3917b5db42",
+  "_id": "122ab22DwRvMyrri",
   "name": "Dependents",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character has young children, elderly relatives or others who rely on them. They can't just abandon these people and must check on them and help care for them on a regular basis.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!d0b7c3ed-8f85-4114-a998-0f3917b5db42"
+  "_key": "!items!122ab22DwRvMyrri"
 }

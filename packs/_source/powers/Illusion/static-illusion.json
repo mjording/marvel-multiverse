@@ -1,7 +1,8 @@
 {
-  "_id": "0052fdeb-248e-42aa-96d2-cc9674e9b6b7",
+  "_id": "amZjw9TfD60MXrdb",
   "name": "Static Illusion",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/illusion.svg",
   "system": {
     "description": "By manipulating visual light, the character creates a realistic hologram.",
     "powerSet": "Illusion",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "ba98409134c2014d",
-  "_key": "!items!0052fdeb-248e-42aa-96d2-cc9674e9b6b7"
+  "_key": "!items!amZjw9TfD60MXrdb"
 }

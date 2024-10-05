@@ -1,7 +1,8 @@
 {
-  "_id": "d7014836-6bd4-4326-95cd-0731c0dcf9d5",
+  "_id": "sqv4wwNdSNqcHjK1",
   "name": "Time Travel Together",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/portal.svg",
   "system": {
     "description": "The character brings someone with them to another time",
     "powerSet": "Omniversal Travel",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "882fb16dc4a7430e",
-  "_key": "!items!bd7014836-6bd4-4326-95cd-0731c0dcf9d5"
+  "_key": "!items!sqv4wwNdSNqcHjK1"
 }

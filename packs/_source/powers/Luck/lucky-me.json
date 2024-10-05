@@ -1,7 +1,8 @@
 {
-  "_id": "7bac06f9-c97a-4605-ae64-2739f8cb6ccd",
+  "_id": "UZ4cyX6vkKsp2qKU",
   "name": "Lucky Me",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/four-leaf-clover.svg",
   "system": {
     "description": "Things are about to go the character's way.",
     "powerSet": "Luck",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "c3155c708eb54219",
-  "_key": "!items!7bac06f9-c97a-4605-ae64-2739f8cb6ccd"
+  "_key": "!items!UZ4cyX6vkKsp2qKU"
 }

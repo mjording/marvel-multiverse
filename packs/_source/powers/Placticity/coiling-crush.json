@@ -1,7 +1,8 @@
 {
-  "_id": "be24d9f8-cb15-4b29-8be9-89a46e49c6c8",
+  "_id": "RYfaKNoA6JPVpTEc",
   "name": "Coiling Crush",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/placticity.svg",
   "system": {
     "description": "The character wraps around a target and crushes it.",
     "powerSet": "Plasticity",
@@ -20,5 +21,5 @@
   "flags": {},
   "effects": [],
   "folder": "b660cb39178688a5",
-  "_key": "!items!be24d9f8-cb15-4b29-8be9-89a46e49c6c8"
+  "_key": "!items!RYfaKNoA6JPVpTEc"
 }

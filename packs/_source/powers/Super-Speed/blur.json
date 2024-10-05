@@ -1,7 +1,8 @@
 {
-  "_id": "094de686-6305-4ac4-bb21-8160673fb286",
+  "_id": "H3W9CEnugIldggLw",
   "name": "Blur",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character moves like a blur!",
     "powerSet": "Super-Speed",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "b670a4a72be89d71",
-  "_key": "!items!094de686-6305-4ac4-bb21-8160673fb286"
+  "_key": "!items!H3W9CEnugIldggLw"
 }

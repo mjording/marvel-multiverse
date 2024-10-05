@@ -1,7 +1,8 @@
 {
-  "_id": "027d6904-d575-472d-9a65-a1d398ccc7c3",
+  "_id": "GdIkKGKAOmWBviEr",
   "name": "Public Identity",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character's real identity is known to the public. This can make it easier for them to ask their friends and family—and even strangers—for help. Unfortunately, it also makes it easier for their enemies to find them and even to threaten those same friends and family.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!027d6904-d575-472d-9a65-a1d398ccc7c3"
+  "_key": "!items!GdIkKGKAOmWBviEr"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "2324e04f-58b6-4951-8a96-8d43ef8b4cbd",
+  "_id": "NsZQLqH4WzCq0lux",
   "name": "Animal Bond",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can communicate with an animal friend.",
     "powerSet": "Telepathy",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9e745fc9dcc37bb2",
-  "_key": "!items!2324e04f-58b6-4951-8a96-8d43ef8b4cbd"
+  "_key": "!items!NsZQLqH4WzCq0lux"
 }

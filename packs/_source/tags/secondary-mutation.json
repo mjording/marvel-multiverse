@@ -1,7 +1,8 @@
 {
-  "_id": "7b935110-b2ad-427c-8f7b-75925ffe08ed",
+  "_id": "6cYaqPJfw8caLdHr",
   "name": "Secondary Mutation",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "n rare cases, a mutant can experience a secondary mutation at some point after their original mutation. A good example is Emma Frost, who started out as a fairly straightforward telepath but later gained a secondary mutation that allowed her to turn into living diamond. This is not a new origin but a new tag that serves as an extension of the regular Mutant origin. Only characters with the Mutant origin can have a secondary mutation. If a character has this tag, it means that they once had a lower rank cap and broke through it. For example, they might have been at Rank 3 for years and then gained a secondary mutation that let them eventually rise to Rank 5. When an existing character gains this tag, they advance to the next rank. Thus, a character can take it only after they've had enough adventures that they would normally be able to rank up but cannot because of their rank cap. Taking this tag means they can add a single rank, and if their new rank cap allows further growth, they can play to gain more ranks as normal. If the player of an existing character wants to take this tag for their character, they should talk to their Narrator about the rank cap. This should cover: The character's current rank cap and the reasons it was chosen. The ranks and rank caps of the other characters on the team. What the new rank cap should be. Alternatively, the Narrator can suggest the Secondary Mutation tag to one or more players. If the Narrator wants to expand the horizons for the team's adventures, they might propose this to help ensure that the characters are powerful enough to meet the new challenges the game has in store for them. Sometimes this is as simple as allowing the character to reach the same ranks as others on the team who are of a higher rank. Initially, the player might have thought it would be fun to play at a lower rank (like Hawkeye on the Avengers) but now wants their character to be on a more equal footing with their teammates. However, if the player wants their character to reach a higher rank than the rest of the team, that could cause friction. In such cases, it's best to include the entire team in the conversation to make sure that everyone is comfortable with the decision. Otherwise, the characters can find themselves in a race to reach Rank 6. That's fine if that's what everyone wants, but it can change the nature of the game and the challenges the characters face in their adventures.",
     "restriction": "For mutants only.",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!7b935110-b2ad-427c-8f7b-75925ffe08ed"
+  "_key": "!items!6cYaqPJfw8caLdHr"
 }

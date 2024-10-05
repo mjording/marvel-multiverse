@@ -1,7 +1,8 @@
 {
-  "_id": "8a622f5d-8993-4cf5-8430-c37922f0c178",
+  "_id": "2zU8nX1Rp30iUvo5",
   "name": "Telekinetic Protection 1",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character uses their mind to physically protect themselves.",
     "powerSet": "Telekinesis",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "bac06ccb5a9f2d39",
-  "_key": "!items!8a622f5d-8993-4cf5-8430-c37922f0c178"
+  "_key": "!items!2zU8nX1Rp30iUvo5"
 }

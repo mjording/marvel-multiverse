@@ -1,7 +1,8 @@
 {
-  "_id": "7f381e19-996a-4d24-b694-2c1cd8277c40",
+  "_id": "BxhBgaYU4kYyj8kw",
   "name": "Clone Powers",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character duplicates all of another character's powers.",
     "powerSet": "Power Control",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9d538083463adac7",
-  "_key": "!items!7f381e19-996a-4d24-b694-2c1cd8277c40"
+  "_key": "!items!BxhBgaYU4kYyj8kw"
 }

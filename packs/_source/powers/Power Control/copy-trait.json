@@ -1,7 +1,8 @@
 {
-  "_id": "adb2feef-a32c-4290-85b1-1fa8821aa2df",
+  "_id": "OREzBrmLivjDM1Dn",
   "name": "Copy Trait",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character duplicates another characters trait.",
     "powerSet": "Power Control",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9d538083463adac7",
-  "_key": "!items!adb2feef-a32c-4290-85b1-1fa8821aa2df"
+  "_key": "!items!OREzBrmLivjDM1Dn"
 }

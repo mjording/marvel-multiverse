@@ -1,7 +1,8 @@
 {
-  "_id": "bab45de7-1e15-4e1e-b504-0e63696817fd",
+  "_id": "wITCl8Xtjmy0pfkK",
   "name": "Powerful",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character has access to the resources of their entire community. In most cases, they must be careful about how they use such resources so that they don't lose that access.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!bab45de7-1e15-4e1e-b504-0e63696817fd"
+  "_key": "!items!wITCl8Xtjmy0pfkK"
 }

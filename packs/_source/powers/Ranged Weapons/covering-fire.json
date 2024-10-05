@@ -1,7 +1,8 @@
 {
-  "_id": "c3774d97-b4d7-43d4-8ccb-312e986c53a7",
+  "_id": "XtA2YAaGIAKjObvj",
   "name": "Covering Fire",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character covers an ally's attack.",
     "powerSet": "Ranged Weapons",
@@ -19,5 +20,5 @@
   "flags": {},
   "effects": [],
   "folder": "82ef84dfce4c7abf",
-  "_key": "!items!c3774d97-b4d7-43d4-8ccb-312e986c53a7"
+  "_key": "!items!XtA2YAaGIAKjObvj"
 }

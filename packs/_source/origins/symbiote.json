@@ -1,7 +1,8 @@
 {
-  "_id": "7c4c10da-ae73-42b3-b040-9313d5e358bc",
+  "_id": "HpdpSjugxI4UEL5j",
   "name": "Symbiote",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character has bonded with one of the Klyntar, a race of alien symbiotes created by the alien god Knull. Most of these creatures on Earth display spiderlike powers. When a character bonds with a symbiote, they go up one rank and gain the listed tags, traits and powers. Any remaining powers they select are often from the Spider-Powers set but do not have to be. Many symbiotes have the Disguise power. If the symbiote is Venom or one of its progeny, Spider-Man (Peter Parker) cannot gain any benefits from his Spider-Sense power against the bonded character.",
     "examples": "Carnage, Venom (Eddie Brock), Shriek.",
@@ -122,5 +123,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!7c4c10da-ae73-42b3-b040-9313d5e358bc"
+  "_key": "!items!HpdpSjugxI4UEL5j"
 }

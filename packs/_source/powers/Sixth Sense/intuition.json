@@ -1,7 +1,8 @@
 {
-  "_id": "ddd4b14a-8f48-4503-ab35-5361220aff28",
+  "_id": "KiIx9xjnYJpANPim",
   "name": "Intuition",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character has a bad feeling about this.",
     "powerSet": "Sixth Sense",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "34a53ed3fba44fe3",
-  "_key": "!items!ddd4b14a-8f48-4503-ab35-5361220aff28"
+  "_key": "!items!KiIx9xjnYJpANPim"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "a1e3d8971841dc-ec99-42f6-8542-436f139c73de",
+  "_id": "XQznswXxDbPREr8K",
   "name": "Sniper Rifle",
   "type": "weapon",
+  "img": "systems/marvel-multiverse/icons/weapons.svg",
   "system": {
     "description": "A high-powered rifle that can hit targets from a long distance.",
     "range": "40",
@@ -10,5 +11,5 @@
   "flags": {},
   "effects": [],
   "folder": "8b60348af8f8d703",
-  "_key": "!items!a1e3d8971841dc-ec99-42f6-8542-436f139c73de"
+  "_key": "!items!XQznswXxDbPREr8K"
 }

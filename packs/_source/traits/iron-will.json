@@ -1,12 +1,13 @@
 {
-  "_id": "81031107-8fea-4de3-9619-d3b7e30ff865",
+  "_id": "MTls8AkZ3lZgKHt8",
   "name": "Iron Will",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "Enemies have trouble on attacks to control the character's mind or influence their behavior. Also, the character gains an edge on checks to break free of mind control or other compulsions."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!81031107-8fea-4de3-9619-d3b7e30ff865"
+  "_key": "!items!MTls8AkZ3lZgKHt8"
 }

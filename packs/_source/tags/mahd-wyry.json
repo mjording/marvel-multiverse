@@ -1,7 +1,8 @@
 {
-  "_id": "c191436f-2040-4a02-b505-7559fb2e1899",
+  "_id": "pXuslNCvzZIInOtt",
   "name": "Mahd Wy'ry",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character lives for so long that their accumulated memories have the potential to drive them insane. The only cure for this condition is to die and then be reborn with a restoration of their mind from a clean backup. This happens rarely, but the disease can progress quickly once it starts.",
     "restriction": "For Eternals only.",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!c191436f-2040-4a02-b505-7559fb2e1899"
+  "_key": "!items!pXuslNCvzZIInOtt"
 }

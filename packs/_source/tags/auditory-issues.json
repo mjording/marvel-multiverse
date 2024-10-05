@@ -1,7 +1,8 @@
 {
-  "_id": "a4ce46a8-9b96-4c44-93e9-16e8fc6e51ca",
+  "_id": "PnQP1wnlVcbxMa8K",
   "name": "Auditory Issues",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character has trouble hearing that can range from partial to full deafness.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!a4ce46a8-9b96-4c44-93e9-16e8fc6e51ca"
+  "_key": "!items!PnQP1wnlVcbxMa8K"
 }

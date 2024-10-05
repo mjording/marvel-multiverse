@@ -1,7 +1,8 @@
 {
-  "_id": "51f43dd1-f02e-48d3-804d-692c34fa0c09",
+  "_id": "JBu06embsS2ngWgY",
   "name": "Microscopic Awareness",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character can detect details about the smallest things.",
     "powerSet": "Sixth Sense",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "34a53ed3fba44fe3",
-  "_key": "!items!51f43dd1-f02e-48d3-804d-692c34fa0c09"
+  "_key": "!items!JBu06embsS2ngWgY"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "8ca96fd6-9647-4b73-b101-91acd3a0a32c",
+  "_id": "JYcVhAdPuGHwMl5o",
   "name": "Immovable",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "Nobody pushes the character around.",
     "powerSet": "Super-Strength",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "88848a43d8a58388",
-  "_key": "!items!8ca96fd6-9647-4b73-b101-91acd3a0a32c"
+  "_key": "!items!JYcVhAdPuGHwMl5o"
 }

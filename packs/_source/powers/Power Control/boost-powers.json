@@ -1,7 +1,8 @@
 {
-  "_id": "5b05f381-9476-40f7-95fb-2d0f135d5b0f",
+  "_id": "V29Yrxdf0uiGQgMF",
   "name": "Boost Powers",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character turbocharges all of another character's powers!",
     "powerSet": "Power Control",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9d538083463adac7",
-  "_key": "!items!5b05f381-9476-40f7-95fb-2d0f135d5b0f"
+  "_key": "!items!V29Yrxdf0uiGQgMF"
 }

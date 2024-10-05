@@ -1,12 +1,13 @@
 {
-  "_id": "c4499dc4-3a6d-4495-bd89-fabdcaf979e3",
+  "_id": "4fitpJDVM5hsU3jK",
   "name": "Unusual Size",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character's regular size is beyond those for small, average or big, as shown on the Resize Effects table (see p. 73 of the Core Rulebook). When picking this trait, the player must choose the character's size: microscopic, miniature, tiny, little, huge gigantic titanic or gargantuan. Apply the modifiers listed an the Resize Effects table, Just as if the character had grown or shrunk to that size, but permanently. The one exception is a character's Flight Speed If they are microscopic, miniature, tiny or little, calculate their Flight Speed as if they were small-sized. If they are huge gigantic, titanic or gargantuan, calculate their Flight Speed as if they were big-sized."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!c4499dc4-3a6d-4495-bd89-fabdcaf979e3"
+  "_key": "!items!4fitpJDVM5hsU3jK"
 }

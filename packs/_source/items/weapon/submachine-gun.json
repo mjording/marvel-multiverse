@@ -1,7 +1,8 @@
 {
-  "_id": "6d84ac7e-2de4-464a-8abc-5a64f8092bd9",
+  "_id": "blzBKzyetSk4ARPQ",
   "name": "Submachine Gun",
   "type": "weapon",
+  "img": "systems/marvel-multiverse/icons/weapons.svg",
   "system": {
     "description": "This weapon can attack up to three targets in adjacent spaces to which the attacker can draw a line of sight. Make a single attack roll and compare it to the Agility defense scores of the targets. Split the damage from that roll equally, Attacks with this weapon against targets 5 spaces away or fewer have trouble. A submachine gun is a magazine-fed, automatic carbine designed to fire pistol cartridges. The term \"submachine gun\" was coined by John T. Thompson, the inventor of the Thompson submachine gun.",
     "range": "10",
@@ -10,5 +11,5 @@
   "flags": {},
   "effects": [],
   "folder": "8b60348af8f8d703",
-  "_key": "!items!6d84ac7e-2de4-464a-8abc-5a64f8092bd9"
+  "_key": "!items!blzBKzyetSk4ARPQ"
 }

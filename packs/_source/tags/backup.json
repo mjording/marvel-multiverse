@@ -1,7 +1,8 @@
 {
-  "_id": "2923685c-d460-4d8f-a9d5-21a570f7702f",
+  "_id": "3ewnVS6EJhUDgG60",
   "name": "Backup",
   "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
   "system": {
     "description": "The character is part of an organization-like a police force-that they can call for immediate backup at any time.",
     "restriction": "",
@@ -9,5 +10,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!2923685c-d460-4d8f-a9d5-21a570f7702f"
+  "_key": "!items!3ewnVS6EJhUDgG60"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "12fe8d14-e149-4855-ae03-f6869a566883",
+  "_id": "RrvwzQqdCGu2SQJ7",
   "name": "Phase Walk",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/phasing.svg",
   "system": {
     "description": "The character can become as intangible as a ghost.",
     "powerSet": "Phasing",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "a47971e64f3d687d",
-  "_key": "!items!12fe8d14-e149-4855-ae03-f6869a566883"
+  "_key": "!items!RrvwzQqdCGu2SQJ7"
 }

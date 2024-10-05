@@ -1,7 +1,8 @@
 {
-  "_id": "6ca1e80c-e48e-4903-8f59-b49990e9ae47",
+  "_id": "kmR7R6dAh8LBoSzC",
   "name": "Uncanny 2",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character's mind isprotected as ifby steel.",
     "powerSet": "Basic",
@@ -29,7 +30,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.6ca1e80c-e48e-4903-8f59-b49990e9ae47",
+      "origin": "Item.kmR7R6dAh8LBoSzC",
       "_id": "0eb5de0042154018",
       "changes": [
         {
@@ -43,9 +44,9 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!6ca1e80c-e48e-4903-8f59-b49990e9ae47.0eb5de0042154018"
+      "_key": "!items.effects!kmR7R6dAh8LBoSzC.0eb5de0042154018"
     }
   ],
   "folder": "bbe663a787c7ec04",
-  "_key": "!items!6ca1e80c-e48e-4903-8f59-b49990e9ae47"
+  "_key": "!items!kmR7R6dAh8LBoSzC"
 }

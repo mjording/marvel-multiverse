@@ -1,7 +1,8 @@
 {
-  "_id": "036acd04-b973-46d7-b410-b635fdedf813",
+  "_id": "NSE6nDBAho7JK75n",
   "name": "Deviant",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character is a member of Homo descendus, a variant race of humanity created by the Celestials. They are scattered across Earth, but they mainly live in underground cities beneath the Pacific Ocean, close to Lemuria. Only one hundred Deviants were originally created, but many more have been born over the millennia since then. They vary a great deal physically, coming in all sizes, shapes, colors and textures. Each is born with a unique physical mutation, and they have the latent genetic ability to develop powers, much like mutants. Eternals are compelled to kill Deviant mutates as part of their principle 'Correct excess deviation.'",
     "examples": "Brother Tode, Karkas, Kro.",
@@ -38,5 +39,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!036acd04-b973-46d7-b410-b635fdedf813"
+  "_key": "!items!NSE6nDBAho7JK75n"
 }

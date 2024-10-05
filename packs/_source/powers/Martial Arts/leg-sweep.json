@@ -1,7 +1,8 @@
 {
-  "_id": "5fa26465-3690-46a1-a6ca-c24fa8843371",
+  "_id": "fM2OkLfs31Qs3pVv",
   "name": "Leg Sweep",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/martial-arts.svg",
   "system": {
     "description": "The character knocks the enemy's legs from under them.",
     "powerSet": "Martial Arts",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "9a200a2684a8be54",
-  "_key": "!items!5fa26465-3690-46a1-a6ca-c24fa8843371"
+  "_key": "!items!fM2OkLfs31Qs3pVv"
 }

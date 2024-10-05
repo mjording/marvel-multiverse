@@ -1,7 +1,8 @@
 {
-  "_id": "18cef105-465e-44eb-8fd3-3e9401fa042a",
+  "_id": "2T19iEyEyNMNmhHB",
   "name": "Shrink 4",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
     "description": "The character is so small that they're hard to see.",
     "powerSet": "Resize",
@@ -17,5 +18,5 @@
   "flags": {},
   "effects": [],
   "folder": "b74def8c3ea77646",
-  "_key": "!items!18cef105-465e-44eb-8fd3-3e9401fa042a"
+  "_key": "!items!2T19iEyEyNMNmhHB"
 }

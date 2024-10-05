@@ -1,7 +1,8 @@
 {
-  "_id": "28265d10-0d66-4b39-83af-359627680eca",
+  "_id": "JoThmu1ngxpU6xbz",
   "name": "Partial Phase",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/phasing.svg",
   "system": {
     "description": "The character can make a portion of themselves tangible or intangible.",
     "powerSet": "Phasing",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "a47971e64f3d687d",
-  "_key": "!items!28265d10-0d66-4b39-83af-359627680eca"
+  "_key": "!items!JoThmu1ngxpU6xbz"
 }

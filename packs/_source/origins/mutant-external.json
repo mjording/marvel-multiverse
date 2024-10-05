@@ -1,14 +1,15 @@
 {
-  "_id": "700e89a2-b0f0-4732-b490-af17281bc61c",
+  "_id": "9J9gJLRtH1WwYFjo",
   "name": "Mutant: External",
   "type": "origin",
+  "img": "systems/marvel-multiverse/icons/origin.svg",
   "system": {
     "description": "The character is a member of a rare and powerful subspecies of immortal mutants that stretches back thousands of years. Roughly a thousand years ago, the Externals formed a group called the High Lords that continues to influence the world's destiny from behind the scenes. Some of them believe Cannonball to be the latest of their kind, although this is unconfirmed.",
     "examples": "Apocalypse, Selene.",
     "suggestedOccupation": "Outsider",
     "tags": [
       {
-        "_id": "a255af3a-cac7-4df1-af39-47e9029214e8",
+        "_id": "9J9gJLRtH1WwYFjo",
         "name": "Externally Immortal",
         "type": "tag",
         "system": {
@@ -18,7 +19,7 @@
         },
         "flags": {},
         "effects": [],
-        "_key": "!items!a255af3a-cac7-4df1-af39-47e9029214e8"
+        "_key": "!items!9J9gJLRtH1WwYFjo"
       },
       {
         "_id": "FLj25V9KsgBRGmdT",
@@ -64,5 +65,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!700e89a2-b0f0-4732-b490-af17281bc61c"
+  "_key": "!items!9J9gJLRtH1WwYFjo"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "569f58d1-5edc-43dd-80c2-ba2f9d39821d",
+  "_id": "ZXQR48EbU8BaYp7p",
   "name": "Instant Replay",
   "type": "power",
+  "img": "systems/marvel-multiverse/icons/portal.svg",
   "system": {
     "description": "The character rewinds time.",
     "powerSet": "Omniversal Travel",
@@ -16,5 +17,5 @@
   "flags": {},
   "effects": [],
   "folder": "882fb16dc4a7430e",
-  "_key": "!items!569f58d1-5edc-43dd-80c2-ba2f9d39821d"
+  "_key": "!items!ZXQR48EbU8BaYp7p"
 }

@@ -1,7 +1,8 @@
 {
-  "_id": "09e5cb96-8d1f-47e7-9b7a-0f016ee122f0",
+  "_id": "rXC5qTqArGEOeEp7",
   "name": "Small",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character's size is small, which adds +1 to their Melee and Agility defenses and takes –1 from their Run Speed."
@@ -22,7 +23,7 @@
         "startTurn": null
       },
       "disabled": false,
-      "origin": "Item.11e691ad-1d15-4d08-980f-2331f62bbff7",
+      "origin": "Item.rXC5qTqArGEOeEp7",
       "changes": [
         {
           "key": "system.size",
@@ -35,8 +36,8 @@
       "statuses": [],
       "flags": {},
       "tint": null,
-      "_key": "!items.effects!11e691ad-1d15-4d08-980f-2331f62bbff7.f90498223c234b0b"
+      "_key": "!items.effects!rXC5qTqArGEOeEp7.f90498223c234b0b"
     }
   ],
-  "_key": "!items!09e5cb96-8d1f-47e7-9b7a-0f016ee122f0"
+  "_key": "!items!rXC5qTqArGEOeEp7"
 }

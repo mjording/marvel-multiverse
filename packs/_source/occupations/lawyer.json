@@ -1,7 +1,8 @@
 {
-  "_id": "93803951-b3b3-48db-ac03-f4ac7c1416af",
+  "_id": "V6eDb5ae5Dv5XJ6o",
   "name": "Lawyer",
   "type": "occupation",
+  "img": "systems/marvel-multiverse/icons/work.svg",
   "system": {
     "description": "The character has a law degree and knows how to use it. They might work for a gigantic and powerful law firm, or they might have set up their own practice.",
     "examples": "Daredevil (Matt Murdock), Foggy Nelson, She-Hulk.",
@@ -47,5 +48,5 @@
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!93803951-b3b3-48db-ac03-f4ac7c1416af"
+  "_key": "!items!V6eDb5ae5Dv5XJ6o"
 }

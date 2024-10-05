@@ -1,12 +1,13 @@
 {
-  "_id": "0f6e398f-e802-49e5-8459-624e42339b3e",
+  "_id": "E8el4oNHYddPdPZq",
   "name": "Legal Eagle",
   "type": "trait",
+  "img": "systems/marvel-multiverse/icons/trait.svg",
   "system": {
     "restriction": "",
     "description": "The character knows the laws of their homeland and can help others navigate them. They have an edge on Logic checks when dealing with legalities."
   },
   "flags": {},
   "effects": [],
-  "_key": "!items!0f6e398f-e802-49e5-8459-624e42339b3e"
+  "_key": "!items!E8el4oNHYddPdPZq"
 }

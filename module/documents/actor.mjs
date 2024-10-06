@@ -57,26 +57,6 @@ export class MarvelMultiverseActor extends Actor {
   }
 
 
-  /**
-   * Roll initiative for this Actor with a dialog that provides an opportunity to elect advantage or other bonuses.
-   * @param {object} [rollOptions]      Options forwarded to the Actor#getInitiativeRoll method
-   * @returns {Promise<void>}           A promise which resolves once initiative has been rolled for the Actor
-   */
-  async rollInitiativeDialog(rollOptions={}) {
-    // Create and configure the Initiative roll
-    const roll = this.getInitiativeRoll(rollOptions);
-    const choice = await roll.configureDialog({
-      title: "Initiative Roll",
-      chooseModifier: true
-    });
-    if ( choice === null ) return; // Closed dialog
-
-    // Temporarily cache the configured roll and use it to roll initiative for the Actor
-    this._cachedInitiativeRoll = roll;
-    await this.rollInitiative({createCombatants: true});
-  }
-
-
   /* -------------------------------------------- */
 
   /** @inheritdoc */

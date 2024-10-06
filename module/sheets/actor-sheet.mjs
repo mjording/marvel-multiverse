@@ -210,7 +210,6 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
     
     html.on('click', '.roll-initiative', (ev) => {
       this.actor.rollInitiative({createCombatants: true});
-      //this.actor.rollInitiativeDialog({event: ev});
     });
 
 

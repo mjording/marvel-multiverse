@@ -29,11 +29,6 @@
           "key": "system.focus.max",
           "mode": 2,
           "value": 30
-        },
-        {
-          "key": "system.focus.value",
-          "mode": 2,
-          "value": 30
         }
       ],
       "description": "",

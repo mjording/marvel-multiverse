@@ -43,7 +43,7 @@ export class ChatMessageMarvel extends ChatMessage {
    * @protected
    */
   _displayChatActionButtons(html) {
-    const chatCard = html.find(".marvel-multiverse.chat-card");
+    const chatCard = html.find(".marvel-multiverse.chat-card, .marvel-multiverse.chat-card");
     if ( chatCard.length > 0 ) {
       const flavor = html.find(".flavor-text");
       if ( flavor.text() === html.find(".item-name").text() ) flavor.remove();
@@ -74,7 +74,7 @@ export class ChatMessageMarvel extends ChatMessage {
     }
   }
 
-  
+
   /* -------------------------------------------- */
 
   /**
@@ -94,16 +94,14 @@ export class ChatMessageMarvel extends ChatMessage {
       nameText = this.user.name;
     }
 
-    console.log(this);
+    const avatar = document.createElement("div");
+    const name = document.createElement("span");
+    name.classList.add("name-stacked");
+    name.innerHTML = `<span class="title">${nameText}</span>`;
 
-    // const avatar = document.createElement("div");
-    // const name = document.createElement("span");
-    // name.classList.add("name-stacked");
-    // name.innerHTML = `<span class="title">${nameText}</span>`;
-
-    // const sender = html.querySelector(".message-sender");
-    // sender?.replaceChildren(avatar, name);
-    // html.querySelector(".whisper-to")?.remove();
+    const sender = html.querySelector(".message-sender");
+    sender?.replaceChildren(avatar, name);
+    html.querySelector(".whisper-to")?.remove();
 
     // Context menu
     const metadata = html.querySelector(".message-metadata");
@@ -124,9 +122,9 @@ export class ChatMessageMarvel extends ChatMessage {
 
     // Enriched roll flavor
     const [roll] = this.rolls;
-    
+
     if ( this.isContentVisible ) {
-      
+
       const chatCard = document.createElement("div");
       chatCard.classList.add("marvel-multiverse", "chat-card");
       chatCard.innerHTML = `
@@ -143,7 +141,7 @@ export class ChatMessageMarvel extends ChatMessage {
 
       const flavorText = html.querySelector("span.flavor-text");
       const isInitiative = flavorText && flavorText.innerHTML.includes("Initiative");
-      
+
       html.querySelectorAll("button.retroEdgeMode").forEach(
         el => {
           if (isInitiative){
@@ -152,8 +150,9 @@ export class ChatMessageMarvel extends ChatMessage {
           el.addEventListener("click", this._onClickRetroButton.bind(this))
         }
       );
-      html.querySelector("button.damage")?.addEventListener("click", this._onClickDamageButton.bind(this));
+      html.querySelector("button.damage")?.addEventListener("click", this._onClickDamageButton.bind(this))
     }
+
 
   }
 
@@ -169,8 +168,8 @@ export class ChatMessageMarvel extends ChatMessage {
     if ( !constant ) return;
     const sign = constant < 0 ? "-" : "+";
     const part = document.createElement("section");
-    
-    
+
+
     part.classList.add("tooltip-part", "constant");
     part.innerHTML = `
       <div class="dice mice">
@@ -180,12 +179,12 @@ export class ChatMessageMarvel extends ChatMessage {
         </div>
       </div>
     `;
-    
+
     html.appendChild(part);
   }
 
 
-  
+
   /* -------------------------------------------- */
 
   /**
@@ -243,14 +242,15 @@ export class ChatMessageMarvel extends ChatMessage {
    * @param {PointerEvent} event      The initiating click event.
    */
   _onClickDamageButton(event) {
+
     event.stopPropagation();
     const target = event.currentTarget;
     const messageId = target.closest('[data-message-id]').dataset.messageId;
     const fantastic = target.parentNode.querySelector('li.roll.marvel-roll.fantastic');
-    
+
     const messageHeader = target.closest('li.chat-message');
     const flavorText = messageHeader.querySelector('span.flavor-text').innerHTML;
-    
+
     this._handleDamageChatButton(messageId, flavorText, fantastic);
   }
 
@@ -271,7 +271,7 @@ export class ChatMessageMarvel extends ChatMessage {
     const sixOneSixPool = chatMessage.rolls[0].terms[0];
     const marvelRoll = sixOneSixPool.rolls[1];
     const actor = game.actors.contents.find((a) => a.name === chatMessage.alias);
-    
+
     const [marvelDie] = marvelRoll.dice;
     const damageMultiplier = actor.system.abilities[abilityAbr].damageMultiplier;
 
@@ -286,11 +286,11 @@ export class ChatMessageMarvel extends ChatMessage {
        lessDamage =  marvelDie.total * damageReduction;
     }
     const abilityValue = actor.system.abilities[abilityAbr].value;
-    
+
     const dmg = marvelDie.total * damageMultiplier + abilityValue;
     let fantasticDmg;
     let fantasticLessDmg;
-    
+
     if(fantastic){
       fantasticDmg = dmg * 2;
       fantasticLessDmg = lessDamage * 2;
@@ -317,7 +317,7 @@ export class ChatMessageMarvel extends ChatMessage {
   _onClickRetroButton(event) {
     event.stopPropagation();
     const target = event.currentTarget;
-    
+
     const action = target.dataset.retroAction;
     const isInit = target.dataset.initiative;
     const dieIndex = Math.round(target.dataset.index);
@@ -339,22 +339,22 @@ export class ChatMessageMarvel extends ChatMessage {
   async _handleChatButton(action, messageId, dieIndex, isInit, flavor){
 
     if (!action || !messageId) throw new Error('Missing Information');
-    
+
     const chatMessage = game.messages.get(messageId);
     const modifier = action === 'edge' ? 'kh' : 'kl';
     const [roll] = chatMessage.rolls;
     const firstRollTerm = roll.terms[0];
 
     let rollTerm;
-    
+
     if(firstRollTerm instanceof foundry.dice.terms.ParentheticalTerm && firstRollTerm.roll.terms[0] instanceof foundry.dice.terms.PoolTerm){
       rollTerm = firstRollTerm.roll.terms[0];
     } else if (firstRollTerm instanceof foundry.dice.terms.PoolTerm) {
       rollTerm = firstRollTerm;
     }
-    
+
     if (!(rollTerm.rolls.length === 3 && (rollTerm.rolls[1].terms[0] instanceof game.MarvelMultiverse.dice.MarvelDie))) return;
-    
+
     const targetRoll = rollTerm.rolls[dieIndex];
     const targetDie = targetRoll.terms[0];
     const targetIsMarvel = targetDie instanceof game.MarvelMultiverse.dice.MarvelDie
@@ -364,11 +364,11 @@ export class ChatMessageMarvel extends ChatMessage {
     const formulaDie = formulaGroups.dieType;
 
     targetDie.number += 1;
-    
+
     const targetFormula = `${targetDie.number}d${formulaDie}`;
 
     targetRoll._formula = `${targetFormula}${modifier}`;
-    
+
     rollTerm.terms[dieIndex] = targetRoll._formula
 
     targetDie.modifiers = [modifier];
@@ -376,14 +376,14 @@ export class ChatMessageMarvel extends ChatMessage {
     const oldRollResult = targetDie.results.find((r) => r.active);
     const oldFantastic = targetIsMarvel && oldRollResult.result === 1;
     const oldResult = oldRollResult.result === 1 ? 6 : oldRollResult.result;
-    
+
     const newRoll = new MarvelMultiverseRoll(targetRoll._formula, {...targetRoll.data});
     await newRoll.roll();
 
     const newRollResult = newRoll.terms[0].results[0];
     const newResult = newRollResult.result === 1 ? 6 : newRollResult.result
 
-    if (modifier === 'kh') { 
+    if (modifier === 'kh') {
       if ( oldFantastic || oldResult >= newResult ){
         newRollResult.active = false;
         newRollResult.discarded = true;
@@ -427,7 +427,7 @@ export class ChatMessageMarvel extends ChatMessage {
     if ( newRollResult.active ){
       roll._total = roll.total - oldResult + newResult;
     }
-    
+
     let update = await roll.toMessage({flavor: flavor}, {create: false});
     update = foundry.utils.mergeObject(chatMessage.toJSON(), update);
 
@@ -436,7 +436,7 @@ export class ChatMessageMarvel extends ChatMessage {
       const combatant = game.combat.combatants.contents.find((combatant) => combatant.actorId === actorId)
       await combatant.update({initiative: roll.total})
     }
-    
+
     return chatMessage.update(update);
  }
 

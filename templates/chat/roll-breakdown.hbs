@@ -6,7 +6,7 @@
                     <ol class="dice-rolls">
                         {{#each rolls}}
                             <li class="roll {{ classes }}">
-                                <span data-action="chat-select-die" data-die-index="{{ @index }}" class="roll">
+                                <span data-action="chat-select-die" data-die-index="{{ @index }}">
                                     {{#if @root.isPrivate}}?{{else}}
                                         {{ result }}
                                     {{/if}}

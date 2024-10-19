@@ -54,6 +54,7 @@
 
   .rollable {
     cursor: pointer;
+    transition: all $mm-transition-type-link $mm-transition-time-base;
 
     &:hover {
       box-shadow: none;

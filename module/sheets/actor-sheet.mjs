@@ -359,7 +359,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
 
     // Handle rolls that supply the formula directly.
     if (dataset.roll) {
-      const ability = CONFIG.MARVEL_MULTIVERSE.damageAbility[dataset.label] ?? dataset.label
+      const ability = CONFIG.MARVEL_MULTIVERSE.damageAbility[dataset.label] ?? dataset.label;
       let label = `[ability] ${ability}`;
       let title = dataset.power ? `[power] ${dataset.power}` : "";
       label = dataset.damageType ? label + " [damageType] " + dataset.damageType : label;

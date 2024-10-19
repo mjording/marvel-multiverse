@@ -71,6 +71,7 @@
           line-height: 1;
           min-width: initial;
           padding: 0;
+          transition: all $mm-transition-type-link $mm-transition-time-base;
           width: 54px;
 
           &:hover {
@@ -85,6 +86,7 @@
     color: white;
     font-size: 18px;
     padding-inline-start: $mm-spacing-md;
+    transition: all $mm-transition-type-link $mm-transition-time-base;
 
     &:hover {
       background: $mm-primary-red;

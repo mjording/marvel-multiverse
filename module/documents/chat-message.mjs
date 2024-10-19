@@ -43,7 +43,7 @@ export class ChatMessageMarvel extends ChatMessage {
    * @protected
    */
   _displayChatActionButtons(html) {
-    const chatCard = html.find(".marvel-multiverse.chat-card, .marvel-multiverse.chat-card");
+    const chatCard = html.find(".marvel-multiverse.chat-card");
     if ( chatCard.length > 0 ) {
       const flavor = html.find(".flavor-text");
       if ( flavor.text() === html.find(".item-name").text() ) flavor.remove();
@@ -94,14 +94,16 @@ export class ChatMessageMarvel extends ChatMessage {
       nameText = this.user.name;
     }
 
-    const avatar = document.createElement("div");
-    const name = document.createElement("span");
-    name.classList.add("name-stacked");
-    name.innerHTML = `<span class="title">${nameText}</span>`;
+    console.log(this);
 
-    const sender = html.querySelector(".message-sender");
-    sender?.replaceChildren(avatar, name);
-    html.querySelector(".whisper-to")?.remove();
+    // const avatar = document.createElement("div");
+    // const name = document.createElement("span");
+    // name.classList.add("name-stacked");
+    // name.innerHTML = `<span class="title">${nameText}</span>`;
+
+    // const sender = html.querySelector(".message-sender");
+    // sender?.replaceChildren(avatar, name);
+    // html.querySelector(".whisper-to")?.remove();
 
     // Context menu
     const metadata = html.querySelector(".message-metadata");
@@ -144,15 +146,14 @@ export class ChatMessageMarvel extends ChatMessage {
       
       html.querySelectorAll("button.retroEdgeMode").forEach(
         el => {
-          if (isInitiative){          
+          if (isInitiative){
             el.setAttribute('data-initiative', true);
           }
           el.addEventListener("click", this._onClickRetroButton.bind(this))
         }
       );
-      html.querySelector("button.damage")?.addEventListener("click", this._onClickDamageButton.bind(this))
+      html.querySelector("button.damage")?.addEventListener("click", this._onClickDamageButton.bind(this));
     }
-   
 
   }
 
@@ -242,7 +243,6 @@ export class ChatMessageMarvel extends ChatMessage {
    * @param {PointerEvent} event      The initiating click event.
    */
   _onClickDamageButton(event) {
-    
     event.stopPropagation();
     const target = event.currentTarget;
     const messageId = target.closest('[data-message-id]').dataset.messageId;

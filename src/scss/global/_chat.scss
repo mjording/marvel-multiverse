@@ -1,0 +1,11 @@
+.chat-message {
+  background: #e5e5e6;
+}
+
+#chat-form textarea {
+  background: $mm-input-bg;
+
+  &:focus {
+    @include focus-state;
+  }
+}

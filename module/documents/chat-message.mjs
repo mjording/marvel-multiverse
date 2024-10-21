@@ -282,7 +282,7 @@ export class ChatMessageMarvel extends ChatMessage {
     let damageReduction = 0;
     let lessDamage = 0;
     if (target){
-       damageReduction = damageType && damageType === "focus" ? target.system.focusDamageReduction : target.system.healthDamageReduction;
+       damageReduction = damageType && damageType === "focus" ? target?.system.focusDamageReduction : target?.system.healthDamageReduction;
        lessDamage =  marvelDie.total * damageReduction;
     }
     const abilityValue = actor.system.abilities[abilityAbr].value;
@@ -334,7 +334,7 @@ export class ChatMessageMarvel extends ChatMessage {
    * Handles our button clicks from the chat log
    * @param {string} action
    * @param {string} messageId
- * @param {number} dieIndex
+   * @param {number} dieIndex
   */
   async _handleChatButton(action, messageId, dieIndex, isInit, flavor){
 

@@ -1,282 +1,201 @@
-.dice-tooltip-collapser {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 250ms ease;
-}
+.marvel-roll {
+  .dice-formula,
+  .dice-total,
+  .damage {
+    @include focus-state;
+  }
 
-.dice-tooltip .dice-rolls .roll.discarded ~ .roll, .roll ~ .roll.discarded {
-  bottom: 15px;
-}
+  .dice-formula,
+  .dice-total {
+    align-items: center;
+    background: $mm-primary-red;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 10px 100%);
+    color: $mm-text-color;
+    // cursor: pointer;
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    gap: $mm-spacing-md;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    overflow: hidden;
+    padding: $mm-spacing-md;
+    position: relative;
+    text-transform: uppercase;
+    transition: all $mm-transition-type-link $mm-transition-time-base;
+    width: 100%;
 
-.dice-tooltip .dice-rolls .marvel-roll:nth-child(2)  {
-  bottom: 15px;
-}
+    // &:hover {
+    //   color: white;
 
-.dice-tooltip .dice-rolls .roll.discarded {
-  opacity: 0.5;
-}
+    //   &::before {
+    //     background-color: $mm-primary-red;
+    //   }
+    // }
 
-.reroll-buttons {
-  max-width: 5em;
-  display: flex;
-  flex-direction: column;
-}
+    &::before {
+      background-color: $mm-input-bg;
+      bottom: 2px;
+      clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 10px 100%);
+      content: "";
+      left: 2px;
+      position: absolute;
+      right: 2px;
+      top: 2px;
+    }
 
-.dice-roll {
-  cursor: pointer;
-  
-	&.secret-roll {
-    cursor: initial;
+    span {
+      cursor: text;
+      user-select: auto;
+      z-index: 1;
+    }
+  }
+
+  .dice-total {
+    font-size: 18px;
+  }
+
+  .damage,
+  .roll-edge,
+  .roll-trouble {
+    background: $mm-primary-red;
+    border-radius: $mm-border-radius-sm;
+    box-shadow: none;
+    color: white;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all $mm-transition-type-link $mm-transition-time-base;
+
+    &:hover {
+      background: $mm-secondary-red;
+    }
+  }
+
+  .damage {
+    border: 2px solid $mm-primary-red;
+    font-size: 16px;
+    margin-block-start: $mm-spacing-md;
+    padding: $mm-spacing-md;
   }
 
   .dice-tooltip {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: flex !important;
+    gap: $mm-spacing-sm;
+    height: initial !important;
+    margin: 0 !important;
+    padding: $mm-spacing-md !important;
+
     &.expanded {
-      display: flex;
+      display: flex !important;
     }
 
     .tooltip-part {
-      border-bottom: 1px solid var(--color-border-light-1);
-      flex-wrap: wrap;
-
-      &:last-child {
-        border: none;
-        padding-bottom: 0;
-      }
-
-      &.constant {
-        min-height: 40px;
-        display: grid;
-      }
-
-      .dice-edge-buttons {
-        justify-content: space-around;
-        flex-wrap: wrap;
-        position: relative;
-        z-index: 6000;
-        display: block;
-
-        .edge-buttons {
-          height: 3rem;
-          width: 3rem;
-          display: unset;
-          text-align: center;
-          background: transparent;
-          cursor: pointer;
-          position: absolute;
-          left: 0em;
-          right: 3rem;
-          bottom: -3rem;
-
-          button {
-            font-weight: normal;
-            /* width: 3em; */
-            margin: 0;
-            display: block;
-            left: 0;
-            height: 1.8em;
-            i {
-              font-size: 1em;
-            }
-            &.roll-edge {
-              background-color: chartreuse;
-              opacity: 0;
-              &:hover {
-                opacity: 0.8;
-              }
-            }
-            &.roll-trouble {
-              background-color: darkred;
-              opacity: 0;
-              &:hover {
-                opacity: 0.8;
-              }
-            }
-          }
-
-          .overlay{
-            background: rgba(0, 0, 0, 0.5);
-            width: 3rem;
-            position: absolute;
-            opacity: 0;
-          }
-
-          &:hover {
-            .overlay{
-              opacity: 0.8;
-            }
-          }
-        }
-        
-      }
+      flex: 1 1 auto;
     }
+  }
 
-    button.retroEdgeMode {
-      width: 100%;
-      margin: 0px;
-      background: rgba(255, 255, 240, 0.8);
-      border: 1px solid var(--color-border-light-primary);
-      border-radius: 3px;
-      font-size: var(--font-size-14);
-      line-height: normal;
-      font-family: var(--font-primary);
-      cursor: pointer;
-    }
+  .dice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $mm-spacing-sm;
+    height: 100%;
+    justify-content: center;
 
-    .dice {
-      display: flex;
+    .dice-rolls {
       align-items: center;
+      align-self: start;
+      display: flex;
       flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      position: relative;
 
-      .dice-rolls {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-
-        .constant {
-          font-family: var(--font-primary);
-          font-weight: bold;
-          font-size: var(--font-size-18);
-          margin-left: .25rem;
-
-          .sign {
-            font-weight: normal;
-            color: var(--color-text-light-6);
-            margin-right: 2px;
-          }
-        }
-        .roll {
-          line-height: inherit;
-          padding: 5px 7px 0px;
-          font-size: var(--font-size-20);
-          // width: 3rem;
-          // background-image: none;
-          .min, .max, .success {
-            filter: none;
-          }
-          // .d6 {
-            // background-image: none;
-            // background: none;
-          // }
-          &.max {
-            filter: none;
-          }
+      &:hover {
+        .roll + .roll {
+          margin-block-start: $mm-spacing-sm;
         }
       }
 
-      .total {
-        display: flex;
-        flex-direction: column;
+      .roll {
         align-items: center;
+        background-image: url('../ui/official/marvel-default-die.png');
+        background-repeat: no-repeat;
+        background-size: 50px;
+        color: $mm-text-color;
+        display: flex;
+        font-size: 16px;
+        font-size: 26px;
+        font-weight: 700;
+        height: 50px;
+        justify-content: center;
+        margin: 0;
         position: relative;
+        text-shadow: 1px 1px 1px white;
+        transition: all $mm-transition-type-shift $mm-transition-time-base;
+        width: 50px;
+        z-index: 1;
 
-        > img {
-          top: 6px;
-          position: absolute;
-          width: 32px;
-          border: none;
-          opacity: .1;
+        + .roll {
+          margin-block-start: -42px;
+          z-index: 1;
+
+          &.discarded {
+            z-index: 0;
+          }
         }
 
-        .label {
-          font-family: var(--marvel-multiverse-font-roboto-condensed);
-          font-size: var(--font-size-10);
-          color: var(--color-text-dark-5);
-          text-transform: uppercase;
-          text-align: center;
+        &.discarded {
+          filter: initial;
+          opacity: 0.3 !important;
+          z-index: 0;
         }
 
-        .value {
-          font-family: var(--font-primary);
-          font-weight: bold;
-          font-size: var(--font-size-20);
+        &.min,
+        &.max {
+          filter: initial;
         }
 
-        .sign {
-          color: var(--color-text-light-6);
-          font-weight: normal;
-          margin-right: 2px;
+        &.marvel-roll {
+          background-image: url('../ui/official/marvel-special-die.png');
+          color: white;
+          text-shadow: 1px 1px 1px black;
+
+          &.fantastic {
+            background-image: url('../ui/official/marvel-special-die-with-logo.png');
+
+            span {
+              visibility: hidden;
+            }
+          }
         }
       }
     }
   }
 
-}
-
-.dice-tooltip .dice-rolls {
-    list-style: none;
-    margin: 5px 0;
-    padding: 0;
-    overflow: auto;
-}
-
-.dice-tooltip .dice-rolls .d6 {
-  min-width: 40px;
-  font-size: var(--font-size-20);
-  color: #000;
-  font-weight: normal;
-  text-align: center;
-  min-height: 40px;
-  padding-top: 6px;
-}
-
-.tooltip-part:nth-child(1) .dice-rolls .roll.d6, .tooltip-part:nth-child(3) .dice-rolls .roll.d6 {
-  background-image: url("../icons/d6-white.svg");
-  background-repeat: no-repeat;
-  background-size: 40px 40px;
-  padding-top: 2px;
-}
-
-.tooltip-part:nth-child(2) .dice-rolls .roll.d6 {
-  background-image: url("../icons/d6-red.svg");
-  background-repeat: no-repeat;
-  background-size: 40px 40px;
-  padding-top: 2px;
-}
-
-li.marvel-roll.d6.fantastic {
-  background-repeat: no-repeat;
-  background-image: url("../icons/d6-red.svg");
-  background-size: 40px 40px;
-  color: wheat;
-  padding-top: 2px;
-}
-
-.dice-tooltip .dice-rolls span.fantastic {
-  font-size: var(--font-size-28);
-  color: white;  
-}
-
-.dice-tooltip .dice-rolls .roll.failure, .dice-tooltip .dice-rolls .roll.min{
-  filter: none;
-}
-
-.dice-tooltip .dice-rolls .roll.success, .dice-tooltip .dice-rolls .roll.max {
-  filter: none;
-}
-
-.dice-tooltip .dice-rolls .roll span {
-  background-image: none;
-}
-
-.directory-item[data-entry-id='']{
-  display: none !important;
-}
-
-.six-one-six-die {
-  min-width: 10em;
-
-  img {
-    width: 3em;
-    height: 3em;
-    border: none;
-    float: left;
+  .reroll-buttons {
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    gap: $mm-spacing-sm;
   }
-}
 
-li.roll-damage {
-  cursor: pointer;
+  .roll-edge,
+  .roll-trouble {
+    background: $mm-secondary-red;
+    border: 1px solid $mm-primary-red;
+    font-size: 12px;
+    padding: $mm-spacing-sm;
+
+    &:hover {
+      background: $mm-primary-red;
+    }
+  }
 }

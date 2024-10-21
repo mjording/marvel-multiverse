@@ -24,6 +24,7 @@
     height: 18px;
     justify-content: center;
     padding: $mm-spacing-xs;
+    transition: all $mm-transition-type-link $mm-transition-time-base;
     width: 18px;
   }
 }

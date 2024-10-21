@@ -4,3 +4,10 @@ $mm-spacing-md: 8px;
 $mm-spacing-lg: 16px;
 
 $mm-border-radius-sm: 2px;
+
+$mm-transition-type-link: cubic-bezier(0.075, 0.820, 0.165, 1.000);
+$mm-transition-type-shift: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+
+$mm-transition-time-base: 0.3s;
+$mm-transition-time-fast: 0.1s;
+$mm-transition-time-slow: 0.5s;

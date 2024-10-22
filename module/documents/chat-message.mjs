@@ -324,7 +324,7 @@ export class ChatMessageMarvel extends ChatMessage {
     const messageId = target.closest('[data-message-id]').dataset.messageId;
 
     const messageHeader = target.closest('li.chat-message');
-    const flavorText = messageHeader.querySelector('span.flavor-text').innerHTML;
+    const flavorText = messageHeader.querySelector('span.flavor-text')?.innerHTML;
     this._handleChatButton(action, messageId, dieIndex, isInit, flavorText);
   }
 
@@ -363,7 +363,7 @@ export class ChatMessageMarvel extends ChatMessage {
 
     const formulaDie = formulaGroups.dieType;
 
-    targetDie.number += 1;
+    targetDie.number = 2;
 
     const targetFormula = `${targetDie.number}d${formulaDie}`;
 
@@ -374,6 +374,7 @@ export class ChatMessageMarvel extends ChatMessage {
     targetDie.modifiers = [modifier];
 
     const oldRollResult = targetDie.results.find((r) => r.active);
+    //const oldFantastic = targetDie.results.find((r) => r.result === 1);
     const oldFantastic = targetIsMarvel && oldRollResult.result === 1;
     const oldResult = oldRollResult.result === 1 ? 6 : oldRollResult.result;
 
@@ -381,22 +382,35 @@ export class ChatMessageMarvel extends ChatMessage {
     await newRoll.roll();
 
     const newRollResult = newRoll.terms[0].results[0];
+    const newFantastic = targetIsMarvel && newRollResult.result === 1;
     const newResult = newRollResult.result === 1 ? 6 : newRollResult.result
 
     if (modifier === 'kh') {
-      if ( oldFantastic || oldResult >= newResult ){
+      if ( newFantastic ){
+        oldRollResult.active = false;
+        oldRollResult.discarded = true;
+        newRollResult.active = true;
+        delete newRollResult.discarded;
+      } else if ( oldFantastic || oldResult >= newResult ){
         newRollResult.active = false;
         newRollResult.discarded = true;
-      } else if( newResult > oldResult) {
+      } else if( newResult >= oldResult) {
         oldRollResult.active = false;
         oldRollResult.discarded = true;
         newRollResult.active = true;
         delete newRollResult.discarded;
       }
-    } else {
-      if ( oldResult <= newResult ){
+    } else if (modifier === 'kl') {
+      if (oldFantastic){
+        oldRollResult.active = false;
+        oldRollResult.discarded = true;
+        newRollResult.active = true;
+        delete newRollResult.discarded;
+      } else if ( oldResult <= newResult ){
         newRollResult.active = false;
         newRollResult.discarded = true;
+        oldRollResult.active = true;
+        delete oldRollResult.discarded;
       } else {
         oldRollResult.active = false;
         oldRollResult.discarded = true;
@@ -405,6 +419,7 @@ export class ChatMessageMarvel extends ChatMessage {
       }
     }
 
+ 
     targetDie.results.push(newRollResult);
 
     const re = /(\(?{)(\dd\d),(\ddm),(\dd\d)(}.*)/;

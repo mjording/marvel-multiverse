@@ -329,6 +329,15 @@ export class ChatMessageMarvel extends ChatMessage {
   }
 
 
+  async _handleEdge(active, rollResult){
+    if (active){
+      rollResult.active = true;
+      delete rollResult.discarded;
+    } else {
+      rollResult.active = false;
+      rollResult.discarded = true;
+    }
+  }
 
   /**
    * Handles our button clicks from the chat log
@@ -374,52 +383,33 @@ export class ChatMessageMarvel extends ChatMessage {
     targetDie.modifiers = [modifier];
 
     const oldRollResult = targetDie.results.find((r) => r.active);
-    //const oldFantastic = targetDie.results.find((r) => r.result === 1);
     const oldFantastic = targetIsMarvel && oldRollResult.result === 1;
-    const oldResult = oldRollResult.result === 1 ? 6 : oldRollResult.result;
+    const oldResult = targetIsMarvel && oldRollResult.result === 1 ? 6 : oldRollResult.result;
 
     const newRoll = new MarvelMultiverseRoll(targetRoll._formula, {...targetRoll.data});
     await newRoll.roll();
 
     const newRollResult = newRoll.terms[0].results[0];
     const newFantastic = targetIsMarvel && newRollResult.result === 1;
-    const newResult = newRollResult.result === 1 ? 6 : newRollResult.result
+    const newResult = targetIsMarvel && newRollResult.result === 1 ? 6 : newRollResult.result
 
     if (modifier === 'kh') {
-      if ( newFantastic ){
-        oldRollResult.active = false;
-        oldRollResult.discarded = true;
-        newRollResult.active = true;
-        delete newRollResult.discarded;
+      if ( newFantastic ||  newResult >= oldResult ){
+        this._handleEdge(false, oldRollResult);
+        this._handleEdge(true, newRollResult);
       } else if ( oldFantastic || oldResult >= newResult ){
-        newRollResult.active = false;
-        newRollResult.discarded = true;
-      } else if( newResult >= oldResult) {
-        oldRollResult.active = false;
-        oldRollResult.discarded = true;
-        newRollResult.active = true;
-        delete newRollResult.discarded;
-      }
+        this._handleEdge(false, newRollResult);
+      } 
     } else if (modifier === 'kl') {
-      if (oldFantastic){
-        oldRollResult.active = false;
-        oldRollResult.discarded = true;
-        newRollResult.active = true;
-        delete newRollResult.discarded;
-      } else if ( oldResult <= newResult ){
-        newRollResult.active = false;
-        newRollResult.discarded = true;
-        oldRollResult.active = true;
-        delete oldRollResult.discarded;
-      } else {
-        oldRollResult.active = false;
-        oldRollResult.discarded = true;
-        newRollResult.active = true;
-        delete newRollResult.discarded;
+      if ( newFantastic ||  newResult <= oldResult ){
+        this._handleEdge(false, oldRollResult);
+        this._handleEdge(true, newRollResult);
+      } else if ( newResult > oldResult ){
+        this._handleEdge(false, newRollResult);
+        this._handleEdge(true, oldRollResult);
       }
     }
 
- 
     targetDie.results.push(newRollResult);
 
     const re = /(\(?{)(\dd\d),(\ddm),(\dd\d)(}.*)/;

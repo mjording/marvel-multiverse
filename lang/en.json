@@ -47,7 +47,8 @@
     },
     "SheetLabels": {
       "Actor": "MarvelMultiverse Actor Sheet",
-      "Item": "MarvelMultiverse Item Sheet"
+      "Item": "MarvelMultiverse Item Sheet",
+      "NPC": "MarvelMultiverse NPC Sheet"
     },
     "Item": {
       "Power": {

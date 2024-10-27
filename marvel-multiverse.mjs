@@ -3,7 +3,8 @@ import { MarvelMultiverseActor } from './module/documents/actor.mjs';
 import { MarvelMultiverseItem } from './module/documents/item.mjs';
 import { ChatMessageMarvel } from './module/documents/chat-message.mjs';
 // Import sheet classes.
-import { MarvelMultiverseActorSheet } from './module/sheets/actor-sheet.mjs';
+import { MarvelMultiverseCharacterSheet } from './module/sheets/character-sheet.mjs';
+import { MarvelMultiverseNPCSheet } from './module/sheets/npc-sheet.mjs';
 import { MarvelMultiverseItemSheet } from './module/sheets/item-sheet.mjs';
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates } from './module/helpers/templates.mjs';
@@ -26,7 +27,8 @@ Hooks.once('init', function () {
     config: MARVEL_MULTIVERSE,
     dice,
     models,
-    MarvelMultiverseActorSheet,
+    MarvelMultiverseCharacterSheet,
+    MarvelMultiverseNPCSheet,
     MarvelMultiverseItemSheet,
     ChatMessageMarvel
   };
@@ -91,9 +93,16 @@ Hooks.once('init', function () {
 
   // Register sheet application classes
   Actors.unregisterSheet('core', ActorSheet);
-  Actors.registerSheet('marvel-multiverse', MarvelMultiverseActorSheet, {
+  Actors.registerSheet('marvel-multiverse', MarvelMultiverseCharacterSheet, {
+    types: ["character"],
     makeDefault: true,
     label: 'MARVEL_MULTIVERSE.SheetLabels.Actor',
+  });
+  Actors.registerSheet('marvel-multiverse', MarvelMultiverseNPCSheet, {
+    types: ["npc"],
+    makeDefault: true,
+    label: 'MARVEL_MULTIVERSE.SheetLabels.NPC',
+
   });
   Items.unregisterSheet('core', ItemSheet);
   Items.registerSheet('marvel-multiverse', MarvelMultiverseItemSheet, {

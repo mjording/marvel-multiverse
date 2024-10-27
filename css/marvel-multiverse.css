@@ -72,6 +72,10 @@
 .flexrow.-space-evenly {
   justify-content: space-evenly;
 }
+.flexcol.-grow-2,
+.flexrow.-grow-2 {
+  flex-grow: 2;
+}
 .flexcol.-relative,
 .flexrow.-relative {
   position: relative;
@@ -447,6 +451,50 @@
   width: 140px;
 }
 
+.mm-npc-styled-container {
+  background: #e41d18;
+  clip-path: polygon(0% 0%, 114px 0%, 145px 28px, 100% 28px, 100% 100%, 0% 100%);
+  display: flex;
+  flex: 0 0 auto;
+  flex-flow: column;
+  padding: 3px;
+  width: 100%;
+}
+.mm-npc-styled-container.-no-header {
+  clip-path: initial;
+}
+.mm-npc-styled-container h3 {
+  background: #8b0502;
+  border-block-end: 1px solid #8b0502;
+  clip-path: polygon(0% 0%, calc(100% - 30px) 0%, 100% 100%, 0% 100%);
+  color: white;
+  font-family: "Roboto", serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  padding-block-start: 4px;
+  padding-inline-end: 4px;
+  padding-inline-start: 8px;
+  position: relative;
+  top: 1px;
+  width: 140px;
+}
+.mm-npc-styled-container .mm-styled-container-body {
+  background-image: linear-gradient(180deg, #8b0502, transparent 25%), url("../ui/official/mmrpg-crimson-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 1920px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  overflow: unset;
+  padding: 8px 8px 4px;
+  width: 100%;
+}
+
 .mm-styled-container-body {
   background-image: linear-gradient(180deg, #8b0502, transparent 25%), url("../ui/official/mmrpg-crimson-bg.jpg");
   background-position: top center;
@@ -495,7 +543,7 @@
 }
 
 .mm-styled-field {
-  align-self: start;
+  align-self: unset;
   display: inline-grid;
   flex: 0 0 auto;
   position: relative;
@@ -917,6 +965,14 @@
   justify-content: center;
   position: relative;
 }
+.marvel-multiverse.sheet.actor .mm-npc-portrait-block {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  height: 260px;
+  justify-content: center;
+  position: relative;
+}
 .marvel-multiverse.sheet.actor .mm-hero-portrait {
   align-items: center;
   background: #e41d18;
@@ -997,6 +1053,46 @@
 .marvel-multiverse.sheet.actor .mm-rank-block input {
   font-size: 28px;
   width: 50%;
+}
+.marvel-multiverse.sheet.actor .mm-npchealth-block, .marvel-multiverse.sheet.actor .mm-npcfocus-block {
+  align-items: center;
+  background: #e41d18;
+  bottom: -20px;
+  clip-path: polygon(12px 0%, calc(100% - 12px) 0%, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0% calc(100% - 12px), 0% 12px);
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 70px;
+  margin: 0;
+  padding: 4px 2px;
+  position: absolute;
+  text-align: center;
+  height: 60px;
+}
+.marvel-multiverse.sheet.actor .mm-npchealth-block::before, .marvel-multiverse.sheet.actor .mm-npcfocus-block::before {
+  background: #fff2ec;
+  clip-path: polygon(12px 0%, calc(100% - 12px) 0%, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0% calc(100% - 12px), 0% 12px);
+  content: "";
+  left: 3px;
+  position: absolute;
+  right: 3px;
+}
+.marvel-multiverse.sheet.actor .mm-npchealth-block .mm-stat-block, .marvel-multiverse.sheet.actor .mm-npcfocus-block .mm-stat-block {
+  padding-inline-end: unset;
+  min-height: unset;
+}
+.marvel-multiverse.sheet.actor .mm-npchealth-block .mm-stat-block .mm-input, .marvel-multiverse.sheet.actor .mm-npcfocus-block .mm-stat-block .mm-input {
+  padding: 0px 2px;
+  width: 85px;
+}
+.marvel-multiverse.sheet.actor .mm-npchealth-block .mm-stat-block .mm-input input, .marvel-multiverse.sheet.actor .mm-npcfocus-block .mm-stat-block .mm-input input {
+  font-size: 28px;
+  width: 50%;
+}
+.marvel-multiverse.sheet.actor .mm-npchealth-block {
+  left: 2px;
+}
+.marvel-multiverse.sheet.actor .mm-npcfocus-block {
+  right: 2px;
 }
 .marvel-multiverse.sheet.actor .mm-damage-block .mm-damage-rows li {
   align-items: center;
@@ -1093,6 +1189,9 @@
 .marvel-multiverse.sheet.actor .mm-stat-block.-focus ~ .mm-dr-block {
   background: #00599e;
 }
+.marvel-multiverse.sheet.actor .mm-stat-block.npc {
+  padding-inline-end: none;
+}
 .marvel-multiverse.sheet.actor .mm-stat-block::before {
   background: #fff2ec;
   bottom: 2px;
@@ -1153,7 +1252,7 @@
   line-height: 1;
 }
 .marvel-multiverse.sheet.actor .mm-speed-fields {
-  align-self: start;
+  align-self: unset;
   display: inline-flex;
   flex-direction: column;
   font-size: 12px;
@@ -1211,6 +1310,10 @@
 }
 .marvel-multiverse.sheet.actor .mm-abilities-block .mm-ability-rows li > div.mm-ability-name {
   align-items: center;
+}
+.marvel-multiverse.sheet.actor .mm-abilities-block .mm-ability-rows li > div.mm-npc-ability-name {
+  align-items: center;
+  min-width: 5em;
 }
 .marvel-multiverse.sheet.actor .mm-abilities-block .mm-ability-rows li > div > div,
 .marvel-multiverse.sheet.actor .mm-abilities-block .mm-ability-rows li > div > input {

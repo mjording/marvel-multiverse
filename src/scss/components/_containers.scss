@@ -36,6 +36,54 @@
   }
 }
 
+.mm-npc-styled-container {
+  background: $mm-primary-red;
+  clip-path: polygon(0% 0%, 114px 0%, 145px 28px, 100% 28px, 100% 100%, 0% 100%);
+  display: flex;
+  flex: 0 0 auto;
+  flex-flow: column;
+  padding: 3px;
+  width: 100%;
+
+  &.-no-header {
+    clip-path: initial;
+  }
+
+  h3 {
+    background: $mm-secondary-red;
+    border-block-end: 1px solid $mm-secondary-red;
+    clip-path: polygon(0% 0%, calc(100% - 30px) 0%, 100% 100%, 0% 100%);
+    color: white;
+    font-family: $font-secondary;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    padding-block-start: $mm-spacing-sm;
+    padding-inline-end: $mm-spacing-sm; // 55px temporary disabled size
+    padding-inline-start: $mm-spacing-md;
+    position: relative;
+    top: 1px;
+    width: 140px;
+  }
+
+  .mm-styled-container-body {
+    background-image: linear-gradient(180deg, $mm-secondary-red, transparent 25%), url('../ui/official/mmrpg-crimson-bg.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 1920px;
+    display: flex;
+    flex-direction: column;
+    gap: $mm-spacing-sm;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    overflow: unset;
+    padding: $mm-spacing-md $mm-spacing-md $mm-spacing-sm;
+    width: 100%;
+  }  
+}
+
+
 .mm-styled-container-body {
   background-image: linear-gradient(180deg, $mm-secondary-red, transparent 25%), url('../ui/official/mmrpg-crimson-bg.jpg');
   background-position: top center;

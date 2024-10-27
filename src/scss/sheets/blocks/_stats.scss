@@ -20,6 +20,10 @@
     }
   }
 
+  &.npc {
+    padding-inline-end: none;
+  }
+
   &::before {
     background: $mm-input-bg;
     bottom: 2px;
@@ -88,7 +92,7 @@
 }
 
 .mm-speed-fields {
-  align-self: start;
+  align-self: unset;
   display: inline-flex;
   flex-direction: column;
   font-size: 12px;

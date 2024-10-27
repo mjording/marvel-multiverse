@@ -41,6 +41,11 @@
           align-items: center;
         }
 
+        &.mm-npc-ability-name {
+          align-items: center;
+          min-width: 5em;
+        }
+
         > div,
         > input {
           align-items: center;

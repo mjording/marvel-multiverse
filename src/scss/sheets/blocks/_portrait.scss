@@ -7,6 +7,15 @@
   position: relative;
 }
 
+.mm-npc-portrait-block {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  height: 260px;
+  justify-content: center;
+  position: relative;
+}
+
 .mm-hero-portrait {
   align-items: center;
   background: $mm-primary-red;

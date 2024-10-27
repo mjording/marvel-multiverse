@@ -8,13 +8,13 @@ import {
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
  */
-export class MarvelMultiverseActorSheet extends ActorSheet {
+export class MarvelMultiverseNPCSheet extends ActorSheet {
   /** @override */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ['marvel-multiverse', 'sheet', 'actor'],
       width: 690,
-      height: 980,
+      height: 500,
       tabs: [
         {
           navSelector: '.sheet-tabs',
@@ -27,7 +27,7 @@ export class MarvelMultiverseActorSheet extends ActorSheet {
 
   /** @override */
   get template() {
-    return `systems/marvel-multiverse/templates/actor/actor-${this.actor.type}-sheet.hbs`;
+    return `systems/marvel-multiverse/templates/actor/actor-npc-sheet.hbs`;
   }
 
   /* -------------------------------------------- */

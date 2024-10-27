@@ -1,0 +1,45 @@
+.mm-npchealth-block, .mm-npcfocus-block {
+  align-items: center;
+  background: $mm-primary-red;
+  bottom: -20px;
+  clip-path: polygon(12px 0%, calc(100% - 12px) 0%, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0% calc(100% - 12px), 0% 12px);
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 70px;
+  margin: 0;
+  padding: $mm-spacing-sm $mm-spacing-xs;
+  position: absolute;
+  text-align: center;
+  height: 60px;
+
+  &::before {
+    background: $mm-input-bg;
+    clip-path: polygon(12px 0%, calc(100% - 12px) 0%, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0% calc(100% - 12px), 0% 12px);
+    content: "";
+    left: 3px;
+    position: absolute;
+    right: 3px;
+  }
+
+  .mm-stat-block {
+    padding-inline-end: unset;
+    min-height: unset;
+
+    .mm-input {
+      padding: 0px 2px;
+      width: 85px;
+      input {
+        font-size: 28px;
+        width: 50%;
+      }
+    }
+  }
+}
+
+.mm-npchealth-block {
+  left: 2px;
+}
+
+.mm-npcfocus-block {
+  right: 2px;
+}

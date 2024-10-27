@@ -75,6 +75,10 @@
     justify-content: space-evenly;
   }
 
+  &.-grow-2 {
+    flex-grow: 2;    
+  }
+
   &.-relative {
     position: relative;
   }

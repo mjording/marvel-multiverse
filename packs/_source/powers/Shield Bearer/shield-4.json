@@ -18,7 +18,7 @@
   "flags": {},
   "effects": [
     {
-      "name": "Health Damage Reduction 1",
+      "name": "Health Damage Reduction 4",
       "img": "icons/svg/aura.svg",
       "duration": {
         "startTime": null,

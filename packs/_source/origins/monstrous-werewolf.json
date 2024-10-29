@@ -218,7 +218,7 @@
             "changes": [
               {
                 "key": "system.healthDamageReduction",
-                "mode": 2,
+                "mode": 5,
                 "value": 2
               }
             ],

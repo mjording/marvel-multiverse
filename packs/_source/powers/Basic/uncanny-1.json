@@ -35,7 +35,7 @@
       "changes": [
         {
           "key": "system.focusDamageReduction",
-          "mode": 2,
+          "mode": 5,
           "value": 1
         }
       ],

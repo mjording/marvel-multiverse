@@ -1,5 +1,6 @@
 // Import document classes.
 import { MarvelMultiverseActor } from './module/documents/actor.mjs';
+import { MarvelMultiverseActiveEffect } from './module/documents/active-effect.mjs';
 import { MarvelMultiverseItem } from './module/documents/item.mjs';
 import { ChatMessageMarvel } from './module/documents/chat-message.mjs';
 // Import sheet classes.
@@ -71,11 +72,13 @@ Hooks.once('init', function () {
     power: models.MarvelMultiversePower
   }
 
+
+  
+  CONFIG.ActiveEffect.documentClass = MarvelMultiverseActiveEffect;
   // Active Effects are never copied to the Actor,
   // but will still apply to the Actor from within the Item
   // if the transfer property on the Active Effect is true.
   CONFIG.ActiveEffect.legacyTransferral = false;
-
 
   CONFIG.Dice.MarvelDie = dice.MarvelDie;
   CONFIG.Dice.types.push(dice.MarvelDie)
@@ -102,7 +105,6 @@ Hooks.once('init', function () {
     types: ["npc"],
     makeDefault: true,
     label: 'MARVEL_MULTIVERSE.SheetLabels.NPC',
-
   });
   Items.unregisterSheet('core', ItemSheet);
   Items.registerSheet('marvel-multiverse', MarvelMultiverseItemSheet, {

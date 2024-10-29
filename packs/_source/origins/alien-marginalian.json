@@ -250,7 +250,7 @@
             "changes": [
               {
                 "key": "system.healthDamageReduction",
-                "mode": 2,
+                "mode": 5,
                 "value": 2
               }
             ],
@@ -301,7 +301,7 @@
             "changes": [
               {
                 "key": "system.focusDamageReduction",
-                "mode": 2,
+                "mode": 5,
                 "value": 2
               }
             ],

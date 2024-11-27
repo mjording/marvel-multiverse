@@ -57,19 +57,27 @@ export class MarvelMultiverseItem extends Item {
     });
    
     if (this.system.formula && this.system.ability) {
-      console.log(`found formula: [ ${this.system.formula} ]`);
-
       // Retrieve roll data.
       const rollData = this.getRollData();
       // Invoke the roll and submit it to chat.
       const roll = new CONFIG.Dice.MarvelMultiverseRoll(rollData.formula, rollData.actor);
       // If you need to store the value first, uncomment the next line.
       // const result = await roll.evaluate();
+      const modLabel = `${label}, [ability] ${this.system.ability}`;
+   
       roll.toMessage({
+        title: this.name,
         speaker: speaker,
         rollMode: rollMode,
-        flavor: label
-      });
+        flavor: modLabel
+      }, {itemId: this._id});
+
+         
+      if (this.system.attack) {
+        Hooks.callAll("marvel-multiverse.rollAttack", this, roll);  
+        
+        Hooks.callAll("marvel-multiverse.calcDamage", this, roll);
+      }
       return roll;
     }
   }

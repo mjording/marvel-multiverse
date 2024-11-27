@@ -179,6 +179,7 @@ export class MarvelMultiverseRoll extends Roll {
         // Add appropriate edge mode message flavor and mmrpg roll flags
         messageData.flavor = messageData.flavor || this.options.flavor;
         messageData.fantastic = this.isFantastic;
+        if ( options.itemId ) foundry.utils.setProperty(messageData, "flags.marvel-multiverse.itemId", options.itemId);
 
         if ( this.hasEdge ) messageData.flavor += ` (${game.i18n.localize("MARVEL_MULTIVERSE.edge")})`;
         else if ( this.hasTrouble ) messageData.flavor += ` (${game.i18n.localize("MARVEL_MULTIVERSE.trouble")})`;

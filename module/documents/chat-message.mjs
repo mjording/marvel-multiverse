@@ -207,7 +207,7 @@ export class ChatMessageMarvel extends ChatMessage {
   }
 
   /**
-   * Handle clicking roll damage button.
+   * Handle clicking damage button.
    * @param {PointerEvent} event      The initiating click event.
    */
   _onClickDamageButton(event) {
@@ -265,18 +265,20 @@ export class ChatMessageMarvel extends ChatMessage {
       fantasticLessDmg = lessDamage * 2;
     }
 
-    const content = `Delivers <b>${dmg}</b> points [ MarvelDie: ${marvelDie.total} * ${ability} damage multiplier: ${damageMultiplier} + ${ability} score ${abilityValue} ] of damage.<p> ${fantastic ? 'fantastic roll 2x close attack Dmg: <b>' + fantasticDmg : ''}</b></p>`;
+    const content = `Delivers <b>${dmg}</b> points [ MarvelDie: ${marvelDie.total} * ${ability} damage multiplier: ${damageMultiplier} + ${ability} score ${abilityValue} ] of damage.<p> ${fantastic ? 'fantastic roll 2x close attack Dmg: <b>' + fantasticDmg +'</b>' : ''}</p>`;
     if(damageReduction){
       content.concat(' ', `<br>Target Has damageReduction of ${damageReduction}</br><p>With Damage Reduced damage is: <b>${lessDamage}</b> ${fantastic ? 'fantastic roll 2x attack dmg: ' + fantasticLessDmg : ''}</p>` );
     }
     const msgData = {
-      speaker: ChatMessage.getSpeaker({ actor: actor }),
+      speaker: ChatMessageMarvel.getSpeaker({ actor: actor }),
       rollMode: game.settings.get('core', 'rollMode'),
       flavor: `[ability] ${ability}`,
       title: 'Damage',
       content: content,
     }
-    ChatMessage.create(msgData);
+    
+    ChatMessageMarvel.create(msgData);
+  
   }
 
   /**
@@ -326,20 +328,12 @@ export class ChatMessageMarvel extends ChatMessage {
     let rollTerm;
 
     if(firstRollTerm instanceof foundry.dice.terms.ParentheticalTerm && firstRollTerm.roll.terms[0] instanceof foundry.dice.terms.PoolTerm){
-      console.log('first roll term is parenthentical with PoolTerm as its first roll term');
       rollTerm = firstRollTerm.roll.terms[0];
     } else if (firstRollTerm instanceof foundry.dice.terms.PoolTerm) {
-      console.log('first roll term is SixOneSix Term');
       rollTerm = firstRollTerm;
-    } else {
-      console.log('default firstRollTerm');
-    }
+    } 
 
-    if (!(rollTerm.rolls.length === 3 && (rollTerm.rolls[1].terms[0] instanceof game.MarvelMultiverse.dice.MarvelDie))) {
-      console.log(`rollTerm.rolls.length: ${rollTerm.rolls.length}`);
-      console.log(`rollTerm.rolls[1]: ${typeof rollTerm.rolls[1].terms[0]}`);
-      return;
-    }
+    if (!(rollTerm.rolls.length === 3 && (rollTerm.rolls[1].terms[0] instanceof game.MarvelMultiverse.dice.MarvelDie))) return
       
 
     const targetRoll = rollTerm.rolls[dieIndex];

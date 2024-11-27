@@ -16,6 +16,7 @@
     "ability": "log",
     "attackTarget": "log",
     "attackKind": "ranged",
+    "attack": true,
     "damageType": "focus"
   },
   "flags": {},

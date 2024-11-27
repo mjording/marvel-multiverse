@@ -17,6 +17,7 @@
     "attackTarget": "log",
     "edgeMode": "trouble",
     "attackKind": "close",
+    "attack": true,
     "damageType": "focus"
   },
   "flags": {},

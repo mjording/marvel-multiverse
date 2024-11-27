@@ -18,6 +18,7 @@
     "edgeMode": "edge",
     "damageType": "health",
     "attackKind": "close",
+    "attack": true,
     "attackEdgeMode": "edge"
   },
   "flags": {},

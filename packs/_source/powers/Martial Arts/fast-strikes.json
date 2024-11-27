@@ -17,6 +17,7 @@
     "attackTarget": "mle",
     "attackMultiplier": 2,
     "attackKind": "close",
+    "attack": true,
     "damageType": "health"
   },
   "flags": {},

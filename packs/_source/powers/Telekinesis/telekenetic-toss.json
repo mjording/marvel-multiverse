@@ -16,6 +16,7 @@
     "ability": "log",
     "attackTarget": "agl",
     "attackKind": "close",
+    "attack": true,
     "damageType": "health"
   },
   "flags": {},

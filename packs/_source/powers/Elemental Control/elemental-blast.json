@@ -18,6 +18,7 @@
     "attackTarget": "agl",
     "attackEdgeMode": "edge",
     "attackKind": "ranged",
+    "attack": true,
     "damageType": "health"
   },
   "flags": {},

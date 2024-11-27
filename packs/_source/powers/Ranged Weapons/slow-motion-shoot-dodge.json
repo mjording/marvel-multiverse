@@ -17,6 +17,7 @@
     "attackTarget": "agl",
     "attackMultiplier": 2,
     "attackKind": "ranged",
+    "attack": true,
     "damageType": "health"
   },
   "flags": {},

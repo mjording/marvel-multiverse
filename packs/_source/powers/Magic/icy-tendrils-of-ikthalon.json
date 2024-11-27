@@ -16,6 +16,7 @@
     "ability": "ego",
     "attackTarget": "agl",
     "attackKind": "ranged",
+    "attack": true,
     "damageType": "health"
   },
   "flags": {},

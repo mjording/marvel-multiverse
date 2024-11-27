@@ -16,6 +16,7 @@
     "ability": "log",
     "attackTarget": "res",
     "attackKind": "close",
+    "attack": true,
     "damageType": "health"
   },
   "flags": {},

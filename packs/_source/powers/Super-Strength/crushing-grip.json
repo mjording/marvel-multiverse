@@ -16,6 +16,7 @@
     "ability": "mle",
     "attackTarget": "res",
     "attackKind": "close",
+    "attack": true,
     "damageType": "health"
   },
   "flags": {},

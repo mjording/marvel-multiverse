@@ -17,6 +17,7 @@
     "attackTarget": "mle",
     "attackEdgeMode": "edge",
     "attackKind": "close",
+    "attack": true,
     "damageType": "health"
   },
   "flags": {},

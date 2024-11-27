@@ -16,6 +16,7 @@
     "ability": "mle",
     "attackTarget": "agl",
     "attackKind": "ranged",
+    "attack": true,
     "damageType": "health"
   },
   "flags": {},

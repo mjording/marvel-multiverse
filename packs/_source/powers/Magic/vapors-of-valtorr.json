@@ -16,6 +16,7 @@
     "ability": "ego",
     "attackTarget": "vig",
     "attackKind": "ranged",
+    "attack": true,
     "damageType": "health"
   },
   "flags": {},

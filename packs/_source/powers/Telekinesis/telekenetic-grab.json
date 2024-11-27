@@ -16,6 +16,7 @@
     "ability": "log",
     "attackTarget": "mle",
     "attackKind": "rankged",
+    "attack": true,
     "damageType": "health"
   },
   "flags": {},

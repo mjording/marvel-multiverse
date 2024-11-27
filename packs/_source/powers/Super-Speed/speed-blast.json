@@ -13,7 +13,7 @@
     "range": "10",
     "cost": "5 Focus",
     "effect": "The character makes a ranged attack. If it succeeds, the target is stunned for one round. On a Fantastic success, the character is knocked prone too.",
-    "attackAbility": "agl",
+    "ability": "agl",
     "attackTarget": "agl",
     "attackKind": "ranged"
   },

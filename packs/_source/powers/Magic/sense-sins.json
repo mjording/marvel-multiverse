@@ -13,7 +13,7 @@
     "range": "",
     "cost": "",
     "effect": "The character looks into a target's eyes and makes an Ego check against the target's Ego defense. On a success, the character can sense what sorts of horrible things the target has done. On a Fantastic success, they can sense what sorts of horrible things the target intends to do in the immediate future.",
-    "attackAbility": "ego",
+    "ability": "ego",
     "attackTarget": "ego"
   },
   "flags": {},

@@ -174,11 +174,7 @@ export class MarvelMultiverseRoll extends Roll {
     async toMessage(messageData={}, options={}) {
 
         // Evaluate the roll now so we have the results available to determine edge mode
-        if ( !this._evaluated ) await this.evaluateSync({
-            minimize: boolean,
-            maximize: boolean,
-            strict: boolean,
-            allowStrings: boolean});
+        if ( !this._evaluated ) await this.evaluate({});
 
         // Add appropriate edge mode message flavor and mmrpg roll flags
         messageData.flavor = messageData.flavor || this.options.flavor;

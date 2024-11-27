@@ -12,7 +12,11 @@
     "duration": "Instant",
     "range": "",
     "cost": "5 Focus",
-    "effect": "The character makes a close atack. if it succeeds, the enemy takes regular damage and is knocked prone. If it's a Fantastic success, the enemy is stunned for one round too."
+    "effect": "The character makes a close attack. if it succeeds, the enemy takes regular damage and is knocked prone. If it's a Fantastic success, the enemy is stunned for one round too.",
+    "ability": "mle",
+    "attackTarget": "mle",
+    "attackKind": "close",
+    "damageType": "health"
   },
   "flags": {},
   "effects": [],

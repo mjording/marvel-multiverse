@@ -13,7 +13,7 @@
     "range": "",
     "cost": "10 or more Focus",
     "effect": "The character makes a close attack. Add +1 to the character's Melee damage bonus for every 2 points of Focus they spend. On a success, an affected target takes that total damnge. On a Fantastic success, an affected target takes double that total damage and is stunned for one round.",
-    "attackAbility": "mle",
+    "ability": "mle",
     "attackTarget": "mle",
     "attackKind": "close",
     "damageType": "health"

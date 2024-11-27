@@ -13,7 +13,7 @@
     "range": "",
     "cost": "10 Focus",
     "effect": "The character splits their attack to make two ranged attacks against separate targets (or they can focus a single attack on a single target). Make a single Agility check and compare it to the targets' Agility defenses. On a success, an affected target takes half regular damage. On a Fantastic success, an affected target takes full damage, and the character can make a bonus attack with this power against any available target, with the same effect. When the character moves, is moved, or starts their next turn, they instantly fall prone. Until that happens, all attacks against their Agility defense have trouble.",
-    "attackAbility": "agl",
+    "ability": "agl",
     "attackTarget": "agl",
     "attackMultiplier": 2,
     "attackKind": "ranged",

@@ -14,7 +14,7 @@
     "cost": "10 Focus",
     "effect": "The character makes a ranged attack against a target in line of sight. If the attack is a success, it inflicts regular damage. On a Fantlastic success, energy also bounces off the first target 10 another in line of sight, and the character can make a new attack against that target, adding the new range to the previous attack's range. This can bo repeated until an attack is not fantastic.",
     "isElemental": true,
-    "attackAbility": "agl",
+    "ability": "agl",
     "attackTarget": "agl",
     "damageType": "health",
     "attackKind": "ranged"

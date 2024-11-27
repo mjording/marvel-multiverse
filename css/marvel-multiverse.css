@@ -1081,12 +1081,12 @@
   min-height: unset;
 }
 .marvel-multiverse.sheet.actor .mm-npchealth-block .mm-stat-block .mm-input, .marvel-multiverse.sheet.actor .mm-npcfocus-block .mm-stat-block .mm-input {
-  padding: 0px 2px;
+  font-size: 14px;
+  padding: 0px 6px 0px 0px;
   width: 85px;
 }
-.marvel-multiverse.sheet.actor .mm-npchealth-block .mm-stat-block .mm-input input, .marvel-multiverse.sheet.actor .mm-npcfocus-block .mm-stat-block .mm-input input {
-  font-size: 18px;
-  width: 50%;
+.marvel-multiverse.sheet.actor .mm-npchealth-block .mm-stat-block .mm-input input, .marvel-multiverse.sheet.actor .mm-npchealth-block .mm-stat-block .mm-input span, .marvel-multiverse.sheet.actor .mm-npcfocus-block .mm-stat-block .mm-input input, .marvel-multiverse.sheet.actor .mm-npcfocus-block .mm-stat-block .mm-input span {
+  width: 30%;
 }
 .marvel-multiverse.sheet.actor .mm-npchealth-block {
   left: 2px;

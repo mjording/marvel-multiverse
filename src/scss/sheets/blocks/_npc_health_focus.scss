@@ -26,11 +26,11 @@
     min-height: unset;
 
     .mm-input {
-      padding: 0px 2px;
+      font-size: 14px;
+      padding: 0px 6px 0px 0px;
       width: 85px;
-      input {
-        font-size: 18px;
-        width: 50%;
+      input, span {
+        width: 30%;
       }
     }
   }

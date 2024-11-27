@@ -13,7 +13,7 @@
     "range": "",
     "cost": "5 Focus",
     "effect": "The character can delve into the mind of a single person with whom they have established a telepathic link. This requires a Logic check against the target's Logic defense. On a success, the character can ask a single simple question and get the answer from the target's mind. On a Fantastic success, the character can get more complex information.",
-    "attackAbility": "log",
+    "ability": "log",
     "attackTarget": "log"
   },
   "flags": {},

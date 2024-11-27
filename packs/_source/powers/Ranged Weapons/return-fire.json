@@ -13,7 +13,7 @@
     "range": "",
     "cost": "5 Focus",
     "effect": "The character makes an Agility aftack against a target's Vigilance defense, If the attack is a success, apply Health Damage Reduction normally. Any damage taken is then applied to the target's Focus instead, It it's a Fantastie success, the damage is doubled and, if the target takes any focus damage, they are stunned for 1 round.",
-    "attackAbility": "agl",
+    "ability": "agl",
     "attackTarget": "vig"
   },
   "flags": {},

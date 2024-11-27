@@ -13,7 +13,7 @@
     "range": "",
     "cost": "5 Focus",
     "effect": "The character makes a Logic attack against a target in line of sight. If the attack is a success, it inflicts regular Focus damage. On a Fantastic success, the target takes double damage instead and is stunned for one round.",
-    "attackAbility": "log",
+    "ability": "log",
     "attackTarget": "log",
     "attackKind": "ranged",
     "damageType": "focus"

@@ -13,7 +13,7 @@
     "range": "",
     "cost": "15 Focus",
     "effect": "The character makes an Ego check against the Vigilance defense of a target they have grabbed. If the check is successful, the character can send the target to another dimension. The target can be sent to any location in that dimension that the character has been to before. Otherwise, the target arrives at the most common entrance to that dimension.",
-    "attackAbility": "ego",
+    "ability": "ego",
     "attackTarget": "vig",
     "attackKind": "close"
   },

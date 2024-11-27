@@ -31,9 +31,9 @@
                   <label class="mm-label" for="system.health.value">Health</label>
                   <div class="mm-input">
                     <input type="number" name="system.health.value" value="{{system.health.value}}" data-dtype="Number"/> | <input type="number" name="system.health.max" value="{{system.health.max}}" data-dtype="Number"/>
-                    <label class="mm-label -sm" for="system.health.damage-reduction">DR</label>
+                    <span><label class="mm-label" for="system.health.damage-reduction">DR</label>
                     {{#if (gt system.healthDamageReduction 0)}}-{{/if}}
-                    {{system.healthDamageReduction}}
+                    {{system.healthDamageReduction}}</span>
                   </div>
                 </div>
               </div>
@@ -44,10 +44,10 @@
                     <label class="mm-label" for="system.focus.value">Focus</label>
                     <div class="mm-input">
                       <input type="number" name="system.focus.value" value="{{system.focus.value}}" data-dtype="Number"/> | <input type="number" name="system.focus.max" value="{{system.focus.max}}" data-dtype="Number"/>
-                      <label class="mm-label -sm" for="system.health.damage-reduction">DR</label>
+                      <span><label class="mm-label" for="system.health.damage-reduction">DR</label>
                       {{#if (gt system.focusDamageReduction 0)}}-{{/if}}
-                      {{system.focusDamageReduction}}
-                      </div>
+                      {{system.focusDamageReduction}}</span>
+                    </div>
                   </div>
                 </div>
               </div>

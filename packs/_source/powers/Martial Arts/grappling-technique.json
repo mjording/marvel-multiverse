@@ -13,7 +13,7 @@
     "range": "",
     "cost": "5 Focus",
     "effect": "The character makes a close attack. If the attack is a success, the enemy takes regular damage and is grabbed, On a Fontastic success, the target takes double damage instend ond is pinned too,",
-    "attackAbility": "mle",
+    "ability": "mle",
     "attackTarget": "mle",
     "attackKind": "close",
     "damageType": "health"

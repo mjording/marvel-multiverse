@@ -79,12 +79,11 @@ Hooks.once('init', function () {
   CONFIG.ActiveEffect.legacyTransferral = false;
 
   CONFIG.Dice.MarvelDie = dice.MarvelDie;
-  CONFIG.Dice.types.push(dice.MarvelDie)
+  CONFIG.Dice.types.push(dice.MarvelDie);
   
   Roll.TOOLTIP_TEMPLATE = "systems/marvel-multiverse/templates/chat/roll-breakdown.hbs";
   Roll.CHAT_TEMPLATE = "systems/marvel-multiverse/templates/dice/roll.hbs"
   CONFIG.Dice.MarvelMultiverseRoll = dice.MarvelMultiverseRoll;
-
   // Register Roll Extensions
   CONFIG.Dice.rolls.push(dice.MarvelMultiverseRoll);
   CONFIG.Dice.terms.m = dice.MarvelDie;

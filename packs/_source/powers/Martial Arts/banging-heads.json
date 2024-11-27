@@ -13,7 +13,7 @@
     "range": "",
     "cost": "",
     "effect": "The character makes one Melee check against the Melee defense scores of two enemies within reach. If the attack fails against either foe, it fails entirely. If the attack is a success against both foes, each enemy takes full damage. On a Fantastic success, each enemy is also knocked prone.",
-    "attackAbility": "mle",
+    "ability": "mle",
     "attackTarget": "mle",
     "damageType": "health",
     "attackKind": "close"

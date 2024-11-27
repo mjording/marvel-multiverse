@@ -13,7 +13,7 @@
     "range": "",
     "cost": "15 Focus",
     "effect": "The character makes a ranged attack on the enemy. If the attack is a success, the enemy takes normal damage. On a Fantastic success, the enemy takes double damage. Either way, the character regains their reaction. Each target can be affected by this attack by this character only once per round.",
-    "attackAbility": "agl",
+    "ability": "agl",
     "attackTarget": "agl",
     "attackKind": "ranged",
     "damageType": "health"

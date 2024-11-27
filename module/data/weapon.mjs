@@ -5,16 +5,15 @@ export default class MarvelMultiverseWeapon extends MarvelMultiverseItemBase {
         const fields = foundry.data.fields;
         const requiredInteger = { required: true, nullable: false, integer: true };
         const schema = super.defineSchema();
-    
-        schema.melee = new fields.BooleanField({ required: true, initial: true });
+
+
+        schema.kind = new fields.StringField({required: true,  initial: "close"});
         schema.range = new fields.StringField({ blank: true });
         schema.damageMultiplier = new fields.StringField({ blank: true });
         schema.rule = new fields.StringField({ blank: true });
         schema.recommenedRank = new fields.StringField({ blank: true });
         schema.category = new fields.StringField({ blank: true });
-        schema.size = new fields.StringField({ blank: true });
         schema.reach = new fields.StringField({ blank: true });
-        schema.description = new fields.StringField({ blank: true });
         schema.history = new fields.StringField({ blank: true });
         schema.commentary = new fields.StringField({ blank: true });
 

@@ -1,5 +1,4 @@
 import { MarvelMultiverseRoll } from "../dice/roll.mjs";
-import simplifyRollFormula from "../dice/simplify-roll-formula.mjs";
 import { MARVEL_MULTIVERSE } from "../helpers/config.mjs";
 
 
@@ -138,7 +137,6 @@ export class ChatMessageMarvel extends ChatMessage {
       `;
       html.querySelector(".message-content").insertAdjacentElement("afterbegin", chatCard);
 
-
       const flavorText = html.querySelector("span.flavor-text");
       const isInitiative = flavorText && flavorText.innerHTML.includes("Initiative");
 
@@ -147,42 +145,13 @@ export class ChatMessageMarvel extends ChatMessage {
           if (isInitiative){
             el.setAttribute('data-initiative', true);
           }
-          el.addEventListener("click", this._onClickRetroButton.bind(this))
+          el.addEventListener("click", this._onClickRetroButton.bind(this));
         }
       );
-      html.querySelector("button.damage")?.addEventListener("click", this._onClickDamageButton.bind(this))
+      html.querySelector("button.damage")?.addEventListener("click", this._onClickDamageButton.bind(this));
     }
 
-
   }
-
-  /* -------------------------------------------- */
-
-  /**
-   * Augment roll tooltips with some additional information and styling.
-   * @param {Roll} roll            The roll instance.
-   * @param {HTMLDivElement} html  The roll tooltip markup.
-   */
-  _enrichRollTooltip(roll, html) {
-    const constant = Number(simplifyRollFormula(roll.formula, { deterministic: true }));
-    if ( !constant ) return;
-    const sign = constant < 0 ? "-" : "+";
-    const part = document.createElement("section");
-
-
-    part.classList.add("tooltip-part", "constant");
-    part.innerHTML = `
-      <div class="dice mice">
-        <ol class="dice-rolls"></ol>
-        <div class="total">
-          <span class="value"><span class="sign">${sign}</span>${Math.abs(constant)}</span>
-        </div>
-      </div>
-    `;
-
-    html.appendChild(part);
-  }
-
 
 
   /* -------------------------------------------- */
@@ -357,12 +326,21 @@ export class ChatMessageMarvel extends ChatMessage {
     let rollTerm;
 
     if(firstRollTerm instanceof foundry.dice.terms.ParentheticalTerm && firstRollTerm.roll.terms[0] instanceof foundry.dice.terms.PoolTerm){
+      console.log('first roll term is parenthentical with PoolTerm as its first roll term');
       rollTerm = firstRollTerm.roll.terms[0];
     } else if (firstRollTerm instanceof foundry.dice.terms.PoolTerm) {
+      console.log('first roll term is SixOneSix Term');
       rollTerm = firstRollTerm;
+    } else {
+      console.log('default firstRollTerm');
     }
 
-    if (!(rollTerm.rolls.length === 3 && (rollTerm.rolls[1].terms[0] instanceof game.MarvelMultiverse.dice.MarvelDie))) return;
+    if (!(rollTerm.rolls.length === 3 && (rollTerm.rolls[1].terms[0] instanceof game.MarvelMultiverse.dice.MarvelDie))) {
+      console.log(`rollTerm.rolls.length: ${rollTerm.rolls.length}`);
+      console.log(`rollTerm.rolls[1]: ${typeof rollTerm.rolls[1].terms[0]}`);
+      return;
+    }
+      
 
     const targetRoll = rollTerm.rolls[dieIndex];
     const targetDie = targetRoll.terms[0];

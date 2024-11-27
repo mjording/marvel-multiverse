@@ -13,7 +13,7 @@
     "range": "",
     "cost": "5 Focus",
     "effect": "The character forms an invisible barrier in their line of sight and up to 10 spaces away per rank. This covers up to 2 spaces across (vertically/horizontally) per their rank. The character makes a Logic check and compares the results against the Agility defense of any target in the affected spaces. On a success, the character chooses which side of the barrier the target winds up on. On a failure, the target chooses. On a Fantastic success, the target is paralyzed for one round too. Attacks on the barrier are against the character's Logic defense. Any attacks on it that do 10 points of damage or less are instantly absorbed, and the barrier continues. It an attack does more than 10 points of damage, it destroys the barrier. Either way, the attack leaves those behind the barrier unharmed.",
-    "attackAbility": "log",
+    "ability": "log",
     "attackTarget": "agl"
   },
   "flags": {},

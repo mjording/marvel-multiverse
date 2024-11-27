@@ -13,7 +13,7 @@
     "range": "",
     "cost": "",
     "effect": "The character makes an Ego attack against a target character within 3 spaces per rank. If it's a success, the target takes Focus damage. On a Fantastic success, the target takes double damage and is paralyzed for one round. Characters with the Heroic tag take half the listed damage from this power in either case. If a target is shattered by this power, they can recover, but they come back in one of two ways. Either they are cleansed of their sins and ready to make a new start with a clean slate, or their emotions are drained from them permanently. How this works in each case is up to the Narrator.",
-    "attackAbility": "ego",
+    "ability": "ego",
     "attackTarget": "ego",
     "damageType": "focus",
     "attackKind": "ranged"

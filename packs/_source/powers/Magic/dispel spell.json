@@ -13,7 +13,7 @@
     "range": "",
     "cost": "15 Focus",
     "effect": "The character makes an Ego check against the Ego defense of a target using a magic power that requires concentration. On a success, the target's concentration on that power is broken, On a Fantastic success, the target's concentration is broken entirely.",
-    "attackAbility": "ego",
+    "ability": "ego",
     "attackTarget": "ego"
   },
   "flags": {},

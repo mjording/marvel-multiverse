@@ -335,26 +335,30 @@ export class MarvelMultiverseCharacterSheet extends ActorSheet {
    * @private
    */
   _onRoll(event) {
+    console.log('its a roll from the character sheet');
     event.preventDefault();
     const element = event.currentTarget;
     const dataset = element.dataset;
 
+    
     // Handle item rolls.
     if (dataset.rollType) {
+      console.log(`rollType: ${dataset.rollType}`);
       if (dataset.rollType == 'item') {
+        console.log('its an item roll');
         const itemId = element.closest('.item').dataset.itemId;
         const item = this.actor.items.get(itemId);
         if (item) return item.roll();
-      }
+      } 
     }
-
-    // Handle rolls that supply the formula directly.
-    if (dataset.roll) {
+    if (dataset.formula) {
+      console.log(`Charactersheet _onRoll event with formula: ${dataset.formula}`);
       const ability = CONFIG.MARVEL_MULTIVERSE.damageAbility[dataset.label] ?? dataset.label;
       let label = `[ability] ${ability}`;
       let title = dataset.power ? `[power] ${dataset.power}` : "";
       label = dataset.damageType ? label + " [damageType] " + dataset.damageType : label;
-      let roll = new Roll(dataset.roll, this.actor.getRollData());
+      let roll = new CONFIG.Dice.MarvelMultiverseRoll(dataset.formula, this.actor.getRollData());
+      
       roll.toMessage({
         speaker: ChatMessage.getSpeaker({ actor: this.actor }),
         flavor: label,
@@ -362,7 +366,8 @@ export class MarvelMultiverseCharacterSheet extends ActorSheet {
         title: title
       });
       return roll;
-    }
+    };
+    
   }
 
 

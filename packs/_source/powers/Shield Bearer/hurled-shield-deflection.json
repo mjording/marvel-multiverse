@@ -13,7 +13,7 @@
     "range": "5 spaces times the character's rank",
     "cost": "5 Focus",
     "effect": "The enemy has trouble on the attack. The shield then bounces back to the character.",
-    "attackAbility": "agl",
+    "ability": "agl",
     "attackTarget": "agl",
     "attackKind": "ranged"
   },

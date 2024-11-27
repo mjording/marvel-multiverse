@@ -1,6 +1,3 @@
-import { MARVEL_MULTIVERSE } from "../helpers/config.mjs";
-
-
 /**
  * Extend the basic Item with some very simple modifications.
  * @extends {Item}
@@ -13,6 +10,13 @@ export class MarvelMultiverseItem extends Item {
     // As with the actor class, items are documents that can have their data
     // preparation methods overridden (such as prepareBaseData()).
     super.prepareData();
+  }
+
+  
+  prepareDerivedData() {
+    super.prepareDerivedData();
+    // Build the formula
+    this.formula = this.system.ability && this.formula ? `${this.formula} + @${this.system.ability}.value` : '';
   }
 
   /**
@@ -45,21 +49,20 @@ export class MarvelMultiverseItem extends Item {
     const rollMode = game.settings.get('core', 'rollMode');
     const label = `[${item.type}] ${item.name}`;
 
-    // If there's no roll data, send a chat message.
-    if (!this.system.formula) {
-      ChatMessage.create({
-        speaker: speaker,
-        rollMode: rollMode,
-        flavor: label,
-        content: `${item.system.description} ${item.system.effect}`,
-      });
-    }
-    // Otherwise, create a roll and send a chat message from it.
-    else {
+    ChatMessage.create({
+      speaker: speaker,
+      rollMode: rollMode,
+      flavor: label,
+      content: `<div>${item.system.description}</div><div>${item.system.effect}</div>`,
+    });
+   
+    if (this.system.formula && this.system.ability) {
+      console.log(`found formula: [ ${this.system.formula} ]`);
+
       // Retrieve roll data.
       const rollData = this.getRollData();
       // Invoke the roll and submit it to chat.
-      const roll = new Roll(rollData.formula, rollData.actor);
+      const roll = new CONFIG.Dice.MarvelMultiverseRoll(rollData.formula, rollData.actor);
       // If you need to store the value first, uncomment the next line.
       // const result = await roll.evaluate();
       roll.toMessage({

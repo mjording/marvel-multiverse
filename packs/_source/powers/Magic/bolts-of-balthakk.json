@@ -13,7 +13,7 @@
     "range": "20 spaces",
     "cost": "5 or more Focus",
     "effect": "The character makes an Ego check with an edge against the Agility defense of a target in their line of sight. For this attack, add +1 to the character's Agility damage bonus for every 2 points of Focus they spend. On a success, an affected target takes that total damage. On a Fantastic success, an affected target takes double that total damage and is stunned for one round.",
-    "attackAbility": "ego",
+    "ability": "ego",
     "attackTarget": "agl",
     "edgeMode": "edge",
     "damageType": "health",

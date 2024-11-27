@@ -13,7 +13,7 @@
     "range": "",
     "cost": "10 Focus",
     "effect": "The character makes an Ego attack apainst the target's Agility defense. If the attack succeeds. the character can move the target in any direction. up to space times the character's rank. On a Faniastic success, the target also takes regular damage, is knocked prone and suffers the element's special effect.",
-    "attackAbility": "ego",
+    "ability": "ego",
     "attackTarget": "agl",
     "isElemental": true,
     "damageType": "health"

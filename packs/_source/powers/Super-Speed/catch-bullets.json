@@ -13,7 +13,7 @@
     "range": "",
     "cost": "10 Focus",
     "effect": "The character makes an Agility check, using the attacker's attack result as the target number. If the character's check succeeds, the attack is nullified. On a Fantastic success, the character gets their reaction back.",
-    "attackAbility": "agl",
+    "ability": "agl",
     "attackTarget": "agl"
   },
   "flags": {},

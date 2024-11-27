@@ -13,7 +13,7 @@
     "range": "",
     "cost": "10 Focus",
     "effect": "The character makes an Agility check and compares that against the Agility defense of every enemy within 5 spaces and in their line of sight. Each success does half the regular damage. On a Fantastic success, each enemy takes full damage instead and is bleeding",
-    "attackAbility": "agl",
+    "ability": "agl",
     "attackTarget": "agl",
     "attackKind": "ranged",
     "damageType": "health"

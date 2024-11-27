@@ -13,7 +13,7 @@
     "range": "",
     "cost": "10 Focus",
     "effect": "The character makes a Logic attack against the grabbed target's Resilience defense. If it's a success, the target takes regular damage. On a Fantastic success, the target takes double damage and is pinned.",
-    "attackAbility": "log",
+    "ability": "log",
     "attackTarget": "res",
     "attackKind": "close",
     "damageType": "health"

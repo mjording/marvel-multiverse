@@ -13,7 +13,7 @@
     "range": "Varies",
     "cost": "5 Focus",
     "effect": "The character makes a Logic attack against the Melee defense of a target within 5 spaces times the character's rank. If the attack is a success, the character grabs the target with their mind. On a Fantastic success, the target can also be pinned. Breaking free requires a successful Melee check against target number 20.",
-    "attackAbility": "log",
+    "ability": "log",
     "attackTarget": "mle",
     "attackKind": "rankged",
     "damageType": "health"

@@ -13,7 +13,7 @@
     "range": "Varies",
     "cost": "10 Focus",
     "effect": "The character can telekinetically throw a person that they've telekinetically grabbed at another target. The range for the throw is 5 spaces times the character's rank. The character makes a Logic check against the target's Agility defense. A failure inflicts regular damage on the thrown person, who falls prone within 1 space of the target. If the attack is a success, the target takes regular damage too. On a Fantastic success, the target is knocked prone as well.",
-    "attackAbility": "log",
+    "ability": "log",
     "attackTarget": "agl",
     "attackKind": "close",
     "damageType": "health"

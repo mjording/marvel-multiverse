@@ -13,7 +13,7 @@
     "range": "",
     "cost": "15 or more Focus",
     "effect": "The character makes an Ego attack against the grabbed target. On a success, they remove all of the target's powers and take them for their own. They can now use those powers as if they were always theirs. If the target's powers have costs, the character must pay the highest of them, or a minimum of 15 Focus. When the character uses a power, they must pay any cost normally as well.",
-    "attackAbility": "ego",
+    "ability": "ego",
     "attackTarget": "ego",
     "attackKind": "close"
   },

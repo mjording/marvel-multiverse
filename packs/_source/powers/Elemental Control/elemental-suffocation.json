@@ -13,7 +13,7 @@
     "range": "Varies",
     "cost": "15 Focus",
     "effect": "The character makes an Ego attack against the grabbed target's Resilience defense. If the attack is a success, the target takes regular damage. On a Fantastic success, the target can also be pinned and suffers the element's special effect. With elements that aren't suited to suffocation, this power chokes the target instead.",
-    "attackAbility": "ego",
+    "ability": "ego",
     "attackTarget": "res",
     "isElemental": true,
     "damageType": "health",

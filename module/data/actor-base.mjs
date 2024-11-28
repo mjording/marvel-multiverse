@@ -32,13 +32,13 @@ export default class MarvelMultiverseActorBase extends foundry.abstract.TypeData
     }, {}));
 
     schema.health = new fields.SchemaField({
-      value: new fields.NumberField({ required: true, nullable: false, initial: 0 }),
+      value: new fields.NumberField({ required: true, nullable: false, initial: 0, min: -300 }),
       max: new fields.NumberField({ required: true, nullable: false, initial: 0  })
     });
     
     schema.healthDamageReduction = new fields.NumberField({ ...requiredInteger, initial: 0})
     schema.focus = new fields.SchemaField({
-      value: new fields.NumberField({ required: true, nullable: false, initial: 0 }),
+      value: new fields.NumberField({ required: true, nullable: false, initial: 0, min: -300 }),
       max: new fields.NumberField({ required: true, nullable: false, initial: 0  })
     });
     

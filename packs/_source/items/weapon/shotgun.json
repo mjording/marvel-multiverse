@@ -7,6 +7,7 @@
     "description": "Attacks with this weapon against targets 5 spaces away or fewer have trouble. A shotgun is a firearm that is usually designed to be fired from the shoulder, which uses the energy of a fixed shell to fire a number of small spherical pellets called shot, or a solid projectile called a slug. Shotguns come in a wide variety of sizes, ranging from 5.5 mm (.22 inch) bore up to 5 cm (2.0 in) bore, and in a range of firearm operating mechanisms, including breech loading, single-barreled, double or combination gun, pump-action, bolt-, and lever-action, semi-automatic, and even fully automatic variants.",
     "range": "6",
     "damageMultiplierBonus": "+1",
+    "ability": "agl",
     "rule": "This weapon can attack up to two targets In adjacent spaces to which the attacker can draw a line of sight. Make a single attack roll and compare it to the Agility defense scores of the targets. Split the damage from that roll equally."
   },
   "flags": {},

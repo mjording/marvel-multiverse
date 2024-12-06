@@ -7,6 +7,7 @@
     "description": "A grenade that explodes on impact, dealing damage to all enemies in a 10ft radius.",
     "range": "10",
     "damageMultiplierBonus": "x2",
+    "ability": "agl",
     "rule": "This weapon affects all characters within 2 spaces of where it lands and to which the grenade (not its thrower) would have a line of sight past any Intervening obstacles. Pick a target space and make a Challenging Agility check. If it succeeds, the grenade lands in the desired space. If the check fails, the grenade still winds up somewhere. Roll 1d6 to see how many spaces away from its Intended target it lands, It's up to the Narrator which direction it goes. Once you figure out where the grenade lands, compare the result of the check against the Agility defense of each character it could affect. Unlike with other, more precise weapons, a grenade uses its own damage multiplier (×2) Instead of that of the attacker. On a Fantastic success, it does double that (in other words, 44) damage to the character in the space where it lands, and regular damage to all other affected targets."
   },
   "flags": {},

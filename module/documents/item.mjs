@@ -53,7 +53,7 @@ export class MarvelMultiverseItem extends Item {
       speaker: speaker,
       rollMode: rollMode,
       flavor: label,
-      content: `<div>${item.system.description}</div><div>${item.system.effect}</div>`,
+      content: `<div>${item.system.description}</div><div>${item.system.effect ? item.system.effect : ''}</div>`,
     });
    
     if (this.system.formula && this.system.ability) {

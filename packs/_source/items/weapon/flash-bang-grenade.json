@@ -7,6 +7,7 @@
     "description": "A grenade that emits a blinding flash of light and a loud bang.",
     "range": "10",
     "damageMultiplierBonus": "-",
+    "ability": "agl",
     "rule": "This works much like a frag grenade, but it does no Health damage, Instead, once you figure out where the grenade lands, compare the attack roll against the Vigilance defense of any character within 2 spaces of it. Those who are affected are blinded and stunned for one round."
   },
   "flags": {},

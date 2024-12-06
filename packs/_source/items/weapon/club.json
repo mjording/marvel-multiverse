@@ -6,6 +6,7 @@
   "system": {
     "description": "A club is a short, stout weapon made of wood or metal. It is a simple weapon that is easy to use and can be found in the hands of many warriors.",
     "range": "Reach",
+    "ability": "mle",
     "damageMultiplierBonus": "+1"
   },
   "flags": {},

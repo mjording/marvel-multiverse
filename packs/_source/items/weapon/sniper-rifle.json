@@ -6,7 +6,8 @@
   "system": {
     "description": "A high-powered rifle that can hit targets from a long distance.",
     "range": "40",
-    "damageMultiplierBonus": "+1"
+    "damageMultiplierBonus": "+1",
+    "ability": "agl"
   },
   "flags": {},
   "effects": [],

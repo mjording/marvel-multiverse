@@ -364,7 +364,7 @@ export class MarvelMultiverseNPCSheet extends ActorSheet {
       let title = dataset.power ? `[power] ${dataset.power}` : "";
       label = dataset.damageType ? label + " [damageType] " + dataset.damageType : label;
      
-      let roll =  new MarvelMultiverseRoll(dataset.formula,  this.actor.getRollData());
+      let roll =  new CONFIG.Dice.MarvelMultiverseRoll(dataset.formula,  this.actor.getRollData());
 
       roll.toMessage({
         speaker: ChatMessage.getSpeaker({ actor: this.actor }),

@@ -1,0 +1,21 @@
+{
+  "_id": "dZJ9Q6BqakCiVjGY",
+  "name": "Telespot",
+  "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
+  "system": {
+    "description": "The character can create small teleportals.",
+    "powerSet": "Teleportation",
+    "prerequisites": "Teleport 1, Rank 2",
+    "action": "Standard or Reaction",
+    "trigger": "The character is attacked.",
+    "duration": "Instant",
+    "range": "10 spaces per rank",
+    "cost": "5 Focus",
+    "effect": "As a standard action, the character can deploy small teleportals through which they can attack or otherwise affect items within 10 times their rank in spaces using the same action. As a reaction, they can deploy a small teleportal against a physical attack, deflecting it away or redirecting it to another target. They can harmlessly deflect any such attack automatically that isn't a Fantastic success. Redirecting an attack to another target requires the character to make an Agility check against the new target's Agility defense. On a success, use the original attack's damage against the new target. On a Fantastic success, double the damage. On a failure, the original attack hits the character instead."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a7603bf9acca778a",
+  "_key": "!items!dZJ9Q6BqakCiVjGY"
+}

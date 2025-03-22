@@ -1,0 +1,21 @@
+{
+  "_id": "8b6b6w1QGZ5LUYJ7",
+  "name": "Razorwebs",
+  "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
+  "system": {
+    "description": "The character's webbing can cut!",
+    "powerSet": "Spider-Powers",
+    "prerequisites": "Webcasting",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "10 spaces",
+    "cost": "",
+    "effect": "The character makes an Agility attack on an enemy. If the attack is a success, the webbing does Health damage. On a Fantastic success, the attack also causes bleeding."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "a8b9ae895259d5bf",
+  "_key": "!items!8b6b6w1QGZ5LUYJ7 "
+}

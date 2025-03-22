@@ -86,7 +86,8 @@
       "Sound": "Sound",
       "Water": "Water",
       "Chemical": "Chemical",
-      "Toxin": "Toxin"
+      "Toxin": "Toxin",
+      "Swarm": "Swarm"
     },
     "Formula": "Formula",
     "AbilityModifier": "Ability Modifier",

@@ -1,0 +1,21 @@
+{
+  "_id": "LftdGKbdZQqQXkoI",
+  "name": "Copy Psyche",
+  "type": "power",
+  "img": "systems/marvel-multiverse/icons/super-powers.svg",
+  "system": {
+    "description": "The character can move whole minds around.",
+    "powerSet": "Telepathy",
+    "prerequisites": "Information Upload, Rank 4",
+    "action": "Standard",
+    "trigger": "",
+    "duration": "Instant",
+    "range": "",
+    "cost": "15 Focus",
+    "effect": "The character can copy the mind of a person with whom they have established a telepathic link and store it in their own mind. This power can also be used to transmit a mind-either theirs or a stored copy of someone else's-into the mind of another person with whom they've established a telepathic link. Additionally, it can be used to erase a copy of a mind from a person's brain A character can hold up to one extra mind in their head for every rank the character has. The person whose mind was copied suffers no ill effects. The character can have conversations with the minds stored in their head, and the guest minds can try to influence the character's decisions and actions. If the character wants to know something that's in a guest mind, they can use the Mind Reading power on it. However, they don't have to first establish a telepathic link to do so. At the end of every day that a character has more than one mind in their head, they must make a Resilience vs TN 10 action check. If they fail, they lose 5 Focus. This Focus cannot be regained until the character gets rid of any extra minds. It may take a while, but eventually, the character is sure to wind up demoralized until they rid themselves of any extra minds. If a character with extra minds in their head wants to remove an extra mind, they can make a Logic vs. the mind's Logic defense action check. If they succeed, they permanently delete the copied mind from their brain. If they fail, they lose 5 Focus. When a character with extra minds in their head is demoralized, any mind inside them can attempt to take over their body. To do so, the mind must make a Logic vs. the character's Logic defense action check. On a success, the mind gains control of the character's body. (If more than one mind tries this at once, the highest result prevails.) On a Fantastic success, the mind takes over the target's body with the body's Focus fully restored. If a target does not want to have an extra mind placed in their head in the first place, the target must first be demoralized before the attempt is made. Then the character using this power must make a Logic vs. the target's Logic defense action check. On a success, the new mind is copied over. On a Fantastic success, the mind takes over the target's body with the body's Focus fully restored. If a body is taken over in this way, the original mind remains and cannot be removed. It can try to take over its body again if the new controller of the body becomes demoralized. If a character with extra minds in their head is shattered, all extra minds in it are permanently lost, in addition to the regular effects."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "9e745fc9dcc37bb2",
+  "_key": "!items!LftdGKbdZQqQXkoI"
+}

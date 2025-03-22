@@ -1,0 +1,14 @@
+{
+  "_id": "GNysHEOZz7Jnznd6",
+  "name": "Clone",
+  "type": "tag",
+  "img": "systems/marvel-multiverse/icons/tags.svg",
+  "system": {
+    "description": "The character is a clone of another character. See the Spiderverse Expansion Clones section starting on p. 118 for more on how this may affect them.",
+    "restriction": "",
+    "rarity": ""
+  },
+  "flags": {},
+  "effects": [],
+  "_key": "!items!GNysHEOZz7Jnznd6"
+}

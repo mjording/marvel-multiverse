@@ -1,0 +1,21 @@
+{
+  "_id": " nHXeCawCzySFFV1b",
+  "name": "Magic Masks",
+  "type": "power",
+  "img": "systems/marvel-multiverse/icons/narrative.svg",
+  "system": {
+    "description": "With a touch, the character can corrupt a person and command their utter loyalty.",
+    "powerSet": "Narrative",
+    "prerequisites": "",
+    "action": "",
+    "trigger": "",
+    "duration": "",
+    "range": "",
+    "cost": "",
+    "effect": "The character has a satchel that carries several magic masks that give the wearer the traits tags and powers associated with that mask, both good and bad. For example, a werewolf mask transforms the character into an actual werewolf. The character can wear only one mask at a time. Switching between them requires a standard action Wearing a mask usually does not change the character's size, even if the thing they would be like is usually a different size. Powers granted by the mask ignore all prerequisites. Masks can be created as required. Known masks include: - Black Cat: Traits: Combat Reflexes, Monster; Tags: Extreme Appearance; Powers: Real Jinx, Vicious Attack (Sharp); Claws: Add +1 to Melee damage multiplier. - Devil: Traits: Dealmaker, Monster; Tags: Cursed, Extreme Appearance; Powers: Penance Stare, Possession, Sense Sins. - Evil Clown: Traits: Monster; Tags: Extreme Appearance; Powers: Penance Stare, Sense Sins; Fantastic Success on attacks frightens targget for one round. - Frankenstein's Monster: Traits: Monster; Tags: Extreme Appearance; Powers: Mighty 1, Sturdy 1. - Ghost: Traits: Monster; Tags: Extreme Appearance; Powers: Disrupt Electronics, Invisibility, Phase Self; Fantastic Success on attacks frightens targget for one round. - Gorilla: Traits: Free Running; Tags: Extreme Appearance; Powers: Brawling, Mighty 1, Vicious Attack (Blunt). - Human Fly: Traits: Combat Reflexes, Monster; Tags: Extreme Appearance; Powers: Danger Sense, Evasion, Flight 1, Heightened Senses 1. - Model: Traits: Beguiling, Presence. - Mummy: Traits: Monster; Tags: Deceased, Extreme Appearance; Powers: Additional Limbs (wrappings), Extended Reach 1 (wrappings), Mighty 1. - Police Officer: Traits: Interrogation, Investigation; Tags: Authority. - Shark: Traits: Breathe Different, Monster; Tags: Amphibious, Extreme Appearance; Powers: Speed Swim, Vicious Attack (Sharp); Teeth: Add +1 to Melee damage multiplier. - Tiger: Traits: Combat Reflexes, Monster; Tags: Extreme Appearance; Powers: Brawling, Vicious Attack (Sharp); Claws: Add +1 to Melee damage multiplier. - Spider-Man: Traits: Combat Reflexes; Powers: Evasion, Mighty 1, Spider-Sense, Wallcrawling, Webcasting, Webslinging. - Vampire: Traits: Anathema: Garlic/Holy Symbols (including holy water)/Sunshine, Bloodthirsty, Monster, Weakness: Silver/Wood; Tags: Alternate Form: Bat/Mist/Wolf, Deceased, Imageless; Powers: Animal Communication: Bats/Rodents, Command, Healing Factor, Leech Life, Mighty 1, Sturdy 2, Telepathic Link. - Werewolf: Traits: Berserker, Monster, Weakness: Silver; Tags: Extreme Appearance, Lunar Transformation; Powers: Evasion, Healing Factor, Heightened Senses 1, Mighty 1, Sturdy 2. - Witch: Traits: Dealmaker; Tags: Extreme Appearance; Powers: Hex Bolt, Jinx, Powerful Hex, Protection Hex, Sense Supernatural. Other masks can be summoned from the satchel as needed. These can allow the character to emulate anything the mask represents. The character can put the masks on other people. If the character drops any masks, they can be picked up and worn by others too. The character can remove any such masks from another person with a successful Melee attack that does at least 1 point of damage-or if the wearer permits it."
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "26cb724b2bd54b2e",
+  "_key": "!items! nHXeCawCzySFFV1b"
+}

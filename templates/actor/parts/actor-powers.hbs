@@ -18,7 +18,12 @@
       {{#each powers as |item id|}}
         <li class="flexrow item mm-item" data-item-id="{{item._id}}">
           <div class="item-name mm-item-name">
-            <a class="rollable" data-roll-type="item">
+            <a class="rollable"
+              {{#if item.system.ability }}
+                data-formula="{1d6,1dm,1d6}+@abilities.{{item.system.ability}}.value" data-label="{{item.system.ability}} | {{ item.name }}"
+              {{else}}
+                data-roll-type="item"
+              {{/if}}
               <span>{{item.name}}</span>
               {{#if item.system.cost }}
                 <span>Cost: {{item.system.cost}}</span>

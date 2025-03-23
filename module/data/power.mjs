@@ -51,7 +51,7 @@ export default class MarvelMultiversePower extends MarvelMultiverseItemBase {
     // Migrate attackAbility to ability.
     if (source.attackAbility) {
       source.ability = source.attackAbility;
-      delete source.attackAbility;
+      source.attackAbility = undefined;
     }
     return super.migrateData(source);
   }

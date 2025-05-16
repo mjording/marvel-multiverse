@@ -209,10 +209,10 @@ Hooks.once("ready", () => {
 /*  Render Settings Hook                                  */
 /* -------------------------------------------- */
 
-Hooks.on("renderSettings", (app, [html]) => {
-  const details = html.querySelector("#game-details");
-  const pip = details.querySelector(".system-info .update");
-  details.querySelector(".system").remove();
+Hooks.on("renderSettings", (app, html) => {
+  const details = html.querySelector("section#settings");
+  const pip = details.querySelector("section.info");
+  // details.querySelector(".system").remove();
 
   const heading = document.createElement("div");
   heading.classList.add("mmrpg", "sidebar-heading");
@@ -237,7 +237,7 @@ Hooks.on("renderSettings", (app, [html]) => {
       </ul>
     </h2>
   `;
-  details.insertAdjacentElement("afterend", heading);
+  pip.insertAdjacentElement("beforeend", heading);
 
   const badge = document.createElement("div");
   badge.classList.add("mmrpg", "system-badge");

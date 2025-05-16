@@ -249,7 +249,9 @@ export class ChatMessageMarvel extends ChatMessage {
     const messageHeader = target.closest("li.chat-message");
     const flavorText =
       messageHeader.querySelector("span.flavor-text").innerHTML;
-
+    console.log(
+      `FlavorText ${flavorText}. messageHeader ${messageHeader} messageId ${messageId}`
+    );
     this._handleDamageChatButton(messageId, flavorText, fantastic);
   }
 
@@ -323,6 +325,8 @@ export class ChatMessageMarvel extends ChatMessage {
       content: content,
     };
 
+    console.log(`msgData ${msgData}`);
+    console.log(`msgData ${JSON.stringify(msgData)}`);
     ChatMessageMarvel.create(msgData);
   }
 
@@ -496,7 +500,7 @@ export class ChatMessageMarvel extends ChatMessage {
    * Wait to apply appropriate element heights until after the chat log has completed its initial batch render.
    * @param {jQuery} html  The chat log HTML.
    */
-  static onRenderChatLog([html]) {
+  static onRenderChatLog(html) {
     // if ( !game.settings.get("marvel", "autoCollapseItemCards") ) {
     if (false) {
       requestAnimationFrame(() => {

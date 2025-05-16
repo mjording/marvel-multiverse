@@ -1376,6 +1376,7 @@
 }
 .marvel-multiverse.sheet.actor .sheet-header {
   flex: 0 0 auto;
+  display: block;
 }
 .marvel-multiverse.sheet.actor .sheet-header .header-fields .flexrow .flexcol:first-child {
   flex: 0 0 210px;

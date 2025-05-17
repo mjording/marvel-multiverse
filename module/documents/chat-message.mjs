@@ -249,9 +249,7 @@ export class ChatMessageMarvel extends ChatMessage {
     const messageHeader = target.closest("li.chat-message");
     const flavorText =
       messageHeader.querySelector("span.flavor-text").innerHTML;
-    console.log(
-      `FlavorText ${flavorText}. messageHeader ${messageHeader} messageId ${messageId}`
-    );
+
     this._handleDamageChatButton(messageId, flavorText, fantastic);
   }
 
@@ -278,8 +276,9 @@ export class ChatMessageMarvel extends ChatMessage {
     const damageMultiplier =
       actor.system.abilities[abilityAbr].damageMultiplier;
 
-    const targetToken = canvas.tokens.controlled[0];
-
+    const targetToken = canvas.tokens.objects.children.find(
+      (t) => t.isTargeted
+    );
     const target = targetToken?.actor;
 
     let damageReduction = 0;
@@ -325,8 +324,6 @@ export class ChatMessageMarvel extends ChatMessage {
       content: content,
     };
 
-    console.log(`msgData ${msgData}`);
-    console.log(`msgData ${JSON.stringify(msgData)}`);
     ChatMessageMarvel.create(msgData);
   }
 
@@ -435,7 +432,10 @@ export class ChatMessageMarvel extends ChatMessage {
         this._handleEdge(false, newRollResult);
       }
     } else if (modifier === "kl") {
-      if (newFantastic || newResult <= oldResult) {
+      if (newFantastic) {
+        this._handleEdge(false, newRollResult);
+        this._handleEdge(true, oldRollResult);
+      } else if (newResult <= oldResult) {
         this._handleEdge(false, oldRollResult);
         this._handleEdge(true, newRollResult);
       } else if (newResult > oldResult) {

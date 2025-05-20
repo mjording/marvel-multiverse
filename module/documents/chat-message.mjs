@@ -229,8 +229,8 @@ export class ChatMessageMarvel extends ChatMessage {
    */
   _onClickDiceRoll(event) {
     event.stopPropagation();
-    const target = event.currentTarget;
-    target.classList.toggle("expanded");
+    const eventTarget = event.currentTarget;
+    eventTarget.classList.toggle("expanded");
   }
 
   /**
@@ -239,13 +239,14 @@ export class ChatMessageMarvel extends ChatMessage {
    */
   _onClickDamageButton(event) {
     event.stopPropagation();
-    const target = event.currentTarget;
-    const messageId = target.closest("[data-message-id]").dataset.messageId;
-    const fantastic = target.parentNode.querySelector(
+    const eventTarget = event.currentTarget;
+    const messageId =
+      eventTarget.closest("[data-message-id]").dataset.messageId;
+    const fantastic = eventTarget.parentNode.querySelector(
       "li.roll.marvel-roll.fantastic"
     );
 
-    const messageHeader = target.closest("li.chat-message");
+    const messageHeader = eventTarget.closest("li.chat-message");
     const flavorText =
       messageHeader.querySelector("span.flavor-text").innerHTML;
 
@@ -260,7 +261,7 @@ export class ChatMessageMarvel extends ChatMessage {
    */
   async _handleDamageChatButton(messageId, flavorText, fantastic) {
     const re = /\[ability\]\s(?<ability>\w*)/;
-    const dmgTypeRe = /\[damageType\]\s(?<damageType>\w*)/;
+    const dmgTypeRe = /\[damagetype\]\s(?<damageType>\w*)/;
     const ability = re.exec(flavorText).groups.ability;
     const damageType = dmgTypeRe.exec(flavorText)?.groups?.damageType;
     const abilityAbr = MARVEL_MULTIVERSE.damageAbilityAbr[ability] ?? ability;
@@ -272,38 +273,60 @@ export class ChatMessageMarvel extends ChatMessage {
     );
 
     const [marvelDie] = marvelRoll.dice;
-    let damageMultiplier = actor.system.abilities[abilityAbr].damageMultiplier;
+    const damageMultiplier =
+      actor.system.abilities[abilityAbr].damageMultiplier;
 
-    const targetToken = canvas.tokens.objects.children.find(
+    const targetTokens = canvas.tokens.objects.children.filter(
       (t) => t.isTargeted
     );
-    const target = targetToken?.actor;
-
-    let damageReduction = 0;
-    if (target) {
-      damageReduction =
-        damageType && damageType === "focus"
-          ? target?.system.focusDamageReduction
-          : target?.system.healthDamageReduction;
-      damageMultiplier = damageMultiplier - damageReduction;
-    }
 
     const abilityValue = actor.system.abilities[abilityAbr].value;
 
-    let dmg = marvelDie.total * damageMultiplier + abilityValue;
+    const targets = targetTokens.map((t) => t.actor);
 
-    if (fantastic) {
-      dmg = dmg * 2;
+    const damageContent = targets.map((t) => {
+      const damageReduction =
+        damageType && damageType === "focus"
+          ? t.system.focusDamageReduction
+          : t.system.healthDamageReduction;
+      const dmgMultiplier = damageMultiplier - damageReduction;
+      let dmg =
+        dmgMultiplier === 0
+          ? 0
+          : marvelDie.total * dmgMultiplier + abilityValue;
+      if (fantastic) {
+        dmg = dmg * 2;
+      }
+      return `<p><b>${t.name}</b> takes <b>${dmg} ${
+        fantastic ? "Fantastic" : ""
+      } </b> ${damageType} damage.<br/> re: MarvelDie: ${
+        marvelDie.total
+      } &#42; damage multiplier: &#40; ${
+        actor.system.abilities[abilityAbr].damageMultiplier
+      } - damageReduction: ${damageReduction} &#61; ${dmgMultiplier} &#41; + ${ability} score ${abilityValue} of damage.</p>`;
+    });
+
+    if (damageContent.length === 0) {
+      let dmg = marvelDie.total * damageMultiplier + abilityValue;
+      if (fantastic) {
+        dmg = dmg * 2;
+      }
+      damageContent.push(
+        `<p>target(s) take <b>${dmg} ${
+          fantastic ? "Fantastic" : ""
+        } </b> ${damageType} damage.<br/> re: MarvelDie: ${
+          marvelDie.total
+        } &#42; damage multiplier: ${damageMultiplier} + ${ability} score ${abilityValue} of damage.</p>`
+      );
     }
-
-    const content = `<p>Delivers <b>${dmg}</b> points re: MarvelDie: ${marvelDie.total} &#42; damage multiplier: &#40; ${actor.system.abilities[abilityAbr].damageMultiplier} - damageReduction: ${damageReduction} &#61; ${damageMultiplier} &#41; + ${ability} score ${abilityValue} of damage.</p>`;
+    // const content = `<p>Delivers <b>${dmg}</b> points re: MarvelDie: ${marvelDie.total} &#42; damage multiplier: &#40; ${actor.system.abilities[abilityAbr].damageMultiplier} - damageReduction: ${damageReduction} &#61; ${damageMultiplier} &#41; + ${ability} score ${abilityValue} of damage.</p>`;
 
     const msgData = {
       speaker: ChatMessageMarvel.getSpeaker({ actor: actor }),
       rollMode: game.settings.get("core", "rollMode"),
       flavor: `[ability] ${ability}`,
       title: "Damage",
-      content: content,
+      content: damageContent.join(""),
     };
     ChatMessageMarvel.create(msgData);
   }
@@ -314,14 +337,15 @@ export class ChatMessageMarvel extends ChatMessage {
    */
   _onClickRetroButton(event) {
     event.stopPropagation();
-    const target = event.currentTarget;
+    const eventTarget = event.currentTarget;
 
-    const action = target.dataset.retroAction;
-    const isInit = target.dataset.initiative;
-    const dieIndex = Math.round(target.dataset.index);
-    const messageId = target.closest("[data-message-id]").dataset.messageId;
+    const action = eventTarget.dataset.retroAction;
+    const isInit = eventTarget.dataset.initiative;
+    const dieIndex = Math.round(eventTarget.dataset.index);
+    const messageId =
+      eventTarget.closest("[data-message-id]").dataset.messageId;
 
-    const messageHeader = target.closest("li.chat-message");
+    const messageHeader = eventTarget.closest("li.chat-message");
     const flavorText =
       messageHeader.querySelector("span.flavor-text")?.innerHTML;
     this._handleChatButton(action, messageId, dieIndex, isInit, flavorText);

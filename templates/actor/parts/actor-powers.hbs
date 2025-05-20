@@ -20,7 +20,7 @@
           <div class="item-name mm-item-name">
             <a class="rollable"
               {{#if item.system.ability }}
-                data-formula="{1d6,1dm,1d6}+@abilities.{{item.system.ability}}.value" data-label="{{item.system.ability}}" data-item-id="{{item._id}}" | {{ item.name }}"
+                data-formula="{1d6,1dm,1d6}+@abilities.{{item.system.ability}}.value" data-label="{{item.system.ability}}" data-damagetype="{{item.system.damageType}}" data-item-id="{{item._id}}" | {{ item.name }}"
               {{else}}
                 data-roll-type="item" data-item-id="{{item._id}}"
               {{/if}}

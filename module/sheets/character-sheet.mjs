@@ -393,8 +393,9 @@ export class MarvelMultiverseCharacterSheet extends ActorSheet {
       let label = `[ability] ${ability}`;
       const title = dataset.power ? `[power] ${dataset.power}` : "";
       const itemId = element.closest(".item")?.dataset?.itemId;
-      label = dataset.damageType
-        ? `${label} [damageType] ${dataset.damageType}`
+      console.log(`dataset: ${dataset}`);
+      label = dataset.damagetype
+        ? `${label} [damagetype] ${dataset.damagetype}`
         : label;
       const roll = new CONFIG.Dice.MarvelMultiverseRoll(
         dataset.formula,

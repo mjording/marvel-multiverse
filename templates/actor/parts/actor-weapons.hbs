@@ -15,7 +15,7 @@
   {{#each weapons as |item id|}}
     <li class="flexrow item mm-item" data-item-id='{{item._id}}'>
       <div class="item-name mm-item-name">
-        <a class="rollable" data-roll-type="item">{{item.name}}</a>
+        <a class="rollable" data-roll-type="item" data-damagetype="{{item.system.damageType}}">{{item.name}} </a>
       </div>
       <div class="item-controls">
         <a

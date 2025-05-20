@@ -1,6 +1,6 @@
 {
   "name": "marvel-multiverse",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "CSS compiler for the MarvelMultiverse system",
   "scripts": {
     "build:css": "sass src/scss/marvel-multiverse.scss css/marvel-multiverse.css --style=expanded --no-source-map",

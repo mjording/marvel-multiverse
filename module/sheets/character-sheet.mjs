@@ -392,7 +392,7 @@ export class MarvelMultiverseCharacterSheet extends ActorSheet {
         CONFIG.MARVEL_MULTIVERSE.damageAbility[dataset.label] ?? dataset.label;
       let label = `[ability] ${ability}`;
       const title = dataset.power ? `[power] ${dataset.power}` : "";
-      const itemId = element.closest(".item").dataset.itemId;
+      const itemId = element.closest(".item")?.dataset?.itemId;
       label = dataset.damageType
         ? `${label} [damageType] ${dataset.damageType}`
         : label;

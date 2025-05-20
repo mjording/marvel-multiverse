@@ -1,0 +1,16 @@
+{
+  "_id": "knJV74XNP1iOgiFC",
+  "name": "Fist",
+  "type": "weapon",
+  "img": "systems/marvel-multiverse/icons/weapons.svg",
+  "system": {
+    "description": "A person's hand when the fingers are bent in toward the palm and held there tightl in order to strike a blow.",
+    "range": "Reach",
+    "ability": "mle",
+    "damageMultiplierBonus": "+0"
+  },
+  "flags": {},
+  "effects": [],
+  "folder": "8b60348af8f8d703",
+  "_key": "!items!knJV74XNP1iOgiFC"
+}

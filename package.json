@@ -23,12 +23,12 @@
   "private": true,
   "devDependencies": {
     "@babel/eslint-parser": "^7.24.1",
-    "@foundryvtt/foundryvtt-cli": "^1.0.2",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "eslint-plugin-jsdoc": "^48.2.3",
+    "@foundryvtt/foundryvtt-cli": "^1.1.0",
+    "@rollup/plugin-node-resolve": "^15.3.1",
+    "eslint-plugin-jsdoc": "^48.11.0",
     "fancy-log": "^2.0.0",
-    "rollup": "^4.14.1",
-    "sass": "^1.53.0",
+    "rollup": "^4.41.0",
+    "sass": "^1.89.0",
     "yargs": "^17.7.2"
   }
 }

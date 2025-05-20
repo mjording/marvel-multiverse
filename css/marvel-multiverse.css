@@ -511,6 +511,11 @@
   width: 100%;
 }
 
+.mmrpg-ul {
+  font-size: var(--font-size-16);
+  font-family: var(--font-h2);
+}
+
 .mm-item-list.-effects .mm-item > *,
 .mm-item-list.-effects .mm-item-header > * {
   flex: 1 1 auto;

@@ -210,10 +210,6 @@ Hooks.once("ready", () => {
 /* -------------------------------------------- */
 
 Hooks.on("renderSettings", (app, html) => {
-  const details = html.querySelector("section#settings");
-  const pip = details.querySelector("section.info");
-  // details.querySelector(".system").remove();
-
   const heading = document.createElement("div");
   heading.classList.add("mmrpg", "sidebar-heading");
   heading.innerHTML = `
@@ -237,17 +233,26 @@ Hooks.on("renderSettings", (app, html) => {
       </ul>
     </h2>
   `;
-  pip.insertAdjacentElement("beforeend", heading);
-
   const badge = document.createElement("div");
   badge.classList.add("mmrpg", "system-badge");
   badge.innerHTML = `
     <img src="systems/marvel-multiverse/ui/official/mmrpg-badge-32.webp" data-tooltip="${game.system.title}" alt="${game.system.title}">
     <span class="system-info">${game.system.version}</span>
   `;
-  if (pip)
-    badge.querySelector(".system-info").insertAdjacentElement("beforeend", pip);
-  heading.insertAdjacentElement("afterend", badge);
+  if (game.release.generation < 13) {
+    const details = html[0].querySelector("#game-details");
+    const pip = details.querySelector(".system-info .update");
+    // details.querySelector(".system").remove();
+    if (pip)
+      badge
+        .querySelector(".system-info")
+        .insertAdjacentElement("beforeend", pip);
+    heading.insertAdjacentElement("afterend", badge);
+    details.insertAdjacentElement("afterend", heading);
+  } else {
+    const infoSection = html.querySelector("section.info");
+    infoSection.insertAdjacentElement("beforeend", heading);
+  }
 });
 
 Hooks.on("renderChatLog", (app, html, data) => {

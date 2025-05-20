@@ -375,8 +375,10 @@ export class MarvelMultiverseCharacterSheet extends ActorSheet {
    */
   _onRoll(event) {
     event.preventDefault();
+    const rollMode = game.settings.get("core", "rollMode");
     const element = event.currentTarget;
     const dataset = element.dataset;
+
     // Handle item rolls.
     if (dataset.rollType) {
       if (dataset.rollType === "item") {
@@ -390,6 +392,7 @@ export class MarvelMultiverseCharacterSheet extends ActorSheet {
         CONFIG.MARVEL_MULTIVERSE.damageAbility[dataset.label] ?? dataset.label;
       let label = `[ability] ${ability}`;
       const title = dataset.power ? `[power] ${dataset.power}` : "";
+      const itemId = element.closest(".item").dataset.itemId;
       label = dataset.damageType
         ? `${label} [damageType] ${dataset.damageType}`
         : label;
@@ -398,12 +401,15 @@ export class MarvelMultiverseCharacterSheet extends ActorSheet {
         this.actor.getRollData()
       );
 
-      roll.toMessage({
-        speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-        flavor: label,
-        rollMode: game.settings.get("core", "rollMode"),
-        title: title,
-      });
+      roll.toMessage(
+        {
+          speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+          flavor: label,
+          rollMode: game.settings.get("core", "rollMode"),
+          title: title,
+        },
+        { rollMode: rollMode, itemId: itemId }
+      );
       return roll;
     }
   }

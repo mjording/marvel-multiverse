@@ -5,11 +5,10 @@ export class ChatMessageMarvel extends ChatMessage {
   /** @inheritDoc */
   _initialize(options = {}) {
     super._initialize(options);
-    if (game.release.generation > 11)
-      Object.defineProperty(this, "user", {
-        value: this.author,
-        configurable: true,
-      });
+    Object.defineProperty(this, "user", {
+      value: this.author,
+      configurable: true,
+    });
   }
 
   /* -------------------------------------------- */
@@ -273,8 +272,7 @@ export class ChatMessageMarvel extends ChatMessage {
     );
 
     const [marvelDie] = marvelRoll.dice;
-    const damageMultiplier =
-      actor.system.abilities[abilityAbr].damageMultiplier;
+    let damageMultiplier = actor.system.abilities[abilityAbr].damageMultiplier;
 
     const targetToken = canvas.tokens.objects.children.find(
       (t) => t.isTargeted
@@ -282,40 +280,24 @@ export class ChatMessageMarvel extends ChatMessage {
     const target = targetToken?.actor;
 
     let damageReduction = 0;
-    let lessDamage = 0;
     if (target) {
       damageReduction =
         damageType && damageType === "focus"
           ? target?.system.focusDamageReduction
           : target?.system.healthDamageReduction;
-      lessDamage = marvelDie.total * damageReduction;
+      damageMultiplier = damageMultiplier - damageReduction;
     }
+
     const abilityValue = actor.system.abilities[abilityAbr].value;
 
-    const dmg = marvelDie.total * damageMultiplier + abilityValue;
-    let fantasticDmg;
-    let fantasticLessDmg;
+    let dmg = marvelDie.total * damageMultiplier + abilityValue;
 
     if (fantastic) {
-      fantasticDmg = dmg * 2;
-      fantasticLessDmg = lessDamage * 2;
+      dmg = dmg * 2;
     }
 
-    const content = `Delivers <b>${dmg}</b> points [ MarvelDie: ${
-      marvelDie.total
-    } * ${ability} damage multiplier: ${damageMultiplier} + ${ability} score ${abilityValue} ] of damage.<p> ${
-      fantastic
-        ? `fantastic roll 2x close attack Dmg: <b>${fantasticDmg}</b>`
-        : ""
-    }</p>`;
-    if (damageReduction) {
-      content.concat(
-        " ",
-        `<br>Target Has damageReduction of ${damageReduction}</br><p>With Damage Reduced damage is: <b>${lessDamage}</b> ${
-          fantastic ? `fantastic roll 2x attack dmg: ${fantasticLessDmg}` : ""
-        }</p>`
-      );
-    }
+    const content = `<p>Delivers <b>${dmg}</b> points re: MarvelDie: ${marvelDie.total} &#42; damage multiplier: &#40; ${actor.system.abilities[abilityAbr].damageMultiplier} - damageReduction: ${damageReduction} &#61; ${damageMultiplier} &#41; + ${ability} score ${abilityValue} of damage.</p>`;
+
     const msgData = {
       speaker: ChatMessageMarvel.getSpeaker({ actor: actor }),
       rollMode: game.settings.get("core", "rollMode"),
@@ -323,7 +305,6 @@ export class ChatMessageMarvel extends ChatMessage {
       title: "Damage",
       content: content,
     };
-
     ChatMessageMarvel.create(msgData);
   }
 

@@ -16,13 +16,13 @@
         </div>
       </li>
       {{#each powers as |item id|}}
-        <li class="flexrow item mm-item" data-item-id="{{item._id}}">
+        <li class="flexrow item mm-item" data-item-id="{{item._id}}" >
           <div class="item-name mm-item-name">
             <a class="rollable"
               {{#if item.system.ability }}
-                data-formula="{1d6,1dm,1d6}+@abilities.{{item.system.ability}}.value" data-label="{{item.system.ability}} | {{ item.name }}"
+                data-formula="{1d6,1dm,1d6}+@abilities.{{item.system.ability}}.value" data-label="{{item.system.ability}}" data-item-id="{{item._id}}" | {{ item.name }}"
               {{else}}
-                data-roll-type="item"
+                data-roll-type="item" data-item-id="{{item._id}}"
               {{/if}}
               <span>{{item.name}}</span>
               {{#if item.system.cost }}

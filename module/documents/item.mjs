@@ -12,11 +12,13 @@ export class MarvelMultiverseItem extends Item {
     super.prepareData();
   }
 
-  
   prepareDerivedData() {
     super.prepareDerivedData();
     // Build the formula
-    this.formula = this.system.ability && this.formula ? `${this.formula} + @${this.system.ability}.value` : '';
+    this.formula =
+      this.system.ability && this.formula
+        ? `${this.formula} + @${this.system.ability}.value`
+        : "";
   }
 
   /**
@@ -46,36 +48,42 @@ export class MarvelMultiverseItem extends Item {
 
     // Initialize chat data.
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
-    const rollMode = game.settings.get('core', 'rollMode');
+    const rollMode = game.settings.get("core", "rollMode");
     const label = `[${item.type}] ${item.name}`;
 
     ChatMessage.create({
       speaker: speaker,
       rollMode: rollMode,
       flavor: label,
-      content: `<div>${item.system.description}</div><div>${item.system.effect ? item.system.effect : ''}</div>`,
+      content: `<div>${item.system.description}</div><div>${
+        item.system.effect ? item.system.effect : ""
+      }</div>`,
     });
-   
+
     if (this.system.formula && this.system.ability) {
       // Retrieve roll data.
       const rollData = this.getRollData();
       // Invoke the roll and submit it to chat.
-      const roll = new CONFIG.Dice.MarvelMultiverseRoll(rollData.formula, rollData.actor);
+      const roll = new CONFIG.Dice.MarvelMultiverseRoll(
+        rollData.formula,
+        rollData.actor
+      );
       // If you need to store the value first, uncomment the next line.
       // const result = await roll.evaluate();
       const modLabel = `${label}, [ability] ${this.system.ability}`;
-   
-      roll.toMessage({
-        title: this.name,
-        speaker: speaker,
-        rollMode: rollMode,
-        flavor: modLabel
-      }, {itemId: this._id});
 
-         
+      roll.toMessage(
+        {
+          title: this.name,
+          speaker: speaker,
+          rollMode: rollMode,
+          flavor: modLabel,
+        },
+        { rollMode: rollMode, itemId: this._id }
+      );
+
       if (this.system.attack) {
-        Hooks.callAll("marvel-multiverse.rollAttack", this, roll);  
-        
+        Hooks.callAll("marvel-multiverse.rollAttack", this, roll);
         Hooks.callAll("marvel-multiverse.calcDamage", this, roll);
       }
       return roll;

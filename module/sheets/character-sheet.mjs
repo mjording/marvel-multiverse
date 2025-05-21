@@ -379,11 +379,12 @@ export class MarvelMultiverseCharacterSheet extends ActorSheet {
     const element = event.currentTarget;
     const dataset = element.dataset;
 
+    const itemId = element.closest(".item").dataset.itemId;
+    const item = this.actor.items.get(itemId);
+
     // Handle item rolls.
     if (dataset.rollType) {
       if (dataset.rollType === "item") {
-        const itemId = element.closest(".item").dataset.itemId;
-        const item = this.actor.items.get(itemId);
         if (item) return item.roll();
       }
     }
@@ -392,11 +393,25 @@ export class MarvelMultiverseCharacterSheet extends ActorSheet {
         CONFIG.MARVEL_MULTIVERSE.damageAbility[dataset.label] ?? dataset.label;
       let label = `[ability] ${ability}`;
       const title = dataset.power ? `[power] ${dataset.power}` : "";
-      const itemId = element.closest(".item")?.dataset?.itemId;
-      console.log(`dataset: ${dataset}`);
+
       label = dataset.damagetype
         ? `${label} [damagetype] ${dataset.damagetype}`
         : label;
+
+      const speaker = ChatMessage.getSpeaker({ actor: this.actor });
+      const rollMode = game.settings.get("core", "rollMode");
+
+      if (item.system?.description) {
+        ChatMessage.create({
+          speaker: speaker,
+          rollMode: rollMode,
+          flavor: label,
+          content: `<div>${item.system.description}</div><div>${
+            item.system.effect ? item.system.effect : ""
+          }</div>`,
+        });
+      }
+
       const roll = new CONFIG.Dice.MarvelMultiverseRoll(
         dataset.formula,
         this.actor.getRollData()
@@ -404,9 +419,9 @@ export class MarvelMultiverseCharacterSheet extends ActorSheet {
 
       roll.toMessage(
         {
-          speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+          speaker: speaker,
           flavor: label,
-          rollMode: game.settings.get("core", "rollMode"),
+          rollMode: rollMode,
           title: title,
         },
         { rollMode: rollMode, itemId: itemId }

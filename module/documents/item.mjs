@@ -44,19 +44,24 @@ export class MarvelMultiverseItem extends Item {
    * @private
    */
   async roll() {
-    const item = this;
-
     // Initialize chat data.
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
     const rollMode = game.settings.get("core", "rollMode");
-    const label = `[${item.type}] ${item.name}`;
+    let label = `[${this.type}] ${this.name}`;
+    label = this.system.damageType
+      ? `${label} [damagetype] ${this.system.damageType}`
+      : label;
+
+    console.log(
+      `damageType: ${this.system.damageType} item.roll() : label: ${label}`
+    );
 
     ChatMessage.create({
       speaker: speaker,
       rollMode: rollMode,
       flavor: label,
-      content: `<div>${item.system.description}</div><div>${
-        item.system.effect ? item.system.effect : ""
+      content: `<div>${this.system.description}</div><div>${
+        this.system.effect ? this.system.effect : ""
       }</div>`,
     });
 

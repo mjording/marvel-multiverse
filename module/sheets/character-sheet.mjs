@@ -391,11 +391,11 @@ export class MarvelMultiverseCharacterSheet extends ActorSheet {
     if (dataset.formula) {
       const ability =
         CONFIG.MARVEL_MULTIVERSE.damageAbility[dataset.label] ?? dataset.label;
-      let label = `[ability] ${ability}`;
+      let label = `ability: ${ability}<br/>${item?.type}: ${item?.name}`;
       const title = dataset.power ? `[power] ${dataset.power}` : "";
 
       label = dataset.damagetype
-        ? `${label} [damagetype] ${dataset.damagetype}`
+        ? `${label}<br/>damagetype: ${dataset.damagetype}`
         : label;
 
       const speaker = ChatMessage.getSpeaker({ actor: this.actor });

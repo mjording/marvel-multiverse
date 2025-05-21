@@ -47,9 +47,11 @@ export class MarvelMultiverseItem extends Item {
     // Initialize chat data.
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
     const rollMode = game.settings.get("core", "rollMode");
-    let label = `[${this.type}] ${this.name}`;
+    let label = `ability: ${
+      CONFIG.MARVEL_MULTIVERSE.damageAbility[this.system.ability]
+    }<br/>${this.type}: ${this.name}`;
     label = this.system.damageType
-      ? `${label} [damagetype] ${this.system.damageType}`
+      ? `${label}<br/>damagetype: ${this.system.damageType}`
       : label;
 
     console.log(

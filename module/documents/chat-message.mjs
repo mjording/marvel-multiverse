@@ -260,8 +260,8 @@ export class ChatMessageMarvel extends ChatMessage {
    * @param {string} fantastic
    */
   async _handleDamageChatButton(messageId, flavorText, fantastic) {
-    const re = /\[ability\]\s(?<ability>\w*)/;
-    const dmgTypeRe = /\[damagetype\]\s(?<damageType>\w*)/;
+    const re = /ability:\s(?<ability>\w*)/;
+    const dmgTypeRe = /damagetype:\s(?<damageType>\w*)/;
     const ability = re.exec(flavorText).groups.ability;
     const damageType = dmgTypeRe.exec(flavorText)?.groups?.damageType;
     const abilityAbr = MARVEL_MULTIVERSE.damageAbilityAbr[ability] ?? ability;
@@ -324,8 +324,7 @@ export class ChatMessageMarvel extends ChatMessage {
     const msgData = {
       speaker: ChatMessageMarvel.getSpeaker({ actor: actor }),
       rollMode: game.settings.get("core", "rollMode"),
-      flavor: `[ability] ${ability}`,
-      title: "Damage",
+      flavor: flavorText,
       content: damageContent.join(""),
     };
     ChatMessageMarvel.create(msgData);

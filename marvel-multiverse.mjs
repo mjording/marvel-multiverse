@@ -259,6 +259,21 @@ Hooks.on("renderChatLog", (app, html, data) => {
   ChatMessageMarvel.onRenderChatLog(html);
 });
 
+Hooks.once("diceSoNiceReady", (dice3d) => {
+  // Register the custom die face for the Marvel Die
+  dice3d.addDicePreset({
+    type: "dm",
+    labels: ["m", "2", "3", "4", "5", "6"],
+    colorset: "red",
+    system: "standard",
+  });
+  dice3d.addDicePreset({
+    type: "d6",
+    labels: ["1", "2", "3", "4", "5", "6"],
+    colorset: "white",
+    system: "standard",
+  });
+});
 /* -------------------------------------------- */
 /*  Hotbar Macros                               */
 /* -------------------------------------------- */

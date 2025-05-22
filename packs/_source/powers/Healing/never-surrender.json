@@ -12,7 +12,7 @@
     "duration": "Concentration",
     "range": "Reach",
     "cost": "5 Focus",
-    "effect": "The character can eitminate the effects of a target losing all of their Focus. Ratber than becoming demoraliaed, the target can function narmally without having trouble an all thett actions due to their lack of focus. They cannot spend more Focus, though, and they can still be shattered. Once the power takes effect the target does not have to remain within the character's reach. When the effect ends. if the target has 0 Focus or less they become demoralized. If the target's Focus rises above 0 at any point, this power automatically ends."
+    "effect": "The character can eliminate the effects of a target losing all of their Focus. Rather than becoming demoralized, the target can function normally without having trouble on all their actions due to their lack of focus. They cannot spend more Focus, though, and they can still be shattered. Once the power takes effect the target does not have to remain within the character's reach. When the effect ends. if the target has 0 Focus or less they become demoralized. If the target's Focus rises above 0 at any point, this power automatically ends."
   },
   "flags": {},
   "effects": [],

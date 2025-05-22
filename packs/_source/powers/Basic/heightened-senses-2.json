@@ -4,7 +4,7 @@
   "type": "power",
   "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
-    "description": "The characler has superior senses.",
+    "description": "The character has superior senses.",
     "powerSet": "Basic",
     "prerequisites": "",
     "action": "",

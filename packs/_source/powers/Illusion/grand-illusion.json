@@ -4,7 +4,7 @@
   "type": "power",
   "img": "systems/marvel-multiverse/icons/illusion.svg",
   "system": {
-    "description": "By manipulating light and sound, the charcter creates an incredibly real hologram.",
+    "description": "By manipulating light and sound, the character creates an incredibly real hologram.",
     "powerSet": "Illusion",
     "prerequisites": "Animated Illusion,  Rank 3",
     "action": "Standard",

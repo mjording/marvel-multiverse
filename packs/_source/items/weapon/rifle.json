@@ -8,7 +8,11 @@
     "range": "20",
     "damageMultiplierBonus": "+1",
     "ability": "agl",
-    "rule": "Attacks with this weapon against targets 5 spaces away or lower have trouble."
+    "rule": "Attacks with this weapon against targets 5 spaces away or lower have trouble.",
+    "attackTarget": "agl",
+    "attackKind": "ranged",
+    "attack": true,
+    "damageType": "health"
   },
   "flags": {},
   "effects": [],

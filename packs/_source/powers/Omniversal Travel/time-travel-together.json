@@ -8,7 +8,7 @@
     "powerSet": "Omniversal Travel",
     "prerequisites": "Time Travel, Rank 3",
     "action": "Standard, movement or reaction",
-    "trigger": "The target is grabbe.",
+    "trigger": "The target is grabbed.",
     "duration": "Instant",
     "range": "",
     "cost": "10 Focus",

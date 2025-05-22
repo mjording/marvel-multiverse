@@ -4,7 +4,7 @@
   "type": "power",
   "img": "systems/marvel-multiverse/icons/phasing.svg",
   "system": {
-    "description": "The character con scramble electronies by moving through them.",
+    "description": "The character con scramble electronics by moving through them.",
     "powerSet": "Phasing",
     "prerequisites": "Phase Self, Rank 2",
     "action": "Standard",

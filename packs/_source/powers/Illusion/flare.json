@@ -4,7 +4,7 @@
   "type": "power",
   "img": "systems/marvel-multiverse/icons/illusion.svg",
   "system": {
-    "description": "The character generates a dozzling flare of light,",
+    "description": "The character generates a dazzling flare of light,",
     "powerSet": "Illusion",
     "prerequisites": "Illumination, Rank 3",
     "action": "Standard",
@@ -12,7 +12,7 @@
     "duration": "Instant",
     "range": "",
     "cost": "10 Focus",
-    "effect": "The character makes an Ego check and compares that against the Vigilance defense of every enciny within 5 spoces. Ench benten enemy is blinded for one turn. On a fantastic success, the flare inflicts regular damage too"
+    "effect": "The character makes an Ego check and compares that against the Vigilance defense of every enemy within 5 spaces. Each beaten enemy is blinded for one turn. On a fantastic success, the flare inflicts regular damage too"
   },
   "flags": {},
   "effects": [],

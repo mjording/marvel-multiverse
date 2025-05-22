@@ -7,7 +7,11 @@
     "description": "A bow is a ranged weapon that projects arrows powered by the elasticity of the bow. It is a simple weapon that can be used by anyone.",
     "range": "15",
     "ability": "agl",
-    "damageMultiplierBonus": "+1"
+    "damageMultiplierBonus": "+1",
+    "attackTarget": "agl",
+    "attackKind": "ranged",
+    "attack": true,
+    "damageType": "health"
   },
   "flags": {},
   "effects": [],

@@ -12,7 +12,7 @@
     "duration": "Concentration",
     "range": "",
     "cost": "",
-    "effect": "The charactes swaps places with another person they can see within 2 spaces per the character's rank. When the effect ends. the character and the other person swap places again. If the person being reupped with is unwilling, the character must make an Ego check against that person's Vigilance defease to succeed"
+    "effect": "The characters swaps places with another person they can see within 2 spaces per the character's rank. When the effect ends. the character and the other person swap places again. If the person being swapped with is unwilling, the character must make an Ego check against that person's Vigilance defense to succeed"
   },
   "flags": {},
   "effects": [],

@@ -8,7 +8,11 @@
     "range": "10",
     "damageMultiplierBonus": "+1",
     "ability": "agl",
-    "rule": "This weapon can attack up to three targets in adjacent spaces to which the attacker can draw a line of sight. Make a single attack roll and compare it to the Agility defense scores of the targets. Split the damage from that roll equally, Attacks with this weapon against targets 5 spaces away or fewer have trouble."
+    "rule": "This weapon can attack up to three targets in adjacent spaces to which the attacker can draw a line of sight. Make a single attack roll and compare it to the Agility defense scores of the targets. Split the damage from that roll equally, Attacks with this weapon against targets 5 spaces away or fewer have trouble.",
+    "attackTarget": "agl",
+    "attackKind": "ranged",
+    "attack": true,
+    "damageType": "health"
   },
   "flags": {},
   "effects": [],

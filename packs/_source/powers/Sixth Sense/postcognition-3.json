@@ -12,7 +12,7 @@
     "duration": "Instant",
     "range": "",
     "cost": "20 Focus",
-    "effect": "The character can sense what happened to a particular person, place, or item within their reach-incuding themselves in any 24 hour period in the past year. If using the power to analyze a person, they sense the event from the person's point of view using that person's senses. If the person is unconscious, dead or atherwise senseless at any point during that time, the character cannot sense anything at those points either. If using the power to analyze a place, the character can sense everything that happened in that place over that period of time, uaing their own senses. It seems to the character as if they are standing in their current location and position. If using the power to analyze an item, the character senses how the item was affected or used over that period of time, no matter where it was located or how it moved. They can sense things as if the item had their senses. The character can fast forward and rewind through the period of time and stop at interesting parts, allowing them to play out in real time.",
+    "effect": "The character can sense what happened to a particular person, place, or item within their reach-including themselves in any 24 hour period in the past year. Otherwise it works the same as Postcognition 1.",
     "numbered": 2
   },
   "flags": {},

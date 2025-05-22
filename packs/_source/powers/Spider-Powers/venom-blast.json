@@ -12,7 +12,7 @@
     "duration": "Instant",
     "range": "5 spaces",
     "cost": "",
-    "effect": "The character makes a ranged attack. If the attack is a success, it does regulas damage. On a Fantastic success, the attack does double damage, and if the target suffers any actual damage, they are also stunned for one round.",
+    "effect": "The character makes a ranged attack. If the attack is a success, it does regular damage. On a Fantastic success, the attack does double damage, and if the target suffers any actual damage, they are also stunned for one round.",
     "ability": "agl",
     "attackTarget": "agl",
     "attackKind": "ranged",

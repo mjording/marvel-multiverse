@@ -12,7 +12,7 @@
     "duration": "Concentration",
     "range": "5 spaces per rank",
     "cost": "5 Focus per turn",
-    "effect": "The character picks a foe in their line of sight That foe has trouble on all action checks made for the power's duration There is no limit on the range between the character and the foe once the power is activated. The character must pay the Focus cost at the start of each of ther saboequeat turna of concentration to keep the power working."
+    "effect": "The character picks a foe in their line of sight That foe has trouble on all action checks made for the power's duration There is no limit on the range between the character and the foe once the power is activated. The character must pay the Focus cost at the start of each of their subsequent turns of concentration to keep the power working."
   },
   "flags": {},
   "effects": [],

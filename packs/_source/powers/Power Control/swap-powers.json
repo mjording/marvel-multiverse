@@ -4,7 +4,7 @@
   "type": "power",
   "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
-    "description": "The chararter swaps their powers for a target's powers.",
+    "description": "The character swaps their powers for a target's powers.",
     "powerSet": "Power Control",
     "prerequisites": "Rank 3",
     "action": "Standard or reaction",

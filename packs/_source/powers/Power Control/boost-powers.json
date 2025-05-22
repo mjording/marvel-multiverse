@@ -12,7 +12,7 @@
     "duration": "Concentration",
     "range": "",
     "cost": "15 or more Focus",
-    "effect": "The character picks one character within 5 spaces and boosts all of their powers. If the powers have ranges or effective areas or durations, these are doubled. If the powers affect a damage multiplier, add 1 to the effects. Any effects that normally happen with a Fantastic successes automatically happen on any success, not just a Fantastic one.If the target's powers have costs, the character must pay the highest of them or a minimum of 15 Focus."
+    "effect": "The character picks one character within 5 spaces and boosts all of their powers. If the powers have ranges or effective areas or durations, these are doubled. If the powers affect a damage multiplier, add 1 to the effects. Any effects that normally happen with a Fantastic successes automatically happen on any success, not just a Fantastic one. If the target's powers have costs, the character must pay the highest of them or a minimum of 15 Focus."
   },
   "flags": {},
   "effects": [],

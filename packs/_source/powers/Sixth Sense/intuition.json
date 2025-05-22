@@ -11,7 +11,7 @@
     "trigger": "",
     "duration": "Instant",
     "range": "",
-    "cost": "5 Fous",
+    "cost": "5 Focus",
     "effect": "When faced with a decision. the character can get a feeling about which choice would be best for them in the long run When activating this power. the player presents the choice to the Narrator. and the Narrator tells them which choice the intuition is leading the character toward."
   },
   "flags": {},

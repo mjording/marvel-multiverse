@@ -7,7 +7,11 @@
     "description": "A knife is a small, sharp blade that is used for cutting or as a weapon. It is a simple weapon that is easy to conceal and can be used for a variety of purposes.",
     "range": "Reach",
     "damageMultiplierBonus": "+1",
-    "ability": "mle"
+    "ability": "mle",
+    "attackTarget": "mle",
+    "attackKind": "close",
+    "attack": true,
+    "damageType": "health"
   },
   "flags": {},
   "effects": [],

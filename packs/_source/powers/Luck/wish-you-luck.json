@@ -4,7 +4,7 @@
   "type": "power",
   "img": "systems/marvel-multiverse/icons/four-leaf-clover.svg",
   "system": {
-    "description": "The character can make a friend lucky, even frum across the room.",
+    "description": "The character can make a friend lucky, even from across the room.",
     "powerSet": "Luck",
     "prerequisites": "Lucky You, Rank 2",
     "action": "Standard",

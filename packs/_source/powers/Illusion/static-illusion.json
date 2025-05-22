@@ -12,7 +12,7 @@
     "duration": "Concentration",
     "range": "",
     "cost": "5 Focus",
-    "effect": "The character creates a visual-only illusion anywhere in line of sight, within 50 spaces. The illusion can be of anything up to three sizes larger than the character, but it mu spbe static. The character breaks concentration if they move beyond 50 spaces from the illusion or lose line of sight of it."
+    "effect": "The character creates a visual-only illusion anywhere in line of sight, within 50 spaces. The illusion can be of anything up to three sizes larger than the character, but it must be static. The character breaks concentration if they move beyond 50 spaces from the illusion or lose line of sight of it."
   },
   "flags": {},
   "effects": [],

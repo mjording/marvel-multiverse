@@ -12,7 +12,7 @@
     "duration": "Instant",
     "range": "Reach",
     "cost": "10 or more Focus",
-    "effect": "The character can heal a target creature with a touch. For every point of Focus the character spends, the target regains a point of Health, up to thelr maximum score. The character must spend at least 10 Focus to use the power. Any Health points that would have been healed beyond the target's maximum Health are lost."
+    "effect": "The character can heal a target creature with a touch. For every point of Focus the character spends, the target regains a point of Health, up to their maximum score. The character must spend at least 10 Focus to use the power. Any Health points that would have been healed beyond the target's maximum Health are lost."
   },
   "flags": {},
   "effects": [],

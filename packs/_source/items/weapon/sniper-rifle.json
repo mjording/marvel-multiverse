@@ -7,7 +7,11 @@
     "description": "A high-powered rifle that can hit targets from a long distance.",
     "range": "40",
     "damageMultiplierBonus": "+1",
-    "ability": "agl"
+    "ability": "agl",
+    "attackTarget": "agl",
+    "attackKind": "ranged",
+    "attack": true,
+    "damageType": "health"
   },
   "flags": {},
   "effects": [],

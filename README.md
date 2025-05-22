@@ -1,24 +1,25 @@
-# MarvelMultiverse System
-![](https://github.com/mjording/marvel-multiverse/blob/master/ui/official/mmrpg-repo.jpg?raw=true)
+# MarvelMultiverse RPG System![](https://github.com/mjording/marvel-multiverse/blob/master/ui/official/mmrpg-repo.jpg?raw=true)
 
-## Foundry Virtual Tabletop - Unofficial Marvel Multiverse Role Playing Game System
+## Unofficial Marvel Multiverse Role Playing Game System for Foundry VTT
+
+This is an unoffical implementation of the [Marvel Multiverse Role Playing Game](https://www.marvel.com/rpg) table top role playing game for [Foundry VTT](http://foundryvtt.com). Providing character sheet, dice and game system support.
+
+This system is a fan made work, and is not associated with Marvel Entertainment, LLC, The Walt Disney Company, or their partners in any way.
+
+This system provides character sheet support for Actors and Items, mechanical support for dice and rules support necessary to
+play games of MMRPG. It is not a substitute for or contain rules or proprietary content from any Marvel Multiverse RPG publications. It is intended to enable game play on Foundry Virtual TableTop software. You will still need to purchase any and all official sourcebooks you desire in order to enjoy this system as intended.
+
+The software component of this system is distributed under the MIT license.
+
+Support this and other projects via these platforms.
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/mjording)
 
 [Rollbones on Patreon](https://patreon.com/rollbones?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink)
 
-This game system for [Foundry Virtual Tabletop](http://foundryvtt.com) provides character sheet, dice and game system 
-support for the Marvel Multiverse Role Playing Game
-
-This system provides character sheet support for Actors and Items, mechanical support for dice and rules necessary to
-play games of MMRPG, and compendium content for Villians, Heroes, Items, Powers, Origins, Occupations, Traits, Tags, and more!
-
-The software component of this system is distributed under the MIT license.
-
 ## Installation Instructions
 
-To install and use the  Marvel Multiverse Role Playing Game system for Foundry Virtual Tabletop, simply paste the following URL into the 
-**Install System** dialog on the Setup menu of the application.
+To install and use the  Marvel Multiverse Role Playing Game system for Foundry Virtual Tabletop, simply paste the following URL into the **Install System** dialog on the Setup menu of the application.
 
 https://raw.githubusercontent.com/mjording/marvel-multiverse/master/system.json
 
@@ -30,5 +31,4 @@ may do this by cloning the repository or downloading a zip archive from the
 
 See the [CONTRIBUTING](/CONTRIBUTING.md) file for information about how you can help this project.
 
-![Foundry v12](https://img.shields.io/badge/foundry-v12-green)
-
+![Foundry v12](https://img.shields.io/badge/foundry-v12-green) ![Foundry v13](https://img.shields.io/badge/foundry-v13-green)

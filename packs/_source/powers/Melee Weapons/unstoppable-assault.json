@@ -12,7 +12,7 @@
     "duration": "Instant",
     "range": "",
     "cost": "15 Focus",
-    "effect": "The character makes a Melee check and compares that against the Melee defense of every enemy within their reach. Any enemy the attack succeeds against takes half regular damage. On a Fantastic success, those enemies take full regular damage instead and suffer the weapon's special effect. Thecharactermaythenpay15moreFocustodothesame thing again-before which they can move up to half their Speed with whatever is left from their normal movement action. They can keep doing this until they run out of Speed or Focus. Each target can only be affected by this attack by this character once per round.",
+    "effect": "The character makes a Melee check and compares that against the Melee defense of every enemy within their reach. Any enemy the attack succeeds against takes half regular damage. On a Fantastic success, those enemies take full regular damage instead and suffer the weapon's special effect. The character may then pay 15 more Focus to do the same thing again-before which they can move up to half their Speed with whatever is left from their normal movement action. They can keep doing this until they run out of Speed or Focus. Each target can only be affected by this attack by this character once per round.",
     "ability": "mle",
     "attackTarget": "mle",
     "attackKind": "close",

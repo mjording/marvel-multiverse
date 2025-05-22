@@ -4,7 +4,7 @@
   "type": "power",
   "img": "systems/marvel-multiverse/icons/super-powers.svg",
   "system": {
-    "description": "The character mentally hides themseives and their friends.",
+    "description": "The character mentally hides themselves and their friends.",
     "powerSet": "Telepathy",
     "prerequisites": "Cloak, Rank 3",
     "action": "Standard",

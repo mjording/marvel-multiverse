@@ -4,7 +4,6 @@ marvel-multiverse-compiled*
 marvel-multiverse.lock
 packs/*
 !packs/_source/
-packs/_source/*
 
 
 # IDE

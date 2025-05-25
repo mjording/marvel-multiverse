@@ -379,7 +379,7 @@ export class MarvelMultiverseCharacterSheet extends ActorSheet {
     const element = event.currentTarget;
     const dataset = element.dataset;
 
-    const itemId = element.closest(".item").dataset.itemId;
+    const itemId = element.closest(".item")?.dataset?.itemId;
     const item = this.actor.items.get(itemId);
 
     // Handle item rolls.
@@ -401,7 +401,7 @@ export class MarvelMultiverseCharacterSheet extends ActorSheet {
       const speaker = ChatMessage.getSpeaker({ actor: this.actor });
       const rollMode = game.settings.get("core", "rollMode");
 
-      if (item.system?.description) {
+      if (item?.system?.description) {
         ChatMessage.create({
           speaker: speaker,
           rollMode: rollMode,

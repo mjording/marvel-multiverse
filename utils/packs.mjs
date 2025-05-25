@@ -73,17 +73,20 @@ function packageCommand() {
  */
 function cleanPackEntry(data, { clearSourceId = true, ownership = 0 } = {}) {
   if (data.ownership) data.ownership = { default: ownership };
+  // biome-ignore lint/performance/noDelete: <explanation>
   if (clearSourceId) delete data.flags?.core?.sourceId;
+  // biome-ignore lint/performance/noDelete: <explanation>
   delete data.flags?.importSource;
+  // biome-ignore lint/performance/noDelete: <explanation>
   delete data.flags?.exportSource;
   if (data._stats?.lastModifiedBy)
     data._stats.lastModifiedBy = "mmrpgbuilder0000";
 
   // Remove empty entries in flags
   if (!data.flags) data.flags = {};
-  Object.entries(data.flags).forEach(([key, contents]) => {
+  for (const [key, contents] of Object.entries(data.flags)) {
     if (Object.keys(contents).length === 0) delete data.flags[key];
-  });
+  }
 
   if (data.system?.activation?.cost === 0) data.system.activation.cost = null;
   if (data.system?.duration?.value === "0") data.system.duration.value = "";
@@ -105,13 +108,18 @@ function cleanPackEntry(data, { clearSourceId = true, ownership = 0 } = {}) {
     data.img = "";
     data.prototypeToken.texture.src = "";
   }
-
   if (data.effects)
-    data.effects.forEach((i) => cleanPackEntry(i, { clearSourceId: false }));
+    for (const i of data.effects) {
+      cleanPackEntry(i, { clearSourceId: false });
+    }
   if (data.items)
-    data.items.forEach((i) => cleanPackEntry(i, { clearSourceId: false }));
+    for (const i of data.items) {
+      cleanPackEntry(i, { clearSourceId: false });
+    }
   if (data.pages)
-    data.pages.forEach((i) => cleanPackEntry(i, { ownership: -1 }));
+    for (const i of data.pages) {
+      cleanPackEntry(i, { ownership: -1 });
+    }
   if (data.system?.description?.value)
     data.system.description.value = cleanString(data.system.description.value);
   if (data.label) data.label = cleanString(data.label);
@@ -224,7 +232,7 @@ async function compilePacks(packName) {
  * - `npm build:json -- classes Barbarian` - Only extract a single item from the specified compendium.
  */
 async function extractPacks(packName, entryName) {
-  entryName = entryName?.toLowerCase();
+  const name = entryName?.toLowerCase();
 
   // Load system.json.
   const system = JSON.parse(
@@ -262,17 +270,19 @@ async function extractPacks(packName, entryName) {
         parent = collection[parent[parentKey]];
       }
     };
-    Object.values(folders).forEach((f) => buildPath(folders, f, "folder"));
-    Object.values(containers).forEach((c) => {
+    for (const f of Object.values(folders)) {
+      buildPath(folders, f, "folder");
+    }
+    for (const c of Object.values(containers)) {
       buildPath(containers, c, "container");
       const folder = folders[c.folder];
       if (folder) c.path = path.join(folder.path, c.path);
-    });
+    }
 
     await extractPack(packInfo.path, dest, {
       log: true,
       transformEntry: (entry) => {
-        if (entryName && entryName !== entry.name.toLowerCase()) return false;
+        if (name && name !== entry.name.toLowerCase()) return false;
         cleanPackEntry(entry);
       },
       transformName: (entry) => {

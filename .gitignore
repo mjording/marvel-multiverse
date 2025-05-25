@@ -3,7 +3,6 @@ marvel-multiverse.css
 marvel-multiverse-compiled*
 marvel-multiverse.lock
 packs/*
-!packs/_source/
 
 # IDE
 .idea/

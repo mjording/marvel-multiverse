@@ -1,5 +1,5 @@
 import { MarvelMultiverseRoll } from "../dice/roll.mjs";
-import { MARVEL_MULTIVERSE } from "../helpers/config.mjs";
+import { MARVEL_MULTIVERSE } from "../config.mjs";
 
 export class ChatMessageMarvel extends ChatMessage {
   /** @inheritDoc */

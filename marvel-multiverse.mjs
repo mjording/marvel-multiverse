@@ -8,10 +8,23 @@ import { MarvelMultiverseNPCSheet } from "./module/sheets/npc-sheet.mjs";
 import { MarvelMultiverseItemSheet } from "./module/sheets/item-sheet.mjs";
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates } from "./module/helpers/templates.mjs";
-import { MARVEL_MULTIVERSE } from "./module/helpers/config.mjs";
+import { MARVEL_MULTIVERSE } from "./module/config.mjs";
 // Import DataModel classes
 import * as models from "./module/data/_module.mjs";
 import * as dice from "./module/dice/_module.mjs";
+
+globalThis.MarvelMultiverse = {
+  MarvelMultiverseActor,
+  MarvelMultiverseItem,
+  rollItemMacro,
+  config: MARVEL_MULTIVERSE,
+  dice,
+  models,
+  MarvelMultiverseCharacterSheet,
+  MarvelMultiverseNPCSheet,
+  MarvelMultiverseItemSheet,
+  ChatMessageMarvel,
+};
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
@@ -20,25 +33,17 @@ import * as dice from "./module/dice/_module.mjs";
 Hooks.once("init", () => {
   // Add utility classes to the global game object so that they're more easily
   // accessible in global contexts.
-  game.MarvelMultiverse = {
-    MarvelMultiverseActor,
-    MarvelMultiverseItem,
-    rollItemMacro,
-    config: MARVEL_MULTIVERSE,
-    dice,
-    models,
-    MarvelMultiverseCharacterSheet,
-    MarvelMultiverseNPCSheet,
-    MarvelMultiverseItemSheet,
-    ChatMessageMarvel,
-  };
+  globalThis.MarvelMultiverse = game.MarvelMultiverse = Object.assign(
+    game.system,
+    globalThis.MarvelMultiverse
+  );
+
+  console.log(
+    `Marvel Multiverse RPG 1e | Initializing the Marvel Multiverse Role Playing Game System - Version  ${MarvelMultiverse.version}\n${MARVEL_MULTIVERSE.ASCII}`
+  );
 
   // Record Configuration Values
   CONFIG.MARVEL_MULTIVERSE = MARVEL_MULTIVERSE;
-
-  console.log(
-    `Marvel Multiverse RPG 1e | Initializing the Marvel Multiverse Role Playing Game System - Version ${game.system.version}\n${MARVEL_MULTIVERSE.ASCII}`
-  );
 
   /**
    * Set an initiative formula for the system
@@ -339,3 +344,16 @@ function rollItemMacro(itemUuid) {
     item.roll();
   });
 }
+
+export {
+  MarvelMultiverseActor,
+  MarvelMultiverseItem,
+  rollItemMacro,
+  MARVEL_MULTIVERSE,
+  models,
+  dice,
+  MarvelMultiverseCharacterSheet,
+  MarvelMultiverseNPCSheet,
+  MarvelMultiverseItemSheet,
+  ChatMessageMarvel,
+};

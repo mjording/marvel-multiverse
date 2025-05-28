@@ -1,4 +1,3 @@
-import { required } from "yargs";
 import MarvelMultiverseItemBase from "./item-base.mjs";
 
 export default class MarvelMultiverseWeapon extends MarvelMultiverseItemBase {

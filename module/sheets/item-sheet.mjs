@@ -32,7 +32,11 @@ export class MarvelMultiverseItemSheet extends ItemSheet {
 
     // Alternatively, you could use the following return statement to do a
     // unique item sheet by type, like `weapon-sheet.hbs`.
-    return `${path}/item-${this.item.type}-sheet.hbs`;
+    const itemSheet = `${path}/item-${this.item.type}-sheet.hbs`;
+    console.log(
+      `Loading item sheet template: ${itemSheet} for type ${this.item.type}`
+    );
+    return itemSheet;
   }
 
   /* -------------------------------------------- */
@@ -64,6 +68,11 @@ export class MarvelMultiverseItemSheet extends ItemSheet {
         ])
       );
       context.selectedElement = context.system.element;
+    } else if (itemData.type === "weapon" || itemData.type === "power") {
+      context.damageTypes = {
+        health: { label: "Health" },
+        focus: { label: "Focus" },
+      };
 
       context.attackKinds = {
         ranged: { label: "Ranged" },

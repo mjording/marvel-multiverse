@@ -1,3 +1,4 @@
+import { required } from "yargs";
 import MarvelMultiverseItemBase from "./item-base.mjs";
 
 export default class MarvelMultiverseWeapon extends MarvelMultiverseItemBase {
@@ -7,10 +8,13 @@ export default class MarvelMultiverseWeapon extends MarvelMultiverseItemBase {
     const schema = MarvelMultiverseItemBase.defineSchema();
 
     schema.kind = new fields.StringField({ required: true, initial: "close" });
-    schema.range = new fields.StringField({ blank: true });
-    schema.damageMultiplier = new fields.StringField({ blank: true });
+    schema.range = new fields.StringField({ required: true, initial: "Reach" });
+    schema.damageMultiplierBonus = new fields.StringField({
+      required: true,
+      initial: "0",
+    });
     schema.rule = new fields.StringField({ blank: true });
-    schema.recommenedRank = new fields.StringField({ blank: true });
+    schema.recommendedRank = new fields.StringField({ blank: true });
     schema.category = new fields.StringField({ blank: true });
     schema.reach = new fields.StringField({ blank: true });
     schema.history = new fields.StringField({ blank: true });
@@ -20,14 +24,23 @@ export default class MarvelMultiverseWeapon extends MarvelMultiverseItemBase {
       required: true,
       initial: false,
     });
-    schema.attackTarget = new fields.StringField({ blank: true });
+    schema.attackTarget = new fields.StringField({
+      required: true,
+      initial: "mle",
+    });
     schema.attackRange = new fields.NumberField({
       ...requiredInteger,
       initial: 0,
       min: 0,
     });
-    schema.attackKind = new fields.StringField({ blank: true });
-    schema.damageType = new fields.StringField({ blank: true });
+    schema.attackKind = new fields.StringField({
+      required: true,
+      initial: "close",
+    });
+    schema.damageType = new fields.StringField({
+      required: true,
+      initial: "health",
+    });
     schema.attackEdgeMode = new fields.StringField({ blank: true });
     schema.attackMultiplier = new fields.NumberField({
       ...requiredInteger,

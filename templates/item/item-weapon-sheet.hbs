@@ -22,7 +22,7 @@
       <div class="mm-styled-field -fill">
         <label class="mm-styled-label -align-left rollable" for="system.description" data-label="description"><span>Description</span></label>
         <div class="mm-styled-input">
-          {{editor system.description target="system.description" button=false engine="prosemirror" collaborate=false}}
+          {{editor system.description target="system.description" button=false engine="prosemirror" collaborate=false editable=editable}}
         </div>
       </div>
       <div class="mm-styled-field -fill">
@@ -31,12 +31,18 @@
           <input type="checkbox" id="equipped" name="system.equipped"  {{ checked system.equipped }}>
         </div>
       </div>
+      <div class="mm-styled-field -fill">
+        <label class="mm-styled-label -align-left rollable" for="system.range" data-label="range"><span>Range</span></label>
+        <div class="mm-styled-input">
+          <input type="text" name="system.range" value="{{system.range}}" data-dtype="String"/>
+        </div>
+      </div>
       {{!-- As you add new fields, add them in here! --}}
       <div class="flexcol gap-sm">
         <div class="mm-styled-field -fill">
           <label class="mm-styled-label -align-left"><span>Roll Formula</span></label>
           <div class="mm-styled-input">
-            <div class="plain-text">{{system.formula}}</div>
+            <input type="text" name="system.formula" value="{{system.formula}}" data-dtype="String"/>
           </div>
         </div>
       </div>
@@ -46,10 +52,41 @@
           <input type="text" name="system.damageMultiplierBonus" value="{{system.damageMultiplierBonus}}" data-dtype="String"/>
         </div>
       </div>
+      <div class="mm-styled-field -sm">
+        <label class="mm-styled-label -align-left"><span>Ability</span></label>
+        <div class="mm-styled-input">
+          <select name="system.ability">
+            {{selectOptions abilities selected=system.ability labelAttr="label" blank=""}}
+          </select>
+        </div>
+      </div>
+      <div class="mm-styled-field -sm">
+        <label class="mm-styled-label -align-left"><span>VS Defense</span></label>
+        <div class="mm-styled-input">
+          <select name="system.attackTarget">
+            {{selectOptions abilities selected=system.attackTarget labelAttr="label" blank=""}}
+          </select>
+        </div>
+      </div>
+      <div class="mm-styled-field -sm">
+        <label class="mm-styled-label -align-left"><span>Attack Kind</span></label>
+        <div class="mm-styled-input">
+          <select name="system.attackKind">
+            {{selectOptions attackKinds selected=system.attackKind labelAttr="label" blank=""}}
+          </select>
+        </div>
+      </div>
+      <div class="mm-styled-field -sm">
+        <label class="mm-styled-label -align-left"><span>Damage Type</span></label>
+        <div class="mm-styled-input">
+          <select name="system.damageType">
+            {{selectOptions damageTypes selected=system.damageType labelAttr="label" blank=""}}
+          </select>
+        </div>
+      </div>
     </div>
-
     <div class="tab weapon-effects" data-group="primary" data-tab="effects">
-       {{> "systems/marvel-multiverse/templates/item/parts/item-effects.hbs"}}
+        {{> "systems/marvel-multiverse/templates/item/parts/item-effects.hbs"}}
     </div>
   </section>
 

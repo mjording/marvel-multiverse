@@ -60,7 +60,7 @@ export class MarvelMultiverseItemSheet extends ItemSheet {
     context.effects = prepareActiveEffectCategories(this.item.effects);
 
     // Prepare data and items.
-    if (itemData.type === "power") {
+    if (itemData.type === "power" || itemData.type === "weapon") {
       context.elements = Object.fromEntries(
         Object.keys(CONFIG.MARVEL_MULTIVERSE.elements).map((k) => [
           k,
@@ -68,7 +68,7 @@ export class MarvelMultiverseItemSheet extends ItemSheet {
         ])
       );
       context.selectedElement = context.system.element;
-    } else if (itemData.type === "weapon" || itemData.type === "power") {
+
       context.damageTypes = {
         health: { label: "Health" },
         focus: { label: "Focus" },

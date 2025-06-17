@@ -1,3 +1,6 @@
+@use "../../utils/variables" as *;
+@use "../../utils/colors" as *;
+
 .mm-abilities-block {
   .mm-ability-rows {
     &::before {

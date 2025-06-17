@@ -1,18 +1,22 @@
+@use "sass:meta";
+@use "../utils/variables" as *;
+@use "../utils/colors" as *;
+
 .marvel-multiverse.sheet.actor {
   // Header
   //// Column One
-  @import './blocks/portrait';
-  @import './blocks/karma';
-  @import './blocks/rank';
-  @import './blocks/npc_health_focus';
-  @import './blocks/damage';
+  @include meta.load-css('blocks/portrait');
+  @include meta.load-css('blocks/karma');
+  @include meta.load-css('blocks/rank');
+  @include meta.load-css('blocks/npc_health_focus');
+  @include meta.load-css('blocks/damage');
   //// Column Two
-  @import './blocks/stats';
-  @import './blocks/abilities';
+  @include meta.load-css('blocks/stats');
+  @include meta.load-css('blocks/abilities');
 
   // Body
   //// Tab Bio
-  @import './blocks/bio';
+  @include meta.load-css('blocks/bio');
 
   .window-content {
     min-width: 690px;

@@ -28,7 +28,7 @@
     "eslint-plugin-jsdoc": "^48.11.0",
     "fancy-log": "^2.0.0",
     "rollup": "^3.29.5",
-    "sass": "^1.89.0",
+    "sass": "^1.89.2",
     "yargs": "^17.7.2"
   }
 }

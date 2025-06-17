@@ -1,3 +1,6 @@
+@use "../utils/variables" as *;
+@use "../utils/colors" as *;
+
 .mm-item-list {
   &.-effects {
     .mm-item,

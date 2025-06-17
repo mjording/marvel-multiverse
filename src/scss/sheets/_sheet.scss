@@ -1,3 +1,7 @@
+@use "../utils/variables" as *;
+@use "../utils/colors" as *;
+@use "../utils/typography" as *;
+
 .marvel-multiverse.sheet {
   .window-content {
     background-position: top -360px center;

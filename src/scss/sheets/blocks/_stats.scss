@@ -1,3 +1,7 @@
+
+@use "../../utils/variables" as *;
+@use "../../utils/colors" as *;
+
 .mm-stat-block {
   align-items: center;
   background: $mm-primary-red;

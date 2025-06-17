@@ -3,6 +3,10 @@
 //   <h3>Container Title</h3>
 //   <div class="mm-styled-input"><input /></div>
 // </div>
+@use "../utils/variables" as *;
+@use "../utils/colors" as *;
+@use "../utils/typography" as *;
+
 
 .mm-styled-container {
   background: $mm-primary-red;

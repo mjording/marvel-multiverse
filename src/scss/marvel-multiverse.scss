@@ -1,26 +1,43 @@
 // Add custom fonts by visiting and search https://fonts.google.com
+@use "sass:meta";
+@use "utils/colors";
+@use "utils/mixins";
+@use "utils/typography";
+@use "utils/variables";
+@use "global/flex";
+@use "global/grid";
+@use "global/chat";
+@use "global/dice";
+@use "components/containers";
+@use "components/effects";
+@use "components/fields";
+@use "components/items";
+@use "components/tabs";
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 // Import utilities.
-@import 'utils/colors';
-@import 'utils/mixins';
-@import 'utils/typography';
-@import 'utils/variables';
+// @include meta.load-css('utils/colors');
+// @include meta.load-css('utils/mixins');
+// @include meta.load-css('utils/typography');
+// @include meta.load-css('utils/variables');
 
 // Global styles
-@import 'global/flex';
-@import 'global/grid';
-@import 'global/chat';
-@import 'global/dice';
+// @include meta.load-css('global/flex');
+// @include meta.load-css('global/grid');
+// @include meta.load-css('global/chat');
+// @include meta.load-css('global/dice');
 
 // Components
-@import 'components/containers';
-@import 'components/effects';
-@import 'components/fields';
-@import 'components/items';
-@import 'components/tabs';
+// @include meta.load-css('components/containers');
+// @include meta.load-css('components/effects');
+// @include meta.load-css('components/fields');
+// @include meta.load-css('components/items');
+// @include meta.load-css('components/tabs');
 
 //Sheets
-@import 'sheets/sheet';
-@import 'sheets/actor';
-@import 'sheets/item';
+@include meta.load-css('sheets/sheet');
+@include meta.load-css('sheets/actor');
+@include meta.load-css('sheets/item');

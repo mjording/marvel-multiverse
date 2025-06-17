@@ -1,3 +1,7 @@
+@use "../utils/variables" as *;
+@use "../utils/colors" as *;
+@use "../utils/typography" as *;
+
 .sheet nav.mm-tabs {
   align-items: center;
   background: $mm-primary-red;

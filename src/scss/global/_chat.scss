@@ -1,3 +1,7 @@
+@use "../utils/variables" as *;
+@use "../utils/colors" as *;
+@use "../utils/mixins" as *;
+
 .chat-message {
   background: #e5e5e6;
 }

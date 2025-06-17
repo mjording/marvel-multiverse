@@ -1,4 +1,7 @@
 // Basic list w/ controls
+@use "../utils/variables" as *;
+@use "../utils/colors" as *;
+
 .mm-item-list {
   display: flex;
   flex-direction: column;

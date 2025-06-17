@@ -1,3 +1,6 @@
+@use "../../utils/variables" as *;
+@use "../../utils/colors" as *;
+
 .mm-rank-block {
   align-items: center;
   background: $mm-primary-red;
